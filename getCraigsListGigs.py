@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests
+import sys
 
-gigs = []
 
 f = open(f"./locations.txt", "r")
 locations = [location.rstrip() for location in f]
@@ -12,7 +12,7 @@ m = open(f"./miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 
-print(m)
+gigs = []
 
 def getGigs(item):
     for gig in item:
@@ -25,28 +25,34 @@ def getGigs(item):
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
         
         if age <= postDate:
-            gigs.append({"date": date, "title": title, "url": url, "area": area})
+            g = {"date": date, "title": title, "url": url, "area": area}
+            f = open(f"./data/data.txt", "a")
+            f.write(f"{g}\n")
+            f.close()
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "result-info"})
     getGigs(results)
 
-def getURL(item):
-    for location in item:
+def getURL(items):
+    for location in items:
         url = f"https://{location}.craigslist.org/d/computer-gigs/search/cpg?lang=en"
         response = requests.get(url).text
         getResults(response)
 
-# def getURLMiami(item):
-#     for location in item:
-#         url = f"{location}d/computer-gigs/search/cpg?lang=en"
-#         response = request
+def getURLMiami(items):
+    for location in items:
+        url = f"{location}d/computer-gigs/search/cpg?lang=en"
+        response = requests.get(url).text
+        getResults(response)
 
 def main():
-    # getURL(locations)
+    getURL(locations)
     getURLMiami(miamis)
-    
+
 main()
 
-print(len(gigs))
+sys.exit(0)
+# print(gigs)
+
