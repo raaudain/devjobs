@@ -1,24 +1,21 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests
-import sys
-import json
+import requests, sys, json
 
 
-f = open(f"./data/locations.txt", "r")
+f = open(f"./data/craigslist/us_and_ca.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
-m = open(f"./data/miami.txt", "r")
+m = open(f"./data/craigslist/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 
-data = {}
-data["data"] = []
+data = []
 
 def createJSON(item):
-    with open("./data/data.json", "a", encoding='utf-8') as json_file:
-        json.dump(data, json_file, ensure_ascii=False, indent=4)
+    with open("./data/temp/data.json", "a", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
 def getGigs(item):
     for gig in item:
@@ -32,13 +29,14 @@ def getGigs(item):
 
         if age <= postDate:
             # createJSON(postDate, title, url, area, "gig")
-            data["data"].append({
+            data.append({
                 "timestamp": postDate,
                 "title": title,
                 "url": url,
                 "area": area,
                 "category": "gig"
             })
+            print(f"Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
