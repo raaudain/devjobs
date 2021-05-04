@@ -14,7 +14,7 @@ m.close()
 data = []
 
 def createJSON(item):
-    with open("./data/temp/data.json", "a", encoding="utf-8") as file:
+    with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
 def getGigs(item):
@@ -36,7 +36,7 @@ def getGigs(item):
                 "area": area,
                 "category": "gig"
             })
-            print(f"Added {title}")
+            print(f"craigslist_gigs: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
