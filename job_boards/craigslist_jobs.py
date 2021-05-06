@@ -1,11 +1,12 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+# from ..functions.create_temp_json import tempJSON
 import requests, sys, json
 # sys.path.insert(0, "./functions/create_temp_json.py")
 
 # from create_temp_json.py import data
 
-# print(data)
+# print(tempJSON.data)
 
 
 f = open(f"./data/craigslist/us_and_ca.txt", "r")
@@ -23,12 +24,12 @@ def createJSON(item):
     with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-def getGigs(item):
-    for gig in item:
-        date = gig.find("time", {"class": "result-date"})["datetime"]
-        title = gig.find("a", {"class": "result-title hdrlnk"}).text
-        url = gig.find("a", href=True)["href"]
-        area = str(gig.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
+def getJobs(item):
+    for job in item:
+        date = job.find("time", {"class": "result-date"})["datetime"]
+        title = job.find("a", {"class": "result-title hdrlnk"}).text
+        url = job.find("a", href=True)["href"]
+        area = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
         
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
@@ -41,15 +42,15 @@ def getGigs(item):
                 "area": area,
                 "category": "job"
             })
-            # print(f"craigslist_jobs: Added {title}")
+            print(f"craigslist_jobs: Added {title}")
         
         scraped.add(url)
-        print(scraped)
+        # print(scraped)
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "result-info"})
-    getGigs(results)
+    getJobs(results)
 
 def getURL(items):
     for location in items:
