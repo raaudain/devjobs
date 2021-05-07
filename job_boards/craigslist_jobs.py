@@ -17,6 +17,10 @@ m = open(f"./data/craigslist/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 
+t = open(f"./data/temp/temp_data.json", "r+")
+t.truncate(0)
+t.close()
+
 scraped = set()
 data = []
 
