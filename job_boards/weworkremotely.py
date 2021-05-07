@@ -28,7 +28,6 @@ def getJobs(item):
 
         if date:
             date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
-
         else:
             date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
 

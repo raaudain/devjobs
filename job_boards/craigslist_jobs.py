@@ -33,7 +33,7 @@ def getJobs(item):
         date = job.find("time", {"class": "result-date"})["datetime"]
         title = job.find("a", {"class": "result-title hdrlnk"}).text
         url = job.find("a", href=True)["href"]
-        area = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
+        region = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
         
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
@@ -42,8 +42,9 @@ def getJobs(item):
             data.append({
                 "timestamp": postDate,
                 "title": title,
+                "company": None,
                 "url": url,
-                "area": area,
+                "region": region,
                 "category": "job"
             })
             print(f"craigslist_jobs: Added {title}")
@@ -63,9 +64,11 @@ def getURL(items):
         getResults(response)
 
 def getURLMiami(items):
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
+
     for location in items:
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-        response = requests.get(url).text
+        response = requests.get(url, headers=headers).text
         getResults(response)
 
 def main():
