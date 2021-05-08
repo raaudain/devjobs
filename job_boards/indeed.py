@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json, requests
 
 
-f = open(f"./data/craigslist/zip_codes.txt", "r")
+f = open(f"./data/params/zip_codes.txt", "r")
 codes = [code.rstrip() for code in f]
 f.close()
 

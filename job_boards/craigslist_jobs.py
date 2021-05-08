@@ -9,11 +9,11 @@ import requests, sys, json, time
 # print(tempJSON.data)
 
 
-f = open(f"./data/craigslist/us_and_ca.txt", "r")
+f = open(f"./data/params/us_and_ca.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
-m = open(f"./data/craigslist/miami.txt", "r")
+m = open(f"./data/params/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import json, requests, sys
 
 
-f = open(f"./data/craigslist/key_values.txt", "r")
+f = open(f"./data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]
 f.close()
 
