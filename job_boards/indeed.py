@@ -69,6 +69,7 @@ def getURL(items):
     url = f"https://www.indeed.com/jobs?q=Developer&l=94043&radius=50&sort=date&remotejob=032b3046-06a3-4876-8dfd-474eb5e7ed11"
     response = requests.get(url=url, headers=headers).text
     getResults(response)
+    print(response)
 
 def main():
     getURL(codes)

@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 # from ..functions.create_temp_json import tempJSON
-import requests, sys, json
+import requests, sys, json, time
 # sys.path.insert(0, "./functions/create_temp_json.py")
 
 # from create_temp_json.py import data
@@ -70,6 +70,7 @@ def getURLMiami(items):
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
         response = requests.get(url, headers=headers).text
         getResults(response)
+        time.sleep(1)
 
 def main():
     getURL(locations)

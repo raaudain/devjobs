@@ -19,18 +19,18 @@ def createJSON(item):
 
 def getJobs(item):
     for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
-        title = job.find("a")["data-job-title"]
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+        title = job.find("p", {"class": "open-position--job-title"}).text
         company = job.find("a")["data-company"]
         url = job.find("a", href=True)["href"]
         region = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        # if title == "See All Open Jobs":
+        # if title == "See All Open Jobs" or title == "See All Open Roles":
         #     print("Hello", title, company)
 
-        if str(title) != "See All Open Jobs" or str(title) != "See All Open Roles":
+        if title not in "See All Open Jobs" or title not in "See All Open Roles":
             data.append({
                 "timestamp": postDate,
                 "title": title,
@@ -44,6 +44,7 @@ def getJobs(item):
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "open-position-item-contents"})
+    # print(results)
     getJobs(results)
 
 def getURL():
