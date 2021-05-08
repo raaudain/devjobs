@@ -8,6 +8,14 @@ params = [param.rstrip() for param in f]
 f.close()
 
 data = []
+exclude = set()
+exclude.add("See All Open Jobs")
+exclude.add("See All Open Roles")
+exclude.add("Interested in joining?")
+exclude.add("All Jobs at CareGuide")
+exclude.add("See All Job Openings")
+exclude.add("See All Open Positions")
+exclude.add("")
 
 t = open(f"./data/temp/temp_data.json", "r+")
 t.truncate(0)
@@ -27,10 +35,7 @@ def getJobs(item):
 
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        # if title == "See All Open Jobs" or title == "See All Open Roles":
-        #     print("Hello", title, company)
-
-        if title not in "See All Open Jobs" or title not in "See All Open Roles":
+        if title not in exclude:
             data.append({
                 "timestamp": postDate,
                 "title": title,
