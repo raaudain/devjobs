@@ -36,8 +36,8 @@ def getJobs(item):
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("a")
-    print(results)
-    getJobs(results)
+    # print(results)
+    # getJobs(results)
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
@@ -45,6 +45,7 @@ def getURL():
     url = f"https://protege.dev/"
     response = requests.get(url, headers=headers).text
     getResults(response)
+    print(response)
 
 def main():
     getURL()
