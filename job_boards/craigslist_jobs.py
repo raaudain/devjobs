@@ -48,7 +48,7 @@ def getJobs(item):
                 "region": region,
                 "category": "job"
             })
-            print(f"craigslist_jobs: Added {title}")
+            print(f"=> craigslist_jobs: Added {title}")
         
         scraped.add(url)
         # print(scraped)

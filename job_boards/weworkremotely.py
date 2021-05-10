@@ -44,7 +44,7 @@ def getJobs(item):
                 "region": region,
                 "category": "job"
             })
-        print(f"weworkremotely: Added {title}")
+        print(f"=> weworkremotely: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")

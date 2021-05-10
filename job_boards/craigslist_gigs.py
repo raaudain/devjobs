@@ -40,7 +40,7 @@ def getGigs(item):
                 "area": area,
                 "category": "gig"
             })
-            print(f"craigslist_gigs: Added {title}")
+            print(f"=> craigslist_gigs: Added {title}")
 
         scraped.add(url)
 
@@ -51,17 +51,27 @@ def getResults(item):
 
 def getURL(items):
     for location in items:
-        url = f"https://{location}.craigslist.org/d/computer-gigs/search/cpg?lang=en"
-        response = requests.get(url).text
-        getResults(response)
-        time.sleep(0.5)
+        try:
+            url = f"https://{location}.craigslist.org/d/computer-gigs/search/cpg?lang=en"
+            response = requests.get(url).text
+            getResults(response)
+        except:
+            time.sleep(5)
+            url = f"https://{location}.craigslist.org/d/computer-gigs/search/cpg?lang=en"
+            response = requests.get(url).text
+            getResults(response)
 
 def getURLMiami(items):
     for location in items:
-        url = f"{location}d/computer-gigs/search/cpg?lang=en"
-        response = requests.get(url).text
-        getResults(response)
-        time.sleep(0.5)
+        try:
+            url = f"{location}d/computer-gigs/search/cpg?lang=en"
+            response = requests.get(url).text
+            getResults(response)
+        except:
+            time.sleep(5)
+            url = f"{location}d/computer-gigs/search/cpg?lang=en"
+            response = requests.get(url).text
+            getResults(response)
 
 def main():
     getURL(locations)

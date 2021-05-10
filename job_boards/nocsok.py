@@ -35,7 +35,7 @@ def getJobs(item):
                 "region": region,
                 "category": "job"
             })
-            print(f"nocsok: Added {title}")
+            print(f"=> nocsok: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")

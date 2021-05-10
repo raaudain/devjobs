@@ -54,7 +54,7 @@ def getJobs(item):
                     "region": region,
                     "category": "job"
                 })
-                print(f"remoteok: Added {title}")
+                print(f"=> remoteok: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")

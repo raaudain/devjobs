@@ -11,7 +11,8 @@ import sys
 
 
 def main():
-    craigslist_gigs.main()
+    print("=> Scanning job boards")
+    # craigslist_gigs.main()
     craigslist_jobs.main()
     key_values.main()
     nocsok.main()
@@ -20,6 +21,7 @@ def main():
     weworkremotely.main()
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
+    print("=> Done")
 
 main()
 
