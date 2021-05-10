@@ -1,5 +1,6 @@
 import craigslist_gigs
 import craigslist_jobs
+import crunchyroll
 import key_values
 import nocsok
 import remote_co
@@ -14,6 +15,7 @@ def main():
     print("=> Scanning job boards")
     # craigslist_gigs.main()
     craigslist_jobs.main()
+    crunchyroll.main()
     key_values.main()
     nocsok.main()
     remote_co.main()

@@ -65,7 +65,7 @@ def getURL(items):
         url = f"https://{location}.craigslist.org/search/sof?lang=en"
         response = requests.get(url, headers=headers).text
         getResults(response)
-        time.sleep(0.5)
+        time.sleep(2)
 
 def getURLMiami(items):
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
@@ -74,7 +74,7 @@ def getURLMiami(items):
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
         response = requests.get(url, headers=headers).text
         getResults(response)
-        time.sleep(0.5)
+        time.sleep(2)
 
 def main():
     getURL(locations)
