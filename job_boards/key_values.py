@@ -1,13 +1,14 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
+import modules.create_temp_json as create_temp_json
 
 
 f = open(f"./data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]
 f.close()
 
-data = []
+data = create_temp_json.data
 exclude = set()
 exclude.add("See All Open Jobs")
 exclude.add("See All Open Roles")
@@ -17,9 +18,9 @@ exclude.add("See All Job Openings")
 exclude.add("See All Open Positions")
 exclude.add("")
 
-t = open(f"./data/temp/temp_data.json", "r+")
-t.truncate(0)
-t.close()
+# t = open(f"./data/temp/temp_data.json", "r+")
+# t.truncate(0)
+# t.close()
 
 def createJSON(item):
     with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
@@ -62,8 +63,8 @@ def getURL():
 
 def main():
     getURL()
-    createJSON(data)
+    # createJSON(data)
 
-main()
+# main()
 
-sys.exit(0)
+# sys.exit(0)

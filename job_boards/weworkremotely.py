@@ -1,13 +1,14 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
+import modules.create_temp_json as create_temp_json
 
 
-data = []
+data = create_temp_json.data
 
-t = open(f"./data/temp/temp_data.json", "r+")
-t.truncate(0)
-t.close()
+# t = open(f"./data/temp/temp_data.json", "r+")
+# t.truncate(0)
+# t.close()
 
 def createJSON(item):
     with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
@@ -24,7 +25,7 @@ def getJobs(item):
         if region:
             region = job.find("span", {"class": "region company"}).contents[0]
         else:
-            region = None
+            region = "Remote"
 
         if date:
             date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
@@ -58,8 +59,8 @@ def getURL():
 
 def main():
     getURL()
-    createJSON(data)
+    # createJSON(data)
 
-main()
+# main()
 
-sys.exit(0)
+# sys.exit(0)
