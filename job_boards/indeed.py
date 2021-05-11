@@ -1,6 +1,11 @@
+import modules.create_temp_json as create_temp_json
 from bs4 import BeautifulSoup
-# from fake_useragent import UserAgent
-import json, requests
+import json, requests, sys
+from datetime import datetime, timedelta
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 
 f = open(f"./data/params/zip_codes.txt", "r")
@@ -8,15 +13,11 @@ codes = [code.rstrip() for code in f]
 f.close()
 
 scraped = set()
-data = []
+data = create_temp_json.data
 
-t = open(f"./data/temp/temp_data.json", "r+")
-t.truncate(0)
-t.close()
-
-def createJSON(item):
-    with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+# t = open(f"./data/temp/temp_data.json", "r+")
+# t.truncate(0)
+# t.close()
 
 def getJobs(item):
     for job in item:
@@ -77,4 +78,4 @@ def main():
 
 main()
 
-# sys.exit(0)
+sys.exit(0)

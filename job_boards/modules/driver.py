@@ -1,0 +1,1 @@
+driver = "./bin/geckodriver-mac"

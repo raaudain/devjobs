@@ -18,14 +18,6 @@ exclude.add("See All Job Openings")
 exclude.add("See All Open Positions")
 exclude.add("")
 
-# t = open(f"./data/temp/temp_data.json", "r+")
-# t.truncate(0)
-# t.close()
-
-def createJSON(item):
-    with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
-
 def getJobs(item):
     for job in item:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
@@ -50,7 +42,6 @@ def getJobs(item):
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "open-position-item-contents"})
-    # print(results)
     getJobs(results)
 
 def getURL():
@@ -63,8 +54,3 @@ def getURL():
 
 def main():
     getURL()
-    # createJSON(data)
-
-# main()
-
-# sys.exit(0)

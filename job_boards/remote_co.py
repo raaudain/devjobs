@@ -9,17 +9,8 @@ exclude = set()
 exclude.add("month")
 exclude.add("months")
 
-# t = open(f"./data/temp/temp_data.json", "r+")
-# t.truncate(0)
-# t.close()
-
-
-def createJSON(item):
-    with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
 
 def getJobs(item):
-    # print(item)
     for job in item:
         date = job.find("date").text
         title = job.find("span", {"class": "font-weight-bold larger"}).text
@@ -68,8 +59,3 @@ def getURL():
 
 def main():
     getURL()
-    # createJSON(data)
-
-# main()
-
-# sys.exit(0)
