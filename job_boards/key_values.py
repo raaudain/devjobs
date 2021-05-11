@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
 import modules.create_temp_json as create_temp_json
-
+import modules.update_key_values as updateKeyValues
 
 f = open(f"./data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]
@@ -53,4 +53,7 @@ def getURL():
         getResults(response)
 
 def main():
+    updateKeyValues.main()
     getURL()
+
+main()

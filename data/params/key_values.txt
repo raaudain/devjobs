@@ -1,3 +1,4 @@
+/iora-health
 /duckduckgo
 /cointracker
 /carbon-five
@@ -22,9 +23,9 @@
 /new-relic
 /github
 /hatch
-/covariant
 /point
 /hipcamp
+/covariant
 /seesaw
 /airtable
 /nerdwallet
@@ -35,8 +36,9 @@
 /jane
 /nexhealth
 /lightstep
-/digit
+/sparrow
 /webflow
+/digit
 /readme
 /bombbomb
 /amplitude
@@ -71,8 +73,8 @@
 /connected
 /precious
 /careguide
-/wove
 /peergrade
+/wove
 /checkr
 /creator-deck-media
 /buildzoom
