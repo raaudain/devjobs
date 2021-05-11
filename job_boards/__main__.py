@@ -3,6 +3,7 @@ import craigslist_jobs
 import crunchyroll
 import blend
 import key_values
+import protege
 import nocsok
 import remote_co
 import remoteok
@@ -20,6 +21,7 @@ def main():
     crunchyroll.main()
     key_values.main()
     nocsok.main()
+    protege.main()
     remote_co.main()
     remoteok.main()
     weworkremotely.main()
