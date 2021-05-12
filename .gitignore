@@ -129,5 +129,7 @@ dmypy.json
 .pyre/
 
 .gitignore
+/server/geckodriver.log
+/server/env
 geckodriver.log
 .DS_Store
