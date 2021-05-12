@@ -55,5 +55,3 @@ def getURL():
 def main():
     updateKeyValues.main()
     getURL()
-
-main()

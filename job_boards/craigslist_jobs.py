@@ -25,6 +25,8 @@ m.close()
 scraped = set()
 data = create_temp_json.data
 
+headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
+
 def createJSON(item):
     with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
@@ -59,8 +61,6 @@ def getResults(item):
     getJobs(results)
 
 def getURL(items):
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
-
     for location in items:
         url = f"https://{location}.craigslist.org/search/sof?lang=en"
         response = requests.get(url, headers=headers).text
@@ -68,8 +68,6 @@ def getURL(items):
         time.sleep(2)
 
 def getURLMiami(items):
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
-
     for location in items:
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
         response = requests.get(url, headers=headers).text

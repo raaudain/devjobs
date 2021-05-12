@@ -6,6 +6,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import modules.driver as driver
+import sys, time
+import pyppdf.patch_pyppeteer
+from requests_html import HTMLSession
 
 
 driver = driver.driver
@@ -15,6 +18,7 @@ data = create_temp_json.data
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
 browser = webdriver.Firefox(executable_path=driver, options=options)
+# browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true'])
 
 wait = WebDriverWait(browser, 10)
 
@@ -49,6 +53,10 @@ def getResults(item):
     getJobs(results)
 
 def getURL():
+    referer = "https://www.google.com"
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36", "referer": referer}
+
+
     bypassRecaptcha = "http://webcache.googleusercontent.com/search?q=cache:"
     url = f"{bypassRecaptcha}https://www.crunchyroll.com/about/jobs/index.html"
 
@@ -61,5 +69,9 @@ def getURL():
     getResults(response)
     browser.quit()
 
+
 def main():
     getURL()
+
+# main()
+# sys.exit(0)
