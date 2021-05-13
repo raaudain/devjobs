@@ -1,18 +1,9 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
-from .modules import create_temp_json
 
 
 data = create_temp_json.data
-
-# t = open(f"./data/temp/temp_data.json", "r+")
-# t.truncate(0)
-# t.close()
-
-def createJSON(item):
-    with open("./data/temp/temp_data.json", "a", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
 
 def getJobs(item):
     for job in item:
@@ -59,7 +50,7 @@ def getURL():
 
 def main():
     getURL()
-    # createJSON(data)
+
 
 # main()
 

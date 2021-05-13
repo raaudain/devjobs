@@ -56,5 +56,5 @@ def getURL():
         getResults(response)
 
 def main():
-    updateKeyValues.main()
+    update_key_values.main()
     getURL()
