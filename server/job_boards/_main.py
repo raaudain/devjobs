@@ -10,8 +10,6 @@ from . import remoteok
 from . import weworkremotely
 from .modules import create_temp_json
 from .modules import create_main_json
-# from server.job_boards import modules
-# from . import *
 import sys
 
 
@@ -19,7 +17,7 @@ def main():
     print("=> Scanning job boards")
     # craigslist_gigs.main()
     blend.main()
-    # craigslist_jobs.main()
+    craigslist_jobs.main()
     crunchyroll.main()
     key_values.main()
     nocsok.main()
