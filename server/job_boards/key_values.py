@@ -1,8 +1,11 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
-import modules.create_temp_json as create_temp_json
-import modules.update_key_values as updateKeyValues
+# import modules.create_temp_json as create_temp_json
+# import modules.update_key_values as updateKeyValues
+from .modules import create_temp_json
+from .modules import update_key_values
+
 
 f = open(f"./data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]

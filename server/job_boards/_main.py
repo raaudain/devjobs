@@ -1,15 +1,15 @@
-import craigslist_gigs
-import craigslist_jobs
-import crunchyroll
-import blend
-import key_values
-import protege
-import nocsok
-import remote_co
-import remoteok
-import weworkremotely
-import modules.create_temp_json as create_temp_json
-import modules.create_main_json as create_main_json
+# import craigslist_gigs
+from . import craigslist_jobs
+from . import crunchyroll
+from . import blend 
+from . import key_values
+from . import protege
+from . import nocsok
+from . import remote_co
+from . import remoteok
+from . import weworkremotely
+from .modules import create_temp_json
+from .modules import create_main_json
 import sys
 
 
