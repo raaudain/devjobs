@@ -8,7 +8,7 @@ def createJSON():
         f.close()
 
         if isfile("./data/data.json"):
-                print("=> Deleting old data.json content")
+                print("=> data.json: Deleting old content")
                 t = open(f"./data/data.json", "r+")
                 t.truncate(0)
                 t.close()
@@ -16,5 +16,5 @@ def createJSON():
         orderedData = sorted(data, key=lambda i: i["timestamp"], reverse=True)
 
         with open("./data/data.json", "a", encoding="utf-8") as file:
-                print("=> Generating new data.json content")
+                print("=> data.json: Generating new content")
                 json.dump(orderedData, file, ensure_ascii=False, indent=4)

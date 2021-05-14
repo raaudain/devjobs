@@ -27,7 +27,7 @@ def getJobs(item):
         title = job.find("a", href=True).text.strip()
         company = "Blend"
         url = job.find("a", href=True)["href"]
-        region = None
+        location = None
 
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
@@ -36,7 +36,9 @@ def getJobs(item):
             "title": title,
             "company": company,
             "url": url,
-            "region": region,
+            "location": location,
+            "source": "Blend",
+            "source_url": "https://blend.com/company/careers/#current-openings",
             "category": "job"
         })
         print(f"=> blend: Added {title}")

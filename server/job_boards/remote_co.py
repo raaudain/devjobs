@@ -16,7 +16,7 @@ def getJobs(item):
         title = job.find("span", {"class": "font-weight-bold larger"}).text
         company = "".join(job.find("p", {"class": "m-0 text-secondary"}).text.split("|")[0]).strip()
         url = "https://remote.co"+job["href"]
-        region = "Remote"
+        location = "Remote"
 
         if "hours" in date or "hour" in date:
             hours = re.sub("[^0-9]", "", date)
@@ -41,7 +41,9 @@ def getJobs(item):
                 "title": title,
                 "company": company,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "Remote.co",
+                "source_url": "https://remote.co/",
                 "category": "job"
             })
         print(f"=> remote.co: Added {title}")

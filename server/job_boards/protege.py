@@ -26,9 +26,9 @@ def getJobs(item):
         title = job.find("h2").text
         company = job.find("p").text
         url = "https://protege.dev"+job["href"]
-        region = "Remote"
+        location = "Remote"
 
-        # print(date, title, company, url, region)
+        # print(date, title, company, url, location)
 
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
@@ -39,7 +39,9 @@ def getJobs(item):
                 "title": title,
                 "company": company,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "Protege",
+                "source_url": "https://protege.dev",
                 "category": "job"
             })
             print(f"=> protege: Added {title}")

@@ -30,7 +30,7 @@ def getJobs(item):
         title = job.find("a", href=True).text.strip()
         company = "Crunchyroll"
         url = job.find("a", href=True)["href"]
-        region = job.find("span", {"class": "location"}).text.strip()
+        location = job.find("span", {"class": "location"}).text.strip()
 
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
@@ -39,7 +39,9 @@ def getJobs(item):
             "title": title,
             "company": company,
             "url": url,
-            "region": region,
+            "location": location,
+            "source": "Crunchyroll",
+            "source_url": "https://www.crunchyroll.com/about/jobs/index.html",
             "category": "job"
         })
         print(f"=> crunchyroll: Added {title}")

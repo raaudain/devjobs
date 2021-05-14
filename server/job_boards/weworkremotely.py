@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+from .modules import create_temp_json
 import json, requests, sys
 
 
@@ -11,12 +12,12 @@ def getJobs(item):
         title = job.find("span", {"class": "title"}).text
         company = job.find("span", {"class": "company"}).text
         url = "https://www.weworkremotely.com"+job.find_all("a", href=True)[1]["href"]
-        region = job.find("span", {"class": "region company"})
+        location = job.find("span", {"class": "region company"})
         
-        if region:
-            region = job.find("span", {"class": "region company"}).contents[0]
+        if location:
+            location = job.find("span", {"class": "region company"}).contents[0]
         else:
-            region = "Remote"
+            location = "Remote"
 
         if date:
             date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
@@ -32,7 +33,9 @@ def getJobs(item):
                 "title": title,
                 "company": company,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "WeWorkRemotely",
+                "source_url": "https://weworkremotely.com/",
                 "category": "job"
             })
         print(f"=> weworkremotely: Added {title}")

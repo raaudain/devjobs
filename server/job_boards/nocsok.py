@@ -13,7 +13,7 @@ def getJobs(item):
         title = job.find("strong").text
         company = job.find("small").text
         url = "https://nocsok.com/"+job.find("a", href=True)["href"].replace("#", "")
-        region = job.find("h5").text.lstrip().rstrip()
+        location = job.find("h5").text.lstrip().rstrip()
 
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
@@ -24,7 +24,9 @@ def getJobs(item):
                 "title": title,
                 "company": company,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "NoCSOK",
+                "source_url": "https://nocsok.com/",
                 "category": "job"
             })
             print(f"=> nocsok: Added {title}")

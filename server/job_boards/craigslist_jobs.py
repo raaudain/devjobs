@@ -4,7 +4,9 @@ from datetime import datetime, timedelta
 import requests, sys, json, time
 # import modules.create_temp_json as create_temp_json
 from .modules import create_temp_json
-# sys.path.insert(0, "./functions/create_temp_json.py")
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 
 # from create_temp_json.py import data
 
@@ -37,7 +39,7 @@ def getJobs(item):
         date = job.find("time", {"class": "result-date"})["datetime"]
         title = job.find("a", {"class": "result-title hdrlnk"}).text
         url = job.find("a", href=True)["href"]
-        region = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
+        location = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
         
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
@@ -48,10 +50,14 @@ def getJobs(item):
                 "title": title,
                 "company": None,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "Craigslist",
+                "soure_url": "https://www.craigslist.org",
                 "category": "job"
             })
             print(f"=> craigslist_jobs: Added {title}")
+        else:
+            print(f"=> craigslist_jobs: Skipped {title}")
         
         scraped.add(url)
         # print(scraped)
@@ -62,18 +68,28 @@ def getResults(item):
     getJobs(results)
 
 def getURL(items):
+    session = requests.Session()
+    retry = Retry(connect=3, backoff_factor=2)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
     for location in items:
         url = f"https://{location}.craigslist.org/search/sof?lang=en"
-        response = requests.get(url, headers=headers).text
+        response = session.get(url, headers=headers).text
         getResults(response)
-        time.sleep(2)
 
 def getURLMiami(items):
+    session = requests.Session()
+    retry = Retry(connect=3, backoff_factor=2)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
     for location in items:
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-        response = requests.get(url, headers=headers).text
+        response = session.get(url, headers=headers).text
         getResults(response)
-        time.sleep(2)
 
 def main():
     getURL(locations)

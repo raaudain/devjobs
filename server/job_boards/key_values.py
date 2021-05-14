@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json, requests, sys
+import json, requests, sys, time
 # import modules.create_temp_json as create_temp_json
 # import modules.update_key_values as updateKeyValues
 from .modules import create_temp_json
@@ -27,7 +27,7 @@ def getJobs(item):
         title = job.find("p", {"class": "open-position--job-title"}).text
         company = job.find("a")["data-company"]
         url = job.find("a", href=True)["href"]
-        region = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
+        location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
@@ -37,7 +37,9 @@ def getJobs(item):
                 "title": title,
                 "company": company,
                 "url": url,
-                "region": region,
+                "location": location,
+                "source": "Key Values",
+                "source_url": "https://www.keyvalues.com",
                 "category": "job"
             })
             print(f"=> key_values: Added {title}")
@@ -54,6 +56,8 @@ def getURL():
         url = f"https://www.keyvalues.com{param}"
         response = requests.get(url, headers=headers).text
         getResults(response)
+        time.sleep(2)
+
 
 def main():
     update_key_values.main()

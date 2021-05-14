@@ -5,7 +5,7 @@ from os.path import isfile
 
 def main():
     if isfile("./data/params/key_values.txt"):
-        print("=> Deleting key_values parameters")
+        print("=> key_values: Deleting old parameters")
         t = open(f"./data/temp/temp_data.json", "r+")
         t.truncate(0)
         t.close()
@@ -20,6 +20,6 @@ def main():
 
     for link in links:
         company.write(link["href"]+"\n")
-    print("=> Updated key_values parameters")
+    print("=> key_values: Updated parameters")
     company.close()
 

@@ -13,7 +13,7 @@ def getJobs(item):
         title = job.find("h2", {"itemprop": "title"})
         company = job.find("h3", {"itemprop": "name"})
         url = job.find("a", {"class": "preventLink"}, href=True)
-        region = job.find("div", {"class": "location tooltip"})
+        location = job.find("div", {"class": "location tooltip"})
 
         if date:
             date = job.find("time")["datetime"].replace("T", " ")[:-9]
@@ -27,10 +27,10 @@ def getJobs(item):
         if url:
             url = "https://remoteok.io"+job.find("a", {"class": "preventLink"}, href=True)["href"]
 
-        if region:
-            region = job.find("div", {"class": "location tooltip"}).text.lstrip()
+        if location:
+            location = job.find("div", {"class": "location tooltip"}).text.lstrip()
         else:
-            region = "Remote"
+            location = "Remote"
 
         if title:
             title = job.find("h2", {"itemprop": "title"}).text
@@ -44,7 +44,9 @@ def getJobs(item):
                     "title": title,
                     "company": company,
                     "url": url,
-                    "region": region,
+                    "location": location,
+                    "source": "Remote OK",
+                    "source_url": "https://remoteok.io/",
                     "category": "job"
                 })
                 print(f"=> remoteok: Added {title}")
