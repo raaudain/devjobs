@@ -1,14 +1,14 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys, re, time
-# from .modules import create_temp_json
-# from .modules import driver
+from .modules import create_temp_json
+from .modules import driver
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import modules.create_temp_json as create_temp_json
-import modules.driver as driver
+# import modules.create_temp_json as create_temp_json
+# import modules.driver as driver
 
 
 data = create_temp_json.data
@@ -75,10 +75,10 @@ def getJobs(item):
         if age <= postDate:
             data.append({
                 "timestamp": postDate,
-                "title": title,
+                "title": title.strip(),
                 "company": company,
                 "url": url,
-                "location": location,
+                "location": location.strip(),
                 "source": "BuiltIn",
                 "soure_url": "https://builtin.com/",
                 "category": "job"
@@ -107,7 +107,7 @@ def getURL():
     
     page = 1
 
-    while isTrue:
+    while page <= 200:
         if page % 10 == 0:
             time.sleep(10)
             print("=> Sleeping...")
@@ -123,10 +123,10 @@ def getURL():
         # print(response)
 
         getResults(response)
-        page+=1
-        global count
-        print("Page", count)
-        count+=1
+        # page+=1
+        # global count
+        # print("Page", count)
+        # count+=1
 
         
         # browser.quit()
@@ -134,6 +134,6 @@ def getURL():
 def main():
     getURL()
 
-main()
+# main()
 
-sys.exit(0)
+# sys.exit(0)

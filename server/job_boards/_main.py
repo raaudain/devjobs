@@ -8,6 +8,7 @@ from . import nocsok
 from . import remote_co
 from . import remoteok
 from . import weworkremotely
+from . import builtin
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime
@@ -27,6 +28,7 @@ def main():
     remote_co.main()
     remoteok.main()
     weworkremotely.main()
+    builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
     print("=> Done")
