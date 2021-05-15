@@ -7,7 +7,7 @@ from .modules import create_temp_json
 from .modules import update_key_values
 
 
-f = open(f"./data/params/key_values.txt", "r")
+f = open(f"./server/data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]
 f.close()
 

@@ -13,11 +13,11 @@ from requests.packages.urllib3.util.retry import Retry
 # print(tempJSON.data)
 
 
-f = open(f"./data/params/us_and_ca.txt", "r")
+f = open(f"./server/data/params/us_and_ca.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
-m = open(f"./data/params/miami.txt", "r")
+m = open(f"./server/data/params/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 

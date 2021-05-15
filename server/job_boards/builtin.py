@@ -23,7 +23,7 @@ options.add_argument("--headless")
 browser = webdriver.Firefox(executable_path=driver, options=options)
 # browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true'])
 
-wait = WebDriverWait(browser, 30)
+wait = WebDriverWait(browser, 120)
 
 isTrue = True
 count = 1
@@ -33,17 +33,27 @@ def getJobs(item):
     for job in item:
         # print(job)
         date = job.find("div", {"class", "icon-label info-label age"}).text
-        title = job.find("h2", {"class": "job-title"}).text
-        company = job.find("div", {"class": "icon-label info-label company-title"}).text
+        title = job.find("h2", {"class": "job-title"}).text.strip()
+        company = job.find("div", {"class": "icon-label info-label company-title"}).text.strip()
         url = job.find("a", href=True)["href"]
         location = None
 
         if job.find("div", {"class", "icon-label info-label location"}):
-            location = job.find("div", {"class", "icon-label info-label location"}).text
+            location = job.find("div", {"class", "icon-label info-label location"}).text.strip()
         if job.find("div", {"class", "icon-label info-label remote"}):
-            location = job.find("div", {"class", "icon-label info-label remote"}).text
+            location = job.find("div", {"class", "icon-label info-label remote"}).text.strip()
 
-        if "minutes" in date or "minute" in date:
+        if "a second ago" in date:
+            time = datetime.now() - timedelta(seconds=1)
+            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+        elif "seconds" in date or "second" in date:
+            seconds = re.sub("[^0-9]", "", date)
+            time = datetime.now() - timedelta(seconds=int(seconds))
+            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+        elif "a minute ago" in date:
+            time = datetime.now() - timedelta(minutes=1)
+            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+        elif "minutes" in date or "minute" in date:
             minutes = re.sub("[^0-9]", "", date)
             time = datetime.now() - timedelta(minutes=int(minutes))
             date = datetime.strftime(time, "%Y-%m-%d %H:%M")
@@ -75,10 +85,10 @@ def getJobs(item):
         if age <= postDate:
             data.append({
                 "timestamp": postDate,
-                "title": title.strip(),
+                "title": title,
                 "company": company,
                 "url": url,
-                "location": location.strip(),
+                "location": location,
                 "source": "BuiltIn",
                 "soure_url": "https://builtin.com/",
                 "category": "job"
@@ -107,7 +117,8 @@ def getURL():
     
     page = 1
 
-    while page <= 200:
+    # while page <= 200:
+    while isTrue:
         if page % 10 == 0:
             time.sleep(10)
             print("=> Sleeping...")
@@ -116,17 +127,17 @@ def getURL():
 
         browser.get(url)
         
-        wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Featured')]")))
+        wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='icon-label info-label age']")))
 
         response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
         
         # print(response)
 
         getResults(response)
-        # page+=1
-        # global count
-        # print("Page", count)
-        # count+=1
+        page+=1
+        global count
+        print("Page", count)
+        count+=1
 
         
         # browser.quit()
