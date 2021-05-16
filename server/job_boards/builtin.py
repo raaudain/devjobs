@@ -1,14 +1,14 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys, re, time
-from .modules import create_temp_json
-from .modules import driver
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-# import modules.create_temp_json as create_temp_json
-# import modules.driver as driver
+# from .modules import create_temp_json
+# from .modules import driver
+import modules.create_temp_json as create_temp_json
+import modules.driver as driver
 
 
 data = create_temp_json.data
@@ -23,7 +23,7 @@ options.add_argument("--headless")
 browser = webdriver.Firefox(executable_path=driver, options=options)
 # browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true'])
 
-wait = WebDriverWait(browser, 120)
+wait = WebDriverWait(browser, 30)
 
 isTrue = True
 count = 1
@@ -110,6 +110,7 @@ def getResults(item):
     getJobs(results)
 
 def getURL():
+    
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
     
 
@@ -119,32 +120,35 @@ def getURL():
 
     # while page <= 200:
     while isTrue:
-        if page % 10 == 0:
-            time.sleep(10)
-            print("=> Sleeping...")
+        try:
+            if page % 10 == 0:
+                time.sleep(10)
+                print("=> Sleeping...")
 
-        url = f"https://builtin.com/jobs/dev-engineering?page={page}"
+            url = f"https://builtin.com/jobs/dev-engineering?page={page}"
 
-        browser.get(url)
+            browser.get(url)
+            
+            wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='icon-label info-label age']")))
+
+            response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
+            
+            # print(response)
+
+            getResults(response)
+            page+=1
+            global count
+            print("Page", count)
+            count+=1        
+        except:
+            print("=> builtin: Ending loop")
+            break
         
-        wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='icon-label info-label age']")))
-
-        response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
-        
-        # print(response)
-
-        getResults(response)
-        page+=1
-        global count
-        print("Page", count)
-        count+=1
-
-        
-        # browser.quit()
+        browser.quit()
 
 def main():
     getURL()
 
-# main()
+main()
 
-# sys.exit(0)
+sys.exit(0)

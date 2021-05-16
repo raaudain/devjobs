@@ -3,7 +3,7 @@ from os.path import isfile
 
 
 def createJSON():
-        f = open(f"./server/data/temp/temp_data.json")
+        f = open(f"./data/temp/temp_data.json")
         data = json.load(f)
         f.close()
 
@@ -15,6 +15,6 @@ def createJSON():
 
         orderedData = sorted(data, key=lambda i: i["timestamp"], reverse=True)
 
-        with open("./server/data/data.json", "a", encoding="utf-8") as file:
+        with open("./data/data.json", "a", encoding="utf-8") as file:
                 print("=> data.json: Generating new content")
                 json.dump(orderedData, file, ensure_ascii=False, indent=4)

@@ -7,7 +7,7 @@ from .modules import create_temp_json
 from .modules import update_key_values
 
 
-f = open(f"./server/data/params/key_values.txt", "r")
+f = open(f"./data/params/key_values.txt", "r")
 params = [param.rstrip() for param in f]
 f.close()
 
@@ -56,7 +56,7 @@ def getURL():
         url = f"https://www.keyvalues.com{param}"
         response = requests.get(url, headers=headers).text
         getResults(response)
-        time.sleep(2)
+        # time.sleep(2)
 
 
 def main():

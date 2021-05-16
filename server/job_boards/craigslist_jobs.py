@@ -13,11 +13,11 @@ from requests.packages.urllib3.util.retry import Retry
 # print(tempJSON.data)
 
 
-f = open(f"./server/data/params/us_and_ca.txt", "r")
+f = open(f"./data/params/us_and_ca.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
-m = open(f"./server/data/params/miami.txt", "r")
+m = open(f"./data/params/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 
@@ -73,23 +73,31 @@ def getURL(items):
     adapter = HTTPAdapter(max_retries=retry)
     session.mount('http://', adapter)
     session.mount('https://', adapter)
-
+    
     for location in items:
-        url = f"https://{location}.craigslist.org/search/sof?lang=en"
-        response = session.get(url, headers=headers).text
-        getResults(response)
+        try:
+            url = f"https://{location}.craigslist.org/search/sof?lang=en"
+            response = requests.get(url, headers=headers).text
+            getResults(response)
+        except:
+            print("=> craigslist_jobs: Continue to next")
+            continue
 
 def getURLMiami(items):
     session = requests.Session()
-    retry = Retry(connect=3, backoff_factor=2)
+    retry = Retry(connect=3, backoff_factor=1)
     adapter = HTTPAdapter(max_retries=retry)
-    session.mount('http://', adapter)
-    session.mount('https://', adapter)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
 
     for location in items:
-        url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-        response = session.get(url, headers=headers).text
-        getResults(response)
+        try:
+            url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
+            response = session.get(url, headers=headers).text
+            getResults(response)
+        except:
+            print("=> craigslist_jobs: Going to next function")
+            pass
 
 def main():
     getURL(locations)
