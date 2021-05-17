@@ -15,7 +15,7 @@ def getJobs(item):
         url = "https://www.workwithindies.com"+job["href"]
         location = job.find_all("div", {"class": "job-card-text bold"})[1].text
 
-        print(date, title, company, url, location)
+        # print(date, title, company, url, location)
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
         data.append({

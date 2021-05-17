@@ -34,7 +34,7 @@ def main():
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
     print("=> Done")
-    print("Total time: " + str(datetime.now()-start))
+    print("=> Total time: " + str(datetime.now()-start))
 
 # main()
 

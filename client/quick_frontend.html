@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice</h1>
+    <script>
+        const url = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                let index = 0;
+                
+                const body = document.querySelector("body");
+                const jobs = document.createElement("div");
+
+                body.appendChild(jobs);
+
+                while (index <= data.length) {
+                    let jobInfo = data[index];
+
+                    const job = document.createElement("div");
+                    const title = document.createElement("span");
+                    const company = document.createElement("span");
+                    const location = document.createElement("span");
+                    const linebreak = document.createElement("br");
+                    const url = document.createElement("a");
+
+                    jobs.className = "jobs";
+                    job.className = "job";
+                    title.id = "title";
+                    company.id = "company";
+                    location.id = "location";
+                    url.id = "url";
+                    url.href = jobInfo.url;
+                    url.target = "_blank";
+                    url.rel = "noopener noreferrer";
+
+                    job.style.display = "flex";
+                    job.style.flexDirection = "column";
+
+                    title.textContent = `Position: ${jobInfo.title}`;
+                    company.textContent = `Company: ${jobInfo.company}`;
+                    location.textContent = `Location: ${jobInfo.location}`;
+                    url.textContent = "Apply"
+                    
+                    jobs.appendChild(job)
+                    job.appendChild(title);
+                    title.after(linebreak)
+                    if (company.textContent != "None" || company.textContent != null) {
+                        job.appendChild(company);
+                    }
+                    if (location.textContent != "None") {
+                        job.appendChild(location);
+                    }
+                    job.appendChild(url);
+                    job.appendChild(linebreak);
+
+                    index++;
+                }
+            });        
+    </script>
+</body>
+</html>

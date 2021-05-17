@@ -93,7 +93,7 @@ def getURLMiami(items):
     for location in items:
         try:
             url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-            response = session.get(url, headers=headers).text
+            response = requests.get(url, headers=headers).text
             getResults(response)
         except:
             print("=> craigslist_jobs: Going to next function")
