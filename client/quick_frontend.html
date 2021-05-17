@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Practice</h1>
     <script>
         const url = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
 
@@ -17,19 +16,25 @@
                 let index = 0;
                 
                 const body = document.querySelector("body");
+                const h1 = document.createElement("h1");
                 const jobs = document.createElement("div");
 
+                h1.textContent = "DevJobs";
+
+                body.appendChild(h1);
                 body.appendChild(jobs);
 
                 while (index <= data.length) {
                     let jobInfo = data[index];
 
                     const job = document.createElement("div");
+                    const date = document.createElement("span")
                     const title = document.createElement("span");
                     const company = document.createElement("span");
                     const location = document.createElement("span");
                     const linebreak = document.createElement("br");
                     const url = document.createElement("a");
+                    const button = document.createElement("button");
 
                     jobs.className = "jobs";
                     job.className = "job";
@@ -43,23 +48,36 @@
 
                     job.style.display = "flex";
                     job.style.flexDirection = "column";
+                    button.style.width = "100px";
+                    button.style.cursor = "pointer";
+                    url.style.textDecoration = "none";
+                    url.style.color = "inherit";
+                    title.style.textDecoration = "bold";
+                    title.style.fontSize = "20px";
+                    date.style.color = "grey";
+                    company.style.color = "grey";
+                    location.style.color = "grey";
 
+                    const d = new Date(jobInfo.timestamp * 1000);
+                    date.textContent = `Date: ${d.toLocaleString()}`;
                     title.textContent = `Position: ${jobInfo.title}`;
                     company.textContent = `Company: ${jobInfo.company}`;
                     location.textContent = `Location: ${jobInfo.location}`;
                     url.textContent = "Apply"
                     
-                    jobs.appendChild(job)
+
+                    jobs.appendChild(job);
                     job.appendChild(title);
-                    title.after(linebreak)
                     if (company.textContent != "None" || company.textContent != null) {
                         job.appendChild(company);
                     }
-                    if (location.textContent != "None") {
+                    job.appendChild(date);
+                    if (location.textContent != "None" || location.textContent != null) {
                         job.appendChild(location);
                     }
-                    job.appendChild(url);
-                    job.appendChild(linebreak);
+                    button.appendChild(url);
+                    job.appendChild(button);
+                    job.after(linebreak);
 
                     index++;
                 }
