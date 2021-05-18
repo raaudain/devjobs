@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Jobs from "./Jobs";
+import Pagination from "./Pagination"
 
 function Homepage() {
-    const [jobs, setJobs] = useState({});
+    const [jobs, setJobs] = useState([]);
+    const [currPage, setCurrPage] = useState(1);
+    const [jobsPerPage] = useState(30);
 
     useEffect(() => {
         const url = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
@@ -16,23 +20,36 @@ function Homepage() {
           .catch(err => console.log(err.response));
       }, []);
 
+    // Divide jobs into pages
+    const indexOfLastJob = currPage * jobsPerPage;
+    const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+    const currJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
+
+    function paginate(pageNumber) {
+        return setCurrPage(pageNumber)
+    }
+
     return (
         <div className="container">
             <h1>Dev Jobs</h1>
             <div className="jobs-list">
-                {Object.values(jobs).map((job, index) => 
-                    <div className="job-item" key={index}>
-                        <a href={job.url} target="_blank" rel="noopener noreferrer">
-                            <span id="title">{job.title}</span>
-                            <span id="company">{job.company}</span>
-                            <span id="date">{job.timestamp}</span>
-                            <a href={job.source_url} target="_blank" rel="noopener noreferrer">
-                                <span id="source">{job.source}</span>
-                            </a>
-                        </a>
-                    </div>
+                {currJobs.map((job, index) => 
+                    <Jobs 
+                        id={index} 
+                        url={job.url}
+                        title={job.title}
+                        company={job.company}
+                        date={job.date}
+                        source={job.source}
+                        sourceURL={job.source_url}
+                    />
                 )}
             </div>
+            <Pagination 
+                jobsPerPage={jobsPerPage} 
+                totalJobs={jobs.length}
+                paginate={paginate}
+            />
         </div>
     )
 }
