@@ -6,7 +6,7 @@ import Pagination from "./Pagination"
 function Homepage() {
     const [jobs, setJobs] = useState([]);
     const [currPage, setCurrPage] = useState(1);
-    const [jobsPerPage] = useState(30);
+    const [jobsPerPage] = useState(20);
 
     useEffect(() => {
         const url = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
@@ -25,9 +25,6 @@ function Homepage() {
     const indexOfFirstJob = indexOfLastJob - jobsPerPage;
     const currJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
 
-    function paginate(pageNumber) {
-        return setCurrPage(pageNumber)
-    }
 
     return (
         <div className="container">
@@ -39,16 +36,18 @@ function Homepage() {
                         url={job.url}
                         title={job.title}
                         company={job.company}
-                        date={job.date}
+                        timestamp={job.timestamp}
                         source={job.source}
                         sourceURL={job.source_url}
+                        location={job.location}
                     />
                 )}
             </div>
             <Pagination 
                 jobsPerPage={jobsPerPage} 
                 totalJobs={jobs.length}
-                paginate={paginate}
+                currPage={currPage}
+                setCurrPage={setCurrPage}
             />
         </div>
     )

@@ -52,7 +52,7 @@ def getJobs(item):
                 "url": url,
                 "location": location,
                 "source": "Craigslist",
-                "soure_url": "https://www.craigslist.org",
+                "source_url": "https://www.craigslist.org",
                 "category": "job"
             })
             print(f"=> craigslist_jobs: Added {title}")

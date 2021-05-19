@@ -1,0 +1,17 @@
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.job-item {
+    text-decoration: none;
+    color: currentColor;
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
