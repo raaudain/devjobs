@@ -1,6 +1,6 @@
 # import craigslist_gigs
 from . import craigslist_jobs
-from . import crunchyroll
+# from . import crunchyroll
 from . import blend 
 from . import key_values
 from . import protege
@@ -23,10 +23,10 @@ def main():
     blend.main()
     builtin.main()
     craigslist_jobs.main()
-    crunchyroll.main()
     key_values.main()
     nocsok.main()
     protege.main()
+    # crunchyroll.main()
     remote_co.main()
     remoteok.main()
     weworkremotely.main()

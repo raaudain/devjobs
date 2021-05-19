@@ -11,10 +11,10 @@ from .modules import driver
 
 driver = driver.driver
 
-options = webdriver.FirefoxOptions()
-options.add_argument("--headless")
-browser = webdriver.Firefox(executable_path=driver, options=options)
-# browser = webdriver.PhantomJS(executable_path=driver)
+# options = webdriver.FirefoxOptions()
+# options.add_argument("--headless")
+# browser = webdriver.Firefox(executable_path=driver, options=options)
+browser = webdriver.PhantomJS(executable_path=driver)
 
 wait = WebDriverWait(browser, 10)
 

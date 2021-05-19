@@ -18,9 +18,9 @@ data = create_temp_json.data
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
 browser = webdriver.Firefox(executable_path=driver, options=options)
-# browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true'])
+# browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
 
-wait = WebDriverWait(browser, 10)
+wait = WebDriverWait(browser, 30)
 
 def getJobs(item):
     for job in item:
@@ -64,9 +64,9 @@ def getURL():
 
     browser.get(url)
     
-    wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Engineering')]")))
+    wait.until(EC.presence_of_element_located((By.XPATH, "//li[@class='positions-list-item']")))
 
-    response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
+    response = browser.find_element_by_xpath("//html").get_attribute("outerHTML")
     
     getResults(response)
     browser.quit()
