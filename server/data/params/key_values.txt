@@ -1,3 +1,4 @@
+/automattic
 /iora-health
 /duckduckgo
 /cointracker
@@ -23,9 +24,9 @@
 /new-relic
 /github
 /hatch
-/point
-/hipcamp
 /covariant
+/hipcamp
+/point
 /seesaw
 /airtable
 /nerdwallet
@@ -33,12 +34,12 @@
 /alto
 /braid
 /instacart
-/jane
 /nexhealth
-/lightstep
+/jane
 /sparrow
-/webflow
+/lightstep
 /digit
+/webflow
 /readme
 /bombbomb
 /amplitude
@@ -52,7 +53,6 @@
 /flexport
 /enigma
 /labelbox
-/automattic
 /actzero
 /honor
 /dark
@@ -73,8 +73,8 @@
 /connected
 /precious
 /careguide
-/peergrade
 /wove
+/peergrade
 /checkr
 /creator-deck-media
 /buildzoom
