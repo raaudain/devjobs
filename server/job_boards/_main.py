@@ -17,7 +17,6 @@ from git import Repo
 import sys, os
 
 pathToRepo = f"{os.getcwd()}/.git"
-print(pathToRepo)
 commitMessage = "Update json"
 
 def gitPush():
