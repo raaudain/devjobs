@@ -130,6 +130,8 @@ dmypy.json
 
 .gitignore
 /server/geckodriver.log
+/server/ghostdriver.log
 /server/env
 geckodriver.log
+ghostdriver.log
 .DS_Store

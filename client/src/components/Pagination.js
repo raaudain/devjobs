@@ -19,6 +19,10 @@ function Pagination({ jobsPerPage, totalJobs, setCurrPage, currPage }){
         return setCurrPage(currPage+1)
     }
 
+    function page() {
+        return setCurrPage(currPage)
+    }
+
     return (
         <div>
             <button>PREV</button>

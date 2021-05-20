@@ -1,20 +1,34 @@
 # import craigslist_gigs
-from . import craigslist_jobs
-# from . import crunchyroll
-from . import blend 
-from . import key_values
-from . import protege
-from . import nocsok
-from . import remote_co
-from . import remoteok
-from . import weworkremotely
-from . import builtin
-from . import workwithindies
-from .modules import create_temp_json
-from .modules import create_main_json
-from datetime import datetime
-import sys
+from git import Repo
+# from . import craigslist_jobs
+# # from . import crunchyroll
+# from . import blend 
+# from . import key_values
+# from . import protege
+# from . import nocsok
+# from . import remote_co
+# from . import remoteok
+# from . import weworkremotely
+# from . import builtin
+# from . import workwithindies
+# from .modules import create_temp_json
+# from .modules import create_main_json
+# from datetime import datetime
+import sys, os
 
+pathToRepo = f"{os.getcwd()}/.git"
+print(pathToRepo)
+commitMessage = "Update json"
+
+def gitPush():
+    try:
+        repo = Repo(pathToRepo)
+        repo.git.add(update=True)
+        repo.index.commit(commitMessage)
+        origin = repo.remote(name="origin")
+        origin.push()
+    except:
+        print("Some error occured while pushing the code") 
 
 def main():
     print("=> Scanning job boards")
@@ -33,9 +47,12 @@ def main():
     workwithindies.main()
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
+    gitPush()
     print("=> Done")
     print("=> Total time: " + str(datetime.now()-start))
 
 # main()
+gitPush()
+
 
 # sys.exit(0)
