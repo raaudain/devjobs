@@ -16,10 +16,11 @@ from git import Repo
 # from datetime import datetime
 import sys, os
 
-pathToRepo = f"{os.getcwd()}/.git"
-commitMessage = "Update json"
 
 def gitPush():
+    pathToRepo = f"{os.getcwd()}/.git"
+    commitMessage = "Update json"
+    
     try:
         repo = Repo(pathToRepo)
         repo.git.add(update=True)
