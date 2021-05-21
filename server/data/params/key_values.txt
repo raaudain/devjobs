@@ -1,3 +1,5 @@
+/leapfin
+/sparrow
 /automattic
 /iora-health
 /duckduckgo
@@ -24,9 +26,9 @@
 /new-relic
 /github
 /hatch
+/point
 /covariant
 /hipcamp
-/point
 /seesaw
 /airtable
 /nerdwallet
@@ -34,9 +36,8 @@
 /alto
 /braid
 /instacart
-/nexhealth
 /jane
-/sparrow
+/nexhealth
 /lightstep
 /digit
 /webflow
@@ -71,13 +72,11 @@
 /sportsrecruits
 /stitch-fix
 /connected
-/precious
 /careguide
 /wove
 /peergrade
 /checkr
 /creator-deck-media
-/buildzoom
 /bitexpert
 /atlas
 /loylap
