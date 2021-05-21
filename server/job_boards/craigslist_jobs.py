@@ -32,16 +32,11 @@ def getJobs(item):
         date = job.find("time", {"class": "result-date"})["datetime"]
         title = job.find("a", {"class": "result-title hdrlnk"}).text
         url = job.find("a", href=True)["href"]
-        location = str(job.find("span", {"class": "result-hood"}))
-        
-        if location:
-            location = str(job.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
-        else:
-            location = re.findall(r"https://(.*?).craigslist.org", url)
+        location = re.findall(r"https://(.*?).craigslist.org", url)
 
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
-        
+
         if age <= postDate and url not in scraped:
             data.append({
                 "timestamp": postDate,

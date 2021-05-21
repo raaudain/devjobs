@@ -1,5 +1,15 @@
 [
     {
+        "timestamp": 1621641900.0,
+        "title": "Senior Backend Engineer - Elixir",
+        "company": "Remote",
+        "url": "https://www.weworkremotely.com/remote-jobs/remote-senior-backend-engineer-elixir",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
         "timestamp": 1621638120.0,
         "title": "Site Reliability Engineer",
         "company": "Chainlink Labs",
@@ -54,7 +64,9 @@
         "title": "May 27th Open House - Inside Sales Appointment Setters!",
         "company": null,
         "url": "https://detroit.craigslist.org/okl/sof/d/troy-may-27th-open-house-inside-sales/7324880741.html",
-        "location": "None",
+        "location": [
+            "detroit"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -64,13 +76,15 @@
         "title": "Lead UX Designer",
         "company": null,
         "url": "https://dallas.craigslist.org/dal/sof/d/dallas-lead-ux-designer/7324886560.html",
-        "location": "None",
+        "location": [
+            "dallas"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Full-Stack Rails Engineer",
         "company": "Nadine West",
         "url": "https://www.weworkremotely.com/remote-jobs/nadine-west-senior-full-stack-rails-engineer",
@@ -80,7 +94,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Blockchain Developer – Remote, Full-time",
         "company": "Toptal",
         "url": "https://www.weworkremotely.com/remote-jobs/toptal-blockchain-developer-remote-full-time",
@@ -90,7 +104,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Engineer - Remote in Europe - Edtech React.JS",
         "company": "Talis Education Ltd",
         "url": "https://www.weworkremotely.com/remote-jobs/talis-education-ltd-senior-software-engineer-remote-in-europe-edtech-react-js",
@@ -100,7 +114,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Software Engineer (Core Product)",
         "company": "DNSimple",
         "url": "https://www.weworkremotely.com/remote-jobs/dnsimple-software-engineer-core-product",
@@ -110,7 +124,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Lead Engineer ",
         "company": "Holopod ",
         "url": "https://www.weworkremotely.com/remote-jobs/holopod-lead-engineer",
@@ -120,7 +134,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Full Stack Developer",
         "company": "Clean Kitchen",
         "url": "https://www.weworkremotely.com/remote-jobs/clean-kitchen-full-stack-developer",
@@ -130,7 +144,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Lead Ruby Developer",
         "company": "Silverfin",
         "url": "https://www.weworkremotely.com/remote-jobs/silverfin-lead-ruby-developer",
@@ -140,7 +154,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Software Engineer, Pressable",
         "company": "Pressable",
         "url": "https://www.weworkremotely.com/remote-jobs/pressable-software-engineer-pressable",
@@ -150,7 +164,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Software Engineer (Full Stack) ",
         "company": "Affinitiv",
         "url": "https://www.weworkremotely.com/remote-jobs/affinitiv-software-engineer-full-stack",
@@ -160,7 +174,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Audio/Video Software Engineer",
         "company": "Biteable",
         "url": "https://www.weworkremotely.com/remote-jobs/biteable-audio-video-software-engineer",
@@ -170,7 +184,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Software Engineering Manager",
         "company": "Biteable",
         "url": "https://www.weworkremotely.com/remote-jobs/biteable-software-engineering-manager",
@@ -180,7 +194,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Full-Stack Software Engineer",
         "company": "Biteable",
         "url": "https://www.weworkremotely.com/remote-jobs/biteable-full-stack-software-engineer",
@@ -190,7 +204,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Full-Stack (Python React) Engineer",
         "company": "Synergy Sports",
         "url": "https://www.weworkremotely.com/remote-jobs/synergy-sports-senior-full-stack-python-react-engineer-1",
@@ -200,7 +214,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "QA Engineer - Remote (EU)",
         "company": "Yet Another Mail Merge",
         "url": "https://www.weworkremotely.com/remote-jobs/yet-another-mail-merge-qa-engineer-remote-eu",
@@ -210,7 +224,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Lead WordPress Engineer",
         "company": "XWP",
         "url": "https://www.weworkremotely.com/remote-jobs/xwp-lead-wordpress-engineer-1",
@@ -220,7 +234,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Ruby on Rails Engineer",
         "company": "AutoUncle",
         "url": "https://www.weworkremotely.com/remote-jobs/autouncle-senior-ruby-on-rails-engineer",
@@ -230,7 +244,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior React Engineer",
         "company": "Fleetio",
         "url": "https://www.weworkremotely.com/remote-jobs/fleetio-senior-react-engineer-2",
@@ -240,7 +254,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Engineer, Product",
         "company": "Fleetio",
         "url": "https://www.weworkremotely.com/remote-jobs/fleetio-senior-software-engineer-product-2",
@@ -250,7 +264,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "JS Full Stack Engineer",
         "company": "Filestage",
         "url": "https://www.weworkremotely.com/remote-jobs/filestage-js-full-stack-engineer",
@@ -260,7 +274,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Full Stack Engineer (Remote, Europe)",
         "company": "Stacker",
         "url": "https://www.weworkremotely.com/remote-jobs/stacker-full-stack-engineer-remote-europe",
@@ -270,7 +284,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Full-Stack Software Engineer",
         "company": "Cloudforecast.io",
         "url": "https://www.weworkremotely.com/remote-jobs/cloudforecast-io-full-stack-software-engineer",
@@ -280,7 +294,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior PHP Developer",
         "company": "Defiant, Inc.",
         "url": "https://www.weworkremotely.com/remote-jobs/defiant-inc-senior-php-developer-1",
@@ -290,7 +304,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Full-Stack Ruby on Rails Engineer",
         "company": "Wealthbox",
         "url": "https://www.weworkremotely.com/remote-jobs/wealthbox-senior-full-stack-ruby-on-rails-engineer-1",
@@ -300,7 +314,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Full Stack JavaScript Developer and Consultant (Full time, Remote)",
         "company": "Bitovi ",
         "url": "https://www.weworkremotely.com/remote-jobs/bitovi-full-stack-javascript-developer-and-consultant-full-time-remote",
@@ -310,7 +324,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Engineer - Product Development",
         "company": "Power Diary",
         "url": "https://www.weworkremotely.com/remote-jobs/power-diary-senior-software-engineer-product-development",
@@ -320,7 +334,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Application Engineer (PHP)",
         "company": "Float",
         "url": "https://www.weworkremotely.com/remote-jobs/float-senior-application-engineer-php",
@@ -330,7 +344,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Matrix.org Engineer",
         "company": "Automattic",
         "url": "https://www.weworkremotely.com/remote-jobs/automattic-matrix-org-engineer",
@@ -340,7 +354,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Staff Ruby on Rails Engineer",
         "company": "Navis, LLC",
         "url": "https://www.weworkremotely.com/remote-jobs/navis-llc-senior-staff-ruby-on-rails-engineer",
@@ -350,7 +364,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Head of Data Engineering",
         "company": "GlossGenius ",
         "url": "https://www.weworkremotely.com/remote-jobs/glossgenius-head-of-data-engineering",
@@ -360,7 +374,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Staff Software Engineer, Payments",
         "company": "GlossGenius ",
         "url": "https://www.weworkremotely.com/remote-jobs/glossgenius-staff-software-engineer-payments",
@@ -370,7 +384,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior DevOps Engineer",
         "company": "Sphinx Defense",
         "url": "https://www.weworkremotely.com/remote-jobs/sphinx-defense-senior-devops-engineer-1",
@@ -380,17 +394,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
-        "title": "Full Stack Developer",
-        "company": "Analog Republic",
-        "url": "https://www.weworkremotely.com/remote-jobs/analog-republic-full-stack-developer-1",
-        "location": "Americas Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Web Developer",
         "company": "Bear Group",
         "url": "https://www.weworkremotely.com/remote-jobs/bear-group-web-developer-3",
@@ -400,17 +404,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
-        "title": "Senior WordPress & WooCommerce Plugin Developer",
-        "company": "Barn2 Plugins",
-        "url": "https://www.weworkremotely.com/remote-jobs/barn2-plugins-senior-wordpress-woocommerce-plugin-developer",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Front-end Engineer",
         "company": "Iterative",
         "url": "https://www.weworkremotely.com/remote-jobs/iterative-senior-front-end-engineer",
@@ -420,7 +414,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Product Manager: API and Integrations",
         "company": "Sierra Interactive",
         "url": "https://www.weworkremotely.com/listings/sierra-interactive-product-manager-api-and-integrations",
@@ -430,7 +424,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. Software Developer (C/C++)",
         "company": "Hypergiant",
         "url": "https://www.weworkremotely.com/remote-jobs/hypergiant-sr-software-developer-c-c",
@@ -440,7 +434,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Engineer - Open Source, Dev Tools",
         "company": "Iterative",
         "url": "https://www.weworkremotely.com/remote-jobs/iterative-senior-software-engineer-open-source-dev-tools-3",
@@ -450,7 +444,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Open Source Developer & DevOps (Python, Django, React, AWS/OpenStack)",
         "company": "OpenCraft",
         "url": "https://www.weworkremotely.com/remote-jobs/opencraft-senior-open-source-developer-devops-python-django-react-aws-openstack",
@@ -460,7 +454,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Lead Quality Assurance Engineer",
         "company": "Drive Commerce",
         "url": "https://www.weworkremotely.com/remote-jobs/drive-commerce-lead-quality-assurance-engineer",
@@ -470,7 +464,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. iOS Developer",
         "company": "Hypergiant",
         "url": "https://www.weworkremotely.com/remote-jobs/hypergiant-sr-ios-developer",
@@ -480,7 +474,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. Android Developer ",
         "company": "Hypergiant",
         "url": "https://www.weworkremotely.com/remote-jobs/hypergiant-sr-android-developer",
@@ -490,7 +484,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "WordPress Developers",
         "company": "Lasso",
         "url": "https://www.weworkremotely.com/remote-jobs/lasso-wordpress-developers",
@@ -500,7 +494,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Shopify Developer (Remote + Flexible)",
         "company": "Storetasker",
         "url": "https://www.weworkremotely.com/remote-jobs/storetasker-senior-shopify-developer-remote-flexible-1",
@@ -510,7 +504,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "JavaScript Developer",
         "company": "Kinsta",
         "url": "https://www.weworkremotely.com/remote-jobs/kinsta-javascript-developer",
@@ -520,7 +514,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Full Stack WordPress Developer",
         "company": "Reaktiv",
         "url": "https://www.weworkremotely.com/remote-jobs/reaktiv-senior-full-stack-wordpress-developer",
@@ -530,7 +524,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Web Developer",
         "company": "Loren Polster Design Solutions",
         "url": "https://www.weworkremotely.com/remote-jobs/loren-polster-design-solutions-senior-web-developer",
@@ -540,7 +534,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Front-end Developer",
         "company": "Practice",
         "url": "https://www.weworkremotely.com/remote-jobs/practice-senior-front-end-developer",
@@ -550,7 +544,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Front-end Developer (React/Javascript)",
         "company": "Input Logic",
         "url": "https://www.weworkremotely.com/remote-jobs/input-logic-senior-front-end-developer-react-javascript",
@@ -560,7 +554,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Experienced React Developer",
         "company": "Tanooki Labs",
         "url": "https://www.weworkremotely.com/remote-jobs/tanooki-labs-experienced-react-developer",
@@ -570,7 +564,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Remote Contract React Developer",
         "company": "G2i Inc.",
         "url": "https://www.weworkremotely.com/remote-jobs/g2i-inc-remote-contract-react-developer",
@@ -580,7 +574,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Frontend Engineer (React/ThreeJS)",
         "company": "Spline",
         "url": "https://www.weworkremotely.com/remote-jobs/spline-senior-frontend-engineer-react-threejs",
@@ -590,7 +584,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Engineer (3D/ThreeJS)",
         "company": "Spline",
         "url": "https://www.weworkremotely.com/remote-jobs/spline-senior-software-engineer-3d-threejs",
@@ -600,7 +594,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Web Developer",
         "company": "Chameleon",
         "url": "https://www.weworkremotely.com/remote-jobs/chameleon-web-developer",
@@ -610,7 +604,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Frontend Engineer - Marketing",
         "company": "Buffer",
         "url": "https://www.weworkremotely.com/remote-jobs/buffer-frontend-engineer-marketing",
@@ -620,7 +614,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Frontend Engineer (React)",
         "company": "Panther",
         "url": "https://www.weworkremotely.com/remote-jobs/panther-frontend-engineer-react",
@@ -630,7 +624,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Frontend Developer",
         "company": "Half Helix",
         "url": "https://www.weworkremotely.com/remote-jobs/half-helix-frontend-developer",
@@ -640,7 +634,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Front-end Developer",
         "company": "Etch",
         "url": "https://www.weworkremotely.com/remote-jobs/etch-front-end-developer-1",
@@ -650,7 +644,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Frontend Engineer (React, 100% Remote)",
         "company": "Close",
         "url": "https://www.weworkremotely.com/remote-jobs/close-senior-frontend-engineer-react-100-remote",
@@ -660,7 +654,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. Frontend Developer (JavaScript/React/Preact)",
         "company": "Hypergiant",
         "url": "https://www.weworkremotely.com/remote-jobs/hypergiant-sr-frontend-developer-javascript-react-preact",
@@ -670,7 +664,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Frontend Engineer",
         "company": "TestGorilla",
         "url": "https://www.weworkremotely.com/remote-jobs/testgorilla-senior-frontend-engineer",
@@ -680,7 +674,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. JavaScript Developer and Consultant (100% remote)",
         "company": "Bitovi ",
         "url": "https://www.weworkremotely.com/remote-jobs/bitovi-sr-javascript-developer-and-consultant-100-remote",
@@ -690,7 +684,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Angular Developer Consultant (Full time, 100% Remote)",
         "company": "Bitovi ",
         "url": "https://www.weworkremotely.com/remote-jobs/bitovi-angular-developer-consultant-full-time-100-remote",
@@ -700,7 +694,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Sr. Front-End Developer - React (FT, Remote)",
         "company": "Bitovi ",
         "url": "https://www.weworkremotely.com/remote-jobs/bitovi-sr-front-end-developer-react-ft-remote",
@@ -710,7 +704,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Frontend Developer",
         "company": "Netalico",
         "url": "https://www.weworkremotely.com/remote-jobs/netalico-frontend-developer",
@@ -720,7 +714,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior WordPress Backend Developer",
         "company": "BuddyBoss",
         "url": "https://www.weworkremotely.com/remote-jobs/buddyboss-senior-wordpress-backend-developer",
@@ -730,7 +724,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Software Engineer (Crawling/Reverse engineering)",
         "company": "Argyle",
         "url": "https://www.weworkremotely.com/remote-jobs/argyle-software-engineer-crawling-reverse-engineering-3",
@@ -740,7 +734,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Java/Scala Developer",
         "company": "Nearsure",
         "url": "https://www.weworkremotely.com/remote-jobs/nearsure-senior-java-scala-developer",
@@ -750,7 +744,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Platform Engineer (Java / Spring)",
         "company": "YouCanBookme",
         "url": "https://www.weworkremotely.com/remote-jobs/youcanbookme-platform-engineer-java-spring",
@@ -760,7 +754,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Ruby on Rails Developer – Remote, Full-time",
         "company": "Toptal",
         "url": "https://www.weworkremotely.com/remote-jobs/toptal-ruby-on-rails-developer-remote-full-time",
@@ -770,7 +764,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Software Consultant - Ruby",
         "company": "Test Double ",
         "url": "https://www.weworkremotely.com/remote-jobs/test-double-senior-software-consultant-ruby-1",
@@ -780,7 +774,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Backend Engineer (Node.js + Typescript)",
         "company": "Panther",
         "url": "https://www.weworkremotely.com/remote-jobs/panther-backend-engineer-node-js-typescript",
@@ -790,7 +784,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Backend Web Developer (.NET / MongoDB)",
         "company": "Secure Privacy",
         "url": "https://www.weworkremotely.com/remote-jobs/secure-privacy-senior-backend-web-developer-net-mongodb",
@@ -800,7 +794,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Backend Laravel Engineer",
         "company": "Rally",
         "url": "https://www.weworkremotely.com/remote-jobs/rally-senior-backend-laravel-engineer-1",
@@ -810,7 +804,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "(1) Lead / (2) Senior Ruby on Rails Developers - Starting date June 2021",
         "company": "Farmgirl Flowers",
         "url": "https://www.weworkremotely.com/remote-jobs/farmgirl-flowers-1-lead-2-senior-ruby-on-rails-developers-starting-date-june",
@@ -820,7 +814,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Backend Engineer (Rails) @ CartKit",
         "company": "CartKit",
         "url": "https://www.weworkremotely.com/remote-jobs/cartkit-senior-backend-engineer-rails-cartkit",
@@ -830,17 +824,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
-        "title": "Backend Developer and Consultant (FT, Remote)",
-        "company": "Bitovi ",
-        "url": "https://www.weworkremotely.com/remote-jobs/bitovi-backend-developer-and-consultant-ft-remote",
-        "location": "North America Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Senior Backend Engineer",
         "company": "TestGorilla",
         "url": "https://www.weworkremotely.com/remote-jobs/testgorilla-senior-backend-engineer",
@@ -850,11 +834,81 @@
         "category": "job"
     },
     {
-        "timestamp": 1621614300.0,
+        "timestamp": 1621614720.0,
         "title": "Mid-level PHP Developer",
         "company": "Order Desk",
         "url": "https://www.weworkremotely.com/remote-jobs/order-desk-mid-level-php-developer-1",
         "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Site Reliability Engineer",
+        "company": "Toggl",
+        "url": "https://www.weworkremotely.com/remote-jobs/toggl-site-reliability-engineer",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Chief Technical Officer",
+        "company": "OtakuToons",
+        "url": "https://www.weworkremotely.com/remote-jobs/otakutoons-chief-technical-officer",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Platform Engineer",
+        "company": "Biteable",
+        "url": "https://www.weworkremotely.com/remote-jobs/biteable-platform-engineer",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Senior Backend Engineer - DevOps/SRE [B2B SaaS]",
+        "company": "Sitemate",
+        "url": "https://www.weworkremotely.com/remote-jobs/sitemate-senior-backend-engineer-devops-sre-b2b-saas",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Senior Operations / Security Engineer - AWS Required",
+        "company": "Defiant, Inc.",
+        "url": "https://www.weworkremotely.com/remote-jobs/defiant-inc-senior-operations-security-engineer-aws-required",
+        "location": "USA Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "Head of DevOps",
+        "company": "GlossGenius ",
+        "url": "https://www.weworkremotely.com/remote-jobs/glossgenius-head-of-devops",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621614720.0,
+        "title": "SRE and DevOps Consultant",
+        "company": "Bitovi ",
+        "url": "https://www.weworkremotely.com/remote-jobs/bitovi-sre-and-devops-consultant-2",
+        "location": "North America Only",
         "source": "WeWorkRemotely",
         "source_url": "https://weworkremotely.com/",
         "category": "job"
@@ -865,76 +919,6 @@
         "company": "Optimile",
         "url": "https://www.weworkremotely.com/remote-jobs/optimile-back-end-developer-e-mobility-remote-eu",
         "location": "Europe Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Site Reliability Engineer",
-        "company": "Toggl",
-        "url": "https://www.weworkremotely.com/remote-jobs/toggl-site-reliability-engineer",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Chief Technical Officer",
-        "company": "OtakuToons",
-        "url": "https://www.weworkremotely.com/remote-jobs/otakutoons-chief-technical-officer",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Platform Engineer",
-        "company": "Biteable",
-        "url": "https://www.weworkremotely.com/remote-jobs/biteable-platform-engineer",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Senior Backend Engineer - DevOps/SRE [B2B SaaS]",
-        "company": "Sitemate",
-        "url": "https://www.weworkremotely.com/remote-jobs/sitemate-senior-backend-engineer-devops-sre-b2b-saas",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Senior Operations / Security Engineer - AWS Required",
-        "company": "Defiant, Inc.",
-        "url": "https://www.weworkremotely.com/remote-jobs/defiant-inc-senior-operations-security-engineer-aws-required",
-        "location": "USA Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "Head of DevOps",
-        "company": "GlossGenius ",
-        "url": "https://www.weworkremotely.com/remote-jobs/glossgenius-head-of-devops",
-        "location": "Anywhere (100% Remote) Only",
-        "source": "WeWorkRemotely",
-        "source_url": "https://weworkremotely.com/",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621614300.0,
-        "title": "SRE and DevOps Consultant",
-        "company": "Bitovi ",
-        "url": "https://www.weworkremotely.com/remote-jobs/bitovi-sre-and-devops-consultant-2",
-        "location": "North America Only",
         "source": "WeWorkRemotely",
         "source_url": "https://weworkremotely.com/",
         "category": "job"
@@ -954,7 +938,9 @@
         "title": "SOFTWARE DEVELOPER",
         "company": null,
         "url": "https://vancouver.craigslist.org/rds/sof/d/langley-township-north-software/7324924183.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -974,13 +960,15 @@
         "title": "Sr. Embedded Software Engineer",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-sr-embedded-software-engineer/7324910934.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621610700.0,
+        "timestamp": 1621611120.0,
         "title": "Senior Full-Stack Developer",
         "company": "OCCRP - Organized Crime and Corruption Reporting Project",
         "url": "https://remote.co/job/senior-full-stack-developer-16/",
@@ -7913,7 +7901,7 @@
         "timestamp": 1621580400.0,
         "title": "Software Engineer (React, TypeScript, GraphQL, and Node.js)",
         "company": "Coast",
-        "url": "/cdn-cgi/l/email-protection#fd97929f8ed698939abd9e929c8e899c8d8dd39e9290",
+        "url": "/cdn-cgi/l/email-protection#5933363b2a723c373e193a36382a2d382929773a3634",
         "location": "San Francisco, CA or Remote",
         "source": "Key Values",
         "source_url": "https://www.keyvalues.com",
@@ -8823,7 +8811,7 @@
         "timestamp": 1621580400.0,
         "title": "Software Developer",
         "company": "Loylap",
-        "url": "/cdn-cgi/l/email-protection#512234303f113d3e283d30217f323e3c",
+        "url": "/cdn-cgi/l/email-protection#c9baaca8a789a5a6b0a5a8b9e7aaa6a4",
         "location": "Dublin, Ireland",
         "source": "Key Values",
         "source_url": "https://www.keyvalues.com",
@@ -10034,7 +10022,9 @@
         "title": "Business Analyst for Growing Mid-Sized Healthcare Firm",
         "company": null,
         "url": "https://losangeles.craigslist.org/sfv/sof/d/agoura-hills-business-analyst-for/7324751571.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10094,7 +10084,9 @@
         "title": "Director of Engineering / Software Development Manager / Scrum Master",
         "company": null,
         "url": "https://lasvegas.craigslist.org/sof/d/las-vegas-director-of-engineering/7324709066.html",
-        "location": "None",
+        "location": [
+            "lasvegas"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10104,7 +10096,9 @@
         "title": "Director of Engineering / Software Development Manager / Scrum Master",
         "company": null,
         "url": "https://losangeles.craigslist.org/wst/sof/d/santa-monica-director-of-engineering/7324706769.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10114,7 +10108,9 @@
         "title": "Director of Engineering / Software Development Manager / Scrum Master",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/palo-alto-director-of-engineering/7324704469.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10134,7 +10130,9 @@
         "title": "Director of Engineering / Software Development Manager / Scrum Master",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-director-of-engineering/7324701321.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10144,7 +10142,9 @@
         "title": "APPLICATION SYSTEMS MANAGER - Kootenai County",
         "company": null,
         "url": "https://spokane.craigslist.org/sof/d/coeur-alene-application-systems-manager/7324698167.html",
-        "location": "None",
+        "location": [
+            "spokane"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10164,23 +10164,15 @@
         "title": "Cloud Engineer",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-cloud-engineer/7324604321.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621553100.0,
-        "title": "Senior Software Engineer, Teacher Analytics",
-        "company": null,
-        "url": "https://sfbay.craigslist.org/pen/sof/d/san-mateo-senior-software-engineer/7324667767.html",
-        "location": "None",
-        "source": "Craigslist",
-        "source_url": "https://www.craigslist.org",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621553100.0,
+        "timestamp": 1621553520.0,
         "title": "Fullstack Engineer, Product Engineering",
         "company": "Kentik",
         "url": "https://remote.co/job/fullstack-engineer-product-engineering/",
@@ -10190,7 +10182,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621553100.0,
+        "timestamp": 1621553520.0,
         "title": "Backend Engineer, Kentik Data Engine; N. America Time Zones",
         "company": "Kentik",
         "url": "https://remote.co/job/backend-engineer-kentik-data-engine/",
@@ -10200,7 +10192,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621553100.0,
+        "timestamp": 1621553520.0,
         "title": "Backend Engineer, Platform Services: N. America time zones",
         "company": "Kentik",
         "url": "https://remote.co/job/backend-engineer-platform-services/",
@@ -10210,13 +10202,25 @@
         "category": "job"
     },
     {
-        "timestamp": 1621553100.0,
+        "timestamp": 1621553520.0,
         "title": "Senior Software Engineer Ruby on Rails",
         "company": "SimpleMDM",
         "url": "https://remoteok.io/remote-jobs/102061-remote-senior-software-engineer-ruby-on-rails-simplemdm",
         "location": "North America",
         "source": "Remote OK",
         "source_url": "https://remoteok.io/",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621553100.0,
+        "title": "Senior Software Engineer, Teacher Analytics",
+        "company": null,
+        "url": "https://sfbay.craigslist.org/pen/sof/d/san-mateo-senior-software-engineer/7324667767.html",
+        "location": [
+            "sfbay"
+        ],
+        "source": "Craigslist",
+        "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
@@ -10234,7 +10238,9 @@
         "title": "Front-End IoT / Web Developer",
         "company": null,
         "url": "https://denver.craigslist.org/sof/d/denver-front-end-iot-web-developer/7324629362.html",
-        "location": "None",
+        "location": [
+            "denver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10264,7 +10270,9 @@
         "title": "Systems Engineer",
         "company": null,
         "url": "https://sfbay.craigslist.org/eby/sof/d/fremont-systems-engineer/7324635074.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10274,7 +10282,9 @@
         "title": "Mid-Level Full Stack Software Engineer",
         "company": null,
         "url": "https://fortmyers.craigslist.org/col/sof/d/naples-mid-level-full-stack-software/7324517836.html",
-        "location": "None",
+        "location": [
+            "fortmyers"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10284,7 +10294,9 @@
         "title": "PHP Software Engineer",
         "company": null,
         "url": "https://fortmyers.craigslist.org/col/sof/d/naples-php-software-engineer/7324512886.html",
-        "location": "None",
+        "location": [
+            "fortmyers"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10294,7 +10306,9 @@
         "title": "Asbestos Workers Needed!!",
         "company": null,
         "url": "https://miami.craigslist.org/mdc/sof/d/miami-asbestos-workers-needed/7324511838.html",
-        "location": "None",
+        "location": [
+            "miami"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10304,7 +10318,9 @@
         "title": "DevOps Engineer",
         "company": null,
         "url": "https://fortmyers.craigslist.org/col/sof/d/naples-devops-engineer/7324505950.html",
-        "location": "None",
+        "location": [
+            "fortmyers"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10334,7 +10350,9 @@
         "title": "Freelance Web Automation Specialist Wanted",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-freelance-web-automation/7324494689.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10344,7 +10362,9 @@
         "title": "Software Engineer - New Grad (NC)",
         "company": null,
         "url": "https://raleigh.craigslist.org/sof/d/cary-software-engineer-new-grad-nc/7324486892.html",
-        "location": "None",
+        "location": [
+            "raleigh"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10354,7 +10374,9 @@
         "title": "Python and Appsheet",
         "company": null,
         "url": "https://baltimore.craigslist.org/sof/d/ellicott-city-python-and-appsheet/7324479524.html",
-        "location": "None",
+        "location": [
+            "baltimore"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10364,13 +10386,15 @@
         "title": "Client Support Manager",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/cedar-park-client-support-manager/7324489634.html",
-        "location": "Cedar Park, TX",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621538700.0,
+        "timestamp": 1621539120.0,
         "title": "Senior Software Engineer",
         "company": "Thorn",
         "url": "https://remote.co/job/senior-software-engineer-163/",
@@ -10384,7 +10408,9 @@
         "title": "Frontend Software Developer Entry Level - Remote - H2X Engineering",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-frontend-software-developer/7324540271.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10394,7 +10420,9 @@
         "title": "Experienced developer for new startup matching students with careers",
         "company": null,
         "url": "https://sfbay.craigslist.org/sby/sof/d/san-jose-experienced-developer-for-new/7324539056.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10404,7 +10432,9 @@
         "title": "Python Developer,  In House Position",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-python-developer-in-house/7324461620.html",
-        "location": "Austin",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10424,7 +10454,9 @@
         "title": "Business Systems Analyst",
         "company": null,
         "url": "https://sfbay.craigslist.org/eby/sof/d/fremont-business-systems-analyst/7324530592.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10434,13 +10466,15 @@
         "title": "Senior Full-stack Engineer | HireArt",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-senior-full-stack-engineer/7324412307.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621535100.0,
+        "timestamp": 1621535520.0,
         "title": "Senior Full Stack Engineer",
         "company": "Thorn",
         "url": "https://remote.co/job/senior-full-stack-engineer-26/",
@@ -10464,7 +10498,9 @@
         "title": "Autonomous Vehicle Operator | $20 per hour",
         "company": null,
         "url": "https://neworleans.craigslist.org/sof/d/new-orleans-autonomous-vehicle-operator/7324412545.html",
-        "location": "None",
+        "location": [
+            "neworleans"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10474,7 +10510,9 @@
         "title": "Autonomous Vehicle Operator | $22 - $25 per hour",
         "company": null,
         "url": "https://sanantonio.craigslist.org/sof/d/san-antonio-autonomous-vehicle-operator/7324412773.html",
-        "location": "None",
+        "location": [
+            "sanantonio"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10484,7 +10522,9 @@
         "title": "Software Engineer - New Grad (CA)",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/san-mateo-software-engineer-new-grad-ca/7324475560.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10494,7 +10534,9 @@
         "title": "Product Operations Analyst II",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-product-operations/7324469574.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10504,7 +10546,9 @@
         "title": "Online Order / Data Entry Specialist",
         "company": null,
         "url": "https://tampa.craigslist.org/hil/sof/d/tampa-online-order-data-entry-specialist/7324358939.html",
-        "location": "None",
+        "location": [
+            "tampa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10524,7 +10568,9 @@
         "title": "Senior Web Developer",
         "company": null,
         "url": "https://seattle.craigslist.org/sno/sof/d/redmond-senior-web-developer/7324453131.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10534,7 +10580,9 @@
         "title": "Web Developer",
         "company": null,
         "url": "https://seattle.craigslist.org/sno/sof/d/redmond-web-developer/7324452359.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10550,7 +10598,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621527900.0,
+        "timestamp": 1621528320.0,
         "title": "FullStack Engineer - CX",
         "company": "FullContact",
         "url": "https://remote.co/job/fullstack-engineer-cx/",
@@ -10560,7 +10608,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621527900.0,
+        "timestamp": 1621528320.0,
         "title": "Senior Backend Engineer",
         "company": "Stash",
         "url": "https://remote.co/job/senior-backend-engineer-27/",
@@ -10594,7 +10642,9 @@
         "title": "Senior Embedded Hardware Design Engineer",
         "company": null,
         "url": "https://roanoke.craigslist.org/sof/d/cloverdale-senior-embedded-hardware/7324315266.html",
-        "location": "None",
+        "location": [
+            "roanoke"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10604,7 +10654,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-software-engineer/7324312426.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10614,7 +10666,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/roxbury-software-engineer/7324312428.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10624,7 +10678,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-software-engineer/7324312413.html",
-        "location": "None",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10644,7 +10700,9 @@
         "title": "Mobile Developer",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/san-francisco-mobile-developer/7324312431.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10654,7 +10712,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/san-francisco-software-engineer/7324312419.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10694,7 +10754,9 @@
         "title": "Video Game coding",
         "company": null,
         "url": "https://redding.craigslist.org/sof/d/redding-video-game-coding/7324296089.html",
-        "location": "None",
+        "location": [
+            "redding"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10724,7 +10786,9 @@
         "title": "Angular UI Developer - Contract Position",
         "company": null,
         "url": "https://portland.craigslist.org/clk/sof/d/vancouver-angular-ui-developer-contract/7324289870.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10804,7 +10868,9 @@
         "title": "Product & Marketing Associate of Social Livestreaming App",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-product-marketing-associate-of/7324119802.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10814,7 +10880,9 @@
         "title": "Full stack developer wanted",
         "company": null,
         "url": "https://inlandempire.craigslist.org/sof/d/ontario-full-stack-developer-wanted/7324181202.html",
-        "location": "None",
+        "location": [
+            "inlandempire"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10824,7 +10892,9 @@
         "title": "Part-time Coding Tutors",
         "company": null,
         "url": "https://sfbay.craigslist.org/sby/sof/d/san-jose-part-time-coding-tutors/7324168534.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10844,7 +10914,9 @@
         "title": "Filter Programmer",
         "company": null,
         "url": "https://vermont.craigslist.org/sof/d/chester-filter-programmer/7324071970.html",
-        "location": "None",
+        "location": [
+            "vermont"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10874,7 +10946,9 @@
         "title": "Business Systems Analyst",
         "company": null,
         "url": "https://calgary.craigslist.org/sof/d/victoria-business-systems-analyst/7324101911.html",
-        "location": "Move to Victoria",
+        "location": [
+            "calgary"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10884,7 +10958,9 @@
         "title": "Looking for a Big Data Instructior",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/jackson-heights-looking-for-big-data/7324051285.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10914,7 +10990,9 @@
         "title": "Senior QA Tester(Game Studio)",
         "company": null,
         "url": "https://seattle.craigslist.org/est/sof/d/bellevue-senior-qa-testergame-studio/7324138289.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10934,7 +11012,9 @@
         "title": "Senior Business Systems Analyst",
         "company": null,
         "url": "https://calgary.craigslist.org/sof/d/victoria-senior-business-systems-analyst/7314954102.html",
-        "location": "Move to Victoria",
+        "location": [
+            "calgary"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10944,7 +11024,9 @@
         "title": "Sr. Contact Centre Business Systems Analyst - Cisco",
         "company": null,
         "url": "https://calgary.craigslist.org/sof/d/victoria-sr-contact-centre-business/7319562198.html",
-        "location": "Move to Victoria",
+        "location": [
+            "calgary"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -10984,7 +11066,9 @@
         "title": "Order Processing / Sales Team",
         "company": null,
         "url": "https://siouxfalls.craigslist.org/sof/d/garretson-order-processing-sales-team/7324018174.html",
-        "location": "None",
+        "location": [
+            "siouxfalls"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11004,7 +11088,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://philadelphia.craigslist.org/sof/d/philadelphia-data-science-fellowship/7323973041.html",
-        "location": "None",
+        "location": [
+            "philadelphia"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11014,7 +11100,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://philadelphia.craigslist.org/sof/d/philadelphia-product-management/7323972898.html",
-        "location": "None",
+        "location": [
+            "philadelphia"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11024,7 +11112,9 @@
         "title": "Autonomous Vehicle Operator | $16 per hour",
         "company": null,
         "url": "https://indianapolis.craigslist.org/sof/d/indianapolis-autonomous-vehicle/7323972891.html",
-        "location": "None",
+        "location": [
+            "indianapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11034,7 +11124,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://philadelphia.craigslist.org/sof/d/philadelphia-software-engineering/7323972633.html",
-        "location": "None",
+        "location": [
+            "philadelphia"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11044,7 +11136,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://detroit.craigslist.org/wyn/sof/d/detroit-product-management-fellowship/7323972163.html",
-        "location": "None",
+        "location": [
+            "detroit"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11054,7 +11148,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://detroit.craigslist.org/wyn/sof/d/detroit-software-engineering-fellowship/7323971676.html",
-        "location": "None",
+        "location": [
+            "detroit"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11064,7 +11160,9 @@
         "title": "Autonomous Vehicle Operator | $20 - $25 per hour",
         "company": null,
         "url": "https://toronto.craigslist.org/tor/sof/d/downtown-toronto-autonomous-vehicle/7323971422.html",
-        "location": "None",
+        "location": [
+            "toronto"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11074,7 +11172,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://atlanta.craigslist.org/atl/sof/d/atlanta-product-management-fellowship/7323970363.html",
-        "location": "None",
+        "location": [
+            "atlanta"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11084,7 +11184,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://atlanta.craigslist.org/atl/sof/d/atlanta-data-science-fellowship/7323969388.html",
-        "location": "None",
+        "location": [
+            "atlanta"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11094,7 +11196,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://atlanta.craigslist.org/atl/sof/d/atlanta-software-engineering-fellowship/7323969000.html",
-        "location": "None",
+        "location": [
+            "atlanta"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11104,7 +11208,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-software-engineering/7323966257.html",
-        "location": "None",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11114,7 +11220,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-data-science-fellowship/7323965439.html",
-        "location": "None",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11124,7 +11232,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-product-management-fellowship/7323965286.html",
-        "location": "None",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11134,7 +11244,9 @@
         "title": "Cell Phone & Computer Repair",
         "company": null,
         "url": "https://jacksonville.craigslist.org/sof/d/jacksonville-cell-phone-computer-repair/7323960806.html",
-        "location": "None",
+        "location": [
+            "jacksonville"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11144,7 +11256,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-data-science-fellowship/7323959337.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11154,7 +11268,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-product-management-fellowship/7323959163.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11164,7 +11280,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-software-engineering-fellowship/7323958513.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11174,7 +11292,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-city-product-management/7323957923.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11184,7 +11304,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-city-software-engineering/7323957688.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11194,7 +11316,9 @@
         "title": "Full Stack Developer/Programmer",
         "company": null,
         "url": "https://eugene.craigslist.org/sof/d/springfield-full-stack-developer/7324067540.html",
-        "location": "None",
+        "location": [
+            "eugene"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11214,7 +11338,9 @@
         "title": "MiLB FIELDf/x System Operator: Carolina Mudcats",
         "company": null,
         "url": "https://raleigh.craigslist.org/sof/d/zebulon-milb-fieldf-system-operator/7323946359.html",
-        "location": "None",
+        "location": [
+            "raleigh"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11224,7 +11350,9 @@
         "title": "Autonomous Vehicle Operations Specialist | $20 - $23 per hour",
         "company": null,
         "url": "https://neworleans.craigslist.org/sof/d/new-orleans-autonomous-vehicle/7323972310.html",
-        "location": "None",
+        "location": [
+            "neworleans"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11234,7 +11362,9 @@
         "title": "Autonomous Vehicle Operator | $20 per hour",
         "company": null,
         "url": "https://fayar.craigslist.org/sof/d/bentonville-autonomous-vehicle-operator/7323972636.html",
-        "location": "Bentonville",
+        "location": [
+            "fayar"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11244,7 +11374,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://houston.craigslist.org/sof/d/houston-data-science-fellowship/7323970500.html",
-        "location": "None",
+        "location": [
+            "houston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11254,7 +11386,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://houston.craigslist.org/sof/d/houston-product-management-fellowship/7323970235.html",
-        "location": "None",
+        "location": [
+            "houston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11264,7 +11398,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://chicago.craigslist.org/chc/sof/d/chicago-data-science-fellowship/7323967120.html",
-        "location": "None",
+        "location": [
+            "chicago"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11274,7 +11410,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://chicago.craigslist.org/chc/sof/d/chicago-product-management-fellowship/7323966921.html",
-        "location": "None",
+        "location": [
+            "chicago"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11284,7 +11422,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://chicago.craigslist.org/chc/sof/d/chicago-software-engineering-fellowship/7323966533.html",
-        "location": "None",
+        "location": [
+            "chicago"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11294,7 +11434,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://minneapolis.craigslist.org/hnp/sof/d/minneapolis-data-science-fellowship/7323963381.html",
-        "location": "None",
+        "location": [
+            "minneapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11304,7 +11446,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://minneapolis.craigslist.org/hnp/sof/d/minneapolis-product-management/7323963245.html",
-        "location": "None",
+        "location": [
+            "minneapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11314,7 +11458,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://minneapolis.craigslist.org/hnp/sof/d/minneapolis-software-engineering/7323962996.html",
-        "location": "None",
+        "location": [
+            "minneapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11324,7 +11470,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-product-management-fellowship/7323956431.html",
-        "location": "None",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11334,7 +11482,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-software-engineering-fellowship/7323956151.html",
-        "location": "None",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11344,7 +11494,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-data-science-fellowship/7323955891.html",
-        "location": "None",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11354,7 +11506,9 @@
         "title": "App Developer - LOCAL ONLY",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-app-developer-local-only/7323902293.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11364,7 +11518,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://denver.craigslist.org/sof/d/denver-data-science-fellowship/7323971368.html",
-        "location": "None",
+        "location": [
+            "denver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11374,7 +11530,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://denver.craigslist.org/sof/d/denver-product-management-fellowship/7323971224.html",
-        "location": "None",
+        "location": [
+            "denver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11384,7 +11542,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://denver.craigslist.org/sof/d/denver-software-engineering-fellowship/7323970949.html",
-        "location": "None",
+        "location": [
+            "denver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11394,7 +11554,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://phoenix.craigslist.org/cph/sof/d/phoenix-data-science-fellowship/7323973784.html",
-        "location": "None",
+        "location": [
+            "phoenix"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11404,7 +11566,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://phoenix.craigslist.org/cph/sof/d/phoenix-product-management-fellowship/7323973650.html",
-        "location": "None",
+        "location": [
+            "phoenix"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11414,7 +11578,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://phoenix.craigslist.org/cph/sof/d/phoenix-software-engineering-fellowship/7323973413.html",
-        "location": "None",
+        "location": [
+            "phoenix"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11424,7 +11590,9 @@
         "title": "Technical Program Manager | $78 - $87 per hour",
         "company": null,
         "url": "https://seattle.craigslist.org/skc/sof/d/seattle-technical-program-manager-per/7323973124.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11434,7 +11602,9 @@
         "title": "Technical Program Manager | $78 - $87 per hour",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/menlo-park-technical-program-manager/7323969973.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11444,7 +11614,9 @@
         "title": "Autonomous Vehicle Test Specialist | Fastest-Growing Rideshare Company",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/stanford-autonomous-vehicle-test/7323969966.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11454,7 +11626,9 @@
         "title": "Autonomous Vehicle Operations Supervisor | $80,000 - $84,000 per year",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-autonomous-vehicle/7323969784.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11464,7 +11638,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://sacramento.craigslist.org/sof/d/sacramento-data-science-fellowship/7323969200.html",
-        "location": "None",
+        "location": [
+            "sacramento"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11474,7 +11650,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/huntington-beach-product-management/7323969105.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11484,7 +11662,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://sacramento.craigslist.org/sof/d/sacramento-product-management-fellowship/7323968594.html",
-        "location": "None",
+        "location": [
+            "sacramento"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11494,7 +11674,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://sacramento.craigslist.org/sof/d/sacramento-software-engineering/7323968333.html",
-        "location": "None",
+        "location": [
+            "sacramento"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11504,7 +11686,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/huntington-beach-data-science-fellowship/7323967921.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11514,7 +11698,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/huntington-beach-software-engineering/7323967513.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11524,7 +11710,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://losangeles.craigslist.org/lac/sof/d/los-angeles-product-management/7323964381.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11534,7 +11722,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-software-engineering/7323963866.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11544,7 +11734,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://portland.craigslist.org/mlt/sof/d/portland-product-management-fellowship/7323963698.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11554,7 +11746,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-product-management/7323963515.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11564,7 +11758,9 @@
         "title": "Senior Lead Developer and Engineer (remote US available)",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-senior-lead-developer-and/7323856053.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11574,7 +11770,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-data-science-fellowship/7323962627.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11584,7 +11782,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-product-management-fellowship/7323962243.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11594,7 +11794,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-software-engineering-fellowship/7323961925.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11604,7 +11806,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-data-science-fellowship/7323961450.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11614,7 +11818,9 @@
         "title": "Product Management Fellowship",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-product-management-fellowship/7323961297.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11624,7 +11830,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://losangeles.craigslist.org/lac/sof/d/los-angeles-data-science-fellowship/7323960168.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11634,7 +11842,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-software-engineering/7323960752.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11644,7 +11854,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://portland.craigslist.org/mlt/sof/d/portland-software-engineering-fellowship/7323960464.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11654,7 +11866,9 @@
         "title": "Software Engineering Fellowship",
         "company": null,
         "url": "https://losangeles.craigslist.org/lac/sof/d/los-angeles-software-engineering/7323959744.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11664,7 +11878,9 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://portland.craigslist.org/mlt/sof/d/portland-data-science-fellowship/7323957339.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11674,13 +11890,15 @@
         "title": "Data Science Fellowship",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-data-science-fellowship/7323956889.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621441500.0,
+        "timestamp": 1621441920.0,
         "title": "Lead Software Engineer (full-stack)",
         "company": "Participatory Culture Foundation",
         "url": "https://remote.co/job/lead-software-engineer-full-stack/",
@@ -11690,7 +11908,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621441500.0,
+        "timestamp": 1621441920.0,
         "title": "Senior Full-Stack Software Engineer - Laravel and Vue.js",
         "company": "Relocity",
         "url": "https://remote.co/job/senior-full-stack-software-engineer-laravel-and-vue-js/",
@@ -11700,7 +11918,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621441500.0,
+        "timestamp": 1621441920.0,
         "title": "Senior Backend Engineer - API: Europe or South America",
         "company": "Argyle",
         "url": "https://remote.co/job/senior-backend-engineer-api/",
@@ -11714,7 +11932,9 @@
         "title": "Systems Administrator",
         "company": null,
         "url": "https://losangeles.craigslist.org/sfv/sof/d/malibu-systems-administrator/7323916509.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11764,7 +11984,9 @@
         "title": "* * * FULL STACK DEVELOPER NEEDED IMMEDIATELY * * *",
         "company": null,
         "url": "https://sacramento.craigslist.org/sof/d/shingle-springs-full-stack-developer/7323769817.html",
-        "location": "None",
+        "location": [
+            "sacramento"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11874,7 +12096,9 @@
         "title": "100% remote .NET contractors needed. $2000 signing bonus.",
         "company": null,
         "url": "https://dallas.craigslist.org/dal/sof/d/fallon-100-remote-net-contractors/7323659732.html",
-        "location": "None",
+        "location": [
+            "dallas"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11884,7 +12108,9 @@
         "title": "Full Stack Software Developer- Ruby on Rails",
         "company": null,
         "url": "https://sacramento.craigslist.org/sof/d/citrus-heights-full-stack-software/7323707514.html",
-        "location": "None",
+        "location": [
+            "sacramento"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11904,7 +12130,9 @@
         "title": "Business Systems and Data Analytics Manager",
         "company": null,
         "url": "https://kalamazoo.craigslist.org/sof/d/kalamazoo-business-systems-and-data/7323624091.html",
-        "location": "None",
+        "location": [
+            "kalamazoo"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11914,7 +12142,9 @@
         "title": "Paid Opinion Study ~ Software Engineers, Computer Programmers, Tech et",
         "company": null,
         "url": "https://sfbay.craigslist.org/sby/sof/d/san-jose-paid-opinion-study-software/7323702594.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11934,7 +12164,9 @@
         "title": "Senior Java Developer - Backend - Contract/Contract to Hire",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-senior-java-developer-backend/7323671434.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11944,7 +12176,9 @@
         "title": "Software Engineer - Full Stack (JS, Typescript, React, Node, etc.)",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/seattle-software-engineer-full-stack-js/7323671232.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -11994,7 +12228,9 @@
         "title": "Wordpress & PHP Developer",
         "company": null,
         "url": "https://vancouver.craigslist.org/pml/sof/d/coquitlam-wordpress-php-developer/7323620548.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12014,7 +12250,9 @@
         "title": "Senior Web Developer (remote, contract, US-onshore, single project)",
         "company": null,
         "url": "https://providence.craigslist.org/sof/d/providence-senior-web-developer-remote/7323510431.html",
-        "location": "None",
+        "location": [
+            "providence"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12024,7 +12262,9 @@
         "title": "Cloud Engineer (100% Remote)",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-cloud-engineer-100-remote/7323527078.html",
-        "location": "None",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12034,7 +12274,9 @@
         "title": "Research Assistant - Data Analysis - IMMEDIATE OPENING",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-research-assistant-data/7323480282.html",
-        "location": "Washington, DC",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12044,7 +12286,9 @@
         "title": "Software Engineer: SLAM | $90,000 - $130,000 per year",
         "company": null,
         "url": "https://cincinnati.craigslist.org/sof/d/cincinnati-software-engineer-slam-per/7323478552.html",
-        "location": "None",
+        "location": [
+            "cincinnati"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12054,7 +12298,9 @@
         "title": "Technical Program Manager | Toyota Research Institute",
         "company": null,
         "url": "https://annarbor.craigslist.org/sof/d/ann-arbor-technical-program-manager/7323477921.html",
-        "location": "None",
+        "location": [
+            "annarbor"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12064,7 +12310,9 @@
         "title": "Product Support Specialist",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-product-support-specialist/7323569136.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12074,7 +12322,9 @@
         "title": "Senior Software Developer (Front End Focus)",
         "company": null,
         "url": "https://portland.craigslist.org/mlt/sof/d/warren-senior-software-developer-front/7323564904.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12084,7 +12334,9 @@
         "title": "Project Estimator",
         "company": null,
         "url": "https://sandiego.craigslist.org/ssd/sof/d/san-diego-project-estimator/7323552657.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12094,7 +12346,9 @@
         "title": "Autonomous Vehicle Operator | $22 - $25 per hour",
         "company": null,
         "url": "https://dallas.craigslist.org/dal/sof/d/dallas-autonomous-vehicle-operator-per/7323478770.html",
-        "location": "None",
+        "location": [
+            "dallas"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12104,7 +12358,9 @@
         "title": "Autonomous Vehicle Operator | $20 per hour",
         "company": null,
         "url": "https://neworleans.craigslist.org/sof/d/new-orleans-autonomous-vehicle-operator/7323478603.html",
-        "location": "None",
+        "location": [
+            "neworleans"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12114,7 +12370,9 @@
         "title": "Autonomous Vehicle Operator | $22 - $25 per hour",
         "company": null,
         "url": "https://sanantonio.craigslist.org/sof/d/san-antonio-autonomous-vehicle-operator/7323477726.html",
-        "location": "None",
+        "location": [
+            "sanantonio"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12124,7 +12382,9 @@
         "title": "Senior Software Engineer",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-senior-software-engineer/7323476190.html",
-        "location": "None",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12134,7 +12394,9 @@
         "title": "Business Data Analyst",
         "company": null,
         "url": "https://newyork.craigslist.org/brk/sof/d/brooklyn-business-data-analyst/7323434658.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12144,7 +12406,9 @@
         "title": "IT Administrator",
         "company": null,
         "url": "https://kalispell.craigslist.org/sof/d/kalispell-it-administrator/7323502220.html",
-        "location": "None",
+        "location": [
+            "kalispell"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12154,7 +12418,9 @@
         "title": "Business Systems Engineer",
         "company": null,
         "url": "https://sfbay.craigslist.org/eby/sof/d/fremont-business-systems-engineer/7323521886.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12164,7 +12430,9 @@
         "title": "DevOps Engineer",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-devops-engineer/7323379874.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12174,7 +12442,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://newyork.craigslist.org/mnh/sof/d/new-york-software-engineer/7323379741.html",
-        "location": "None",
+        "location": [
+            "newyork"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12184,7 +12454,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://washingtondc.craigslist.org/doc/sof/d/washington-software-engineer/7323379790.html",
-        "location": "None",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12194,7 +12466,9 @@
         "title": "DevOps Engineer",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/andover-devops-engineer/7323379843.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12204,7 +12478,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/andover-software-engineer/7323379765.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12214,7 +12490,9 @@
         "title": "Remote Engineering Project Manager | $51 - $61 per hour",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/menlo-park-remote-engineering-project/7323477023.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12224,7 +12502,9 @@
         "title": "Mapping Annotation Operator | $30 - $35 per hour",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/los-altos-mapping-annotation-operator/7323476902.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12234,7 +12514,9 @@
         "title": "Technical Program Manager | Toyota Research Institute",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/los-altos-technical-program-manager/7323476577.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12244,7 +12526,9 @@
         "title": "Hiring for Inside Sales - Call Center positions",
         "company": null,
         "url": "https://detroit.craigslist.org/okl/sof/d/troy-hiring-for-inside-sales-call/7323361396.html",
-        "location": "None",
+        "location": [
+            "detroit"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12254,7 +12538,9 @@
         "title": "Hiring for Sales Appointment Setters",
         "company": null,
         "url": "https://charlotte.craigslist.org/sof/d/mount-mourne-hiring-for-sales/7323360078.html",
-        "location": "None",
+        "location": [
+            "charlotte"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12274,13 +12560,15 @@
         "title": "Full-Stack .Net Developer",
         "company": null,
         "url": "https://losangeles.craigslist.org/lac/sof/d/los-angeles-full-stack-net-developer/7323457270.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
     },
     {
-        "timestamp": 1621355100.0,
+        "timestamp": 1621355520.0,
         "title": "Ruby on Rails Developer",
         "company": "Scopic Software",
         "url": "https://remote.co/job/ruby-on-rails-developer-20/",
@@ -12290,7 +12578,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621355100.0,
+        "timestamp": 1621355520.0,
         "title": "Senior Frontend Engineer",
         "company": "TestGorilla",
         "url": "https://remote.co/job/senior-frontend-engineer-7/",
@@ -12300,7 +12588,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621355100.0,
+        "timestamp": 1621355520.0,
         "title": "Senior Backend Engineer (Python)",
         "company": "TestGorilla",
         "url": "https://remote.co/job/senior-backend-engineer-python-2/",
@@ -12314,7 +12602,9 @@
         "title": "Business Data Analyst",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/palo-alto-business-data-analyst/7323432689.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12324,7 +12614,9 @@
         "title": "development screen scraping and api interface",
         "company": null,
         "url": "https://minneapolis.craigslist.org/hnp/sof/d/chanhassen-development-screen-scraping/7323360865.html",
-        "location": "None",
+        "location": [
+            "minneapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12334,7 +12626,9 @@
         "title": "Senior Data Scientist",
         "company": null,
         "url": "https://dallas.craigslist.org/ftw/sof/d/mckinney-senior-data-scientist/7323355423.html",
-        "location": "None",
+        "location": [
+            "dallas"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12344,7 +12638,9 @@
         "title": "Mobile Developer",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/daly-city-mobile-developer/7323379894.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12354,7 +12650,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/daly-city-software-engineer/7323379717.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12364,7 +12662,9 @@
         "title": "DevOps Engineer",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/bellevue-devops-engineer/7323379862.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12374,7 +12674,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://seattle.craigslist.org/see/sof/d/bellevue-software-engineer/7323379818.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12474,7 +12776,9 @@
         "title": "Continuous Monitoring Analyst",
         "company": null,
         "url": "https://portland.craigslist.org/wsc/sof/d/beaverton-continuous-monitoring-analyst/7323297454.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12514,7 +12818,9 @@
         "title": "Senior Software Developer .NET Windows Forms",
         "company": null,
         "url": "https://vancouver.craigslist.org/rch/sof/d/richmond-senior-software-developer-net/7323244288.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12554,7 +12860,9 @@
         "title": "Senior Security Analyst",
         "company": null,
         "url": "https://washingtondc.craigslist.org/nva/sof/d/annapolis-junction-senior-security/7323115753.html",
-        "location": "Herndon, VA",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12564,7 +12872,9 @@
         "title": "VP, Engineering",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-vp-engineering/7323110648.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12584,7 +12894,9 @@
         "title": "SOFTWARE ENGINEER (Mid to Senior Level)",
         "company": null,
         "url": "https://seattle.craigslist.org/sno/sof/d/bellingham-software-engineer-mid-to/7323185414.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12594,7 +12906,9 @@
         "title": "Senior Security Analyst",
         "company": null,
         "url": "https://washingtondc.craigslist.org/nva/sof/d/arlington-senior-security-analyst/7323101462.html",
-        "location": "Arlington, VA",
+        "location": [
+            "washingtondc"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12604,7 +12918,9 @@
         "title": "SOFTWARE ENGINEER (Mid to Senior Level)",
         "company": null,
         "url": "https://bellingham.craigslist.org/sof/d/bellingham-software-engineer-mid-to/7323184134.html",
-        "location": "Bellingham, WA",
+        "location": [
+            "bellingham"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12634,7 +12950,9 @@
         "title": "Network Administrator",
         "company": null,
         "url": "https://boise.craigslist.org/sof/d/hermiston-network-administrator/7323147270.html",
-        "location": "Hermiston Oregon",
+        "location": [
+            "boise"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12644,7 +12962,9 @@
         "title": "Senior Data Analyst",
         "company": null,
         "url": "https://boston.craigslist.org/gbs/sof/d/boston-senior-data-analyst/7323077425.html",
-        "location": "None",
+        "location": [
+            "boston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12654,7 +12974,9 @@
         "title": "Full Stack .Net Web Developer",
         "company": null,
         "url": "https://abbotsford.craigslist.org/sof/d/abbotsford-southwest-full-stack-net-web/7323160331.html",
-        "location": "None",
+        "location": [
+            "abbotsford"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12664,7 +12986,9 @@
         "title": "Network Administrator",
         "company": null,
         "url": "https://lewiston.craigslist.org/sof/d/hermiston-network-administrator/7323155655.html",
-        "location": "None",
+        "location": [
+            "lewiston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12684,7 +13008,9 @@
         "title": "Network Administrator",
         "company": null,
         "url": "https://kpr.craigslist.org/sof/d/hermiston-network-administrator/7323150178.html",
-        "location": "None",
+        "location": [
+            "kpr"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12694,7 +13020,9 @@
         "title": "Network Administrator",
         "company": null,
         "url": "https://eastoregon.craigslist.org/sof/d/hermiston-network-administrator/7323148191.html",
-        "location": "None",
+        "location": [
+            "eastoregon"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12704,7 +13032,9 @@
         "title": "Scrum Master, Autonomous Vehicles | An AI and Robotics R&D Company",
         "company": null,
         "url": "https://annarbor.craigslist.org/sof/d/ann-arbor-scrum-master-autonomous/7323051878.html",
-        "location": "None",
+        "location": [
+            "annarbor"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12764,7 +13094,9 @@
         "title": "Technical Development Engineer - KANATA, ON",
         "company": null,
         "url": "https://ottawa.craigslist.org/sof/d/ottawa-technical-development-engineer/7322948509.html",
-        "location": "None",
+        "location": [
+            "ottawa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12774,7 +13106,9 @@
         "title": "Technical Development Engineer - KANATA, ON",
         "company": null,
         "url": "https://ottawa.craigslist.org/sof/d/ottawa-technical-development-engineer/7322948509.html?lang=en&cc=us",
-        "location": "None",
+        "location": [
+            "ottawa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12784,7 +13118,9 @@
         "title": "Software Review and Customer Support",
         "company": null,
         "url": "https://miami.craigslist.org/mdc/sof/d/miami-software-review-and-customer/7323000816.html",
-        "location": "None",
+        "location": [
+            "miami"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12804,7 +13140,9 @@
         "title": "Multiple Cybersecurity Positions",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-multiple-cybersecurity/7323089527.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12824,7 +13162,9 @@
         "title": "Scrum Master, Autonomous Vehicles | An AI and Robotics R&D Company",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/los-altos-scrum-master-autonomous/7323052478.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12834,7 +13174,9 @@
         "title": "Autonomous Vehicle Operator | $16 per hour",
         "company": null,
         "url": "https://indianapolis.craigslist.org/sof/d/indianapolis-autonomous-vehicle/7322920231.html",
-        "location": "None",
+        "location": [
+            "indianapolis"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12844,7 +13186,9 @@
         "title": "Autonomous Vehicle Operator | $20 - $25 per hour",
         "company": null,
         "url": "https://toronto.craigslist.org/tor/sof/d/downtown-toronto-autonomous-vehicle/7322919760.html",
-        "location": "None",
+        "location": [
+            "toronto"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12854,7 +13198,9 @@
         "title": "LIDAR Perception Engineer | $90,000 - $130,000 per year",
         "company": null,
         "url": "https://cincinnati.craigslist.org/sof/d/cincinnati-lidar-perception-engineer/7322919071.html",
-        "location": "None",
+        "location": [
+            "cincinnati"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12864,7 +13210,9 @@
         "title": "Senior Software Developer Wanted - Local Food",
         "company": null,
         "url": "https://madison.craigslist.org/sof/d/viroqua-senior-software-developer/7322954721.html",
-        "location": "None",
+        "location": [
+            "madison"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12874,7 +13222,9 @@
         "title": "Senior Software Developer Wanted - Local Food",
         "company": null,
         "url": "https://lacrosse.craigslist.org/sof/d/viroqua-senior-software-developer/7322949400.html",
-        "location": "None",
+        "location": [
+            "lacrosse"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12884,7 +13234,9 @@
         "title": "Full Stack Developer - Acheson, AB",
         "company": null,
         "url": "https://edmonton.craigslist.org/sof/d/edmonton-full-stack-developer-acheson-ab/7322937987.html",
-        "location": "None",
+        "location": [
+            "edmonton"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12894,7 +13246,9 @@
         "title": "Software Engineer needed to create 3D Model conversion tool",
         "company": null,
         "url": "https://portland.craigslist.org/mlt/sof/d/gresham-software-engineer-needed-to/7322999686.html",
-        "location": "None",
+        "location": [
+            "portland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12904,7 +13258,9 @@
         "title": "Autonomous Vehicle Operations Specialist | $20 - $23 per hour",
         "company": null,
         "url": "https://neworleans.craigslist.org/sof/d/new-orleans-autonomous-vehicle/7322919682.html",
-        "location": "None",
+        "location": [
+            "neworleans"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12914,7 +13270,9 @@
         "title": "Quality Assurance – Software Support",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-quality-assurance-software/7322996934.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12924,7 +13282,9 @@
         "title": "Autonomous Vehicle Operator | $20 per hour",
         "company": null,
         "url": "https://fayar.craigslist.org/sof/d/bentonville-autonomous-vehicle-operator/7322919901.html",
-        "location": "Bentonville",
+        "location": [
+            "fayar"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12934,7 +13294,9 @@
         "title": "Help Desk Support Agent - Level 1",
         "company": null,
         "url": "https://austin.craigslist.org/sof/d/austin-help-desk-support-agent-level/7322915236.html",
-        "location": "Austin",
+        "location": [
+            "austin"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12944,7 +13306,9 @@
         "title": "Senior Firmware Engineer",
         "company": null,
         "url": "https://raleigh.craigslist.org/sof/d/raleigh-senior-firmware-engineer/7322740829.html",
-        "location": "None",
+        "location": [
+            "raleigh"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -12970,17 +13334,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621269060.0,
-        "title": "Application Developer- Yardi*Property Management Company*Full Benefits",
-        "company": null,
-        "url": "https://losangeles.craigslist.org/sfv/sof/d/calabasas-application-developer/7322922860.html",
-        "location": "None",
-        "source": "Craigslist",
-        "source_url": "https://www.craigslist.org",
-        "category": "job"
-    },
-    {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "iOS Engineer",
         "company": "Etsy",
         "url": "https://remote.co/job/ios-engineer-16/",
@@ -12990,7 +13344,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "Staff Backend Engineer",
         "company": "Mulberry Technology",
         "url": "https://remote.co/job/staff-backend-engineer/",
@@ -13000,7 +13354,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "Front End Engineer",
         "company": "Pantheon",
         "url": "https://remote.co/job/front-end-engineer-33/",
@@ -13010,7 +13364,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "Fullstack - Backend Engineer",
         "company": "Foresight Mental Health",
         "url": "https://remote.co/job/fullstack-backend-engineer/",
@@ -13020,7 +13374,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "Senior Front End Ruby on Rails Engineer",
         "company": "Aha",
         "url": "https://remote.co/job/senior-front-end-ruby-on-rails-engineer/",
@@ -13030,7 +13384,7 @@
         "category": "job"
     },
     {
-        "timestamp": 1621268700.0,
+        "timestamp": 1621269120.0,
         "title": "Senior Software Engineer",
         "company": "Catchafire",
         "url": "https://remote.co/job/senior-software-engineer-162/",
@@ -13040,11 +13394,25 @@
         "category": "job"
     },
     {
+        "timestamp": 1621269060.0,
+        "title": "Application Developer- Yardi*Property Management Company*Full Benefits",
+        "company": null,
+        "url": "https://losangeles.craigslist.org/sfv/sof/d/calabasas-application-developer/7322922860.html",
+        "location": [
+            "losangeles"
+        ],
+        "source": "Craigslist",
+        "source_url": "https://www.craigslist.org",
+        "category": "job"
+    },
+    {
         "timestamp": 1621268580.0,
         "title": "Autonomous Vehicle Operations Supervisor | $80,000 - $84,000 per year",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-autonomous-vehicle/7322917697.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13054,7 +13422,9 @@
         "title": "Research Software Engineer | $90 - $110 per hour",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/los-altos-research-software-engineer/7322917691.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13064,7 +13434,9 @@
         "title": "Application Support for Business Central",
         "company": null,
         "url": "https://sfbay.craigslist.org/eby/sof/d/hayward-application-support-for/7322908128.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13074,7 +13446,9 @@
         "title": "Senior Firmware Engineer",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/mountain-view-senior-firmware-engineer/7322742595.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13094,7 +13468,9 @@
         "title": "SEO SPECIALIST (WFH)",
         "company": null,
         "url": "https://santodomingo.craigslist.org/sof/d/seo-specialist-wfh/7322760637.html?lang=en&cc=us",
-        "location": "None",
+        "location": [
+            "santodomingo"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13104,7 +13480,9 @@
         "title": "Hiring Manager Needed",
         "company": null,
         "url": "https://columbus.craigslist.org/sof/d/columbus-hiring-manager-needed/7322759078.html",
-        "location": "None",
+        "location": [
+            "columbus"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13164,7 +13542,9 @@
         "title": "Microsoft Access & SQL Developer",
         "company": null,
         "url": "https://sandiego.craigslist.org/csd/sof/d/san-diego-microsoft-access-sql-developer/7322745012.html",
-        "location": "None",
+        "location": [
+            "sandiego"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13174,7 +13554,9 @@
         "title": "Excel VBA Expert Needed ASAP - Assistance with Macros",
         "company": null,
         "url": "https://cincinnati.craigslist.org/sof/d/cincinnati-excel-vba-expert-needed-asap/7322597500.html",
-        "location": "None",
+        "location": [
+            "cincinnati"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13184,7 +13566,9 @@
         "title": "2 Projects - Unidirectional Diode design & stop Web Ransom",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/huntington-beach-projects/7322591912.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13234,7 +13618,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://lakeland.craigslist.org/sof/d/lakeland-earn-per-year-it-cybersecurity/7322333800.html",
-        "location": "None",
+        "location": [
+            "lakeland"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13244,7 +13630,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://orlando.craigslist.org/sof/d/orlando-earn-per-year-it-cybersecurity/7322333110.html",
-        "location": "None",
+        "location": [
+            "orlando"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13254,7 +13642,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://daytona.craigslist.org/sof/d/port-orange-earn-per-year-it/7322332008.html",
-        "location": "Daytona Beach, FL",
+        "location": [
+            "daytona"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13264,7 +13654,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://tampa.craigslist.org/hil/sof/d/tampa-earn-per-year-it-cybersecurity/7322330551.html",
-        "location": "None",
+        "location": [
+            "tampa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13274,7 +13666,9 @@
         "title": "DeFi Decentralized Finance Helper/tudor Needed during June",
         "company": null,
         "url": "https://atlanta.craigslist.org/nat/sof/d/decatur-defi-decentralized-finance/7322290426.html",
-        "location": "None",
+        "location": [
+            "atlanta"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13314,7 +13708,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://tampa.craigslist.org/pnl/sof/d/saint-petersburg-earn-per-year-it/7322239838.html",
-        "location": "None",
+        "location": [
+            "tampa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13354,7 +13750,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://tampa.craigslist.org/psc/sof/d/new-port-richey-earn-per-year-it/7322032740.html",
-        "location": "None",
+        "location": [
+            "tampa"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13364,7 +13762,9 @@
         "title": "looking for computer programmer or software engineer",
         "company": null,
         "url": "https://boise.craigslist.org/sof/d/meridian-looking-for-computer/7322094466.html",
-        "location": "Meridian",
+        "location": [
+            "boise"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13374,7 +13774,9 @@
         "title": "Earn $35,000-$117,000 per year! IT/Cybersecurity Scholarships!",
         "company": null,
         "url": "https://spacecoast.craigslist.org/sof/d/melbourne-earn-per-year-it/7322024109.html",
-        "location": "None",
+        "location": [
+            "spacecoast"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13384,7 +13786,9 @@
         "title": "Code Coaches/Tutors Needed! (Remote)",
         "company": null,
         "url": "https://sfbay.craigslist.org/eby/sof/d/walnut-creek-code-coaches-tutors-needed/7322125447.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13394,7 +13798,9 @@
         "title": "Software Developer",
         "company": null,
         "url": "https://syracuse.craigslist.org/sof/d/liverpool-software-developer/7321924861.html",
-        "location": "None",
+        "location": [
+            "syracuse"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13414,7 +13820,9 @@
         "title": "Hockey Data Engineer",
         "company": null,
         "url": "https://vancouver.craigslist.org/bnc/sof/d/burnaby-hockey-data-engineer/7321906661.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13424,7 +13832,9 @@
         "title": "E-Commerce Image Recognition Startup Hiring Developers",
         "company": null,
         "url": "https://sfbay.craigslist.org/sby/sof/d/san-jose-commerce-image-recognition/7321903425.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13514,9 +13924,21 @@
         "title": "Full Stack Developer",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-full-stack-developer/7321846438.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621038360.0,
+        "title": "Full Stack Developer",
+        "company": "Analog Republic",
+        "url": "https://www.weworkremotely.com/remote-jobs/analog-republic-full-stack-developer-1",
+        "location": "Americas Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
         "category": "job"
     },
     {
@@ -13524,7 +13946,9 @@
         "title": "Software Developer for Mobile/Web/Desktop | Vesigo Studios",
         "company": null,
         "url": "https://medford.craigslist.org/sof/d/central-point-software-developer-for/7321823222.html",
-        "location": "None",
+        "location": [
+            "medford"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13554,9 +13978,21 @@
         "title": "IT Business Systems Analyst (Entry Level)",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/santa-ana-it-business-systems-analyst/7321798873.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
+        "category": "job"
+    },
+    {
+        "timestamp": 1621033260.0,
+        "title": "Senior WordPress & WooCommerce Plugin Developer",
+        "company": "Barn2 Plugins",
+        "url": "https://www.weworkremotely.com/remote-jobs/barn2-plugins-senior-wordpress-woocommerce-plugin-developer",
+        "location": "Anywhere (100% Remote) Only",
+        "source": "WeWorkRemotely",
+        "source_url": "https://weworkremotely.com/",
         "category": "job"
     },
     {
@@ -13614,7 +14050,9 @@
         "title": "Software Engineer C++",
         "company": null,
         "url": "https://seattle.craigslist.org/sno/sof/d/lynnwood-software-engineer/7321763371.html",
-        "location": "None",
+        "location": [
+            "seattle"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13664,7 +14102,9 @@
         "title": "Software Engineer",
         "company": null,
         "url": "https://orangecounty.craigslist.org/sof/d/trabuco-canyon-software-engineer/7321744443.html",
-        "location": "None",
+        "location": [
+            "orangecounty"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13684,7 +14124,9 @@
         "title": "Technical Lead, Software Engineering",
         "company": null,
         "url": "https://sfbay.craigslist.org/pen/sof/d/san-mateo-technical-lead-software/7321736907.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13704,7 +14146,9 @@
         "title": "Data Analyst (temporary WFH opportunity) - $20/hr",
         "company": null,
         "url": "https://honolulu.craigslist.org/oah/sof/d/honolulu-data-analyst-temporary-wfh/7321808464.html",
-        "location": "None",
+        "location": [
+            "honolulu"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13714,7 +14158,9 @@
         "title": "Digital Product Manager",
         "company": null,
         "url": "https://vancouver.craigslist.org/van/sof/d/vancouver-digital-product-manager/7321722311.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13724,7 +14170,9 @@
         "title": "Web Content Designer / Strategist",
         "company": null,
         "url": "https://sfbay.craigslist.org/sfc/sof/d/san-francisco-web-content-designer/7321688343.html",
-        "location": "None",
+        "location": [
+            "sfbay"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13744,7 +14192,9 @@
         "title": "Threat Detection Engineer/SIEM Administrator",
         "company": null,
         "url": "https://losangeles.craigslist.org/lgb/sof/d/long-beach-threat-detection-engineer/7321675959.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13764,7 +14214,9 @@
         "title": "Computer Engineers",
         "company": null,
         "url": "https://losangeles.craigslist.org/sfv/sof/d/computer-engineers/7321660846.html",
-        "location": "None",
+        "location": [
+            "losangeles"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13774,7 +14226,9 @@
         "title": "Sr Network Security Engineer",
         "company": null,
         "url": "https://atlanta.craigslist.org/atl/sof/d/smyrna-sr-network-security-engineer/7321544955.html",
-        "location": "None",
+        "location": [
+            "atlanta"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13784,7 +14238,9 @@
         "title": "Sr Network Cloud Engineer",
         "company": null,
         "url": "https://houston.craigslist.org/sof/d/houston-sr-network-cloud-engineer/7321576984.html",
-        "location": "None",
+        "location": [
+            "houston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13804,7 +14260,9 @@
         "title": "Design/Create/Manage/Enhance (Vancouver Canada only)",
         "company": null,
         "url": "https://vancouver.craigslist.org/van/sof/d/new-westminster-design-create-manage/7321633931.html",
-        "location": "None",
+        "location": [
+            "vancouver"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
@@ -13814,7 +14272,9 @@
         "title": "Sr Network Security Engineer",
         "company": null,
         "url": "https://houston.craigslist.org/sof/d/houston-sr-network-security-engineer/7321547371.html",
-        "location": "None",
+        "location": [
+            "houston"
+        ],
         "source": "Craigslist",
         "source_url": "https://www.craigslist.org",
         "category": "job"
