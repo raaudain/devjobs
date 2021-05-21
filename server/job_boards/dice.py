@@ -15,21 +15,26 @@ driver = driver.driver
 
 data = create_temp_json.data
 
-options = webdriver.FirefoxOptions()
-options.add_argument("--headless")
-browser = webdriver.Firefox(executable_path=driver, options=options)
-# browser = webdriver.PhantomJS(executable_path=driver, service_args=['--ignore-ssl-errors=true'])
+# options = webdriver.FirefoxOptions()
+# options.add_argument("--headless")
+# browser = webdriver.Firefox(executable_path=driver, options=options)
+browser = webdriver.PhantomJS(executable_path=driver)
 
 wait = WebDriverWait(browser, 10)
 
 def getJobs(item):
+
+
+
     for job in item:
+        print(job)
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
         title = job.find("a", href=True).text.strip()
         company = "Crunchyroll"
         url = job.find("a", href=True)["href"]
         location = job.find("span", {"class": "location"}).text.strip()
 
+        age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
         data.append({
@@ -38,7 +43,7 @@ def getJobs(item):
             "company": company,
             "url": url,
             "location": location,
-            "source": "Crunchyroll",
+            "source": "Dice",
             "source_url": "https://www.crunchyroll.com/about/jobs/index.html",
             "category": "job"
         })
@@ -46,12 +51,12 @@ def getJobs(item):
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("li", {"class": "job-list-item"})
+    results = soup.find_all("div", {"class": "card search-card"})
 
-    for result in results:
-        if result.find("h4").text.strip() == "Engineering":
-            results = result.find("ul")
-
+    # for result in results:
+    #     if result.find("h4").text.strip() == "Engineering":
+    #         results = result.find("ul")
+    
     getJobs(results)
 
 def getURL():
@@ -60,16 +65,17 @@ def getURL():
 
 
     bypassRecaptcha = "http://webcache.googleusercontent.com/search?q=cache:"
-    url = f"{bypassRecaptcha}https://www.crunchyroll.com/about/jobs/index.html"
+    url = f"https://www.dice.com/jobs?q=developer&countryCode=US&radius=30&radiusUnit=mi&page=1&pageSize=1000&filters.postedDate=SEVEN&language=en"
 
     browser.get(url)
     
-    wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Engineering')]")))
+    wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='card search-card')]")))
 
     response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
     
-    getResults(response)
-    browser.quit()
+    # getResults(response)
+    print(url)
+    # browser.quit()
 
 
 def main():
