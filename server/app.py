@@ -20,13 +20,17 @@ sched.start()
 def index():
     return "Hello."
 
-@app.route("/data")
+@app.route("/api")
 def data():
-    filename = os.path.join(app.static_folder, "data.json")
-    f = open(filename, "r")
-    jsonFile = json.load(f)
+    # filename = os.path.join(app.static_folder, "data.json")
+    # f = open(filename, "r")
+    # jsonFile = json.load(f)
+    # return jsonFile
+    with open("./data/data.json", mode='r') as f:
+        text = json.load(f)
+        return text
 
-_main.main()
+# _main.main()
 
 if __name__ == "__main__":
     # sched.add_job(id="job_scanner", func=scanner, trigger="interval", minutes=30)

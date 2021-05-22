@@ -3,6 +3,8 @@ from git import Repo
 from . import craigslist_jobs
 # from . import crunchyroll
 from . import blend 
+from . import gitlab
+from . import github
 from . import key_values
 from . import protege
 from . import nocsok
@@ -38,6 +40,8 @@ def main():
     blend.main()
     builtin.main()
     craigslist_jobs.main()
+    github.main()
+    gitlab.main()
     key_values.main()
     nocsok.main()
     protege.main()

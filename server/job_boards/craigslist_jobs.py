@@ -74,7 +74,7 @@ def getURL(items):
             getResults(response)
         except:
             print("=> craigslist_jobs: Continue to next")
-            pass
+            continue
 
 def getURLMiami(items):
     session = requests.Session()
