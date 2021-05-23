@@ -45,7 +45,7 @@ def getResults(item):
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
 
-    url = f"https://jobs.ebayinc.com/search-jobs?ac=38628&p=1"
+    url = f"https://careers.google.com/jobs/results/?company=Fitbit&company=Google&company=Google%20Fiber&company=YouTube&distance=50&jlo=en_US&location=&page=1&q=engineer&sort_by=relevance"
     response = requests.get(url, headers=headers).text
     # getResults(response)
     print(response)
