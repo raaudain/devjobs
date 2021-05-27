@@ -36,8 +36,8 @@
 /alto
 /braid
 /instacart
-/jane
 /nexhealth
+/jane
 /lightstep
 /digit
 /webflow
@@ -69,11 +69,9 @@
 /launchdarkly
 /lever
 /range
-/sportsrecruits
 /stitch-fix
 /connected
 /careguide
-/wove
 /peergrade
 /checkr
 /creator-deck-media
@@ -82,4 +80,3 @@
 /loylap
 /mindmatters
 /routific
-/inntopia
