@@ -1,5 +1,5 @@
 from datetime import datetime
-import requests, sys, json
+import requests, sys, json, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
@@ -67,7 +67,7 @@ def getURL():
             data = json.loads(response.text)
 
             getResults(data, name)
-            
+            time.sleep(2)
             # print(data)
         else:
             print(f"Failed to scraped: {name}")

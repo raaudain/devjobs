@@ -41,8 +41,8 @@ def gitPush():
         print("=> Failed to push to GitHub") 
 
 sites = [
-    workline.main(),
     lever_co.main(),
+    workline.main(),
     dailyremote.main(),
     workable.main(),
     dice.main(),
