@@ -9,16 +9,21 @@ import sys, time
 # from .modules import driver
 import modules.driver as driver
 import modules.create_temp_json as create_temp_json
+import undetected_chromedriver.v2 as uc
 
 
-driver = driver.driver
+driver = driver.firefox
 
 data = create_temp_json.data
 
-# options = webdriver.FirefoxOptions()
+options = webdriver.FirefoxOptions()
 # options.add_argument("--headless")
-# browser = webdriver.Firefox(executable_path=driver, options=options)
-browser = webdriver.PhantomJS(executable_path=driver)
+browser = webdriver.Firefox(executable_path=driver, options=options)
+# browser = webdriver.PhantomJS(executable_path=driver)
+
+# options = uc.ChromeOptions()
+# options.add_argument("--user-data-dir=/Users/ramon/Library/Application Support/Google/Chrome/Profile 2")
+# browser = uc.Chrome(options=options)
 
 wait = WebDriverWait(browser, 30)
 
@@ -73,7 +78,8 @@ def getURL():
 
     response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
     
-    getResults(response)
+    print(response)
+    # getResults(response)
 
 
 def main():

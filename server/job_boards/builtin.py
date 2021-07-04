@@ -1,87 +1,28 @@
-from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json, requests, sys, re, time
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
+import requests, json, sys
 from .modules import create_temp_json
-from .modules import driver
 # import modules.create_temp_json as create_temp_json
-# import modules.driver as driver
 
 
 data = create_temp_json.data
-exclude = set()
-exclude.add("month")
-exclude.add("months")
-
-driver = driver.driver
-
-# options = webdriver.FirefoxOptions()
-# options.add_argument("--headless")
-# browser = webdriver.Firefox(executable_path=driver, options=options)
-browser = webdriver.PhantomJS(executable_path=driver)
-
-wait = WebDriverWait(browser, 30)
+scraped = create_temp_json.scraped
 
 isTrue = True
-count = 1
-def getJobs(item):
+
+def getJobs(date, url, company, position, location):
     global isTrue
 
-    for job in item:
-        # print(job)
-        date = job.find("div", {"class", "icon-label info-label age"}).text
-        title = job.find("h2", {"class": "job-title"}).text.strip()
-        company = job.find("div", {"class": "icon-label info-label company-title"}).text.strip()
-        url = job.find("a", href=True)["href"]
-        location = None
+    date = str(date)
+    title = position
+    company = company
+    url = url
+    location = location
 
-        if job.find("div", {"class", "icon-label info-label location"}):
-            location = job.find("div", {"class", "icon-label info-label location"}).text.strip()
-        if job.find("div", {"class", "icon-label info-label remote"}):
-            location = job.find("div", {"class", "icon-label info-label remote"}).text.strip()
-
-        if "a second ago" in date:
-            time = datetime.now() - timedelta(seconds=1)
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "seconds" in date or "second" in date:
-            seconds = re.sub("[^0-9]", "", date)
-            time = datetime.now() - timedelta(seconds=int(seconds))
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "a minute ago" in date:
-            time = datetime.now() - timedelta(minutes=1)
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "minutes" in date or "minute" in date:
-            minutes = re.sub("[^0-9]", "", date)
-            time = datetime.now() - timedelta(minutes=int(minutes))
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "an hour ago" in date:
-            time = datetime.now() - timedelta(hours=1)
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "hours" in date or "hour" in date:
-            hours = re.sub("[^0-9]", "", date)
-            time = datetime.now() - timedelta(hours=int(hours))
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "a day ago" in date:
-            time = datetime.now() - timedelta(days=1)
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-        elif "days" in date or "day" in date:
-            day = re.sub("[^0-9]", "", date)
-            # print("day ===>",day)
-            if int(day) > 7:
-                isTrue = False
-                browser.quit()
-                print("Exit")
-
-            time = datetime.now() - timedelta(days=int(day))
-            date = datetime.strftime(time, "%Y-%m-%d %H:%M")
-
-        
-        age = datetime.timestamp(datetime.now() - timedelta(days=7))
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
-
+    
+    age = datetime.timestamp(datetime.now() - timedelta(days=7))
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+    
+    if url not in scraped:
         if age <= postDate:
             data.append({
                 "timestamp": postDate,
@@ -89,66 +30,109 @@ def getJobs(item):
                 "company": company,
                 "url": url,
                 "location": location,
-                "source": "BuiltIn",
-                "soure_url": "https://builtin.com/",
+                "source": "Builtin",
+                "source_url": "https://builtin.com/",
                 "category": "job"
             })
-            print(f"=> builtin: Added {title}")
+            print(f"=> builtin: Added {title} for {company}")
+            scraped.add(url)
+        else:
+            print(f"=> builtin: Reached limit. Stopping scrape")
+            isTrue = False
+
 
 def getResults(item):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("div", {"class": "job-item"})
-    filtered = []
+    jobs = item["jobs"]
+    companies = item["companies"]
 
-    for result in results:
-        notFeatured = result.find("div", {"class", "icon-label info-label age"})
-        if notFeatured:
-            filtered.append(result)
+    # Remove unwanted data
+    for i in range(len(companies)):
+        del companies[i]["company_perks"]
+        del companies[i]["elite"]
+        del companies[i]["high_volume_poster"]
+        del companies[i]["job_slots"]
+        del companies[i]["limited_listing"]
+        del companies[i]["logo"]
+        del companies[i]["premium"]
+        del companies[i]["region_id"]
+        companies[i]["company"] = companies[i]["title"]
 
-    results = filtered
-    # print(results)
-    getJobs(results)
+    for i in range(len(jobs)):
+        del jobs[i]["category_id"]
+        del jobs[i]["body"]
+        del jobs[i]["experience_level"]
+        del jobs[i]["hot_jobs_score"]
+        del jobs[i]["is_national"]
+        del jobs[i]["meta_tags"]
+        del jobs[i]["remote"]
+        del jobs[i]["remote_status"]
+        del jobs[i]["body_summary"]
+        del jobs[i]["industry_id"]
+        del jobs[i]["sub_category_id"]
+        del jobs[i]["id"]
+        jobs[i]["id"] = jobs[i]["company_id"]
+        
+    # Merge dictionaries by id
+    data = {d["id"]: d for d in companies}
+
+    for j in jobs:
+        data[j["id"]].update(j)
+
+    # Loop through data
+    for d in list(data.values()):
+        date = datetime.strptime(d["sort_job"], "%a, %d %b %Y %H:%M:%S GMT")
+        position = d["title"]
+        base_url = None
+
+        if d["region_id"] == 1:
+            base_url = "https://www.builtinchicago.org"
+        elif d["region_id"] == 2:
+            base_url = "https://www.builtincolorado.com"
+        elif d["region_id"] == 3:
+            base_url = "https://www.builtinla.com"
+        elif d["region_id"] == 4:
+            base_url = "https://www.builtinaustin.com"
+        elif d["region_id"] == 5:
+            base_url = "https://www.builtinnyc.com"
+        elif d["region_id"] == 6:
+            base_url = "https://www.builtinboston.com"
+        elif d["region_id"] == 7:
+            base_url = "https://www.builtinseattle.com"
+        else:
+            base_url = "https://www.builtinsf.com"
+        
+        apply_url = f"{base_url}{d['alias']}"
+        company_name = d["company"]
+        locations_string = d["location"]
+
+        getJobs(date, apply_url, company_name, position, locations_string)
+
 
 def getURL():
-    
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
-    
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
-    bypassRecaptcha = "http://webcache.googleusercontent.com/search?q=cache:"
-    
     page = 1
 
-    # while page <= 200:
     while isTrue:
         try:
-            if page % 10 == 0:
-                time.sleep(10)
-                print("=> Sleeping...")
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
 
-            url = f"https://builtin.com/jobs/dev-engineering?page={page}"
+            response = requests.get(url, headers=headers).text
 
-            browser.get(url)
-            
-            wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='icon-label info-label age']")))
+            data = json.loads(response)
 
-            response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
-            
-            # print(response)
-
-            getResults(response)
+            getResults(data)
             page+=1
-            global count
-            print("Page", count)
-            count+=1        
         except:
-            print("=> builtin: Ending loop")
+            print(f"=> builtin: Break")
             break
-        
-        browser.quit()
+    
+    # print(data)
+     
+
 
 def main():
     getURL()
 
 # main()
-
 # sys.exit(0)

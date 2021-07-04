@@ -1,3 +1,3 @@
-# driver = "./bin/geckodriver-mac"
+firefox = "./bin/geckodriver-mac"
 # driver = "./bin/geckodriver-linux"
-driver = "./bin/phantomjs-mac"
+phantom = "./bin/phantomjs-mac"

@@ -1,18 +1,25 @@
 # import craigslist_gigs
 from git import Repo
 from . import craigslist_jobs
-# from . import crunchyroll
-from . import blend 
-from . import gitlab
-from . import github
+from . import greenhouse_io
+from . import lever_co
+from . import workline
+from . import clickup
+from . import workable
+from . import instacart
 from . import key_values
-from . import protege
 from . import nocsok
 from . import remote_co
 from . import remoteok
 from . import weworkremotely
 from . import builtin
 from . import workwithindies
+from . import dailyremote
+from . import hireart
+from . import stackoverflow
+from . import dice
+from . import zillow
+from . import usajobs
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime
@@ -33,28 +40,63 @@ def gitPush():
     except:
         print("=> Failed to push to GitHub") 
 
+sites = [
+    workline.main(),
+    lever_co.main(),
+    dailyremote.main(),
+    workable.main(),
+    dice.main(),
+    craigslist_jobs.main(),
+    builtin.main(),
+    usajobs.main(),
+    greenhouse_io.main(),
+    stackoverflow.main(),
+    key_values.main(),
+    zillow.main(),
+    hireart.main(),
+    clickup.main(),
+    instacart.main(),
+    nocsok.main(),
+    remote_co.main(),
+    remoteok.main(),
+    weworkremotely.main(),
+    workwithindies.main(),
+]
+
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
-    # craigslist_gigs.main()
-    blend.main()
-    builtin.main()
-    craigslist_jobs.main()
-    github.main()
-    gitlab.main()
-    key_values.main()
-    nocsok.main()
-    protege.main()
-    # crunchyroll.main()
-    remote_co.main()
-    remoteok.main()
-    weworkremotely.main()
-    workwithindies.main()
+    
+    for site in sites: site
+        
+
+
+    # dice.main()
+    # craigslist_jobs.main()
+    # builtin.main()
+    # usajobs.main()
+    # lever_co.main()
+    # workable.main()
+    # greenhouse_io.main()
+    # stackoverflow.main()
+    # key_values.main()
+    # zillow.main()
+    # hireart.main()
+    # clickup.main()
+    # instacart.main()
+    # nocsok.main()
+    # remote_co.main()
+    # remoteok.main()
+    # weworkremotely.main()
+    # workwithindies.main()
+
+
+
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
-    gitPush()
+    # gitPush()
     print("=> Done")
-    print("=> Total time: " + str(datetime.now()-start))
+    print("=> Total time: " + str(datetime.now() - start))
 
 # main()
 # gitPush()

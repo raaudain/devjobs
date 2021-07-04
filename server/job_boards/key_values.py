@@ -12,6 +12,8 @@ params = [param.rstrip() for param in f]
 f.close()
 
 data = create_temp_json.data
+scraped = create_temp_json.scraped
+
 exclude = set()
 exclude.add("See All Open Jobs")
 exclude.add("See All Open Roles")
@@ -31,7 +33,7 @@ def getJobs(item):
 
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        if title not in exclude:
+        if title not in exclude and url not in scraped:
             data.append({
                 "timestamp": postDate,
                 "title": title,
@@ -42,7 +44,11 @@ def getJobs(item):
                 "source_url": "https://www.keyvalues.com",
                 "category": "job"
             })
-            print(f"=> key_values: Added {title}")
+            scraped.add(url)
+            print(f"=> key_values: Added {title} for {company}")
+        else:
+            print(f"=> key_values: Already scraped {title} for {company}")
+
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")

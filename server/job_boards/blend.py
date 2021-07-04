@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from .modules import driver
 
 
-driver = driver.driver
+driver = driver.phantom
 
 # options = webdriver.FirefoxOptions()
 # options.add_argument("--headless")
@@ -65,8 +65,8 @@ def getURL():
 
     response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
 
-    getResults(response)
     browser.quit()
+    getResults(response)
 
 def main():
     getURL()

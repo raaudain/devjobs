@@ -8,12 +8,11 @@ data = create_temp_json.data
 
 def getJobs(item):
     for job in item:
-        date = datetime.strptime(job.find_all("small")[1].text+" "+str(datetime.today().year)
-, "%b %d %Y")
+        date = datetime.strptime(job.find_all("small")[1].text+" "+str(datetime.today().year), "%b %d %Y")
         title = job.find("strong").text
         company = job.find("small").text
         url = "https://nocsok.com/"+job.find("a", href=True)["href"].replace("#", "")
-        location = job.find("h5").text.lstrip().rstrip()
+        location = job.find("h5").text.strip()
 
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))

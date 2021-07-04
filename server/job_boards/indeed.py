@@ -1,81 +1,160 @@
-import modules.create_temp_json as create_temp_json
 from bs4 import BeautifulSoup
-import json, requests, sys
 from datetime import datetime, timedelta
+import json, requests, sys, re, time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+# from .modules import create_temp_json
+# from .modules import driver
+import modules.create_temp_json as create_temp_json
+import modules.driver as driver
 
 
-f = open(f"./data/params/zip_codes.txt", "r")
-codes = [code.rstrip() for code in f]
-f.close()
-
-scraped = set()
 data = create_temp_json.data
+scraped = create_temp_json.scraped
 
-# t = open(f"./data/temp/temp_data.json", "r+")
-# t.truncate(0)
-# t.close()
+driver = driver.firefox
 
-def getJobs(item):
-    for job in item:
-        date = job.find("span", {"class": "date date-a11y"}).text.replace("\n", "")
-        title = job.find("a", {"data-tn-element": "jobTitle"}).text.replace("\n", "")
-        company = job.find("a", {"data-tn-element": "companyName"}).text.replace("\n", "")
-        url = "https://www.indeed.com"+job.find("a", href=True)["href"]
-        area = job.find("span", {"class": "location accessible-contrast-color-location"}).text
-        
-        # age = datetime.timestamp(datetime.now() - timedelta(days=7))
-        # postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+options = webdriver.FirefoxOptions()
+# webdriver.DesiredCapabilities.FIREFOX["phantomjs.page.customHeaders.User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"
+browser = webdriver.Firefox(executable_path=driver, options=options)
+# browser = webdriver.PhantomJS(executable_path=driver)
 
-        if date == "Just added" or date == "Today":
-            date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+wait = WebDriverWait(browser, 30)
 
-        if company == False:
-            company = None
-        # if age <= postDate and url not in scraped:
+isTrue = True
+count = 1
+def getJobs(date, title, company, url, location):
+    global isTrue
+
+
+    date = date
+    title = title
+    company = company
+    url = "https://www.indeed.com"+url
+    location = location
+
+    print(date, title)
+
+    if "a second ago" in date or "just" in date.toLowerCase():
+        time = datetime.now() - timedelta(seconds=1)
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "seconds" in date or "second" in date:
+        seconds = re.sub("[^0-9]", "", date)
+        time = datetime.now() - timedelta(seconds=int(seconds))
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "a minute ago" in date:
+        time = datetime.now() - timedelta(minutes=1)
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "minutes" in date or "minute" in date:
+        minutes = re.sub("[^0-9]", "", date)
+        time = datetime.now() - timedelta(minutes=int(minutes))
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "an hour ago" in date:
+        time = datetime.now() - timedelta(hours=1)
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "hours" in date or "hour" in date:
+        hours = re.sub("[^0-9]", "", date)
+        time = datetime.now() - timedelta(hours=int(hours))
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "today" in date.toLowerCase():
+        time = datetime.now()
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "a day ago" in date or "yesterday" in date.toLowerCase():
+        time = datetime.now() - timedelta(days=1)
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+    elif "days" in date or "day" in date:
+        day = re.sub("[^0-9]", "", date)
+        time = datetime.now() - timedelta(days=int(day))
+        date = datetime.strftime(time, "%Y-%m-%d %H:%M")
+
+    print(date, title, company, location, url)
+    
+    age = datetime.timestamp(datetime.now() - timedelta(days=7))
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+
+    # if {"date": date, "title": title, "company": company} not in scraped:
+    if age <= postDate:
         data.append({
-            "timestamp": date,
+            "timestamp": postDate,
             "title": title,
             "company": company,
             "url": url,
-            "area": area,
+            "location": location,
+            "source": "Indeed",
+            "source_url": "https://www.indeed.com/",
             "category": "job"
         })
-        # print(f"indeed: Added {title}")
-        scraped.add(url)
-        print(data)
+        print(f"=> indeed: Added {title} for {company}")
+            # scraped.add({"date": date, "title": title, "company": company})
+    else:
+        print(f"=> indeed: Reached limit. Stopping scrape")
+        isTrue = False
+
 
 def getResults(item):
-    # print(item)
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("div", {"class": "jobsearch-SerpJobCard unifiedRow row result clickcard"})
-    print(results)
-    getJobs(results)
+    results = soup.find_all("a", {"data-hide-spinner": "true"})
 
-def getURL(items):
-    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-    # ua=UserAgent()
-    # hdr = {'User-Agent': ua.random,
-    #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    #   'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-    #   'Accept-Encoding': 'none',
-    #   'Accept-Language': 'en-US,en;q=0.8',
-    #   'Connection': 'keep-alive'
-    # }
+    for result in results:
+        url = result["href"]
+        title = result.find("span", title=True).text.strip()
+        company = result.find("span", {"class": "companyName"}).text.strip()
+        location = result.find("div", {"class": "companyLocation"}).text.strip()
+        date = result.find("span", {"class": "date"}).text.strip()
 
-    # for code in items:
-    url = f"https://www.indeed.com/jobs?q=Developer&l=94043&radius=50&sort=date&remotejob=032b3046-06a3-4876-8dfd-474eb5e7ed11"
-    response = requests.get(url=url, headers=headers).text
-    getResults(response)
-    print(response)
+        # if "pagead" not in result.find("div", {"class": "companyLocation"}).text:
+        #     location = result.find("div", {"class": "companyLocation"}).text
+        # else:
+        #     location = None
 
+        print(date, title, company, url, location)
+        # print(date)
+
+    # results = filtered
+    # print(results)
+    # getJobs(results)
+
+def getURL():    
+    page = 0
+
+    while isTrue:
+        try:
+            # if countdown <= 0:
+            #     print("=> builtin: Too many Exceptions. Stopping scrape.")
+            #     break
+
+            # if page % 10 == 0:
+            #     time.sleep(10)
+            #     print("=> Sleeping...")
+
+            url = f"https://www.indeed.com/jobs?q=developer&sort=date&start={page}0"
+
+            browser.get(url)
+            
+            # wait.until(EC.presence_of_element_located((By.XPATH, "//*[@class='companyName']")))
+            time.sleep(10)
+            response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
+            
+            # print(response)
+
+            getResults(response)
+            # break
+            page+=1
+            global count
+
+            print("Page", count)
+            count+=1        
+        except:
+            break
+        
+    browser.quit()
+
+        
 def main():
-    getURL(codes)
-    createJSON(data)
-
+    getURL()
+    
 main()
 
 sys.exit(0)
