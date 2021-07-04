@@ -44,7 +44,7 @@ def getResults(item):
         apply_url = d["detailsPageUrl"].strip()
         locations_string = d["jobLocation"]["displayName"].strip() if "jobLocation" in d else None
 
-        print(date, apply_url, company_name, position, locations_string)
+        getJobs(date, apply_url, company_name, position, locations_string)
 
 
 def getURL():

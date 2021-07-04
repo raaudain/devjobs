@@ -1,5 +1,4 @@
 /smugmug-flickr
-/picnichealth
 /doppler
 /leapfin
 /automattic
