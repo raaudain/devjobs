@@ -18,3 +18,5 @@ def createJSON():
         with open("./data/data.json", "a", encoding="utf-8") as file:
                 print("=> data.json: Generating new content")
                 json.dump(orderedData, file, ensure_ascii=False, indent=4)
+
+createJSON()

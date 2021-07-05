@@ -6,7 +6,7 @@ data = []
 scraped = set()
 
 def createJSON(item):
-    global date
+    # global data
     
     if isfile("./data/temp/temp_data.json"):
         print("=> temp_data.json: Deleting old content")
@@ -18,9 +18,10 @@ def createJSON(item):
         print("=> temp_data.json: Generating new content")
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-    date = []
-    scraped.clear()
+    # data = []
+    # scraped.clear()
 
+createJSON(data)
 
 
 # createJSON("./data/temp/temp_data.json")
