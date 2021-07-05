@@ -20,7 +20,7 @@ def createJSON():
         #         t = open(f"./data/data.json", "r+")
         #         t.truncate(0)
         #         t.close()
-        main = "../../data/data.json"
+        main = "../data/data.json"
 
         if isfile(main):
                 print("=> data.json: Deleting old content")
