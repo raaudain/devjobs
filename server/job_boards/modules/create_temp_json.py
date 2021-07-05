@@ -8,7 +8,7 @@ scraped = set()
 def createJSON(item):
     # global data
     # temp = "../../data/temp/temp_data.json"
-    temp = "../data/temp/temp_data.json"
+    temp = "./data/temp/temp_data.json"
     
     # if isfile("./data/temp/temp_data.json"):
     #     print("=> temp_data.json: Deleting old content")
