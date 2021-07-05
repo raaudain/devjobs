@@ -1,5 +1,5 @@
 from datetime import datetime
-import requests, json, sys
+import requests, json, sys, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
@@ -50,12 +50,19 @@ def getURL():
         if "engineer" in d["Specialty"]["Value"].lower() or "tech" in d["Specialty"]["Value"].lower():
             jobID.append(d["JobReqNbr"])
     
+    count = 1
+
     for j in jobID:
         url2 = f"https://careers.bloomberg.com/job_search/detail_query?jobID={j}"
         res = requests.get(url2, headers=headers).text
         post = json.loads(res)
 
         getResults(post)
+
+        if count % 5 == 0:
+            time.sleep(5)
+                
+        count+=1
 
 
 def main():

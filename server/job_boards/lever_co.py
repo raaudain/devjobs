@@ -1,6 +1,5 @@
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import requests, sys
+from datetime import datetime
+import requests, sys, json, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
@@ -12,69 +11,84 @@ f = open(f"./data/params/lever_co.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(item, company, source_url):
-    for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-        title = job.find("h5", {"data-qa": "posting-name"}).text
-        company = company
-        url = job["href"]
-        location = job.find("span", {"class": "sort-by-location posting-category small-category-label"}).text
+def getJobs(date, url, company, position, location):
+    date = str(date)
+    title = position
+    company = company
+    url = url
+    location = location
 
-        # print(date, title, company, url, location, source_url)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S.%f"))
 
-        if url not in scraped:
-            data.append({
-                "timestamp": postDate,
-                "title": title,
-                "company": company,
-                "url": url,
-                "location": location,
-                "source": company,
-                "source_url": source_url,
-                "category": "job"
-            })
-            scraped.add(url)
-            print(f"=> lever.co: Added {title} for {company}")
-        else:
-            print(f"=> lever.co: Already scraped {title} for {company}")
-        
+    if url not in scraped:
+        data.append({
+            "timestamp": postDate,
+            "title": title,
+            "company": company.replace("get", "").replace("join", "").capitalize(),
+            "url": url,
+            "location": location,
+            "source": company.replace("get", "").replace("join", "").capitalize(),
+            "source_url": f"https://jobs.lever.co/{company}",
+            "category": "job"
+        })
+        scraped.add(url)
+        print(f"=> lever.co: Added {title} for {company}")
+    else:
+        print(f"=> lever.co: Already scraped {title} for {company}")
+            
+
 
 def getResults(item, name):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("a", {"class": "posting-title"})
-    company = soup.find("title").text.strip()
-    source_url = soup.find("p").find("a", href=True)["href"] if soup.find("p") else f"https://jobs.lever.co/{name}"
-
-    postings = []
-
-    for result in results:
-        h5 = result.find("h5").text
-        if "Engineer" in h5 or "Tech" in h5 or "Web" in h5 or "Data " in h5:
-            postings.append(result)
-
-    results = postings
-
-    getJobs(results, company, source_url)
-    # print(results)
+    for i in item:
+        try:
+            if "Engineer" in i["text"] or "Tech" in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"]:
+                # use true division by 1e3 (float 1000)
+                date = datetime.fromtimestamp(i["createdAt"] / 1e3)
+                apply_url = i["hostedUrl"].strip()
+                company_name = name
+                position = i["text"].strip()
+                locations_string = i["categories"]["location"].strip()
+                
+                getJobs(date, apply_url, company_name, position, locations_string)
+        except:
+            continue
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
-    # url = f"https://jobs.lever.co/clubhouse"
-    # response = requests.get(url, headers=headers).text
-    # getResults(response)
+    count = 1
 
     for name in companies:
-        try:
-            url = f"https://jobs.lever.co/{name}"
-            response = requests.get(url, headers=headers).text
-            getResults(response, name)
+
+        url = f"https://api.lever.co/v0/postings/{name}/"
+
+        response = requests.get(url, headers=headers)
+
+        if response.ok:
+
+            data = json.loads(response.text)
+
+            getResults(data, name)
+
+            if count % 5 == 0:
+                time.sleep(5)
+
+
+            print(response.status_code, count)
+            count += 1
+        else:
+            print(f"Failed to scraped: {name}")
             
-            # print(response)
-        except:
-            print(f"=> lever_co: Scrape failed for {name}. Going to next.")
-            continue
+    
+    # url = f"https://api.lever.co/v0/postings/preset"
+
+    # response = requests.get(url, headers=headers).text
+
+    # data = json.loads(response)
+
+    # getResults(data, "preset")
+    
+    # print(data)
 
 
 def main():

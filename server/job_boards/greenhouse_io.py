@@ -55,6 +55,8 @@ def getResults(item, name):
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
+    count = 1
+
     for name in companies:
         try:
             url = f"https://boards-api.greenhouse.io/v1/boards/{name}/departments"
@@ -65,8 +67,10 @@ def getURL():
 
             getResults(data, name)
             
-            time.sleep(5)
-            # print(data)
+            if count % 5 == 0:
+                time.sleep(5)
+                
+            count+=1
         except:
             print(f"Failed to scraped: {name}")
             continue

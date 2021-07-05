@@ -1,7 +1,7 @@
 # import craigslist_gigs
 from multiprocessing import Pool
 from git import Repo
-from . import craigslist_jobs
+# from . import craigslist_jobs
 from . import greenhouse_io
 from . import bloomberg
 from . import lever_co
@@ -45,12 +45,12 @@ def gitPush():
 sites = [
     hireart.main(),
     workable.main(),
-    bloomberg.main(),
     lever_co.main(),
+    bloomberg.main(),
     workline.main(),
     dailyremote.main(),
     dice.main(),
-    craigslist_jobs.main(),
+    # craigslist_jobs.main(),
     builtin.main(),
     usajobs.main(),
     greenhouse_io.main(),

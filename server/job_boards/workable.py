@@ -54,6 +54,8 @@ def getResults(item, company):
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
+    count = 1
+
     for company in companies:
         try:
             token = "0"
@@ -84,7 +86,10 @@ def getURL():
                     else:
                         token = ""
                 
-                time.sleep(5)
+                if count % 5 == 0:
+                    time.sleep(5)
+                
+                count+=1
 
         except json.decoder.JSONDecodeError:
             print(f"=> workable: JSON error with {company}")

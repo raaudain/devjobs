@@ -1,5 +1,5 @@
 from datetime import datetime
-import requests, json, sys
+import requests, json, sys, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
@@ -57,6 +57,11 @@ def getURL():
 
         data = json.loads(response.text)
         getResults(data)
+
+        if page % 5 == 0:
+            time.sleep(5)
+        
+        
 
         page += 1
 
