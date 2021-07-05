@@ -2,6 +2,7 @@
 from git import Repo
 from . import craigslist_jobs
 from . import greenhouse_io
+from . import bloomberg
 from . import lever_co
 from . import workline
 from . import clickup
@@ -41,6 +42,7 @@ def gitPush():
         print("=> Failed to push to GitHub") 
 
 sites = [
+    bloomberg.main(),
     lever_co.main(),
     workline.main(),
     dailyremote.main(),

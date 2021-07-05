@@ -1,5 +1,5 @@
 from job_boards import _main
-import sys, datetime
+import sys
 
 _main.main()
 

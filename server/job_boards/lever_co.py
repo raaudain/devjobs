@@ -50,7 +50,7 @@ def getResults(item, name):
 
     for result in results:
         h5 = result.find("h5").text
-        if "Engineer" in h5 or "Tech" in h5:
+        if "Engineer" in h5 or "Tech" in h5 or "Web" in h5 or "Data " in h5:
             postings.append(result)
 
     results = postings

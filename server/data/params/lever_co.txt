@@ -244,3 +244,4 @@ dixa
 preset
 uncountable
 tackle
+lambdaschool
