@@ -1,4 +1,5 @@
 # import craigslist_gigs
+from multiprocessing import Pool
 from git import Repo
 from . import craigslist_jobs
 from . import greenhouse_io
@@ -23,7 +24,7 @@ from . import zillow
 from . import usajobs
 from .modules import create_temp_json
 from .modules import create_main_json
-from datetime import datetime
+from datetime import datetime, timedelta
 import sys, os
 
 
@@ -42,11 +43,12 @@ def gitPush():
         print("=> Failed to push to GitHub") 
 
 sites = [
+    hireart.main(),
+    workable.main(),
     bloomberg.main(),
     lever_co.main(),
     workline.main(),
     dailyremote.main(),
-    workable.main(),
     dice.main(),
     craigslist_jobs.main(),
     builtin.main(),
@@ -55,7 +57,6 @@ sites = [
     stackoverflow.main(),
     key_values.main(),
     zillow.main(),
-    hireart.main(),
     clickup.main(),
     instacart.main(),
     nocsok.main(),
@@ -65,40 +66,24 @@ sites = [
     workwithindies.main(),
 ]
 
+# create = (create_temp_json.createJSON(create_temp_json.data),
+#     create_main_json.createJSON())
+
 def main():
     print("=> Scanning job boards")
-    start = datetime.now()
+    # start = None
     
-    for site in sites: site
-        
-
-
-    # dice.main()
-    # craigslist_jobs.main()
-    # builtin.main()
-    # usajobs.main()
-    # lever_co.main()
-    # workable.main()
-    # greenhouse_io.main()
-    # stackoverflow.main()
-    # key_values.main()
-    # zillow.main()
-    # hireart.main()
-    # clickup.main()
-    # instacart.main()
-    # nocsok.main()
-    # remote_co.main()
-    # remoteok.main()
-    # weworkremotely.main()
-    # workwithindies.main()
-
+    for site in sites:
+        # time = datetime.now()
+        site
+        # start += datetime.now(timedelta(minutes=time))
 
 
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
     # gitPush()
     print("=> Done")
-    print("=> Total time: " + str(datetime.now() - start))
+    # print("=> Total time: " + str(datetime.now() - start))
 
 # main()
 # gitPush()

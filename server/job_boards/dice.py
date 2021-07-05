@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-import requests, json, sys
+import requests, json, sys, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
@@ -59,7 +59,7 @@ def getURL():
 
         getResults(data)
         # print(data)
-
+        time.sleep(5)
 
 def main():
     getURL()

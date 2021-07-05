@@ -67,7 +67,7 @@ def getURL():
             data = json.loads(response.text)
 
             getResults(data, name)
-            time.sleep(2)
+            time.sleep(5)
             # print(data)
         else:
             print(f"Failed to scraped: {name}")

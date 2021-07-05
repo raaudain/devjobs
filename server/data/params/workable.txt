@@ -78,8 +78,6 @@ freelancer
 switcher-studio
 yet-analytics-inc
 klang-games
-new-vector
-iex-ec
 plaisio-careers
 slashdata
 deeproute-dot-a-i
