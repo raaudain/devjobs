@@ -50,16 +50,20 @@ def getURL():
     page = 1
 
     while page <= 100:
-        url = f"https://workaline.com/api/web/listings?page={page}&per_page=20&include=developer,engineer,frontend,backend,fullstack,front,develop,program,engine,dev,integration,data,tech,technical,cloud,microservice,query,maintenance,operation,ops,system,window,linux&exclude=sales"
-        response = requests.get(url, headers=headers)
+        try:
+            url = f"https://workaline.com/api/web/listings?page={page}&per_page=20&include=developer,engineer,frontend,backend,fullstack,front,develop,program,engine,dev,integration,data,tech,technical,cloud,microservice,query,maintenance,operation,ops,system,window,linux&exclude=sales"
+            response = requests.get(url, headers=headers)
 
-        print("=> workline: Page", page)
+            print("=> workline: Page", page)
 
-        data = json.loads(response.text)
-        getResults(data)
+            data = json.loads(response.text)
+            getResults(data)
 
-        if page % 5 == 0:
-            time.sleep(5)
+            if page % 10 == 0:
+                time.sleep(5)
+                
+        except:
+            continue
         
         
 

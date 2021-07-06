@@ -297,7 +297,6 @@ applyboard
 truepill
 boweryfarming
 xometry
-wearedream/
 klick
 lucid
 life
@@ -319,18 +318,15 @@ gettyimages
 tala
 safeauto
 jamcity
-helloahead/
 foundersfactory
 vroom
 siteminder
 springhealth
 sendoso
-uniphore/
 arrival
 invisible
 coreresponse
 nortal
-goodrx/
 extend
 waitrapp
 aeratechnology
@@ -381,7 +377,6 @@ dnc
 360learning
 popmenu
 prodigyeducation
-payfit/
 wyze
 rockcontent
 circlemedical

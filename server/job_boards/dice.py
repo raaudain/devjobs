@@ -51,15 +51,19 @@ def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36", "X-Api-Key": "1YAt0R9wBg4WfsF9VB2778F5CHLAPMVW3WAZcKd8", "Origin": "https://www.dice.com"}
 
     for job in jobs:
-        url = f"https://job-search-api.svc.dhigroupinc.com/v1/dice/jobs/search?q={job}&countryCode2=US&radius=30&radiusUnit=mi&page=1&pageSize=1000&facets=employmentType%7CpostedDate%7CworkFromHomeAvailability%7CemployerType%7CeasyApply%7CisRemote&filters.employerType=Direct%20Hire&filters.postedDate=SEVEN&fields=id%7CjobId%7Csummary%7Ctitle%7CpostedDate%7CjobLocation.displayName%7CdetailsPageUrl%7Csalary%7CclientBrandId%7CcompanyPageUrl%7CcompanyLogoUrl%7CpositionId%7CcompanyName%7CemploymentType%7CisHighlighted%7Cscore%7CeasyApply%7CemployerType%7CworkFromHomeAvailability%7CisRemote&culture=en&recommendations=true&interactionId=0&fj=true&includeRemote=true"
+        try:
+            url = f"https://job-search-api.svc.dhigroupinc.com/v1/dice/jobs/search?q={job}&countryCode2=US&radius=30&radiusUnit=mi&page=1&pageSize=1000&facets=employmentType%7CpostedDate%7CworkFromHomeAvailability%7CemployerType%7CeasyApply%7CisRemote&filters.employerType=Direct%20Hire&filters.postedDate=SEVEN&fields=id%7CjobId%7Csummary%7Ctitle%7CpostedDate%7CjobLocation.displayName%7CdetailsPageUrl%7Csalary%7CclientBrandId%7CcompanyPageUrl%7CcompanyLogoUrl%7CpositionId%7CcompanyName%7CemploymentType%7CisHighlighted%7Cscore%7CeasyApply%7CemployerType%7CworkFromHomeAvailability%7CisRemote&culture=en&recommendations=true&interactionId=0&fj=true&includeRemote=true"
 
-        response = requests.get(url, headers=headers).text
+            response = requests.get(url, headers=headers).text
 
-        data = json.loads(response)
+            data = json.loads(response)
 
-        getResults(data)
-        # print(data)
-        time.sleep(5)
+            getResults(data)
+            # print(data)
+            time.sleep(2)
+
+        except:
+            continue
 
 def main():
     getURL()

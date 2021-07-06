@@ -53,14 +53,17 @@ def getURL():
     count = 1
 
     for j in jobID:
-        url2 = f"https://careers.bloomberg.com/job_search/detail_query?jobID={j}"
-        res = requests.get(url2, headers=headers).text
-        post = json.loads(res)
+        try:
+            url2 = f"https://careers.bloomberg.com/job_search/detail_query?jobID={j}"
+            res = requests.get(url2, headers=headers).text
+            post = json.loads(res)
 
-        getResults(post)
+            getResults(post)
 
-        if count % 5 == 0:
-            time.sleep(5)
+            if count % 10 == 0:
+                time.sleep(5)
+        except:
+            continue
                 
         count+=1
 

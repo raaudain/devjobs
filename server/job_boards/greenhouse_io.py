@@ -67,7 +67,7 @@ def getURL():
 
             getResults(data, name)
             
-            if count % 5 == 0:
+            if count % 10 == 0:
                 time.sleep(5)
                 
             count+=1
