@@ -260,7 +260,6 @@ enigmaio
 aptible
 checkr
 nexhealth
-ivanti
 culturebiosciences
 sprinklr
 flickr
@@ -384,3 +383,7 @@ lob
 elationhealth
 akqa
 fearless
+creditkarma
+project44
+fabfitfun
+collibra

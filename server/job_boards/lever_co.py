@@ -41,7 +41,7 @@ def getJobs(date, url, company, position, location):
 def getResults(item, name):
     for i in item:
         try:
-            if "Engineer" in i["text"] or "Tech" in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"]:
+            if "Engineer" in i["text"] or "Tech " in i["text"] or "Web" in i["text"] or "IT" in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"]:
                 # use true division by 1e3 (float 1000)
                 date = datetime.fromtimestamp(i["createdAt"] / 1e3)
                 apply_url = i["hostedUrl"].strip()
@@ -74,7 +74,7 @@ def getURL():
                 time.sleep(5)
 
 
-            print(response.status_code, count)
+            # print(response.status_code, count)
             count += 1
         else:
             print(f"Failed to scraped: {name}")

@@ -523,3 +523,7 @@ middletonmeyers
 emersoncollective
 kiddom
 ava
+plaid
+jobscan-2
+oliverspace
+sharkninja

@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import requests, json, sys, time
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
+# from .modules import create_temp_json
+import modules.create_temp_json as create_temp_json
 
 
 data = create_temp_json.data
@@ -34,7 +34,9 @@ def getJobs(date, url, company, position, location):
                 "source_url": "https://builtin.com/",
                 "category": "job"
             })
-            print(f"=> builtin: Added {title} for {company}")
+            # print(f"=> builtin: Added {title} for {company}")
+            print(f"{company}")
+
             scraped.add(url)
         else:
             print(f"=> builtin: Reached limit. Stopping scrape")
@@ -106,26 +108,29 @@ def getResults(item):
         locations_string = d["location"]
 
         getJobs(date, apply_url, company_name, position, locations_string)
-        time.sleep(5)
+        
 
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
     page = 1
+    count = 3
 
-    while isTrue:
+    while isTrue or count > 0:
         try:
-            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=100&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
 
             response = requests.get(url, headers=headers).text
 
             data = json.loads(response)
 
             getResults(data)
+            time.sleep(5)
+
             page+=1
+            
         except:
-            print(f"=> builtin: Break")
             break
     
     # print(data)
@@ -135,5 +140,5 @@ def getURL():
 def main():
     getURL()
 
-# main()
-# sys.exit(0)
+main()
+sys.exit(0)
