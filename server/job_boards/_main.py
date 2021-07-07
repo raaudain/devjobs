@@ -1,4 +1,5 @@
 # import craigslist_gigs
+from re import S
 from git import Repo
 # from . import craigslist_jobs
 from . import greenhouse_io
@@ -13,7 +14,7 @@ from . import nocsok
 from . import remote_co
 from . import remoteok
 from . import weworkremotely
-# from . import builtin
+from . import builtin
 from . import workwithindies
 from . import dailyremote
 from . import hireart
@@ -21,6 +22,8 @@ from . import stackoverflow
 from . import dice
 from . import zillow
 from . import usajobs
+from . import amazon
+from . import smartrecruiters
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -42,8 +45,10 @@ def gitPush():
         print("=> Failed to push to GitHub") 
 
 sites = [
+    amazon.main(),
+    smartrecruiters.main(),
     hireart.main(),
-    # builtin.main(),
+    builtin.main(),
     workable.main(),
     lever_co.main(),
     bloomberg.main(),

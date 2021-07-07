@@ -34,9 +34,7 @@ def getJobs(date, url, company, position, location):
                 "source_url": "https://builtin.com/",
                 "category": "job"
             })
-            # print(f"=> builtin: Added {title} for {company}")
-            print(f"{company}")
-
+            print(f"=> builtin: Added {title} for {company}")
             scraped.add(url)
         else:
             print(f"=> builtin: Reached limit. Stopping scrape")
@@ -49,29 +47,29 @@ def getResults(item):
 
     # Remove unwanted data
     for i in range(len(companies)):
-        del companies[i]["company_perks"]
-        del companies[i]["elite"]
-        del companies[i]["high_volume_poster"]
-        del companies[i]["job_slots"]
-        del companies[i]["limited_listing"]
-        del companies[i]["logo"]
-        del companies[i]["premium"]
-        del companies[i]["region_id"]
+        # if "company_perks" in companies[i]: del companies[i]["company_perks"]
+        # if "elite" in companies[i]: del companies[i]["elite"]
+        # if "high_volume_poster" in companies[i]: del companies[i]["high_volume_poster"]
+        # if "company_perks" in companies[i]: del companies[i]["job_slots"]
+        # if "company_perks" in companies[i]: del companies[i]["limited_listing"]
+        # if "company_perks" in companies[i]: del companies[i]["logo"]
+        # if "company_perks" in companies[i]: del companies[i]["premium"]
+        # if "company_perks" in companies[i]: del companies[i]["region_id"]
         companies[i]["company"] = companies[i]["title"]
 
     for i in range(len(jobs)):
-        del jobs[i]["category_id"]
-        del jobs[i]["body"]
-        del jobs[i]["experience_level"]
-        del jobs[i]["hot_jobs_score"]
-        del jobs[i]["is_national"]
-        del jobs[i]["meta_tags"]
-        del jobs[i]["remote"]
-        del jobs[i]["remote_status"]
-        del jobs[i]["body_summary"]
-        del jobs[i]["industry_id"]
-        del jobs[i]["sub_category_id"]
-        del jobs[i]["id"]
+        # del jobs[i]["category_id"]
+        # del jobs[i]["body"]
+        # del jobs[i]["experience_level"]
+        # del jobs[i]["hot_jobs_score"]
+        # del jobs[i]["is_national"]
+        # del jobs[i]["meta_tags"]
+        # del jobs[i]["remote"]
+        # del jobs[i]["remote_status"]
+        # del jobs[i]["body_summary"]
+        # del jobs[i]["industry_id"]
+        # del jobs[i]["sub_category_id"]
+        # del jobs[i]["id"]
         jobs[i]["id"] = jobs[i]["company_id"]
         
     # Merge dictionaries by id
@@ -112,14 +110,18 @@ def getResults(item):
 
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
+    headers = {
+        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+        "Origin":"https://builtin.com",
+        "Referer":"https://builtin.com/"
+        }
 
     page = 1
     count = 3
 
     while isTrue or count > 0:
         try:
-            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=100&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
 
             response = requests.get(url, headers=headers).text
 
@@ -140,5 +142,5 @@ def getURL():
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)

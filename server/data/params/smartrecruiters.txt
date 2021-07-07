@@ -41,3 +41,5 @@ INDEVCONorthAmerica
 ManitoulinGroupOfCompanies
 HMGroup
 Believe
+Zscaler
+PingboardInc

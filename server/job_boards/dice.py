@@ -60,7 +60,7 @@ def getURL():
 
             getResults(data)
             # print(data)
-            time.sleep(2)
+            time.sleep(5)
 
         except:
             continue

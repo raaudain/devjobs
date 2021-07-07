@@ -13,7 +13,6 @@
 /new-relic
 /bombbomb
 /amplitude
-/vanta
 /monograph
 /actzero
 /dark

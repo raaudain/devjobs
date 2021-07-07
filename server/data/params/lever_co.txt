@@ -354,7 +354,6 @@ ekimetrics
 sincrodigital
 ppro
 saiglobal
-anduril
 meero
 projekt202
 waystar
@@ -527,3 +526,4 @@ plaid
 jobscan-2
 oliverspace
 sharkninja
+kinsta
