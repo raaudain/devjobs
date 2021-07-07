@@ -527,3 +527,4 @@ jobscan-2
 oliverspace
 sharkninja
 kinsta
+lucidmotors
