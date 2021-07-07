@@ -36,14 +36,15 @@ def getResults(item):
     data = item["jobs"]
 
     for d in data:
-        date = datetime.strptime(d["posted_date"], "%B %d, %Y")
-        position = d["title"]
-        company_name = d["company_name"]
-        jobPath = d["job_path"].strip()
-        apply_url = f"https://amazon.jobs{jobPath}"
-        locations_string = d["normalized_location"]
+        if "Engineer" in d["title"] or "Data" in d["title"] or "Tech " in d["title"] or "IT" in d["title"] or "Support" in d["title"]:
+            date = datetime.strptime(d["posted_date"], "%B %d, %Y")
+            position = d["title"]
+            company_name = d["company_name"]
+            jobPath = d["job_path"].strip()
+            apply_url = f"https://amazon.jobs{jobPath}"
+            locations_string = d["normalized_location"]
 
-        getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string)
 
 
 def getURL():
