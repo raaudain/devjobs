@@ -45,6 +45,7 @@ def gitPush():
         print("=> Failed to push to GitHub") 
 
 sites = [
+    dice.main(),
     amazon.main(),
     smartrecruiters.main(),
     hireart.main(),
@@ -54,7 +55,6 @@ sites = [
     bloomberg.main(),
     workline.main(),
     dailyremote.main(),
-    dice.main(),
     # craigslist_jobs.main(),
     usajobs.main(),
     greenhouse_io.main(),

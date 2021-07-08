@@ -38,13 +38,14 @@ def getResults(item):
     data = item["data"]
 
     for d in data:
-        date = datetime.strptime(d["postedDate"], "%Y-%m-%dT%H:%M:%SZ")
-        position = d["title"].strip()
-        company_name = d["companyName"].strip()
-        apply_url = d["detailsPageUrl"].strip()
-        locations_string = d["jobLocation"]["displayName"].strip() if "jobLocation" in d else None
+        if "vdart" not in d["companyName"].lower() or "roberthalf" not in d["companyName"].lower() or "jobot" not in d["companyName"].lower() or "net2source" not in d["companyName"].lower():
+            date = datetime.strptime(d["postedDate"], "%Y-%m-%dT%H:%M:%SZ")
+            position = d["title"].strip()
+            company_name = d["companyName"].strip()
+            apply_url = d["detailsPageUrl"].strip()
+            locations_string = d["jobLocation"]["displayName"].strip() if "jobLocation" in d else None
 
-        getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string)
 
 
 def getURL():
