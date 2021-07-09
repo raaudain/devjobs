@@ -127,11 +127,23 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
+/client
 .gitignore
-/server/geckodriver.log
-/server/ghostdriver.log
+/.gitignore
+# /server/geckodriver.log
+# /server/ghostdriver.log
 /server/env
 geckodriver.log
 ghostdriver.log
+/server/stuff.txt
+/server/output.txt
+/server/*.log
+/server/getURLs.py
+/server/clean.py
+/server/apply_workable.py
+/server/job_boards/zzzzTEST.py
+# /server/data/params
+/server/temp
+/server/Users
 .DS_Store
+/.DS_Store

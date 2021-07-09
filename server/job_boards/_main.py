@@ -1,6 +1,5 @@
 # import craigslist_gigs
-from re import S
-from git import Repo
+# from git import Repo
 # from . import craigslist_jobs
 from . import greenhouse_io
 from . import bloomberg
@@ -30,27 +29,27 @@ from datetime import datetime, timedelta
 import sys, os
 
 
-def gitPush():
-    pathToRepo = f"{os.getcwd()}/.git"
-    commitMessage = "Update json"
+# def gitPush():
+#     pathToRepo = f"{os.getcwd()}/.git"
+#     commitMessage = "Update json"
 
-    try:
-        repo = Repo(pathToRepo)
-        repo.git.add(update=True)
-        repo.index.commit(commitMessage)
-        origin = repo.remote(name="origin")
-        origin.push()
-        print("=> Pushed to GitHub")
-    except:
-        print("=> Failed to push to GitHub") 
+#     try:
+#         repo = Repo(pathToRepo)
+#         repo.git.add(update=True)
+#         repo.index.commit(commitMessage)
+#         origin = repo.remote(name="origin")
+#         origin.push()
+#         print("=> Pushed to GitHub")
+#     except:
+#         print("=> Failed to push to GitHub") 
 
 sites = [
+    lever_co.main(),
     dice.main(),
     amazon.main(),
     smartrecruiters.main(),
     hireart.main(),
     builtin.main(),
-    lever_co.main(),
     workable.main(),
     bloomberg.main(),
     workline.main(),

@@ -56,7 +56,7 @@ def getResults(item, name):
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
-    count = 1
+    # count = 1
 
     for name in companies:
 
@@ -70,12 +70,12 @@ def getURL():
 
             getResults(data, name)
 
-            if count % 5 == 0:
-                time.sleep(5)
+            # if count % 5 == 0:
+            time.sleep(5)
 
 
             # print(response.status_code, count)
-            count += 1
+            # count += 1
         else:
             print(f"Failed to scraped: {name}")
             

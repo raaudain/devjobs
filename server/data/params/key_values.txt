@@ -1,3 +1,4 @@
+/remix
 /smugmug-flickr
 /doppler
 /leapfin
@@ -25,7 +26,3 @@
 /careguide
 /peergrade
 /creator-deck-media
-/bitexpert
-/atlas
-/loylap
-/mindmatters

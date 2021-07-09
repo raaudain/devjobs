@@ -1,7 +1,7 @@
 import './css/App.css';
 import Homepage from "./components/Homepage"
 
-function App() {
+export default function App() {
   return (
     <>
       <Homepage />
@@ -9,4 +9,3 @@ function App() {
   );
 }
 
-export default App;

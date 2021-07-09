@@ -1,39 +1,51 @@
 import React from 'react'
 
-function Pagination({ jobsPerPage, totalJobs, setCurrPage, currPage }){
-    const pageNumbers = [];
-    const pages = Math.ceil(totalJobs / jobsPerPage);
-    let index = 1;
 
+function Pagination({ data }) {
+    const itemsPerPage = 20;
+    let currentPage = 1;
+    let filteredData = []
+    let jobs = []
 
-    while (index <= pages) {
-        pageNumbers.push(index);
-        index++;
+    
+    function renderLimit(jobsArray, jobsPerPage, currPage) {
+        currPage--;
+        
+        let start = jobsPerPage * currPage;
+        let end = start + jobsPerPage;
+        let paginated = jobsArray.slice(start, end);
+        
+        console.log("pag",paginated)
+        jobs = paginated;
     }
 
-    function paginate(pageNumber) {
-        return setCurrPage(pageNumber);
-    }
+    console.log(jobs)
+    
+    // renderLimit(data, itemsPerPage, currentPage)
 
-    function next() {
-        return setCurrPage(currPage+1)
-    }
+    // console.log("j", renderLimit())
 
-    function page() {
-        return setCurrPage(currPage)
-    }
+    // Infinite Scroll
+    window.addEventListener("scroll", () => {
+        const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
+
+        if (!filteredData.length) {
+            if (scrollTop + clientHeight > scrollHeight - 100) {
+                currentPage++;
+                setTimeout(renderLimit(data, itemsPerPage, currentPage), 2000);
+            }
+        }
+        else {
+            if (scrollTop + clientHeight > scrollHeight - 10) {
+                currentPage++;
+                setTimeout(renderLimit(filteredData, itemsPerPage, currentPage), 2000);
+            }
+        }
+    });
 
     return (
-        <div>
-            <button>PREV</button>
-            {pageNumbers.map(number => 
-                <a href="!#" key={number}>
-                    <span onClick={() => paginate(number)}>{number}</span>
-                </a>
-            )}
-            <button onClick={() => next}>NEXT</button>
-        </div>
+        <></>
     )
-} 
+}
 
 export default Pagination;
