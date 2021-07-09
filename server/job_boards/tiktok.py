@@ -2,7 +2,7 @@ import requests
 
 session = requests.Session()
 
-tt_tokens = session.get("https://www.tiktok.com").cookies.get_dict()
+tt_tokens = session.get("https://www.tiktok.com/").cookies.get_dict()
 
 
 print(tt_tokens)

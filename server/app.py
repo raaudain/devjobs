@@ -13,7 +13,8 @@ def scanner():
     print("=> Scanner is set to run")
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(scanner, "interval", hours=6)
+# sched.add_job(scanner, "interval", hours=6)
+sched.add_job(scanner, "cron", hour=8)
 sched.start()
 
 @app.route("/")
