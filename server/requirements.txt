@@ -1,3 +1,4 @@
+python==3.9.6
 appdirs==1.4.4
 APScheduler==3.7.0
 astroid==2.4.2
