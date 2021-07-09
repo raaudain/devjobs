@@ -27,7 +27,7 @@ def data():
     # f = open(filename, "r")
     # jsonFile = json.load(f)
     # return jsonFile
-    with open("./data/data.json", mode='r') as f:
+    with open("./data/data.json", mode="r") as f:
         text = json.load(f)
         return text
 
