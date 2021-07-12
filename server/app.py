@@ -13,15 +13,15 @@ def scanner():
     print("=> Scanner is set to run")
 
 sched = BackgroundScheduler(daemon=True)
-# sched.add_job(scanner, "interval", hours=6)
-sched.add_job(scanner, "cron", hour=8)
+# sched.add_job(scanner, "interval", minutes=2)
+sched.add_job(scanner, "cron", hour=4)
 sched.start()
 
 @app.route("/")
 def index():
     return "Hello."
 
-@app.route("/api")
+# @app.route("/api")
 def data():
     # filename = os.path.join(app.static_folder, "data.json")
     # f = open(filename, "r")
@@ -36,5 +36,5 @@ def data():
 if __name__ == "__main__":
     # sched.add_job(id="job_scanner", func=scanner, trigger="interval", minutes=30)
     # sched.start()
-    app.run(debug=True)
+    app.run(debug=False)
 

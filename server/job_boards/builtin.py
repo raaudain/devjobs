@@ -117,9 +117,8 @@ def getURL():
         }
 
     page = 1
-    count = 3
 
-    while isTrue or count > 0:
+    while isTrue:
         try:
             url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
 

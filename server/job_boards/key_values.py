@@ -62,7 +62,7 @@ def getURL():
         url = f"https://www.keyvalues.com{param}"
         response = requests.get(url, headers=headers).text
         getResults(response)
-        # time.sleep(2)
+        time.sleep(5)
 
 
 def main():

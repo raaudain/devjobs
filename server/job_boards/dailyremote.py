@@ -97,8 +97,8 @@ def getURL():
         if isTrue == False:
             break
 
-        if page % 5 == 0:
-            time.sleep(2)
+        # if page % 5 == 0:
+        #     time.sleep(2)
         print(f"=> dailyremote: Scraping page {page}")
 
         try:
@@ -106,6 +106,7 @@ def getURL():
             response = requests.get(url, headers=headers).text
             getResults(response)
             
+            time.sleep(5)
             page += 1
             # print(response)
         except:

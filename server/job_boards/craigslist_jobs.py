@@ -67,6 +67,8 @@ def getURL(items):
             url = f"https://{location}.craigslist.org/search/sof?lang=en"
             response = requests.get(url, headers=headers).text
             getResults(response, location)
+
+            time.sleep(5)
         except:
             print("=> craigslist_jobs: Continue to next")
             continue
@@ -83,6 +85,8 @@ def getURLMiami(items):
             url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
             response = requests.get(url, headers=headers).text
             getResults(response, location)
+
+            time.sleep(5)
         except:
             print("=> craigslist_jobs: Scrape failed. Going to next.")
             pass

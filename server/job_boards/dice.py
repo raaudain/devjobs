@@ -37,8 +37,10 @@ def getJobs(date, url, company, position, location):
 def getResults(item):
     data = item["data"]
 
+    recruiters = ("VDart, Inc.", "Net2Source Inc.")
+
     for d in data:
-        if "vdart" not in d["companyName"].lower() or "roberthalf" not in d["companyName"].lower() or "jobot" not in d["companyName"].lower() or "net2source" not in d["companyName"].lower():
+        if d["companyName"] not in recruiters:
             date = datetime.strptime(d["postedDate"], "%Y-%m-%dT%H:%M:%SZ")
             position = d["title"].strip()
             company_name = d["companyName"].strip()

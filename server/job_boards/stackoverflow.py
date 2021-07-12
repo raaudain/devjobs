@@ -107,9 +107,9 @@ def getURL():
             #     print("=> stackoverflow: Too many Exceptions. Stopping scrape.")
             #     break
 
-            # if page % 10 == 0:
-            #     time.sleep(10)
-            #     print("=> Sleeping...")
+            if page % 10 == 0:
+                time.sleep(10)
+                print("=> Sleeping...")
 
             url = f"https://stackoverflow.com/jobs?sort=p&pg={page}"
 
@@ -123,6 +123,8 @@ def getURL():
             print("stackoverflow => Page", page)
 
             getResults(response)
+            
+            # time.sleep(5)
 
             page+=1
        

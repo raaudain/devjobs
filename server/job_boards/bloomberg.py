@@ -65,7 +65,7 @@ def getURL():
         except:
             continue
                 
-        count+=1
+        # count+=1
 
 
 def main():

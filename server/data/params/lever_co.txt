@@ -532,3 +532,11 @@ kraken
 zazzle
 nio
 zoox
+wellframe
+desmos
+ntropy-network
+attentivemobile
+bill
+springboard
+morningbrew
+connectly
