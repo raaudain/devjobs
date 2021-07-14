@@ -20,7 +20,7 @@ sched.start()
 def index():
     return "Hello."
 
-# @app.route("/api")
+# @app.route("/json")
 def data():
     with open("./data/data.json", mode="r") as f:
         text = json.load(f)
