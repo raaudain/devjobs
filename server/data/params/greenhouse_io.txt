@@ -419,3 +419,5 @@ flipboard
 meetupjobs
 godaddy
 mailchimp
+cybereason
+hashicorp

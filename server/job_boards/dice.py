@@ -37,7 +37,7 @@ def getJobs(date, url, company, position, location):
 def getResults(item):
     data = item["data"]
 
-    recruiters = ("VDart, Inc.", "Net2Source Inc.")
+    recruiters = ("VDart, Inc.", "Net2Source Inc.", "Sumeru")
 
     for d in data:
         if d["companyName"] not in recruiters:
