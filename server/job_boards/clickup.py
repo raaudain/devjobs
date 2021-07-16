@@ -34,7 +34,7 @@ def getResults(item):
     results = soup.find_all("a", {"class": "current-vacancies__jobs_description"})
 
     for i in results:
-        if "Engineer" in i.text or "Tech" in i.text or "Support" in i.text:
+        if "Engineer" in i.text or "Tech" in i.text or "Support" in i.text or "IT " in i.text:
             getJobs(i)
 
     # getJobs(results)

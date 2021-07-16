@@ -4,7 +4,7 @@
 from . import greenhouse_io
 from . import bloomberg
 from . import lever_co
-from . import workline
+from . import workaline
 from . import clickup
 from . import workable
 from . import instacart
@@ -89,7 +89,7 @@ def main():
     smartrecruiters.main(),
     hireart.main(),
     bloomberg.main(),
-    workline.main(),
+    workaline.main(),
     usajobs.main(),
     key_values.main(),
     zillow.main(),

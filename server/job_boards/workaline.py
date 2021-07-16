@@ -22,8 +22,8 @@ def getJobs(date, url, company, position, location):
         "company": company,
         "url": url,
         "location": location,
-        "source": "Workline",
-        "source_url": "https://www.workline.com",
+        "source": "Workaline",
+        "source_url": "https://www.workaline.com",
         "category": "job"
     })
     print(f"=> workline: Added {title} for {company}")
