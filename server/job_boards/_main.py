@@ -82,6 +82,7 @@ def main():
     #     # start += datetime.now(timedelta(minutes=time))
 
     # craigslist_jobs.main(),
+    workaline.main(),
     workable.main(),
     lever_co.main(),
     greenhouse_io.main(),
@@ -89,7 +90,6 @@ def main():
     smartrecruiters.main(),
     hireart.main(),
     bloomberg.main(),
-    workaline.main(),
     usajobs.main(),
     key_values.main(),
     zillow.main(),

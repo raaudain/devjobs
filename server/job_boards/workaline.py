@@ -39,7 +39,7 @@ def getResults(item):
                 apply_url = data["url"].strip()
                 company_name = data["company"].strip() if data["company"] else None
                 position = data["title"].strip()
-                locations_string = None
+                locations_string = "Remote"
                 getJobs(date, apply_url, company_name, position, locations_string)
         except:
             continue
