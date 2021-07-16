@@ -8,33 +8,36 @@ from .modules import create_temp_json
 data = create_temp_json.data
 
 def getJobs(item):
-    for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-        title = job.text
-        company = "ClickUp"
-        url = "https://clickup.com"+job["href"]
-        location = "See description"
+    date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+    title = item.text
+    company = "ClickUp"
+    url = "https://clickup.com"+item["href"]
+    location = "See description"
 
-        # print(date, title, company, url, location)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    # print(date, title, company, url, location)
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        data.append({
-            "timestamp": postDate,
-            "title": title,
-            "company": company,
-            "url": url,
-            "location": location,
-            "source": "ClickUp",
-            "source_url": "https://clickup.com",
-            "category": "job"
-        })
-        print(f"=> clickup: Added {title}")
+    data.append({
+        "timestamp": postDate,
+        "title": title,
+        "company": company,
+        "url": url,
+        "location": location,
+        "source": "ClickUp",
+        "source_url": "https://clickup.com",
+        "category": "job"
+    })
+    print(f"=> clickup: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find("div", {"class": "current-vacancies__item current-vacancies__item_yellow"}).find_all("a", {"class": "current-vacancies__jobs_description"})
+    results = soup.find_all("a", {"class": "current-vacancies__jobs_description"})
 
-    getJobs(results)
+    for i in results:
+        if "Engineer" in i.text or "Tech" in i.text or "Support" in i.text:
+            getJobs(i)
+
+    # getJobs(results)
     # print(results)
 
 def getURL():

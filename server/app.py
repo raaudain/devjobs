@@ -14,10 +14,10 @@ def scanner():
     print("=> Scanner is set to run")
     _main.main()
 
-# sched = BackgroundScheduler(daemon=True)
-# # sched.add_job(scanner, "interval", minutes=10)
-# sched.add_job(scanner, "cron", hour=4)
-# sched.start()
+sched = BackgroundScheduler(daemon=True)
+# sched.add_job(scanner, "interval", minutes=10)
+sched.add_job(scanner, "cron", hour=4)
+sched.start()
 
 @app.route("/")
 def index():
@@ -31,7 +31,7 @@ def data():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    # http_server = WSGIServer(("", 5000), app)
-    # http_server.serve_forever()
+    # app.run(debug=True)
+    http_server = WSGIServer(("", 5000), app)
+    http_server.serve_forever()
 
