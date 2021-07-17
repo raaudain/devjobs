@@ -14,7 +14,7 @@ def getJobs(item):
         url = "https://nocsok.com/"+job.find("a", href=True)["href"].replace("#", "")
         location = job.find("h5").text.strip()
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=7))
+        age = datetime.timestamp(datetime.now() - timedelta(days=14))
         postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
 
         if age <= postDate:

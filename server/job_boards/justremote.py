@@ -15,7 +15,7 @@ def getJobs(date, title, company, url):
     url = "https://justremote.co"+url
     location = "Remote"
 
-    age = datetime.timestamp(datetime.now() - timedelta(days=7))
+    age = datetime.timestamp(datetime.now() - timedelta(days=14))
     postDate = datetime.timestamp(datetime.strptime(date, "%Y %d %b"))
 
     if url not in scraped:

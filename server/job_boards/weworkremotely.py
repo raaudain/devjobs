@@ -25,7 +25,7 @@ def getJobs(item):
         else:
             date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=7))
+        age = datetime.timestamp(datetime.now() - timedelta(days=14))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
         if age <= postDate:
