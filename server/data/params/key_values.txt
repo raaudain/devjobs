@@ -10,7 +10,6 @@
 /asana
 /indent
 /orbit
-/treasury-prime
 /the-financial-gym
 /new-relic
 /bombbomb

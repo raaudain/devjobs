@@ -38,7 +38,7 @@ def getResults(item, company):
     jobs = item["data"]["jobPostingBriefs"]
 
     for data in jobs:
-        if "Engineer" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"]:
+        if "Engineer" in data["departmentName"] or "Data" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"] and "Electrical" not in data["title"] and "HVAC" not in data["title"] and "Mechnical" not in data["title"]:
             date = datetime.strftime(datetime.now(), "%Y-%m-%d")
             jobId = data["id"].strip()
             apply_url = f"https://jobs.ashbyhq.com/{company}/{jobId}"
@@ -55,30 +55,29 @@ def getURL():
     page = 1
 
     for company in companies:
-        url = "https://jobs.ashbyhq.com/api/non-user-graphql"
-        payload = {
-            "operationName":"ApiJobPostingBriefsWithIds",
-            "variables":{
-                "organizationHostedJobsPageName":company
-            },
-            "query":"query ApiJobPostingBriefsWithIds($organizationHostedJobsPageName: String!) {\n  jobPostingBriefs: jobPostingBriefsWithIds(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    id\n    title\n    departmentId\n    departmentName\n    locationId\n    locationName\n    employmentType\n    __typename\n  }\n}\n"
-        }
+        try:
+            url = "https://jobs.ashbyhq.com/api/non-user-graphql"
+            payload = {
+                "operationName":"ApiJobPostingBriefsWithIds",
+                "variables":{
+                    "organizationHostedJobsPageName":company
+                },
+                "query":"query ApiJobPostingBriefsWithIds($organizationHostedJobsPageName: String!) {\n  jobPostingBriefs: jobPostingBriefsWithIds(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    id\n    title\n    departmentId\n    departmentName\n    locationId\n    locationName\n    employmentType\n    __typename\n  }\n}\n"
+            }
 
-        response = requests.post(url, json=payload, headers=headers).text
+            response = requests.post(url, json=payload, headers=headers).text
+            data = json.loads(response)
 
-        data = json.loads(response)
+            getResults(data, company)
 
-        getResults(data, company)
-
-        if page % 10 == 0:
-            time.sleep(5)
-                
-        
-        
-        page+=1
-    # print(data)
+            if page % 10 == 0:
+                time.sleep(5)
+                    
+            page+=1
+        except:
+            print(f"Failed to scrape {company}")
+            continue
      
-
 
 def main():
     getURL()
