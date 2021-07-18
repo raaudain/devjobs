@@ -1,7 +1,7 @@
 from datetime import datetime
 import requests, json, sys, time
-# from .modules import create_temp_json
-import modules.create_temp_json as create_temp_json
+from .modules import create_temp_json
+# import modules.create_temp_json as create_temp_json
 
 
 f = open(f"./data/params/ashbyhq.txt", "r")
@@ -38,7 +38,7 @@ def getResults(item, company):
     jobs = item["data"]["jobPostingBriefs"]
 
     for data in jobs:
-        if "Software" in data["title"] or "IT " in data["title"] or "Engineer" in data["title"] or "Support" in data["title"]:
+        if "Engineer" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"]:
             date = datetime.strftime(datetime.now(), "%Y-%m-%d")
             jobId = data["id"].strip()
             apply_url = f"https://jobs.ashbyhq.com/{company}/{jobId}"
@@ -83,5 +83,5 @@ def getURL():
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)

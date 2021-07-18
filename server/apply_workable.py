@@ -128,7 +128,7 @@ for i in duck:
     # print(i)
     word = re.findall(www, i)
     # word = re.findall(r"https://boards.greenhouse.io/(.*?)/", i)
-    print(word)
+    # print(word)
     if word:
         w.append(*word)
         
