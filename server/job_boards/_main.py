@@ -24,6 +24,7 @@ from . import smartrecruiters
 from . import nocsok
 from . import workwithindies
 from . import ashbyhq
+from . import nintendo
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -83,6 +84,7 @@ def main():
     #     # start += datetime.now(timedelta(minutes=time))
 
     # craigslist_jobs.main(),
+    nintendo.main(),
     ashbyhq.main(),
     workaline.main(),
     workable.main(),

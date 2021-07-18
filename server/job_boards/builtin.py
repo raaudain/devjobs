@@ -127,11 +127,14 @@ def getURL():
             data = json.loads(response)
 
             getResults(data)
-            time.sleep(5)
+
+            if page % 10 == 0:
+                time.sleep(5)
 
             page+=1
             
         except:
+            print(f"Failed on page {page}")
             break
     
     # print(data)
