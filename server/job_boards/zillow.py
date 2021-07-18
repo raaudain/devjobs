@@ -25,7 +25,7 @@ def getJobs(date, url, company, position, location):
         "url": url,
         "location": location,
         "source": "Zillow Group",
-        "source_url": "https://zillowgroup.com/",
+        "source_url": "https://www.zillow.com/careers/",
         "category": "job"
     })
     print(f"=> zillow: Added {title} for {company}")
