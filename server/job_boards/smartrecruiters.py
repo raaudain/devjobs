@@ -35,7 +35,7 @@ def getJobs(date, url, company, position, location):
             
 
 
-def getResults(item):
+def getResults(item, name):
     data = item["content"]
 
     for i in data:
@@ -43,7 +43,7 @@ def getResults(item):
             date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
             jobId = i["id"]
             company_name = i["company"]["name"]
-            apply_url = f"https://jobs.smartrecruiters.com/{company_name}/{jobId}"
+            apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
             position = f'{i["name"]}, '
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
@@ -80,7 +80,7 @@ def getURL():
         try:
             data = json.loads(response.text)
 
-            getResults(data)
+            getResults(data, name)
 
             if count % 10 == 0:
                 time.sleep(5)
