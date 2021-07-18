@@ -25,6 +25,8 @@ from . import nocsok
 from . import workwithindies
 from . import ashbyhq
 from . import nintendo
+from . import jazzhr
+from . import breezyhr
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -84,6 +86,8 @@ def main():
     #     # start += datetime.now(timedelta(minutes=time))
 
     # craigslist_jobs.main(),
+    breezyhr.main(),
+    jazzhr.main(),
     nintendo.main(),
     ashbyhq.main(),
     workaline.main(),
