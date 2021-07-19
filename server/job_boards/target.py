@@ -34,8 +34,6 @@ def getResults(item):
     soup = BeautifulSoup(data, "lxml")
     results = soup.find_all("li")
 
-    # print(results, len(results))
-
     for i in results:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
         apply_url = f"https://jobs.target.com{i.find('a')['href'].strip()}"
