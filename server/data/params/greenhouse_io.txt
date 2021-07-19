@@ -492,3 +492,5 @@ golin
 canvas
 airtable
 bandainamco
+tripactions
+argo

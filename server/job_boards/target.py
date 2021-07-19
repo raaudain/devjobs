@@ -49,10 +49,21 @@ def getURL():
 
     url = f"https://jobs.target.com/search-jobs/results?ActiveFacetID=0&CurrentPage=1&RecordsPerPage=500&Distance=50&RadiusUnitType=0&Keywords=&Location=&ShowRadius=False&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0&FacetFilters%5B0%5D.ID=67611&FacetFilters%5B0%5D.FacetType=1&FacetFilters%5B0%5D.Count=232&FacetFilters%5B0%5D.Display=Technology+and+Data+Sciences&FacetFilters%5B0%5D.IsApplied=true&FacetFilters%5B0%5D.FieldName=&SearchResultsModuleName=Search+Results&SearchFiltersModuleName=Search+Filters&SortCriteria=0&SortDirection=0&SearchType=6&PostalCode=&fc=&fl=&fcf=&afc=&afl=&afcf="
 
-    response = requests.get(url, headers=headers).text
-    data = json.loads(response)
+    tries = 1
 
-    getResults(data)
+    while tries < 5:
+        try:
+            response = requests.get(url, headers=headers).text
+            data = json.loads(response)
+
+            getResults(data)
+
+            
+            tries+=1
+
+        except:
+            print("Failed to get Target")
+            break
     # print(data)
 
 def main():
