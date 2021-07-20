@@ -56,7 +56,7 @@ def getURL():
 
     while count < 40:
         try:
-            url = f"https://amazon.jobs/en/search.json?category[]=operations-it-support-engineering,software-development&radius=24km&facets[]=location,business_category,category,schedule_type_id,employee_class,normalized_location,job_function_id&offset={page}0&result_limit=10&sort=relevant&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations, IT, & Support Engineering&city=&country=&region=&county=&query_options=&="
+            url = f"https://amazon.jobs/en/search.json?category[]=operations-it-support-engineering,software-development&radius=24km&facets[]=location,business_category,category,schedule_type_id,employee_class,normalized_location,job_function_id&offset={page}0&result_limit=100&sort=relevant&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations, IT, & Support Engineering&city=&country=&region=&county=&query_options=&="
 
             response = requests.get(url, headers=headers).text
             data = json.loads(response)

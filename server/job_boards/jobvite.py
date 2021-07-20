@@ -11,52 +11,73 @@ f = open(f"./data/params/jobvite.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(item, company, source_url):
-    for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-        title = job.find("h5", {"data-qa": "posting-name"}).text
-        company = company
-        url = job["href"]
-        location = job.find("span", {"class": "sort-by-location posting-category small-category-label"}).text
+def getJobs(date, apply_url, company_name, position, locations_string, name):
+    date = str(date)
+    title = position
+    company = company_name
+    url = apply_url
+    location = locations_string
 
-        # print(date, title, company, url, location, source_url)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    # print(date, title, company, url, location, source_url)
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        
-        data.append({
-            "timestamp": postDate,
-            "title": title,
-            "company": company,
-            "url": url,
-            "location": location,
-            "source": company,
-            "source_url": source_url,
-            "category": "job"
-        })
-        
-        print(f"=> jobvite: Added {title} for {company}")
+    data.append({
+        "timestamp": postDate,
+        "title": title,
+        "company": company,
+        "url": url,
+        "location": location,
+        "source": company,
+        "source_url": f"https://jobs.jobvite.com/careers/{name}",
+        "category": "job"
+    })
+    print(f"=> jobvite: Added {title} for {company}")
 
         
 
 def getResults(item, name):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("tr")
+    results = [*soup.find_all(class_="jv-job-list")]
     company = name.capitalize()
-    source_url = f"https://jobs.lever.co/{name}"
+    titles = soup.find_all(class_="jv-job-list-name")
+    locations = soup.find_all(class_="jv-job-list-location")
 
-    postings = []
+    res = []
 
-    for result in results:
-        print(result.find("td", class_="jv-job-list-name").text.strip(), name)
-        print(result.find("td", class_="jv-job-list-location").text.strip())
-        # title = result.find(class_="jv-job-list-name").text
-        # if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title:
-        #     print(result)
+    for t in titles:
+        for l in locations:
+            if titles.index(t) == locations.index(l):
+                # print(t, l)
+                title = t.find("a").text.strip()
 
-    # results = postings
+                print(title, name, l)
 
-    # getJobs(results, company, source_url)
-    # print(results)
+                # if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
+                #     date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+                #     apply_url = "https://jobs.jobvite.com"+t.find("a")["href"].strip()
+                #     company_name = company
+                #     position = title
+                #     locations_string = l.find(class_="jv-job-list-location").text.strip()
+                    
+                #     print(date, apply_url, company_name, position, locations_string, name)
+
+    # for i in [*results]:
+    #     res.append(i)
+    
+    # for r in results:
+    #     # print(r)
+    #     title = r.find(class_="jv-job-list-name").text.strip()
+    #     print(title, name)
+
+    #     if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
+    #         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+    #         apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
+    #         company_name = company
+    #         position = title
+    #         locations_string = r.find("td", class_="jv-job-list-location").text.strip()
+            
+    #         getJobs(date, apply_url, company_name, position, locations_string, name)
+
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
