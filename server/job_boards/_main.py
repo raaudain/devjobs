@@ -28,6 +28,7 @@ from . import nintendo
 from . import jazzhr
 from . import breezyhr
 # from . import target
+from . import twitter
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -88,6 +89,7 @@ def main():
 
     # craigslist_jobs.main(),
     # target.main(),
+    twitter.main(),
     breezyhr.main(),
     jazzhr.main(),
     nintendo.main(),
