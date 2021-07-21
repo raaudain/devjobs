@@ -39,12 +39,12 @@ def getResults(item, name):
     data = item["content"]
 
     for i in data:
-        if "Engineer" in i["name"] or "IT" in i["name"]:
+        if "Engineer" in i["name"] or "IT" in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Support" in i["name"]:
             date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
             jobId = i["id"]
             company_name = i["company"]["name"]
             apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
-            position = f'{i["name"]}, '
+            position = i["name"]
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
             country = i["location"]["country"].upper()

@@ -9,7 +9,7 @@ f = open(f"./data/params/greenhouse_io.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, name):
     date = str(date)
     title = position
     company = company
@@ -22,34 +22,35 @@ def getJobs(date, url, company, position, location):
     data.append({
         "timestamp": postDate,
         "title": title,
-        "company": company.replace("get", "").replace("join", "").capitalize(),
+        "company": company,
         "url": url,
         "location": location,
-        "source": company.replace("get", "").replace("join", "").capitalize(),
-        "source_url": f"https://boards.greenhouse.io/{company}",
+        "source": company,
+        "source_url": f"https://boards.greenhouse.io/{name}",
         "category": "job"
     })
     print(f"=> greenhouse.io: Added {title} for {company}")
             
 
 
-def getResults(item, name):
+def getResults(item, name, company):
     data = item["departments"]
     jobs = []
 
     for d in data:
-        if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"]:
+        if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and "Release" not in d["name"] and "Producer" not in d["name"] and "Business" not in d["name"]:
             if d["jobs"]:
                 jobs.extend(d["jobs"])
 
     for j in jobs:
-        date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
-        position = j["title"].strip()
-        company_name = name
-        apply_url = j["absolute_url"].strip()
-        locations_string = j["location"]["name"].strip()
+        if "Release" not in j["title"] or "Producer" not in j["title"] or "Business" not in d["title"]:
+            date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
+            position = j["title"].strip()
+            company_name = company
+            apply_url = j["absolute_url"].strip()
+            locations_string = j["location"]["name"].strip()
 
-        getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, name)
 
 
 def getURL():
@@ -60,12 +61,15 @@ def getURL():
     for name in companies:
         try:
             url = f"https://boards-api.greenhouse.io/v1/boards/{name}/departments"
+            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
 
             response = requests.get(url, headers=headers).text
+            res = requests.get(url2, headers=headers).text
 
             data = json.loads(response)
+            company = json.loads(res)["name"]
 
-            getResults(data, name)
+            getResults(data, name, company)
             
             if count % 10 == 0:
                 time.sleep(5)
