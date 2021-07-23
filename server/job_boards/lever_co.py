@@ -1,4 +1,5 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import requests, sys, json, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -11,7 +12,7 @@ f = open(f"./data/params/lever_co.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, param):
     date = str(date)
     title = position
     company = company
@@ -24,11 +25,11 @@ def getJobs(date, url, company, position, location):
         data.append({
             "timestamp": postDate,
             "title": title,
-            "company": company.replace("get", "").replace("join", "").capitalize(),
+            "company": company,
             "url": url,
             "location": location,
-            "source": company.replace("get", "").replace("join", "").capitalize(),
-            "source_url": f"https://jobs.lever.co/{company}",
+            "source": company,
+            "source_url": f"https://jobs.lever.co/{param}",
             "category": "job"
         })
         scraped.add(url)
@@ -38,18 +39,18 @@ def getJobs(date, url, company, position, location):
             
 
 
-def getResults(item, name):
+def getResults(item, param, company):
     for i in item:
         try:
             if "Engineer" in i["text"] or "Tech " in i["text"] or "Web" in i["text"] or "IT " in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"] or "Data" in i["text"] or "Information Technology" in i["text"]:
                 # use true division by 1e3 (float 1000)
                 date = datetime.fromtimestamp(i["createdAt"] / 1e3)
                 apply_url = i["hostedUrl"].strip()
-                company_name = name
+                company_name = company
                 position = i["text"].strip()
                 locations_string = i["categories"]["location"].strip()
                 
-                getJobs(date, apply_url, company_name, position, locations_string)
+                getJobs(date, apply_url, company_name, position, locations_string, param)
         except:
             continue
 
@@ -61,14 +62,20 @@ def getURL():
     for name in companies:
 
         url = f"https://api.lever.co/v0/postings/{name}/"
+        url2 = f"https://jobs.lever.co/{name}"
 
         response = requests.get(url, headers=headers)
+        
+        # r = requests.get(url2, headers).text
+        company = BeautifulSoup(requests.get(url2, headers=headers).text).title.text
+
+        print(company)
 
         if response.ok:
 
             data = json.loads(response.text)
 
-            getResults(data, name)
+            getResults(data, name, company)
 
             # if count % 5 == 0:
             time.sleep(5)
