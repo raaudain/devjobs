@@ -49,7 +49,7 @@ def getResults(item):
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36", "Referer":
-	"https://amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&category%5B%5D=operations-it-support-engineering&category%5B%5D=software-development&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations%2C%20IT%2C%20%26%20Support%20Engineering&city=&country=&region=&county=&query_options=&"}
+	"https://amazon.jobs/en/search?offset=0&result_limit=100&sort=relevant&category%5B%5D=operations-it-support-engineering&category%5B%5D=software-development&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations%2C%20IT%2C%20%26%20Support%20Engineering&city=&country=&region=&county=&query_options=&"}
 
     page = 0
     count = 0

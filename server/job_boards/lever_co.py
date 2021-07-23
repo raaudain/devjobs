@@ -66,10 +66,7 @@ def getURL():
 
         response = requests.get(url, headers=headers)
         
-        # r = requests.get(url2, headers).text
-        company = BeautifulSoup(requests.get(url2, headers=headers).text).title.text
-
-        print(company)
+        company = BeautifulSoup(requests.get(url2, headers=headers).text, "lxml").title.text
 
         if response.ok:
 

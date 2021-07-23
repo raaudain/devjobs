@@ -10,7 +10,7 @@ f = open(f"./data/params/workable.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, param):
     date = str(date)
     title = position
     company = company
@@ -24,17 +24,17 @@ def getJobs(date, url, company, position, location):
     data.append({
         "timestamp": postDate,
         "title": title,
-        "company": company.capitalize(),
+        "company": company,
         "url": url,
         "location": location,
-        "source": company.capitalize(),
-        "source_url": f"https://apply.workable.com/{company}/",
+        "source": company,
+        "source_url": f"https://apply.workable.com/{param}/",
         "category": "job"
     })
     print(f"=> workable: Added {title} for {company}")
 
 
-def getResults(item, company):
+def getResults(item, param, company):
     jobs = item["results"]
 
     # print(jobs)
@@ -42,13 +42,13 @@ def getResults(item, company):
     for data in jobs:
         if "Software " in data["title"] or "Support " in data["title"] or "Front" in data["title"] or "Data " in data["title"] or "Back" in data["title"] or "Full" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"]or "Tech " in data["title"] or "devops" in data["title"].lower():
             date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            apply_url = f"https://apply.workable.com/{company}/j/{data['shortcode']}/"
-            company_name = "Workable" if company == "careers" else company
+            apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
+            company_name = company.strip()
             position = data["title"].strip()
             state = f"{data['location']['city']}, {data['location']['region']}, "
             locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
             
-            getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, param)
         
 
 def getURL():
@@ -62,6 +62,7 @@ def getURL():
 
             while token:
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
+                url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
                     "query":"engineer",
                     "location":[],
@@ -74,17 +75,14 @@ def getURL():
                 response = requests.post(url, json=payload, headers=headers).text
 
                 data = json.loads(response)
+                name = json.loads(requests.get(url2, headers=headers).text)["name"]
 
-                getResults(data, company)
-                
+                getResults(data, company, name)
 
-                # print(data)
-
-                for k,v in data.items():
-                    if k == "nextPage":
-                        token = v.strip()
-                    else:
-                        token = ""
+                if "nextPage" in data:
+                    token = data["nextPage"]
+                else:
+                    token = ""
                 
                 if count % 5 == 0:
                     time.sleep(5)
