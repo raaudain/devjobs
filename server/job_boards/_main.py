@@ -15,8 +15,8 @@ from . import weworkremotely
 from . import builtin
 # from . import dailyremote
 from . import hireart
-from . import stackoverflow
-# from . import dice
+# from . import stackoverflow
+from . import dice
 from . import zillow
 from . import usajobs
 from . import amazon
@@ -89,14 +89,13 @@ def main():
 
     # craigslist_jobs.main(),
     # target.main(),
+    ashbyhq.main(),
     twitter.main(),
     smartrecruiters.main(),
     greenhouse_io.main(),
     breezyhr.main(),
     jazzhr.main(),
     nintendo.main(),
-    ashbyhq.main(),
-    workaline.main(),
     workable.main(),
     lever_co.main(),
     amazon.main(),
@@ -112,9 +111,10 @@ def main():
     remoteok.main(),
     workwithindies.main(),
     weworkremotely.main(),
+    workaline.main(),
     # dailyremote.main(),
-    stackoverflow.main(),
-    # dice.main(),
+    # stackoverflow.main(),
+    dice.main(),
     builtin.main(),
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()

@@ -10,7 +10,7 @@ f.close()
 
 data = create_temp_json.data
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, param):
     date = str(date)
     title = position
     company = company
@@ -24,29 +24,29 @@ def getJobs(date, url, company, position, location):
     data.append({
         "timestamp": postDate,
         "title": title,
-        "company": company.capitalize(),
+        "company": company,
         "url": url,
         "location": location,
-        "source": company.capitalize(),
-        "source_url": f"https://jobs.ashbyhq.com/{company}",
+        "source": company,
+        "source_url": f"https://jobs.ashbyhq.com/{param}",
         "category": "job"
     })
     print(f"=> ashbyhq: Added {title} for {company}")
 
 
-def getResults(item, company):
+def getResults(item, param, name):
     jobs = item["data"]["jobPostingBriefs"]
 
     for data in jobs:
         if "Engineer" in data["departmentName"] or "Data" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"] and "Electrical" not in data["title"] and "HVAC" not in data["title"] and "Mechnical" not in data["title"]:
             date = datetime.strftime(datetime.now(), "%Y-%m-%d")
             jobId = data["id"].strip()
-            apply_url = f"https://jobs.ashbyhq.com/{company}/{jobId}"
-            company_name = company
+            apply_url = f"https://jobs.ashbyhq.com/{param}/{jobId}"
+            company_name = name
             position = data["title"].strip()
             locations_string = data["locationName"].strip()
             
-            getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, param)
         
 
 def getURL():
@@ -65,10 +65,21 @@ def getURL():
                 "query":"query ApiJobPostingBriefsWithIds($organizationHostedJobsPageName: String!) {\n  jobPostingBriefs: jobPostingBriefsWithIds(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    id\n    title\n    departmentId\n    departmentName\n    locationId\n    locationName\n    employmentType\n    __typename\n  }\n}\n"
             }
 
+            payload2 = {
+                "operationName":"ApiOrganizationFromHostedJobsPageName",
+                "variables":{
+                    "organizationHostedJobsPageName":company
+                },
+                "query":"query ApiOrganizationFromHostedJobsPageName($organizationHostedJobsPageName: String!) {\n  organization: organizationFromHostedJobsPageName(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    ...OrganizationParts\n    __typename\n  }\n}\n\nfragment OrganizationParts on Organization {\n  name\n  publicWebsite\n  customJobsPageUrl\n  theme {\n    colors\n    logoWordmarkImageUrl\n    logoSquareImageUrl\n    applicationSubmittedSuccessMessage\n    jobBoardTopDescriptionHtml\n    jobBoardBottomDescriptionHtml\n    __typename\n  }\n  appConfirmationTrackingPixelHtml\n  __typename\n}\n"
+            }
+
             response = requests.post(url, json=payload, headers=headers).text
             data = json.loads(response)
 
-            getResults(data, company)
+            res = requests.post(url, json=payload2, headers=headers).text
+            name = json.loads(res)["data"]["organization"]["name"]
+
+            getResults(data, company, name)
 
             if page % 10 == 0:
                 time.sleep(5)

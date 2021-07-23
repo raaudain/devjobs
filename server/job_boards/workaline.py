@@ -34,7 +34,7 @@ def getResults(item):
 
     for data in jobs:
         try:
-            if "hacker" in data["source"].lower():
+            if "hacker" in data["source"].lower() or "stack" in data["source"]:
                 date = datetime.strptime(data["published_at"], "%Y-%m-%dT%H:%M:%S.%fZ")
                 apply_url = data["url"].strip()
                 company_name = data["company"].strip() if data["company"] else None

@@ -38,19 +38,19 @@ def getResults(item, name, company):
     jobs = []
 
     for d in data:
-        if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"]:
+        if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and (["Music"] not in d["name"] or ["Art"] not in d["name"] or ["Talent"] not in d["name"]):
             if d["jobs"]:
                 jobs.extend(d["jobs"])
 
     for j in jobs:
-        if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in d["title"] or "IT" in d["title"] or "Programmer" in d["title"] or "QA" in d["title"] or "Software" in d["title"]  or "Tech " in d["title"]:
-            date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
-            position = j["title"].strip()
-            company_name = company
-            apply_url = j["absolute_url"].strip()
-            locations_string = j["location"]["name"].strip()
+        # if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in d["title"] or "IT" in d["title"] or "Programmer" in d["title"] or "QA" in d["title"] or "Software" in d["title"]  or "Tech " in d["title"]:
+        date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
+        position = j["title"].strip()
+        company_name = company
+        apply_url = j["absolute_url"].strip()
+        locations_string = j["location"]["name"].strip()
 
-            getJobs(date, apply_url, company_name, position, locations_string, name)
+        getJobs(date, apply_url, company_name, position, locations_string, name)
 
 
 def getURL():
