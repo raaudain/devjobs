@@ -4,10 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-# from .modules import create_temp_json
-# from .modules import driver
-import modules.create_temp_json as create_temp_json
-import modules.driver as driver
+from .modules import create_temp_json
+from .modules import driver
+# import modules.create_temp_json as create_temp_json
+# import modules.driver as driver
 import sys
 
 
@@ -30,7 +30,6 @@ def getJobs(date, apply_url, company_name, position, locations_string):
 
     postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-    
     data.append({
         "timestamp": postDate,
         "title": title,
@@ -41,7 +40,7 @@ def getJobs(date, apply_url, company_name, position, locations_string):
         "source_url": "https://careers.tiktok.com/",
         "category": "job"
     })
-    print(f"=> weworkremotely: Added {title}")
+    print(f"=> tiktok: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
@@ -57,7 +56,7 @@ def getResults(item):
         getJobs(date, apply_url, company_name, position, locations_string)
 
 def getURL():
-    keywords = ["engineer", "data", "developer", ""] 
+    keywords = ["engineer", "data", "developer"] 
 
     for keyword in keywords:
         try:
@@ -80,5 +79,5 @@ def getURL():
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
