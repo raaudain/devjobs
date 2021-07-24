@@ -1,5 +1,4 @@
 # import craigslist_gigs
-# from git import Repo
 # from . import craigslist_jobs
 from . import greenhouse_io
 from . import bloomberg
@@ -27,7 +26,7 @@ from . import ashbyhq
 from . import nintendo
 from . import jazzhr
 from . import breezyhr
-# from . import target
+from . import target
 from . import twitter
 from . import tiktok
 from .modules import create_temp_json
@@ -36,60 +35,12 @@ from datetime import datetime, timedelta
 import sys, os
 
 
-# def gitPush():
-#     pathToRepo = f"{os.getcwd()}/.git"
-#     commitMessage = "Update json"
-
-#     try:
-#         repo = Repo(pathToRepo)
-#         repo.git.add(update=True)
-#         repo.index.commit(commitMessage)
-#         origin = repo.remote(name="origin")
-#         origin.push()
-#         print("=> Pushed to GitHub")
-#     except:
-#         print("=> Failed to push to GitHub") 
-
-# sites = [
-#     # craigslist_jobs.main(),
-#     lever_co.main(),
-#     workable.main(),
-#     greenhouse_io.main(),
-#     amazon.main(),
-#     smartrecruiters.main(),
-#     hireart.main(),
-#     bloomberg.main(),
-#     workline.main(),
-#     usajobs.main(),
-#     key_values.main(),
-#     zillow.main(),
-#     clickup.main(),
-#     instacart.main(),
-#     nocsok.main(),
-#     remote_co.main(),
-#     remoteok.main(),
-#     workwithindies.main(),
-#     weworkremotely.main(),
-#     # dailyremote.main(),
-#     stackoverflow.main(),
-#     dice.main(),
-#     builtin.main(),
-# ]
-
-# create = (create_temp_json.createJSON(create_temp_json.data),
-#     create_main_json.createJSON())
-
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
-    
-    # for site in sites:
-    #     # time = datetime.now()
-    #     site
-    #     # start += datetime.now(timedelta(minutes=time))
 
     # craigslist_jobs.main(),
-    # target.main(),
+    target.main(),
     tiktok.main(),
     workable.main(),
     amazon.main(),
@@ -120,7 +71,6 @@ def main():
     builtin.main(),
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
-    # gitPush()
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
 
