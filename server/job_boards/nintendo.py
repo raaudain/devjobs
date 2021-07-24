@@ -4,7 +4,6 @@ from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
 
-
 data = create_temp_json.data
 
 def getJobs(date, url, company, position, location):
@@ -41,7 +40,7 @@ def getResults(item):
             position = data["JobTitle"].strip()
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
             
-            getJobs(date, apply_url, company_name, position, locations_string)
+            print(date, apply_url, company_name, position, locations_string)
         
 
 def getURL():
@@ -49,10 +48,14 @@ def getURL():
 
     url = f"https://2oc84v7py6.execute-api.us-west-2.amazonaws.com/prod/api/jobs/"
 
-    response = requests.get(url, headers=headers).text
-    data = json.loads(response)
+    response = requests.get(url, headers=headers)
 
-    getResults(data)
+    if response.ok:
+        data = json.loads(response.text)
+        getResults(data)
+    else:
+        print("=> nintendo: Error - Response status", response.status_code)
+
     
     # print(data)
      

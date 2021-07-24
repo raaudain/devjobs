@@ -44,8 +44,12 @@ def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     url = f"https://clickup.com/careers"
-    response = requests.get(url, headers=headers).text
-    getResults(response)
+    response = requests.get(url, headers=headers)
+
+    if response.ok:
+        getResults(response.text)
+    else:
+         print("=> clickup: Error - Response status", response.status_code)
     # print(response)
 
 def main():

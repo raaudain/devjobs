@@ -59,10 +59,14 @@ def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
 
     for param in params:
-        url = f"https://www.keyvalues.com{param}"
-        response = requests.get(url, headers=headers).text
-        getResults(response)
-        time.sleep(5)
+        try:
+            url = f"https://www.keyvalues.com{param}"
+            response = requests.get(url, headers=headers).text
+            getResults(response)
+            time.sleep(5)
+        except:
+            print(f"=> key_values: Failed to scrape {param}")
+            continue
 
 
 def main():

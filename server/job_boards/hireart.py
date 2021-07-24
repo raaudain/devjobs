@@ -42,11 +42,13 @@ def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     url = f"https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
-    response = requests.get(url, headers=headers).text
+    response = requests.get(url, headers=headers)
 
-    data = json.loads(response)
-
-    getResults(data)
+    if response.ok:
+        data = json.loads(response.text)
+        getResults(data)
+    else:
+        print("=> hireart: Error - Response status", response.status_code)
     
     # print(data)
      

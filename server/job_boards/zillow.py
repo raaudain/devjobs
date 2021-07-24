@@ -51,12 +51,13 @@ def getURL():
 
     url = f"https://cmsservice.smashfly.com/api/jobs/v1/jobs/hZtAUIBJAtYt3u6LLr6IZa1u7mwk0XfZo2hvMFcZglTioUuFr6MJtKuxbFw_h2spRH7NzzVPY181?sort=AddedOn-desc&page=1&pageSize=1000&group=&filter=ShortTextField1~eq~%27Data%20Science%20%26%20Analytics%27~or~ShortTextField1~eq~%27IT%20Operations%27~or~ShortTextField1~eq~%27Software%20Development%27&fields=JobTitle%2CShortTextField1%2CShortTextField6%2CLongTextField2%2CShortTextField13%2CUrlJobTitle"
 
-    response = requests.get(url, headers=headers).text
+    response = requests.get(url, headers=headers)
 
-    data = json.loads(response)
-
-    getResults(data)
-    
+    if response.ok:
+        data = json.loads(response.text)
+        getResults(data)
+    else:
+        print("=> zillow: Error - Response status", response.status_code)
     # print(data)
      
 

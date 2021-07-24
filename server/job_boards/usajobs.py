@@ -52,27 +52,30 @@ def getURL():
     page = 1
 
     while page < 50:
-        url = "https://www.usajobs.gov/Search/ExecuteSearch"
-        payload = {
-            "HiringPath": ["public"],
-            "Page": page,
-            "Keyword": "software",
-            "UniqueSearchID": "162dbbf5-6795-4786-840e-efd686188e29",
-            "IsAuthenticated": False
-        }
+        try:
+            url = "https://www.usajobs.gov/Search/ExecuteSearch"
+            payload = {
+                "HiringPath": ["public"],
+                "Page": page,
+                "Keyword": "software",
+                "UniqueSearchID": "162dbbf5-6795-4786-840e-efd686188e29",
+                "IsAuthenticated": False
+            }
 
-        response = requests.post(url, json=payload, headers=headers).text
+            response = requests.post(url, json=payload, headers=headers).text
 
-        data = json.loads(response)
+            data = json.loads(response)
 
-        getResults(data)
+            getResults(data)
 
-        if page % 5 == 0:
-            time.sleep(5)
-                
-        
-        
-        page+=1
+            if page % 5 == 0:
+                time.sleep(5)
+                    
+            
+            
+            page+=1
+        except:
+            print(f"=> usajobs: Failed to scrap page {page}")
     # print(data)
      
 

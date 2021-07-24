@@ -56,7 +56,7 @@ def getResults(item):
         getJobs(date, apply_url, company_name, position, locations_string)
 
 def getURL():
-    keywords = ["engineer", "data", "developer"] 
+    keywords = ["engineer", "data ", "developer"] 
 
     for keyword in keywords:
         try:

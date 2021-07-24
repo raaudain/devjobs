@@ -49,8 +49,12 @@ def getResults(item):
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
     url = f"https://weworkremotely.com/remote-jobs/search?term=&button=&categories%5B%5D=2&categories%5B%5D=17&categories%5B%5D=18&categories%5B%5D=6"
-    response = requests.get(url, headers=headers).text
-    getResults(response)
+    response = requests.get(url, headers=headers)
+
+    if response.ok:
+        getResults(response.text)
+    else:
+        print("=> weworkremotely: Error - Response status", response.status_code)
 
 def main():
     getURL()

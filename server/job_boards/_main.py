@@ -6,7 +6,7 @@ from . import lever_co
 from . import workaline
 from . import clickup
 from . import workable
-from . import instacart
+# from . import instacart
 from . import key_values
 from . import remote_co
 from . import remoteok
@@ -58,7 +58,7 @@ def main():
     key_values.main(),
     zillow.main(),
     clickup.main(),
-    instacart.main(),
+    # instacart.main(),
     nocsok.main(),
     remote_co.main(),
     remoteok.main(),

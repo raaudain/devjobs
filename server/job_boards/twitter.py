@@ -46,11 +46,13 @@ def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     url = "https://careers.twitter.com/content/careers-twitter/en/roles.careers.search.json?location=&team=careers-twitter:sr/team/software-engineering,careers-twitter:sr/team/it-it-enterprise-applications,careers-twitter:sr/team/data-science-and-analytics,careers-twitter:sr/team/customer-support-and-operations&offset=0&limit=1000&sortBy=modified&asc=false"
-    response = requests.get(url, headers=headers).text
+    response = requests.get(url, headers=headers)
 
-    data = json.loads(response)
-
-    getResults(data)
+    if response.ok:
+        data = json.loads(response.text)
+        getResults(data)
+    else:
+        print("=> twitter: Error - Response status", response.status_code)
     
     # print(data)
      
