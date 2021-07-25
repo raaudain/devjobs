@@ -43,7 +43,7 @@ def getURL():
     response = requests.get(url, headers=headers)
 
     if response.ok:
-        getResults(response)
+        getResults(response.text)
     else:
         print("=> nocsok: Error - Response status", response.status_code)
     # print(response)
