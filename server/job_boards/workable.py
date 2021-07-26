@@ -84,7 +84,7 @@ def getURL():
                 else:
                     token = ""
                 
-                if count % 4 == 0:
+                if count % 5 == 0:
                     time.sleep(5)
                 
                 count+=1
