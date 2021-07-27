@@ -40,7 +40,7 @@ def getResults(item):
             position = data["JobTitle"].strip()
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
             
-            print(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string)
         
 
 def getURL():
