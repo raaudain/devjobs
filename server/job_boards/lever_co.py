@@ -42,7 +42,7 @@ def getJobs(date, url, company, position, location, param):
 def getResults(item, param, company):
     for i in item:
         try:
-            if "Engineer" in i["text"] or "Tech " in i["text"] or "Web" in i["text"] or "IT " in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"] or "Data" in i["text"] or "Information Technology" in i["text"]:
+            if "Engineer" in i["text"] or "Tech " in i["text"] or "Web" in i["text"] or "IT " in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"] or "Technology" in i["categories"]["department"] or "Data" in i["text"] or "Information Technology" in i["text"]:
                 # use true division by 1e3 (float 1000)
                 date = datetime.fromtimestamp(i["createdAt"] / 1e3)
                 apply_url = i["hostedUrl"].strip()
@@ -52,7 +52,7 @@ def getResults(item, param, company):
                 
                 getJobs(date, apply_url, company_name, position, locations_string, param)
         except:
-            continue
+            pass
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}

@@ -77,7 +77,7 @@ def getURL():
             count+=1
         except:
             print(f"Failed to scraped: {name}")
-            continue
+            pass
      
 
 
