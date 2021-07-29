@@ -44,7 +44,7 @@ def getResults(item, name):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("a", {"class": "posting-title"})
     company = soup.find("title").text.strip()
-    source_url = soup.find("p").find("a", href=True)["href"] if soup.find("p") else f"https://jobs.lever.co/{name}"
+    source_url = f"https://jobs.lever.co/{name}"
 
     postings = []
 
