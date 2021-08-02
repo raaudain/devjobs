@@ -21,7 +21,6 @@
 /minerva
 /change-org
 /coast
-/eyelevel
 /lets-do-this
 /careguide
 /peergrade
