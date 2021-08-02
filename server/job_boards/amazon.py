@@ -7,9 +7,10 @@ from .modules import create_temp_json
 data = create_temp_json.data
 scraped = create_temp_json.scraped
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, qualifications):
     date = str(date)
     title = position
+    qualifications = qualifications
     company = company
     url = url
     location = location
@@ -21,6 +22,7 @@ def getJobs(date, url, company, position, location):
         data.append({
             "timestamp": postDate,
             "title": title,
+            "qualifications": qualifications,
             "company": company,
             "url": url,
             "location": location,
@@ -39,12 +41,15 @@ def getResults(item):
         if "Engineer" in d["title"] or "Data" in d["title"] or "Tech " in d["title"] or "IT" in d["title"] or "Support" in d["title"]:
             date = datetime.strptime(d["posted_date"], "%B %d, %Y")
             position = d["title"]
+            desc = d["preferred_qualifications"].replace("· ", "").split("<br/>")
             company_name = d["company_name"]
             jobPath = d["job_path"].strip()
             apply_url = f"https://amazon.jobs{jobPath}"
             locations_string = d["normalized_location"]
+            
+            # print(desc)
 
-            getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, desc)
 
 
 def getURL():

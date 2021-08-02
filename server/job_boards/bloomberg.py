@@ -1,4 +1,5 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import requests, json, sys, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -6,9 +7,10 @@ from .modules import create_temp_json
 
 data = create_temp_json.data
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, qualifications):
     date = date
     title = position
+    qualifications = qualifications
     company = company
     url = url
     location = location
@@ -19,6 +21,7 @@ def getJobs(date, url, company, position, location):
     data.append({
         "timestamp": postDate,
         "title": title,
+        "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -35,8 +38,14 @@ def getResults(item):
     company_name = "Bloomberg"
     position = item["jobTitle"]
     locations_string = item["jobLocation"]
+    soup = BeautifulSoup(item["jobDescription"], "lxml")
+    results = soup.find_all("ul")[-1].find_all_next("li")
+    desc = []
 
-    getJobs(date, apply_url, company_name, position, locations_string)
+    for i in results:
+        desc.append(i.text.strip())
+
+    getJobs(date, apply_url, company_name, position, locations_string, desc)
 
 def getURL():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0", "X-Requested-With": "XMLHttpRequest"}
