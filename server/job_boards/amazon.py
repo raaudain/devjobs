@@ -46,8 +46,6 @@ def getResults(item):
             jobPath = d["job_path"].strip()
             apply_url = f"https://amazon.jobs{jobPath}"
             locations_string = d["normalized_location"]
-            
-            # print(desc)
 
             getJobs(date, apply_url, company_name, position, locations_string, desc)
 
