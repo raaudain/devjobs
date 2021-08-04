@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from bs4 import BeautifulSoup
 import requests, json, sys, time
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -9,9 +10,10 @@ f = open(f"./data/params/greenhouse_io.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(date, url, company, position, location, name):
+def getJobs(date, url, company, position, location, name, qualifications):
     date = str(date)
     title = position
+    qualifications = qualifications
     company = company
     url = url
     location = location
@@ -22,6 +24,7 @@ def getJobs(date, url, company, position, location, name):
     data.append({
         "timestamp": postDate,
         "title": title,
+        "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -44,13 +47,20 @@ def getResults(item, name, company):
 
     for j in jobs:
         # if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in d["title"] or "IT" in d["title"] or "Programmer" in d["title"] or "QA" in d["title"] or "Software" in d["title"]  or "Tech " in d["title"]:
+        jobId = j["id"]
+        content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
+        soup = BeautifulSoup(content, "lxml")
+        results = soup.find_all("ul")[1].find_all_next("li")
+        desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results]
+        # print(desc)
+
         date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
         position = j["title"].strip()
         company_name = company
         apply_url = j["absolute_url"].strip()
         locations_string = j["location"]["name"].strip()
 
-        getJobs(date, apply_url, company_name, position, locations_string, name)
+        getJobs(date, apply_url, company_name, position, locations_string, name, desc)
 
 
 def getURL():

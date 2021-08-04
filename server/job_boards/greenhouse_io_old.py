@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests, sys, re
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
+# from .modules import create_temp_json
+import modules.create_temp_json as create_temp_json
 
 
 data = create_temp_json.data
@@ -42,8 +42,11 @@ def getJobs(item, company, name):
 
 def getResults(item, name):
     soup = BeautifulSoup(item, "lxml")
+    lists = soup.find_all("ul")[1]
     results = soup.find_all("section", {"class": "level-0"})
     company = soup.find("title").text.replace("Jobs at", "") if "Jobs at" in soup.find("title").text else name.capitalize()
+
+    print(lists)
 
     for result in results:
         r = result.find(re.compile("^h[2-4]$")).text.strip()
@@ -53,7 +56,7 @@ def getResults(item, name):
             # print(results)
 
     # print(company)
-    getJobs(results, company, name)
+    # getJobs(results, company, name)
     # print(results)
 
 def getURL():
@@ -74,5 +77,5 @@ def getURL():
 def main():
     getURL()
 
-# main()
-# sys.exit(0)
+main()
+sys.exit(0)

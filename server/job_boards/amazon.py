@@ -41,7 +41,7 @@ def getResults(item):
         if "Engineer" in d["title"] or "Data" in d["title"] or "Tech " in d["title"] or "IT" in d["title"] or "Support" in d["title"]:
             date = datetime.strptime(d["posted_date"], "%B %d, %Y")
             position = d["title"]
-            desc = d["preferred_qualifications"].replace("· ", "").split("<br/>")
+            desc = d["preferred_qualifications"].replace("· ", "").replace("• ", "").split("<br/>")
             company_name = d["company_name"]
             jobPath = d["job_path"].strip()
             apply_url = f"https://amazon.jobs{jobPath}"
