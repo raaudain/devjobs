@@ -1,11 +1,14 @@
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import requests, json, sys, time
-# from .modules import create_temp_json
-import modules.create_temp_json as create_temp_json
+from .modules import create_temp_json
+# import modules.create_temp_json as create_temp_json
 
 
 data = create_temp_json.data
+scraped = create_temp_json.scraped
+
+
 f = open(f"./data/params/greenhouse_io.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
@@ -32,6 +35,7 @@ def getJobs(date, url, company, position, location, name, qualifications):
         "source_url": f"https://boards.greenhouse.io/{name}",
         "category": "job"
     })
+    scraped.add(company)
     print(f"=> greenhouse.io: Added {title} for {company}")
             
 
@@ -93,5 +97,5 @@ def getURL():
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)

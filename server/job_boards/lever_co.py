@@ -34,7 +34,7 @@ def getJobs(item, company, source_url):
                 "source_url": source_url,
                 "category": "job"
             })
-            scraped.add(url)
+            scraped.add(url).add(company)
             print(f"=> lever.co: Added {title} for {company}")
         else:
             print(f"=> lever.co: Already scraped {title} for {company}")

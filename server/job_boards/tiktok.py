@@ -14,6 +14,7 @@ import sys
 driver = driver.firefox
 
 data = create_temp_json.data
+scraped = create_temp_json.scraped
 
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
@@ -30,17 +31,19 @@ def getJobs(date, apply_url, company_name, position, locations_string):
 
     postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-    data.append({
-        "timestamp": postDate,
-        "title": title,
-        "company": company,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": "https://careers.tiktok.com/",
-        "category": "job"
-    })
-    print(f"=> tiktok: Added {title}")
+    if url not in scraped:
+        data.append({
+            "timestamp": postDate,
+            "title": title,
+            "company": company,
+            "url": url,
+            "location": location,
+            "source": company,
+            "source_url": "https://careers.tiktok.com/",
+            "category": "job"
+        })
+        scraped.add(url)
+        print(f"=> tiktok: Added {title}")
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")

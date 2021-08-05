@@ -22,7 +22,7 @@ def getJobs(date, url, company, position, location):
     age = datetime.timestamp(datetime.now() - timedelta(days=14))
     postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
     
-    if url not in scraped:
+    if url not in scraped or company not in scraped:
         if age <= postDate:
             data.append({
                 "timestamp": postDate,
