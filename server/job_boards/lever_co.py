@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys, time
+import requests, sys, time, json
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 

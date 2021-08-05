@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import requests, json, sys, time
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
+# from .modules import create_temp_json
+import modules.create_temp_json as create_temp_json
 
 
 data = create_temp_json.data
@@ -37,30 +37,29 @@ def getJobs(date, url, company, position, location, name, qualifications):
 
 
 def getResults(item, name, company):
-    data = item["departments"]
-    jobs = []
+    # data = item["departments"]
+    jobs = item["jobs"]
 
-    for d in data:
-        if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and (["Music"] not in d["name"] or ["Art"] not in d["name"] or ["Talent"] not in d["name"] or "Business" not in d["name"]):
-            if d["jobs"]:
-                jobs.extend(d["jobs"])
+    # for d in data:
+    #     if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and (["Music"] not in d["name"] or ["Art"] not in d["name"] or ["Talent"] not in d["name"] or "Business" not in d["name"]):
+    #         if d["jobs"]:
+    #             jobs.extend(d["jobs"])
 
     for j in jobs:
-        # if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in d["title"] or "IT" in d["title"] or "Programmer" in d["title"] or "QA" in d["title"] or "Software" in d["title"]  or "Tech " in d["title"]:
-        jobId = j["id"]
-        content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
-        soup = BeautifulSoup(content, "lxml")
-        results = soup.find_all("ul")[1].find_all_next("li")
-        desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results]
-        # print(desc)
+        if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT" in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"]:
+            jobId = j["id"]
+            content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
+            soup = BeautifulSoup(content, "lxml")
+            results = soup.find_all("ul")[1].find_all_next("li")
+            desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results]
 
-        date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
-        position = j["title"].strip()
-        company_name = company
-        apply_url = j["absolute_url"].strip()
-        locations_string = j["location"]["name"].strip()
+            date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
+            position = j["title"].strip()
+            company_name = company
+            apply_url = j["absolute_url"].strip()
+            locations_string = j["location"]["name"].strip()
 
-        getJobs(date, apply_url, company_name, position, locations_string, name, desc)
+            print(date, apply_url, company_name, position, locations_string, name, desc)
 
 
 def getURL():
@@ -70,7 +69,7 @@ def getURL():
 
     for name in companies:
         try:
-            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/departments"
+            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
             url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
 
             response = requests.get(url, headers=headers).text
@@ -94,5 +93,5 @@ def getURL():
 def main():
     getURL()
 
-# main()
-# sys.exit(0)
+main()
+sys.exit(0)

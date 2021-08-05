@@ -39,7 +39,7 @@ def getResults(item, name):
     data = item["content"]
 
     for i in data:
-        if "Engineer" in i["name"] or "IT" in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Support" in i["name"]:
+        if "Engineer" in i["name"] or "IT" in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Help" in i["name"] or "Desk" in i["name"]:
             date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
             jobId = i["id"]
             company_name = i["company"]["name"]

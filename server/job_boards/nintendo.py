@@ -1,4 +1,5 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import requests, json, sys
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -6,9 +7,10 @@ from .modules import create_temp_json
 
 data = create_temp_json.data
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, qualifications):
     date = str(date)
     title = position
+    qualifications = qualifications
     company = company
     url = url
     location = location
@@ -20,6 +22,7 @@ def getJobs(date, url, company, position, location):
     data.append({
         "timestamp": postDate,
         "title": title,
+        "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -38,9 +41,11 @@ def getResults(item):
             apply_url = f"https://careers.nintendo.com/job-openings/listing/{job_id}.html"
             company_name = "Nintendo of America"
             position = data["JobTitle"].strip()
+            results = BeautifulSoup(data["ExternalQualificationHTML"], "lxml").find_all("li")
+            desc = [i.text.replace("\n\xa0\nNOA-RG", "").strip() for i in results if "Such as" not in i.text]
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
-            
-            getJobs(date, apply_url, company_name, position, locations_string)
+
+            getJobs(date, apply_url, company_name, position, locations_string, desc)
         
 
 def getURL():

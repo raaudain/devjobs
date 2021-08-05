@@ -512,3 +512,5 @@ wikimedia
 a16z
 pokemoncareers
 maven
+smugmug
+redventures
