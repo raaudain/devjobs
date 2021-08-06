@@ -40,10 +40,10 @@ def main():
     start = datetime.now()
 
     # craigslist_jobs.main(),
+    workable.main(),
     target.main(),
     tiktok.main(),
     lever_co.main(),
-    workable.main(),
     amazon.main(),
     ashbyhq.main(),
     twitter.main(),

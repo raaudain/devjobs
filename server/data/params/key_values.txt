@@ -1,7 +1,6 @@
 /range
 /rune-labs
 /remix
-/smugmug-flickr
 /doppler
 /leapfin
 /automattic

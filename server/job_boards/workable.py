@@ -89,8 +89,8 @@ def getURL():
                 
                 count+=1
 
-        except json.decoder.JSONDecodeError:
-            print(f"=> workable: JSON error with {company}")
+        except:
+            print(f"=> workable: Failed for {company}")
             continue
         
 

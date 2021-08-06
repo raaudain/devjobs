@@ -63,7 +63,7 @@ def getResults(item, name, company):
             apply_url = j["absolute_url"].strip()
             locations_string = j["location"]["name"].strip()
 
-            print(date, apply_url, company_name, position, locations_string, name, desc)
+            getJobs(date, apply_url, company_name, position, locations_string, name, desc)
 
 
 def getURL():
