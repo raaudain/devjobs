@@ -1,9 +1,11 @@
 from datetime import datetime
+from server.job_boards.modules import headers
 from bs4 import BeautifulSoup
-import requests, sys, json, time
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
-
+import requests, sys, json, time, random
+# from .modules import create_temp_json
+# from .modules.headers import headers as h
+import modules.create_temp_json as create_temp_json
+from modules.headers import headers as h
 
 data = create_temp_json.data
 scraped = create_temp_json.scraped
@@ -55,12 +57,13 @@ def getResults(item, param, company):
             pass
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
+    # headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
-    # count = 1
+    count = 1
 
     for name in companies:
-
+        headers = {"User-Agent": random.choice(h)}
+        print(headers)
         url = f"https://api.lever.co/v0/postings/{name}/"
         url2 = f"https://jobs.lever.co/{name}"
 
@@ -81,12 +84,12 @@ def getURL():
 
             getResults(data, name, company)
 
-            # if count % 5 == 0:
-            time.sleep(5)
+            if count % 50 == 0:
+                time.sleep(5)
 
 
             # print(response.status_code, count)
-            # count += 1
+            count += 1
         else:
             print(f"Failed to scraped: {name}")
             
@@ -105,5 +108,5 @@ def getURL():
 def main():
     getURL()
 
-# main()
-# sys.exit(0)
+main()
+sys.exit(0)

@@ -50,7 +50,7 @@ def getResults(item, name):
     postings = []
 
     for result in results:
-        h5 = result.find("h5").text
+        h5 = result.find("h5", {"data-qa":"posting-name"}).text
         if "Engineer" in h5 or "Tech" in h5 or "Web" in h5 or "Data " in h5:
             postings.append(result)
 

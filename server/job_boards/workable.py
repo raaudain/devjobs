@@ -1,10 +1,13 @@
 from datetime import datetime
-import requests, json, sys, time
+import requests, json, sys, time, random
+from .modules.headers import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as headers
 
 
 data = create_temp_json.data
+# header = headers.headers
 
 f = open(f"./data/params/workable.txt", "r")
 companies = [company.strip() for company in f]
@@ -52,15 +55,17 @@ def getResults(item, param, company):
         
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
     count = 1
 
     for company in companies:
+
         try:
             token = "0"
 
             while token:
+                headers = {"User-Agent": random.choice(h)}
+                print(headers)
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
@@ -84,7 +89,7 @@ def getURL():
                 else:
                     token = ""
                 
-                if count % 5 == 0:
+                if count % 20 == 0:
                     time.sleep(5)
                 
                 count+=1
