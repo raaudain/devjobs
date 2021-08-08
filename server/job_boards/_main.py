@@ -40,6 +40,7 @@ def main():
     start = datetime.now()
 
     # craigslist_jobs.main(),
+    greenhouse_io.main(),
     workable.main(),
     target.main(),
     tiktok.main(),
@@ -48,7 +49,6 @@ def main():
     ashbyhq.main(),
     twitter.main(),
     smartrecruiters.main(),
-    greenhouse_io.main(),
     breezyhr.main(),
     jazzhr.main(),
     nintendo.main(),

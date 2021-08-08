@@ -1,11 +1,10 @@
 from datetime import datetime
-from server.job_boards.modules import headers
 from bs4 import BeautifulSoup
 import requests, sys, json, time, random
 # from .modules import create_temp_json
-# from .modules.headers import headers as h
+# from .modules import headers as h
 import modules.create_temp_json as create_temp_json
-from modules.headers import headers as h
+import modules.headers as h
 
 data = create_temp_json.data
 scraped = create_temp_json.scraped
@@ -62,7 +61,7 @@ def getURL():
     count = 1
 
     for name in companies:
-        headers = {"User-Agent": random.choice(h)}
+        headers = {"User-Agent": random.choice(h.headers)}
         print(headers)
         url = f"https://api.lever.co/v0/postings/{name}/"
         url2 = f"https://jobs.lever.co/{name}"
@@ -84,7 +83,7 @@ def getURL():
 
             getResults(data, name, company)
 
-            if count % 50 == 0:
+            if count % 1 == 0:
                 time.sleep(5)
 
 
