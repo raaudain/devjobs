@@ -65,7 +65,7 @@ def getURL():
 
             while token:
                 headers = {"User-Agent": random.choice(h)}
-                print(headers)
+                # print(headers)
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
