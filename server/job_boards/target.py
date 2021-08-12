@@ -66,13 +66,13 @@ def getURL():
             url = f"https://jobs.target.com/search-jobs?ac=67611&p={page}"
 
             browser.get(url)
-
+            print("target cookies =>", browser.get_cookies())
             wait.until(EC.presence_of_element_located((By.XPATH, "//span[@class='job-location']")))
 
             response = browser.find_element_by_xpath("//*").get_attribute("outerHTML")
 
             getResults(response)
-
+            
             page+=1
         except:
             break

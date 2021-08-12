@@ -73,7 +73,7 @@ def getURL():
             response = requests.get(url, headers=headers).text
             getResults(response, name)
             
-            if count % 5 == 0:
+            if count % 20 == 0:
                 time.sleep(5)
                 
             count+=1

@@ -40,11 +40,11 @@ def main():
     start = datetime.now()
 
     # craigslist_jobs.main(),
-    greenhouse_io.main(),
-    workable.main(),
     target.main(),
     tiktok.main(),
     lever_co.main(),
+    greenhouse_io.main(),
+    workable.main(),
     amazon.main(),
     ashbyhq.main(),
     twitter.main(),

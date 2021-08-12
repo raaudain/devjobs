@@ -88,7 +88,7 @@ def getURL():
 
             getResults(data, name, company)
             
-            if count % 10 == 0:
+            if count % 20 == 0:
                 time.sleep(5)
                 
             count+=1
