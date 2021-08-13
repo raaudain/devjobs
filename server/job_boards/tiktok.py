@@ -66,7 +66,7 @@ def getURL():
             url = f"https://careers.tiktok.com/position?keywords={keyword}&category=&location=&project=&type=&job_hot_flag=&current=1&limit=1000"
 
             browser.get(url)
-            print("tiktok cookies =>", browser.get_cookies())
+            
 
             wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='positionItem__1giWi positionItem']")))
 
