@@ -1,5 +1,5 @@
 # import craigslist_gigs
-# from . import craigslist_jobs
+from . import craigslist_jobs
 from . import greenhouse_io
 from . import bloomberg
 from . import lever_co
@@ -39,7 +39,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
 
-    # craigslist_jobs.main(),
+    craigslist_jobs.main(),
     target.main(),
     tiktok.main(),
     lever_co.main(),

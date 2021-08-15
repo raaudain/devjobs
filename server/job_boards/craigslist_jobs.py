@@ -1,35 +1,34 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-# from ..functions.create_temp_json import tempJSON
-import requests, sys, json, time, re
-# import modules.create_temp_json as create_temp_json
+import requests, sys, json, time, re, random
+from .modules import headers as h
 from .modules import create_temp_json
-# from requests.adapters import HTTPAdapter
-# from requests.packages.urllib3.util.retry import Retry
-
+# import modules.headers as h
+# import modules.create_temp_json as create_temp_json
 
 f = open(f"./data/params/us_and_ca.txt", "r")
-locations = [location.rstrip() for location in f]
+locations = [location.strip() for location in f]
 f.close()
 
 m = open(f"./data/params/miami.txt", "r")
-miamis = [miami.rstrip() for miami in m]
+miamis = [miami.strip() for miami in m]
 m.close()
 
 scraped = create_temp_json.scraped
 data = create_temp_json.data
 
-headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
 
 
-def getJobs(item, place):
+
+def getJobs(item, location):
     for job in item:
         date = job.find("time", {"class": "result-date"})["datetime"]
         title = job.find("a", {"class": "result-title hdrlnk"}).text
         url = job.find("a", href=True)["href"]
-        location = re.search(r"https://(.*?).craigslist.org", url).group(1)
+        # location = re.search(r"https://(.*?).craigslist.org", url).group(1)
+        location = location.strip()
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=7))
+        age = datetime.timestamp(datetime.now() - timedelta(days=14))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
         if url not in scraped and age <= postDate:
@@ -44,56 +43,124 @@ def getJobs(item, place):
                 "category": "job"
             })
             scraped.add(url)
-            print(f"=> craigslist_jobs: Added {title} for {place}")
+            print(f"=> craigslist_jobs: Added {title} for {location}")
         else:
-            print(f"=> craigslist_jobs: Already scraped {title} for {place}")
+            print(f"=> craigslist_jobs: Already scraped or too old: {title} for {location}")
         
 
 
-def getResults(item, place):
+def getResults(item):
     soup = BeautifulSoup(item, "lxml")
+    place = soup.find("title").text.replace(" technical support jobs - craigslist", "").replace(" software/qa/dba/etc jobs - craigslist", "").split(" ")
+    location = ""
+
+    for i in place:
+        if len(place) > 1:
+            if len(i) > 2:
+                location += i.replace("/", "").capitalize()+" "
+            else:
+                location += i+" "
+        else:
+            location = i.capitalize()
+
     results = soup.find_all("div", {"class": "result-info"})
-    getJobs(results, place)
+
+    # print(location, place)
+    getJobs(results, location)
 
 def getURL(items):
-    # session = requests.Session()
-    # retry = Retry(connect=3, backoff_factor=2)
-    # adapter = HTTPAdapter(max_retries=retry)
-    # session.mount('http://', adapter)
-    # session.mount('https://', adapter)
-    
+    count = 1
+
     for location in items:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://{location}.craigslist.org/search/sof?lang=en"
-            response = requests.get(url, headers=headers).text
-            getResults(response, location)
+            response = requests.get(url, headers=headers)
 
-            time.sleep(5)
+            if response.ok:
+                getResults(response.text)
+            else:
+                print(f"Error: {response.status_code}")
+
+            if count % 10 == 0:
+                time.sleep(5)
+            
+            count += 1
         except:
             print("=> craigslist_jobs: Continue to next")
             continue
 
 def getURLMiami(items):
-    # session = requests.Session()
-    # retry = Retry(connect=3, backoff_factor=1)
-    # adapter = HTTPAdapter(max_retries=retry)
-    # session.mount("http://", adapter)
-    # session.mount("https://", adapter)
+    count = 1
 
     for location in items:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-            response = requests.get(url, headers=headers).text
-            getResults(response, location)
+            response = requests.get(url, headers=headers)
 
-            time.sleep(5)
+            if response.ok:
+                getResults(response.text)
+            else:
+                print(f"Error: {response.status_code}")
+
+            if count % 10 == 0:
+                time.sleep(5)
+            
+            count += 1
         except:
             print("=> craigslist_jobs: Scrape failed. Going to next.")
-            pass
+            continue
+
+def getURL_IT(items):
+    count = 1
+
+    for location in items:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{location}.craigslist.org/search/tch?lang=en"
+            response = requests.get(url, headers=headers)
+
+            if response.ok:
+                getResults(response.text)
+            else:
+                print(f"Error: {response.status_code}")
+
+            if count % 10 == 0:
+                time.sleep(5)
+            
+            count += 1
+        except:
+            print("=> craigslist_jobs: Continue to next")
+            continue
+
+def getURLMiami_IT(items):
+    count = 1
+
+    for location in items:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"{location}d/technical-support/search/mdc/tch?lang=en"
+            response = requests.get(url, headers=headers)
+
+            if response.ok:
+                getResults(response.text)
+            else:
+                print(f"Error: {response.status_code}")
+
+            if count % 10 == 0:
+                time.sleep(5)
+            
+            count += 1
+        except:
+            print("=> craigslist_jobs: Scrape failed. Going to next.")
+            continue
 
 def main():
     getURL(locations)
     getURLMiami(miamis)
+    getURL_IT(locations)
+    getURLMiami_IT(miamis)
     # createJSON(data)
 
 # main()
