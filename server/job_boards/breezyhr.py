@@ -1,8 +1,10 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
-import requests, sys, time
+import requests, sys, time, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 f = open(f"./data/params/breezyhr.txt", "r")
@@ -53,12 +55,11 @@ def getResults(item, name):
         
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
-
     page = 1
 
     for company in companies:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://{company}.breezy.hr"
             
             response = requests.get(url, headers=headers)

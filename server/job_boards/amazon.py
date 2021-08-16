@@ -1,7 +1,9 @@
 from datetime import datetime, timedelta
-import requests, json, sys, time
+import requests, json, sys, time, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -51,14 +53,15 @@ def getResults(item):
 
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36", "Referer":
-	"https://amazon.jobs/en/search?offset=0&result_limit=100&sort=relevant&category%5B%5D=operations-it-support-engineering&category%5B%5D=software-development&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations%2C%20IT%2C%20%26%20Support%20Engineering&city=&country=&region=&county=&query_options=&"}
 
     page = 0
     count = 0
 
     while count < 500:
         try:
+            headers = {"User-Agent": random.choice(h.headers), "Referer":
+	        "https://amazon.jobs/en/search?offset=0&result_limit=100&sort=relevant&category%5B%5D=operations-it-support-engineering&category%5B%5D=software-development&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations%2C%20IT%2C%20%26%20Support%20Engineering&city=&country=&region=&county=&query_options=&"}
+            
             url = f"https://amazon.jobs/en/search.json?category[]=operations-it-support-engineering,software-development&radius=24km&facets[]=location,business_category,category,schedule_type_id,employee_class,normalized_location,job_function_id&offset={page}0&result_limit=100&sort=relevant&latitude=&longitude=&loc_group_id=&loc_query=&base_query=Operations, IT, & Support Engineering&city=&country=&region=&county=&query_options=&="
 
             response = requests.get(url, headers=headers).text

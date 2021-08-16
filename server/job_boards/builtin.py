@@ -1,8 +1,9 @@
 from datetime import datetime, timedelta
-import requests, json, sys, time
+import requests, json, sys, time, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
-
+# import modules.headers as h
 
 data = create_temp_json.data
 scraped = create_temp_json.scraped
@@ -110,16 +111,12 @@ def getResults(item):
 
 
 def getURL():
-    headers = {
-        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
-        "Origin":"https://builtin.com",
-        "Referer":"https://builtin.com/"
-        }
-
     page = 1
 
     while isTrue:
         try:
+            headers = {"User-Agent":random.choice(h.headers), "Origin":"https://builtin.com","Referer":"https://builtin.com/"}
+
             url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
 
             response = requests.get(url, headers=headers).text

@@ -1,8 +1,10 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys, time, json
+import requests, sys, time, json, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -60,7 +62,6 @@ def getResults(item, name):
     # print(results)
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     # url = f"https://jobs.lever.co/clubhouse"
     # response = requests.get(url, headers=headers).text
@@ -69,6 +70,7 @@ def getURL():
 
     for name in companies:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://jobs.lever.co/{name}"
             response = requests.get(url, headers=headers).text
             getResults(response, name)

@@ -1,5 +1,5 @@
 # import craigslist_gigs
-from . import craigslist_jobs
+from . import craigslist
 from . import greenhouse_io
 from . import bloomberg
 from . import lever_co
@@ -39,36 +39,36 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
 
-    craigslist_jobs.main(),
-    target.main(),
-    tiktok.main(),
-    lever_co.main(),
-    greenhouse_io.main(),
-    workable.main(),
-    amazon.main(),
-    ashbyhq.main(),
-    twitter.main(),
-    smartrecruiters.main(),
-    breezyhr.main(),
-    jazzhr.main(),
-    nintendo.main(),
-    hireart.main(),
-    bloomberg.main(),
-    usajobs.main(),
-    key_values.main(),
-    zillow.main(),
-    clickup.main(),
-    # instacart.main(),
-    nocsok.main(),
-    remote_co.main(),
-    remoteok.main(),
-    workwithindies.main(),
-    weworkremotely.main(),
-    workaline.main(),
-    # dailyremote.main(),
-    # stackoverflow.main(),
-    # dice.main(),
-    builtin.main(),
+    craigslist.main()
+    target.main()
+    tiktok.main()
+    lever_co.main()
+    greenhouse_io.main()
+    workable.main()
+    amazon.main()
+    ashbyhq.main()
+    twitter.main()
+    smartrecruiters.main()
+    breezyhr.main()
+    jazzhr.main()
+    nintendo.main()
+    hireart.main()
+    bloomberg.main()
+    usajobs.main()
+    key_values.main()
+    zillow.main()
+    clickup.main()
+    # instacart.main()
+    nocsok.main()
+    remote_co.main()
+    remoteok.main()
+    workwithindies.main()
+    weworkremotely.main()
+    workaline.main()
+    # dailyremote.main()
+    # stackoverflow.main()
+    # dice.main()
+    builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
     create_main_json.createJSON()
     print("=> Done")

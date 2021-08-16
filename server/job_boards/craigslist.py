@@ -43,13 +43,23 @@ def getJobs(item, location):
                 "category": "job"
             })
             scraped.add(url)
-            print(f"=> craigslist_jobs: Added {title} for {location}")
+            print(f"=> craigslist: Added {title} for {location}")
         else:
-            print(f"=> craigslist_jobs: Already scraped or too old: {title} for {location}")
+            print(f"=> craigslist: Already scraped or too old: {title} for {location}")
         
 
 
-def getResults(item):
+def getResults(item, city):
+    cities = {
+        "auburn":"AL",
+        "bham":"AL",
+        "dothan":"AL",
+        "shoals":"AL",
+        "mobile":"AL",
+        "montgomery":"AL",
+        "tuscaloosa":"AL",
+    }
+
     soup = BeautifulSoup(item, "lxml")
     place = soup.find("title").text.replace(" technical support jobs - craigslist", "").replace(" software/qa/dba/etc jobs - craigslist", "").split(" ")
     location = ""
@@ -61,7 +71,7 @@ def getResults(item):
             else:
                 location += i+" "
         else:
-            location = i.capitalize()
+            location = f"{i.capitalize()}, {cities[city]}"
 
     results = soup.find_all("div", {"class": "result-info"})
 
@@ -78,16 +88,16 @@ def getURL(items):
             response = requests.get(url, headers=headers)
 
             if response.ok:
-                getResults(response.text)
+                getResults(response.text, location)
             else:
-                print(f"Error: {response.status_code}")
+                print(f"Error for {location}: {response.status_code}")
 
             if count % 10 == 0:
                 time.sleep(5)
             
             count += 1
         except:
-            print("=> craigslist_jobs: Continue to next")
+            print(f"=> craigslist: Failed to scrape {location}. Continue to next")
             continue
 
 def getURLMiami(items):
@@ -100,16 +110,16 @@ def getURLMiami(items):
             response = requests.get(url, headers=headers)
 
             if response.ok:
-                getResults(response.text)
+                getResults(response.text, location)
             else:
-                print(f"Error: {response.status_code}")
+                print(f"Error for {location}: {response.status_code}")
 
             if count % 10 == 0:
                 time.sleep(5)
             
             count += 1
         except:
-            print("=> craigslist_jobs: Scrape failed. Going to next.")
+            print(f"=> craigslist: Failed to scrape {location}. Going to next.")
             continue
 
 def getURL_IT(items):
@@ -122,7 +132,7 @@ def getURL_IT(items):
             response = requests.get(url, headers=headers)
 
             if response.ok:
-                getResults(response.text)
+                getResults(response.text, location)
             else:
                 print(f"Error: {response.status_code}")
 
@@ -131,7 +141,7 @@ def getURL_IT(items):
             
             count += 1
         except:
-            print("=> craigslist_jobs: Continue to next")
+            print(f"=> craigslist: Failed to scrape {location}. Continue to next")
             continue
 
 def getURLMiami_IT(items):
@@ -144,7 +154,7 @@ def getURLMiami_IT(items):
             response = requests.get(url, headers=headers)
 
             if response.ok:
-                getResults(response.text)
+                getResults(response.text, location)
             else:
                 print(f"Error: {response.status_code}")
 
@@ -153,7 +163,7 @@ def getURLMiami_IT(items):
             
             count += 1
         except:
-            print("=> craigslist_jobs: Scrape failed. Going to next.")
+            print(f"=> craigslist: Failed to scrape {location}. Going to next.")
             continue
 
 def main():
@@ -161,7 +171,6 @@ def main():
     getURLMiami(miamis)
     getURL_IT(locations)
     getURLMiami_IT(miamis)
-    # createJSON(data)
 
 # main()
 

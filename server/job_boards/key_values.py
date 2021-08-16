@@ -1,10 +1,12 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json, requests, sys, time
+import json, requests, sys, time, random
 # import modules.create_temp_json as create_temp_json
 # import modules.update_key_values as updateKeyValues
+# import modules.headers as h
 from .modules import create_temp_json
 from .modules import update_key_values
+from .modules import headers as h
 
 
 f = open(f"./data/params/key_values.txt", "r")
@@ -56,10 +58,10 @@ def getResults(item):
     getJobs(results)
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
 
     for param in params:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://www.keyvalues.com{param}"
             response = requests.get(url, headers=headers).text
             getResults(response)

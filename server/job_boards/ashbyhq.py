@@ -1,7 +1,10 @@
 from datetime import datetime
+import random
 import requests, json, sys, time
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 f = open(f"./data/params/ashbyhq.txt", "r")
@@ -50,12 +53,11 @@ def getResults(item, param, name):
         
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
-
     page = 1
 
     for company in companies:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = "https://jobs.ashbyhq.com/api/non-user-graphql"
             payload = {
                 "operationName":"ApiJobPostingBriefsWithIds",

@@ -2,8 +2,9 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import requests, json, sys, time, random
 from .modules import create_temp_json
-from .modules.headers import headers as h
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -75,7 +76,7 @@ def getURL():
     count = 1
 
     for name in companies:
-        headers = {"User-Agent": random.choice(h)}
+        headers = {"User-Agent": random.choice(h.headers)}
         try:
             url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
             url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"

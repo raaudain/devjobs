@@ -1,8 +1,10 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
-import requests, json, sys, time
+import requests, json, sys, time, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -48,7 +50,7 @@ def getResults(item):
     getJobs(date, apply_url, company_name, position, locations_string, desc)
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0", "X-Requested-With": "XMLHttpRequest"}
+    headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
 
     url1 = f"https://careers.bloomberg.com/job_search/search_query?autocompleteTags=%5B%5D&selectedFilterFields=%5B%7B%22name%22%3A%22Software+Developer%2FEngineering%22%2C%22count%22%3A%22239%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c41%22%7D%2C%7B%22name%22%3A%22Technical+Support%22%2C%22count%22%3A%2216%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c48%22%7D%5D&jobStartIndex=0&jobBatchSize=1000"
     response = requests.get(url1, headers=headers).text

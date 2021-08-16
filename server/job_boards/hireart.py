@@ -1,13 +1,13 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
-import requests, json, sys
+import requests, json, sys, random
 from .modules import create_temp_json
+from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
-
-headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
 def getJobs(url, company, position, location, qualifications):
     date = datetime.strftime(datetime.now(), "%Y-%m-%d")
@@ -49,6 +49,7 @@ def getResults(item):
         getJobs(apply_url, company_name, position, locations_string, desc)
 
 def getURL():
+    headers = {"User-Agent": random.choice(h.headers)}
     url = f"https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
     response = requests.get(url, headers=headers)
 
