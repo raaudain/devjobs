@@ -39,6 +39,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
 
+    hireart.main()
     craigslist.main()
     target.main()
     tiktok.main()
@@ -52,7 +53,6 @@ def main():
     breezyhr.main()
     jazzhr.main()
     nintendo.main()
-    hireart.main()
     bloomberg.main()
     usajobs.main()
     key_values.main()

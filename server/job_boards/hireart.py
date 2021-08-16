@@ -9,6 +9,8 @@ from .modules import headers as h
 
 data = create_temp_json.data
 
+headers = {"User-Agent": random.choice(h.headers)}
+
 def getJobs(url, company, position, location, qualifications):
     date = datetime.strftime(datetime.now(), "%Y-%m-%d")
     title = position
@@ -49,7 +51,6 @@ def getResults(item):
         getJobs(apply_url, company_name, position, locations_string, desc)
 
 def getURL():
-    headers = {"User-Agent": random.choice(h.headers)}
     url = f"https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
     response = requests.get(url, headers=headers)
 

@@ -58,6 +58,363 @@ def getResults(item, city):
         "mobile":"AL",
         "montgomery":"AL",
         "tuscaloosa":"AL",
+        "anchorage":"AK",
+        "fairbanks":"AK",
+        "kenai":"AK",
+        "juneau":"AK",
+        "flagstaff":"AZ",
+        "phoenix":"AZ",
+        "yuma":"AZ",
+        "fayar":"AR",
+        "jonesboro":"AR",
+        "texarkana":"AR",
+        "bakersfield":"CA",
+        "chico":"CA",
+        "hanford":"CA",
+        "humboldt":"CA",
+        "losangeles":"CA",
+        "merced":"CA",
+        "redding":"CA",
+        "sandiego":"CA",
+        "sfbay":"CA",
+        "slo":"CA",
+        "santabarbara":"CA",
+        "santamaria":"CA",
+        "siskiyou":"CA",
+        "susanville":"CA",
+        "boulder":"CO",
+        "denver":"CO",
+        "eastco":"CO",
+        "newlondon":"CT",
+        "newhaven":"CT",
+        "daytona":"FL",
+        "keys":"FL",
+        "fortlauderdale":"FL",
+        "fortmyers":"FL",
+        "jacksonville":"FL",
+        "orlando":"FL",
+        "panamacity":"FL",
+        "pensacola":"FL",
+        "staugustine":"FL",
+        "tallahassee":"FL",
+        "treasure":"FL",
+        "albanyga":"GA",
+        "atlanta":"GA",
+        "augusta":"GA",
+        "brunswick":"GA",
+        "macon":"GA",
+        "savannah":"GA",
+        "statesboro":"GA",
+        "valdosta":"GA",
+        "honolulu":"HI",
+        "boise":"ID",
+        "eastidaho":"ID",
+        "lewiston":"ID",
+        "twinfalls":"ID",
+        "bn":"IL",
+        "chicago":"IL",
+        "decatur":"IL",
+        "carbondale":"IL",
+        "bloomington":"IN",
+        "evansville":"IN",
+        "fortwayne":"IN",
+        "indianapolis":"IN",
+        "kokomo":"IN",
+        "richmondin":"IN",
+        "terrehaute":"IN",
+        "ames":"IA",
+        "cedarrapids":"IA",
+        "desmoines":"IA",
+        "dubuque":"IA",
+        "fortdodge":"IA",
+        "iowacity":"IA",
+        "masoncity":"IA",
+        "quadcities":"IA",
+        "siouxcity":"IA",
+        "ottumwa":"IA",
+        "waterloo":"IA",
+        "lawrence":"KS",
+        "nwks":"KS",
+        "salina":"KS",
+        "seks":"KS",
+        "swks":"KS",
+        "topeka":"KS",
+        "wichita":"KS",
+        "eastky":"KY",
+        "owensboro":"KY",
+        "westky":"KY",
+        "batonrouge":"LA",
+        "cenla":"LA",
+        "houma":"LA",
+        "lakecharles":"LA",
+        "monroe":"LA",
+        "neworleans":"LA",
+        "shreveport":"LA",
+        "baltimore":"MD",
+        "westmd":"MD",
+        "boston":"MA",
+        "capecod":"MA",
+        "annarbor":"MI",
+        "battlecreek":"MI",
+        "centralmich":"MI",
+        "detroit":"MI",
+        "flint":"MI",
+        "grandrapids":"MI",
+        "holland":"MI",
+        "kalamazoo":"MI",
+        "lansing":"MI",
+        "monroemi":"MI",
+        "muskegon":"MI",
+        "nmi":"MI",
+        "porthuron":"MI",
+        "saginaw":"MI",
+        "swmi":"MI",
+        "thumb":"MI",
+        "up":"MI",
+        # bemidji
+        # brainerd
+        # duluth
+        # mankato
+        # minneapolis
+        # rmn
+        # marshall
+        # stcloud
+        # gulfport
+        # hattiesburg
+        # jackson
+        # meridian
+        # northmiss
+        # natchez
+        # columbiamo
+        # joplin
+        # kansascity
+        # kirksville
+        # loz
+        # semo
+        # springfield
+        # stjoseph
+        # stlouis
+        # billings
+        # bozeman
+        # butte
+        # greatfalls
+        # helena
+        # kalispell
+        # missoula
+        # montana
+        # grandisland
+        # lincoln
+        # northplatte
+        # omaha
+        # scottsbluff
+        # elko
+        # lasvegas
+        # reno
+        # nh
+        # cnj
+        # jerseyshore
+        # newjersey
+        # southjersey
+        # albuquerque
+        # clovis
+        # farmington
+        # lascruces
+        # roswell
+        # santafe
+        # albany
+        # binghamton
+        # buffalo
+        # catskills
+        # chautauqua
+        # elmira
+        # fingerlakes
+        # glensfalls
+        # hudsonvalley
+        # ithaca
+        # longisland
+        # newyork
+        # oneonta
+        # plattsburgh
+        # potsdam
+        # rochester
+        # syracuse
+        # twintiers
+        # utica
+        # watertown
+        # asheville
+        # boone
+        # charlotte
+        # eastnc
+        # fayetteville
+        # greensboro
+        # hickory
+        # onslow
+        # outerbanks
+        # raleigh
+        # wilmington
+        # winstonsalem
+        # bismarck
+        # fargo
+        # grandforks
+        # nd
+        # akroncanton
+        # ashtabula
+        # athensohio
+        # chillicothe
+        # cincinnati
+        # cleveland
+        # columbus
+        # dayton
+        # limaohio
+        # mansfield
+        # sandusky
+        # toledo
+        # tuscarawas
+        # youngstown
+        # zanesville
+        # lawton
+        # enid
+        # oklahomacity
+        # stillwater
+        # tulsa
+        # bend
+        # corvallis
+        # eastoregon
+        # eugene
+        # klamath
+        # medford
+        # oregoncoast
+        # portland
+        # roseburg
+        # salem
+        # altoona
+        # chambersburg
+        # erie
+        # harrisburg
+        # lancaster
+        # allentown
+        # meadville
+        # philadelphia
+        # pittsburgh
+        # poconos
+        # reading
+        # scranton
+        # pennstate
+        # williamsport
+        # york
+        # providence
+        # charleston
+        # columbia
+        # florencesc
+        # greenville
+        # hiltonhead
+        # myrtlebeach
+        # nesd
+        # csd
+        # rapidcity
+        # siouxfalls
+        # sd
+        # chattanooga
+        # clarksville
+        # jacksontn
+        # knoxville
+        # memphis
+        # nashville
+        # tricities
+        # abilene
+        # amarillo
+        # austin
+        # beaumont
+        # dallas
+        # nacogdoches
+        # elpaso
+        # galveston
+        # houston
+        # lubbock
+        # mcallen
+        # odessa
+        # sanangelo
+        # sanantonio
+        # waco
+        # wichitafalls
+        # logan
+        # ogden
+        # provo
+        # saltlakecity
+        # stgeorge
+        # vermont
+        # norfolk
+        # harrisonburg
+        # lynchburg
+        # blacksburg
+        # richmond
+        # roanoke
+        # swva
+        # olympic
+        # pullman
+        # seattle
+        # spokane
+        # charlestonwv
+        # martinsburg
+        # huntington
+        # morgantown
+        # wheeling
+        # parkersburg
+        # swv
+        # wv
+        # appleton
+        # eauclaire
+        # greenbay
+        # lacrosse
+        # madison
+        # milwaukee
+        # northernwi
+        # sheboygan
+        # wausau
+        # wyoming
+        # micronesia
+        # puertorico
+        # virgin
+        # calgary
+        # edmonton
+        # ftmcmurray
+        # lethbridge
+        # hat
+        # peace
+        # reddeer
+        # cariboo
+        # comoxvalley
+        # princegeorge
+        # skeena
+        # vancouver
+        # winnipeg
+        # newbrunswick
+        # newfoundland
+        # territories
+        # yellowknife
+        # halifax
+        # barrie
+        # belleville
+        # chatham
+        # londonon
+        # niagara
+        # ottawa
+        # sarnia
+        # soo
+        # sudbury
+        # thunderbay
+        # toronto
+        # windsor
+        # montreal
+        # quebec
+        # saguenay
+        # regina
+        # saskatoon
+        # whitehorse
+        "http://miami.craigslist.org/brw/":"FL",
+        "http://miami.craigslist.org/mdc/":"FL",
+        "https://miami.craigslist.org/":"FL",
+        "http://miami.craigslist.org/pbc/":"FL",
     }
 
     soup = BeautifulSoup(item, "lxml")
@@ -66,12 +423,15 @@ def getResults(item, city):
 
     for i in place:
         if len(place) > 1:
+            # This is to avoid messing with state abbriviation capitalization
             if len(i) > 2:
-                location += i.replace("/", "").capitalize()+" "
+                location += i.capitalize()+" "
             else:
                 location += i+" "
         else:
             location = f"{i.capitalize()}, {cities[city]}"
+
+    location = f"{location.strip()}, {cities[city]}" if cities[city] not in location else location
 
     results = soup.find_all("div", {"class": "result-info"})
 
