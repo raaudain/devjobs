@@ -171,29 +171,29 @@ def getResults(item, city):
         "swmi":"MI",
         "thumb":"MI",
         "up":"MI",
-        # bemidji
-        # brainerd
-        # duluth
-        # mankato
-        # minneapolis
-        # rmn
-        # marshall
-        # stcloud
-        # gulfport
-        # hattiesburg
-        # jackson
-        # meridian
-        # northmiss
-        # natchez
-        # columbiamo
-        # joplin
-        # kansascity
-        # kirksville
-        # loz
-        # semo
-        # springfield
-        # stjoseph
-        # stlouis
+        "bemidji":"MN",
+        "brainerd":"MN",
+        "duluth":"MN",
+        "mankato":"MN",
+        "minneapolis":"MN",
+        "rmn":"MN",
+        "marshall":"MN",
+        "stcloud":"MN",
+        "gulfport":"MS",
+        "hattiesburg":"MS",
+        "jackson":"MS",
+        "meridian":"MS",
+        "northmiss":"MS",
+        "natchez":"MS",
+        "columbiamo":"MO",
+        "joplin":"MO",
+        "kansascity":"MO",
+        "kirksville":"MO",
+        "loz":"MO",
+        "semo":"MO",
+        "springfield":"MO",
+        "stjoseph":"MO",
+        "stlouis":"MO",
         # billings
         # bozeman
         # butte
@@ -429,9 +429,14 @@ def getResults(item, city):
             else:
                 location += i+" "
         else:
-            location = f"{i.capitalize()}, {cities[city]}"
+            if city in cities:
+                location = f"{i.capitalize()}, {cities[city]}"
 
-    location = f"{location.strip()}, {cities[city]}" if cities[city] not in location else location
+    if city in cities:
+        if cities[city] not in location:
+            location = f"{location.strip()}, {cities[city]}"
+        else:
+            pass
 
     results = soup.find_all("div", {"class": "result-info"})
 
