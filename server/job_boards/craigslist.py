@@ -194,69 +194,67 @@ def getResults(item, city):
         "springfield":"MO",
         "stjoseph":"MO",
         "stlouis":"MO",
-        # billings
-        # bozeman
-        # butte
-        # greatfalls
-        # helena
-        # kalispell
-        # missoula
-        # montana
-        # grandisland
-        # lincoln
-        # northplatte
-        # omaha
-        # scottsbluff
-        # elko
-        # lasvegas
-        # reno
-        # nh
-        # cnj
-        # jerseyshore
-        # newjersey
-        # southjersey
-        # albuquerque
-        # clovis
-        # farmington
-        # lascruces
-        # roswell
-        # santafe
-        # albany
-        # binghamton
-        # buffalo
-        # catskills
-        # chautauqua
-        # elmira
-        # fingerlakes
-        # glensfalls
-        # hudsonvalley
-        # ithaca
-        # longisland
-        # newyork
-        # oneonta
-        # plattsburgh
-        # potsdam
-        # rochester
-        # syracuse
-        # twintiers
-        # utica
-        # watertown
-        # asheville
-        # boone
-        # charlotte
-        # eastnc
-        # fayetteville
-        # greensboro
-        # hickory
-        # onslow
-        # outerbanks
-        # raleigh
-        # wilmington
-        # winstonsalem
-        # bismarck
-        # fargo
-        # grandforks
-        # nd
+        "billings":"MT",
+        "bozeman":"MT",
+        "butte":"MT",
+        "greatfalls":"MT",
+        "helena":"MT",
+        "kalispell":"MT",
+        "missoula":"MT",
+        "montana":"MT",
+        "grandisland":"NE",
+        "lincoln":"NE",
+        "northplatte":"NE",
+        "omaha":"NE",
+        "scottsbluff":"NE",
+        "elko":"NV",
+        "lasvegas":"NV",
+        "reno":"NV",
+        "cnj":"NJ",
+        "jerseyshore":"NJ",
+        "newjersey":"NJ",
+        "southjersey":"NJ",
+        "albuquerque":"NM",
+        "clovis":"NM",
+        "farmington":"NM",
+        "lascruces":"NM",
+        "roswell":"NM",
+        "santafe":"NM",
+        "albany":"NY",
+        "binghamton":"NY",
+        "buffalo":"NY",
+        "catskills":"NY",
+        "chautauqua":"NY",
+        "elmira":"NY",
+        "fingerlakes":"NY",
+        "glensfalls":"NY",
+        "hudsonvalley":"NY",
+        "ithaca":"NY",
+        "longisland":"NY",
+        "newyork":"NY",
+        "oneonta":"NY",
+        "plattsburgh":"NY",
+        "potsdam":"NY",
+        "rochester":"NY",
+        "syracuse":"NY",
+        "twintiers":"NY",
+        "utica":"NY",
+        "watertown":"NY",
+        # "asheville":"NC",
+        # "boone":"NC",
+        # "charlotte":"NC",
+        # "eastnc":"NC",
+        # "fayetteville":"NC",
+        # "greensboro":"NC",
+        # "hickory":"NC",
+        # "onslow":"NC",
+        # "outerbanks":"NC",
+        # "raleigh":"NC",
+        # "wilmington":"NC",
+        # "winstonsalem":"NC",
+        # "bismarck":"ND",
+        # "fargo":"ND",
+        # "grandforks":"ND",
         # akroncanton
         # ashtabula
         # athensohio
@@ -435,8 +433,8 @@ def getResults(item, city):
     if city in cities:
         if cities[city] not in location:
             location = f"{location.strip()}, {cities[city]}"
-        else:
-            pass
+    else:
+        pass
 
     results = soup.find_all("div", {"class": "result-info"})
 
