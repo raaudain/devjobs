@@ -51,7 +51,8 @@ def getResults(item):
         position = str(i.find("h2")).replace("<h2>", "").replace("</h2>", "").replace("&amp;", "&").strip()
         locations_string = str(i.find("span", class_="job-location")).replace('<span class="job-location">', "").replace("</span>", "").strip()
         
-        getJobs(date, apply_url, company_name, position, locations_string)
+        if position != "None" or position != None:
+            getJobs(date, apply_url, company_name, position, locations_string)
 
 
 def getURL():
