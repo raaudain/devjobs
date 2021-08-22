@@ -240,73 +240,73 @@ def getResults(item, city):
         "twintiers":"NY",
         "utica":"NY",
         "watertown":"NY",
-        # "asheville":"NC",
-        # "boone":"NC",
-        # "charlotte":"NC",
-        # "eastnc":"NC",
-        # "fayetteville":"NC",
-        # "greensboro":"NC",
-        # "hickory":"NC",
-        # "onslow":"NC",
-        # "outerbanks":"NC",
-        # "raleigh":"NC",
-        # "wilmington":"NC",
-        # "winstonsalem":"NC",
-        # "bismarck":"ND",
-        # "fargo":"ND",
-        # "grandforks":"ND",
-        # akroncanton
-        # ashtabula
-        # athensohio
-        # chillicothe
-        # cincinnati
-        # cleveland
-        # columbus
-        # dayton
-        # limaohio
-        # mansfield
-        # sandusky
-        # toledo
-        # tuscarawas
-        # youngstown
-        # zanesville
-        # lawton
-        # enid
-        # oklahomacity
-        # stillwater
-        # tulsa
-        # bend
-        # corvallis
-        # eastoregon
-        # eugene
-        # klamath
-        # medford
-        # oregoncoast
-        # portland
-        # roseburg
-        # salem
-        # altoona
-        # chambersburg
-        # erie
-        # harrisburg
-        # lancaster
-        # allentown
-        # meadville
-        # philadelphia
-        # pittsburgh
-        # poconos
-        # reading
-        # scranton
-        # pennstate
-        # williamsport
-        # york
-        # providence
-        # charleston
-        # columbia
-        # florencesc
-        # greenville
-        # hiltonhead
-        # myrtlebeach
+        "asheville":"NC",
+        "boone":"NC",
+        "charlotte":"NC",
+        "eastnc":"NC",
+        "fayetteville":"NC",
+        "greensboro":"NC",
+        "hickory":"NC",
+        "onslow":"NC",
+        "outerbanks":"NC",
+        "raleigh":"NC",
+        "wilmington":"NC",
+        "winstonsalem":"NC",
+        "bismarck":"ND",
+        "fargo":"ND",
+        "grandforks":"ND",
+        "akroncanton":"OH",
+        "ashtabula":"OH",
+        "athensohio":"OH",
+        "chillicothe":"OH",
+        "cincinnati":"OH",
+        "cleveland":"OH",
+        "columbus":"OH",
+        "dayton":"OH",
+        "limaohio":"OH",
+        "mansfield":"OH",
+        "sandusky":"OH",
+        "toledo":"OH",
+        "tuscarawas":"OH",
+        "youngstown":"OH",
+        "zanesville":"OH",
+        "lawton":"OK",
+        "enid":"OK",
+        "oklahomacity":"OK",
+        "stillwater":"OK",
+        "tulsa":"OK",
+        "bend":"OR",
+        "corvallis":"OR",
+        "eastoregon":"OR",
+        "eugene":"OR",
+        "klamath":"OR",
+        "medford":"OR",
+        "oregoncoast":"OR",
+        "portland":"OR",
+        "roseburg":"OR",
+        "salem":"OR",
+        "altoona":"PA",
+        "chambersburg":"PA",
+        "erie":"PA",
+        "harrisburg":"PA",
+        "lancaster":"PA",
+        "allentown":"PA",
+        "meadville":"PA",
+        "philadelphia":"PA",
+        "pittsburgh":"PA",
+        "poconos":"PA",
+        "reading":"PA",
+        "scranton":"PA",
+        "pennstate":"PA",
+        "williamsport":"PA",
+        "york":"PA",
+        "providence":"RI",
+        "charleston":"SC",
+        "columbia":"SC",
+        "florencesc":"SC",
+        "greenville":"SC",
+        "hiltonhead":"SC",
+        "myrtlebeach":"SC",
         # nesd
         # csd
         # rapidcity
@@ -434,7 +434,7 @@ def getResults(item, city):
         if cities[city] not in location:
             location = f"{location.strip()}, {cities[city]}"
     else:
-        pass
+        location = location
 
     results = soup.find_all("div", {"class": "result-info"})
 
