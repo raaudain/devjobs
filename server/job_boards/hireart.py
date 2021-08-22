@@ -39,16 +39,19 @@ def getJobs(url, company, position, location, qualifications):
 def getResults(item):
     jobs = item["jobs"]
     for data in jobs:
-        apply_url = data["apply_url"].strip()
-        response = requests.get(apply_url, headers=headers).text
-        soup = BeautifulSoup(response, "lxml")
-        results = soup.find("div", class_="job-requirements").find_all("li")
-        desc = [i.text for i in results]
+        try:
+            apply_url = data["apply_url"].strip()
+            response = requests.get(apply_url, headers=headers).text
+            soup = BeautifulSoup(response, "lxml")
+            results = soup.find("div", class_="job-requirements").find_all("li")
+            desc = [i.text for i in results]
 
-        company_name = data["company_name"].strip()
-        position = data["position"].strip()
-        locations_string = data["locations_string"].strip()
-        getJobs(apply_url, company_name, position, locations_string, desc)
+            company_name = data["company_name"].strip()
+            position = data["position"].strip()
+            locations_string = data["locations_string"].strip()
+            getJobs(apply_url, company_name, position, locations_string, desc)
+        except:
+            print("Error with hireart")
 
 def getURL():
     url = f"https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
