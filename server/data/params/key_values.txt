@@ -24,4 +24,3 @@
 /lets-do-this
 /careguide
 /peergrade
-/creator-deck-media
