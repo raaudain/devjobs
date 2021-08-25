@@ -307,69 +307,69 @@ def getResults(item, city):
         "greenville":"SC",
         "hiltonhead":"SC",
         "myrtlebeach":"SC",
-        # nesd
-        # csd
-        # rapidcity
-        # siouxfalls
-        # sd
-        # chattanooga
-        # clarksville
-        # jacksontn
-        # knoxville
-        # memphis
-        # nashville
-        # tricities
-        # abilene
-        # amarillo
-        # austin
-        # beaumont
-        # dallas
-        # nacogdoches
-        # elpaso
-        # galveston
-        # houston
-        # lubbock
-        # mcallen
-        # odessa
-        # sanangelo
-        # sanantonio
-        # waco
-        # wichitafalls
-        # logan
-        # ogden
-        # provo
-        # saltlakecity
-        # stgeorge
-        # vermont
-        # norfolk
-        # harrisonburg
-        # lynchburg
-        # blacksburg
-        # richmond
-        # roanoke
-        # swva
-        # olympic
-        # pullman
-        # seattle
-        # spokane
-        # charlestonwv
-        # martinsburg
-        # huntington
-        # morgantown
-        # wheeling
-        # parkersburg
-        # swv
-        # wv
-        # appleton
-        # eauclaire
-        # greenbay
-        # lacrosse
-        # madison
-        # milwaukee
-        # northernwi
-        # sheboygan
-        # wausau
-        # wyoming
+        "nesd":"SD",
+        "csd":"SD",
+        "rapidcity":"SD",
+        "siouxfalls":"SD",
+        "sd":"SD",
+        "chattanooga":"TN",
+        "clarksville":"TN",
+        "jacksontn":"TN",
+        "knoxville":"TN",
+        "memphis":"TN",
+        "nashville":"TN",
+        "tricities":"TN",
+        "abilene":"TX",
+        "amarillo":"TX",
+        "austin":"TX",
+        "beaumont":"TX",
+        "dallas":"TX",
+        "nacogdoches":"TX",
+        "elpaso":"TX",
+        "galveston":"TX",
+        "houston":"TX",
+        "lubbock":"TX",
+        "mcallen":"TX",
+        "odessa":"TX",
+        "sanangelo":"TX",
+        "sanantonio":"TX",
+        "waco":"TX",
+        "wichitafalls":"TX",
+        "logan":"UT",
+        "ogden":"UT",
+        "provo":"UT",
+        "saltlakecity":"UT",
+        "stgeorge":"UT",
+        "vermont":"VT",
+        "norfolk":"VA",
+        "harrisonburg":"VA",
+        "lynchburg":"VA",
+        "blacksburg":"VA",
+        "richmond":"VA",
+        "roanoke":"VA",
+        "swva":"VA",
+        "olympic":"WA",
+        "pullman":"WA",
+        "seattle":"WA",
+        "spokane":"WA",
+        "charlestonwv":"WV",
+        "martinsburg":"WV",
+        "huntington":"WV",
+        "morgantown":"WV",
+        "wheeling":"WV",
+        "parkersburg":"WV",
+        "swv":"WV",
+        "wv":"WV",
+        "appleton":"WI",
+        "eauclaire":"WI",
+        "greenbay":"WI",
+        "lacrosse":"WI",
+        "madison":"WI",
+        "milwaukee":"WI",
+        "northernwi":"WI",
+        "sheboygan":"WI",
+        "wausau":"WI",
+        "wyoming":"WY",
         # micronesia
         # puertorico
         # virgin
@@ -433,8 +433,10 @@ def getResults(item, city):
     if city in cities:
         if cities[city] not in location:
             location = f"{location.strip()}, {cities[city]}"
+        else:
+            location = location
     else:
-        location = location
+        pass
 
     results = soup.find_all("div", {"class": "result-info"})
 
