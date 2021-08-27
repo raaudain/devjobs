@@ -1,3 +1,4 @@
+/noyo
 /3box-labs
 /range
 /rune-labs
