@@ -524,3 +524,5 @@ twilio
 fetchrewards
 codesignal
 stocktwits
+fathom
+siftscience
