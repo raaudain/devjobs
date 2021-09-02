@@ -1,8 +1,11 @@
+import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests, sys, time
-# from .modules import create_temp_json
-import modules.create_temp_json as create_temp_json
+from .modules import create_temp_json
+from .modules import headers as h
+# import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -37,57 +40,50 @@ def getJobs(date, apply_url, company_name, position, locations_string, name):
 
 def getResults(item, name):
     soup = BeautifulSoup(item, "lxml")
-    results = [str(soup.find_all(class_="jv-job-list")).replace("[", "").replace("]", "")]
-    company = name.capitalize()
+    # results = [str(soup.find_all(class_="jv-job-list")).replace("[", "").replace("]", "")]
+    results = soup.find_all(class_="jv-job-list")
+    company = soup.find("title").text.replace("Careers", "").strip()
     titles = soup.find_all(class_="jv-job-list-name")
     locations = soup.find_all(class_="jv-job-list-location")
-
-    print(results)
-
- 
-
-    # for i in [*results]:
-    #     res.append(i)
     
     for r in results:
-        title = r.find(class_="jv-job-list-name").text.strip()
+        try:
+            title = r.find(class_="jv-job-list-name").text.strip()
 
-        if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-            apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
-            company_name = company
-            position = title
-            locations_string = r.find("td", class_="jv-job-list-location").text.strip()
-            
-            print(date, apply_url, company_name, position, locations_string, name)
-
+            if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+                apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
+                company_name = company
+                position = title
+                locations_string = r.find("td", class_="jv-job-list-location").text.strip()
+                
+                getJobs(date, apply_url, company_name, position, locations_string, name)
+        except:
+            print(f"=> jobvite: Failed: {company}")
+            continue
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
-
-    # url = f"https://jobs.lever.co/clubhouse"
-    # response = requests.get(url, headers=headers).text
-    # getResults(response)
     count = 1
 
     for name in companies:
-        # try:
-        url = f"https://jobs.jobvite.com/careers/{name}"
-        response = requests.get(url, headers=headers).text
-        getResults(response, name)
-        
-        if count % 10 == 0:
-            time.sleep(5)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://jobs.jobvite.com/careers/{name}"
+            response = requests.get(url, headers=headers).text
+            getResults(response, name)
             
-        count+=1
+            if count % 10 == 0:
+                time.sleep(5)
+                
+            count+=1
             # print(response)
-        # except:
-        #     print(f"=> jobvite: Scrape failed for {name}. Going to next.")
-        #     continue
+        except:
+            print(f"=> jobvite: Scrape failed for {name}. Going to next.")
+            continue
 
 
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)

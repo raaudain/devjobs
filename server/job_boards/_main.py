@@ -29,6 +29,8 @@ from . import breezyhr
 from . import target
 from . import twitter
 from . import tiktok
+from . import vuejobs
+from . import jobvite
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -38,7 +40,8 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
-
+    jobvite.main()
+    vuejobs.main()
     hireart.main()
     craigslist.main()
     target.main()
