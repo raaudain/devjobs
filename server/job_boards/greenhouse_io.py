@@ -54,11 +54,12 @@ def getResults(item, name, company):
     for j in jobs:
         try:
             if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT" in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] and ("Mechnicial" not in j["title"] or "Electrical" not in j["title"]):
-                jobId = j["id"]
-                content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
-                soup = BeautifulSoup(content, "lxml")
-                results = soup.find_all("ul")[1].find_all_next("li")
-                desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results] if results else None
+                # jobId = j["id"]
+                # content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
+                # soup = BeautifulSoup(content, "lxml")
+                # results = soup.find_all("ul")[1].find_all_next("li")
+                # desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results] if results else None
+                desc = None
 
                 date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
                 position = j["title"].strip()

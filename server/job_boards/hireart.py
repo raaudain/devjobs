@@ -44,7 +44,8 @@ def getResults(item):
             response = requests.get(apply_url, headers=headers).text
             soup = BeautifulSoup(response, "lxml")
             results = soup.find("div", class_="job-requirements").find_all("li")
-            desc = [i.text for i in results]
+            # desc = [i.text for i in results]
+            desc = None
 
             company_name = data["company_name"].strip()
             position = data["position"].strip()

@@ -47,7 +47,7 @@ def getResults(item):
     for i in results:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
         apply_url = f"https://jobs.target.com{i.find('a')['href'].strip()}"
-        company_name = "Target"
+        company_name = "Target Brands, Inc."
         position = str(i.find("h2")).replace("<h2>", "").replace("</h2>", "").replace("&amp;", "&").strip()
         locations_string = str(i.find("span", class_="job-location")).replace('<span class="job-location">', "").replace("</span>", "").strip()
         

@@ -41,8 +41,9 @@ def getResults(item):
             apply_url = f"https://careers.nintendo.com/job-openings/listing/{job_id}.html"
             company_name = "Nintendo of America"
             position = data["JobTitle"].strip()
-            results = BeautifulSoup(data["ExternalQualificationHTML"], "lxml").find_all("li")
-            desc = [i.text.replace("\n\xa0\nNOA-RG", "").strip() for i in results if "Such as" not in i.text]
+            # results = BeautifulSoup(data["ExternalQualificationHTML"], "lxml").find_all("li")
+            # desc = [i.text.replace("\n\xa0\nNOA-RG", "").strip() for i in results if "Such as" not in i.text]
+            desc = None
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
 
             getJobs(date, apply_url, company_name, position, locations_string, desc)
