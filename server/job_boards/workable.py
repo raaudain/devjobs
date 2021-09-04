@@ -89,7 +89,7 @@ def getURL():
                 else:
                     token = ""
                 
-                if count % 20 == 0:
+                if count % 5 == 0:
                     time.sleep(5)
                 
                 count+=1

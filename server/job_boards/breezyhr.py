@@ -34,7 +34,7 @@ def getJobs(date, url, company, position, location, name):
         "source_url": f"https://{name}.breezy.hr",
         "category": "job"
     })
-    print(f"=> jazzhr: Added {title} for {company}")
+    print(f"=> breezyhr: Added {title} for {company}")
 
 
 def getResults(item, name):
