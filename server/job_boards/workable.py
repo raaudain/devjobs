@@ -77,9 +77,9 @@ def getURL():
                     "token":token
                 }
 
-                response = requests.post(url, json=payload, headers=headers).text
+                response = requests.post(url, json=payload, headers=headers)
 
-                data = json.loads(response)
+                data = json.loads(response.text)
                 name = json.loads(requests.get(url2, headers=headers).text)["name"]
 
                 getResults(data, company, name)
@@ -95,7 +95,7 @@ def getURL():
                 count+=1
 
         except:
-            print(f"=> workable: Failed for {company}")
+            print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
             continue
         
 
