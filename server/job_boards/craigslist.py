@@ -370,45 +370,45 @@ def getResults(item, city):
         "sheboygan":"WI",
         "wausau":"WI",
         "wyoming":"WY",
-        # micronesia
-        # puertorico
-        # virgin
-        # calgary
-        # edmonton
-        # ftmcmurray
-        # lethbridge
-        # hat
-        # peace
-        # reddeer
-        # cariboo
-        # comoxvalley
-        # princegeorge
-        # skeena
-        # vancouver
-        # winnipeg
-        # newbrunswick
-        # newfoundland
-        # territories
-        # yellowknife
-        # halifax
-        # barrie
-        # belleville
-        # chatham
-        # londonon
-        # niagara
-        # ottawa
-        # sarnia
-        # soo
-        # sudbury
-        # thunderbay
-        # toronto
-        # windsor
-        # montreal
-        # quebec
-        # saguenay
-        # regina
-        # saskatoon
-        # whitehorse
+        "micronesia":"US",
+        "puertorico":"US",
+        "virgin":"US",
+        "calgary":"AB, Canada",
+        "edmonton":"AB, Canada",
+        "ftmcmurray":"AB, Canada",
+        "lethbridge":"AB, Canada",
+        "hat":"AB, Canada",
+        "peace":"AB, Canada",
+        "reddeer":"AB, Canada",
+        "cariboo":"BC, Canada",
+        "comoxvalley":"BC, Canada",
+        "princegeorge":"BC, Canada",
+        "skeena":"BC, Canada",
+        "vancouver":"BC, Canada",
+        "winnipeg":"MB, Canada",
+        "newbrunswick":"NB, Canada",
+        "newfoundland":"NL, Canada",
+        "territories":"NT, Canada",
+        "yellowknife":"NT, Canada",
+        "halifax":"NS, Canada",
+        "barrie":"ON, Canada",
+        "belleville":"ON, Canada",
+        "chatham":"ON, Canada",
+        "londonon":"ON, Canada",
+        "niagara":"ON, Canada",
+        "ottawa":"ON, Canada",
+        "sarnia":"ON, Canada",
+        "soo":"ON, Canada",
+        "sudbury":"ON, Canada",
+        "thunderbay":"ON, Canada",
+        "toronto":"ON, Canada",
+        "windsor":"ON, Canada",
+        "montreal":"QC, Canada",
+        "quebec":"QC, Canada",
+        "saguenay":"QC, Canada",
+        "regina":"SK, Canada",
+        "saskatoon":"SK, Canada",
+        "whitehorse":"YT, Canada",
         "http://miami.craigslist.org/brw/":"FL",
         "http://miami.craigslist.org/mdc/":"FL",
         "https://miami.craigslist.org/":"FL",

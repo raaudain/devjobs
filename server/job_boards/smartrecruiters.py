@@ -11,7 +11,7 @@ f = open(f"./data/params/smartrecruiters.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 
-def getJobs(date, url, company, position, location):
+def getJobs(date, url, company, position, location, name):
     date = str(date)
     title = position
     company = company
@@ -27,7 +27,7 @@ def getJobs(date, url, company, position, location):
         "url": url,
         "location": location,
         "source": company,
-        "source_url": f"https://careers.smartrecruiters.com/{company}/",
+        "source_url": f"https://careers.smartrecruiters.com/{name}/",
         "category": "job"
     })
     print(f"=> smartrecruiters: Added {title} for {company}")
@@ -50,7 +50,7 @@ def getResults(item, name):
             country = i["location"]["country"].upper()
             remote = " / Remote" if i["location"]["remote"] else ""
             locations_string = f"{city}{region}{country}{remote}"
-            getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, name)
 
     # for i in item:
     #     try:
