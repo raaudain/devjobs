@@ -1,7 +1,10 @@
 from datetime import datetime
-import requests, sys, json, time
+import requests, sys, json, time, random
+from .modules.headers import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
+# import modules.headers as headers
+
 
 
 data = create_temp_json.data
@@ -31,8 +34,6 @@ def getJobs(date, url, company, position, location, name):
         "category": "job"
     })
     print(f"=> smartrecruiters: Added {title} for {company}")
-
-            
 
 
 def getResults(item, name):
@@ -67,11 +68,11 @@ def getResults(item, name):
     #         continue
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
 
     count = 1
 
     for name in companies:
+        headers = {"User-Agent": random.choice(h)}
 
         url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
 

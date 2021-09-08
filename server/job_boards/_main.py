@@ -31,6 +31,7 @@ from . import twitter
 from . import tiktok
 from . import vuejobs
 from . import jobvite
+from . import recruiterbox
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -40,6 +41,7 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
+    recruiterbox.main()
     jobvite.main()
     vuejobs.main()
     hireart.main()
