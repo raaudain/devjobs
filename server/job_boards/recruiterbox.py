@@ -31,7 +31,7 @@ def getResults(item, name):
     data = item["entries"]
 
     for i in data:
-        if ("Engineer" in i["title"] or "IT" in i["title"] or "Programmer" in i["title"] or "Data" in i["title"] or "Help" in i["title"] or "Desk" in i["title"] or "Developer" in i["title"]) and ("structural" not in i["title"].lower() or "Bridge" not in i["title"] or "mechanical" not in i["title"].lower() or "material" not in i["title"].lower()):
+        if ("Engineer" in i["title"] or "IT" in i["title"] or "Programmer" in i["title"] or "Data" in i["title"] or "Help" in i["title"] or "Desk" in i["title"] or "Developer" in i["title"]) and ("structural" not in i["title"].lower() or "Bridge" not in i["title"] or "mechanical" not in i["title"].lower() or "material" not in i["title"].lower() or "civil" not in i["title"].lower()):
             date = i["published"]
             apply_url = i["link"]
             position = i["title"]
