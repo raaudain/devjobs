@@ -88,16 +88,14 @@ def getURL():
                 else:
                     token = ""
                 
-                if count % 100 == 0:
-                    time.sleep(60)
-                elif count % 10 == 0:
+                if count % 3 == 0:
                     time.sleep(5)
                 
                 count+=1
 
         except:
             print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
-            continue
+            pass
         
 
 
