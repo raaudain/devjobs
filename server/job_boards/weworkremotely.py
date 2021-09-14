@@ -9,37 +9,41 @@ data = create_temp_json.data
 
 def getJobs(item):
     for job in item:
-        date = job.find("time")
-        title = job.find("span", {"class": "title"}).text
-        company = job.find("span", {"class": "company"}).text
-        url = "https://www.weworkremotely.com"+job.find_all("a", href=True)[1]["href"]
-        location = job.find("span", {"class": "region company"})
-        
-        if location:
-            location = job.find("span", {"class": "region company"}).contents[0]
-        else:
-            location = "Remote"
+        try:
+            date = job.find("time")
+            title = job.find("span", {"class": "title"}).text
+            company = job.find("span", {"class": "company"}).text
+            url = "https://www.weworkremotely.com"+job.find_all("a", href=True)[1]["href"]
+            location = job.find("span", {"class": "region company"})
+            
+            if location:
+                location = job.find("span", {"class": "region company"}).contents[0]
+            else:
+                location = "Remote"
 
-        if date:
-            date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
-        else:
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
+            if date:
+                date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
+            else:
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=14))
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+            age = datetime.timestamp(datetime.now() - timedelta(days=14))
+            postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
-        if age <= postDate:
-            data.append({
-                "timestamp": postDate,
-                "title": title,
-                "company": company,
-                "url": url,
-                "location": location,
-                "source": "WeWorkRemotely",
-                "source_url": "https://weworkremotely.com/",
-                "category": "job"
-            })
-        print(f"=> weworkremotely: Added {title}")
+            if age <= postDate:
+                data.append({
+                    "timestamp": postDate,
+                    "title": title,
+                    "company": company,
+                    "url": url,
+                    "location": location,
+                    "source": "WeWorkRemotely",
+                    "source_url": "https://weworkremotely.com/",
+                    "category": "job"
+                })
+            print(f"=> weworkremotely: Added {title}")
+        except:
+            print(f"Error for {item}")
+            pass
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
