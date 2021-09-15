@@ -42,7 +42,6 @@ def getJobs(item):
                 })
             print(f"=> weworkremotely: Added {title}")
         except:
-            print(f"Error for {item}")
             pass
 
 def getResults(item):

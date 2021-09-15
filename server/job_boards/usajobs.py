@@ -76,6 +76,7 @@ def getURL():
             page+=1
         except:
             print(f"=> usajobs: Failed to scrap page {page}")
+            continue
     # print(data)
      
 
