@@ -70,8 +70,6 @@ def getURL():
 
             if page % 5 == 0:
                 time.sleep(5)
-                    
-            
             
             page+=1
         except:
