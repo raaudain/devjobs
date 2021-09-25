@@ -679,3 +679,4 @@ verkada
 vts
 myvest
 brightcellars
+slab

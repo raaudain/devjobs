@@ -41,9 +41,9 @@ def getResults(item):
     for data in jobs:
         try:
             apply_url = data["apply_url"].strip()
-            response = requests.get(apply_url, headers=headers).text
-            soup = BeautifulSoup(response, "lxml")
-            results = soup.find("div", class_="job-requirements").find_all("li")
+            # response = requests.get(apply_url, headers=headers).text
+            # soup = BeautifulSoup(response, "lxml")
+            # results = soup.find("div", class_="job-requirements").find_all("li")
             # desc = [i.text for i in results]
             desc = None
 
