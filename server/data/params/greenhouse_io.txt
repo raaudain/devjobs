@@ -712,3 +712,5 @@ ledgestone
 techridge
 deliveryherokorea
 collact
+sada
+nuro
