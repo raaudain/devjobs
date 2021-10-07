@@ -12,7 +12,6 @@
 /duckduckgo
 /carbon-five
 /upstatement
-/asana
 /indent
 /orbit
 /the-financial-gym
@@ -25,5 +24,3 @@
 /minerva
 /coast
 /lets-do-this
-/careguide
-/peergrade
