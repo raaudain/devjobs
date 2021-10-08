@@ -1,10 +1,10 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests, sys, time, json, random
-# from .modules import create_temp_json
-# from .modules import headers as h
-import modules.create_temp_json as create_temp_json
-import modules.headers as h
+from .modules import create_temp_json
+from .modules import headers as h
+# import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 data = create_temp_json.data
@@ -91,5 +91,5 @@ def getURL():
 def main():
     getURL()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
