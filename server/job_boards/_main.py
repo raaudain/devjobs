@@ -42,6 +42,7 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
+    lever_co.main()
     nbc.main()
     recruiterbox.main()
     jobvite.main()
@@ -50,7 +51,6 @@ def main():
     craigslist.main()
     target.main()
     tiktok.main()
-    lever_co.main()
     greenhouse_io.main()
     workable.main()
     amazon.main()

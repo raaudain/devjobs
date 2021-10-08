@@ -52,9 +52,13 @@ def getResults(item, name):
     postings = []
 
     for result in results:
-        h5 = result.find("h5", {"data-qa":"posting-name"}).text
-        if "Engineer" in h5 or "Tech" in h5 or "Web" in h5 or "Data " in h5 and ("Pharmacy Tech" not in h5 or "Pharmacy Clerk"):
-            postings.append(result)
+        try:
+            h5 = result.find("h5", {"data-qa":"posting-name"}).text
+            if ("Engineer" in h5 or "Tech" in h5 or "Web" in h5 or "Data ") in h5 and ("Pharmacy Tech" not in h5 or "Pharmacy Clerk" not in h5):
+                postings.append(result)
+        except:
+            print(f"=> lever.co: Scrape failed for {name}. Going to next.")
+            continue
 
     results = postings
 
@@ -62,27 +66,27 @@ def getResults(item, name):
     # print(results)
 
 def getURL():
-
     # url = f"https://jobs.lever.co/clubhouse"
     # response = requests.get(url, headers=headers).text
     # getResults(response)
     count = 1
 
     for name in companies:
-        try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://jobs.lever.co/{name}"
-            response = requests.get(url, headers=headers).text
-            getResults(response, name)
+        headers = {"User-Agent": random.choice(h.headers)}
+        url = f"https://jobs.lever.co/{name}"
+        response = requests.get(url, headers=headers)
+
+        if response.ok:
+            getResults(response.text, name)
+        else:
+            print("=> lever.co: Error - Response status", response.status_code)
+        
+        if count % 20 == 0:
+            time.sleep(5)
             
-            if count % 20 == 0:
-                time.sleep(5)
-                
-            count+=1
-            # print(response)
-        except:
-            print(f"=> lever_co: Scrape failed for {name}. Going to next.")
-            continue
+        count+=1
+        # print(response)
+        
 
 
 def main():
