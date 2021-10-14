@@ -37,7 +37,6 @@ def get_jobs(item: list, location: str):
         else:
             print(f"=> craigslist: Already scraped or too old: {title} for {location}")
         
-
 def get_results(item: str, city: str):
     cities = {
         "auburn":"AL",
@@ -430,32 +429,35 @@ def get_url(items: list):
     count = 1
 
     for location in items:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{location}.craigslist.org/search/sof?lang=en"
-        response = requests.get(url, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{location}.craigslist.org/search/sof?lang=en"
+            response = requests.get(url, headers=headers)
 
-        if response.ok:
-            get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
-        else:
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
+            pass
 
-        
         count += 1
 
 def get_url_miami(items: list):
     count = 1
 
     for location in items:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-        response = requests.get(url, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
+            response = requests.get(url, headers=headers)
 
-        if response.ok:
-            get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
-        else:
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
+            pass
 
         count += 1
 
@@ -463,31 +465,35 @@ def get_url_it(items: list):
     count = 1
 
     for location in items:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{location}.craigslist.org/search/tch?lang=en"
-        response = requests.get(url, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{location}.craigslist.org/search/tch?lang=en"
+            response = requests.get(url, headers=headers)
 
-        if response.ok:
-            get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
-        else:
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
-        
+            pass
+
         count += 1
 
 def get_url_miami_it(items: list):
     count = 1
 
     for location in items:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"{location}d/technical-support/search/mdc/tch?lang=en"
-        response = requests.get(url, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"{location}d/technical-support/search/mdc/tch?lang=en"
+            response = requests.get(url, headers=headers)
 
-        if response.ok:
-            get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
-        else:
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
+            pass
 
         count += 1
 
