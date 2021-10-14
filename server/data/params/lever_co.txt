@@ -6,7 +6,6 @@ frontapp
 3box
 nylas
 scaleai
-materialize
 olo
 divvyhomes
 grafana
@@ -15,7 +14,6 @@ nestwealth
 seesaw
 pex
 imperfectfoods
-fishtownanalytics
 givecampus
 teleport
 whereby
@@ -685,3 +683,4 @@ apollographql
 tonkean
 voxbone-2
 veeva
+dbtlabs

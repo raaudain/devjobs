@@ -437,7 +437,7 @@ def get_url(items: list):
             if response.ok:
                 get_results(response.text, location)
                 if count % 10 == 0: time.sleep(5)
-        except ConnectionError:
+        except ConnectionResetError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             pass
 
@@ -455,7 +455,7 @@ def get_url_miami(items: list):
             if response.ok:
                 get_results(response.text, location)
                 if count % 10 == 0: time.sleep(5)
-        except ConnectionError:
+        except ConnectionResetError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             pass
 
@@ -473,7 +473,7 @@ def get_url_it(items: list):
             if response.ok:
                 get_results(response.text, location)
                 if count % 10 == 0: time.sleep(5)
-        except ConnectionError:
+        except ConnectionResetError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             pass
 
@@ -491,7 +491,7 @@ def get_url_miami_it(items: list):
             if response.ok:
                 get_results(response.text, location)
                 if count % 10 == 0: time.sleep(5)
-        except ConnectionError:
+        except ConnectionResetError:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             pass
 
