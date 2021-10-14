@@ -62,9 +62,10 @@ def get_url(companies: list):
             data = json.loads(response.text)
             res = requests.post(url, json=payload_2, headers=headers).text
             name = json.loads(res)["data"]["organization"]["name"]
-            get_results(data, company, name)
-            if page % 10 == 0: time.sleep(5)   
-            page+=1
+            if name:
+                get_results(data, company, name)
+                if page % 10 == 0: time.sleep(5)   
+                page+=1
         else:
             print(f"=> ashby: Failed to scrape {company}. Status code: {response.status_code}.")
 
