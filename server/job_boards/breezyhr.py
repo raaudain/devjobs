@@ -26,7 +26,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("li", class_="position transition")
-    company = soup.find("meta", {"name":"twitter:data1"})["content"]
+    company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"})["content"] else name
 
     for r in results:
         if "Engineer" in r.find("h2").text or "Data" in r.find("h2").text or "IT " in r.find("h2").text or "Support" in r.find("h2").text or "Developer" in r.find("h2").text or "QA " in r.find("h2").text or "Engineer" in r.find("li", class_="department").text:

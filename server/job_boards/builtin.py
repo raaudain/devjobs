@@ -10,6 +10,7 @@ IS_TRUE = True
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str):
     global IS_TRUE
+    
     data = create_temp_json.data
     scraped = create_temp_json.scraped
     
