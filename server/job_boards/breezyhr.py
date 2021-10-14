@@ -32,7 +32,7 @@ def get_results(item: str, name: str):
         h2 = r.find("h2").content
 
         try:
-            if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text:
+            if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").content:
                 date = datetime.strftime(datetime.now(), "%Y-%m-%d")
                 apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
                 company_name = company.strip()
