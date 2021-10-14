@@ -61,12 +61,16 @@ def get_url(companies: list):
 
         if response.ok and res.ok:
             data = json.loads(response.text)
-            name = json.loads(res.text)["data"]["organization"]["name"]
+            try:
+                name = json.loads(res.text)["data"]["organization"]["name"]
+            except TypeError:
+                print(f"=> ashbyhq: Failed to scrape name for {company}. TypeError: 'NoneType' object is not subscriptable.")
+                pass
             get_results(data, company, name)
             if page % 10 == 0: time.sleep(5)   
             page+=1
         else:
-            print(f"=> ashby: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
+            print(f"=> ashbyhq: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
 
 def main():
     f = open(f"./data/params/ashbyhq.txt", "r")
