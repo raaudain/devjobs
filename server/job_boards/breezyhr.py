@@ -29,7 +29,9 @@ def get_results(item: str, name: str):
     company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"}) else name
 
     for r in results:
-        if "Engineer" in r.find("h2").text or "Data" in r.find("h2").text or "IT " in r.find("h2").text or "Support" in r.find("h2").text or "Developer" in r.find("h2").text or "QA " in r.find("h2").text or "Engineer" in r.find("li", class_="department").text:
+        h2 = r.find("h2").text
+
+        if h2 and ("Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text):
             date = datetime.strftime(datetime.now(), "%Y-%m-%d")
             apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
             company_name = company.strip()
@@ -37,6 +39,8 @@ def get_results(item: str, name: str):
             locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_REMOTE%", "Remote") if "%LABEL_POSITION_TYPE_REMOTE%" in r.find("li", class_="location").text else r.find("li", class_="location").text.strip()
 
             get_jobs(date, apply_url, company_name, position, locations_string, name)
+        else:
+            pass
 
 def get_url(companies: list):
     page = 1
