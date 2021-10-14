@@ -57,17 +57,16 @@ def get_url(companies: list):
             "query":"query ApiOrganizationFromHostedJobsPageName($organizationHostedJobsPageName: String!) {\n  organization: organizationFromHostedJobsPageName(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    ...OrganizationParts\n    __typename\n  }\n}\n\nfragment OrganizationParts on Organization {\n  name\n  publicWebsite\n  customJobsPageUrl\n  theme {\n    colors\n    logoWordmarkImageUrl\n    logoSquareImageUrl\n    applicationSubmittedSuccessMessage\n    jobBoardTopDescriptionHtml\n    jobBoardBottomDescriptionHtml\n    __typename\n  }\n  appConfirmationTrackingPixelHtml\n  __typename\n}\n"
         }
         response = requests.post(url, json=payload, headers=headers)
+        res = requests.post(url, json=payload_2, headers=headers)
 
-        if response.ok:
+        if response.ok and res.ok:
             data = json.loads(response.text)
-            res = requests.post(url, json=payload_2, headers=headers).text
-            name = json.loads(res)["data"]["organization"]["name"]
-            if name:
-                get_results(data, company, name)
-                if page % 10 == 0: time.sleep(5)   
-                page+=1
+            name = json.loads(res.txt)["data"]["organization"]["name"]
+            get_results(data, company, name)
+            if page % 10 == 0: time.sleep(5)   
+            page+=1
         else:
-            print(f"=> ashby: Failed to scrape {company}. Status code: {response.status_code}.")
+            print(f"=> ashby: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
 
 def main():
     f = open(f"./data/params/ashbyhq.txt", "r")
