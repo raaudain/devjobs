@@ -1,23 +1,10 @@
+import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys, time, random
 from .modules import headers as h
 from .modules import create_temp_json
 # import modules.headers as h
 # import modules.create_temp_json as create_temp_json
-
-# f = open(f"./data/params/us_and_ca.txt", "r")
-# locations = [location.strip() for location in f]
-# f.close()
-
-# m = open(f"./data/params/miami.txt", "r")
-# miamis = [miami.strip() for miami in m]
-# m.close()
-
-# scraped = create_temp_json.scraped
-# data = create_temp_json.data
-
-
 
 
 def get_jobs(item: list, location: str):
@@ -32,11 +19,11 @@ def get_jobs(item: list, location: str):
         location = location.strip()
 
         age = datetime.timestamp(datetime.now() - timedelta(days=14))
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
-        if url not in scraped and age <= postDate:
+        if url not in scraped and age <= post_date:
             data.append({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "company": None,
                 "url": url,
@@ -50,7 +37,6 @@ def get_jobs(item: list, location: str):
         else:
             print(f"=> craigslist: Already scraped or too old: {title} for {location}")
         
-
 
 def get_results(item: str, city: str):
     cities = {
@@ -425,25 +411,19 @@ def get_results(item: str, city: str):
     for i in place:
         if len(place) > 1:
             # This is to avoid messing with state abbriviation capitalization
-            if len(i) > 2:
-                location += i.capitalize()+" "
-            else:
-                location += i+" "
+            if len(i) > 2: location += i.capitalize()+" "
+            else: location += i+" "
         else:
-            if city in cities:
-                location = f"{i.capitalize()}, {cities[city]}"
+            if city in cities: location = f"{i.capitalize()}, {cities[city]}"
 
     if city in cities:
-        if cities[city] not in location:
-            location = f"{location.strip()}, {cities[city]}"
-        else:
-            location = location
+        if cities[city] not in location: location = f"{location.strip()}, {cities[city]}"
+        else: location = location
     else:
         pass
 
     results = soup.find_all("div", {"class": "result-info"})
 
-    # print(location, place)
     get_jobs(results, location)
 
 def get_url(items: list):
@@ -456,82 +436,60 @@ def get_url(items: list):
 
         if response.ok:
             get_results(response.text, location)
+            if count % 10 == 0: time.sleep(5)
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
 
-        if count % 10 == 0:
-            time.sleep(5)
         
         count += 1
-        # except:
-        #     print(f"=> craigslist: Failed to scrape {location}. Continue to next")
-        #     continue
 
 def get_url_miami(items: list):
     count = 1
 
     for location in items:
-        # try:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
         response = requests.get(url, headers=headers)
 
         if response.ok:
             get_results(response.text, location)
+            if count % 10 == 0: time.sleep(5)
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
 
-        if count % 10 == 0:
-            time.sleep(5)
-        
         count += 1
-        # except:
-        #     print(f"=> craigslist: Failed to scrape {location}. Going to next.")
-        #     continue
 
 def get_url_it(items: list):
     count = 1
 
     for location in items:
-        # try:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://{location}.craigslist.org/search/tch?lang=en"
         response = requests.get(url, headers=headers)
 
         if response.ok:
             get_results(response.text, location)
+            if count % 10 == 0: time.sleep(5)
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
-
-        if count % 10 == 0:
-            time.sleep(5)
         
         count += 1
-        # except:
-        #     print(f"=> craigslist: Failed to scrape {location}. Continue to next")
-        #     continue
 
 def get_url_miami_it(items: list):
     count = 1
 
     for location in items:
-        # try:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"{location}d/technical-support/search/mdc/tch?lang=en"
         response = requests.get(url, headers=headers)
 
         if response.ok:
             get_results(response.text, location)
+            if count % 10 == 0: time.sleep(5)
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
 
-        if count % 10 == 0:
-            time.sleep(5)
-        
         count += 1
-        # except:
-        #     print(f"=> craigslist: Failed to scrape {location}. Going to next.")
-        #     continue
 
 def main():
     f = open(f"./data/params/us_and_ca.txt", "r")

@@ -7,9 +7,9 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-data = create_temp_json.data
+def get_jobs(item: str):
+    data = create_temp_json.data
 
-def getJobs(item):
     date = datetime.strftime(datetime.now(), "%Y-%m-%d")
     title = item.text
     company = "ClickUp"
@@ -17,10 +17,10 @@ def getJobs(item):
     location = "See description"
 
     # print(date, title, company, url, location)
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
     data.append({
-        "timestamp": postDate,
+        "timestamp": post_date,
         "title": title,
         "company": company,
         "url": url,
@@ -31,31 +31,24 @@ def getJobs(item):
     })
     print(f"=> clickup: Added {title}")
 
-def getResults(item):
+def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("a", {"class": "current-vacancies__jobs_description"})
 
     for i in results:
         if "Engineer" in i.text or "Tech" in i.text or "Support" in i.text or "IT " in i.text:
-            getJobs(i)
+            get_jobs(i)
 
-    # getJobs(results)
-    # print(results)
-
-def getURL():
+def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
-
     url = f"https://clickup.com/careers"
     response = requests.get(url, headers=headers)
 
-    if response.ok:
-        getResults(response.text)
-    else:
-         print("=> clickup: Error - Response status", response.status_code)
-    # print(response)
+    if response.ok: get_results(response.text)
+    else: print("=> clickup: Error - Response status", response.status_code)
 
 def main():
-    getURL()
+    get_url()
 
 # main()
 # sys.exit(0)

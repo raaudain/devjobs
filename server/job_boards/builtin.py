@@ -1,33 +1,26 @@
-from datetime import datetime, timedelta
 import requests, json, sys, time, random
+from datetime import datetime, timedelta
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
 
-isTrue = True
+IS_TRUE = True
 
-def getJobs(date, url, company, position, location):
-    global isTrue
-
-    date = str(date)
-    title = position
-    company = company
-    url = url
-    location = location
-
+def get_jobs(date: str, url: str, company: str, position: str, location: str):
+    global IS_TRUE
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
     
     age = datetime.timestamp(datetime.now() - timedelta(days=14))
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     if url not in scraped or company not in scraped:
-        if age <= postDate:
+        if age <= post_date:
             data.append({
-                "timestamp": postDate,
-                "title": title,
+                "timestamp": post_date,
+                "title": position,
                 "company": company,
                 "url": url,
                 "location": location,
@@ -35,14 +28,13 @@ def getJobs(date, url, company, position, location):
                 "source_url": "https://builtin.com/",
                 "category": "job"
             })
-            print(f"=> builtin: Added {title} for {company}")
+            print(f"=> builtin: Added {position} for {company}")
             scraped.add(url)
         else:
             print(f"=> builtin: Reached limit. Stopping scrape")
-            isTrue = False
+            IS_TRUE = False
 
-
-def getResults(item):
+def get_results(item: str):
     jobs = item["jobs"]
     companies = item["companies"]
 
@@ -85,61 +77,39 @@ def getResults(item):
         position = d["title"]
         base_url = None
 
-        if d["region_id"] == 1:
-            base_url = "https://www.builtinchicago.org"
-        elif d["region_id"] == 2:
-            base_url = "https://www.builtincolorado.com"
-        elif d["region_id"] == 3:
-            base_url = "https://www.builtinla.com"
-        elif d["region_id"] == 4:
-            base_url = "https://www.builtinaustin.com"
-        elif d["region_id"] == 5:
-            base_url = "https://www.builtinnyc.com"
-        elif d["region_id"] == 6:
-            base_url = "https://www.builtinboston.com"
-        elif d["region_id"] == 7:
-            base_url = "https://www.builtinseattle.com"
-        else:
-            base_url = "https://www.builtinsf.com"
+        if d["region_id"] == 1: base_url = "https://www.builtinchicago.org"
+        elif d["region_id"] == 2: base_url = "https://www.builtincolorado.com"
+        elif d["region_id"] == 3: base_url = "https://www.builtinla.com"
+        elif d["region_id"] == 4: base_url = "https://www.builtinaustin.com"
+        elif d["region_id"] == 5: base_url = "https://www.builtinnyc.com"
+        elif d["region_id"] == 6: base_url = "https://www.builtinboston.com"
+        elif d["region_id"] == 7: base_url = "https://www.builtinseattle.com"
+        else: base_url = "https://www.builtinsf.com"
         
         apply_url = f"{base_url}{d['alias']}"
         company_name = d["company"]
         locations_string = d["location"]
 
-        getJobs(date, apply_url, company_name, position, locations_string)
+        get_jobs(date, apply_url, company_name, position, locations_string)
         
-
-
-def getURL():
+def get_url():
     page = 1
 
-    while isTrue:
-        try:
-            headers = {"User-Agent":random.choice(h.headers), "Origin":"https://builtin.com","Referer":"https://builtin.com/"}
+    while IS_TRUE:
+        headers = {"User-Agent":random.choice(h.headers), "Origin":"https://builtin.com","Referer":"https://builtin.com/"}
+        url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+        response = requests.get(url, headers=headers)
 
-            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
-
-            response = requests.get(url, headers=headers).text
-
-            data = json.loads(response)
-
-            getResults(data)
-
-            if page % 10 == 0:
-                time.sleep(5)
-
+        if response.ok:
+            data = json.loads(response.text)
+            get_results(data)
+            if page % 10 == 0: time.sleep(5)
             page+=1
-            
-        except:
-            print(f"Failed on page {page}")
-            break
-    
-    # print(data)
-     
-
+        else:
+            print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
 
 def main():
-    getURL()
+    get_url()
 
 # main()
 # sys.exit(0)

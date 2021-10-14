@@ -1,29 +1,20 @@
+import requests, json, sys, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
-import requests, json, sys, time, random
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-data = create_temp_json.data
-
-def getJobs(date, url, company, position, location, qualifications):
-    date = date
-    title = position
-    qualifications = qualifications
-    company = company
-    url = url
-    location = location
-
-    # print(date, title, company, url, location)
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+def get_jobs(date: str, url: str, company: str, position: str, location: str):
+    data = create_temp_json.data
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
     
     data.append({
-        "timestamp": postDate,
-        "title": title,
-        "qualifications": qualifications,
+        "timestamp": post_date,
+        "title": position,
+        # "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -31,56 +22,47 @@ def getJobs(date, url, company, position, location, qualifications):
         "source_url": "https://www.bloomberg.com/company/what-we-do/",
         "category": "job"
     })
-    print(f"=> bloomberg: Added {title} for {company}")
+    print(f"=> bloomberg: Added {position} for {company}")
 
-
-def getResults(item):
+def get_results(item: str):
     date = item["datePosted"]
     apply_url = item["url"]
     company_name = "Bloomberg"
     position = item["jobTitle"]
     locations_string = item["jobLocation"]
-    soup = BeautifulSoup(item["jobDescription"], "lxml")
-    results = soup.find_all("ul")[-1].find_all_next("li")
-    desc = []
+    # soup = BeautifulSoup(item["jobDescription"], "lxml")
+    # results = soup.find_all("ul")[-1].find_all_next("li")
+    # desc = []
 
-    for i in results:
-        desc.append(i.text.strip())
+    # for i in results: desc.append(i.text.strip())
 
-    getJobs(date, apply_url, company_name, position, locations_string, desc)
+    get_jobs(date, apply_url, company_name, position, locations_string)
 
-def getURL():
+def get_url():
     headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
-
-    url1 = f"https://careers.bloomberg.com/job_search/search_query?autocompleteTags=%5B%5D&selectedFilterFields=%5B%7B%22name%22%3A%22Software+Developer%2FEngineering%22%2C%22count%22%3A%22239%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c41%22%7D%2C%7B%22name%22%3A%22Technical+Support%22%2C%22count%22%3A%2216%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c48%22%7D%5D&jobStartIndex=0&jobBatchSize=1000"
-    response = requests.get(url1, headers=headers).text
+    url_1 = f"https://careers.bloomberg.com/job_search/search_query?autocompleteTags=%5B%5D&selectedFilterFields=%5B%7B%22name%22%3A%22Software+Developer%2FEngineering%22%2C%22count%22%3A%22239%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c41%22%7D%2C%7B%22name%22%3A%22Technical+Support%22%2C%22count%22%3A%2216%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c48%22%7D%5D&jobStartIndex=0&jobBatchSize=1000"
+    response = requests.get(url_1, headers=headers).text
     data = json.loads(response)
-    jobID = []
+    job_id = []
 
     for d in data["jobData"]:
-        if "engineer" in d["Specialty"]["Value"].lower() or "tech" in d["Specialty"]["Value"].lower():
-            jobID.append(d["JobReqNbr"])
+        if "engineer" in d["Specialty"]["Value"].lower() or "tech" in d["Specialty"]["Value"].lower(): job_id.append(d["JobReqNbr"])
     
     count = 1
 
-    for j in jobID:
-        try:
-            url2 = f"https://careers.bloomberg.com/job_search/detail_query?jobID={j}"
-            res = requests.get(url2, headers=headers).text
-            post = json.loads(res)
+    for j in job_id:
+        url_2 = f"https://careers.bloomberg.com/job_search/detail_query?job_id={j}"
+        res = requests.get(url_2, headers=headers)
 
-            getResults(post)
-
-            if count % 10 == 0:
-                time.sleep(5)
-        except:
-            continue
-                
-        # count+=1
-
+        if res.ok:
+            post = json.loads(res.text)
+            get_results(post)
+            if count % 10 == 0: time.sleep(5)
+        else:
+            print(f"bloomberg: Failed for ID {j}. Status code: {res.status_code}.")
 
 def main():
-    getURL()
+    get_url()
 
 # main()
 # sys.exit(0)
