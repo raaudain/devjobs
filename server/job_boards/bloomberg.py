@@ -1,10 +1,10 @@
 import requests, json, sys, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .modules import create_temp_json
-from .modules import headers as h
-# import modules.create_temp_json as create_temp_json
-# import modules.headers as h
+# from .modules import create_temp_json
+# from .modules import headers as h
+import modules.create_temp_json as create_temp_json
+import modules.headers as h
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str):
@@ -24,21 +24,19 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     })
     print(f"=> bloomberg: Added {position} for {company}")
 
-def get_results(item: str):
-    if item["datePosted"]:
-        date = item["datePosted"]
-        apply_url = item["url"]
-        company_name = "Bloomberg"
-        position = item["jobTitle"]
-        locations_string = item["jobLocation"]
-        # soup = BeautifulSoup(item["jobDescription"], "lxml")
-        # results = soup.find_all("ul")[-1].find_all_next("li")
-        # desc = []
+def get_results(item):
+    print(item)
+    date = item["datePosted"]
+    apply_url = item["url"]
+    company_name = "Bloomberg"
+    position = item["jobTitle"]
+    locations_string = item["jobLocation"]
+    # soup = BeautifulSoup(item["jobDescription"], "lxml")
+    # results = soup.find_all("ul")[-1].find_all_next("li")
+    # desc = []
 
-        # for i in results: desc.append(i.text.strip())
-        get_jobs(date, apply_url, company_name, position, locations_string)
-    else:
-        pass
+    # for i in results: desc.append(i.text.strip())
+    get_jobs(date, apply_url, company_name, position, locations_string)
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
@@ -53,19 +51,23 @@ def get_url():
     count = 1
 
     for j in job_id:
+        print(j)
         url_2 = f"https://careers.bloomberg.com/job_search/detail_query?job_id={j}"
+        print(url_2)
         res = requests.get(url_2, headers=headers)
 
         if res.ok:
             post = json.loads(res.text)
             get_results(post)
+            
             if count % 10 == 0: time.sleep(5)
+            count+=1
         else:
             print(f"bloomberg: Failed for ID {j}. Status code: {res.status_code}.")
 
 def main():
     get_url()
 
-# main()
-# sys.exit(0)
+main()
+sys.exit(0)
 

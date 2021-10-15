@@ -42,7 +42,7 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
-    bloomberg.main()
+    # bloomberg.main()
     ashbyhq.main()
     breezyhr.main()
     craigslist.main()
