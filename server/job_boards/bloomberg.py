@@ -37,7 +37,8 @@ def get_results(item: str):
 
         # for i in results: desc.append(i.text.strip())
         get_jobs(date, apply_url, company_name, position, locations_string)
-    
+    else:
+        pass
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
