@@ -10,7 +10,7 @@ IS_TRUE = True
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str):
     global IS_TRUE
-    
+
     data = create_temp_json.data
     scraped = create_temp_json.scraped
     
@@ -108,6 +108,7 @@ def get_url():
             page+=1
         else:
             print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
+            break
 
 def main():
     get_url()

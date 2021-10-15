@@ -16,7 +16,6 @@ def get_jobs(item: str):
     url = "https://clickup.com"+item["href"]
     location = "See description"
 
-    # print(date, title, company, url, location)
     post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
     data.append({

@@ -1,35 +1,22 @@
+import requests, json, sys, time, random
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
-import requests, json, sys, time, random
-from .modules import create_temp_json
-from .modules import headers as h
-# import modules.create_temp_json as create_temp_json
-# import modules.headers as h
+# from .modules import create_temp_json
+# from .modules import headers as h
+import modules.create_temp_json as create_temp_json
+import modules.headers as h
 
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
+def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
-
-f = open(f"./data/params/greenhouse_io.txt", "r")
-companies = [company.strip() for company in f]
-f.close()
-
-def getJobs(date, url, company, position, location, name, qualifications):
-    date = str(date)
-    title = position
-    qualifications = qualifications
-    company = company
-    url = url
-    location = location
-
-    # age = datetime.timestamp(datetime.now() - timedelta(days=7))
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S%z"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S%z"))
     
     data.append({
-        "timestamp": postDate,
-        "title": title,
-        "qualifications": qualifications,
+        "timestamp": post_date,
+        "title": position,
+        # "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -38,11 +25,9 @@ def getJobs(date, url, company, position, location, name, qualifications):
         "category": "job"
     })
     scraped.add(company)
-    print(f"=> greenhouse.io: Added {title} for {company}")
+    print(f"=> greenhouse.io: Added {position} for {company}")
             
-
-
-def getResults(item, name, company):
+def get_results(item: str, name: str, company: str):
     # data = item["departments"]
     jobs = item["jobs"]
 
@@ -59,7 +44,7 @@ def getResults(item, name, company):
                 # soup = BeautifulSoup(content, "lxml")
                 # results = soup.find_all("ul")[1].find_all_next("li")
                 # desc = [r.text.replace("&nbsp;", " ").replace("&amp;", "&").strip() for r in results] if results else None
-                desc = None
+                # desc = None
 
                 date = datetime.strptime(j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
                 position = j["title"].strip()
@@ -67,41 +52,42 @@ def getResults(item, name, company):
                 apply_url = j["absolute_url"].strip()
                 locations_string = j["location"]["name"].strip()
 
-                getJobs(date, apply_url, company_name, position, locations_string, name, desc)
+                get_jobs(date, apply_url, company_name, position, locations_string, name)
         except:
             print(f"Failed on {j['title']} for {company}")
 
-def getURL():
-    # headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
-
+def get_url(companies: list):
     count = 1
 
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
-        try:
-            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+        # try:
+        url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
+        url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
 
-            response = requests.get(url, headers=headers).text
-            res = requests.get(url2, headers=headers).text
+        response = requests.get(url, headers=headers)
+        res = requests.get(url2, headers=headers)
 
-            data = json.loads(response)
-            company = json.loads(res)["name"]
-
-            getResults(data, name, company)
-            
-            if count % 20 == 0:
-                time.sleep(5)
-                
+        if response.ok and res.ok:
+            data = json.loads(response.text)
+            company = json.loads(res.text)["name"]
+            get_results(data, name, company)
+        
+            if count % 20 == 0: time.sleep(5)
             count+=1
-        except:
-            print(f"Failed to scraped: {name}")
-            continue
-     
+        else:
+            print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
 
+        # except:
+        #     print(f"Failed to scraped: {name}")
+        #     continue
 
 def main():
-    getURL()
+    f = open(f"./data/params/greenhouse_io.txt", "r")
+    companies = [company.strip() for company in f]
+    f.close()
 
-# main()
-# sys.exit(0)
+    get_url(companies)
+
+main()
+sys.exit(0)
