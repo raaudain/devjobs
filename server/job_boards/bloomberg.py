@@ -25,16 +25,17 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     print(f"=> bloomberg: Added {position} for {company}")
 
 def get_results(item: str):
-    date = item["datePosted"]
-    apply_url = item["url"]
-    company_name = "Bloomberg"
-    position = item["jobTitle"]
-    locations_string = item["jobLocation"]
-    # soup = BeautifulSoup(item["jobDescription"], "lxml")
-    # results = soup.find_all("ul")[-1].find_all_next("li")
-    # desc = []
+    if item["datePosted"]:
+        date = item["datePosted"]
+        apply_url = item["url"]
+        company_name = "Bloomberg"
+        position = item["jobTitle"]
+        locations_string = item["jobLocation"]
+        # soup = BeautifulSoup(item["jobDescription"], "lxml")
+        # results = soup.find_all("ul")[-1].find_all_next("li")
+        # desc = []
 
-    # for i in results: desc.append(i.text.strip())
+        # for i in results: desc.append(i.text.strip())
 
     get_jobs(date, apply_url, company_name, position, locations_string)
 

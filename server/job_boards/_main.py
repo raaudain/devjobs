@@ -42,6 +42,7 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
+    bloomberg.main()
     ashbyhq.main()
     breezyhr.main()
     craigslist.main()
@@ -60,7 +61,6 @@ def main():
     smartrecruiters.main()
     jazzhr.main()
     nintendo.main()
-    bloomberg.main()
     usajobs.main()
     key_values.main()
     zillow.main()
