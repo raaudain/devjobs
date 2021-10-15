@@ -61,26 +61,26 @@ def get_url(companies: list):
 
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
-        # try:
-        url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-        url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+        try:
+            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
+            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
 
-        response = requests.get(url, headers=headers)
-        res = requests.get(url2, headers=headers)
+            response = requests.get(url, headers=headers)
+            res = requests.get(url2, headers=headers)
 
-        if response.ok and res.ok:
-            data = json.loads(response.text)
-            company = json.loads(res.text)["name"]
-            get_results(data, name, company)
-        
-            if count % 20 == 0: time.sleep(5)
-            count+=1
-        else:
-            print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
+            if response.ok and res.ok:
+                data = json.loads(response.text)
+                company = json.loads(res.text)["name"]
+                get_results(data, name, company)
+            
+                if count % 20 == 0: time.sleep(5)
+                count+=1
+            else:
+                print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
 
-        # except:
-        #     print(f"Failed to scraped: {name}")
-        #     continue
+        except:
+            print(f"Failed to scraped: {name}")
+            continue
 
 def main():
     f = open(f"./data/params/greenhouse_io.txt", "r")
