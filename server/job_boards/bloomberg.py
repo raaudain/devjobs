@@ -40,18 +40,19 @@ def get_results(item):
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
+    # headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36", "X-Requested-With": "XMLHttpRequest"}
     url_1 = f"https://careers.bloomberg.com/job_search/search_query?autocompleteTags=%5B%5D&selectedFilterFields=%5B%7B%22name%22%3A%22Software+Developer%2FEngineering%22%2C%22count%22%3A%22239%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c41%22%7D%2C%7B%22name%22%3A%22Technical+Support%22%2C%22count%22%3A%2216%22%2C%22isSelected%22%3Atrue%2C%22parentFacet%22%3A%22Job+function%22%2C%22id%22%3A%22c48%22%7D%5D&jobStartIndex=0&jobBatchSize=1000"
     response = requests.get(url_1, headers=headers).text
     data = json.loads(response)
     job_id = []
-
+    print(headers)
     for d in data["jobData"]:
         if "engineer" in d["Specialty"]["Value"].lower() or "tech" in d["Specialty"]["Value"].lower(): job_id.append(d["JobReqNbr"])
     
     count = 1
 
     for j in job_id:
-        print(j)
+        print(headers)
         url_2 = f"https://careers.bloomberg.com/job_search/detail_query?job_id={j}"
         print(url_2)
         res = requests.get(url_2, headers=headers)
