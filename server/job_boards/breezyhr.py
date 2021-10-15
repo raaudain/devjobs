@@ -41,7 +41,7 @@ def get_results(item: str, name: str):
 
                 get_jobs(date, apply_url, company_name, position, locations_string, name)
         except AttributeError:
-            print(f"AttributeError: 'NoneType' object has no attribute 'text' for {company}")
+            print(f"=> breezyhr: AttributeError: 'NoneType' object has no attribute 'text' for {company}")
             pass
 
 def get_url(companies: list):

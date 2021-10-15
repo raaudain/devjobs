@@ -61,7 +61,7 @@ def get_url(companies: list):
 
         if response.ok and res.ok:
             data = json.loads(response.text)
-            name = json.loads(res.text)["data"]["organization"]["name"] if json.loads(res.text)["data"]["organization"]["name"] else company
+            name = json.loads(res.text)["data"]["organization"]["name"] if json.loads(res.text)["data"]["organization"] else company
             get_results(data, company, name)
             if page % 10 == 0: time.sleep(5)   
             page+=1

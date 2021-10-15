@@ -42,8 +42,8 @@ import sys, os
 def main():
     print("=> Scanning job boards")
     start = datetime.now()
-    breezyhr.main()
     ashbyhq.main()
+    breezyhr.main()
     craigslist.main()
     lever_co.main()
     nbc.main()
