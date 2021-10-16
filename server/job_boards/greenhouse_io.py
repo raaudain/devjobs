@@ -35,9 +35,9 @@ def get_results(item: str, name: str, company: str):
     #     if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and (["Music"] not in d["name"] or ["Art"] not in d["name"] or ["Talent"] not in d["name"] or "Business" not in d["name"]):
     #         if d["jobs"]:
     #             jobs.extend(d["jobs"])
-
-    for j in jobs:
-        try:
+    if jobs:
+        for j in jobs:
+            # try:
             if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT" in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] and ("Mechnicial" not in j["title"] or "Electrical" not in j["title"]):
                 # jobId = j["id"]
                 # content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
@@ -53,34 +53,34 @@ def get_results(item: str, name: str, company: str):
                 locations_string = j["location"]["name"].strip()
 
                 get_jobs(date, apply_url, company_name, position, locations_string, name)
-        except:
-            print(f"Failed on {j['title']} for {company}")
+        # except:
+            # print(f"Failed on {j['title']} for {company}")
 
 def get_url(companies: list):
     count = 1
 
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
-        try:
-            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+        # try:
+        url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
+        url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
 
-            response = requests.get(url, headers=headers)
-            res = requests.get(url2, headers=headers)
+        response = requests.get(url, headers=headers)
+        res = requests.get(url2, headers=headers)
 
-            if response.ok and res.ok:
-                data = json.loads(response.text)
-                company = json.loads(res.text)["name"]
-                get_results(data, name, company)
-            
-                if count % 20 == 0: time.sleep(5)
-                count+=1
-            else:
-                print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
+        if response.ok and res.ok:
+            data = json.loads(response.text)
+            company = json.loads(res.text)["name"]
+            get_results(data, name, company)
+        
+            if count % 20 == 0: time.sleep(5)
+            count+=1
+        else:
+            print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
 
-        except:
-            print(f"Failed to scraped: {name}")
-            continue
+        # except KeyError:
+        #     print(f"Failed to scraped: {name}")
+        #     continue
 
 def main():
     f = open(f"./data/params/greenhouse_io.txt", "r")
