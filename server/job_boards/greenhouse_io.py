@@ -70,7 +70,8 @@ def get_url(companies: list):
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
-            get_results(data, name, company)
+
+            if data and company: get_results(data, name, company)
         
             if count % 20 == 0: time.sleep(5)
             count+=1
