@@ -30,6 +30,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
 
 def get_results(item: str, name: str, company: str):
     # data = item["departments"]
+    print(name)
     jobs = item["jobs"] if item else None
 
     # for d in data:
