@@ -1,10 +1,10 @@
-import requests, json, sys, time, random
+import requests, sys, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
-# from .modules import create_temp_json
-# from .modules import headers as h
-import modules.create_temp_json as create_temp_json
-import modules.headers as h
+from .modules import create_temp_json
+from .modules import headers as h
+# import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 
@@ -48,7 +48,6 @@ def get_url(companies: list):
     page = 1
 
     for company in companies:
-        # try:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://{company}.applytojob.com"
         response = requests.get(url, headers=headers)
@@ -69,5 +68,5 @@ def main():
     get_url(companies)
 
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
