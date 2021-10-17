@@ -23,6 +23,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
     })
     print(f"=> breezyhr: Added {position} for {company}")
 
+
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("li", class_="position transition")
@@ -44,6 +45,7 @@ def get_results(item: str, name: str):
             print(f"=> breezyhr: AttributeError: 'NoneType' object has no attribute 'text' for {company}")
             pass
 
+
 def get_url(companies: list):
     page = 1
 
@@ -58,6 +60,7 @@ def get_url(companies: list):
             page+=1
         else: 
             print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+
 
 def main():
     f = open(f"./data/params/breezyhr.txt", "r")

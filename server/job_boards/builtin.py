@@ -35,6 +35,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
             print(f"=> builtin: Reached limit. Stopping scrape")
             IS_TRUE = False
 
+
 def get_results(item: str):
     jobs = item["jobs"]
     companies = item["companies"]
@@ -92,7 +93,8 @@ def get_results(item: str):
         locations_string = d["location"]
 
         get_jobs(date, apply_url, company_name, position, locations_string)
-        
+
+
 def get_url():
     page = 1
 
@@ -109,6 +111,7 @@ def get_url():
         else:
             print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
             break
+
 
 def main():
     get_url()

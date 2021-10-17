@@ -1,31 +1,27 @@
+import requests, sys, time, random
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import json, requests, sys, time, random
-# import modules.create_temp_json as create_temp_json
-# import modules.update_key_values as updateKeyValues
-# import modules.headers as h
+from datetime import datetime
 from .modules import create_temp_json
 from .modules import update_key_values
 from .modules import headers as h
+# import modules.create_temp_json as create_temp_json
+# import modules.update_key_values as update_key_values
+# import modules.headers as h
 
 
-f = open(f"./data/params/key_values.txt", "r")
-params = [param.rstrip() for param in f]
-f.close()
+def get_jobs(item: list):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
+    exclude = set()
+    exclude.add("See All Open Jobs")
+    exclude.add("See All Open Roles")
+    exclude.add("Interested in joining?")
+    exclude.add("All Jobs at CareGuide")
+    exclude.add("See All Job Openings")
+    exclude.add("See All Open Positions")
+    exclude.add("")
 
-exclude = set()
-exclude.add("See All Open Jobs")
-exclude.add("See All Open Roles")
-exclude.add("Interested in joining?")
-exclude.add("All Jobs at CareGuide")
-exclude.add("See All Job Openings")
-exclude.add("See All Open Positions")
-exclude.add("")
-
-def getJobs(item):
     for job in item:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
         title = job.find("p", {"class": "open-position--job-title"}).text
@@ -33,11 +29,11 @@ def getJobs(item):
         url = job.find("a", href=True)["href"]
         location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
         if title not in exclude and url not in scraped:
             data.append({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "company": company,
                 "url": url,
@@ -52,25 +48,32 @@ def getJobs(item):
             print(f"=> key_values: Already scraped {title} for {company}")
 
 
-def getResults(item):
+def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "open-position-item-contents"})
-    getJobs(results)
+    get_jobs(results)
 
-def getURL():
 
+def get_url(params: list):
     for param in params:
-        try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://www.keyvalues.com{param}"
-            response = requests.get(url, headers=headers).text
-            getResults(response)
-            time.sleep(5)
-        except:
-            print(f"=> key_values: Failed to scrape {param}")
-            continue
+        headers = {"User-Agent": random.choice(h.headers)}
+        url = f"https://www.keyvalues.com{param}"
+        response = requests.get(url, headers=headers)
+
+        if response.ok: get_results(response.text)
+        else: print(f"=> key_values: Error. Status code:", response.status_code)
+
+        time.sleep(2)
 
 
 def main():
+    f = open(f"./data/params/key_values.txt", "r")
+    params = [param.strip() for param in f]
+    f.close()
+
     update_key_values.main()
-    getURL()
+    get_url(params)
+
+
+# main()
+# sys.exit(0)

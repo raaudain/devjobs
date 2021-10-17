@@ -22,6 +22,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
     })
     print(f"=> ashbyhq: Added {position} for {company}")
 
+
 def get_results(item: str, param: str, name: str):
     jobs = item["data"]["jobPostingBriefs"]
 
@@ -35,7 +36,8 @@ def get_results(item: str, param: str, name: str):
             locations_string = data["locationName"].strip()
             
             get_jobs(date, apply_url, company_name, position, locations_string, param)
-        
+
+
 def get_url(companies: list):
     page = 1
 
@@ -67,6 +69,7 @@ def get_url(companies: list):
             page+=1
         else:
             print(f"=> ashbyhq: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
+
 
 def main():
     f = open(f"./data/params/ashbyhq.txt", "r")

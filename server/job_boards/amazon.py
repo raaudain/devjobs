@@ -63,6 +63,7 @@ def get_url():
             print(f"=> amazon: Failed on page {page}. Status code: {response.status_code}.")
             break
 
+
 def main():
     get_url()
 

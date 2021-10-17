@@ -1,89 +1,78 @@
-import random
+import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys, time
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-data = create_temp_json.data
-
-f = open(f"./data/params/jobvite.txt", "r")
-companies = [company.strip() for company in f]
-f.close()
-
-def getJobs(date, apply_url, company_name, position, locations_string, name):
-    date = str(date)
-    title = position
-    company = company_name
-    url = apply_url
-    location = locations_string
-
-    # print(date, title, company, url, location, source_url)
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+def get_jobs(date: str, apply_url: str, company_name: str, position: str, locations_string: str, name: str):
+    data = create_temp_json.data
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
 
     data.append({
-        "timestamp": postDate,
-        "title": title,
-        "company": company,
-        "url": url,
-        "location": location,
-        "source": company,
+        "timestamp": post_date,
+        "title": position,
+        "company": company_name,
+        "url": apply_url,
+        "location": locations_string,
+        "source": company_name,
         "source_url": f"https://jobs.jobvite.com/careers/{name}",
         "category": "job"
     })
-    print(f"=> jobvite: Added {title} for {company}")
+    print(f"=> jobvite: Added {position} for {company_name}")
 
-        
 
-def getResults(item, name):
+def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
-    # results = [str(soup.find_all(class_="jv-job-list")).replace("[", "").replace("]", "")]
     results = soup.find_all(class_="jv-job-list")
-    company = soup.find("title").text.replace("Careers", "").strip()
-    titles = soup.find_all(class_="jv-job-list-name")
-    locations = soup.find_all(class_="jv-job-list-location")
+    company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip()
     
-    for r in results:
-        try:
-            title = r.find(class_="jv-job-list-name").text.strip()
+    if results and company:
+        for r in results:
+            try:
+                title = r.find(class_="jv-job-list-name").text.strip()
 
-            if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
-                date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-                apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
-                company_name = company
-                position = title
-                locations_string = r.find("td", class_="jv-job-list-location").text.strip()
-                
-                getJobs(date, apply_url, company_name, position, locations_string, name)
-        except:
-            print(f"=> jobvite: Failed: {company}")
-            continue
+                if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
+                    date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+                    apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
+                    company_name = company
+                    position = title
+                    locations_string = r.find("td", class_="jv-job-list-location").text.strip()
+                    
+                    get_jobs(date, apply_url, company_name, position, locations_string, name)
+            except AttributeError:
+                print(f"=> jobvite: Failed: {company}")
+                pass
 
-def getURL():
+
+def get_url(companies: list):
     count = 1
 
     for name in companies:
-        try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://jobs.jobvite.com/careers/{name}"
-            response = requests.get(url, headers=headers).text
-            getResults(response, name)
-            
-            if count % 10 == 0:
-                time.sleep(5)
-                
-            count+=1
-            # print(response)
-        except:
-            print(f"=> jobvite: Scrape failed for {name}. Going to next.")
-            continue
+        headers = {"User-Agent": random.choice(h.headers)}
+        url = f"https://jobs.jobvite.com/careers/{name}"
+        response = requests.get(url, headers=headers)
+
+        if response.ok: get_results(response.text, name)
+        else: 
+            res = requests.get(f"https://jobs.jobvite.com/{name}", headers=headers)
+
+            if res.ok: get_results(res.text, name)
+            else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
+
+        if count % 10 == 0: time.sleep(5)
+        count+=1
 
 
 def main():
-    getURL()
+    f = open(f"./data/params/jobvite.txt", "r")
+    companies = [company.strip() for company in f]
+    f.close()
+
+    get_url(companies)
+
 
 # main()
 # sys.exit(0)

@@ -24,6 +24,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     })
     print(f"=> bloomberg: Added {position} for {company}")
 
+
 def get_results(item):
     print(item)
     date = item["datePosted"]
@@ -37,6 +38,7 @@ def get_results(item):
 
     # for i in results: desc.append(i.text.strip())
     get_jobs(date, apply_url, company_name, position, locations_string)
+
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers), "X-Requested-With": "XMLHttpRequest"}
@@ -65,6 +67,7 @@ def get_url():
             count+=1
         else:
             print(f"bloomberg: Failed for ID {j}. Status code: {res.status_code}.")
+
 
 def main():
     get_url()

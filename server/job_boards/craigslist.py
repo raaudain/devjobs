@@ -36,7 +36,8 @@ def get_jobs(item: list, location: str):
             print(f"=> craigslist: Added {title} for {location}")
         else:
             print(f"=> craigslist: Already scraped or too old: {title} for {location}")
-        
+
+    
 def get_results(item: str, city: str):
     cities = {
         "auburn":"AL",
@@ -425,6 +426,7 @@ def get_results(item: str, city: str):
 
     get_jobs(results, location)
 
+
 def get_url(items: list):
     count = 1
 
@@ -442,6 +444,7 @@ def get_url(items: list):
             pass
 
         count += 1
+
 
 def get_url_miami(items: list):
     count = 1
@@ -461,6 +464,7 @@ def get_url_miami(items: list):
 
         count += 1
 
+
 def get_url_it(items: list):
     count = 1
 
@@ -479,6 +483,7 @@ def get_url_it(items: list):
 
         count += 1
 
+
 def get_url_miami_it(items: list):
     count = 1
 
@@ -496,6 +501,7 @@ def get_url_miami_it(items: list):
             pass
 
         count += 1
+
 
 def main():
     f = open(f"./data/params/us_and_ca.txt", "r")
