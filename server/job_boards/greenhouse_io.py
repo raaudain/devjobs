@@ -30,8 +30,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
 
 def get_results(item: str, name: str, company: str):
     # data = item["departments"]
-    print(name)
-    jobs = item["jobs"] if item else None
+    jobs = item["jobs"]
 
     # for d in data:
     #     if "Engineer" in d["name"] or "Tech" in d["name"] or "Data" in d["name"] or "Software" in d["name"] or "IT" in d["name"] or "Information" in d["name"] or "Development" in d["name"] or "Programming" in d["name"] or "Quality Assurance" in d["name"] or "QA" in d["name"] and (["Music"] not in d["name"] or ["Art"] not in d["name"] or ["Talent"] not in d["name"] or "Business" not in d["name"]):

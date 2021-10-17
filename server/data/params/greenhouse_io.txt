@@ -594,7 +594,7 @@ stord13
 plume
 udacity
 purestorage
-lattice?utm_source=startupers
+startupers
 alarmcom
 konux
 cannondesign
