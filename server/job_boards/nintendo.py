@@ -1,28 +1,19 @@
+import requests, json, sys
 from datetime import datetime
 from bs4 import BeautifulSoup
-import requests, json, sys
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
 
-data = create_temp_json.data
 
-def getJobs(date, url, company, position, location, qualifications):
-    date = str(date)
-    title = position
-    qualifications = qualifications
-    company = company
-    url = url
-    location = location
-
-    # print(date, title, company, url, location)
-
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+def get_jobs(date: str, url: str, company: str, position: str, location: str):
+    data = create_temp_json.data
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
-        "timestamp": postDate,
-        "title": title,
-        "qualifications": qualifications,
+        "timestamp": post_date,
+        "title": position,
+        # "qualifications": qualifications,
         "company": company,
         "url": url,
         "location": location,
@@ -30,10 +21,10 @@ def getJobs(date, url, company, position, location, qualifications):
         "source_url": "https://careers.nintendo.com",
         "category": "job"
     })
-    print(f"=> nintendo: Added {title} for {company}")
+    print(f"=> nintendo: Added {position} for {company}")
 
 
-def getResults(item):
+def get_results(item: str):
     for data in item:
         if "Software" in data["JobDescription"] or "IT " in data["JobTitle"] or "Support" in data["JobTitle"]:
             date = datetime.strptime(data["JobCreationDate"], "%B %d, %Y")
@@ -46,29 +37,24 @@ def getResults(item):
             desc = None
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
 
-            getJobs(date, apply_url, company_name, position, locations_string, desc)
+            get_jobs(date, apply_url, company_name, position, locations_string, desc)
         
 
-def getURL():
+def get_url():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36", "Origin": "https://careers.nintendo.com"}
-
     url = f"https://2oc84v7py6.execute-api.us-west-2.amazonaws.com/prod/api/jobs/"
-
     response = requests.get(url, headers=headers)
 
     if response.ok:
         data = json.loads(response.text)
-        getResults(data)
+        get_results(data)
     else:
         print("=> nintendo: Error - Response status", response.status_code)
 
-    
-    # print(data)
-     
-
 
 def main():
-    getURL()
+    get_url()
+
 
 # main()
 # sys.exit(0)
