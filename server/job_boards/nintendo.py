@@ -34,10 +34,11 @@ def get_results(item: str):
             position = data["JobTitle"].strip()
             # results = BeautifulSoup(data["ExternalQualificationHTML"], "lxml").find_all("li")
             # desc = [i.text.replace("\n\xa0\nNOA-RG", "").strip() for i in results if "Such as" not in i.text]
-            desc = None
+            # desc = None
+            print(type(date))
             locations_string = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip()
 
-            get_jobs(date, apply_url, company_name, position, locations_string, desc)
+            get_jobs(date, apply_url, company_name, position, locations_string)
         
 
 def get_url():

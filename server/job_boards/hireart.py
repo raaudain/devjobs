@@ -36,7 +36,7 @@ def get_results(item: str):
             # soup = BeautifulSoup(response, "lxml")
             # results = soup.find("div", class_="job-requirements").find_all("li")
             # desc = [i.text for i in results]
-            desc = None
+            # desc = None
 
             company_name = data["company_name"].strip()
             position = data["position"].strip()
