@@ -7,10 +7,11 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-def get_jobs(item: list, company: str, source_url: str):
+def get_jobs(item: str, company: str, source_url: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
+    print(company)
     for job in item:
         # try:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
