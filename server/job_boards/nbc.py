@@ -25,7 +25,6 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
 
 def get_results(item: str):
     for i in item:
-        # try:
         date = i["field_lastupdated"]+"/"+datetime.now().date().strftime("%Y")
         position = i["title"].strip()
         company_name = "NBCUniversal"
@@ -33,8 +32,7 @@ def get_results(item: str):
         locations_string = ",".join(i["field_location"].split(",")[::-1]).replace(",United States", "").strip() if len(i["field_location"].split(",")) < 4 else i["field_location"].replace("United States,", "").strip()
 
         get_jobs(date, apply_url, company_name, position, locations_string)
-        # except:
-        #     pass
+
 
 def get_url():
     page = 0

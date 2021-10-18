@@ -11,14 +11,12 @@ def get_jobs(item: str, company: str, source_url: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    print(company)
     for job in item:
-        # try:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d")
         title = job.find("h5", {"data-qa": "posting-name"}).text
         company = company
         url = job["href"]
-        location = job.find("span", {"class": "sort-by-location posting-category small-category-label"}).text
+        location = job.find("span", {"class": "sort-by-location posting-category small-category-label"}).text if job.find("span", {"class": "sort-by-location posting-category small-category-label"}) else None
 
         post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
@@ -38,9 +36,7 @@ def get_jobs(item: str, company: str, source_url: str):
             print(f"=> lever.co: Added {title} for {company}")
         else:
             print(f"=> lever.co: Already scraped {title} for {company}")
-        # except:
-        #     print(f"=> lever.co: Scrape failed for {title} - {company}. Going to next.")
-        #     continue
+
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
