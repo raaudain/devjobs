@@ -10,7 +10,6 @@ from selenium.webdriver.common.by import By
 # import modules.create_temp_json as create_temp_json
 from .modules import create_temp_json
 import sys, re, time
-import undetected_chromedriver.v2 as uc
 
 
 options = uc.ChromeOptions()
