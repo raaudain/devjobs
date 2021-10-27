@@ -450,17 +450,19 @@ def get_url_miami(items: list):
     count = 1
 
     for location in items:
-        try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
-            response = requests.get(url, headers=headers)
+        # try:
+        headers = {"User-Agent": random.choice(h.headers)}
+        url = f"{location}d/software-qa-dba-etc/search/mdc/sof?lang=en"
+        response = requests.get(url, headers=headers)
 
-            if response.ok:
-                get_results(response.text, location)
-                if count % 10 == 0: time.sleep(5)
-        except ConnectionResetError:
-            print(f"=> craigslist: Error for {location}: {response.status_code}")
-            pass
+        if response.ok:
+            get_results(response.text, location)
+            if count % 10 == 0: time.sleep(5)
+        else:
+            break
+        # except ConnectionResetError:
+        #     print(f"=> craigslist: Error for {location}: {response.status_code}")
+        #     pass
 
         count += 1
 
