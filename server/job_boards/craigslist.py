@@ -473,7 +473,7 @@ def get_url_it(items: list):
     for location in items:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://{location}.craigslist.org/search/tch?lang=en"
+            url = f"https://{location}.craigslist.org/search/sad?lang=en&cc=gb"
             response = requests.get(url, headers=headers)
 
             if response.ok:
@@ -487,6 +487,43 @@ def get_url_it(items: list):
 
 
 def get_url_miami_it(items: list):
+    count = 1
+
+    for location in items:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"{location}d/technical-support/search/mdc/sad?lang=en&cc=gb"
+            response = requests.get(url, headers=headers)
+
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionResetError:
+            print(f"=> craigslist: Error for {location}: {response.status_code}")
+            pass
+
+        count += 1
+
+def get_url_network(items: list):
+    count = 1
+
+    for location in items:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{location}.craigslist.org/search/tch?lang=en"
+            response = requests.get(url, headers=headers)
+
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+        except ConnectionResetError:
+            print(f"=> craigslist: Error for {location}: {response.status_code}")
+            pass
+
+        count += 1
+
+
+def get_url_miami_network(items: list):
     count = 1
 
     for location in items:
@@ -514,6 +551,8 @@ def main():
     miamis = [miami.strip() for miami in m]
     m.close()
 
+    get_url_network(locations)
+    get_url_miami_network(miamis)
     get_url(locations)
     get_url_miami(miamis)
     get_url_it(locations)
