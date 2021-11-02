@@ -117,3 +117,4 @@ wri
 wilsonart
 cnoinc
 egnyte
+jumio-corporation

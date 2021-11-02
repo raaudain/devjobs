@@ -25,7 +25,6 @@ caremessage
 confidentcannabis
 shieldai
 hallow
-auth0
 bit.io
 signal
 brightwheel
@@ -119,7 +118,6 @@ jumpcloud
 knotch
 kurtosys
 labelbox
-league
 loadsmart
 logicmanager
 logikcull
@@ -143,10 +141,8 @@ plastiq
 pngme
 pythian
 quantcast
-rainmaking
 rappi
 relaytx
-replicated
 returnly
 rideos
 roofstock
@@ -188,13 +184,11 @@ torch
 sideinc
 gong
 fanatics
-getmulberry
 trueaccord
 livecontrol
 lemonaid
 medium
 fightcamp
-thehustle
 getspruce
 imo-online
 harness
@@ -212,7 +206,6 @@ cointracker
 curai
 grouparoo
 HumanFirst
-goodnotes
 Hatchcard
 hipcamp
 covariant
@@ -221,13 +214,11 @@ angaza
 figma
 palantir
 blendlabs
-structionsite
 matchgroup
 harvest-2
 messari
 nexient
 bellhops
-NuBrakes
 color
 airship
 lyrahealth
@@ -312,7 +303,6 @@ tala
 safeauto
 jamcity
 foundersfactory
-vroom
 siteminder
 springhealth
 sendoso
@@ -320,7 +310,7 @@ arrival
 invisible
 coreresponse
 nortal
-extend
+Extend
 waitrapp
 aeratechnology
 edenhealth
@@ -344,14 +334,10 @@ uipath
 glu
 adaptavist
 ekimetrics
-sincrodigital
 ppro
-saiglobal
 meero
 projekt202
-waystar
 centro
-stellamccartney
 hotstar
 hypebeast
 commure
@@ -394,7 +380,6 @@ tomonetworks
 benchsci
 curology
 zenitech
-openai
 incode
 canva
 eventbrite
@@ -426,7 +411,6 @@ aifoundation
 bayzat
 dragos
 weride
-tempo
 kpler
 tataunistore
 waabi
@@ -442,7 +426,6 @@ utilitywarehouse
 bplaunchpad
 nava
 alector
-afreshtechnologies
 everc
 justwatch
 girlswhocode
@@ -451,8 +434,6 @@ captivateiq
 pplm
 boulevard
 upstox
-bamtradingservices
-stellar
 cred
 reorgresearch
 zendrive
@@ -463,10 +444,8 @@ wundermobility
 pelmorex
 honeypot
 naturesfynd
-humane
 pppsgv
 partnerstack
-annelewis
 thrivemarket
 buildzoom
 hendersonengineers
@@ -475,7 +454,7 @@ sunfolding
 netomi
 bisnow
 piccollage
-hobbii
+Hobbii
 workwave
 netvirta
 anyscale
@@ -483,10 +462,8 @@ pave
 hatch
 gatik
 kandji
-ryderwear
 brilliant
 doctrine
-madhive
 doolyresearch
 tuftandneedle
 hash
@@ -497,7 +474,6 @@ corpayone
 splashfinancial
 ironox
 kickstarter
-zestfinance
 theathletic
 projectyx
 himama
@@ -596,7 +572,6 @@ meetalbert
 addi
 quincus
 everlaw
-dreambox
 moonpig
 aero
 diamondfoundry
@@ -609,7 +584,6 @@ shef
 aofl
 ppkeystone
 tari
-commandalkon
 objective
 mcgrathnicol
 AMIRI
@@ -681,3 +655,6 @@ veeva
 dbtlabs
 AmbassadorLabs
 flexiblefinance
+dronedeploy
+homebound
+ansira

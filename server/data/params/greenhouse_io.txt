@@ -117,7 +117,6 @@ homelight
 hover
 iex
 imply
-incloudcounsel
 industrious
 inmarket
 instabase
@@ -174,7 +173,6 @@ sentry
 servicechannel
 skupos
 skydio
-slack
 smartasset
 smartsheet
 snyk
@@ -213,7 +211,7 @@ zocdoc
 zuora
 zwift
 zymergen
-gathertown
+gather
 justworks
 imagentechnologies
 clearstreet
@@ -721,3 +719,14 @@ kava
 digitalocean98
 hypercube
 rhombuspower
+clickup
+nanatechnologies
+goodnotes
+openai
+tempo
+afresh
+stellar
+madhive
+zestai
+dreamboxlearning
+ontracareers
