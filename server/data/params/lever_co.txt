@@ -45,7 +45,6 @@ lumosity
 distru
 openphone
 oso
-stridehealth
 outschool
 automox
 printavo
@@ -79,7 +78,6 @@ aquabyte
 atlassian
 authentic8
 bedrockocean
-bluecore
 bolt
 centralreach
 chartbeat
@@ -202,7 +200,6 @@ academia
 render
 doppler
 sparrow
-cointracker
 curai
 grouparoo
 HumanFirst
@@ -296,7 +293,6 @@ anotherco
 lionheartkid
 seerinteractive
 viseven
-repairsmith
 dott
 gettyimages
 tala
@@ -516,7 +512,7 @@ lunchclub
 BoomandBucket
 narmi
 walkerandcompany
-arrive
+FLASH
 pingcap
 einblick
 joinroot
@@ -658,3 +654,4 @@ flexiblefinance
 dronedeploy
 homebound
 ansira
+envato-2

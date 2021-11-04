@@ -137,7 +137,6 @@ lookout
 makespace
 marqeta
 masterclass
-mightyhive
 degreed
 mobilityware
 modernhealth
@@ -274,7 +273,6 @@ breadfinance
 sonyinteractiveentertainmentplaystation
 sharebite
 naughtydog
-embed
 dialexa
 cdbaby
 wellhealthinc
@@ -307,7 +305,6 @@ insomniacgames
 coherehealth
 hollywoodparksofistadium
 better
-envato
 khanacademy
 valorainc
 sezzlescholarship
@@ -385,7 +382,6 @@ creditkarma
 project44
 fabfitfun
 collibra
-procore
 vanta
 smartersorting
 cloudflare
@@ -395,7 +391,6 @@ apex
 sentinellabs
 particle
 ethoslife
-incloudcounselcareers
 allbirds
 everlane
 cruisecontract
@@ -453,7 +448,6 @@ everbody
 wayup
 neuralink
 mst
-sherlock
 gradle
 geminitherapeutics
 sonymusic
@@ -730,3 +724,5 @@ madhive
 zestai
 dreamboxlearning
 ontracareers
+stridehealth
+bluecoreinc
