@@ -1,3 +1,4 @@
+/drivers-seat
 /sibi
 /classy
 /meter

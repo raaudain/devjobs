@@ -459,12 +459,16 @@ def get_url_miami(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
+            # if count % 10 == 0: time.sleep(5)
+        elif response.status_code == "403" and count < 1:
+            print(f"=> craigslist: Sleeping for 15 minutes")
+            time.sleep(900)
+            count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        count += 1
+        # count += 1
 
 
 def get_url_it(items: list):
@@ -477,12 +481,16 @@ def get_url_it(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
+            # if count % 10 == 0: time.sleep(5)
+        elif response.status_code == "403" and count < 1:
+            print(f"=> craigslist: Sleeping for 15 minutes")
+            time.sleep(900)
+            count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        count += 1
+        # count += 1
 
 
 def get_url_miami_it(items: list):
@@ -495,12 +503,16 @@ def get_url_miami_it(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
+            # if count % 10 == 0: time.sleep(5)
+        elif response.status_code == "403" and count < 1:
+            print(f"=> craigslist: Sleeping for 15 minutes")
+            time.sleep(900)
+            count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        count += 1
+        # count += 1
 
 def get_url_network(items: list):
     count = 1
@@ -512,12 +524,16 @@ def get_url_network(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
+            # if count % 10 == 0: time.sleep(5)
+        elif response.status_code == "403" and count < 1:
+            print(f"=> craigslist: Sleeping for 15 minutes")
+            time.sleep(900)
+            count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        count += 1
+        # count += 1
 
 
 def get_url_miami_network(items: list):
@@ -530,12 +546,16 @@ def get_url_miami_network(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            if count % 10 == 0: time.sleep(5)
+            # if count % 10 == 0: time.sleep(5)
+        elif response.status_code == "403" and count < 1:
+            print(f"=> craigslist: Sleeping for 15 minutes")
+            time.sleep(900)
+            count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        count += 1
+        # count += 1
 
 
 def main():
