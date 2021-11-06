@@ -4,8 +4,8 @@
 /meter
 /workos
 /symbio
-/karat
 /change-org
+/karat
 /noyo
 /3box-labs
 /range
