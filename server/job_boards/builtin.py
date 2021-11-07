@@ -17,7 +17,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     age = datetime.timestamp(datetime.now() - timedelta(days=14))
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
-    if url not in scraped or company not in scraped:
+    if url not in scraped and company not in scraped:
         if age <= post_date:
             data.append({
                 "timestamp": post_date,
@@ -30,7 +30,6 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
                 "category": "job"
             })
             print(f"=> builtin: Added {position} for {company}")
-            scraped.add(url)
         else:
             print(f"=> builtin: Reached limit. Stopping scrape")
             IS_TRUE = False
@@ -69,30 +68,34 @@ def get_results(item: str):
         
     # Merge dictionaries by id
     data = {d["id"]: d for d in companies}
+    for j in jobs: data[j["id"]].update(j)
 
-    for j in jobs:
-        data[j["id"]].update(j)
 
     # Loop through data
+    f = open("../data/params/unwanted_builtin.txt", "r")
+    unwanted = [e.strip().lower() for e in f]
+    f.close()
+
     for d in list(data.values()):
-        date = datetime.strptime(d["sort_job"], "%a, %d %b %Y %H:%M:%S GMT")
-        position = d["title"]
-        base_url = None
+        if d["company"].lower() not in unwanted:
+            date = datetime.strptime(d["sort_job"], "%a, %d %b %Y %H:%M:%S GMT")
+            position = d["title"]
+            base_url = None
 
-        if d["region_id"] == 1: base_url = "https://www.builtinchicago.org"
-        elif d["region_id"] == 2: base_url = "https://www.builtincolorado.com"
-        elif d["region_id"] == 3: base_url = "https://www.builtinla.com"
-        elif d["region_id"] == 4: base_url = "https://www.builtinaustin.com"
-        elif d["region_id"] == 5: base_url = "https://www.builtinnyc.com"
-        elif d["region_id"] == 6: base_url = "https://www.builtinboston.com"
-        elif d["region_id"] == 7: base_url = "https://www.builtinseattle.com"
-        else: base_url = "https://www.builtinsf.com"
-        
-        apply_url = f"{base_url}{d['alias']}"
-        company_name = d["company"]
-        locations_string = d["location"]
+            if d["region_id"] == 1: base_url = "https://www.builtinchicago.org"
+            elif d["region_id"] == 2: base_url = "https://www.builtincolorado.com"
+            elif d["region_id"] == 3: base_url = "https://www.builtinla.com"
+            elif d["region_id"] == 4: base_url = "https://www.builtinaustin.com"
+            elif d["region_id"] == 5: base_url = "https://www.builtinnyc.com"
+            elif d["region_id"] == 6: base_url = "https://www.builtinboston.com"
+            elif d["region_id"] == 7: base_url = "https://www.builtinseattle.com"
+            else: base_url = "https://www.builtinsf.com"
+            
+            apply_url = f"{base_url}{d['alias']}"
+            company_name = d["company"]
+            locations_string = d["location"]
 
-        get_jobs(date, apply_url, company_name, position, locations_string)
+            get_jobs(date, apply_url, company_name, position, locations_string)
 
 
 def get_url():

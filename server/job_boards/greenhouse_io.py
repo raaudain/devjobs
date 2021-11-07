@@ -8,6 +8,11 @@ from .modules import headers as h
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+    unwanted = "../data/params/unwanted_builtin.txt"
+    f = open(unwanted, "r")
+    words = [e.strip().lower() for e in f]
+    f.close()
+
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -25,6 +30,11 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "category": "job"
     })
     scraped.add(company)
+    # if company.lower() not in words:
+    #     a = open(words, "a")
+    #     a.write(f"{company}\n")
+    #     a.close()
+
     print(f"=> greenhouse.io: Added {position} for {company}")
 
 

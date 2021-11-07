@@ -727,3 +727,7 @@ ontracareers
 stridehealth
 bluecoreinc
 whogivesacrap
+pax8
+twinhealth
+clutter
+fingerprintjs
