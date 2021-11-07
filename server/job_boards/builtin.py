@@ -72,7 +72,7 @@ def get_results(item: str):
 
 
     # Loop through data
-    f = open("../data/params/unwanted_builtin.txt", "r")
+    f = open("./data/params/unwanted_builtin.txt", "r")
     unwanted = [e.strip().lower() for e in f]
     f.close()
 

@@ -8,7 +8,7 @@ from .modules import headers as h
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
-    unwanted = "../data/params/unwanted_builtin.txt"
+    unwanted = "./data/params/unwanted_builtin.txt"
     f = open(unwanted, "r")
     words = [e.strip().lower() for e in f]
     f.close()

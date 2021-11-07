@@ -43,11 +43,11 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
-    craigslist.main()
+    greenhouse_io.main()
+    craigslist.
     nintendo.main()
     lever_co.main()
     nbc.main()
-    greenhouse_io.main()
     ashbyhq.main()
     breezyhr.main()
     recruiterbox.main()
