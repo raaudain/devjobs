@@ -40,23 +40,36 @@ import sys, os
 
 
 def main():
+    f = open(f"./data/params/us_and_ca.txt", "r")
+    locations = [location.strip() for location in f]
+    f.close()
+
+    m = open(f"./data/params/miami.txt", "r")
+    miamis = [miami.strip() for miami in m]
+    m.close()
+
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    craigslist.get_url(locations)
     greenhouse_io.main()
-    craigslist.
     nintendo.main()
+    craigslist.get_url_miami(miamis)
     lever_co.main()
     nbc.main()
+    craigslist.get_url_it(locations)
     ashbyhq.main()
     breezyhr.main()
+    craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     jobvite.main()
     vuejobs.main()
+    craigslist.get_url_network(locations)
     hireart.main()
     target.main()
     tiktok.main()
     workable.main()
+    craigslist.get_url_miami_network(miamis)
     amazon.main()
     twitter.main()
     smartrecruiters.main()
