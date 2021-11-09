@@ -18,7 +18,7 @@ def get_jobs(item: list, location: str):
         # location = re.search(r"https://(.*?).craigslist.org", url).group(1)
         location = location.strip()
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=14))
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
         post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
         if url not in scraped and age <= post_date:
@@ -428,7 +428,7 @@ def get_results(item: str, city: str):
 
 
 def get_url(items: list):
-    count = 0
+    count = 1
 
     for location in items:
         headers = {"User-Agent": random.choice(h.headers)}
@@ -437,16 +437,16 @@ def get_url(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            # if count % 10 == 0: time.sleep(5)
-        elif response.status_code == 403 and count < 1:
-            print(f"=> craigslist: Sleeping for 15 minutes")
-            time.sleep(900)
-            count+=1
+            if count % 10 == 0: time.sleep(5)
+        # elif response.status_code == 403 and count < 1:
+        #     print(f"=> craigslist: Sleeping for 15 minutes")
+        #     time.sleep(900)
+        #     count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        # count += 1
+        count += 1
 
 
 def get_url_miami(items: list):
@@ -481,16 +481,16 @@ def get_url_it(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            # if count % 10 == 0: time.sleep(5)
-        elif response.status_code == 403 and count < 1:
-            print(f"=> craigslist: Sleeping for 15 minutes")
-            time.sleep(900)
-            count+=1
+            if count % 10 == 0: time.sleep(5)
+        # elif response.status_code == 403 and count < 1:
+        #     print(f"=> craigslist: Sleeping for 15 minutes")
+        #     time.sleep(900)
+        #     count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        # count += 1
+        count += 1
 
 
 def get_url_miami_it(items: list):
@@ -503,16 +503,16 @@ def get_url_miami_it(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            # if count % 10 == 0: time.sleep(5)
-        elif response.status_code == 403 and count < 1:
-            print(f"=> craigslist: Sleeping for 15 minutes")
-            time.sleep(900)
-            count+=1
+            if count % 10 == 0: time.sleep(5)
+        # elif response.status_code == 403 and count < 1:
+        #     print(f"=> craigslist: Sleeping for 15 minutes")
+        #     time.sleep(900)
+        #     count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        # count += 1
+        count += 1
 
 def get_url_network(items: list):
     count = 1
@@ -524,16 +524,16 @@ def get_url_network(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            # if count % 10 == 0: time.sleep(5)
-        elif response.status_code == 403 and count < 1:
-            print(f"=> craigslist: Sleeping for 15 minutes")
-            time.sleep(900)
-            count+=1
+            if count % 10 == 0: time.sleep(5)
+        # elif response.status_code == 403 and count < 1:
+        #     print(f"=> craigslist: Sleeping for 15 minutes")
+        #     time.sleep(900)
+        #     count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        # count += 1
+        count += 1
 
 
 def get_url_miami_network(items: list):
@@ -546,16 +546,16 @@ def get_url_miami_network(items: list):
 
         if response.ok:
             get_results(response.text, location)
-            # if count % 10 == 0: time.sleep(5)
-        elif response.status_code == 403 and count < 1:
-            print(f"=> craigslist: Sleeping for 15 minutes")
-            time.sleep(900)
-            count+=1
+            if count % 10 == 0: time.sleep(5)
+        # elif response.status_code == 403 and count < 1:
+        #     print(f"=> craigslist: Sleeping for 15 minutes")
+        #     time.sleep(900)
+        #     count+=1
         else:
             print(f"=> craigslist: Error for {location}: {response.status_code}")
             break
 
-        # count += 1
+        count += 1
 
 
 def main():
