@@ -559,7 +559,7 @@ def get_url_miami_network(items: list):
 
 
 def main():
-    f = open(f"./data/params/us_and_ca.txt", "r")
+    f = open(f"./data/params/craigslist.txt", "r")
     locations = [location.strip() for location in f]
     f.close()
 

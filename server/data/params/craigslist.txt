@@ -42,6 +42,7 @@ fortlauderdale
 fortmyers
 jacksonville
 orlando
+miami
 panamacity
 pensacola
 staugustine

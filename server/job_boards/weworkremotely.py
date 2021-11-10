@@ -2,12 +2,13 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
-import json, requests, sys
+import requests, sys
 
 
-data = create_temp_json.data
+def getJobs(item: list):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
-def getJobs(item):
     for job in item:
         try:
             date = job.find("time")
@@ -26,10 +27,10 @@ def getJobs(item):
             else:
                 date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
 
-            age = datetime.timestamp(datetime.now() - timedelta(days=14))
+            age = datetime.timestamp(datetime.now() - timedelta(days=30))
             postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
-            if age <= postDate:
+            if age <= postDate and company not in scraped:
                 data.append({
                     "timestamp": postDate,
                     "title": title,
@@ -44,7 +45,7 @@ def getJobs(item):
         except:
             pass
 
-def getResults(item):
+def getResults(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find("div", {"class": "content"}).find_all("li", {"class": ["feature",""]})
     getJobs(results)

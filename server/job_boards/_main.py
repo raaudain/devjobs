@@ -40,7 +40,7 @@ import sys, os
 
 
 def main():
-    f = open(f"./data/params/us_and_ca.txt", "r")
+    f = open(f"./data/params/craigslist.txt", "r")
     locations = [location.strip() for location in f]
     f.close()
 
@@ -54,13 +54,13 @@ def main():
     craigslist.get_url(locations)
     greenhouse_io.main()
     nintendo.main()
-    craigslist.get_url_miami(miamis)
+    # craigslist.get_url_miami(miamis)
     lever_co.main()
     nbc.main()
     craigslist.get_url_it(locations)
     ashbyhq.main()
     breezyhr.main()
-    craigslist.get_url_miami_it(miamis)
+    # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     jobvite.main()
     vuejobs.main()
@@ -69,7 +69,7 @@ def main():
     target.main()
     tiktok.main()
     workable.main()
-    craigslist.get_url_miami_network(miamis)
+    # craigslist.get_url_miami_network(miamis)
     amazon.main()
     twitter.main()
     smartrecruiters.main()
