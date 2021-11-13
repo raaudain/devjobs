@@ -9,6 +9,7 @@ from .modules import headers as h
 
 def get_jobs(date: str, apply_url: str, company_name: str, position: str, locations_string: str, name: str):
     data = create_temp_json.data
+    scraped = create_temp_json.scraped
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
 
     data.append({
@@ -21,6 +22,7 @@ def get_jobs(date: str, apply_url: str, company_name: str, position: str, locati
         "source_url": f"https://jobs.jobvite.com/careers/{name}",
         "category": "job"
     })
+    scraped.add(company_name)
     print(f"=> jobvite: Added {position} for {company_name}")
 
 

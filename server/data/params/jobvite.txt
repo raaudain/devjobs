@@ -119,3 +119,4 @@ cnoinc
 egnyte
 jumio-corporation
 sherlockbio
+devo

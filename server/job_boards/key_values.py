@@ -31,7 +31,7 @@ def get_jobs(item: list):
 
         post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
-        if title not in exclude and url not in scraped:
+        if title not in exclude and url not in scraped and company not in scraped:
             data.append({
                 "timestamp": post_date,
                 "title": title,
