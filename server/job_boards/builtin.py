@@ -14,10 +14,10 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
     
-    age = datetime.timestamp(datetime.now() - timedelta(days=14))
+    age = datetime.timestamp(datetime.now() - timedelta(days=30))
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
-    if url not in scraped and company not in scraped:
+    if url not in scraped:
         if age <= post_date:
             data.append({
                 "timestamp": post_date,
@@ -29,6 +29,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
                 "source_url": "https://builtin.com/",
                 "category": "job"
             })
+            scraped.add(url)
             print(f"=> builtin: Added {position} for {company}")
         else:
             print(f"=> builtin: Reached limit. Stopping scrape")
@@ -70,14 +71,10 @@ def get_results(item: str):
     data = {d["id"]: d for d in companies}
     for j in jobs: data[j["id"]].update(j)
 
-
-    # Loop through data
-    f = open("./data/params/unwanted_builtin.txt", "r")
-    unwanted = [e.strip().lower() for e in f]
-    f.close()
+    scraped = create_temp_json.scraped
 
     for d in list(data.values()):
-        if d["company"].lower() not in unwanted:
+        if d["company"] not in scraped:
             date = datetime.strptime(d["sort_job"], "%a, %d %b %Y %H:%M:%S GMT")
             position = d["title"]
             base_url = None
