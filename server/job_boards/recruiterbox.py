@@ -45,8 +45,11 @@ def get_url(companies: list):
         response = feedparser.parse(url)
 
         # bozo flag checks if a feed is malformed
-        if response.bozo == False: get_results(response, company)
-        else: print(f"=> recruiterbox: Failed {company}. {response.bozo_exception.getMessage()}")
+        if response.bozo == False: 
+            get_results(response, company)
+        else: 
+            res = response.bozo_exception
+            print(f"=> recruiterbox: Failed {company}. {res.getMessage()}")
 
 
 def main():
