@@ -44,8 +44,8 @@ def get_url(companies: list):
         url = f"http://recruiterbox.com/jobfeeds/{company}"
         response = feedparser.parse(url)
 
-        if response: get_results(response, company)
-        else: print(f"=> recruiterbox: Failed {company}")
+        if response.bozo: get_results(response, company)
+        else: print(f"=> recruiterbox: Failed {company}. {response.bozo_exception}")
 
 
 def main():
