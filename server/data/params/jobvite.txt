@@ -120,3 +120,5 @@ egnyte
 jumio-corporation
 sherlockbio
 devo
+beyondlimitsai
+legalzoom

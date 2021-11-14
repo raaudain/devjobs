@@ -4,13 +4,8 @@ from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
 
-data = create_temp_json.data
-
-f = open(f"./data/params/recruiterbox.txt", "r")
-companies = [company.strip() for company in f]
-f.close()
-
-def getJobs(date, url, company, position, location, source_url):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, source_url: str):
+    data = create_temp_json.data
     postDate = datetime.timestamp(datetime.strptime(str(date), "%a, %d %b %Y %H:%M:%S %z"))
 
     data.append({
@@ -26,7 +21,7 @@ def getJobs(date, url, company, position, location, source_url):
     print(f"=> recruiterbox: Added {position} for {company}")
 
 
-def getResults(item, name):
+def get_results(item: str, name: str):
     company_name = item["channel"]["title"].replace("Jobs at", "").strip()
     data = item["entries"]
 
@@ -41,23 +36,24 @@ def getResults(item, name):
             locations_string = f"{city}{region}{country}"
             source_url = f"https://{name}.recruiterbox.com/jobs"
 
-            getJobs(date, apply_url, company_name, position, locations_string, source_url)
+            get_jobs(date, apply_url, company_name, position, locations_string, source_url)
 
 
-def getURL():
+def get_url(companies: list):
     for company in companies:
-        try:
-            url = f"http://recruiterbox.com/jobfeeds/{company}"
-            response = feedparser.parse(url)
+        url = f"http://recruiterbox.com/jobfeeds/{company}"
+        response = feedparser.parse(url)
 
-            getResults(response, company)
-        except:
-            print(f"=> recruiterbox: Failed {company}")
-            continue
+        if response: get_results(response, company)
+        else: print(f"=> recruiterbox: Failed {company}")
 
 
 def main():
-    getURL()
+    f = open(f"./data/params/recruiterbox.txt", "r")
+    companies = [company.strip() for company in f]
+    f.close()
+
+    get_url(companies)
 
 # main()
 # sys.exit(0)

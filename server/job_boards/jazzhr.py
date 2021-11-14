@@ -7,7 +7,6 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
     data = create_temp_json.data
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
