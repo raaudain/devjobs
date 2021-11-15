@@ -30,23 +30,19 @@ def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all(class_="jv-job-list")
     company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip()
-    
+
     if results and company:
         for r in results:
-            try:
-                title = r.find(class_="jv-job-list-name").text.strip()
+            title = r.find(class_="jv-job-list-name").text.strip() if r.find(class_="jv-job-list-name") else r.find("a").text.strip()
 
-                if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in "title" or "Front" in title or "Back" in title:
-                    date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-                    apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
-                    company_name = company
-                    position = title
-                    locations_string = r.find("td", class_="jv-job-list-location").text.strip()
-                    
-                    get_jobs(date, apply_url, company_name, position, locations_string, name)
-            except AttributeError:
-                print(f"=> jobvite: Failed: {company}")
-                pass
+            if "Engineer" in title or "Tech" in title or "Web" in title or "Data " in title or "QA" in title or "Cloud" in title or "IT " in title or "Software" in title or "Front" in title or "Back" in title:
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+                apply_url = "https://jobs.jobvite.com"+r.find("a")["href"].strip()
+                company_name = company
+                position = title
+                locations_string = r.find("td", class_="jv-job-list-location").text.strip() if r.find("td", class_="jv-job-list-location") else "See description for location"
+
+                get_jobs(date, apply_url, company_name, position, locations_string, name)
 
 
 def get_url(companies: list):

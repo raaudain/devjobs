@@ -4,7 +4,7 @@ import json, requests, sys
 from .modules import create_temp_json
 
 
-def getJobs(item: list):
+def get_jobs(item: list):
     data = create_temp_json.data
 
     for job in item:
@@ -31,21 +31,21 @@ def getJobs(item: list):
             print(f"=> nocsok: Added {title}")
 
 
-def getResults(item: str):
+def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "w-100 jobboard-card-child"})
     # print(results)
-    getJobs(results)
+    get_jobs(results)
 
 
-def getURL():
+def get_url():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
     url = f"https://nocsok.com/"
     response = requests.get(url, headers=headers)
 
-    if response.ok: getResults(response.text)
+    if response.ok: get_results(response.text)
     else: print("=> nocsok: Error - Response status", response.status_code)
     # print(response)
 
 def main():
-    getURL()
+    get_url()

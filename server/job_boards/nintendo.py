@@ -5,7 +5,6 @@ from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
 
-
 def get_jobs(date: str, url: str, company: str, position: str, location: str):
     data = create_temp_json.data
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))

@@ -48,8 +48,8 @@ def get_url(companies: list):
         if response.bozo == False: 
             get_results(response, company)
         else: 
-            res = response.bozo_exception
-            print(f"=> recruiterbox: Failed {company}. {res.getMessage()}")
+            error = response.bozo_exception
+            print(f"=> recruiterbox: Failed {company}. Error: {error}")
 
 
 def main():

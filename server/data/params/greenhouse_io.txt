@@ -735,3 +735,9 @@ mackweldon
 8thlightrebuild
 chaossearch
 willowtree
+whipmedia
+figs15
+convercent
+philo
+codeclimate
+bubble

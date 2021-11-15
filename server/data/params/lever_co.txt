@@ -657,3 +657,8 @@ ansira
 envato-2
 stackline
 people-ai
+loftium
+playvs
+raya
+getordermark
+ciedigital
