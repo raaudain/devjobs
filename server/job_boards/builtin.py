@@ -108,7 +108,7 @@ def get_url():
         if response.ok:
             data = json.loads(response.text)
             get_results(data)
-            if page % 1 == 0: time.sleep(5)
+            # if page % 1 == 0: time.sleep(5)
             page+=1
         else:
             print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
