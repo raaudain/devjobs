@@ -16,31 +16,31 @@ def get_jobs(item: list):
         url = job.find("a", class_="preventLink", href=True)
         location = job.find("div", class_="location tooltip")
 
-        if company not in scraped:
-            if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
-            if title: title = job.find("h2", {"itemprop": "title"}).text
-            if company: company = job.find("h3", {"itemprop": "name"}).text
-            if url: url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"]
-            if location: location = job.find("div", {"class": "location tooltip"}).text.strip()
-            else: location = "Remote"
+        if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
+        if title: title = job.find("h2", {"itemprop": "title"}).text
+        if company: company = job.find("h3", {"itemprop": "name"}).text
+        if url: url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"]
+        if location: location = job.find("div", {"class": "location tooltip"}).text.strip()
+        else: location = "Remote"
 
-            print(date)
+        print(date)
 
-            age = datetime.timestamp(datetime.now() - timedelta(days=30))
-            postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
-            
-            if age <= postDate:
-                data.append({
-                    "timestamp": postDate,
-                    "title": title,
-                    "company": company,
-                    "url": url,
-                    "location": location,
-                    "source": "Remote OK",
-                    "source_url": "https://remoteok.io/",
-                    "category": "job"
-                })
-                print(f"=> remoteok: Added {title} for {company}")
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
+        postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
+        
+    
+        if age <= postDate and company not in scraped:
+            data.append({
+                "timestamp": postDate,
+                "title": title,
+                "company": company,
+                "url": url,
+                "location": location,
+                "source": "Remote OK",
+                "source_url": "https://remoteok.io/",
+                "category": "job"
+            })
+            print(f"=> remoteok: Added {title} for {company}")
 
 
 def get_results(item: str):
