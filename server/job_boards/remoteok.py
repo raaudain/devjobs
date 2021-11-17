@@ -24,6 +24,8 @@ def get_jobs(item: list):
             if location: location = job.find("div", {"class": "location tooltip"}).text.strip()
             else: location = "Remote"
 
+            print(date)
+
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
             postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
             
