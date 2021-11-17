@@ -10,22 +10,19 @@ def get_jobs(item: list):
     scraped = create_temp_json.scraped
 
     for job in item:
-        date =  job.find("time")["datetime"].replace("T", " ")[:-9] if job.find("time") else None
-        title = job.find("h2", {"itemprop": "title"}).text if job.find("h2", {"itemprop": "title"}) else None
-        company = job.find("h3", {"itemprop": "name"}).text if job.find("h3", {"itemprop": "name"}) else None
-        url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"] if job.find("a", class_="preventLink", href=True) else None
-        location = job.find("div", class_="location tooltip").text.strip() if job.find("div", class_="location tooltip") else "Remote"
+        date =  job.find("time")
+        title = job.find("h2", {"itemprop": "title"})
+        company = job.find("h3", {"itemprop": "name"})
+        url = job.find("a", class_="preventLink", href=True)
+        location = job.find("div", class_="location tooltip")
 
         if company not in scraped:
-            # if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
-            # if title: title = job.find("h2", {"itemprop": "title"}).text
-            # if company: company = job.find("h3", {"itemprop": "name"}).text
-            # if url: url = "https://remoteok.io"+job.find("a", {"class": "preventLink"}, href=True)["href"]
-
-            # if location:
-            #     location = job.find("div", {"class": "location tooltip"}).text.strip()
-            # else:
-            #     location = "Remote"
+            if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
+            if title: title = job.find("h2", {"itemprop": "title"}).text
+            if company: company = job.find("h3", {"itemprop": "name"}).text
+            if url: url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"]
+            if location: location = job.find("div", {"class": "location tooltip"}).text.strip()
+            else: location = "Remote"
 
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
             postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
