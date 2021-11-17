@@ -25,7 +25,7 @@ def get_jobs(item: list):
 
         print(date)
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=30))
+        age = datetime.timestamp(datetime.now() - timedelta(days=7))
         postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
         
     
