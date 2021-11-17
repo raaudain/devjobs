@@ -44,13 +44,14 @@ def main():
     locations = [location.strip() for location in f]
     f.close()
 
-    m = open(f"./data/params/miami.txt", "r")
-    miamis = [miami.strip() for miami in m]
-    m.close()
+    # m = open(f"./data/params/miami.txt", "r")
+    # miamis = [miami.strip() for miami in m]
+    # m.close()
 
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    remoteok.main()
     jobvite.main()
     craigslist.get_url(locations)
     greenhouse_io.main()
@@ -77,11 +78,10 @@ def main():
     usajobs.main()
     key_values.main()
     zillow.main()
+    remote_co.main()
     # clickup.main()
     # instacart.main()
     nocsok.main()
-    remote_co.main()
-    remoteok.main()
     workwithindies.main()
     weworkremotely.main()
     workaline.main()

@@ -43,7 +43,7 @@ def get_results(item: str, name: str, company: str):
     #             jobs.extend(d["jobs"])
     if jobs:
         for j in jobs:
-            if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT" in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] and ("Mechnicial" not in j["title"] or "Electrical" not in j["title"]):
+            if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT" in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
                 # jobId = j["id"]
                 # content = json.loads(requests.get(f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs/{jobId}").text)["content"].replace("&lt;", "<").replace("&gt;", ">")
                 # soup = BeautifulSoup(content, "lxml")

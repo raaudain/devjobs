@@ -1,41 +1,33 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json, requests, sys
+import json, requests, sys, random
 from .modules import create_temp_json
+from .modules import headers as h
 
 
-data = create_temp_json.data
+def get_jobs(item: list):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
-
-def getJobs(item):
     for job in item:
-        date = job.find("time")
-        title = job.find("h2", {"itemprop": "title"})
-        company = job.find("h3", {"itemprop": "name"})
-        url = job.find("a", {"class": "preventLink"}, href=True)
-        location = job.find("div", {"class": "location tooltip"})
+        date =  job.find("time")["datetime"].replace("T", " ")[:-9] if job.find("time") else None
+        title = job.find("h2", {"itemprop": "title"}).text if job.find("h2", {"itemprop": "title"}) else None
+        company = job.find("h3", {"itemprop": "name"}).text if job.find("h3", {"itemprop": "name"}) else None
+        url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"] if job.find("a", class_="preventLink", href=True) else None
+        location = job.find("div", class_="location tooltip").text.strip() if job.find("div", class_="location tooltip") else "Remote"
 
-        if date:
-            date = job.find("time")["datetime"].replace("T", " ")[:-9]
-        
-        if title:
-            title = job.find("h2", {"itemprop": "title"}).text
+        if company not in scraped:
+            # if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
+            # if title: title = job.find("h2", {"itemprop": "title"}).text
+            # if company: company = job.find("h3", {"itemprop": "name"}).text
+            # if url: url = "https://remoteok.io"+job.find("a", {"class": "preventLink"}, href=True)["href"]
 
-        if company:
-            company = job.find("h3", {"itemprop": "name"}).text
+            # if location:
+            #     location = job.find("div", {"class": "location tooltip"}).text.strip()
+            # else:
+            #     location = "Remote"
 
-        if url:
-            url = "https://remoteok.io"+job.find("a", {"class": "preventLink"}, href=True)["href"]
-
-        if location:
-            location = job.find("div", {"class": "location tooltip"}).text.lstrip()
-        else:
-            location = "Remote"
-
-        if title:
-            title = job.find("h2", {"itemprop": "title"}).text
-
-            age = datetime.timestamp(datetime.now() - timedelta(days=7))
+            age = datetime.timestamp(datetime.now() - timedelta(days=30))
             postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
             
             if age <= postDate:
@@ -49,23 +41,23 @@ def getJobs(item):
                     "source_url": "https://remoteok.io/",
                     "category": "job"
                 })
-                print(f"=> remoteok: Added {title}")
+                print(f"=> remoteok: Added {title} for {company}")
 
-def getResults(item):
+
+def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("tr")
-    getJobs(results)
+    get_jobs(results)
 
-def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
 
+def get_url():
+    headers = {"User-Agent": random.choice(h.headers)}
     url = f"https://remoteok.io/remote-dev-jobs"
     response = requests.get(url, headers=headers)
 
-    if response.ok:
-        getResults(response.text)
-    else:
-        print("=> remoteok: Error - Response status", response.status_code)
+    if response.ok: get_results(response.text)
+    else: print("=> remoteok: Error - Response status", response.status_code)
+
 
 def main():
-    getURL()
+    get_url()
