@@ -16,16 +16,22 @@ def get_jobs(item: list):
         url = job.find("a", class_="preventLink", href=True)
         location = job.find("div", class_="location tooltip")
 
-        if date: date = job.find("time")["datetime"].replace("T", " ")[:-9]
-        if title: title = job.find("h2", {"itemprop": "title"}).text
-        if company: company = job.find("h3", {"itemprop": "name"}).text
-        if url: url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"]
-        if location: location = job.find("div", {"class": "location tooltip"}).text.strip()
-        else: location = "Remote"
+        if date: 
+            date = job.find("time")["datetime"].replace("T", " ")[:-9]
+        if title: 
+            title = job.find("h2", {"itemprop": "title"}).text
+        if company: 
+            company = job.find("h3", {"itemprop": "name"}).text
+        if url: 
+            url = "https://remoteok.io"+job.find("a", class_="preventLink", href=True)["href"]
+        if location: 
+            location = job.find("div", class_="location tooltip").text.strip()
+        else: 
+            location = "Remote"
 
         print(date)
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=7))
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
         postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M"))
         
     
