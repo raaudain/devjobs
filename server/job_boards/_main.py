@@ -51,7 +51,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
-    # remoteok.main()
+    remoteok.main()
     jobvite.main()
     craigslist.get_url(locations)
     greenhouse_io.main()
