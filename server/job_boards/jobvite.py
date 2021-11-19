@@ -60,7 +60,7 @@ def get_url(companies: list):
             if res.ok: get_results(res.text, name)
             else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
 
-        if count % 10 == 0: time.sleep(5)
+        if count % 5 == 0: time.sleep(5)
         count+=1
 
 
