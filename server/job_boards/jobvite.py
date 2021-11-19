@@ -51,16 +51,19 @@ def get_url(companies: list):
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://jobs.jobvite.com/careers/{name}"
-        response = requests.get(url, headers=headers)
+        try:
+            response = requests.get(url, headers=headers)
+        except requests.ConnectionError as err:
+            print("=> jobvite: Connection error:", err)
+            break
 
         if response.ok: get_results(response.text, name)
         else: 
             res = requests.get(f"https://jobs.jobvite.com/{name}", headers=headers)
-
             if res.ok: get_results(res.text, name)
             else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
 
-        if count % 5 == 0: time.sleep(5)
+        if count % 2 == 0: time.sleep(5)
         count+=1
 
 
