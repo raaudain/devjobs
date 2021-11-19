@@ -2,6 +2,7 @@
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
+from . import bamboohr
 from . import lever_co
 from . import workaline
 # from . import clickup
@@ -53,6 +54,7 @@ def main():
     # bloomberg.main()
     jobvite.main()
     craigslist.get_url(locations)
+    bamboohr.main()
     greenhouse_io.main()
     nintendo.main()
     # craigslist.get_url_miami(miamis)

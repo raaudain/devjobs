@@ -8,6 +8,8 @@ from .modules import headers as h
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
     data = create_temp_json.data
+    scraped = create_temp_json.scraped
+
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
     
     data.append({
@@ -20,6 +22,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
         "source_url": f"https://jobs.ashbyhq.com/{param}",
         "category": "job"
     })
+    scraped.add(company)
     print(f"=> ashbyhq: Added {position} for {company}")
 
 
