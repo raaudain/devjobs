@@ -34,13 +34,12 @@ def get_results(item: str, param: str):
     company = soup.find("img")["alt"]
 
     for d in data:
-        print(d)
         if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
             date = datetime.strftime(datetime.now(), "%Y-%m-%d")
             apply_url = f"https://{param}.bamboohr.com/jobs/view.php?id={d['id']}"
             company_name = company.strip()
             position = d["jobOpeningName"].strip()
-            locations_string = f"{d['location']['city'].strip()}, {d['location']['state'].strip()}"
+            locations_string = f"{d['location']['city'].strip()}, {d['location']['state'].strip() if d['location']['state'] else d['location']['country'].strip()}"
             
             get_jobs(date, apply_url, company_name, position, locations_string, param)
 
