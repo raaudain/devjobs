@@ -64,8 +64,25 @@ def get_url(companies: list):
         url = f"https://jobs.lever.co/{name}"
         response = requests.get(url, headers=headers)
 
-        if response.ok: get_results(response.text, name)
-        else: print(f"=> lever.co: Error for {name} - Response status", response.status_code)
+        if response.ok: 
+            get_results(response.text, name)
+        elif response.status_code == 404:
+            f = open("./data/params/lever_co.txt", "r+")
+            params = [param.strip() for param in f]
+            f.truncate(0)
+            f.close()
+
+            file = open("./data/params/lever_co.txt", "w")
+            error = open("./data/params/404.txt", "a")
+            for p in params:
+                if p != name: 
+                    file.write(p+"\n")
+                else:
+                    error.write(p+"\n")
+            file.close()
+            error.close()
+        else: 
+            print(f"=> lever.co: Error for {name} - Response status", response.status_code)
         
         if count % 20 == 0: time.sleep(5)
             

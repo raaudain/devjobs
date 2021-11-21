@@ -142,7 +142,6 @@ mobilityware
 modernhealth
 modernize
 mongodb
-motorefi
 moveworks
 mozilla
 narvar
@@ -341,7 +340,6 @@ upwork
 wildlifestudios
 charthop
 picsart
-givewith
 boltv2
 morganfranklinconsultingllc
 effectual
@@ -445,7 +443,6 @@ affinitiv
 workato
 solana
 everbody
-wayup
 neuralink
 mst
 gradle
@@ -458,7 +455,6 @@ sonicwall
 beacon67
 greenpeace
 citizengo
-nasperscorporate
 blockchain
 carerev
 freewill
@@ -467,7 +463,6 @@ smartling
 versprite
 eqhq
 oliver
-ciel
 enova
 cleardata
 si
@@ -540,7 +535,6 @@ wellsky
 sonderaustralia
 lexicondigital
 nextiva
-teaching
 flagshippioneeringinc
 commongroundsworkplace
 onfleet
@@ -548,7 +542,6 @@ preply
 moneytree33
 thoughtspot
 pointdigitalfinance
-learfieldimgcollege
 firstwestern
 floridamedicalclinic
 axiom
@@ -586,7 +579,6 @@ stord13
 plume
 udacity
 purestorage
-startupers
 alarmcom
 konux
 cannondesign
@@ -597,7 +589,6 @@ deliveryherokoreatech
 connatix
 dnli
 glassdoor
-infinidat
 heal
 wizardsofthecoast
 hugeinc
@@ -744,3 +735,14 @@ bubble
 superhuman
 vidmob
 limeade
+motional
+okcoin
+ruggable
+fashionnova
+versussystems
+jellyvision
+ocient39
+caribou
+learfield
+blueowl
+unionrealtime
