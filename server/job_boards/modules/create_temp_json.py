@@ -1,6 +1,6 @@
 import json, sys
 from os.path import isfile
-# from server.job_boards.modules import create_main_json
+
 
 data = []
 scraped = set()

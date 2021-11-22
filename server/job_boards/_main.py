@@ -1,7 +1,6 @@
-# import craigslist_gigs
-from .modules.classes import Create_JSON
+# from .modules.classes import Create_JSON
 from . import craigslist
-from . import greenhouse_io
+# from . import greenhouse_io
 # from . import bloomberg
 from . import bamboohr
 from . import lever_co
@@ -56,8 +55,8 @@ def main():
     bamboohr.main()
     jobvite.main()
     craigslist.get_url(locations)
-    greenhouse_io.main()
     nintendo.main()
+    # greenhouse_io.main()
     # craigslist.get_url_miami(miamis)
     lever_co.main()
     nbc.main()
@@ -98,8 +97,6 @@ def main():
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
 
+
 # main()
-# gitPush()
-
-
 # sys.exit(0)
