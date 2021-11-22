@@ -1,14 +1,14 @@
 import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime
-# from .modules.classes import Update_Key_Values, Create_JSON
-# from .modules import create_temp_json
-# from .modules import update_key_values
-# from .modules import headers as h
-import modules.classes as c
-import modules.create_temp_json as create_temp_json
-import modules.update_key_values as update_key_values
-import modules.headers as h
+from .modules.classes import Update_Key_Values, Create_JSON
+from .modules import create_temp_json
+from .modules import update_key_values
+from .modules import headers as h
+# import modules.classes as c
+# import modules.create_temp_json as create_temp_json
+# import modules.update_key_values as update_key_values
+# import modules.headers as h
 
 
 def get_jobs(item: list):
@@ -73,9 +73,9 @@ def main():
     params = [param.strip() for param in f]
     f.close()
 
-    c.Update_Key_Values.filter_companies()
+    Update_Key_Values.filter_companies()
     get_url(params)
 
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
