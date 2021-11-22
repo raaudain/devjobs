@@ -1,6 +1,6 @@
 import requests, json, sys, time, random
 from datetime import datetime
-from .modules.classes import Create_JSON
+from .modules.classes import Create_JSON, Handle_Jobs
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -47,6 +47,8 @@ def get_results(item: str):
 
             get_jobs(date, apply_url, company_name, position, locations_string)
 
+            # get_job = Handle_Jobs(date, apply_url, company_name, position, locations_string, "Amazon", "https://www.amazon.jobs", "amazon")
+            # get_job.add_job()
 
 def get_url():
     page = 0

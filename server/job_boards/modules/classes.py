@@ -28,7 +28,7 @@ class Page_Not_Found:
 from datetime import datetime, timedelta
 
 class Handle_Jobs:
-    def __init__(self, date: str, apply_url: str, company_name: str, position: str, location: str, source: str, source_url: str, job_board: str, param: str):
+    def __init__(self, date: str, apply_url: str, company_name: str, position: str, location: str, source: str, source_url: str, job_board: str):
         self.date = date
         self.apply_url = apply_url
         self.company_name = company_name
@@ -37,7 +37,6 @@ class Handle_Jobs:
         self.source = source
         self.source_url = source_url
         self.job_board = job_board
-        self.param = param
 
     def add_job(self):
         data = Create_JSON.data
@@ -45,36 +44,60 @@ class Handle_Jobs:
 
         post_date = datetime.timestamp(datetime.strptime(str(self.date), "%Y-%m-%d"))
         
-        data.append({
-            "timestamp": post_date,
-            "title": self.position,
-            "company": self.company_name,
-            "url": self.apply_url,
-            "location": self.location,
-            "source": self.source,
-            "source_url": self.source_url,
-        })
-        scraped.add(self.company_name)
-        print(f"=> {self.job_board}: Added {self.position} for {self.company_name}")
+        if self.apply_url not in scraped:
+            data.append({
+                "timestamp": post_date,
+                "title": self.position,
+                "company": self.company_name,
+                "url": self.apply_url,
+                "location": self.location,
+                "source": self.source,
+                "source_url": self.source_url,
+            })
+            scraped.add(self.company_name)
+            scraped.add(self.apply_url)
+            print(f"=> {self.job_board}: Added {self.position} for {self.company_name}")
 
-    def add_job_filtered(self):
+    def add_job_filtered_by_date(self):
         data = Create_JSON.data
         scraped = Create_JSON.scraped
 
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         post_date = datetime.timestamp(datetime.strptime(str(self.date), "%Y-%m-%d"))
         
-        data.append({
-            "timestamp": post_date,
-            "title": self.position,
-            "company": self.company_name,
-            "url": self.apply_url,
-            "location": self.location,
-            "source": self.source,
-            "source_url": self.source_url,
-        })
-        scraped.add(self.company_name)
-        print(f"=> {self.job_board}: Added {self.position} for {self.company_name}")
+        if self.apply_url not in scraped and age <= post_date and self.company_name not in scraped:
+            data.append({
+                "timestamp": post_date,
+                "title": self.position,
+                "company": self.company_name,
+                "url": self.apply_url,
+                "location": self.location,
+                "source": self.source,
+                "source_url": self.source_url,
+            })
+            scraped.add(self.apply_url)
+            print(f"=> {self.job_board}: Added {self.position} for {self.company_name}")
+
+    def add_job_filtered_by_company_name(self):
+        data = Create_JSON.data
+        scraped = Create_JSON.scraped
+
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
+        post_date = datetime.timestamp(datetime.strptime(str(self.date), "%Y-%m-%d"))
+        
+        if self.apply_url not in scraped and age <= post_date:
+            data.append({
+                "timestamp": post_date,
+                "title": self.position,
+                "company": self.company_name,
+                "url": self.apply_url,
+                "location": self.location,
+                "source": self.source,
+                "source_url": self.source_url,
+            })
+            scraped.add(self.company_name)
+            scraped.add(self.apply_url)
+            print(f"=> {self.job_board}: Added {self.position} for {self.company_name}")
 
 
 from bs4 import BeautifulSoup
