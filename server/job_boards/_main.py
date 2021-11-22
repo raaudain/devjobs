@@ -93,8 +93,8 @@ def main():
     # dice.main()
     builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
-    # create_main_json.createJSON()
-    Create_JSON.create_file()
+    create_main_json.createJSON()
+    # Create_JSON.create_file()
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
 
