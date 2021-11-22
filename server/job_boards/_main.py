@@ -1,4 +1,5 @@
 # import craigslist_gigs
+from .modules.classes import Create_JSON
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
@@ -92,7 +93,8 @@ def main():
     # dice.main()
     builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
-    create_main_json.createJSON()
+    # create_main_json.createJSON()
+    Create_JSON.create_file()
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
 

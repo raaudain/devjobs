@@ -3,8 +3,10 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
+# import modules.classes as c
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
@@ -80,20 +82,23 @@ def get_url(companies: list):
             if count % 20 == 0: time.sleep(5)
             count+=1
         elif response.status_code == 404:
-            f = open("./data/params/greenhouse_io.txt", "r+")
-            params = [param.strip() for param in f]
-            f.truncate(0)
-            f.close()
+            # f = open("./data/params/greenhouse_io.txt", "r+")
+            # params = [param.strip() for param in f]
+            # f.truncate(0)
+            # f.close()
 
-            file = open("./data/params/greenhouse_io.txt", "w")
-            error = open("./data/params/404.txt", "a")
-            for p in params:
-                if p != name: 
-                    file.write(p+"\n")
-                else:
-                    error.write(p+"\n")
-            file.close()
-            error.close()
+            # file = open("./data/params/greenhouse_io.txt", "w")
+            # error = open("./data/params/404.txt", "a")
+            # for p in params:
+            #     if p != name: 
+            #         file.write(p+"\n")
+            #     else:
+            #         error.write(p+"\n")
+            # file.close()
+            # error.close()
+
+            not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
+            not_found.remove_unwanted()
         else:
             print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
 
@@ -105,5 +110,6 @@ def main():
 
     get_url(companies)
 
-# main()
-# sys.exit(0)
+
+main()
+sys.exit(0)

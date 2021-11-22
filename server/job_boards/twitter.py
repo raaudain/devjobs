@@ -4,9 +4,9 @@ from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 
 
-data = create_temp_json.data
+def get_jobs(date: str, url: str, company: str, position: str, location: str):
+    data = create_temp_json.data
 
-def getJobs(date, url, company, position, location):
     date = str(date)
     title = position
     company = company
@@ -29,7 +29,7 @@ def getJobs(date, url, company, position, location):
     print(f"=> twitter: Added {title} for {company}")
 
 
-def getResults(item):
+def get_results(item: str):
     jobs = item["results"]
 
     for data in jobs:
@@ -40,9 +40,10 @@ def getResults(item):
         locations = ""
         for i in data["locations"]: locations += i["title"]+", "
         locations_string = locations.rstrip(", ")
-        getJobs(date, apply_url, company_name, position, locations_string)
+        get_jobs(date, apply_url, company_name, position, locations_string)
 
-def getURL():
+
+def get_url():
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     url = "https://careers.twitter.com/content/careers-twitter/en/roles.careers.search.json?location=&team=careers-twitter:sr/team/software-engineering,careers-twitter:sr/team/it-it-enterprise-applications,careers-twitter:sr/team/data-science-and-analytics,careers-twitter:sr/team/customer-support-and-operations&offset=0&limit=1000&sortBy=modified&asc=false"
@@ -50,16 +51,14 @@ def getURL():
 
     if response.ok:
         data = json.loads(response.text)
-        getResults(data)
-    else:
+        get_results(data)
+    else: 
         print("=> twitter: Error - Response status", response.status_code)
-    
-    # print(data)
-     
 
 
 def main():
-    getURL()
+    get_url()
+
 
 # main()
 # sys.exit(0)

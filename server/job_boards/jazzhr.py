@@ -1,6 +1,7 @@
 import requests, sys, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
+from .modules.classes import Page_Not_Found
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -54,8 +55,13 @@ def get_url(companies: list):
         url = f"https://{company}.applytojob.com"
         response = requests.get(url, headers=headers)
 
-        if response.ok: get_results(response.text, company)
-        else: f"Error for {company}. Status code: {response.status_code}"
+        if response.ok: 
+            get_results(response.text, company)
+        elif response.status_code == 404:
+            not_found = Page_Not_Found("./data/params/jazzhr.txt", company)
+            not_found.remove_unwanted()
+        else: 
+            f"Error for {company}. Status code: {response.status_code}"
 
         if page % 10 == 0: time.sleep(5)
                 

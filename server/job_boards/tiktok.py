@@ -45,6 +45,7 @@ def getJobs(date, apply_url, company_name, position, locations_string):
         scraped.add(url)
         print(f"=> tiktok: Added {title}")
 
+
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("a", {"data-id":True})
@@ -57,6 +58,7 @@ def getResults(item):
         locations_string = i.find("div", class_="subTitle__3sRa3 positionItem-subTitle").contents[0]
         
         getJobs(date, apply_url, company_name, position, locations_string)
+
 
 def getURL():
     keywords = ["engineer", "data ", "developer"] 
