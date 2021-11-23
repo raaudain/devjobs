@@ -141,7 +141,10 @@ class Create_JSON:
     main = "./data/data.json"
 
     def __init__(self) -> None:
-        pass
+        self.data = []
+        self.scraped = set()
+        self.temp = "./data/temp/temp_data.json"
+        self.main = "./data/data.json"
 
     def create_temp_file(self):
         # temp = "./data/temp/temp_data.json"
