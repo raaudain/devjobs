@@ -137,24 +137,19 @@ from os.path import isfile
 class Create_JSON:
     data = []
     scraped = set()
-    temp = "./data/temp/temp_data.json"
-    main = "./data/data.json"
 
-    def __init__(self) -> None:
-        pass
+    def create_temp_file(data):
+        temp = "./data/temp/temp_data.json"
 
-    def create_temp_file(self):
-        # temp = "./data/temp/temp_data.json"
-
-        if isfile(self.temp):
+        if isfile(temp):
             print("=> temp_data.json: Deleting old content")
-            t = open(self.temp, "r+")
+            t = open(temp, "r+")
             t.truncate(0)
             t.close()
 
-        with open(self.temp, "a", encoding="utf-8") as file:
+        with open(temp, "a", encoding="utf-8") as file:
             print("=> temp_data.json: Generating new content")
-            json.dump(self.data, file, ensure_ascii=False, indent=4)
+            json.dump(data, file, ensure_ascii=False, indent=4)
 
     def create_file():
             temp = "./data/temp/temp_data.json"

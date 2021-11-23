@@ -16,7 +16,6 @@ podsights
 portchain
 noblepro
 mailgun
-tailscale
 borrowell
 faithlife
 oviahealth
