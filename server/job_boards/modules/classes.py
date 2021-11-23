@@ -135,10 +135,10 @@ import json
 from os.path import isfile
 
 class Create_JSON:
-    data = []
-    scraped = set()
-    temp = "./data/temp/temp_data.json"
-    main = "./data/data.json"
+    # data = []
+    # scraped = set()
+    # temp = "./data/temp/temp_data.json"
+    # main = "./data/data.json"
 
     def __init__(self) -> None:
         self.data = []
