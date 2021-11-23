@@ -162,12 +162,10 @@ bmlltech
 landinsight
 finexio
 conversion
-triagnosys
 within3
 hussle
 instanda
 tado
-douleutaras
 trala
 itsasap
 daybreaker
@@ -331,7 +329,6 @@ ipricegroup
 skimlinks
 winnow
 haus
-tonic
 elvie
 vezeeta
 ubteam
@@ -416,7 +413,6 @@ tgn
 wwc
 labgenius
 kroo
-mering
 mosaiclabs
 nuvei
 augmenta
@@ -505,7 +501,6 @@ gleesonllc
 agorapulse
 simulate
 clickatell
-avex
 jointacademy
 adomik
 findmypast

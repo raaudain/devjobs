@@ -94,8 +94,8 @@ def getURL():
 
                 
 
-        except ConnectionResetError as error:
-            print(f"=> workable: Failed for {company}. Status code: {response.status_code}: {error}.")
+        except:
+            print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
             pass
         
 
