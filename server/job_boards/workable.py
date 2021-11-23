@@ -60,41 +60,43 @@ def getURL():
     for company in companies:
         token = "0"
 
-        while token:
-            headers = {"User-Agent": random.choice(h)}
-            url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
-            url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
-            payload = {
-                "query":"engineer",
-                "location":[],
-                "department":[],
-                "worktype":[],
-                "remote":[],
-                "token":token
-            }
+        try:
+            while token:
+                headers = {"User-Agent": random.choice(h)}
+                url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
+                url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
+                payload = {
+                    "query":"engineer",
+                    "location":[],
+                    "department":[],
+                    "worktype":[],
+                    "remote":[],
+                    "token":token
+                }
 
-            response = requests.post(url, json=payload, headers=headers)
-            if response.ok:
+                response = requests.post(url, json=payload, headers=headers)
+                # if response.ok:
+                if response.status_code == 404:
+                    not_found = Page_Not_Found("./data/params/workable.txt", company)
+                    not_found.remove_unwanted()
+
                 data = json.loads(response.text)
                 name = json.loads(requests.get(url2, headers=headers).text)["name"]
 
                 getResults(data, company, name)
 
-                if "nextPage" in data:
-                    token = data["nextPage"]
-                else:
-                    token = ""
+                if "nextPage" in data: token = data["nextPage"]
+                else: token = ""
                 
-                if count % 3 == 0:
-                    time.sleep(5)
+                if count % 3 == 0: time.sleep(10)
                 
                 count+=1
-            elif response.status_code == 404:
-                not_found = Page_Not_Found("./data/params/workable.txt", company)
-                not_found.remove_unwanted()
-            else:
-                print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
+
                 
+
+        except ConnectionResetError as error:
+            print(f"=> workable: Failed for {company}. Status code: {response.status_code}: {error}.")
+            pass
         
 
 
