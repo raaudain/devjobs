@@ -12,7 +12,7 @@ class Page_Not_Found:
         f.truncate(0)
         f.close()
 
-        file = open("./data/params/greenhouse_io.txt", "w")
+        file = open(file_path, "w")
         error = open("./data/params/404.txt", "a")
         
         for p in params:

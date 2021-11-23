@@ -1,10 +1,10 @@
 import requests, json, sys, random
 from datetime import datetime
 from bs4 import BeautifulSoup
-# from .modules import create_temp_json
-# from .modules import headers as h
-import modules.create_temp_json as create_temp_json
-import modules.headers as h
+from .modules import create_temp_json
+from .modules import headers as h
+# import modules.create_temp_json as create_temp_json
+# import modules.headers as h
 
 
 def get_jobs(url: str, company: str, position: str, location: str):
@@ -57,5 +57,5 @@ def get_url():
 def main():
     get_url()
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)

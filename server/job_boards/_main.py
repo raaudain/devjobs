@@ -1,6 +1,6 @@
-# from .modules.classes import Create_JSON
+from .modules.classes import Create_JSON
 from . import craigslist
-# from . import greenhouse_io
+from . import greenhouse_io
 # from . import bloomberg
 from . import bamboohr
 from . import lever_co
@@ -56,7 +56,7 @@ def main():
     jobvite.main()
     craigslist.get_url(locations)
     nintendo.main()
-    # greenhouse_io.main()
+    greenhouse_io.main()
     # craigslist.get_url_miami(miamis)
     lever_co.main()
     nbc.main()
@@ -92,8 +92,8 @@ def main():
     # dice.main()
     builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
-    create_main_json.createJSON()
-    # Create_JSON.create_file()
+    # create_main_json.createJSON()
+    Create_JSON.create_file()
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
 

@@ -1,5 +1,6 @@
 from datetime import datetime
 import requests, json, sys, time, random
+from .modules.classes import Page_Not_Found
 from .modules.headers import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -40,8 +41,6 @@ def getJobs(date, url, company, position, location, param):
 def getResults(item, param, company):
     jobs = item["results"]
 
-    # print(jobs)
-
     for data in jobs:
         if "Software " in data["title"] or "Support " in data["title"] or "Front" in data["title"] or "Data " in data["title"] or "Back" in data["title"] or "Full" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"]or "Tech " in data["title"] or "devops" in data["title"].lower():
             date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
@@ -59,25 +58,23 @@ def getURL():
     count = 1
 
     for company in companies:
+        token = "0"
 
-        try:
-            token = "0"
+        while token:
+            headers = {"User-Agent": random.choice(h)}
+            url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
+            url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
+            payload = {
+                "query":"engineer",
+                "location":[],
+                "department":[],
+                "worktype":[],
+                "remote":[],
+                "token":token
+            }
 
-            while token:
-                headers = {"User-Agent": random.choice(h)}
-                url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
-                url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
-                payload = {
-                    "query":"engineer",
-                    "location":[],
-                    "department":[],
-                    "worktype":[],
-                    "remote":[],
-                    "token":token
-                }
-
-                response = requests.post(url, json=payload, headers=headers)
-
+            response = requests.post(url, json=payload, headers=headers)
+            if response.ok:
                 data = json.loads(response.text)
                 name = json.loads(requests.get(url2, headers=headers).text)["name"]
 
@@ -92,10 +89,12 @@ def getURL():
                     time.sleep(5)
                 
                 count+=1
-
-        except:
-            print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
-            pass
+            elif response.status_code == 404:
+                not_found = Page_Not_Found("./data/params/workable.txt", company)
+                not_found.remove_unwanted()
+            else:
+                print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
+                
         
 
 
