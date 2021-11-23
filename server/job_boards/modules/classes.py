@@ -135,16 +135,13 @@ import json
 from os.path import isfile
 
 class Create_JSON:
-    # data = []
-    # scraped = set()
-    # temp = "./data/temp/temp_data.json"
-    # main = "./data/data.json"
+    data = []
+    scraped = set()
+    temp = "./data/temp/temp_data.json"
+    main = "./data/data.json"
 
     def __init__(self) -> None:
-        self.data = []
-        self.scraped = set()
-        self.temp = "./data/temp/temp_data.json"
-        self.main = "./data/data.json"
+        pass
 
     def create_temp_file(self):
         # temp = "./data/temp/temp_data.json"
@@ -159,18 +156,18 @@ class Create_JSON:
             print("=> temp_data.json: Generating new content")
             json.dump(self.data, file, ensure_ascii=False, indent=4)
 
-    def create_file(self):
-            # temp = "./data/temp/temp_data.json"
+    def create_file():
+            temp = "./data/temp/temp_data.json"
 
-            f = open(self.temp)
+            f = open(temp)
             data = json.load(f)
             f.close()
 
-            # main = "./data/data.json"
+            main = "./data/data.json"
 
-            if isfile(self.main):
+            if isfile(main):
                 print("=> data.json: Deleting old content")
-                t = open(self.main, "r+")
+                t = open(main, "r+")
                 t.truncate(0)
                 t.close()
 
