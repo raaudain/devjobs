@@ -173,7 +173,7 @@ class Create_JSON:
 
             ordered_data = sorted(data, key=lambda i: i["timestamp"], reverse=True)
 
-            with open(self.main, "a", encoding="utf-8") as file:
+            with open(main, "a", encoding="utf-8") as file:
                 print("=> data.json: Generating new content")
                 json.dump(ordered_data, file, ensure_ascii=False, indent=4)
 
