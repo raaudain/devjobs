@@ -1,4 +1,5 @@
 from .modules.classes import Create_JSON
+from . import comeet
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
@@ -52,6 +53,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    comeet.main()
     bamboohr.main()
     workable.main()
     jobvite.main()

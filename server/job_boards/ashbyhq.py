@@ -10,7 +10,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": post_date,
@@ -31,7 +31,7 @@ def get_results(item: str, param: str, name: str):
 
     for data in jobs:
         if "Engineer" in data["departmentName"] or "Data" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"] and "Electrical" not in data["title"] and "HVAC" not in data["title"] and "Mechnical" not in data["title"]:
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
             job_id = data["id"].strip()
             apply_url = f"https://jobs.ashbyhq.com/{param}/{job_id}"
             company_name = name

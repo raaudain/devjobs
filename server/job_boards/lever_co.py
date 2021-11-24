@@ -13,13 +13,13 @@ def get_jobs(item: str, company: str, source_url: str):
     scraped = create_temp_json.scraped
 
     for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         title = job.find("h5", {"data-qa": "posting-name"}).text
         company = company
         url = job["href"]
         location = job.find("span", {"class": "sort-by-location posting-category small-category-label"}).text if job.find("span", {"class": "sort-by-location posting-category small-category-label"}) else None
 
-        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
         if url not in scraped:
             data.append({

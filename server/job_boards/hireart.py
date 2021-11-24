@@ -10,8 +10,8 @@ from .modules import headers as h
 def get_jobs(url: str, company: str, position: str, location: str):
     data = create_temp_json.data
 
-    date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": post_date,

@@ -8,6 +8,7 @@ from .modules import create_temp_json
 
 
 data = create_temp_json.data
+scraped = create_temp_json.scraped
 # header = headers.headers
 
 f = open(f"./data/params/workable.txt", "r")
@@ -35,6 +36,7 @@ def getJobs(date, url, company, position, location, param):
         "source_url": f"https://apply.workable.com/{param}/",
         "category": "job"
     })
+    scraped.add(company)
     print(f"=> workable: Added {title} for {company}")
 
 

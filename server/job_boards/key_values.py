@@ -25,13 +25,13 @@ def get_jobs(item: list):
     exclude.add("")
 
     for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         title = job.find("p", {"class": "open-position--job-title"}).text
         company = job.find("a")["data-company"]
         url = job.find("a", href=True)["href"]
         location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
-        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
         if title not in exclude and url not in scraped and company not in scraped:
             data.append({

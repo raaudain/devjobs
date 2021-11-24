@@ -16,7 +16,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
     # data = Create_Temp_JSON.data
     # scraped = Create_Temp_JSON.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": post_date,
@@ -39,8 +39,8 @@ def get_results(item: str, param: str):
     company = soup.find("img")["alt"]
 
     for d in data:
-        if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+        if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
+            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
             apply_url = f"https://{param}.bamboohr.com/jobs/view.php?id={d['id']}"
             company_name = company.strip()
             position = d["jobOpeningName"].strip()
@@ -55,7 +55,7 @@ def get_url(companies: list):
     for company in companies:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://{company}.bamboohr.com/jobs/"
-        response = requests.post(url, headers=headers)
+        response = requests.get(url, headers=headers)
 
         if response.ok:
             get_results(response.text, company)
