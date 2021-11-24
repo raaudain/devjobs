@@ -5,6 +5,7 @@ from .modules import create_temp_json
 
 
 data = create_temp_json.data
+scraped = create_temp_json.scraped
 
 def getJobs(date, url, company, position, location):
     date = str(date)
@@ -16,17 +17,18 @@ def getJobs(date, url, company, position, location):
     # print(date, title, company, url, location)
     postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
     
-    data.append({
-        "timestamp": postDate,
-        "title": title,
-        "company": company,
-        "url": url,
-        "location": location,
-        "source": "Workaline",
-        "source_url": "https://www.workaline.com",
-        "category": "job"
-    })
-    print(f"=> workline: Added {title} for {company}")
+    if company not in scraped:
+        data.append({
+            "timestamp": postDate,
+            "title": title,
+            "company": company,
+            "url": url,
+            "location": location,
+            "source": "Workaline",
+            "source_url": "https://www.workaline.com",
+            "category": "job"
+        })
+        print(f"=> workline: Added {title} for {company}")
 
 
 def getResults(item):
