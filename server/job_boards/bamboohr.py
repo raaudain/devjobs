@@ -36,7 +36,7 @@ def get_results(item: str, param: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find(attrs={"type": "json"}).string
     data = json.loads(results)
-    company = soup.find("img")["alt"]
+    company = soup.find("img")["alt"] if soup.find("img")["alt"] else soup.find("meta", {"property": "og:description"})["content"].replace("Take a look at the current openings at", "").strip()
 
     for d in data:
         if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
