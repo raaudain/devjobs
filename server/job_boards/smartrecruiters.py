@@ -11,7 +11,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+    postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
 
     data.append({
         "timestamp": postDate,
