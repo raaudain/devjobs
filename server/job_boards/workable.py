@@ -90,7 +90,7 @@ def getURL():
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 3 == 0: time.sleep(10)
+                if count % 10 == 0: time.sleep(5)
                 
                 count+=1
 

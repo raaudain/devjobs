@@ -9,7 +9,7 @@ from .modules import headers as h
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
     data = create_temp_json.data
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": post_date,
@@ -34,7 +34,7 @@ def get_results(item: str, name: str):
 
         try:
             if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text:
-                date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
                 apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
                 company_name = company.strip()
                 position = r.find("h2").text.strip()

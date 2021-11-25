@@ -6,6 +6,8 @@ from .modules import create_temp_json
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, source_url: str):
     data = create_temp_json.data
+    scraped = create_temp_json.scraped
+
     postDate = datetime.timestamp(datetime.strptime(str(date), "%a, %d %b %Y %H:%M:%S %z"))
 
     data.append({
@@ -18,6 +20,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, so
         "source_url": source_url,
         "category": "job"
     })
+    scraped.add(company)
     print(f"=> recruiterbox: Added {position} for {company}")
 
 

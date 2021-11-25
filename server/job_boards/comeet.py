@@ -47,7 +47,7 @@ def get_results(item: str, param: str):
             city = f"{d['location']['city'].strip()}, " if d["location"]["city"] else ""
             state = f"{d['location']['state'].strip()}, " if d["location"]["state"] else ""
             country = f"{d['location']['country'].strip()}" if d["location"]["country"] else ""
-            locations_string = f"{city}{state}{country} / Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
+            locations_string = f"{city}{state}{country} | Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
             
             get_jobs(date, apply_url, company_name, position, locations_string, param)
 
@@ -64,9 +64,9 @@ def get_url(companies: list):
             get_results(response.text, company)
             if page % 10 == 0: time.sleep(5)   
             page+=1
-        # elif response.status_code == 404:
-        #     not_found = c.Page_Not_Found("./data/params/comeet.txt", company)
-        #     not_found.remove_unwanted()
+        elif response.status_code == 404:
+            not_found = Page_Not_Found("./data/params/comeet.txt", company)
+            not_found.remove_unwanted()
         else:
             print(f"=> comeet: Failed to scrape {company}. Status code: {response.status_code}")
 

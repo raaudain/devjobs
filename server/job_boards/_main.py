@@ -1,5 +1,6 @@
 from .modules.classes import Create_JSON
 from . import comeet
+from . import eightfold
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
@@ -53,6 +54,8 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    eightfold.main()
+    smartrecruiters.main()
     bamboohr.main()
     comeet.main()
     workable.main()
@@ -76,7 +79,6 @@ def main():
     # craigslist.get_url_miami_network(miamis)
     amazon.main()
     twitter.main()
-    smartrecruiters.main()
     jazzhr.main()
     usajobs.main()
     key_values.main()

@@ -2,30 +2,20 @@ from datetime import datetime
 import requests, sys, json, time, random
 from .modules.headers import headers as h
 from .modules import create_temp_json
+from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as headers
 
 
-
-data = create_temp_json.data
-
-
-f = open(f"./data/params/smartrecruiters.txt", "r")
-companies = [company.strip() for company in f]
-f.close()
-
-def getJobs(date, url, company, position, location, name):
-    date = str(date)
-    title = position
-    company = company
-    url = url
-    location = location
+def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
     postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
     data.append({
         "timestamp": postDate,
-        "title": title,
+        "title": position,
         "company": company,
         "url": url,
         "location": location,
@@ -33,10 +23,11 @@ def getJobs(date, url, company, position, location, name):
         "source_url": f"https://careers.smartrecruiters.com/{name}/",
         "category": "job"
     })
-    print(f"=> smartrecruiters: Added {title} for {company}")
+    scraped.add(company)
+    print(f"=> smartrecruiters: Added {position} for {company}")
 
 
-def getResults(item, name):
+def get_results(item: str, name: str):
     data = item["content"]
 
     for i in data:
@@ -49,63 +40,40 @@ def getResults(item, name):
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
             country = i["location"]["country"].upper()
-            remote = " / Remote" if i["location"]["remote"] else ""
+            remote = " | Remote" if i["location"]["remote"] else ""
             locations_string = f"{city}{region}{country}{remote}"
-            getJobs(date, apply_url, company_name, position, locations_string, name)
 
-    # for i in item:
-    #     try:
-    #         if "Engineer" in i["text"] or "Tech " in i["text"] or "Web" in i["text"] or "IT" in i["text"] or "Engineer" in i["categories"]["team"] or "Engineer" in i["categories"]["department"]:
-    #             # use true division by 1e3 (float 1000)
-    #             date = datetime.fromtimestamp(i["createdAt"] / 1e3)
-    #             apply_url = i["hostedUrl"].strip()
-    #             company_name = name
-    #             position = i["text"].strip()
-    #             locations_string = i["categories"]["location"].strip()
-                
-    #             getJobs(date, apply_url, company_name, position, locations_string)
-    #     except:
-    #         continue
+            get_jobs(date, apply_url, company_name, position, locations_string, name)
 
-def getURL():
 
+def get_url(companies: list):
     count = 1
 
     for name in companies:
         headers = {"User-Agent": random.choice(h)}
-
         url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
-
+        # url = f"https://api.smartrecruiters.com/v1/companies/Zscaler/postings/"
         response = requests.get(url, headers=headers)
         
-        try:
+        if response.ok:
             data = json.loads(response.text)
-
-            getResults(data, name)
-
-            if count % 5 == 0:
-                time.sleep(5)
-
-
-            # print(response.status_code, count)
+            get_results(data, name)
+            if count % 5 == 0: time.sleep(5)
             count += 1
-        except:
-            print(f"Failed to scraped: {name}")
-        
-    
-    # url = f"https://api.smartrecruiters.com/v1/companies/Zscaler/postings/"
-
-    # response = requests.get(url, headers=headers).text
-
-    # data = json.loads(response)
-
-    # getResults(data)
-    
-    # print(data)
+        elif response.status_code == 404:
+            not_found = Page_Not_Found("./data/params/smartrecruiters.txt", name)
+            not_found.remove_unwanted()
+        else:
+            print(f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
 
 
 def main():
-    getURL()
+    f = open(f"./data/params/smartrecruiters.txt", "r")
+    companies = [company.strip() for company in f]
+    f.close()
+
+    get_url(companies)
+
 
 # main()
 # sys.exit(0)
