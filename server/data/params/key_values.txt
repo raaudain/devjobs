@@ -14,7 +14,6 @@
 /rune-labs
 /remix
 /leapfin
-/automattic
 /duckduckgo
 /carbon-five
 /upstatement

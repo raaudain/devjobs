@@ -30,10 +30,10 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
 
 def get_results(item: str, param: str):
     jobs = item["positions"]
-    company = item["branding"]["companyName"] if item["branding"]["companyName"] == True else param.upper()
+    company = item["branding"]["companyName"] if "companyName" in item["branding"] else param.upper()
 
     for j in jobs:
-        if "Engineer" in j["name"] or "Data" in j["name"] or "Support" in j["name"] or "IT" in j["name"] or "Programmer" in j["name"] or "QA" in j["name"] or "Software" in j["name"]  or "Tech " in j["name"] or "Help" in j["name"] or "Desk" in j["name"] or "Developer" in j["name"] and ("Mechnicial" not in j["name"] and "Electrical" not in j["name"] and "Front Desk" not in j["name"] and "Data Entry" not in j["name"] and "Facilities" not in j["name"]):
+        if "Engineer" in j["name"] or "Data" in j["name"] or "Support" in j["name"] or "IT" in j["name"] or "Programmer" in j["name"] or "QA" in j["name"] or "Software" in j["name"]  or "Tech " in j["name"] or "Help" in j["name"] or "Desk" in j["name"] or "Developer" in j["name"] and ("Mechnicial" not in j["name"] and "Electrical" not in j["name"] and "Front Desk" not in j["name"] and "Data Entry" not in j["name"] and "Facilities" not in j["name"] and "Nurse" not in j["name"]):
             # date = datetime.fromtimestamp(j["t_update"]/1e3)
             date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
             position = j["name"].strip()
