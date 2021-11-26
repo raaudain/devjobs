@@ -34,26 +34,23 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
 
 
 def get_results(item: str, param: str):
-    try:
-        soup = BeautifulSoup(item, "lxml")
-        results = soup.find("title").find_next(attrs={"type": "text/javascript"}).string
-        r = results.split("COMPANY_POSITIONS_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
-        data = json.loads(r)
+    soup = BeautifulSoup(item, "lxml")
+    results = soup.find("title").find_next(attrs={"type": "text/javascript"}).string
+    r = results.split("COMPANY_POSITIONS_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
+    data = json.loads(r)
 
-        for d in data:
-            if "Engineer" in d["name"] or "Data" in d["name"] or "Data" in d["name"] or "IT " in d["name"] or "Tech" in d["name"] or "Support" in d["name"] or "Cloud" in d["name"] or "Software" in d["name"] or "Developer" in d["name"] and ("Electrical" not in d["name"] and "HVAC" not in d["name"] and "Mechnical" not in d["name"] and "Hardware" not in d["name"]):
-                date = datetime.strptime(d["time_updated"], "%Y-%m-%dT%H:%M:%SZ")
-                apply_url = d["url_active_page"]
-                company_name = d["company_name"].strip()
-                position = d["name"].strip()
-                city = f"{d['location']['city'].strip()}, " if d["location"]["city"] else ""
-                state = f"{d['location']['state'].strip()}, " if d["location"]["state"] else ""
-                country = f"{d['location']['country'].strip()}" if d["location"]["country"] else ""
-                locations_string = f"{city}{state}{country} | Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
-                
-                get_jobs(date, apply_url, company_name, position, locations_string, param)
-    except JSONDecodeError as err:
-        print(f"=> comeet: JSON error with {param}. Error: {err}.")
+    for d in data:
+        if "Engineer" in d["name"] or "Data" in d["name"] or "Data" in d["name"] or "IT " in d["name"] or "Tech" in d["name"] or "Support" in d["name"] or "Cloud" in d["name"] or "Software" in d["name"] or "Developer" in d["name"] and ("Electrical" not in d["name"] and "HVAC" not in d["name"] and "Mechnical" not in d["name"] and "Hardware" not in d["name"]):
+            date = datetime.strptime(d["time_updated"], "%Y-%m-%dT%H:%M:%SZ")
+            apply_url = d["url_active_page"]
+            company_name = d["company_name"].strip()
+            position = d["name"].strip()
+            city = f"{d['location']['city'].strip()}, " if d["location"]["city"] else ""
+            state = f"{d['location']['state'].strip()}, " if d["location"]["state"] else ""
+            country = f"{d['location']['country'].strip()}" if d["location"]["country"] else ""
+            locations_string = f"{city}{state}{country} | Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
+            
+            get_jobs(date, apply_url, company_name, position, locations_string, param)
 
 
 def get_url(companies: list):

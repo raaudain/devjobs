@@ -57,12 +57,10 @@ def getURL():
             response = requests.get(url, headers=headers)
 
             print("=> workline: Page", page)
-
             data = json.loads(response.text)
             getResults(data)
 
-            if page % 10 == 0:
-                time.sleep(5)
+            if page % 10 == 0: time.sleep(5)
 
         except:
             continue

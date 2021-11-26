@@ -119,10 +119,11 @@ class Update_Key_Values:
 
         links = soup.find_all("a", {"class": "thumbnail-link"}, href=True)
 
-        unwanted = ("/wealthfront", "/github", "/instacart", "/readme", "/seesaw", "/nova-credit", "/academia", "/angellist", "/honor", "/render", "/automatticcareers", "/doppler", "/sparrow", "/cointracker", "/circleci", "/curai", "/qualia", "/betterup", "/modeanalytics", "/grouparoo", "/humanfirst", "/goodnotes", "/hatch", "/point", "/hipcamp", "/seesaw", "/airtable", "/covariant", "/universe", "/alto", "/jane", "/lightstep", "/digit", "/readme", "/cameo", "/gusto", "/enigma", "/handshake", "/aptible", "/newfront", "/angaza", "/launchdarkly", "/lever", "/stitchfix", "/checkr", "/stitch-fix", "/flexport", "/nexhealth", "/connected", "/flickr", "/mode", "/brex", "/culture-biosciences", "/iora-health", "/routific", "/picnichealth", "/nerdwallet", "/vanta", "/treasury-prime", "/smugmug-flickr", "/asana", "/newfront", "/classy")
-        # f = open("./data/params/key_values_unwanted.txt")
+        # unwanted = ("/wealthfront", "/github", "/instacart", "/readme", "/seesaw", "/nova-credit", "/academia", "/angellist", "/honor", "/render", "/automatticcareers", "/doppler", "/sparrow", "/cointracker", "/circleci", "/curai", "/qualia", "/betterup", "/modeanalytics", "/grouparoo", "/humanfirst", "/goodnotes", "/hatch", "/point", "/hipcamp", "/seesaw", "/airtable", "/covariant", "/universe", "/alto", "/jane", "/lightstep", "/digit", "/readme", "/cameo", "/gusto", "/enigma", "/handshake", "/aptible", "/newfront", "/angaza", "/launchdarkly", "/lever", "/stitchfix", "/checkr", "/stitch-fix", "/flexport", "/nexhealth", "/connected", "/flickr", "/mode", "/brex", "/culture-biosciences", "/iora-health", "/routific", "/picnichealth", "/nerdwallet", "/vanta", "/treasury-prime", "/smugmug-flickr", "/asana", "/newfront", "/classy", "/automattic")
+        f = open("./data/params/key_values_unwanted.txt")
         # unwanted = zip(*[w.strip() for w in f])
-        # f.close()
+        unwanted = [w.strip() for w in f]
+        f.close()
 
         for link in links:
             if link["href"] not in unwanted:

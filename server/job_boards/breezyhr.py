@@ -9,6 +9,8 @@ from .modules import headers as h
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
     data = create_temp_json.data
+    scraped = create_temp_json.scraped
+
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
@@ -21,6 +23,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "source_url": f"https://{name}.breezy.hr",
         "category": "job"
     })
+    scraped.add(company)
     print(f"=> breezyhr: Added {position} for {company}")
 
 
@@ -38,11 +41,18 @@ def get_results(item: str, name: str):
                 apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
                 company_name = company.strip()
                 position = r.find("h2").text.strip()
-                locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_REMOTE%", "Remote") if "%LABEL_POSITION_TYPE_REMOTE%" in r.find("li", class_="location").text else r.find("li", class_="location").text.strip()
+                locations_string = "See description"
+                
+                if "%LABEL_POSITION_TYPE_REMOTE%" in r.find("li", class_="location").text:
+                    locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_REMOTE%", "Remote")
+                elif "%LABEL_POSITION_TYPE_WORLDWIDE%" in r.find("li", class_="location").text:
+                    locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_WORLDWIDE%", "Remote")
+                else:
+                    locations_string = r.find("li", class_="location").text.strip()
 
                 get_jobs(date, apply_url, company_name, position, locations_string, name)
-        except AttributeError:
-            print(f"=> breezyhr: AttributeError: 'NoneType' object has no attribute 'text' for {company}")
+        except AttributeError as err:
+            print(f"=> breezyhr: {err} for {name}")
             pass
 
 
