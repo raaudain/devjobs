@@ -46,7 +46,7 @@ def get_results(item: str, param: str):
 
     for d in data:
         title = d.find("td", class_="posTitle reqitem ReqRowClick").text
-        if "Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Cloud" in title or "Software" in title or "Developer" in title and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title and "Data Entry" not in title and "Medication" not in title and "Environmental" not in title and "Nurse" not in title and "Manufactur" not in title and "Maintenance" not in title and "Health" not in title and "Civil" not in title):
+        if "Engineer" in title or "Data" in title or "IT " in title or "Support" in title or "Cloud" in title or "Software" in title or "Developer" in title and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title and "Data Entry" not in title and "Medication" not in title and "Environmental" not in title and "Nurse" not in title and "Manufactur" not in title and "Maintenance" not in title and "Health" not in title and "Civil" not in title):
             date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
             apply_url = f"https://{param}.hrmdirect.com/employment/"+d.find("a", href=True)["href"]
             company_name = company

@@ -68,7 +68,7 @@ def getURL():
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
-                    "query":"engineer",
+                    "query":"engineer, developer",
                     "location":[],
                     "department":[],
                     "worktype":[],
@@ -90,7 +90,7 @@ def getURL():
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 10 == 0: time.sleep(5)
+                if count % 5 == 0: time.sleep(10)
                 
                 count+=1
 

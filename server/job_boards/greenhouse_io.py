@@ -27,16 +27,10 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "category": "job"
     })
     scraped.add(company)
-    # if company.lower() not in words:
-    #     a = open(words, "a")
-    #     a.write(f"{company}\n")
-    #     a.close()
-
     print(f"=> greenhouse.io: Added {position} for {company}")
 
 
 def get_results(item: str, name: str, company: str):
-    # data = item["departments"]
     jobs = item["jobs"]
 
     # for d in data:
@@ -69,34 +63,16 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-
         response = requests.get(url, headers=headers)
         res = requests.get(url2, headers=headers)
 
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
-
             if data and company: get_results(data, name, company)
-        
             if count % 20 == 0: time.sleep(5)
             count+=1
         elif response.status_code == 404:
-            # f = open("./data/params/greenhouse_io.txt", "r+")
-            # params = [param.strip() for param in f]
-            # f.truncate(0)
-            # f.close()
-
-            # file = open("./data/params/greenhouse_io.txt", "w")
-            # error = open("./data/params/404.txt", "a")
-            # for p in params:
-            #     if p != name: 
-            #         file.write(p+"\n")
-            #     else:
-            #         error.write(p+"\n")
-            # file.close()
-            # error.close()
-
             not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
             not_found.remove_unwanted()
         else:

@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -57,7 +58,11 @@ def get_url(companies: list):
             print("=> jobvite: Connection error:", err)
             break
 
-        if response.ok: get_results(response.text, name)
+        if response.ok: 
+            get_results(response.text, name)
+        elif response.status_code == 404:
+            not_found = Page_Not_Found("./data/params/jobvite.txt", name)
+            not_found.remove_unwanted()
         else: 
             res = requests.get(f"https://jobs.jobvite.com/{name}", headers=headers)
             if res.ok: get_results(res.text, name)

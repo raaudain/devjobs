@@ -12,7 +12,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": post_date,
@@ -35,8 +35,8 @@ def get_results(item: str, name: str):
 
     if results and company:
         for r in results:
-            if "Engineer" in r.find("a").text or "Data" in r.find("a").text or "IT " in r.find("a") or "Support" in r.find("a").text:
-                date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+            if "Engineer" in r.find("a").text or "Data" in r.find("a").text or "IT " in r.find("a") or "Support" in r.find("a").text or "Developer" in r.find("a").text or "Cloud" in r.find("a").text or "Software" in r.find("a").text:
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
                 apply_url = r.find("a")["href"].strip()
                 company_name = company.strip()
                 position = r.find("a").text.strip()
