@@ -30,7 +30,7 @@ def get_jobs(date: str, apply_url: str, company_name: str, position: str, locati
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all(class_="jv-job-list") if soup.find_all(class_="jv-job-list") else None
-    company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip()
+    company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip() if soup.find("title") else None
 
     if results and company:
         for r in results:
