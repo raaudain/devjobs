@@ -1,3 +1,4 @@
+seattlegenetics
 qualys
 biomarin
 viz
@@ -162,7 +163,6 @@ syspro
 cityofkitchener
 drillinginfo
 steelseriescareers
-seattlegenetics
 goodleap
 hnicareers
 northerntool
