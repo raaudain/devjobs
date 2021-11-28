@@ -2,6 +2,7 @@ import requests, json, sys, time, random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -30,7 +31,7 @@ def get_results(item: str, param: str, name: str):
     jobs = item["data"]["jobPostingBriefs"]
 
     for data in jobs:
-        if "Engineer" in data["departmentName"] or "Data" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"] and "Electrical" not in data["title"] and "HVAC" not in data["title"] and "Mechnical" not in data["title"]:
+        if "Engineer" in data["departmentName"] or "Data" in data["departmentName"] or "Data" in data["title"] or "IT " in data["title"] or "Tech" in data["title"] or "Support" in data["title"] or "Engineer" in data["title"] or "Developer" in data["title"] and ("Electrical" not in data["title"] and "HVAC" not in data["title"] and "Mechnical" not in data["title"]):
             date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
             job_id = data["id"].strip()
             apply_url = f"https://jobs.ashbyhq.com/{param}/{job_id}"
@@ -70,6 +71,9 @@ def get_url(companies: list):
             get_results(data, company, name)
             if page % 10 == 0: time.sleep(5)   
             page+=1
+        elif response.status_code == 404:
+            not_found = Page_Not_Found("./data/params/ashbyhq.txt", company)
+            not_found.remove_unwanted()
         else:
             print(f"=> ashbyhq: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
 
