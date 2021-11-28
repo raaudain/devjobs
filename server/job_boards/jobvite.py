@@ -29,7 +29,7 @@ def get_jobs(date: str, apply_url: str, company_name: str, position: str, locati
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all(class_="jv-job-list")
+    results = soup.find_all(class_="jv-job-list") if soup.find_all(class_="jv-job-list") else None
     company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip()
 
     if results and company:
@@ -64,7 +64,7 @@ def get_url(companies: list):
             not_found = Page_Not_Found("./data/params/jobvite.txt", name)
             not_found.remove_unwanted()
         else: 
-            res = requests.get(f"https://jobs.jobvite.com/{name}", headers=headers)
+            res = requests.get(f"https://jobs.jobvite.com/{name}/jobs", headers=headers)
             if res.ok: get_results(res.text, name)
             else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
 
