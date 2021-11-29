@@ -129,7 +129,6 @@ klaviyo
 kustomer
 lacework
 legalist
-lendinghome
 litify
 liveramp
 logicmonitor
