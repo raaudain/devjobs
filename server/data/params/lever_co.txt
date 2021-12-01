@@ -223,7 +223,6 @@ dixa
 preset
 uncountable
 tackle
-lambdaschool
 boringcompany
 atomic
 modsquad
@@ -353,7 +352,6 @@ divvypay
 decathlon
 class101
 newwestern
-traderev
 preligens
 happyfresh
 caseware
@@ -370,7 +368,6 @@ tomonetworks
 benchsci
 curology
 zenitech
-incode
 canva
 eventbrite
 brighte
@@ -601,13 +598,11 @@ prolific
 ideasunited
 beamng
 booknooklearning
-jusbrasil
 CoinFlip
 saturn
 devacurl
 mamamoney
 pibenchmark
-tribedynamics
 metabase
 Lottery
 sheerid
