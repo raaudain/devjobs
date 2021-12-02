@@ -45,9 +45,9 @@ def get_results(item: str, param: str):
             apply_url = d["url_active_page"]
             company_name = d["company_name"].strip()
             position = d["name"].strip()
-            city = f"{d['location']['city'].strip()}, " if d["location"]["city"] else ""
-            state = f"{d['location']['state'].strip()}, " if d["location"]["state"] else ""
-            country = f"{d['location']['country'].strip()}" if d["location"]["country"] else ""
+            city = f"{d['location']['city'].strip()}, " if "city" in d["location"] else ""
+            state = f"{d['location']['state'].strip()}, " if "state" in d["location"] else ""
+            country = f"{d['location']['country'].strip()}" if "country" in d["location"] else ""
             locations_string = f"{city}{state}{country} | Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
             
             get_jobs(date, apply_url, company_name, position, locations_string, param)
