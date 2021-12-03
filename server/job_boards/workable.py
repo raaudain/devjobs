@@ -102,8 +102,8 @@ async def getURL():
         
 
 
-def main():
-    asyncio.create_task(getURL())
+async def main():
+    await asyncio.create_task(getURL())
 
 # main()
 # sys.exit(0)
