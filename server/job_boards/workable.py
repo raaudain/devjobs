@@ -90,7 +90,7 @@ async def getURL():
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 5 == 0: asyncio.sleep(10)
+                if count % 5 == 0: await asyncio.sleep(10)
                 
                 count+=1
 
