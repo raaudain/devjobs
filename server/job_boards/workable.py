@@ -7,28 +7,17 @@ from .modules import create_temp_json
 # import modules.headers as headers
 
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
 # header = headers.headers
 
-f = open(f"./data/params/workable.txt", "r")
-companies = [company.strip() for company in f]
-f.close()
+def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
 
-def getJobs(date, url, company, position, location, param):
-    date = str(date)
-    title = position
-    company = company
-    url = url
-    location = location
-
-    # print(date, title, company, url, location)
-
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+    postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     data.append({
         "timestamp": postDate,
-        "title": title,
+        "title": position,
         "company": company,
         "url": url,
         "location": location,
@@ -37,10 +26,10 @@ def getJobs(date, url, company, position, location, param):
         "category": "job"
     })
     scraped.add(company)
-    print(f"=> workable: Added {title} for {company}")
+    print(f"=> workable: Added {position} for {company}")
 
 
-def getResults(item, param, company):
+def get_results(item: str, param: str, company: str):
     jobs = item["results"]
 
     for data in jobs:
@@ -52,11 +41,10 @@ def getResults(item, param, company):
             state = f"{data['location']['city']}, {data['location']['region']}, "
             locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
             
-            getJobs(date, apply_url, company_name, position, locations_string, param)
+            get_jobs(date, apply_url, company_name, position, locations_string, param)
         
 
-async def getURL():
-
+def get_url(companies: list):
     count = 1
 
     for company in companies:
@@ -85,12 +73,12 @@ async def getURL():
                 data = json.loads(response.text)
                 name = json.loads(requests.get(url2, headers=headers).text)["name"]
 
-                getResults(data, company, name)
+                get_results(data, company, name)
 
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 5 == 0: await time.sleep(10)
+                if count % 7 == 0: time.sleep(10)
                 
                 count+=1
 
@@ -102,8 +90,12 @@ async def getURL():
         
 
 
-async def main():
-    await asyncio.create_task(getURL())
+def main():
+    f = open(f"./data/params/workable.txt", "r")
+    companies = [company.strip() for company in f]
+    f.close()
+
+    get_url(companies)
 
 # main()
 # sys.exit(0)

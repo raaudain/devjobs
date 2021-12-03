@@ -10,7 +10,7 @@ from .modules import headers as h
 # import modules.classes as c
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -23,6 +23,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -35,6 +36,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
 
 def get_results(item: str, param: str):
     soup = BeautifulSoup(item, "lxml")
+    logo = soup.find("img", id="companyLogo")["src"] if soup.find("img", id="companyLogo") else soup.find("a", class_="careerLogo")["style"].replace('background-image: url("', "").replace('");', "")
     results = soup.find("title").find_next(attrs={"type": "text/javascript"}).string
     r = results.split("COMPANY_POSITIONS_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
     data = json.loads(r)
@@ -51,9 +53,8 @@ def get_results(item: str, param: str):
                 country = f"{d['location']['country'].strip()}" if d["location"]["country"] else ""
                 locations_string = f"{city}{state}{country} | Remote" if d["location"]["is_remote"] == True else f"{city}{state}{country}"
                 
-                get_jobs(date, apply_url, company_name, position, locations_string, param)
-        # except TypeError as err:
-        #     print(f"=> comeet: Error with {param}. {err}")
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, param)
+
 
 def get_url(companies: list):
     page = 1

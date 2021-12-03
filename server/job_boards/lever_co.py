@@ -6,9 +6,10 @@ from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
+# import modules.classes as c
 
 
-def get_jobs(item: str, company: str, source_url: str):
+def get_jobs(item: str, company: str, source_url: str, logo: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -26,6 +27,7 @@ def get_jobs(item: str, company: str, source_url: str):
                 "timestamp": post_date,
                 "title": title,
                 "company": company,
+                "company_logo": logo,
                 "url": url,
                 "location": location,
                 "source": company,
@@ -41,10 +43,10 @@ def get_jobs(item: str, company: str, source_url: str):
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
+    logo = soup.find("img")["src"]
     results = soup.find_all("a", {"class": "posting-title"})
     company = soup.find("title").text.strip()
     source_url = f"https://jobs.lever.co/{name}"
-
     postings = []
 
     for result in results:
@@ -54,7 +56,7 @@ def get_results(item: str, name: str):
 
     results = postings
 
-    get_jobs(results, company, source_url)
+    get_jobs(results, company, source_url, logo)
 
 
 def get_url(companies: list):
@@ -68,21 +70,6 @@ def get_url(companies: list):
         if response.ok: 
             get_results(response.text, name)
         elif response.status_code == 404:
-            # f = open("./data/params/lever_co.txt", "r+")
-            # params = [param.strip() for param in f]
-            # f.truncate(0)
-            # f.close()
-
-            # file = open("./data/params/lever_co.txt", "w")
-            # error = open("./data/params/404.txt", "a")
-            # for p in params:
-            #     if p != name: 
-            #         file.write(p+"\n")
-            #     else:
-            #         error.write(p+"\n")
-            # file.close()
-            # error.close()
-
             not_found = Page_Not_Found("./data/params/lever_co.txt", name)
             not_found.remove_unwanted()
         else: 
