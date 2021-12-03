@@ -36,7 +36,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 def get_results(item: str, param: str):
     try:
         soup = BeautifulSoup(item, "lxml")
-        logo = soup.find("img")["src"]
+        logo = soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img")["src"]
         results = soup.find(attrs={"type": "json"}).string
         data = json.loads(results)
         company = soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img")["alt"] if soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img") else soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("h1").text
