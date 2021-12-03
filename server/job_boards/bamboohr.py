@@ -9,7 +9,7 @@ from .modules import headers as h
 # import modules.classes as c
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -22,6 +22,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -33,20 +34,24 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
 
 
 def get_results(item: str, param: str):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find(attrs={"type": "json"}).string
-    data = json.loads(results)
-    company = soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img")["alt"] if soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img") else soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("h1").text
+    try:
+        soup = BeautifulSoup(item, "lxml")
+        logo = soup.find("img")["src"]
+        results = soup.find(attrs={"type": "json"}).string
+        data = json.loads(results)
+        company = soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img")["alt"] if soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("img") else soup.find("div", class_="col-xs-12 col-sm-8 ResAts__header").find("h1").text
 
-    for d in data:
-        if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-            apply_url = f"https://{param}.bamboohr.com/jobs/view.php?id={d['id']}"
-            company_name = company.strip()
-            position = d["jobOpeningName"].strip()
-            locations_string = f"{d['location']['city'].strip()}, {d['location']['state'].strip() if d['location']['state'] else d['location']['country'].strip()}"
-            
-            get_jobs(date, apply_url, company_name, position, locations_string, param)
+        for d in data:
+            if "Engineer" in d["jobOpeningName"] or "Data" in d["jobOpeningName"] or "IT " in d["jobOpeningName"] or "Tech" in d["jobOpeningName"] or "Support" in d["jobOpeningName"] or "Cloud" in d["jobOpeningName"] or "Software" in d["jobOpeningName"] or "Developer" in d["jobOpeningName"] and ("Electrical" not in d["jobOpeningName"] and "HVAC" not in d["jobOpeningName"] and "Mechnical" not in d["jobOpeningName"]):
+                date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+                apply_url = f"https://{param}.bamboohr.com/jobs/view.php?id={d['id']}"
+                company_name = company.strip()
+                position = d["jobOpeningName"].strip()
+                locations_string = f"{d['location']['city'].strip()}, {d['location']['state'].strip() if d['location']['state'] else d['location']['country'].strip()}"
+                
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, param)
+    except AttributeError as err:
+        print(f"=> bamboohr: Error for {param}.", err)
 
 
 def get_url(companies: list):

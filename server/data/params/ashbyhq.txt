@@ -33,7 +33,6 @@ nextmusic
 rootine
 teamtito
 clarisights
-hearth
 firstbaseio
 nudgetext
 stemma

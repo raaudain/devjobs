@@ -7,7 +7,7 @@ from .modules.classes import Page_Not_Found
 # import modules.headers as h
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -17,6 +17,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -27,7 +28,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
     print(f"=> ashbyhq: Added {position} for {company}")
 
 
-def get_results(item: str, param: str, name: str):
+def get_results(item: str, param: str, name: str, logo: str):
     jobs = item["data"]["jobPostingBriefs"]
 
     for data in jobs:
@@ -39,7 +40,7 @@ def get_results(item: str, param: str, name: str):
             position = data["title"].strip()
             locations_string = data["locationName"].strip()
             
-            get_jobs(date, apply_url, company_name, position, locations_string, param)
+            get_jobs(date, apply_url, company_name, position, locations_string, logo, param)
 
 
 def get_url(companies: list):
@@ -67,13 +68,19 @@ def get_url(companies: list):
 
         if response.ok and res.ok:
             data = json.loads(response.text)
-            name = json.loads(res.text)["data"]["organization"]["name"] if json.loads(res.text)["data"]["organization"] else company
-            get_results(data, company, name)
+            name = None
+            logo = None
+
+            if json.loads(res.text)["data"]["organization"]:
+                name = json.loads(res.text)["data"]["organization"]["name"]
+                logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"]
+            else:
+                not_found = Page_Not_Found("./data/params/ashbyhq.txt", company)
+                not_found.remove_unwanted()
+
+            get_results(data, company, name, logo)
             if page % 10 == 0: time.sleep(5)   
             page+=1
-        elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/ashbyhq.txt", company)
-            not_found.remove_unwanted()
         else:
             print(f"=> ashbyhq: Failed to scrape {company}. Status codes: {response.status_code} and {res.status_code}.")
 
