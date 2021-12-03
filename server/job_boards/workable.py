@@ -1,5 +1,5 @@
 from datetime import datetime
-import requests, json, sys, time, random
+import requests, json, sys, time, random, asyncio
 from .modules.classes import Page_Not_Found
 from .modules.headers import headers as h
 from .modules import create_temp_json
@@ -55,7 +55,7 @@ def getResults(item, param, company):
             getJobs(date, apply_url, company_name, position, locations_string, param)
         
 
-def getURL():
+async def getURL():
 
     count = 1
 
@@ -90,7 +90,7 @@ def getURL():
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 7 == 0: time.sleep(10)
+                if count % 5 == 0: asyncio.sleep(10)
                 
                 count+=1
 

@@ -40,7 +40,7 @@ from . import nbc
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
-import sys, os
+import sys, os, asyncio
 
 
 def main():
@@ -56,13 +56,13 @@ def main():
     start = datetime.now()
     # bloomberg.main()
     comeet.main()
+    asyncio.create_task(workable.main())
     jobvite.main()
     target.main()
     eightfold.main()
     clearcompany.main()
     smartrecruiters.main()
     bamboohr.main()
-    workable.main()
     craigslist.get_url(locations)
     nintendo.main()
     greenhouse_io.main()
