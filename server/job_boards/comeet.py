@@ -36,7 +36,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 
 def get_results(item: str, param: str):
     soup = BeautifulSoup(item, "lxml")
-    logo = soup.find("img", {"id": "companyLogo"})["src"] if soup.find("img", {"id": "companyLogo"}) else soup.find("a", class_="careerLogo")["style"].replace('background-image: url("', "").replace('");', "")
+    logo = soup.find(id="companyLogo")["src"] if soup.find(id="companyLogo") else soup.find("a", class_="careerLogo")["style"].replace('background-image: url("', "").replace('");', "")
     results = soup.find("title").find_next(attrs={"type": "text/javascript"}).string
     r = results.split("COMPANY_POSITIONS_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
     data = json.loads(r)
