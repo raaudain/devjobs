@@ -47,6 +47,7 @@ def get_jobs(item: list):
                 })
             print(f"=> weworkremotely: Added {title}")
         except:
+            print("=> weworkremotely: Issue")
             pass
 
 
