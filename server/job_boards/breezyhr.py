@@ -7,7 +7,7 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo:str, name: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -17,6 +17,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -29,6 +30,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
+    logo = soup.find(class_="brand").find("img")["src"] if soup.find(class_="brand").find("img") else soup.find(class_="brand").find("h1").text
     results = soup.find_all("li", class_="position transition")
     company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"}) else name
 
@@ -50,7 +52,7 @@ def get_results(item: str, name: str):
                 else:
                     locations_string = r.find("li", class_="location").text.strip()
 
-                get_jobs(date, apply_url, company_name, position, locations_string, name)
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
         except AttributeError as err:
             print(f"=> breezyhr: {err} for {name}")
             pass
@@ -78,6 +80,7 @@ def main():
     f.close()
 
     get_url(companies)
+
 
 # main()
 # sys.exit(0)
