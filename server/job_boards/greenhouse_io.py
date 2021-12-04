@@ -1,6 +1,7 @@
 import requests, json, sys, time, random
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
+from requests.sessions import session
 from .modules import create_temp_json
 from .modules import headers as h
 from .modules.classes import Page_Not_Found
@@ -78,8 +79,9 @@ def get_url(companies: list):
         url3 = f"https://boards.greenhouse.io/{name}"
         response = requests.get(url, headers=headers)
         res = requests.get(url2, headers=headers)
-        time.sleep(6)
-        r = requests.get(url3, headers=headers)
+        session = requests.Session()
+        session = session.max_redirects = 60
+        r = session.get(url3, headers=headers)
 
         if response.ok and res.ok and r.ok:
             data = json.loads(response.text)
@@ -99,7 +101,7 @@ def get_url(companies: list):
             not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
             not_found.remove_unwanted()
         else:
-            print(f"=> greenhouse.io: Failed for {name}. response status code {response.status_code}, res status code: {res.status_code}, r status code: {}")
+            print(f"=> greenhouse.io: Failed for {name}. response status code {response.status_code}, res status code: {res.status_code}, r status code: {r.status_code}")
 
 
 def main():
