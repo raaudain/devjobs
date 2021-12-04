@@ -1,10 +1,8 @@
+import requests, sys
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from .modules import create_temp_json
-# from .modules.headers import headers as h
 # import modules.create_temp_json as create_temp_json
-# import modules.headers as h
-import requests, sys, random
 
 
 def get_jobs(item: list):
@@ -12,43 +10,39 @@ def get_jobs(item: list):
     scraped = create_temp_json.scraped
 
     for job in item:
-        try:
-            date = job.find("time")["datetime"].replace("T", " ").replace("Z", "") if job.find("time") else datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-            title = job.find("span", class_="title").text.strip()
-            company = job.find("span", class_="company").text.strip()
-            url = "https://www.weworkremotely.com"+job.find_all("a", href=True)[1]["href"]
-            location = job.find("span", class_="region company").contents[0] if job.find("span", class_="region company") else "Remote"
-            logo = None
-            
-            # if location:
-            #     location = job.find("span", {"class": "region company"}).contents[0]
-            # else:
-            #     location = "Remote"
+        date = job.find("time")["datetime"].replace("T", " ").replace("Z", "") if job.find("time") else datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+        title = job.find("span", class_="title").text.strip()
+        company = job.find("span", class_="company").text.strip()
+        url = "https://www.weworkremotely.com"+job.find_all("a", href=True)[1]["href"]
+        location = job.find("span", class_="region company").contents[0].replace("Anywhere in the World", "Remote | Worldwide").replace("USA Only", "Remote | USA Only").replace("Europe Only", "Remote | Europe Only").replace("Canada Only", "Remote | Canada Only").replace("North America Only", "Remote | North America Only").replace("Americas Only", "Remote | Americas Only") if job.find("span", class_="region company") else "Remote"
+        logo = job.find(class_="flag-logo")["style"].replace("background-image:url(", "").replace("?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress)", "") if job.find(class_="flag-logo") else None
 
-            # if date:
-            #     date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
-            # else:
-            #     date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
+        # if location:
+        #     location = job.find("span", {"class": "region company"}).contents[0]
+        # else:
+        #     location = "Remote"
 
-            age = datetime.timestamp(datetime.now() - timedelta(days=30))
-            postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+        # if date:
+        #     date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
+        # else:
+        #     date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
 
-            if age <= postDate and company not in scraped:
-                data.append({
-                    "timestamp": postDate,
-                    "title": title,
-                    "company": company,
-                    "company_logo": logo,
-                    "url": url,
-                    "location": location,
-                    "source": "WeWorkRemotely",
-                    "source_url": "https://weworkremotely.com/",
-                    "category": "job"
-                })
-            print(f"=> weworkremotely: Added {title}")
-        except:
-            print("=> weworkremotely: Issue")
-            pass
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
+        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+
+        if age <= postDate and company not in scraped:
+            data.append({
+                "timestamp": postDate,
+                "title": title,
+                "company": company,
+                "company_logo": logo,
+                "url": url,
+                "location": location,
+                "source": "WeWorkRemotely",
+                "source_url": "https://weworkremotely.com/",
+                "category": "job"
+            })
+        print(f"=> weworkremotely: Added {title}")
 
 
 def get_results(item: str):

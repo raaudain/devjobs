@@ -8,7 +8,7 @@ from .modules import headers as h
 
 IS_TRUE = True
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str):
     global IS_TRUE
 
     data = create_temp_json.data
@@ -23,6 +23,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
                 "timestamp": post_date,
                 "title": position,
                 "company": company,
+                "company_logo": logo,
                 "url": url,
                 "location": location,
                 "source": "Builtin",
@@ -88,11 +89,12 @@ def get_results(item: str):
             elif d["region_id"] == 7: base_url = "https://www.builtinseattle.com"
             else: base_url = "https://www.builtinsf.com"
             
-            apply_url = f"{base_url}{d['alias']}"
+            apply_url = base_url+d["alias"]
             company_name = d["company"]
+            logo = f"https://cdn.{base_url.replace('https://www.', '')}/sites/"+base_url.replace("https://", "")+d["logo"] if d["logo"] else None
             locations_string = d["location"]
 
-            get_jobs(date, apply_url, company_name, position, locations_string)
+            get_jobs(date, apply_url, company_name, position, locations_string, logo)
 
 
 def get_url():

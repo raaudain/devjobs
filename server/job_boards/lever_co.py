@@ -43,7 +43,7 @@ def get_jobs(item: str, company: str, source_url: str, logo: str):
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
-    logo = soup.find("img")["src"]
+    logo = soup.find(class_="main-header-logo").find("img")["src"] if soup.find(class_="main-header-logo") else None
     results = soup.find_all("a", {"class": "posting-title"})
     company = soup.find("title").text.strip()
     source_url = f"https://jobs.lever.co/{name}"

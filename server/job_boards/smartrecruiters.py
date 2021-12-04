@@ -1,4 +1,5 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import requests, sys, json, time, random
 from .modules.headers import headers as h
 from .modules import create_temp_json
@@ -7,7 +8,7 @@ from .modules.classes import Page_Not_Found
 # import modules.headers as headers
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, name: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -17,6 +18,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "timestamp": postDate,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -36,6 +38,11 @@ def get_results(item: str, name: str):
             jobId = i["id"]
             company_name = i["company"]["name"]
             apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
+
+            r = requests.get(apply_url).text
+            soup = BeautifulSoup(r, "lxml")
+            logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo") else None
+
             position = i["name"]
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
@@ -43,7 +50,7 @@ def get_results(item: str, name: str):
             remote = " | Remote" if i["location"]["remote"] else ""
             locations_string = f"{city}{region}{country}{remote}"
 
-            get_jobs(date, apply_url, company_name, position, locations_string, name)
+            get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
 
 
 def get_url(companies: list):

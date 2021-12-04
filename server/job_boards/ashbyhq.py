@@ -76,7 +76,7 @@ def get_url(companies: list):
                     name = json.loads(res.text)["data"]["organization"]["name"]
                     logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(res.text)["data"]["organization"]["theme"] else None
                 except TypeError as err:
-                    print(f"=> ashby: Error for {company}.", err)
+                    print(f"=> ashbyhq: Error for {company}.", err)
             else:
                 not_found = Page_Not_Found("./data/params/ashbyhq.txt", company)
                 not_found.remove_unwanted()

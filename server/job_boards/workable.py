@@ -1,4 +1,5 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import requests, json, sys, time, random, asyncio
 from .modules.classes import Page_Not_Found
 from .modules.headers import headers as h
@@ -9,7 +10,7 @@ from .modules import create_temp_json
 
 # header = headers.headers
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -19,6 +20,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, pa
         "timestamp": postDate,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -37,11 +39,14 @@ def get_results(item: str, param: str, company: str):
             date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
             apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
             company_name = company.strip()
+            r = requests.get(apply_url).text
+            soup = BeautifulSoup(r, "lxml")
+            logo = soup.find("a", {"data-ui":"company-logo"}).find("img")["src"] if soup.find("a", {"data-ui":"company-logo"}) else None
             position = data["title"].strip()
             state = f"{data['location']['city']}, {data['location']['region']}, "
             locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
             
-            get_jobs(date, apply_url, company_name, position, locations_string, param)
+            get_jobs(date, apply_url, company_name, position, locations_string, logo, param)
         
 
 def get_url(companies: list):

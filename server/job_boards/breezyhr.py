@@ -3,8 +3,10 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Create_Temp_JSON, Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
+# import modules.classes as c
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo:str, name: str):
@@ -30,14 +32,20 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
-    logo = soup.find(class_="brand").find("img")["src"] if soup.find(class_="brand").find("img") else soup.find(class_="brand").find("h1").text
-    results = soup.find_all("li", class_="position transition")
-    company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"}) else name
+    try:
+        logo = None
 
-    for r in results:
-        h2 = r.find("h2").text
+        if soup.find(class_="brand").find("img"):
+            logo = soup.find(class_="brand").find("img")["src"] 
+        elif soup.find(class_="brand").find("h1"):
+            logo = soup.find(class_="brand").find("h1").text
+        
+        results = soup.find_all("li", class_="position transition")
+        company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"}) else name
 
-        try:
+        for r in results:
+            h2 = r.find("h2").text
+
             if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text:
                 date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
                 apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
@@ -49,13 +57,12 @@ def get_results(item: str, name: str):
                     locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_REMOTE%", "Remote")
                 elif "%LABEL_POSITION_TYPE_WORLDWIDE%" in r.find("li", class_="location").text:
                     locations_string = r.find("li", class_="location").text.replace("%LABEL_POSITION_TYPE_WORLDWIDE%", "Remote")
-                else:
+                elif r.find("li", class_="location"):
                     locations_string = r.find("li", class_="location").text.strip()
 
-                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
-        except AttributeError as err:
-            print(f"=> breezyhr: {err} for {name}")
-            pass
+                print(date, apply_url, company_name, position, locations_string, logo, name)
+    except AttributeError as err:
+        print(f"=> breezyhr: Error for {name}.", err)
 
 
 def get_url(companies: list):
@@ -75,7 +82,7 @@ def get_url(companies: list):
 
 
 def main():
-    f = open(f"./data/params/breezyhr.txt", "r")
+    f = open("./data/params/breezyhr.txt", "r")
     companies = [company.strip() for company in f]
     f.close()
 

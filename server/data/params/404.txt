@@ -43,6 +43,5 @@ unchained.capital
 correlated-labs
 lean
 rise
-Rocketplace
 queenly
-sisu
+Rocketplace
