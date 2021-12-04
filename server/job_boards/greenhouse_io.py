@@ -73,35 +73,38 @@ def get_url(companies: list):
     count = 1
 
     for name in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-        url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-        url3 = f"https://boards.greenhouse.io/{name}"
-        response = requests.get(url, headers=headers)
-        res = requests.get(url2, headers=headers)
-        session = requests.Session()
-        session.max_redirects = 6000
-        r = session.get(url3, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
+            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+            url3 = f"https://boards.greenhouse.io/{name}"
+            response = requests.get(url, headers=headers)
+            res = requests.get(url2, headers=headers)
+            session = requests.Session()
+            session.max_redirects = 60
+            r = session.get(url3, headers=headers)
 
-        if response.ok and res.ok and r.ok:
-            data = json.loads(response.text)
-            company = json.loads(res.text)["name"]
+            if response.ok and res.ok and r.ok:
+                data = json.loads(response.text)
+                company = json.loads(res.text)["name"]
 
-            logo = None
-            soup = BeautifulSoup(r.text, "lxml")
-            if soup.find(id="logo"):
-                logo = soup.find(id="logo").find("img")["src"]
-            elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
-                logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+                logo = None
+                soup = BeautifulSoup(r.text, "lxml")
+                if soup.find(id="logo"):
+                    logo = soup.find(id="logo").find("img")["src"]
+                elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
+                    logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
 
-            if data and company: get_results(data, name, company, logo)
-            if count % 20 == 0: time.sleep(5)
-            count+=1
-        elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
-            not_found.remove_unwanted()
-        else:
-            print(f"=> greenhouse.io: Failed for {name}. response status code {response.status_code}, res status code: {res.status_code}, r status code: {r.status_code}")
+                if data and company: get_results(data, name, company, logo)
+                if count % 20 == 0: time.sleep(5)
+                count+=1
+            elif response.status_code == 404:
+                not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
+                not_found.remove_unwanted()
+            else:
+                print(f"=> greenhouse.io: Failed for {name}. response status code {response.status_code}, res status code: {res.status_code}, r status code: {r.status_code}")
+        except requests.exceptions.TooManyRedirects as err:
+            print(f"Error for {name}:", err)
 
 
 def main():
