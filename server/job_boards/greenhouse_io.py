@@ -52,14 +52,17 @@ def get_results(item: str, name: str, company: str):
                 position = j["title"].strip()
                 company_name = company
                 apply_url = j["absolute_url"].strip()
-
-                r = requests.get(apply_url).text
-                soup = BeautifulSoup(r, "lxml")
                 logo = None
-                if soup.find(id="logo"):
-                    logo = soup.find(id="logo").find("img")["src"]
-                elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
-                    logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+
+                r = requests.get(apply_url)
+
+                if r.ok:
+                    soup = BeautifulSoup(r.text, "lxml")
+                    if soup.find(id="logo"):
+                        logo = soup.find(id="logo").find("img")["src"]
+                    elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
+                        logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+
                 locations_string = j["location"]["name"].strip()
 
                 get_jobs(date, apply_url, company_name, position, locations_string, logo, name)

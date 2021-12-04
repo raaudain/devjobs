@@ -39,10 +39,12 @@ def get_results(item: str, name: str):
                 jobId = i["id"]
                 company_name = i["company"]["name"]
                 apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
-
-                r = requests.get(apply_url).text
-                soup = BeautifulSoup(r, "lxml")
-                logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo").find("img", src=True) else None
+                logo = None
+                
+                r = requests.get(apply_url)
+                if r.ok:
+                    soup = BeautifulSoup(r.text, "lxml")
+                    logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo").find("img", src=True) else None
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '
@@ -68,7 +70,7 @@ def get_url(companies: list):
         if response.ok:
             data = json.loads(response.text)
             get_results(data, name)
-            if count % 5 == 0: time.sleep(5)
+            if count % 10 == 0: time.sleep(5)
             count += 1
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/smartrecruiters.txt", name)
