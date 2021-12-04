@@ -31,7 +31,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
     print(f"=> greenhouse.io: Added {position} for {company}")
 
 
-def get_results(item: str, name: str, company: str):
+def get_results(item: str, name: str, company: str, logo: str):
     jobs = item["jobs"]
 
     # for d in data:
@@ -52,16 +52,16 @@ def get_results(item: str, name: str, company: str):
                 position = j["title"].strip()
                 company_name = company
                 apply_url = j["absolute_url"].strip()
-                logo = None
+                # logo = None
 
-                r = requests.get(apply_url)
+                # r = requests.get(apply_url)
 
-                if r.ok:
-                    soup = BeautifulSoup(r.text, "lxml")
-                    if soup.find(id="logo"):
-                        logo = soup.find(id="logo").find("img")["src"]
-                    elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
-                        logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+                # if r.ok:
+                #     soup = BeautifulSoup(r.text, "lxml")
+                #     if soup.find(id="logo"):
+                #         logo = soup.find(id="logo").find("img")["src"]
+                #     elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
+                #         logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
 
                 locations_string = j["location"]["name"].strip()
 
@@ -75,13 +75,23 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+        url3 = f"https://boards.greenhouse.io/{name}"
         response = requests.get(url, headers=headers)
         res = requests.get(url2, headers=headers)
+        r = requests.get(url3, headers=headers)
 
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
-            if data and company: get_results(data, name, company)
+
+            logo = None
+            soup = BeautifulSoup(r.text, "lxml")
+            if soup.find(id="logo").find("img", src=True):
+                logo = soup.find(id="logo").find("img")["src"]
+            elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
+                logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+
+            if data and company: get_results(data, name, company, logo)
             if count % 20 == 0: time.sleep(5)
             count+=1
         elif response.status_code == 404:
