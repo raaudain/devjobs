@@ -32,25 +32,28 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 def get_results(item: str, name: str):
     data = item["content"]
 
-    for i in data:
-        if "Engineer" in i["name"] or "IT" in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Help" in i["name"] or "Desk" in i["name"]:
-            date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            jobId = i["id"]
-            company_name = i["company"]["name"]
-            apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
+    if data:
+        for i in data:
+            if "Engineer" in i["name"] or "IT " in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Help" in i["name"] or "Desk" in i["name"] or "Developer" in i["name"] and ("Elect" not in i["name"] and "Mechanical" not in i["name"]):
+                date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
+                jobId = i["id"]
+                company_name = i["company"]["name"]
+                apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
 
-            r = requests.get(apply_url).text
-            soup = BeautifulSoup(r, "lxml")
-            logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo") else None
+                r = requests.get(apply_url).text
+                soup = BeautifulSoup(r, "lxml")
+                logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo") else None
 
-            position = i["name"]
-            city = f'{i["location"]["city"]}, '
-            region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
-            country = i["location"]["country"].upper()
-            remote = " | Remote" if i["location"]["remote"] else ""
-            locations_string = f"{city}{region}{country}{remote}"
+                position = i["name"]
+                city = f'{i["location"]["city"]}, '
+                region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
+                country = i["location"]["country"].upper()
+                remote = " | Remote" if i["location"]["remote"] else ""
+                locations_string = f"{city}{region}{country}{remote}"
 
-            get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
+    else:
+        print(f"=> smartrecruiters: No jobs for {name}.")
 
 
 def get_url(companies: list):

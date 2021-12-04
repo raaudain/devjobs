@@ -1,3 +1,4 @@
+StryberAG
 shopify
 wish
 HitachiSolutions
@@ -160,7 +161,6 @@ JobStoreStaffing
 crownci
 LinkedIn3
 EnprotechCorp
-StryberAG
 ph7
 AGTechnologies1
 ikea
