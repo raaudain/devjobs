@@ -36,6 +36,7 @@ def getJobs(date, apply_url, company_name, position, locations_string):
             "timestamp": postDate,
             "title": title,
             "company": company,
+            "company_logo": "https://www.citypng.com/public/uploads/preview/tiktok-circle-round-logo-brand-video-tik-tok-11583757667gwiiaepkzu.png",
             "url": url,
             "location": location,
             "source": company,

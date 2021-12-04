@@ -60,7 +60,7 @@ def get_results(item: str, name: str):
                 elif r.find("li", class_="location"):
                     locations_string = r.find("li", class_="location").text.strip()
 
-                print(date, apply_url, company_name, position, locations_string, logo, name)
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
     except AttributeError as err:
         print(f"=> breezyhr: Error for {name}.", err)
 

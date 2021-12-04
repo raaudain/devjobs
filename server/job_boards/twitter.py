@@ -20,6 +20,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
         "timestamp": postDate,
         "title": title,
         "company": company,
+        "company_logo": "https://logoeps.com/wp-content/uploads/2012/12/new-twitter-logo-vector.png",
         "url": url,
         "location": location,
         "source": company,

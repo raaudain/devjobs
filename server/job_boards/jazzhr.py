@@ -8,7 +8,7 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, name: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
@@ -18,6 +18,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": logo,
         "url": url,
         "location": location,
         "source": company,
@@ -32,6 +33,7 @@ def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("li", class_="list-group-item")
     company = soup.find("meta", {"name":"twitter:title"})["content"].replace(" - Career Page", "") if soup.find("meta", {"name":"twitter:title"}) else None
+    logo = soup.find(class_="").find("img")["src"] if soup.find(class_="").find("img", src=True) else None
 
     if results and company:
         for r in results:
@@ -42,7 +44,7 @@ def get_results(item: str, name: str):
                 position = r.find("a").text.strip()
                 locations_string = r.find("ul").text.strip()
                 
-                get_jobs(date, apply_url, company_name, position, locations_string, name)
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
     else:
         print(f"Check {company}")
 

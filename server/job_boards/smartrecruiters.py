@@ -31,6 +31,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 
 def get_results(item: str, name: str):
     data = item["content"]
+    images = {}
 
     if data:
         for i in data:
@@ -41,10 +42,16 @@ def get_results(item: str, name: str):
                 apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
                 logo = None
                 
-                r = requests.get(apply_url)
-                if r.ok:
-                    soup = BeautifulSoup(r.text, "lxml")
-                    logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo").find("img", src=True) else None
+                if images[name]:
+                    logo = images[name]
+                else:
+                    r = requests.get(apply_url)
+                    if r.ok:
+                        soup = BeautifulSoup(r.text, "lxml")
+                        if soup.find(class_="header-logo logo").find("img", src=True):
+                            logo = soup.find(class_="header-logo logo").find("img")["src"]
+                            images[name] = logo
+                        
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '

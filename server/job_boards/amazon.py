@@ -22,6 +22,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
             "title": position,
             # "qualifications": qualifications,
             "company": company,
+            "company_logo": "https://tauchcomputertest.de/wp-content/uploads/2016/11/Amazon-Logo.png",
             "url": url,
             "location": location,
             "source": "Amazon",

@@ -12,6 +12,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
         "timestamp": postDate,
         "title": position,
         "company": company,
+        "company_logo": "https://i2.wp.com/hooquest.com/wp-content/uploads/2019/05/zillow-logo-300.png?ssl=1",
         "url": url,
         "location": location,
         "source": "Zillow Group",

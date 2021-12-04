@@ -24,6 +24,7 @@ def get_jobs(date: str, apply_url: str, company_name: str, position: str, locati
         "timestamp": postDate,
         "title": position,
         "company": company_name,
+        "company_logo": "https://cblproperty.blob.core.windows.net/production/assets/blt4bbf1ac71c3fdb0e-Target_2544.png",
         "url": apply_url,
         "location": locations_string,
         "source": company_name,
