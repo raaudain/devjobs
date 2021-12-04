@@ -88,7 +88,7 @@ def get_url(companies: list):
 
             logo = None
             soup = BeautifulSoup(r.text, "lxml")
-            if soup.find(id="logo").find("img", src=True):
+            if soup.find(id="logo"):
                 logo = soup.find(id="logo").find("img")["src"]
             elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
                 logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
