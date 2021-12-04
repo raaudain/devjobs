@@ -80,7 +80,7 @@ def get_url(companies: list):
         response = requests.get(url, headers=headers)
         res = requests.get(url2, headers=headers)
         session = requests.Session()
-        session = session.max_redirects = 60
+        session.max_redirects = 6000
         r = session.get(url3, headers=headers)
 
         if response.ok and res.ok and r.ok:
