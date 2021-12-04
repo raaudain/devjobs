@@ -77,9 +77,9 @@ def get_url(companies: list):
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
         url3 = f"https://boards.greenhouse.io/{name}"
         response = requests.get(url, headers=headers)
-        time.sleep(3)
+        # time.sleep(3)
         res = requests.get(url2, headers=headers)
-        time.sleep(3)
+        # time.sleep(3)
         r = requests.get(url3, headers=headers)
 
         if response.ok and res.ok:
