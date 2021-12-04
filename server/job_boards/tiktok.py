@@ -29,7 +29,7 @@ def getJobs(date, apply_url, company_name, position, locations_string):
     url = apply_url
     location = locations_string
 
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
     if url not in scraped:
         data.append({
@@ -51,7 +51,7 @@ def getResults(item):
     results = soup.find_all("a", {"data-id":True})
 
     for i in results:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         apply_url = "https://careers.tiktok.com"+i["href"]
         company_name = "TikTok"
         position = i.find("span", class_="positionItem-title-text").text.strip()

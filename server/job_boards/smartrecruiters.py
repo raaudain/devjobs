@@ -42,7 +42,7 @@ def get_results(item: str, name: str):
 
                 r = requests.get(apply_url).text
                 soup = BeautifulSoup(r, "lxml")
-                logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo") else None
+                logo = soup.find(class_="header-logo logo").find("img")["src"] if soup.find(class_="header-logo logo").find("img", src=True) else None
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '
