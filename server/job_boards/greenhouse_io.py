@@ -77,12 +77,11 @@ def get_url(companies: list):
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
         url3 = f"https://boards.greenhouse.io/{name}"
         response = requests.get(url, headers=headers)
-        time.sleep(3)
         res = requests.get(url2, headers=headers)
-        time.sleep(3)
+        time.sleep(6)
         r = requests.get(url3, headers=headers)
 
-        if response.ok and res.ok:
+        if response.ok and res.ok and r.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
 
@@ -100,7 +99,7 @@ def get_url(companies: list):
             not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
             not_found.remove_unwanted()
         else:
-            print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
+            print(f"=> greenhouse.io: Failed for {name}. response status code {response.status_code}, res status code: {res.status_code}, r status code: {}")
 
 
 def main():
