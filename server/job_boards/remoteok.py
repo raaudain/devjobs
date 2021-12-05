@@ -13,7 +13,7 @@ def get_jobs(item: list):
 
     for job in item:
         if job.find("time") and job.find("h3", {"itemprop": "name"}).text.strip() not in scraped:
-            date =  job.find("time")["datetime"].replace("T", " ")[:-6]
+            date =  job.find("time")["datetime"].replace("T", " ")[:-9]
             title = job.find("h2", {"itemprop": "title"}).text.strip()
             company = job.find("h3", {"itemprop": "name"}).text.strip()
             logo = job.find(class_="logo lazy lazyloaded")["src"].replace(",quality=50", "") if job.find(class_="logo lazy lazyloaded", src=True) else None
