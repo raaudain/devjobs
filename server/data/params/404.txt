@@ -45,3 +45,4 @@ lean
 rise
 queenly
 Rocketplace
+jobs-at-pager

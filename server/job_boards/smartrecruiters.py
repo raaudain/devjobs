@@ -42,7 +42,7 @@ def get_results(item: str, name: str):
                 apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
                 logo = None
                 
-                if images[name]:
+                if name in images:
                     logo = images[name]
                 else:
                     r = requests.get(apply_url)
