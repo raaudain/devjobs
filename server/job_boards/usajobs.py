@@ -21,6 +21,7 @@ def getJobs(date, url, company, position, location):
         "timestamp": postDate,
         "title": title,
         "company": company,
+        "company_logo": "https://careersourcefloridacrown.com/wp-content/uploads/2017/06/usajobs.png",
         "url": url,
         "location": location,
         "source": "USAJobs",

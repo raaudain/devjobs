@@ -18,6 +18,7 @@ def get_jobs(url: str, company: str, position: str, location: str):
         "title": position,
         # "qualifications": qualifications,
         "company": company,
+        "company_logo": "https://www.hireart.com/assets/ha-headerlogo-brand-400.svg",
         "url": url,
         "location": location,
         "source": "HireArt",

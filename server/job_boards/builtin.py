@@ -91,7 +91,9 @@ def get_results(item: str):
             
             apply_url = base_url+d["alias"]
             company_name = d["company"]
-            logo = f"https://cdn.{base_url.replace('https://www.', '')}/sites/"+base_url.replace("https://", "")+d["logo"] if d["logo"] else None
+            # https://cdn.builtinaustin.com/cdn-cgi/image/fit=scale-down,sharpen=0.3,f=auto,q=100,w=96,h=96/sites/www.builtinaustin.com/files/
+            # logo = "https://logovectorseek.com/wp-content/uploads/2020/11/built-in-logo-vector.png"
+            logo = f"https://cdn.{base_url.replace('https://www.','')}/cdn-cgi/image/fit=scale-down,sharpen=0.3,f=auto,q=100,w=100,h=100/sites/{base_url.replace('https://','')}/files/{d['logo']}"
             locations_string = d["location"]
 
             get_jobs(date, apply_url, company_name, position, locations_string, logo)
@@ -119,6 +121,7 @@ def get_url():
 
 def main():
     get_url()
+
 
 # main()
 # sys.exit(0)

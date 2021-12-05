@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json, requests, sys
+import requests, sys
 from .modules import create_temp_json
 
 
@@ -14,7 +14,7 @@ def get_jobs(item: list):
         url = "https://nocsok.com/"+job.find("a", href=True)["href"].replace("#", "")
         location = job.find("h5").text.strip()
 
-        age = datetime.timestamp(datetime.now() - timedelta(days=14))
+        age = datetime.timestamp(datetime.now() - timedelta(days=30))
         postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
 
         if age <= postDate:
@@ -22,6 +22,7 @@ def get_jobs(item: list):
                 "timestamp": postDate,
                 "title": title,
                 "company": company,
+                "company_logo": "https://i.ibb.co/ygrqSj8/No-CSDegree-logo.jpg",
                 "url": url,
                 "location": location,
                 "source": "NoCSOK",

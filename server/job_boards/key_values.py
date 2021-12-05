@@ -3,11 +3,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from .modules.classes import Update_Key_Values, Create_JSON
 from .modules import create_temp_json
-from .modules import update_key_values
 from .modules import headers as h
 # import modules.classes as c
 # import modules.create_temp_json as create_temp_json
-# import modules.update_key_values as update_key_values
 # import modules.headers as h
 
 
@@ -28,6 +26,7 @@ def get_jobs(item: list):
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         title = job.find("p", {"class": "open-position--job-title"}).text
         company = job.find("a")["data-company"]
+        logo = job.find(class_="hero-logo")["style"].replace("background: url(", "").replace(") no-repeat center center; background-size: contain;", "") if job.find(class_="hero-logo") else None
         url = job.find("a", href=True)["href"]
         location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
@@ -38,6 +37,7 @@ def get_jobs(item: list):
                 "timestamp": post_date,
                 "title": title,
                 "company": company,
+                "company_logo": logo,
                 "url": url,
                 "location": location,
                 "source": "Key Values",

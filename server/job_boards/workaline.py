@@ -22,6 +22,7 @@ def getJobs(date, url, company, position, location):
             "timestamp": postDate,
             "title": title,
             "company": company,
+            "company_logo": "https://workaline.com/static/img/tinypng@logo-no-bg-transparent@small.png",
             "url": url,
             "location": location,
             "source": "Workaline",

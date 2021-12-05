@@ -14,6 +14,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
         "timestamp": post_date,
         "title": position,
         "company": company,
+        "company_logo": "https://www.complaintsboard.com/img/business/121585/200x200/nbcuniversal.jpg",
         "url": url,
         "location": location,
         "source": company,

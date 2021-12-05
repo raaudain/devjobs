@@ -51,7 +51,6 @@ def get_results(item: str, name: str):
                         if soup.find(class_="header-logo logo").find("img", src=True):
                             logo = soup.find(class_="header-logo logo").find("img")["src"]
                             images[name] = logo
-                        
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '
