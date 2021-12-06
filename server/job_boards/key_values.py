@@ -9,30 +9,27 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-def get_jobs(item: list):
+def get_jobs(item: list, logo: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
-
-    exclude = set()
-    exclude.add("See All Open Jobs")
-    exclude.add("See All Open Roles")
-    exclude.add("Interested in joining?")
-    exclude.add("All Jobs at CareGuide")
-    exclude.add("See All Job Openings")
-    exclude.add("See All Open Positions")
-    exclude.add("")
+    scraped.add("See All Open Jobs")
+    scraped.add("See All Open Roles")
+    scraped.add("Interested in joining?")
+    scraped.add("All Jobs at CareGuide")
+    scraped.add("See All Job Openings")
+    scraped.add("See All Open Positions")
+    scraped.add("")
 
     for job in item:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         title = job.find("p", {"class": "open-position--job-title"}).text
         company = job.find("a")["data-company"]
-        logo = job.find(class_="hero-logo")["style"].replace("background: url(", "").replace(") no-repeat center center; background-size: contain;", "") if job.find(class_="hero-logo") else None
         url = job.find("a", href=True)["href"]
         location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
 
         post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
-        if title not in exclude and url not in scraped and company not in scraped:
+        if title not in scraped and url not in scraped and company not in scraped:
             data.append({
                 "timestamp": post_date,
                 "title": title,
@@ -53,7 +50,8 @@ def get_jobs(item: list):
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", {"class": "open-position-item-contents"})
-    get_jobs(results)
+    logo = soup.find(class_="hero-logo")["style"].replace("background: url(", "").replace(") no-repeat center center; background-size: contain;", "") if soup.find(class_="hero-logo") else None
+    get_jobs(results, logo)
 
 
 def get_url(params: list):

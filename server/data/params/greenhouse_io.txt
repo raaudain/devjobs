@@ -876,3 +876,4 @@ sourcegraph91
 webflow
 upstatement
 zype
+amplitude

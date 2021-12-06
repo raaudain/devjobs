@@ -17,16 +17,6 @@ def get_jobs(item: list):
         location = job.find("span", class_="region company").contents[0].replace("Anywhere in the World", "Remote | Worldwide").replace("USA Only", "Remote | USA Only").replace("Europe Only", "Remote | Europe Only").replace("Canada Only", "Remote | Canada Only").replace("North America Only", "Remote | North America Only").replace("Americas Only", "Remote | Americas Only") if job.find("span", class_="region company") else "Remote"
         logo = job.find(class_="flag-logo")["style"].replace("background-image:url(", "").replace("?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress)", "") if job.find(class_="flag-logo") else None
 
-        # if location:
-        #     location = job.find("span", {"class": "region company"}).contents[0]
-        # else:
-        #     location = "Remote"
-
-        # if date:
-        #     date = job.find("time")["datetime"].replace("T", " ").replace("Z", "")[:-3]
-        # else:
-        #     date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
-
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
 
@@ -42,7 +32,8 @@ def get_jobs(item: list):
                 "source_url": "https://weworkremotely.com/",
                 "category": "job"
             })
-        print(f"=> weworkremotely: Added {title}")
+            scraped.add(company)
+        print(f"=> weworkremotely: Added {title} for {company}.")
 
 
 def get_results(item: str):

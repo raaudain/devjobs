@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests, json, sys, time, random, asyncio
 from .modules.classes import Page_Not_Found
 from .modules.headers import headers as h
+from .modules.proxies import proxies as p
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as headers
@@ -50,6 +51,10 @@ def get_results(item: str, param: str, company: str):
         
 
 def get_url(companies: list):
+    proxies = {
+        "http":"",
+    }
+
     count = 1
 
     for company in companies:

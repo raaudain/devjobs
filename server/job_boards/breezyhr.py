@@ -36,9 +36,7 @@ def get_results(item: str, name: str):
         logo = None
 
         if soup.find(class_="brand").find("img"):
-            logo = soup.find(class_="brand").find("img")["src"] 
-        elif soup.find(class_="brand").find("h1"):
-            logo = soup.find(class_="brand").find("h1").text
+            logo = soup.find(class_="brand").find("img")["src"]
         
         results = soup.find_all("li", class_="position transition")
         company = soup.find("meta", {"name":"twitter:data1"})["content"] if soup.find("meta", {"name":"twitter:data1"}) else name

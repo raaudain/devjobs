@@ -14,7 +14,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
         "title": position,
         # "qualifications": qualifications,
         "company": company,
-        "company_logo": "https://thumbnail.imgbin.com/21/8/14/imgbin-nintendo-logo-nintendo-cRPHH02pPLmwJbCVJj00MhfNd_t.jpg",
+        "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/600px-Nintendo.svg.png",
         "url": url,
         "location": location,
         "source": company,

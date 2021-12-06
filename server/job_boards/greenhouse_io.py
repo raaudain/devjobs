@@ -1,8 +1,10 @@
 import requests, json, sys, time, random
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
+from requests.sessions import Session
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules import proxies as p
 from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
@@ -69,21 +71,38 @@ def get_results(item: str, name: str, company: str):
 
 
 def get_url(companies: list):
+    # proxies = {
+    #     "http":"http://209.141.55.228:80",
+    #     "http":"http://193.239.146.98:80",
+    #     "http":"http://209.141.56.127:80",
+    #     "http":"http://199.19.226.12:80",
+    #     "http":"http://209.141.35.151:80",
+    #     "http":"http://199.19.224.3:80",
+    #     "http":"http://199.19.225.250:80",
+    #     "http":"http://20.47.108.204:8888",
+    #     "http":"http://34.145.126.174:80",
+    #     "http":"http://52.250.1.188:80",
+    #     "http":"http://103.105.49.53:80",
+    #     "http":"http://208.47.176.252:80",
+    # }
+    
     count = 1
 
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-        response = requests.get(url, headers=headers)
-        res = requests.get(url2, headers=headers)
+        request = requests.Session()
+        request.proxies.update(p.proxies)
+        response = request.get(url, headers=headers)
+        res = request.get(url2, headers=headers)
 
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
             if data and company: get_results(data, name, company)
-            if count % 20 == 0: time.sleep(5)
-            count+=1
+            # if count % 20 == 0: time.sleep(5)
+            # count+=1
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
             not_found.remove_unwanted()
