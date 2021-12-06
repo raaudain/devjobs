@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests, json, sys, time, random, asyncio
 from .modules.classes import Page_Not_Found
 from .modules.headers import headers as h
-from .modules.proxies import proxies as p
+from .modules import proxies as p
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as headers
@@ -59,6 +59,8 @@ def get_url(companies: list):
 
     for company in companies:
         token = "0"
+        request = requests.Session()
+        request.proxies.update(p.proxies)
 
         try:
             while token:
@@ -73,22 +75,21 @@ def get_url(companies: list):
                     "remote":[],
                     "token":token
                 }
-
-                response = requests.post(url, json=payload, headers=headers)
+                response = request.post(url, json=payload, headers=headers)
                 # if response.ok:
                 if response.status_code == 404:
                     not_found = Page_Not_Found("./data/params/workable.txt", company)
                     not_found.remove_unwanted()
 
                 data = json.loads(response.text)
-                name = json.loads(requests.get(url2, headers=headers).text)["name"]
+                name = json.loads(request.get(url2, headers=headers).text)["name"]
 
                 get_results(data, company, name)
 
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 7 == 0: time.sleep(10)
+                # if count % 7 == 0: time.sleep(10)
                 
                 count+=1
 
@@ -96,7 +97,7 @@ def get_url(companies: list):
 
         except:
             print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
-            pass
+            # pass
         
 
 

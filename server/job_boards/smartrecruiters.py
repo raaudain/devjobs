@@ -2,6 +2,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import requests, sys, json, time, random
 from .modules.headers import headers as h
+from .modules import proxies as p
 from .modules import create_temp_json
 from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
@@ -45,12 +46,16 @@ def get_results(item: str, name: str):
                 if name in images:
                     logo = images[name]
                 else:
-                    r = requests.get(apply_url)
+                    request = requests.Session()
+                    request.proxies.update(p.proxies)
+                    r = request.get(apply_url)
                     if r.ok:
                         soup = BeautifulSoup(r.text, "lxml")
                         if soup.find(class_="header-logo logo").find("img", src=True):
                             logo = soup.find(class_="header-logo logo").find("img")["src"]
                             images[name] = logo
+                        else:
+                            logo = None
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '
@@ -71,13 +76,15 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h)}
         url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
         # url = f"https://api.smartrecruiters.com/v1/companies/Zscaler/postings/"
-        response = requests.get(url, headers=headers)
+        request = requests.Session()
+        request.proxies.update(p.proxies)
+        response = request.get(url, headers=headers)
         
         if response.ok:
             data = json.loads(response.text)
             get_results(data, name)
-            if count % 10 == 0: time.sleep(5)
-            count += 1
+            # if count % 10 == 0: time.sleep(5)
+            # count += 1
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/smartrecruiters.txt", name)
             not_found.remove_unwanted()

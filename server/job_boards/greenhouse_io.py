@@ -33,7 +33,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
     print(f"=> greenhouse.io: Added {position} for {company}")
 
 
-def get_results(item: str, name: str, company: str):
+def get_results(item: str, name: str, company: str, logo: str):
     jobs = item["jobs"]
 
     # for d in data:
@@ -54,7 +54,7 @@ def get_results(item: str, name: str, company: str):
                 position = j["title"].strip()
                 company_name = company
                 apply_url = j["absolute_url"].strip()
-                logo = None
+                # logo = None
 
                 # r = requests.get(apply_url)
 
@@ -71,21 +71,6 @@ def get_results(item: str, name: str, company: str):
 
 
 def get_url(companies: list):
-    # proxies = {
-    #     "http":"http://209.141.55.228:80",
-    #     "http":"http://193.239.146.98:80",
-    #     "http":"http://209.141.56.127:80",
-    #     "http":"http://199.19.226.12:80",
-    #     "http":"http://209.141.35.151:80",
-    #     "http":"http://199.19.224.3:80",
-    #     "http":"http://199.19.225.250:80",
-    #     "http":"http://20.47.108.204:8888",
-    #     "http":"http://34.145.126.174:80",
-    #     "http":"http://52.250.1.188:80",
-    #     "http":"http://103.105.49.53:80",
-    #     "http":"http://208.47.176.252:80",
-    # }
-    
     count = 1
 
     for name in companies:
@@ -100,7 +85,21 @@ def get_url(companies: list):
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
-            if data and company: get_results(data, name, company)
+
+            logo = None
+
+            r = request.get(f"https://boards.greenhouse.io/{name}", headers=headers)
+
+            if r.ok:
+                soup = BeautifulSoup(r.text, "lxml")
+                if soup.find(id="logo"):
+                    logo = soup.find(id="logo").find("img")["src"]
+                # elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
+                #     logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
+                else:
+                    logo = None
+
+            if data and company: get_results(data, name, company, logo)
             # if count % 20 == 0: time.sleep(5)
             # count+=1
         elif response.status_code == 404:

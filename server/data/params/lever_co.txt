@@ -576,7 +576,6 @@ AMIRI
 epifi
 kokonetworks
 1build
-critizr
 riiidlabs
 motorwerks
 convex
