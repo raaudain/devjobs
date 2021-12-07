@@ -1,5 +1,5 @@
 import requests, random
-from headers import headers as h
+from modules.headers import headers as h
 from proxies import proxies as p
 
 class Get:
