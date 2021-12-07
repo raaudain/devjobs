@@ -1,6 +1,6 @@
 import requests, random
 from modules.headers import headers as h
-from proxies import proxies as p
+from modules.proxies import proxies as p
 
 class Get:
     def __init__(self, url: str, headers: str):
