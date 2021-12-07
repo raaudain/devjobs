@@ -87,17 +87,17 @@ def get_url(companies: list):
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
-
+            logo = None
+            
             try:
                 r = request.get(url3, headers=headers)
-            except requests.exceptions.TooManyRedirects as err:
-                print(f"=> greenhouse.io: Error with {name}.", err)
             # r = Get(url3).response()
-            logo = None
 
-            if r.ok:
-                soup = BeautifulSoup(r.text, "lxml")
-                logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+                if r.ok:
+                    soup = BeautifulSoup(r.text, "lxml")
+                    logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+            except requests.exceptions.TooManyRedirects as err:
+                print(f"=> greenhouse.io: Error getting logo for {name}.", err)
 
             if data and company: get_results(data, name, company, logo)
             # if count % 20 == 0: time.sleep(5)
