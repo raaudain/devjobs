@@ -2,8 +2,8 @@ import requests, json, sys, time, random
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
-# from .modules import headers as h
-# from .modules import proxies as p
+from .modules import headers as h
+from .modules import proxies as p
 from .modules.classes import Page_Not_Found, Get
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
