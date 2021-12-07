@@ -95,7 +95,7 @@ def get_url(companies: list):
 
                 if r.ok:
                     soup = BeautifulSoup(r.text, "lxml")
-                    logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+                    logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo").find("img", src=True) else None
             except requests.exceptions.TooManyRedirects as err:
                 print(f"=> greenhouse.io: Error getting logo for {name}.", err)
 
