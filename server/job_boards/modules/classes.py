@@ -1,6 +1,6 @@
 import requests, random
-from modules.headers import headers as h
-from modules.proxies import proxies as p
+from proxies import proxies
+from headers import headers as h
 
 class Get:
     def __init__(self, url: str, headers: str):
@@ -12,7 +12,7 @@ class Get:
 
         headers = {"User-Agent": random.choice(h)}
         request = requests.Session()
-        request.proxies.update(p)
+        request.proxies.update(proxies)
         response = request.get(url, headers=headers)
 
         return response

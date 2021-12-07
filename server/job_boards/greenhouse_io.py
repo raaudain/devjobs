@@ -76,12 +76,13 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+        url3 = f"https://boards.greenhouse.io/{name}"
         # request = requests.Session()
         # request.proxies.update(p.proxies)
         # response = request.get(url, headers=headers)
         # res = request.get(url2, headers=headers)
-        response = Get.response(url)
-        res = Get.response(url)
+        response = Get(url).response()
+        res = Get(url2).response()
 
         if response.ok and res.ok:
             data = json.loads(response.text)
@@ -90,7 +91,7 @@ def get_url(companies: list):
             logo = None
 
             # r = request.get(f"https://boards.greenhouse.io/{name}", headers=headers)
-            r = Get.response(f"https://boards.greenhouse.io/{name}")
+            r = Get(url3).response()
 
             if r.ok:
                 soup = BeautifulSoup(r.text, "lxml")
