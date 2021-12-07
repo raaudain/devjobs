@@ -89,7 +89,8 @@ def get_url(companies: list):
 
             logo = None
 
-            r = request.get(f"https://boards.greenhouse.io/{name}", headers=headers)
+            # r = request.get(f"https://boards.greenhouse.io/{name}", headers=headers)
+            r = Get.response(f"https://boards.greenhouse.io/{name}")
 
             if r.ok:
                 soup = BeautifulSoup(r.text, "lxml")
