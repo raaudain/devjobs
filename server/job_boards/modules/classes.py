@@ -3,9 +3,9 @@ from proxies import proxies
 from headers import headers as h
 
 class Get:
-    def __init__(self, url: str, headers: str):
+    def __init__(self, url: str):
         self.url = url
-        self.headers = headers
+        # self.headers = headers
 
     def response(self):
         url = self.url
