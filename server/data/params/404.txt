@@ -47,3 +47,4 @@ queenly
 Rocketplace
 jobs-at-pager
 critizr
+keepit

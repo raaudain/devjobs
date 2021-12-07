@@ -309,7 +309,6 @@ edenhealth
 ppgny
 conversica
 cirquedusoleil
-keepit
 protegrity
 hingehealth
 cambly

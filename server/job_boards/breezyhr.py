@@ -75,6 +75,9 @@ def get_url(companies: list):
             get_results(response.text, company)
             if page % 10 == 0: time.sleep(5)     
             page+=1
+        elif response.status_code[0] == 5:
+            print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+            break
         else: 
             print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
 

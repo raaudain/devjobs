@@ -32,7 +32,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
     print(f"=> workable: Added {position} for {company}")
 
 
-def get_results(item: str, param: str, company: str):
+def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
 
     for data in jobs:
@@ -40,9 +40,6 @@ def get_results(item: str, param: str, company: str):
             date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
             apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
             company_name = company.strip()
-            r = requests.get(apply_url).text
-            soup = BeautifulSoup(r, "lxml")
-            logo = soup.find("a", {"data-ui":"company-logo"}).find("img")["src"] if soup.find("a", {"data-ui":"company-logo"}) else None
             position = data["title"].strip()
             state = f"{data['location']['city']}, {data['location']['region']}, "
             locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
@@ -59,12 +56,12 @@ def get_url(companies: list):
 
     for company in companies:
         token = "0"
-        request = requests.Session()
-        request.proxies.update(p.proxies)
 
         try:
             while token:
                 headers = {"User-Agent": random.choice(h)}
+                request = requests.Session()
+                request.proxies.update(p.proxies)
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
@@ -80,16 +77,19 @@ def get_url(companies: list):
                 if response.status_code == 404:
                     not_found = Page_Not_Found("./data/params/workable.txt", company)
                     not_found.remove_unwanted()
+                
+                info = request.get(url2, headers=headers).text
 
                 data = json.loads(response.text)
-                name = json.loads(request.get(url2, headers=headers).text)["name"]
+                name = json.loads(info)["name"]
+                logo = json.loads(info)["logo"] if "logo" in json.loads(info) else None
 
-                get_results(data, company, name)
+                get_results(data, company, name, logo)
 
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                # if count % 7 == 0: time.sleep(10)
+                if count % 10 == 0: time.sleep(10)
                 
                 count+=1
 
