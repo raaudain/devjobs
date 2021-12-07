@@ -77,30 +77,23 @@ def get_url(companies: list):
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
         url3 = f"https://boards.greenhouse.io/{name}"
-        # request = requests.Session()
-        # request.proxies.update(p.proxies)
-        # response = request.get(url, headers=headers)
-        # res = request.get(url2, headers=headers)
-        response = Get(url).response()
-        res = Get(url2).response()
+        request = requests.Session()
+        request.proxies.update(p.proxies)
+        response = request.get(url, headers=headers)
+        res = request.get(url2, headers=headers)
+        # response = Get(url).response()
+        # res = Get(url2).response()
 
         if response.ok and res.ok:
             data = json.loads(response.text)
             company = json.loads(res.text)["name"]
 
-            logo = None
-
-            # r = request.get(f"https://boards.greenhouse.io/{name}", headers=headers)
-            r = Get(url3).response()
+            r = request.get(url3, headers=headers)
+            # r = Get(url3).response()
 
             if r.ok:
                 soup = BeautifulSoup(r.text, "lxml")
-                if soup.find(id="logo"):
-                    logo = soup.find(id="logo").find("img")["src"]
-                # elif soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True):
-                #     logo = soup.find("link", {"rel": ["icon", "shortcut icon"]}, href=True)["href"]
-                else:
-                    logo = None
+                logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
 
             if data and company: get_results(data, name, company, logo)
             # if count % 20 == 0: time.sleep(5)
