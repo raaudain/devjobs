@@ -1,3 +1,4 @@
+wrapbook
 10xgenomics
 postscript
 sugar
@@ -44,7 +45,6 @@ fueled
 idme
 cobaltio
 algorithmia
-wrapbook
 alma
 indigo
 mapbox

@@ -90,10 +90,13 @@ def get_url(companies: list):
 
             r = request.get(url3, headers=headers)
             # r = Get(url3).response()
+            logo = None
 
             if r.ok:
                 soup = BeautifulSoup(r.text, "lxml")
                 logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+            else:
+                print(f"=> greenhouse.io: Status code {r.status_code} for {name}")
 
             if data and company: get_results(data, name, company, logo)
             # if count % 20 == 0: time.sleep(5)
