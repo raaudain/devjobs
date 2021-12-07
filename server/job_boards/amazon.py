@@ -3,6 +3,7 @@ from datetime import datetime
 from .modules.classes import Create_JSON
 from .modules import create_temp_json
 from .modules import headers as h
+
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -10,9 +11,9 @@ from .modules import headers as h
 def get_jobs(date: str, url: str, company: str, position: str, location: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
-
     # data = Create_Temp_JSON.data
     # scraped = Create_Temp_JSON.scraped
+
 
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     

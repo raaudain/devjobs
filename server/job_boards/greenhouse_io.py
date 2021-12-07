@@ -1,11 +1,10 @@
 import requests, json, sys, time, random
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
-from requests.sessions import Session
 from .modules import create_temp_json
 from .modules import headers as h
 from .modules import proxies as p
-from .modules.classes import Page_Not_Found
+from .modules.classes import Page_Not_Found, Get
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -77,10 +76,12 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
         url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-        request = requests.Session()
-        request.proxies.update(p.proxies)
-        response = request.get(url, headers=headers)
-        res = request.get(url2, headers=headers)
+        # request = requests.Session()
+        # request.proxies.update(p.proxies)
+        # response = request.get(url, headers=headers)
+        # res = request.get(url2, headers=headers)
+        response = Get.response(url)
+        res = Get.response(url)
 
         if response.ok and res.ok:
             data = json.loads(response.text)

@@ -1,3 +1,23 @@
+import requests, random
+from proxies import proxies
+from headers import headers as h
+
+class Get:
+    def __init__(self, url: str, headers: str):
+        self.url = url
+        self.headers = headers
+
+    def response(self):
+        url = self.url
+
+        headers = {"User-Agent": random.choice(h)}
+        request = requests.Session()
+        request.proxies.update(proxies)
+        response = request.get(url, headers=headers)
+
+        return response
+
+
 class Page_Not_Found:
     def __init__(self, file_path: str, param: str):
         self.file_path = file_path
