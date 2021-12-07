@@ -1,6 +1,6 @@
 import requests, random
-from proxies import proxies as p
-from headers import headers as h
+import headers as h
+import proxies as p
 
 class Get:
     def __init__(self, url: str):
@@ -10,9 +10,9 @@ class Get:
     def response(self):
         url = self.url
 
-        headers = {"User-Agent": random.choice(h)}
+        headers = {"User-Agent": random.choice(h.headers)}
         request = requests.Session()
-        request.proxies.update(p)
+        request.proxies.update(p.proxies)
         response = request.get(url, headers=headers)
 
         return response
