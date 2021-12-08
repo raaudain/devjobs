@@ -104,6 +104,9 @@ def get_url(companies: list):
             not_found.remove_unwanted()
         else:
             print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
+        
+        request.cookies.clear()
+        request.close()
 
 
 def main():

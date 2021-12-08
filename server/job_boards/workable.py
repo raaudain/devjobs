@@ -48,19 +48,15 @@ def get_results(item: str, param: str, company: str, logo: str):
         
 
 def get_url(companies: list):
-    proxies = {
-        "http":"",
-    }
-
     count = 1
 
     for company in companies:
         token = "0"
+        request = requests.Session()
 
         try:
             while token:
                 headers = {"User-Agent": random.choice(h)}
-                request = requests.Session()
                 request.proxies.update(p.proxies)
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
@@ -91,14 +87,12 @@ def get_url(companies: list):
                 
                 if count % 8 == 0: time.sleep(10)
                 
-                count+=1
-
-                
-
+                count+=1    
         except:
             print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
-            # pass
-        
+
+        request.cookies.clear()
+        request.close()
 
 
 def main():

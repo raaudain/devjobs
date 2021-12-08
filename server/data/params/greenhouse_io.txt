@@ -1,3 +1,4 @@
+intersystems
 wrapbook
 10xgenomics
 postscript
@@ -393,7 +394,6 @@ everlane
 cruisecontract
 calicolabs
 m1finance
-intersystems
 forwardfinancing
 timebyping
 ixlayercareers
