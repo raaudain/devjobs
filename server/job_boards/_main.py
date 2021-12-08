@@ -48,6 +48,14 @@ def main():
     locations = [location.strip() for location in f]
     f.close()
 
+    w = open(f"./data/params/workable.txt", "r")
+    work = [l.strip() for l in w]
+    w.close()
+
+    # w_half = len(work)//2
+    # workable1 = work[:w_half] 
+    # workable2 = work[w_half:]
+
     # m = open(f"./data/params/miami.txt", "r")
     # miamis = [miami.strip() for miami in m]
     # m.close()
@@ -55,13 +63,14 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    target.main()
+    workable.get_url(work[::2])
+    craigslist.get_url(locations)
     greenhouse_io.main()
     jobvite.main()
     breezyhr.main()
-    workable.main()
     smartrecruiters.main()
     bamboohr.main()
-    craigslist.get_url(locations)
     eightfold.main()
     jazzhr.main()
     lever_co.main()
@@ -69,9 +78,9 @@ def main():
     clearcompany.main()
     # craigslist.get_url_miami(miamis)
     comeet.main()
-    target.main()
     nbc.main()
     craigslist.get_url_it(locations)
+    workable(work[1::2])
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     nintendo.main()
@@ -83,7 +92,6 @@ def main():
     twitter.main()
     usajobs.main()
     key_values.main()
-    craigslist.get_url_network(locations)
     zillow.main()
     # clickup.main()
     # instacart.main()
@@ -93,6 +101,7 @@ def main():
     workaline.main()
     remote_co.main()
     remoteok.main()
+    craigslist.get_url_network(locations)
     # dailyremote.main()
     # stackoverflow.main()
     # dice.main()

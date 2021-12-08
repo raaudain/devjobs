@@ -89,7 +89,7 @@ def get_url(companies: list):
             company = json.loads(res.text)["name"]
             logo = None
             
-            if name is not "intersystems":
+            if name != "intersystems":
                 try:
                     r = request.get(url3, headers=headers)
                     soup = BeautifulSoup(r.text, "lxml")
