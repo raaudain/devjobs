@@ -89,7 +89,7 @@ def get_url(companies: list):
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 10 == 0: time.sleep(10)
+                if count % 8 == 0: time.sleep(10)
                 
                 count+=1
 

@@ -91,13 +91,10 @@ def get_url(companies: list):
             
             try:
                 r = request.get(url3, headers=headers)
-            # r = Get(url3).response()
-
-                if r.ok:
-                    soup = BeautifulSoup(r.text, "lxml")
-                    logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+                soup = BeautifulSoup(r.text, "lxml")
+                logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
             except:
-                print(f"=> greenhouse.io: Error getting logo for {name}.")
+                print(f"=> greenhouse.io: Error getting logo for {name}. Status code: {r.status_code}.")
 
             if data and company: get_results(data, name, company, logo)
             if count % 20 == 0: time.sleep(5)
