@@ -48,3 +48,4 @@ Rocketplace
 jobs-at-pager
 critizr
 keepit
+nplex

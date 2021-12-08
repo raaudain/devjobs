@@ -54,7 +54,6 @@ maze
 woobie
 stytch
 structionsite
-nplex
 Sketchbox
 Supergrain
 safelease
