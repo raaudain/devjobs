@@ -3,12 +3,13 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules import proxies as p
 from .modules.classes import Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-def get_jobs(date: str, apply_url: str, company_name: str, position: str, locations_string: str, name: str):
+def get_jobs(date: str, apply_url: str, company_name: str, position: str, locations_string: str, logo: str, name: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
     post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d"))
@@ -17,6 +18,7 @@ def get_jobs(date: str, apply_url: str, company_name: str, position: str, locati
         "timestamp": post_date,
         "title": position,
         "company": company_name,
+        "company_logo": logo,
         "url": apply_url,
         "location": locations_string,
         "source": company_name,
@@ -31,6 +33,7 @@ def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all(class_="jv-job-list") if soup.find_all(class_="jv-job-list") else None
     company = soup.find("title").text.replace("Careers", "").replace("| Available job openings", "").replace("Job listings |", "").strip() if soup.find("title") else None
+    logo = soup.find(class_="logo")["src"] if soup.find(class_="logo", src=True) else None
 
     if results and company:
         for r in results:
@@ -43,7 +46,7 @@ def get_results(item: str, name: str):
                 position = title
                 locations_string = r.find("td", class_="jv-job-list-location").text.strip() if r.find("td", class_="jv-job-list-location") else "See description for location"
 
-                get_jobs(date, apply_url, company_name, position, locations_string, name)
+                get_jobs(date, apply_url, company_name, position, locations_string, logo, name)
 
 
 def get_url(companies: list):
@@ -52,23 +55,25 @@ def get_url(companies: list):
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://jobs.jobvite.com/careers/{name}"
+        request = requests.Session()
+        request.proxies.update(p.proxies)
         try:
-            response = requests.get(url, headers=headers)
-        except requests.ConnectionError as err:
-            print("=> jobvite: Connection error:", err)
-            break
+            response = request.get(url, headers=headers)
+            if response.ok: 
+                get_results(response.text, name)
+            elif response.status_code == 404:
+                not_found = Page_Not_Found("./data/params/jobvite.txt", name)
+                not_found.remove_unwanted()
+            else: 
+                res = requests.get(f"https://jobs.jobvite.com/{name}/jobs", headers=headers)
+                if res.ok: get_results(res.text, name)
+                else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
+        except:
+            print("=> jobvite: Connection error:", name)
+            
 
-        if response.ok: 
-            get_results(response.text, name)
-        elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/jobvite.txt", name)
-            not_found.remove_unwanted()
-        else: 
-            res = requests.get(f"https://jobs.jobvite.com/{name}/jobs", headers=headers)
-            if res.ok: get_results(res.text, name)
-            else: print(f"=> jobvite: Scrape failed for {name}. Status code: {res.status_code}")
 
-        if count % 2 == 0: time.sleep(5)
+        if count % 20 == 0: time.sleep(5)
         count+=1
 
 
