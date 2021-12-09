@@ -80,7 +80,7 @@ def main():
     comeet.main()
     nbc.main()
     # craigslist.get_url_it(locations)
-    workable(work[1::2])
+    workable.get_url(work[1::2])
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     nintendo.main()
