@@ -83,8 +83,8 @@ def get_url(companies: list):
         if response.ok:
             data = json.loads(response.text)
             get_results(data, name)
-            # if count % 10 == 0: time.sleep(5)
-            # count += 1
+            if count % 10 == 0: time.sleep(5)
+            count += 1
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/smartrecruiters.txt", name)
             not_found.remove_unwanted()
