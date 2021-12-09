@@ -49,3 +49,4 @@ jobs-at-pager
 critizr
 keepit
 nplex
+noblr
