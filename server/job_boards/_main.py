@@ -52,6 +52,10 @@ def main():
     work = [l.strip() for l in w]
     w.close()
 
+    g = open(f"./data/params/greenhouse_io.txt", "r")
+    green = [l.strip() for l in g]
+    g.close()
+
     # w_half = len(work)//2
     # workable1 = work[:w_half] 
     # workable2 = work[w_half:]
@@ -66,10 +70,10 @@ def main():
     target.main()
     workable.get_url(work[::2])
     # craigslist.get_url(locations)
-    greenhouse_io.main()
+    greenhouse_io.get_url(green[::2])
+    smartrecruiters.main()
     jobvite.main()
     breezyhr.main()
-    smartrecruiters.main()
     bamboohr.main()
     eightfold.main()
     jazzhr.main()
@@ -81,6 +85,7 @@ def main():
     nbc.main()
     # craigslist.get_url_it(locations)
     workable.get_url(work[1::2])
+    greenhouse_io.get_url(green[1::2])
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     nintendo.main()
