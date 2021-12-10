@@ -426,7 +426,6 @@ zendrive
 horangi
 visier
 vendr
-wundermobility
 pelmorex
 honeypot
 naturesfynd
