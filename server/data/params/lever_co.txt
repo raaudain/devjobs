@@ -199,7 +199,6 @@ paperspace
 academia
 render
 doppler
-sparrow
 curai
 grouparoo
 HumanFirst
@@ -749,3 +748,10 @@ stardog
 trussworks
 wildbit
 brightspot
+canarytechnologies
+bullhorn
+socialchorus
+tripleblind
+SwiftlySystems
+viantinc
+leap-2

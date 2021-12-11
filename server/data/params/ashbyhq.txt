@@ -45,7 +45,6 @@ digisure
 vanmoof
 monad
 kolena
-mati
 upandup
 impira
 sora
