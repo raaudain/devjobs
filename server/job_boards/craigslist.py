@@ -35,8 +35,8 @@ def get_jobs(item: list, location: str):
             })
             scraped.add(url)
             print(f"=> craigslist: Added {title} for {location}")
-        else:
-            print(f"=> craigslist: Already scraped or too old: {title} for {location}")
+        # else:
+        #     print(f"=> craigslist: Already scraped or too old: {title} for {location}")
 
     
 def get_results(item: str, city: str):

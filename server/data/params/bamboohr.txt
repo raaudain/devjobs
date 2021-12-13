@@ -322,3 +322,4 @@ nzxt
 weavrhealth
 thapremierclientkp
 realync
+trendyminds
