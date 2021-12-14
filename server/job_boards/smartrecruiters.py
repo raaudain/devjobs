@@ -46,16 +46,19 @@ def get_results(item: str, name: str):
                 if name in images:
                     logo = images[name]
                 else:
-                    request = requests.Session()
-                    request.proxies.update(p.proxies)
-                    r = request.get(apply_url)
-                    if r.ok:
-                        soup = BeautifulSoup(r.text, "lxml")
-                        if soup.find(class_="header-logo logo").find("img", src=True):
-                            logo = soup.find(class_="header-logo logo").find("img")["src"]
-                            images[name] = logo
-                        else:
-                            logo = None
+                    try:
+                        request = requests.Session()
+                        request.proxies.update(p.proxies)
+                        r = request.get(apply_url)
+                        if r.ok:
+                            soup = BeautifulSoup(r.text, "lxml")
+                            if soup.find(class_="header-logo logo").find("img", src=True):
+                                logo = soup.find(class_="header-logo logo").find("img")["src"]
+                                images[name] = logo
+                            else:
+                                logo = None
+                    except:
+                        print(f"Unable to get logo for {name}")
 
                 position = i["name"]
                 city = f'{i["location"]["city"]}, '

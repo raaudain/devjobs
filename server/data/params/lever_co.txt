@@ -90,7 +90,6 @@ crosscountry-consulting
 deepgram
 delphix
 disqo
-draftkings
 eargo
 ease
 everbridge
