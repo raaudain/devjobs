@@ -73,41 +73,44 @@ def get_url(companies: list):
     count = 1
 
     for name in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-        url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-        url3 = f"https://boards.greenhouse.io/{name}"
-        request = requests.Session()
-        request.proxies.update(p.proxies)
-        response = request.get(url, headers=headers)
-        res = request.get(url2, headers=headers)
-        # response = Get(url).response()
-        # res = Get(url2).response()
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
+            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
+            url3 = f"https://boards.greenhouse.io/{name}"
+            request = requests.Session()
+            request.proxies.update(p.proxies)
+            response = request.get(url, headers=headers)
+            res = request.get(url2, headers=headers)
+            # response = Get(url).response()
+            # res = Get(url2).response()
 
-        if response.ok and res.ok:
-            data = json.loads(response.text)
-            company = json.loads(res.text)["name"]
-            logo = None
+            if response.ok and res.ok:
+                data = json.loads(response.text)
+                company = json.loads(res.text)["name"]
+                logo = None
+                
+                if name != "intersystems":
+                    try:
+                        r = request.get(url3, headers=headers)
+                        soup = BeautifulSoup(r.text, "lxml")
+                        logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
+                    except:
+                        print(f"=> greenhouse.io: Error getting logo for {name}.")
+
+                if data and company: get_results(data, name, company, logo)
+                if count % 20 == 0: time.sleep(5)
+                count+=1
+            elif response.status_code == 404:
+                not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
+                not_found.remove_unwanted()
+            else:
+                print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
             
-            if name != "intersystems":
-                try:
-                    r = request.get(url3, headers=headers)
-                    soup = BeautifulSoup(r.text, "lxml")
-                    logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
-                except:
-                    print(f"=> greenhouse.io: Error getting logo for {name}.")
-
-            if data and company: get_results(data, name, company, logo)
-            if count % 20 == 0: time.sleep(5)
-            count+=1
-        elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
-            not_found.remove_unwanted()
-        else:
-            print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
-        
-        request.cookies.clear()
-        request.close()
+            request.cookies.clear()
+            request.close()
+        except requests.exceptions.ConnectionError as err:
+            print(f"Error for {name}. {err}")
 
 
 def main():
