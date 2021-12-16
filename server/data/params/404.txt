@@ -56,3 +56,6 @@ mati
 crenlo
 draftkings
 woz-u
+mendix
+retro
+sonyinteractiveentertainmentplaystation

@@ -72,7 +72,6 @@ pledge.earth
 insight-browser
 ownit
 juni
-retro
 moneyworld
 numero
 lighthouse

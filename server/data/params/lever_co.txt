@@ -122,7 +122,6 @@ maple-finance
 mashgin
 matterport
 mejuri
-mendix
 molekule
 moo
 netflix
