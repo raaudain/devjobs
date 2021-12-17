@@ -207,7 +207,6 @@ angaza
 figma
 palantir
 matchgroup
-harvest-2
 messari
 nexient
 bellhops
@@ -681,7 +680,6 @@ govirtuo
 onefootball
 synthego
 spenmo
-pharmapacks
 yugabyte
 vicarious
 homex

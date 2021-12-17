@@ -299,7 +299,6 @@ myntra
 rhino
 signifyhealth
 ndb
-insomniacgames
 coherehealth
 hollywoodparksofistadium
 better
@@ -877,3 +876,4 @@ zype
 amplitude
 guru
 pathai
+linearb

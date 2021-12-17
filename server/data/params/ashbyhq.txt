@@ -27,7 +27,6 @@ dotconnect
 cartloop
 middesk
 octoml
-nextmusic
 rootine
 teamtito
 firstbaseio
@@ -93,7 +92,6 @@ cortex
 plugpagamentos
 gelt
 flowclub
-Sodalabs
 turnstile
 curated
 miso
