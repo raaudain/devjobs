@@ -62,3 +62,4 @@
 /newfront
 /classy
 /automattic
+/amplitude
