@@ -280,7 +280,6 @@ magnetforensics
 zerofox
 phcpdn
 guidewire
-interbrand
 anotherco
 lionheartkid
 seerinteractive
@@ -751,3 +750,4 @@ tripleblind
 SwiftlySystems
 viantinc
 leap-2
+exygy
