@@ -7,36 +7,30 @@ from .modules import create_temp_json
 data = create_temp_json.data
 scraped = create_temp_json.scraped
 
-jobs = ["developer", "software engineer", "devops", "support engineer", "frontend", "backend", "fullstack", "it engineer", "desktop support", "helpdesk", "it support"]
+jobs = ["developer", "software engineer", "devops", "support engineer", "frontend", "backend", "fullstack", "it engineer", "desktop support", "helpdesk", "it support", "qa analyst", "cloud", "network", "security", "qa tester", "database", "software"]
 
-def getJobs(date, url, company, position, location):
-    date = str(date)
-    title = position
-    company = company
-    url = url
-    location = location
-
+def getJobs(date, url, company, position, location, logo):
     # age = datetime.timestamp(datetime.now() - timedelta(days=7))
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+    postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
-    if url not in scraped:
+    if url not in scraped and company not in scraped:
         data.append({
             "timestamp": postDate,
-            "title": title,
+            "title": position,
             "company": company,
+            "company_logo": logo,
             "url": url,
             "location": location,
             "source": "Dice",
             "source_url": "https://www.dice.com",
             "category": "job"
         })
-        print(f"=> dice: Added {title} for {company}")
+        print(f"=> dice: Added {position} for {company}")
         scraped.add(url)
             
 
 def getResults(item):
     data = item["data"]
-
     recruiters = ("VDart, Inc.", "Net2Source Inc.", "Sumeru")
 
     for d in data:
@@ -44,10 +38,11 @@ def getResults(item):
             date = datetime.strptime(d["postedDate"], "%Y-%m-%dT%H:%M:%SZ")
             position = d["title"].strip()
             company_name = d["companyName"].strip()
+            logo = "https:"+d["companyLogoUrl"].strip() if "companyLogoUrl" in d else None
             apply_url = d["detailsPageUrl"].strip()
             locations_string = d["jobLocation"]["displayName"].strip() if "jobLocation" in d else None
 
-            getJobs(date, apply_url, company_name, position, locations_string)
+            getJobs(date, apply_url, company_name, position, locations_string, logo)
 
 
 def getURL():
@@ -58,7 +53,6 @@ def getURL():
             url = f"https://job-search-api.svc.dhigroupinc.com/v1/dice/jobs/search?q={job}&countryCode2=US&radius=30&radiusUnit=mi&page=1&pageSize=1000&facets=employmentType%7CpostedDate%7CworkFromHomeAvailability%7CemployerType%7CeasyApply%7CisRemote&filters.employerType=Direct%20Hire&filters.postedDate=SEVEN&fields=id%7CjobId%7Csummary%7Ctitle%7CpostedDate%7CjobLocation.displayName%7CdetailsPageUrl%7Csalary%7CclientBrandId%7CcompanyPageUrl%7CcompanyLogoUrl%7CpositionId%7CcompanyName%7CemploymentType%7CisHighlighted%7Cscore%7CeasyApply%7CemployerType%7CworkFromHomeAvailability%7CisRemote&culture=en&recommendations=true&interactionId=0&fj=true&includeRemote=true"
 
             response = requests.get(url, headers=headers).text
-
             data = json.loads(response)
 
             getResults(data)
@@ -66,7 +60,7 @@ def getURL():
             time.sleep(5)
 
         except:
-            continue
+            print("=>  dice: Error for", job)
 
 def main():
     getURL()

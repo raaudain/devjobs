@@ -19,7 +19,7 @@ from . import builtin
 # from . import dailyremote
 from . import hireart
 # from . import stackoverflow
-# from . import dice
+from . import dice
 from . import zillow
 from . import usajobs
 from . import amazon
@@ -109,7 +109,7 @@ def main():
     craigslist.get_url_network(locations)
     # dailyremote.main()
     # stackoverflow.main()
-    # dice.main()
+    dice.main()
     builtin.main()
     create_temp_json.createJSON(create_temp_json.data)
     # create_main_json.createJSON()

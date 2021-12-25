@@ -29,5 +29,4 @@
 /bombbomb
 /dark
 /minerva
-/coast
 /lets-do-this

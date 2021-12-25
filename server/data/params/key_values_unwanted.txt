@@ -63,3 +63,4 @@
 /classy
 /automattic
 /amplitude
+/coast
