@@ -37,6 +37,7 @@ from . import vuejobs
 from . import jobvite
 from . import recruiterbox
 from . import nbc
+from . import fullstackjob
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -68,6 +69,7 @@ def main():
     start = datetime.now()
     # bloomberg.main()
     target.main()
+    fullstackjob.main()
     smartrecruiters.main()
     workable.get_url(work[::2])
     greenhouse_io.get_url(green[::2])
