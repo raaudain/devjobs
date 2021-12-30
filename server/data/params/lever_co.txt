@@ -316,7 +316,6 @@ getbuilt
 metlife
 tba
 uipath
-glu
 adaptavist
 ekimetrics
 ppro
