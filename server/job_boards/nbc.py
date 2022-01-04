@@ -26,7 +26,7 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
 
 def get_results(item: str):
     for i in item:
-        date = i["field_lastupdated"]+"/"+datetime.now().date().strftime("%Y")
+        date = i["field_lastupdated"]+"/21"
         position = i["title"].strip()
         company_name = "NBCUniversal"
         apply_url = i["field_detailurl"].replace("&amp;", "&").strip()

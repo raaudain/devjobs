@@ -8,7 +8,7 @@ def get_jobs(item: list):
     data = create_temp_json.data
 
     for job in item:
-        date = datetime.strptime(job.find_all("small")[1].text+" "+str(datetime.today().year), "%b %d %Y")
+        date = datetime.strptime(job.find_all("small")[1].text+" 2021", "%b %d %Y")
         title = job.find("strong").text
         company = job.find("small").text
         url = "https://nocsok.com/"+job.find("a", href=True)["href"].replace("#", "")
