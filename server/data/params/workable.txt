@@ -1,5 +1,4 @@
 friendscommittee
-raspberrypi
 jerry
 shapeways
 smdiversity
