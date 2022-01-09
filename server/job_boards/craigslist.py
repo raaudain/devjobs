@@ -26,7 +26,7 @@ def get_jobs(item: list, location: str):
                 "timestamp": post_date,
                 "title": title,
                 "company": None,
-                "company_logo": "http://marshallscomputers.com/wp-content/uploads/2013/08/craigslist_Logo.png",
+                "company_logo": "https://logos-world.net/wp-content/uploads/2021/02/Craigslist-Emblem.png",
                 "url": url,
                 "location": location,
                 "source": "Craigslist",
