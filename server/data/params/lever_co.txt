@@ -691,7 +691,6 @@ flowinc
 Vivun
 capchase
 oneconcern
-tropic
 automationhero
 educative
 amenityanalytics
