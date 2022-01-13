@@ -84,7 +84,6 @@ udisc
 solid
 pragma
 formkitchens
-kover
 actual
 avenue
 comitylabs

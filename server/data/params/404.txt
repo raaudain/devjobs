@@ -77,3 +77,5 @@ raspberrypi
 remix
 foundhuman
 tropic
+truemotion
+kover

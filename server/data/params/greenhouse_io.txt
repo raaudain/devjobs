@@ -192,7 +192,6 @@ tractable
 transferwise
 trialspark
 triplelift
-truemotion
 twitch
 unqork
 unsupervisedai
