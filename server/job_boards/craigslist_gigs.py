@@ -5,7 +5,7 @@ import requests, sys, json, time
 from .modules import create_temp_json
 
 
-f = open(f"./data/params/us_and_ca.txt", "r")
+f = open(f"./data/params/craigslist.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
