@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests, sys, json, time
-import modules.create_temp_json as create_temp_json
+# import modules.create_temp_json as create_temp_json
+from .modules import create_temp_json
 
 
 f = open(f"./data/params/us_and_ca.txt", "r")
@@ -62,16 +63,19 @@ def getURL(items):
             getResults(response)
 
 def getURLMiami(items):
+    count = 0
     for location in items:
         try:
             url = f"{location}d/computer-gigs/search/cpg?lang=en"
             response = requests.get(url).text
             getResults(response)
+            if count % 10 == 0: time.sleep(5)
         except:
             time.sleep(5)
             url = f"{location}d/computer-gigs/search/cpg?lang=en"
             response = requests.get(url).text
             getResults(response)
+        count+=1
 
 def main():
     getURL(locations)
