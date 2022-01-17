@@ -555,7 +555,6 @@ coredigitalmedia
 mirror
 readdle
 blinkux
-modernanimal
 shef
 aofl
 ppkeystone
