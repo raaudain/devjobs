@@ -578,7 +578,6 @@ konux
 cannondesign
 anark
 aquilagroup
-okex
 deliveryherokoreatech
 connatix
 dnli
