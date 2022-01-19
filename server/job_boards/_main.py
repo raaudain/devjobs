@@ -38,7 +38,7 @@ from . import jobvite
 from . import recruiterbox
 from . import nbc
 from . import fullstackjob
-from . import craigslist_gigs
+# from . import craigslist_gigs
 from .modules import create_temp_json
 from .modules import create_main_json
 from datetime import datetime, timedelta
@@ -70,7 +70,7 @@ def main():
     start = datetime.now()
     # bloomberg.main()
     target.main()
-    craigslist_gigs.main()
+    # craigslist_gigs.main()
     nbc.main()
     nocsok.main()
     smartrecruiters.main()
