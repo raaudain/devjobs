@@ -83,3 +83,4 @@ ovira
 modernanimal
 okex
 festicket
+magnitude
