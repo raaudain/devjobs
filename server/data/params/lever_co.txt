@@ -9,7 +9,6 @@ scaleai
 olo
 divvyhomes
 grafana
-theorem
 nestwealth
 seesaw
 pex
