@@ -1,3 +1,4 @@
+/local-kitchens
 /makelog
 /indeed
 /reduct
@@ -13,8 +14,8 @@
 /meter
 /workos
 /symbio
-/karat
 /change-org
+/karat
 /noyo
 /3box-labs
 /range
@@ -24,7 +25,6 @@
 /duckduckgo
 /carbon-five
 /upstatement
-/local-kitchens
 /indent
 /orbit
 /the-financial-gym
