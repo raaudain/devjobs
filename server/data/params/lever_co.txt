@@ -415,7 +415,6 @@ cred
 reorgresearch
 zendrive
 horangi
-visier
 vendr
 pelmorex
 honeypot
