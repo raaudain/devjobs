@@ -36,7 +36,7 @@ def get_results(item: str, name: str):
 
     if data:
         for i in data:
-            if "Engineer" in i["name"] or "IT " in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Help" in i["name"] or "Desk" in i["name"] or "Developer" in i["name"] and ("Elect" not in i["name"] and "Mechanical" not in i["name"]):
+            if "Engineer" in i["name"] or "IT " in i["name"] or "Programmer" in i["name"] or "Data" in i["name"] or "Help" in i["name"] or "Desk" in i["name"] or "Developer" in i["name"] and ("Elect" not in i["name"] and "Mechanical" not in i["name"] and "Front Desk Associates" not in i["name"]):
                 date = datetime.strptime(i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
                 jobId = i["id"]
                 company_name = i["company"]["name"]

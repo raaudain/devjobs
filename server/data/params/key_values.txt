@@ -29,6 +29,7 @@
 /orbit
 /the-financial-gym
 /new-relic
+/pointcard
 /bombbomb
 /dark
 /minerva
