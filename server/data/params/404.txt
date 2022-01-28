@@ -87,3 +87,5 @@ magnitude
 theorem
 cdbaby
 visier
+mamamoney
+RuneLabs

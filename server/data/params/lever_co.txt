@@ -587,7 +587,6 @@ booknooklearning
 CoinFlip
 saturn
 devacurl
-mamamoney
 pibenchmark
 metabase
 Lottery
@@ -746,7 +745,6 @@ BloomTech
 Smile.io
 connectrn
 Leapfin
-RuneLabs
 noyo
 meter
 qualified
