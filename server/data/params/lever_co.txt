@@ -360,7 +360,6 @@ zenitech
 canva
 eventbrite
 brighte
-standish
 q4inc
 sparkdigital
 pip
@@ -494,7 +493,6 @@ einblick
 joinroot
 tuned
 bespokepost
-gabi
 helloalpha
 Teamblind
 jmawireless

@@ -1,3 +1,4 @@
+/color
 /local-kitchens
 /makelog
 /indeed

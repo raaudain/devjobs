@@ -85,3 +85,6 @@ visier
 mamamoney
 bedrockocean
 coursera
+zype
+standish
+gabi
