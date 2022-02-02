@@ -88,3 +88,6 @@ coursera
 zype
 standish
 gabi
+zencastr
+riverainc
+mst
