@@ -66,20 +66,23 @@ def get_results(item: str, name: str):
 def get_url(companies: list):
     page = 1
 
-    for company in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{company}.breezy.hr"
-        response = requests.get(url, headers=headers)
+    try:
+        for company in companies:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{company}.breezy.hr"
+            response = requests.get(url, headers=headers)
 
-        if response.ok: 
-            get_results(response.text, company)
-            if page % 10 == 0: time.sleep(5)     
-            page+=1
-        elif str(response.status_code)[0] == "5":
-            print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
-            break
-        else: 
-            print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+            if response.ok: 
+                get_results(response.text, company)
+                if page % 10 == 0: time.sleep(5)     
+                page+=1
+            elif str(response.status_code)[0] == "5":
+                print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+                break
+            else: 
+                print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+    except:
+        print("=> breezyhr: Failed to scrape.")
 
 
 def main():
