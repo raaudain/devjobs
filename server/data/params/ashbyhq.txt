@@ -55,7 +55,6 @@ Sketchbox
 Supergrain
 safelease
 PoggioLabs
-zendar
 beacon
 sonalabs
 vitally
