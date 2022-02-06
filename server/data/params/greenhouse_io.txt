@@ -887,3 +887,4 @@ runelabs
 cdbabyjobs
 OKX
 modernanimal
+squire
