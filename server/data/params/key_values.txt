@@ -15,8 +15,8 @@
 /meter
 /workos
 /symbio
-/change-org
 /karat
+/change-org
 /noyo
 /3box-labs
 /range
@@ -30,7 +30,6 @@
 /orbit
 /the-financial-gym
 /new-relic
-/pointcard
 /bombbomb
 /dark
 /minerva
