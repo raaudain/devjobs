@@ -89,7 +89,6 @@ wtgmerch
 thegranitegroup
 chefpointcafe
 mcw
-dzap
 coastalvillages
 flygrant
 sumariasystems
@@ -104,10 +103,8 @@ llrpartners
 sagora
 bti
 eyemartexpress
-clearbanc
 gatewayengineers
 coopereic
-hslasset
 sabv
 balchem
 westwoodone
@@ -130,12 +127,10 @@ sema4
 agilespace
 actforchildren
 thethirdfloorinc
-yesprep
 mtrustcompany
 metcouncil
 sunbeltcontrols
 inperiumms
-executech
 aiche
 afpa
 parkplaceintl
@@ -160,7 +155,6 @@ idexpertscorp
 varmour
 tekfor
 gulfcoastunderground
-kstpathways
 helpusa
 lemanacademy
 pin

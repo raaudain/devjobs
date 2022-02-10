@@ -134,7 +134,6 @@ pngme
 pythian
 quantcast
 rappi
-returnly
 rideos
 roofstock
 safeai
