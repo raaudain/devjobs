@@ -466,7 +466,6 @@ thatlot
 markforged
 yoursuper
 golin
-canvas
 airtable
 bandainamco
 tripactions

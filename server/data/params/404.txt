@@ -105,3 +105,7 @@ hslasset
 yesprep
 executech
 kstpathways
+canvas
+socialchorus
+apollo
+turbocam

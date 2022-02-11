@@ -727,7 +727,6 @@ wildbit
 brightspot
 canarytechnologies
 bullhorn
-socialchorus
 tripleblind
 SwiftlySystems
 viantinc
@@ -742,5 +741,4 @@ meter
 qualified
 percona
 wisk
-apollo
 grailbio
