@@ -254,7 +254,6 @@ rw1
 bounteous
 amount
 mambu
-edlio
 carbonhealth
 demicon
 tokenmetrics

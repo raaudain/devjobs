@@ -1,6 +1,7 @@
 /color
 /local-kitchens
 /makelog
+/pointcard
 /indeed
 /reduct
 /chani
@@ -15,8 +16,8 @@
 /meter
 /workos
 /symbio
-/karat
 /change-org
+/karat
 /noyo
 /3box-labs
 /range

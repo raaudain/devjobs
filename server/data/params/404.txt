@@ -109,3 +109,4 @@ canvas
 socialchorus
 apollo
 turbocam
+edlio
