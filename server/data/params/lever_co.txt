@@ -242,7 +242,6 @@ servian
 bssp
 misk
 altaml
-thriveglobal
 fampay
 issuu
 acast

@@ -672,7 +672,6 @@ hopin
 duolingo
 m4az
 nubank
-stratifyd
 textiq
 plenty
 fender

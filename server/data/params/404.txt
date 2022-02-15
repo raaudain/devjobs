@@ -110,3 +110,5 @@ socialchorus
 apollo
 turbocam
 edlio
+stratifyd
+thriveglobal
