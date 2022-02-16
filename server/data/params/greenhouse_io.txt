@@ -126,7 +126,6 @@ invoca
 kayak
 kevel
 klaviyo
-kustomer
 lacework
 legalist
 litify
@@ -539,7 +538,6 @@ ambys
 samlabs
 carmera
 winreality
-appannie
 smileidentity
 cosm
 dalbergdesign
@@ -806,7 +804,6 @@ foodpandathailand
 2k
 breakthroughenergy38
 decibio
-tahzoo
 doma
 tripadvisor
 rewardstyle
