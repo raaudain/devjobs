@@ -12,7 +12,6 @@ ycombinator
 alpaca
 transform
 moderntreasury
-pipeline
 upflow
 census
 duneanalytics
