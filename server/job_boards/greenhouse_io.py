@@ -109,8 +109,8 @@ def get_url(companies: list):
             
             request.cookies.clear()
             request.close()
-        except requests.exceptions.ConnectionError as err:
-            print(f"Error for {name}. {err}")
+        except:
+            print(f"Error for {name}.")
 
 
 def main():
