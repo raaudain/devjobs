@@ -166,7 +166,6 @@ roblox
 roku
 safegraph
 sentry
-servicechannel
 skupos
 skydio
 smartasset
@@ -542,7 +541,6 @@ smileidentity
 cosm
 dalbergdesign
 nichecom
-spell
 postlight
 zylo
 arthurai

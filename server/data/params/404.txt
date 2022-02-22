@@ -117,3 +117,6 @@ tahzoo
 appannie
 sidwainer
 pipeline
+servicechannel
+spell
+repool
