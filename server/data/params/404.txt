@@ -121,3 +121,4 @@ servicechannel
 spell
 repool
 cathkidston
+tendermint

@@ -151,7 +151,6 @@ tamr
 tapcart
 teachable
 tealium
-tendermint
 textnow
 thrasio
 tune
