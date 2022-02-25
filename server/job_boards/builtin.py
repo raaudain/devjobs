@@ -99,22 +99,25 @@ def get_results(item: str):
 
 def get_url():
     page = 1
+    
+    try:
+        while IS_TRUE:
+            if IS_TRUE == False: break
 
-    while IS_TRUE:
-        if IS_TRUE == False: break
+            headers = {"User-Agent":random.choice(h.headers), "Origin":"https://builtin.com","Referer":"https://builtin.com/"}
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+            response = requests.get(url, headers=headers)
 
-        headers = {"User-Agent":random.choice(h.headers), "Origin":"https://builtin.com","Referer":"https://builtin.com/"}
-        url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
-        response = requests.get(url, headers=headers)
-
-        if response.ok:
-            data = json.loads(response.text)
-            get_results(data)
-            # if page % 1 == 0: time.sleep(5)
-            page+=1
-        else:
-            print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
-            break
+            if response.ok:
+                data = json.loads(response.text)
+                get_results(data)
+                # if page % 1 == 0: time.sleep(5)
+                page+=1
+            else:
+                print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
+                break
+    except:
+        print(f"=> builtin: Error for builtin on page {page}.")
 
 
 def main():
