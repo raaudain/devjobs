@@ -122,3 +122,4 @@ spell
 repool
 cathkidston
 tendermint
+rewardstyle
