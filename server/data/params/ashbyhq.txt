@@ -85,7 +85,6 @@ avenue
 comitylabs
 cortex
 plugpagamentos
-gelt
 flowclub
 turnstile
 curated

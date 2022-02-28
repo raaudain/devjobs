@@ -695,7 +695,6 @@ returntocorp
 hedvig
 evolutioniq
 bimone
-sourceful
 marigoldhealth
 blackpanda
 cartodb
