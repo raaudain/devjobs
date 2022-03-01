@@ -37,9 +37,12 @@ def get_jobs(item: list):
 
 
 def get_results(item: str):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("li", class_=["feature",""])
-    get_jobs(results)
+    try:
+        soup = BeautifulSoup(item, "lxml")
+        results = soup.find_all("li", class_=["feature",""])
+        get_jobs(results)
+    except:
+        print(f"=> weworkremotely: Error.")
 
 
 def get_url():

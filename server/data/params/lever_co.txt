@@ -36,7 +36,6 @@ dataiku
 newfrontinsurance
 rollbar
 rainforest
-omnisci
 citrineinformatics
 Wefunder
 fuzzypethealth
@@ -109,7 +108,6 @@ instructure
 italic
 jumpcloud
 knotch
-kurtosys
 labelbox
 loadsmart
 logicmanager
@@ -182,7 +180,6 @@ getspruce
 imo-online
 harness
 grove
-grandrounds
 clari
 polleverywhere
 jitxinc

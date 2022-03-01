@@ -125,3 +125,6 @@ tendermint
 rewardstyle
 sourceful
 gelt
+omnisci
+kurtosys
+grandrounds
