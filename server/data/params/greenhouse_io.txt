@@ -667,7 +667,6 @@ hopin
 duolingo
 m4az
 nubank
-textiq
 plenty
 fender
 buspatrol
