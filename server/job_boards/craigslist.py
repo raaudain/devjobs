@@ -545,6 +545,30 @@ def get_url_network(items: list):
         except:
             pass
 
+def get_url_web(items: list):
+    count = 1
+
+    for location in items:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{location}.craigslist.org/search/web?lang=en"
+            response = requests.get(url, headers=headers)
+
+            if response.ok:
+                get_results(response.text, location)
+                if count % 10 == 0: time.sleep(5)
+            # elif response.status_code == 403 and count < 1:
+            #     print(f"=> craigslist: Sleeping for 15 minutes")
+            #     time.sleep(900)
+            #     count+=1
+            else:
+                print(f"=> craigslist: Error for {location}: {response.status_code}")
+                break
+
+            count += 1
+        except:
+            pass
+
 
 def get_url_miami_network(items: list):
     count = 1
