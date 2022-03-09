@@ -304,7 +304,6 @@ qualio
 unit8
 kinsta
 realtrends
-channelvas
 umbra
 dstillery
 wegift
