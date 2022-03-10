@@ -338,7 +338,6 @@ happyfresh
 caseware
 spreetail
 covergenius
-comtravo
 sfeir
 lime
 ion
@@ -563,7 +562,6 @@ beeflow
 invenia
 Rarible
 NimbleAI
-onefinance
 workbravely
 intelligentsiacoffee
 econstruct
