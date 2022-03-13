@@ -3,7 +3,6 @@ leadiq
 treasuryprime
 standard
 memora
-commsor
 firstbase
 belvo
 convictional
