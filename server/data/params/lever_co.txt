@@ -132,7 +132,6 @@ pngme
 pythian
 quantcast
 rappi
-rideos
 roofstock
 safeai
 scribd
