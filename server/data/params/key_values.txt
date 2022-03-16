@@ -1,3 +1,4 @@
+/gordian
 /sphinx-defense
 /virta
 /color
