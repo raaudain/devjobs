@@ -140,3 +140,6 @@ digisure
 blackrifle
 hotstar
 octoml
+stratifyd
+sema4
+ovira
