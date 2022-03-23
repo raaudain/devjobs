@@ -18,7 +18,6 @@ teleport
 whereby
 layer
 bodyport
-recur
 QuantLabs
 caremessage
 confidentcannabis
