@@ -59,21 +59,24 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     page = 1
-
+    
     for company in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{company}.hrmdirect.com/employment/job-openings.php?search=true&dept=-1"
-        response = requests.get(url, headers=headers)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{company}.hrmdirect.com/employment/job-openings.php?search=true&dept=-1"
+            response = requests.get(url, headers=headers)
 
-        if response.ok:
-            get_results(response.text, company)
-            if page % 10 == 0: time.sleep(5)   
-            page+=1
-        elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/clearcompany.txt", company)
-            not_found.remove_unwanted()
-        else:
-            print(f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
+            if response.ok:
+                get_results(response.text, company)
+                if page % 10 == 0: time.sleep(5)   
+                page+=1
+            elif response.status_code == 404:
+                not_found = Page_Not_Found("./data/params/clearcompany.txt", company)
+                not_found.remove_unwanted()
+            else:
+                print(f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
+        except:
+            print(f"clearcompany => Error with {company}.")
 
 
 def main():

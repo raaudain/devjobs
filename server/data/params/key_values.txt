@@ -1,6 +1,7 @@
 /skale
 /gordian
 /sphinx-defense
+/leapfin
 /virta
 /color
 /local-kitchens
@@ -12,8 +13,8 @@
 /qualified
 /modern-treasury
 /the-mom-project
-/plus
 /big-health
+/plus
 /monograph
 /drivers-seat
 /sibi
@@ -27,7 +28,6 @@
 /range
 /rune-labs
 /remix
-/leapfin
 /duckduckgo
 /carbon-five
 /upstatement
