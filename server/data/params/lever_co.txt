@@ -302,7 +302,6 @@ ppil
 getbuilt
 metlife
 tba
-uipath
 adaptavist
 ekimetrics
 ppro

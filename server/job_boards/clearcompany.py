@@ -76,7 +76,7 @@ def get_url(companies: list):
             else:
                 print(f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
         except:
-            print(f"clearcompany => Error with {company}.")
+            print(f"=> clearcompany: Error with {company}.")
 
 
 def main():
