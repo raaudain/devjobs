@@ -290,3 +290,5 @@ docontrol
 nanodimension
 uipath
 tgn
+ironox
+sema4

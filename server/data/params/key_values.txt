@@ -1,3 +1,4 @@
+/zapier
 /skale
 /gordian
 /sphinx-defense
@@ -21,8 +22,8 @@
 /meter
 /workos
 /symbio
-/karat
 /change-org
+/karat
 /noyo
 /3box-labs
 /range
