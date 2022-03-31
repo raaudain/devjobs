@@ -23,8 +23,8 @@
 /meter
 /workos
 /symbio
-/karat
 /change-org
+/karat
 /noyo
 /3box-labs
 /range
@@ -37,7 +37,6 @@
 /orbit
 /the-financial-gym
 /new-relic
-/bombbomb
 /dark
 /minerva
 /lets-do-this
