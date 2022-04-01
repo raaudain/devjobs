@@ -504,7 +504,6 @@ catenamedia
 compasslexecon
 hightechhigh
 klarna
-convoy
 dreamsports
 djeholdings
 lever
@@ -601,7 +600,6 @@ dbtlabs
 AmbassadorLabs
 flexiblefinance
 dronedeploy
-homebound
 ansira
 envato-2
 stackline
