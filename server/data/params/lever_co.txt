@@ -376,7 +376,6 @@ tataunistore
 waabi
 meetingstreetschools
 airbase
-musicworldmedia
 princesspolly
 bambee
 akabrands
@@ -608,7 +607,6 @@ loftium
 playvs
 raya
 ciedigital
-retool
 peerspace
 scottscheapflights
 silverbackstrategies
@@ -821,3 +819,4 @@ slate
 supportninja
 paytm
 ottertune
+industry-arts
