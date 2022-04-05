@@ -500,7 +500,6 @@ fathom
 siftscience
 signifyd95
 d2iq
-braintree
 sundae
 codeandtheory
 phmg
@@ -985,3 +984,4 @@ thriva
 translationunitedmastersstashed
 niantic8thwall
 branchmetrics
+cloudbees
