@@ -18,10 +18,10 @@ def main():
 
     links = soup.find_all("a", {"class": "thumbnail-link"}, href=True)
 
-    dontAdd = ("/wealthfront", "/github", "/instacart", "/readme", "/seesaw", "/nova-credit", "/academia", "/angellist", "/honor", "/render", "/automatticcareers", "doppler", "/sparrow", "/cointracker", "/circleci", "/curai", "/qualia", "/betterup", "/modeanalytics", "/grouparoo", "/humanfirst", "/goodnotes", "/hatch", "/point", "/hipcamp", "/seesaw", "/airtable", "/covariant", "/universe", "/alto", "/jane", "/lightstep", "/digit", "/readme", "/cameo", "/gusto", "/enigma", "/handshake", "/aptible", "/newfront", "/angaza", "/launchdarkly", "/lever", "/stitchfix", "/checkr", "/stitch-fix", "/flexport", "/nexhealth", "/connected", "/flickr", "/mode", "/brex", "/culture-biosciences", "/iora-health", "/routific", "/picnichealth", "/nerdwallet", "/vanta", "/treasury-prime", "/smugmug-flickr", "/asana")
+    dont_add = ("/wealthfront", "/github", "/instacart", "/readme", "/seesaw", "/nova-credit", "/academia", "/angellist", "/honor", "/render", "/automatticcareers", "doppler", "/sparrow", "/cointracker", "/circleci", "/curai", "/qualia", "/betterup", "/modeanalytics", "/grouparoo", "/humanfirst", "/goodnotes", "/hatch", "/point", "/hipcamp", "/seesaw", "/airtable", "/covariant", "/universe", "/alto", "/jane", "/lightstep", "/digit", "/readme", "/cameo", "/gusto", "/enigma", "/handshake", "/aptible", "/newfront", "/angaza", "/launchdarkly", "/lever", "/stitchfix", "/checkr", "/stitch-fix", "/flexport", "/nexhealth", "/connected", "/flickr", "/mode", "/brex", "/culture-biosciences", "/iora-health", "/routific", "/picnichealth", "/nerdwallet", "/vanta", "/treasury-prime", "/smugmug-flickr", "/asana", "/gordian")
 
     for link in links:
-        if link["href"] not in dontAdd:
+        if link["href"] not in dont_add:
             company.write(link["href"]+"\n")
     print("=> key_values: Updated parameters")
     company.close()

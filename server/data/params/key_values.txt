@@ -1,6 +1,6 @@
 /forusall
 /zapier
-/skale
+/upduo
 /gordian
 /sphinx-defense
 /leapfin
