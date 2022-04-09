@@ -19,7 +19,7 @@ from . import builtin
 # from . import dailyremote
 from . import hireart
 # from . import stackoverflow
-from . import dice
+# from . import dice
 from . import zillow
 from . import usajobs
 from . import amazon
@@ -32,7 +32,7 @@ from . import jazzhr
 from . import breezyhr
 from . import target
 from . import twitter
-from . import tiktok
+# from . import tiktok
 from . import vuejobs
 from . import jobvite
 from . import recruiterbox
