@@ -15,7 +15,7 @@ from .modules import driver
 
 driver = driver.chrome
 options = webdriver.ChromeOptions()
-options.add_argument("--headless")
+options.headless = True
 browser = webdriver.Chrome(executable_path=driver, options=options)
 
 
