@@ -8,15 +8,15 @@ from .modules import driver
 # import modules.driver as driver
 
 
-driver = driver.firefox
-options = webdriver.FirefoxOptions()
-options.add_argument("--headless")
-browser = webdriver.Firefox(executable_path=driver, options=options)
+# driver = driver.firefox
+# options = webdriver.FirefoxOptions()
+# options.add_argument("--headless")
+# browser = webdriver.Firefox(executable_path=driver, options=options)
 
-# driver = driver.chrome
+driver = driver.chrome
 # options = webdriver.ChromeOptions()
 # options.add_argument("--headless")
-# browser = webdriver.Chrome(executable_path=driver, options=options)
+browser = webdriver.Chrome(executable_path=driver, options="")
 
 
 def get_jobs(date: str, apply_url: str, company_name: str, position: str, locations_string: str):
