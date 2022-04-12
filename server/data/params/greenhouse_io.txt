@@ -223,7 +223,6 @@ braze
 renttherunway
 quora
 bark
-keeptruckin
 joinhandshake
 grammarly
 crunchyroll
