@@ -234,7 +234,6 @@ contrastsecurity
 chainlink
 servian
 bssp
-misk
 altaml
 fampay
 issuu

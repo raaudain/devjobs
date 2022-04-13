@@ -22,7 +22,7 @@
 /monograph
 /drivers-seat
 /sibi
-/meter
+/lumafield
 /workos
 /symbio
 /change-org
