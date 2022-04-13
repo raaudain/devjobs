@@ -717,7 +717,6 @@ Smile.io
 connectrn
 Leapfin
 noyo
-meter
 qualified
 percona
 wisk
