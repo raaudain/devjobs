@@ -16,7 +16,6 @@ imperfectfoods
 givecampus
 teleport
 whereby
-layer
 bodyport
 QuantLabs
 caremessage
