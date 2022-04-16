@@ -424,7 +424,6 @@ hash
 perfectday
 ppaz
 riverdale
-corpayone
 splashfinancial
 kickstarter
 theathletic
