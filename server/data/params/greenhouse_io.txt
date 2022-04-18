@@ -223,7 +223,6 @@ braze
 renttherunway
 quora
 bark
-keeptruckin
 joinhandshake
 grammarly
 crunchyroll
@@ -264,7 +263,6 @@ routificsolutionsinc
 sponsorsforeducationalopportunity
 metromile
 bird
-breadfinance
 sharebite
 naughtydog
 dialexa

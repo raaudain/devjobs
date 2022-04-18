@@ -16,7 +16,6 @@ imperfectfoods
 givecampus
 teleport
 whereby
-layer
 bodyport
 QuantLabs
 caremessage
@@ -234,7 +233,6 @@ contrastsecurity
 chainlink
 servian
 bssp
-misk
 altaml
 fampay
 issuu
@@ -426,7 +424,6 @@ hash
 perfectday
 ppaz
 riverdale
-corpayone
 splashfinancial
 kickstarter
 theathletic
@@ -664,7 +661,6 @@ capchase
 oneconcern
 automationhero
 educative
-amenityanalytics
 leanplum
 cohere
 enlitic
@@ -718,7 +714,6 @@ Smile.io
 connectrn
 Leapfin
 noyo
-meter
 qualified
 percona
 wisk

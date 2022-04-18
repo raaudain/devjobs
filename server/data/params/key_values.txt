@@ -1,3 +1,5 @@
+/propel
+/repeat
 /forusall
 /zapier
 /upduo
@@ -15,12 +17,12 @@
 /qualified
 /modern-treasury
 /the-mom-project
-/big-health
 /plus
+/big-health
 /monograph
 /drivers-seat
 /sibi
-/meter
+/lumafield
 /workos
 /symbio
 /change-org
