@@ -987,3 +987,5 @@ branchmetrics
 cloudbees
 maestroqa
 zapiercareers
+humu
+alt
