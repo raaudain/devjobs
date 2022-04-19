@@ -11,14 +11,17 @@ from .modules import driver
 import sys
 
 
-driver = driver.firefox
-
 data = create_temp_json.data
 scraped = create_temp_json.scraped
 
-options = webdriver.FirefoxOptions()
+# options = webdriver.FirefoxOptions()
+# options.add_argument("--headless")
+# browser = webdriver.Firefox(executable_path=driver, options=options)
+
+driver = driver.chrome
+options = webdriver.ChromeOptions()
 options.add_argument("--headless")
-browser = webdriver.Firefox(executable_path=driver, options=options)
+browser = webdriver.Chrome(executable_path=driver, options=options)
 
 wait = WebDriverWait(browser, 30)
 
