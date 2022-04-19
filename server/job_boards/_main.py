@@ -32,7 +32,7 @@ from . import jazzhr
 from . import breezyhr
 from . import target
 from . import twitter
-from . import tiktok
+# from . import tiktok
 from . import vuejobs
 from . import jobvite
 from . import recruiterbox
@@ -95,7 +95,7 @@ def main():
     nintendo.main()
     vuejobs.main()
     hireart.main()
-    tiktok.main()
+    # tiktok.main()
     # craigslist.get_url_miami_network(miamis)
     amazon.main()
     craigslist.get_url_web(locations)
