@@ -11,9 +11,6 @@ from .modules import driver
 import sys
 
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
-
 # options = webdriver.FirefoxOptions()
 # options.add_argument("--headless")
 # browser = webdriver.Firefox(executable_path=driver, options=options)
@@ -22,10 +19,13 @@ driver = driver.chrome
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 browser = webdriver.Chrome(executable_path=driver, options=options)
-
 wait = WebDriverWait(browser, 30)
 
-def getJobs(date, apply_url, company_name, position, locations_string):
+
+def get_jobs(date, apply_url, company_name, position, locations_string):
+    data = create_temp_json.data
+    scraped = create_temp_json.scraped
+
     date = str(date)
     title = position
     company = company_name
@@ -50,21 +50,21 @@ def getJobs(date, apply_url, company_name, position, locations_string):
         print(f"=> tiktok: Added {title}")
 
 
-def getResults(item):
+def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("a", {"data-id":True})
 
-    for i in results:
+    for r in results:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-        apply_url = "https://careers.tiktok.com"+i["href"]
+        apply_url = "https://careers.tiktok.com"+r["href"]
         company_name = "TikTok"
-        position = i.find("span", class_="positionItem-title-text").text.strip()
-        locations_string = i.find("div", class_="subTitle__3sRa3 positionItem-subTitle").contents[0]
+        position = r.find("span", class_="positionItem-title-text").text.strip()
+        locations_string = r.find("span", class_="content__3ZUKJ clamp-content").text
         
-        getJobs(date, apply_url, company_name, position, locations_string)
+        get_jobs(date, apply_url, company_name, position, locations_string)
 
 
-def getURL():
+def get_url():
     keywords = ["engineer", "data ", "developer"] 
 
     for keyword in keywords:
@@ -78,7 +78,7 @@ def getURL():
 
             response = browser.find_element_by_xpath("//html").get_attribute("outerHTML")
 
-            getResults(response)
+            get_results(response)
         except:
             print(f"=> Failed to scrape TikTok for {keyword}")
 
@@ -87,7 +87,8 @@ def getURL():
     # print(response)
 
 def main():
-    getURL()
+    get_url()
+
 
 # main()
 # sys.exit(0)

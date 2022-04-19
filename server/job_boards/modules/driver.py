@@ -3,5 +3,5 @@
 #phantom = "./bin/phantomjs-mac"
 # phantom = "./bin/phantomjs-linux"
 
-#chrome = r"/usr/local/bin/chromedriver"
+# chrome = r"/usr/local/bin/chromedriver"
 chrome = r"/usr/bin/chromedriver"

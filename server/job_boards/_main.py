@@ -9,7 +9,7 @@ from . import bamboohr
 from . import lever_co
 from . import workaline
 # from . import clickup
-#from . import workable
+from . import workable
 # from . import instacart
 from . import key_values
 from . import remote_co
@@ -32,7 +32,7 @@ from . import jazzhr
 from . import breezyhr
 from . import target
 from . import twitter
-# from . import tiktok
+from . import tiktok
 from . import vuejobs
 from . import jobvite
 from . import recruiterbox
@@ -69,12 +69,13 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    tiktok.main()
     target.main()
     # craigslist_gigs.main()
     nbc.main()
     nocsok.main()
     smartrecruiters.main()
-    #workable.get_url(work[::2])
+    workable.get_url(work[::2])
     greenhouse_io.get_url(green[::2])
     craigslist.get_url(locations)
     jobvite.main()
@@ -88,14 +89,12 @@ def main():
     # craigslist.get_url_miami(miamis)
     comeet.main()
     craigslist.get_url_it(locations)
-    #workable.get_url(work[1::2])
     greenhouse_io.get_url(green[1::2])
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     nintendo.main()
     vuejobs.main()
     hireart.main()
-    # tiktok.main()
     # craigslist.get_url_miami_network(miamis)
     amazon.main()
     craigslist.get_url_web(locations)
@@ -103,6 +102,7 @@ def main():
     usajobs.main()
     key_values.main()
     zillow.main()
+    workable.get_url(work[1::2])
     # clickup.main()
     # instacart.main()
     workwithindies.main()
