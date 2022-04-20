@@ -77,7 +77,7 @@ def get_url(companies: list):
                 info = request.get(url2, headers=headers).text
 
                 data = json.loads(response.text)
-                name = json.loads(info)["name"]
+                name = json.loads(info)["name"].strip()
                 logo = json.loads(info)["logo"] if "logo" in json.loads(info) else None
 
                 get_results(data, company, name, logo)
@@ -85,7 +85,7 @@ def get_url(companies: list):
                 if "nextPage" in data: token = data["nextPage"]
                 else: token = ""
                 
-                if count % 4 == 0: time.sleep(10)
+                if count % 1 == 0: time.sleep(5)
                 
                 count+=1    
         except:

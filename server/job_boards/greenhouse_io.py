@@ -87,7 +87,7 @@ def get_url(companies: list):
 
             if response.ok and res.ok:
                 data = json.loads(response.text)
-                company = json.loads(res.text)["name"]
+                company = json.loads(res.text)["name"].strip()
                 logo = None
                 
                 if name != "intersystems":
