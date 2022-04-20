@@ -253,7 +253,6 @@ nutritionintl
 pyypl
 kuno-creative
 shine-career-collective
-the-consulting-co
 marleyspoon
 tundra
 mybuilder
@@ -375,7 +374,6 @@ searchspring
 benevolentai
 zyte
 pangaia
-buzzvil
 stackpole
 ikh
 folio
