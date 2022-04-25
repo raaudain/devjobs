@@ -151,7 +151,6 @@ thrasio
 tune
 udemy
 upgrade
-useloom
 videahealth
 wandb
 wattpad
@@ -455,7 +454,6 @@ wellframe
 desmos
 ntropy-network
 attentivemobile
-bill
 springboard
 morningbrew
 connectly

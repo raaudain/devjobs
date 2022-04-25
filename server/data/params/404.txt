@@ -314,3 +314,6 @@ duneanalytics
 iorahealth
 teladochealth
 queenly
+everfi
+useloom
+bill

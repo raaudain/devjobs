@@ -96,7 +96,6 @@ doordash
 doubleverify
 earnest
 eco
-everfi
 fanduel
 fastly
 fivetran
