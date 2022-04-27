@@ -48,9 +48,7 @@ def get_results(item: str, name: str):
                     logo = images[name]
                 else:
                     try:
-                        request = requests.Session()
-                        request.proxies.update(p.proxies)
-                        r = request.get(apply_url)
+                        r = requests.get(apply_url)
                         if r.ok:
                             soup = BeautifulSoup(r.text, "lxml")
                             if soup.find(class_="header-logo logo").find("img", src=True):
