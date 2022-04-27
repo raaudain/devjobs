@@ -1,13 +1,15 @@
 import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import Update_Key_Values, Create_JSON
+from .modules.classes import List_Of_Companies, Update_Key_Values, Create_JSON
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.classes as c
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
+
+FILE_PATH = "./data/params/key_values.txt"
 
 def get_jobs(item: list, logo: str):
     data = create_temp_json.data
@@ -67,10 +69,7 @@ def get_url(params: list):
 
 
 def main():
-    f = open(f"./data/params/key_values.txt", "r")
-    params = [param.strip() for param in f]
-    f.close()
-
+    params = List_Of_Companies(FILE_PATH).open_file()
     Update_Key_Values.filter_companies()
     get_url(params)
 

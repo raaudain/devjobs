@@ -17,6 +17,18 @@ class Get:
 
         return response
 
+class List_Of_Companies:
+    def __init__(self, file_path: str):
+        self.file_path = file_path
+
+    def open_file(self):
+        file_path = self.file_path
+
+        f = open(file_path, "r")
+        companies = [company.strip() for company in f]
+        f.close()
+
+        return companies
 
 class Page_Not_Found:
     def __init__(self, file_path: str, param: str):
@@ -139,9 +151,7 @@ class Update_Key_Values:
 
         links = soup.find_all("a", {"class": "thumbnail-link"}, href=True)
 
-        # unwanted = ("/wealthfront", "/github", "/instacart", "/readme", "/seesaw", "/nova-credit", "/academia", "/angellist", "/honor", "/render", "/automatticcareers", "/doppler", "/sparrow", "/cointracker", "/circleci", "/curai", "/qualia", "/betterup", "/modeanalytics", "/grouparoo", "/humanfirst", "/goodnotes", "/hatch", "/point", "/hipcamp", "/seesaw", "/airtable", "/covariant", "/universe", "/alto", "/jane", "/lightstep", "/digit", "/readme", "/cameo", "/gusto", "/enigma", "/handshake", "/aptible", "/newfront", "/angaza", "/launchdarkly", "/lever", "/stitchfix", "/checkr", "/stitch-fix", "/flexport", "/nexhealth", "/connected", "/flickr", "/mode", "/brex", "/culture-biosciences", "/iora-health", "/routific", "/picnichealth", "/nerdwallet", "/vanta", "/treasury-prime", "/smugmug-flickr", "/asana", "/newfront", "/classy", "/automattic")
         f = open("./data/params/key_values_unwanted.txt")
-        # unwanted = zip(*[w.strip() for w in f])
         unwanted = [w.strip() for w in f]
         f.close()
 

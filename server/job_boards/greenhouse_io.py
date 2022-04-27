@@ -4,11 +4,13 @@ from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
 from .modules import proxies as p
-from .modules.classes import Page_Not_Found, Get
+from .modules.classes import List_Of_Companies, Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
+
+FILE_PATH = "./data/params/greenhouse_io.txt"
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, name: str):
     data = create_temp_json.data
@@ -102,7 +104,7 @@ def get_url(companies: list):
                 if count % 20 == 0: time.sleep(5)
                 count+=1
             elif response.status_code == 404:
-                not_found = Page_Not_Found("./data/params/greenhouse_io.txt", name)
+                not_found = Page_Not_Found(FILE_PATH, name)
                 not_found.remove_unwanted()
             else:
                 print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
@@ -114,10 +116,7 @@ def get_url(companies: list):
 
 
 def main():
-    f = open(f"./data/params/greenhouse_io.txt", "r")
-    companies = [company.strip() for company in f]
-    f.close()
-
+    companies = List_Of_Companies(FILE_PATH).open_file()
     get_url(companies)
 
 

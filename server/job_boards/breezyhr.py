@@ -3,11 +3,13 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import Create_Temp_JSON, Page_Not_Found
+from .modules.classes import Create_Temp_JSON, List_Of_Companies, Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
+
+FILE_PATH = "./data/params/breezyhr.txt"
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo:str, name: str):
     data = create_temp_json.data
@@ -76,6 +78,9 @@ def get_url(companies: list):
                 get_results(response.text, company)
                 if page % 10 == 0: time.sleep(5)     
                 page+=1
+            elif response.status_code == 404:
+                not_found = Page_Not_Found(FILE_PATH, company)
+                not_found.remove_unwanted()
             elif str(response.status_code)[0] == "5":
                 print(f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
                 break
@@ -86,10 +91,7 @@ def get_url(companies: list):
 
 
 def main():
-    f = open("./data/params/breezyhr.txt", "r")
-    companies = [company.strip() for company in f]
-    f.close()
-
+    companies = List_Of_Companies(FILE_PATH).open_file()
     get_url(companies)
 
 

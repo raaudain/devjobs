@@ -2,12 +2,13 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import requests, sys, json, time, random
 from .modules.headers import headers as h
-from .modules import proxies as p
 from .modules import create_temp_json
-from .modules.classes import Page_Not_Found
+from .modules.classes import List_Of_Companies, Page_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as headers
 
+
+FILE_PATH = "./data/params/smartrecruiters.txt"
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, name: str):
     data = create_temp_json.data
@@ -79,9 +80,7 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h)}
         url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
         # url = f"https://api.smartrecruiters.com/v1/companies/Zscaler/postings/"
-        request = requests.Session()
-        request.proxies.update(p.proxies)
-        response = request.get(url, headers=headers)
+        response = requests.get(url, headers=headers)
         
         if response.ok:
             data = json.loads(response.text)
@@ -89,17 +88,14 @@ def get_url(companies: list):
             if count % 10 == 0: time.sleep(5)
             count += 1
         elif response.status_code == 404:
-            not_found = Page_Not_Found("./data/params/smartrecruiters.txt", name)
+            not_found = Page_Not_Found(FILE_PATH, name)
             not_found.remove_unwanted()
         else:
             print(f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
 
 
 def main():
-    f = open(f"./data/params/smartrecruiters.txt", "r")
-    companies = [company.strip() for company in f]
-    f.close()
-
+    companies = List_Of_Companies(FILE_PATH).open_file()
     get_url(companies)
 
 

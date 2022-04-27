@@ -1,7 +1,7 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
 import requests, json, sys, time, random, asyncio
-from .modules.classes import Page_Not_Found
+from .modules.classes import List_of_Companies, Page_Not_Found
 from .modules.headers import headers as h
 from .modules import proxies as p
 from .modules import create_temp_json
@@ -10,6 +10,8 @@ from .modules import create_temp_json
 
 
 # header = headers.headers
+
+FILE_PATH = "./data/params/workable.txt"
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
@@ -52,12 +54,10 @@ def get_url(companies: list):
 
     for company in companies:
         token = "0"
-        request = requests.Session()
 
         try:
             while token:
                 headers = {"User-Agent": random.choice(h)}
-                request.proxies.update(p.proxies)
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
@@ -68,13 +68,13 @@ def get_url(companies: list):
                     "remote":[],
                     "token":token
                 }
-                response = request.post(url, json=payload, headers=headers)
+                response = requests.post(url, json=payload, headers=headers)
                 # if response.ok:
                 if response.status_code == 404:
-                    not_found = Page_Not_Found("./data/params/workable.txt", company)
+                    not_found = Page_Not_Found(FILE_PATH, company)
                     not_found.remove_unwanted()
                 
-                info = request.get(url2, headers=headers).text
+                info = requests.get(url2, headers=headers).text
 
                 data = json.loads(response.text)
                 name = json.loads(info)["name"].strip()
@@ -91,15 +91,9 @@ def get_url(companies: list):
         except:
             print(f"=> workable: Failed for {company}. Status code: {response.status_code}.")
 
-        request.cookies.clear()
-        request.close()
-
 
 def main():
-    f = open(f"./data/params/workable.txt", "r")
-    companies = [company.strip() for company in f]
-    f.close()
-
+    companies = List_of_Companies(FILE_PATH).open_file()
     get_url(companies)
 
 # main()

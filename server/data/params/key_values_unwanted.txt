@@ -23,7 +23,6 @@
 /hatch
 /point
 /hipcamp
-/seesaw
 /airtable
 /covariant
 /universe
@@ -59,8 +58,10 @@
 /treasury-prime
 /smugmug-flickr
 /asana
-/newfront
-/classy
-/automattic
-/amplitude
-/coast
+/gordian
+/virta
+/propel
+/repeat
+/zapier
+/forusall
+/pointcard
