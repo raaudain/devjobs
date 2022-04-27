@@ -78,5 +78,5 @@ def main():
     get_url(companies)
 
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
