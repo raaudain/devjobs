@@ -8,9 +8,7 @@ from . import greenhouse_io
 from . import bamboohr
 from . import lever_co
 from . import workaline
-# from . import clickup
-# from . import workable
-# from . import instacart
+from . import workable
 from . import key_values
 from . import remote_co
 from . import remoteok
@@ -38,6 +36,8 @@ from . import jobvite
 from . import recruiterbox
 from . import nbc
 from . import fullstackjob
+from . import wrk
+from . import indeed
 # from . import craigslist_gigs
 from .modules import create_temp_json
 from .modules import create_main_json
@@ -69,9 +69,11 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    wrk.main()
+    indeed.main()
     tiktok.main()
     target.main()
-    # workable.get_url(work[::3])
+    workable.get_url(work[::3])
     # craigslist_gigs.main()
     nbc.main()
     nocsok.main()
@@ -89,7 +91,7 @@ def main():
     # craigslist.get_url_miami(miamis)
     comeet.main()
     craigslist.get_url_it(locations)
-    # workable.get_url(work[1::3])
+    workable.get_url(work[1::3])
     greenhouse_io.get_url(green[1::2])
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
@@ -103,8 +105,6 @@ def main():
     usajobs.main()
     key_values.main()
     zillow.main()
-    # clickup.main()
-    # instacart.main()
     workwithindies.main()
     weworkremotely.main()
     fullstackjob.main()
@@ -112,7 +112,7 @@ def main():
     remote_co.main()
     remoteok.main()
     craigslist.get_url_network(locations)
-    # workable.get_url(work[2::3])
+    workable.get_url(work[2::3])
     # dailyremote.main()
     # stackoverflow.main()
     # dice.main()
