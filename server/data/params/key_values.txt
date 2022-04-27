@@ -32,7 +32,6 @@
 /range
 /rune-labs
 /remix
-/duckduckgo
 /carbon-five
 /upstatement
 /indent

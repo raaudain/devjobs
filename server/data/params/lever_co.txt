@@ -151,7 +151,6 @@ thrasio
 tune
 udemy
 upgrade
-useloom
 videahealth
 wandb
 wattpad
@@ -345,7 +344,6 @@ canva
 eventbrite
 brighte
 q4inc
-sparkdigital
 pip
 hopeservices
 manomano
@@ -456,7 +454,6 @@ wellframe
 desmos
 ntropy-network
 attentivemobile
-bill
 springboard
 morningbrew
 connectly

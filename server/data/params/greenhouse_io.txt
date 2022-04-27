@@ -96,7 +96,6 @@ doordash
 doubleverify
 earnest
 eco
-everfi
 fanduel
 fastly
 fivetran
@@ -258,7 +257,6 @@ brex
 greenhouse
 nextdoor
 ethyca
-iorahealth
 sponsorsforeducationalopportunity
 metromile
 bird
@@ -592,7 +590,6 @@ warbyparker
 thesciongroupllc
 freshbooks
 tencent
-teladochealth
 adhocexternal
 mentalhealthcommissionofcanadaenglish
 khealth

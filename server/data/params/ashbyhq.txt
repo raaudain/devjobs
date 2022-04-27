@@ -13,7 +13,6 @@ transform
 moderntreasury
 upflow
 census
-duneanalytics
 bedrockocean
 customeracquisition
 searchlight
@@ -139,7 +138,6 @@ partisiablockchain
 onebrief
 greenskygames
 handspring
-queenly
 ready
 Cococart
 itsgood
