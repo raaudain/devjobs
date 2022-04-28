@@ -1,15 +1,12 @@
 from datetime import datetime
-from bs4 import BeautifulSoup
-import requests, json, sys, time, random, asyncio
-from .modules.classes import List_of_Companies, Page_Not_Found
+import requests, json, sys, time, random
+from .modules.classes import List_Of_Companies, Page_Not_Found
 from .modules.headers import headers as h
-from .modules import proxies as p
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
-# import modules.headers as headers
+# import modules.headers as h
+# import modules.classes as c
 
-
-# header = headers.headers
 
 FILE_PATH = "./data/params/workable.txt"
 
@@ -93,8 +90,9 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_of_Companies(FILE_PATH).open_file()
+    companies = List_Of_Companies(FILE_PATH).open_file()
     get_url(companies)
+
 
 # main()
 # sys.exit(0)
