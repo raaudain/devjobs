@@ -44,7 +44,6 @@ angi
 fueled
 idme
 cobaltio
-algorithmia
 alma
 indigo
 mapbox

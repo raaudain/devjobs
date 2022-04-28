@@ -317,3 +317,6 @@ queenly
 everfi
 useloom
 bill
+algorithmia
+applyboard
+addi
