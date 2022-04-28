@@ -91,7 +91,7 @@ def get_url(companies: list):
                 
                 if name != "intersystems":
                     try:
-                        r = request.get(url3, headers=headers)
+                        r = requests.get(url3, headers=headers)
                         soup = BeautifulSoup(r.text, "lxml")
                         logo = soup.find(id="logo").find("img")["src"] if soup.find(id="logo") else None
                     except:
@@ -105,9 +105,6 @@ def get_url(companies: list):
                 not_found.remove_unwanted()
             else:
                 print(f"=> greenhouse.io: Status code {response.status_code} for {name}")
-            
-            request.cookies.clear()
-            request.close()
         except:
             print(f"Error for {name}.")
 
