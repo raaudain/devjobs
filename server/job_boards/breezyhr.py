@@ -91,7 +91,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).open_file()
+    companies = List_Of_Companies(FILE_PATH).read_file()
     get_url(companies)
 
 

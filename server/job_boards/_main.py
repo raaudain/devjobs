@@ -39,9 +39,10 @@ from . import nbc
 from . import fullstackjob
 from . import wrk
 from . import indeed
+from . import diversifytech
 # from . import craigslist_gigs
 from .modules import create_temp_json
-from .modules import create_main_json
+# from .modules import create_main_json
 from datetime import datetime, timedelta
 import sys, os
 
@@ -71,6 +72,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    diversifytech.main()
     wrk.main()
     indeed.main()
     tiktok.main()

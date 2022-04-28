@@ -1,4 +1,4 @@
-import requests, json, sys, time, random
+import requests, json, sys, random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
@@ -6,39 +6,38 @@ from .modules import headers as h
 # import modules.headers as h
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str):
+def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S%z"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
     
     data.append({
         "timestamp": post_date,
         "title": position,
         "company": company,
-        "company_logo": "https://www.indeed.jobs/wp-content/uploads/2021/02/indeed-logo-2021.svg",
+        "company_logo": logo,
         "url": url,
         "location": location,
-        "source": company,
-        "source_url": "https://search.indeed.jobs/main/jobs",
+        "source": "Diversify Tech",
+        "source_url": "https://www.diversifytech.co/",
         "category": "job"
     })
     scraped.add(company)
-    print(f"=> indeed: Added {position}")
+    print(f"=> diversifytech: Added {position}")
 
 
 def get_results(item: str):
-    jobs = item["jobs"]
+    for i in item:
+        job = i["node"]["data"]
+        date = job["Created_Date"]
+        position = job["Role"].strip()
+        company_name = job["Company"][0]["data"]["Name"].strip()
+        logo = job["Company"][0]["data"]["Logo"][0]["thumbnails"]["large"]["url"]
+        apply_url = "https://www.diversifytech.co/job-board/"+job["Job_ID"]
+        locations_string = job["Location"].strip()
 
-    for j in jobs:
-        if "Engineer" in j["data"]["title"] or "Data" in j["data"]["title"] or "Support" in j["data"]["title"] or "IT " in j["data"]["title"] or "Programmer" in j["data"]["title"] or "QA" in j["data"]["title"] or "Software" in j["data"]["title"]  or "Tech " in j["data"]["title"] or "Help" in j["data"]["title"] or "Desk" in j["data"]["title"] or "Developer" in j["data"]["title"] and ("Mechnicial" not in j["data"]["title"] and "Electrical" not in j["data"]["title"] and "Front Desk" not in j["data"]["title"]):
-            date = j["data"]["create_date"]
-            position = j["data"]["title"].strip()
-            company_name = "Indeed"
-            apply_url = "https://search.indeed.jobs/main/jobs/"+j["data"]["req_id"].strip()
-            locations_string = j["data"]["full_location"].strip()
-
-            get_jobs(date, apply_url, company_name, position, locations_string)
+        get_jobs(date, apply_url, company_name, position, locations_string, logo)
 
 
 def get_url():
@@ -48,10 +47,10 @@ def get_url():
             response = requests.get(url, headers=headers)
             data = json.loads(response.text)["result"]["data"]["allAirtable"]["edges"]
 
-            if len(data["jobs"]) > 0:               
+            if len(data) > 0:               
                 get_results(data)         
         except:
-            print(f"=> diversify: Status code: {response.status_code}.")
+            print(f"=> diversifytech: Status code: {response.status_code}.")
 
 
 
