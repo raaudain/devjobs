@@ -275,11 +275,8 @@ digibank
 tytocare
 brix
 arpeely
-HiredScore
-Elementor
 traxretail
 incredibuild
-p81
 crossriver
 brandbastion
 orpak
@@ -315,5 +312,3 @@ iorahealth
 teladochealth
 queenly
 everfi
-useloom
-bill

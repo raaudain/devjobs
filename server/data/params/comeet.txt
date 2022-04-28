@@ -66,3 +66,5 @@ amplio/06.00C
 meitar/84.003
 digibank/36.00A
 HiredScore/24.000
+p81/64.00C
+elementor/A3.00F

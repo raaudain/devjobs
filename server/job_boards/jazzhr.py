@@ -61,7 +61,7 @@ def get_url(companies: list):
             get_results(response.text, company)
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/jazzhr.txt", company)
-            not_found.remove_unwanted()
+            not_found.remove_not_found()
         else: 
             f"Error for {company}. Status code: {response.status_code}"
 

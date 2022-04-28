@@ -73,7 +73,7 @@ def get_url(companies: list):
             get_results(response.text, name)
         elif response.status_code == 404:
             not_found = Page_Not_Found(FILE_PATH, name)
-            not_found.remove_unwanted()
+            not_found.remove_not_found()
         else: 
             print(f"=> lever.co: Error for {name} - Response status", response.status_code)
         
@@ -83,8 +83,8 @@ def get_url(companies: list):
         
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).open_file()
-    get_url(companies)
+    random.shuffle(FILE_PATH)
+    companies = List_Of_Companies(FILE_PATH).read_file()
 
 
 # main()

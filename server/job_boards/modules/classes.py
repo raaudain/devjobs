@@ -21,7 +21,7 @@ class List_Of_Companies:
     def __init__(self, file_path: str):
         self.file_path = file_path
 
-    def open_file(self):
+    def read_file(self):
         file_path = self.file_path
 
         f = open(file_path, "r")
@@ -35,7 +35,7 @@ class Page_Not_Found:
         self.file_path = file_path
         self.param = param
 
-    def remove_unwanted(self):
+    def remove_not_found(self):
         file_path = self.file_path
         param = self.param
 

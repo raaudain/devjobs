@@ -1,3 +1,4 @@
+import random
 from .modules.classes import Create_JSON
 from . import comeet
 from . import clearcompany
@@ -52,6 +53,7 @@ def main():
 
     w = open(f"./data/params/workable.txt", "r")
     work = [l.strip() for l in w]
+    random.shuffle(work)
     w.close()
 
     g = open(f"./data/params/greenhouse_io.txt", "r")
@@ -85,7 +87,6 @@ def main():
     bamboohr.main()
     eightfold.main()
     jazzhr.main()
-    lever_co.main()
     ashbyhq.main()
     clearcompany.main()
     # craigslist.get_url_miami(miamis)
@@ -93,6 +94,7 @@ def main():
     craigslist.get_url_it(locations)
     workable.get_url(work[1::3])
     greenhouse_io.get_url(green[1::2])
+    lever_co.main()
     # craigslist.get_url_miami_it(miamis)
     recruiterbox.main()
     nintendo.main()

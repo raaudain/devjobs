@@ -1,7 +1,7 @@
 from datetime import datetime
 import requests, json, sys, time, random
 from .modules.classes import List_Of_Companies, Page_Not_Found
-from .modules.headers import headers as h
+from .modules import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
@@ -35,7 +35,7 @@ def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
 
     for data in jobs:
-        if "Software " in data["title"] or "Support " in data["title"] or "Front" in data["title"] or "Data " in data["title"] or "Back" in data["title"] or "Full" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"]or "Tech " in data["title"] or "devops" in data["title"].lower():
+        if "Software" in data["title"] or "Support" in data["title"] or "Developer" in data["title"] or "Data" in data["title"] or "Programmer" in data["title"] or "Engineer" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"]or "Tech " in data["title"] or "devops" in data["title"].lower():
             date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
             apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
             company_name = company.strip()
@@ -54,7 +54,7 @@ def get_url(companies: list):
 
         try:
             while token:
-                headers = {"User-Agent": random.choice(h)}
+                headers = {"User-Agent": random.choice(h.headers)}
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
@@ -69,7 +69,7 @@ def get_url(companies: list):
                 # if response.ok:
                 if response.status_code == 404:
                     not_found = Page_Not_Found(FILE_PATH, company)
-                    not_found.remove_unwanted()
+                    not_found.remove_not_found()
                 
                 info = requests.get(url2, headers=headers).text
 
@@ -79,10 +79,12 @@ def get_url(companies: list):
 
                 get_results(data, company, name, logo)
 
-                if "nextPage" in data: token = data["nextPage"]
-                else: token = ""
+                # if "nextPage" in data: token = data["nextPage"]
+                # else: token = ""
+
+                token = data["nextPage"] if "nextPage" in data else ""
                 
-                if count % 1 == 0: time.sleep(5)
+                if count % 6 == 0: time.sleep(10)
                 
                 count+=1    
         except:
@@ -90,7 +92,8 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).open_file()
+    random.shuffle(FILE_PATH)
+    companies = List_Of_Companies(FILE_PATH).read_file()
     get_url(companies)
 
 

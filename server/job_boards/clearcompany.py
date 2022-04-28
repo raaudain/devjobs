@@ -1,13 +1,15 @@
 import requests, sys, time, random, json
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import Create_Temp_JSON, Page_Not_Found
+from .modules.classes import Create_Temp_JSON, List_Of_Companies, Page_Not_Found
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
+
+FILE_PATH = "./data/params/clearcompany.txt"
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
     data = create_temp_json.data
@@ -71,8 +73,8 @@ def get_url(companies: list):
                 if page % 10 == 0: time.sleep(5)   
                 page+=1
             elif response.status_code == 404:
-                not_found = Page_Not_Found("./data/params/clearcompany.txt", company)
-                not_found.remove_unwanted()
+                not_found = Page_Not_Found(FILE_PATH, company)
+                not_found.remove_not_found()
             else:
                 print(f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
         except:
@@ -80,10 +82,8 @@ def get_url(companies: list):
 
 
 def main():
-    f = open(f"./data/params/clearcompany.txt", "r")
-    companies = [company.strip() for company in f]
-    f.close()
-
+    random.shuffle(FILE_PATH)
+    companies = List_Of_Companies(FILE_PATH).read_file()
     get_url(companies)
 
 

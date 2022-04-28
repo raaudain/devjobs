@@ -87,13 +87,13 @@ def get_url(companies: list):
             count += 1
         elif response.status_code == 404:
             not_found = Page_Not_Found(FILE_PATH, name)
-            not_found.remove_unwanted()
+            not_found.remove_not_found()
         else:
             print(f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).open_file()
+    companies = List_Of_Companies(FILE_PATH).read_file()
     get_url(companies)
 
 

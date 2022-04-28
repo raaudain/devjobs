@@ -995,3 +995,5 @@ monograph
 propel
 repeatinc
 fieldlevel
+billcom
+loominc

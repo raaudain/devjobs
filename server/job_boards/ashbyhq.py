@@ -79,7 +79,7 @@ def get_url(companies: list):
                     print(f"=> ashbyhq: Error for {company}.", err)
             else:
                 not_found = Page_Not_Found("./data/params/ashbyhq.txt", company)
-                not_found.remove_unwanted()
+                not_found.remove_not_found()
 
             get_results(data, company, name, logo)
             if page % 10 == 0: time.sleep(5)   

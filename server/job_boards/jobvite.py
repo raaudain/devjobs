@@ -63,7 +63,7 @@ def get_url(companies: list):
                 get_results(response.text, name)
             elif response.status_code == 404:
                 not_found = Page_Not_Found("./data/params/jobvite.txt", name)
-                not_found.remove_unwanted()
+                not_found.remove_not_found()
             else: 
                 res = requests.get(f"https://jobs.jobvite.com/{name}/jobs", headers=headers)
                 if res.ok: get_results(res.text, name)

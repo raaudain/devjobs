@@ -59,7 +59,7 @@ def get_url(companies: list):
             count+=1
         elif response.status_code == 404:
             not_found = Page_Not_Found("./data/params/eightfold.txt", name)
-            not_found.remove_unwanted()
+            not_found.remove_not_found()
         else:
             print(f"=> eightfold.ai: Status code {response.status_code} for {name}")
 

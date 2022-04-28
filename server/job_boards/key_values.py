@@ -69,8 +69,8 @@ def get_url(params: list):
 
 
 def main():
-    params = List_Of_Companies(FILE_PATH).open_file()
     Update_Key_Values.filter_companies()
+    params = List_Of_Companies(FILE_PATH).read_file()
     get_url(params)
 
 
