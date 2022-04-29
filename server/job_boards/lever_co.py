@@ -1,4 +1,3 @@
-from zipfile import _ClosableZipStream
 import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime
