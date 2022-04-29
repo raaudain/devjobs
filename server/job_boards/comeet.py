@@ -87,8 +87,8 @@ def get_url(companies: list):
             print(f"Error for {company}")
 
 def main():
-    random.shuffle(FILE_PATH)
     companies = List_Of_Companies(FILE_PATH).read_file()
+    random.shuffle(companies)
     get_url(companies)
 
 
