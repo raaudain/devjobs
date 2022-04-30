@@ -90,7 +90,6 @@ writer
 retain
 weld
 atrato
-V7
 oden
 astra
 deeploy

@@ -169,7 +169,6 @@ gong
 fanatics
 trueaccord
 livecontrol
-lemonaid
 medium
 fightcamp
 getspruce
@@ -434,7 +433,6 @@ undergroundcellar
 neighbor
 dompe
 bitwiseinvestments
-brigit
 middletonmeyers
 emersoncollective
 kiddom
@@ -532,7 +530,6 @@ mcgrathnicol
 AMIRI
 epifi
 kokonetworks
-1build
 riiidlabs
 motorwerks
 convex
