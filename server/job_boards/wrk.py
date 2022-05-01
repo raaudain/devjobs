@@ -1,4 +1,8 @@
-import requests, json, sys, time, random
+import requests
+import json
+import sys
+import time
+import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
@@ -10,12 +14,14 @@ from .modules.classes import List_Of_Companies, Page_Not_Found
 
 FILE_PATH = "./data/params/wrk.txt"
 
+
 def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
-    
+    post_date = datetime.timestamp(
+        datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
+
     data.append({
         "timestamp": post_date,
         "title": position,
@@ -36,7 +42,7 @@ def get_results(item: str, name: str):
 
     if jobs:
         for j in jobs:
-            if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT " in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"]  or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
+            if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT " in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"] or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
                 date = j["published_at"]
                 position = j["title"].strip()
                 company_name = j["organization_name"].strip()
@@ -47,7 +53,8 @@ def get_results(item: str, name: str):
                 remote = f" | {j['remoteness_pretty'].strip()}" if j["remoteness_pretty"] and "No" not in j["remoteness_pretty"] else ""
                 locations_string = city+state+country+remote
 
-                get_jobs(date, apply_url, company_name, position, locations_string, name)
+                get_jobs(date, apply_url, company_name,
+                         position, locations_string, name)
 
 
 def get_url(companies: list):
@@ -60,15 +67,16 @@ def get_url(companies: list):
             response = requests.get(url, headers=headers)
 
             if response.ok:
-                data = json.loads(response.text)                
+                data = json.loads(response.text)
                 get_results(data, name)
-                if count % 20 == 0: time.sleep(5)
-                count+=1
+                if count % 20 == 0:
+                    time.sleep(5)
+                count += 1
             elif response.status_code == 404:
                 not_found = Page_Not_Found(FILE_PATH, name)
                 not_found.remove_not_found()
             else:
-                print(f"=> wrk: Status code {response.status_code} for {name}")                             
+                print(f"=> wrk: Status code {response.status_code} for {name}")
         except:
             print(f"=> wrk: Error for {name}.")
 
