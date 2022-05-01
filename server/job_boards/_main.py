@@ -15,11 +15,11 @@ from . import remote_co
 from . import remoteok
 from . import weworkremotely
 from . import builtin
-# from . import dailyremote
+from . import dailyremote
 from . import hireart
 # from . import stackoverflow
 # from . import dice
-from . import zillow
+# from . import zillow
 from . import usajobs
 from . import amazon
 from . import smartrecruiters
@@ -108,7 +108,7 @@ def main():
     twitter.main()
     usajobs.main()
     key_values.main()
-    zillow.main()
+    # zillow.main()
     workwithindies.main()
     weworkremotely.main()
     fullstackjob.main()
@@ -117,7 +117,7 @@ def main():
     remoteok.main()
     craigslist.get_url_network(locations)
     workable.get_url(work[2::3])
-    # dailyremote.main()
+    dailyremote.main()
     # stackoverflow.main()
     # dice.main()
     builtin.main()

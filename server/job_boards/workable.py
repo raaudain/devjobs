@@ -18,10 +18,8 @@ FILE_PATH = "./data/params/workable.txt"
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
-
     postDate = datetime.timestamp(
         datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-
     data.append({
         "timestamp": postDate,
         "title": position,
@@ -39,7 +37,6 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 
 def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
-
     for data in jobs:
         if "Software" in data["title"] or "Support" in data["title"] or "Developer" in data["title"] or "Data" in data["title"] or "Programmer" in data["title"] or "Engineer" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"] or "Tech " in data["title"] or "devops" in data["title"].lower():
             date = datetime.strptime(
@@ -49,17 +46,14 @@ def get_results(item: str, param: str, company: str, logo: str):
             position = data["title"].strip()
             state = f"{data['location']['city']}, {data['location']['region']}, "
             locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
-
             get_jobs(date, apply_url, company_name,
                      position, locations_string, logo, param)
 
 
 def get_url(companies: list):
     count = 0
-
     for company in companies:
         token = "0"
-
         try:
             while token:
                 headers = {"User-Agent": random.choice(h.headers)}
@@ -78,24 +72,19 @@ def get_url(companies: list):
                 if response.status_code == 404:
                     not_found = Page_Not_Found(FILE_PATH, company)
                     not_found.remove_not_found()
-
+                elif response.status_code == 429:
+                    print(
+                        f"=> bamboohr: Failed to scrape {company}. Status code: {response.status_code}")
+                    break
                 info = requests.get(url2, headers=headers).text
-
                 data = json.loads(response.text)
                 name = json.loads(info)["name"].strip()
                 logo = json.loads(info)["logo"] if "logo" in json.loads(
                     info) else None
-
                 get_results(data, company, name, logo)
-
-                # if "nextPage" in data: token = data["nextPage"]
-                # else: token = ""
-
                 token = data["nextPage"] if "nextPage" in data else ""
-
                 if count % 15 == 0:
                     time.sleep(60)
-
                 count += 1
         except:
             print(

@@ -1,32 +1,35 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys, re, time, random
+import requests
+import sys
+import re
+import time
+import random
 from .modules import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-isTrue = True
+IS_TRUE = True
+
 
 def get_jobs(item):
-    global isTrue
+    global IS_TRUE
     data = create_temp_json.data
 
     for job in item:
-        date = job.find(class_="company-name display-flex").find_all("span")[4].text.strip()
+        date = job.find(
+            class_="company-name display-flex").find_all("span")[4].text.strip()
         title = job.find(class_="job-position").text.strip()
-        company = job.find(class_="company-name display-flex").find_all("span")[0].text.strip()
-        link = job.find("a", class_="primary-btn apply-link", href=True)["href"].strip()
+        company = job.find(
+            class_="company-name display-flex").find_all("span")[0].text.strip()
+        link = job.find("a", class_="primary-btn apply-link",
+                        href=True)["href"].strip()
         url = "https://dailyremote.com"+link if "apply" in link else link
-        logo = "https://dailyremote.com"+job.find(class_="pic")["src"] if job.find(class_="pic") else None
+        logo = "https://dailyremote.com" + \
+            job.find(class_="pic")["src"] if job.find(class_="pic") else None
         location = job.find_all("span", class_="meta-holder")[0].text.strip()
-
-        # if "apply" in link:
-        #     url = "https://dailyremote.com"+link
-        # else:
-        #     url = link
-
         if "a second ago" in date:
             time = datetime.now() - timedelta(seconds=1)
             date = datetime.strftime(time, "%Y-%m-%d %H:%M:%S")
@@ -58,16 +61,15 @@ def get_jobs(item):
         elif "today" in date:
             time = datetime.now()
             date = datetime.strftime(time, "%Y-%m-%d %H:%M:%S")
-        
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-
-
+        postDate = datetime.timestamp(
+            datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
         if age <= postDate:
             data.append({
                 "timestamp": postDate,
                 "title": title,
                 "company": company,
+                "company_logo": logo,
                 "url": url,
                 "location": location,
                 "source": "Daily Remote",
@@ -77,31 +79,28 @@ def get_jobs(item):
             print(f"=> dailyremote: Added {title} for {company}")
         else:
             print(f"=> dailyremote: Reached limit. Stopping scrape")
-            isTrue = False
+            IS_TRUE = False
+
 
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("article")
-
-    # print(results)
     get_jobs(results)
+
 
 def get_url():
     page = 1
-
-    while isTrue:
-        if isTrue == False:
+    while IS_TRUE:
+        if IS_TRUE == False:
             break
-
         print(f"=> dailyremote: Scraping page {page}")
-
         try:
             headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://dailyremote.com/remote-software-development-jobs?search=&page={page}&sort_by=time#main"
             response = requests.get(url, headers=headers).text
             get_results(response)
-            
-            if page % 10 == 0: time.sleep(2)
+            if page % 10 == 0:
+                time.sleep(2)
             page += 1
         except:
             print(f"=> dailyremote: Error on page {page}")
