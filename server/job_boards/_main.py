@@ -6,7 +6,7 @@ from . import eightfold
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
-from . import bamboohr
+# from . import bamboohr
 from . import lever_co
 from . import workaline
 from . import workable
@@ -86,7 +86,7 @@ def main():
     craigslist.get_url(locations)
     jobvite.main()
     breezyhr.main()
-    bamboohr.main()
+    # bamboohr.main()
     eightfold.main()
     jazzhr.main()
     ashbyhq.main()

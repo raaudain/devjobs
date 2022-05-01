@@ -11,13 +11,9 @@ from .modules import create_temp_json
 # import modules.headers as h
 
 
-IS_TRUE = True
-
-
 def get_jobs(item):
-    global IS_TRUE
     data = create_temp_json.data
-
+    scraped = create_temp_json.scraped
     for job in item:
         date = job.find(
             class_="company-name display-flex").find_all("span")[4].text.strip()
@@ -64,7 +60,7 @@ def get_jobs(item):
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         postDate = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-        if age <= postDate:
+        if company not in scraped:
             data.append({
                 "timestamp": postDate,
                 "title": title,
@@ -79,7 +75,6 @@ def get_jobs(item):
             print(f"=> dailyremote: Added {title} for {company}")
         else:
             print(f"=> dailyremote: Reached limit. Stopping scrape")
-            IS_TRUE = False
 
 
 def get_results(item):
@@ -90,9 +85,7 @@ def get_results(item):
 
 def get_url():
     page = 1
-    while IS_TRUE:
-        if IS_TRUE == False:
-            break
+    while page <= 1000:
         print(f"=> dailyremote: Scraping page {page}")
         try:
             headers = {"User-Agent": random.choice(h.headers)}

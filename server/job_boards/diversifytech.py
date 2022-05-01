@@ -1,4 +1,7 @@
-import requests, json, sys, random
+import requests
+import json
+import sys
+import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
@@ -9,9 +12,8 @@ from .modules import headers as h
 def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
-
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
-    
+    post_date = datetime.timestamp(
+        datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
     data.append({
         "timestamp": post_date,
         "title": position,
@@ -36,22 +38,21 @@ def get_results(item: str):
         logo = job["Company"][0]["data"]["Logo"][0]["thumbnails"]["large"]["url"]
         apply_url = "https://www.diversifytech.co/job-board/"+job["Job_ID"]
         locations_string = job["Location"].strip()
-
-        get_jobs(date, apply_url, company_name, position, locations_string, logo)
+        get_jobs(date, apply_url, company_name,
+                 position, locations_string, logo)
 
 
 def get_url():
-        try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://www.diversifytech.co/page-data/job-board/page-data.json"
-            response = requests.get(url, headers=headers)
-            data = json.loads(response.text)["result"]["data"]["allAirtable"]["edges"]
-
-            if len(data) > 0:               
-                get_results(data)         
-        except:
-            print(f"=> diversifytech: Status code: {response.status_code}.")
-
+    try:
+        headers = {"User-Agent": random.choice(h.headers)}
+        url = f"https://www.diversifytech.co/page-data/job-board/page-data.json"
+        response = requests.get(url, headers=headers)
+        data = json.loads(response.text)[
+            "result"]["data"]["allAirtable"]["edges"]
+        if len(data) > 0:
+            get_results(data)
+    except:
+        print(f"=> diversifytech: Status code: {response.status_code}.")
 
 
 def main():

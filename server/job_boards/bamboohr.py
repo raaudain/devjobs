@@ -65,8 +65,8 @@ def get_url(companies: list):
         response = requests.get(url, headers=headers)
         if response.ok:
             get_results(response.text, company)
-            if page % 10 == 0:
-                time.sleep(5)
+            if page % 15 == 0:
+                time.sleep(60)
             page += 1
         elif response.status_code == 404:
             not_found = Page_Not_Found(FILE_PATH, company)
