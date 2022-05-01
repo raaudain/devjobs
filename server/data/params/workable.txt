@@ -517,7 +517,6 @@ immedis
 alohi
 storehub
 stio
-monolithweb3
 hudabeauty
 chipper
 kitopi
@@ -670,7 +669,6 @@ arraco
 azafinance
 quimbee
 rektglobal
-certainlending
 foundry
 casknx
 cgiar
