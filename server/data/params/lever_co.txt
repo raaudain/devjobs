@@ -242,7 +242,6 @@ zenyum
 rw1
 bounteous
 amount
-mambu
 carbonhealth
 demicon
 tokenmetrics
@@ -468,7 +467,6 @@ joinroot
 tuned
 bespokepost
 helloalpha
-Teamblind
 jmawireless
 jagex
 bitly
