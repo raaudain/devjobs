@@ -68,14 +68,9 @@ def get_url(companies: list):
                     "token": token
                 }
                 response = requests.post(url, json=payload, headers=headers)
-                # if response.ok:
                 if response.status_code == 404:
                     not_found = Page_Not_Found(FILE_PATH, company)
                     not_found.remove_not_found()
-                elif response.status_code == 429:
-                    print(
-                        f"=> bamboohr: Failed to scrape {company}. Status code: {response.status_code}")
-                    break
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
                 name = json.loads(info)["name"].strip()
@@ -83,12 +78,17 @@ def get_url(companies: list):
                     info) else None
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
-                if count % 15 == 0:
+                if count % 10 == 0:
                     time.sleep(60)
                 count += 1
         except:
-            print(
-                f"=> workable: Failed for {company}. Status code: {response.status_code}.")
+            if response.status_code == 429:
+                print(
+                    f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
+                break
+            else:
+                print(
+                    f"=> workable: Failed for {company}. Status code: {response.status_code}.")
 
 
 def main():

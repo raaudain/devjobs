@@ -85,7 +85,7 @@ def get_results(item):
 
 def get_url():
     page = 1
-    while page <= 1000:
+    while page <= 500:
         print(f"=> dailyremote: Scraping page {page}")
         try:
             headers = {"User-Agent": random.choice(h.headers)}

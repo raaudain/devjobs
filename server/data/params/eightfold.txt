@@ -28,3 +28,8 @@ noom
 directsourcepro-nov
 vodafone
 zillowgroup
+chevron
+conagra
+samsungnext
+directsourcepro-bri
+kroger
