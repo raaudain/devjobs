@@ -324,3 +324,5 @@ lemonaid
 brigit
 mambu
 Teamblind
+selfbook
+pintclickcare
