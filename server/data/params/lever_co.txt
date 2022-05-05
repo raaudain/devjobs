@@ -245,7 +245,6 @@ amount
 carbonhealth
 demicon
 tokenmetrics
-forto
 fevo
 truepill
 boweryfarming
