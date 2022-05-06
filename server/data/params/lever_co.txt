@@ -615,7 +615,6 @@ rackspace
 alamodrafthouse
 scorpion
 redaptiveinc
-day1company
 integrichain
 r4d
 elenas
