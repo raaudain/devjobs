@@ -77,7 +77,7 @@ class Filter_Jobs:
         if ("Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Programmer" in title or "Develover" in title) and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title):
             data.append(posting)
             scraped.add(company)
-
+            print(f"=> {posting['source_url']}: Added {title} for {company}")
 
 class Handle_Jobs:
     def __init__(self, date: str, apply_url: str, company_name: str, position: str, location: str, source: str, source_url: str, job_board: str):

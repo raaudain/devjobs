@@ -62,7 +62,6 @@ def get_results(item: str, param: str, name: str, logo: str):
             "source": company_name,
             "source_url": source_url,
         }).filter()
-        print(f"=> ashbyhq: Added {position} for {company_name}")
 
 
 def get_url(companies: list):
@@ -114,5 +113,5 @@ def main():
     get_url(companies)
 
 
-main()
-sys.exit(0)
+# main()
+# sys.exit(0)
