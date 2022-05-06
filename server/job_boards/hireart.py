@@ -1,4 +1,7 @@
-import requests, json, sys, random
+import requests
+import json
+import sys
+import random
 from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
@@ -9,10 +12,9 @@ from .modules import headers as h
 
 def get_jobs(url: str, company: str, position: str, location: str):
     data = create_temp_json.data
-
     date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-    
+    post_date = datetime.timestamp(
+        datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
     data.append({
         "timestamp": post_date,
         "title": position,
@@ -27,9 +29,9 @@ def get_jobs(url: str, company: str, position: str, location: str):
     })
     print(f"=> hireart: Added {position} for {company}")
 
+
 def get_results(item: str):
     jobs = item["jobs"]
-
     if jobs:
         for data in jobs:
             apply_url = data["apply_url"].strip()
@@ -44,19 +46,21 @@ def get_results(item: str):
             locations_string = data["locations_string"].strip()
             get_jobs(apply_url, company_name, position, locations_string)
 
+
 def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
     url = "https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
     response = requests.get(url, headers=headers)
-
     if response.ok:
         data = json.loads(response.text)
         get_results(data)
     else:
         print("=> hireart: Error - Response status", response.status_code)
 
+
 def main():
     get_url()
+
 
 # main()
 # sys.exit(0)

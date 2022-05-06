@@ -1,4 +1,7 @@
-import requests, sys, time, random
+import requests
+import sys
+import time
+import random
 from bs4 import BeautifulSoup
 from datetime import datetime
 from .modules.classes import List_Of_Companies, Update_Key_Values, Create_JSON
@@ -11,6 +14,7 @@ from .modules import headers as h
 
 FILE_PATH = "./data/params/key_values.txt"
 
+
 def get_jobs(item: list, logo: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
@@ -21,16 +25,15 @@ def get_jobs(item: list, logo: str):
     scraped.add("See All Job Openings")
     scraped.add("See All Open Positions")
     scraped.add("")
-
     for job in item:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-        title = job.find("p", {"class": "open-position--job-title"}).text
+        title = job.find("p", class_="open-position--job-title").text
         company = job.find("a")["data-company"]
         url = job.find("a", href=True)["href"]
-        location = job.find("div", {"class": "open-position--job-information"}).find_all("p")[0].text
-
-        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-
+        location = job.find(
+            "div", class_="open-position--job-information").find_all("p")[0].text
+        post_date = datetime.timestamp(
+            datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
         if title not in scraped and url not in scraped and company not in scraped:
             data.append({
                 "timestamp": post_date,
@@ -51,8 +54,9 @@ def get_jobs(item: list, logo: str):
 
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("div", {"class": "open-position-item-contents"})
-    logo = soup.find(class_="hero-logo")["style"].replace("background: url(", "").replace(") no-repeat center center; background-size: contain;", "") if soup.find(class_="hero-logo") else None
+    results = soup.find_all("div", class_="open-position-item-contents")
+    logo = soup.find(class_="hero-logo")["style"].replace("background: url(", "").replace(
+        ") no-repeat center center; background-size: contain;", "") if soup.find(class_="hero-logo") else None
     get_jobs(results, logo)
 
 
@@ -61,10 +65,10 @@ def get_url(params: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = f"https://www.keyvalues.com{param}"
         response = requests.get(url, headers=headers)
-
-        if response.ok: get_results(response.text)
-        else: print(f"=> key_values: Error. Status code:", response.status_code)
-
+        if response.ok:
+            get_results(response.text)
+        else:
+            print(f"=> key_values: Error. Status code:", response.status_code)
         time.sleep(2)
 
 

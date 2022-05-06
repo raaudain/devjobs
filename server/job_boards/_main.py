@@ -15,7 +15,7 @@ from . import remote_co
 from . import remoteok
 from . import weworkremotely
 from . import builtin
-from . import dailyremote
+# from . import dailyremote
 from . import hireart
 # from . import stackoverflow
 # from . import dice
@@ -72,6 +72,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    ashbyhq.main()
     diversifytech.main()
     wrk.main()
     indeed.main()
@@ -89,7 +90,6 @@ def main():
     # bamboohr.main()
     eightfold.main()
     jazzhr.main()
-    ashbyhq.main()
     clearcompany.main()
     # craigslist.get_url_miami(miamis)
     comeet.main()
@@ -117,7 +117,7 @@ def main():
     remoteok.main()
     craigslist.get_url_network(locations)
     workable.get_url(work[2::3])
-    dailyremote.main()
+    # dailyremote.main()
     # stackoverflow.main()
     # dice.main()
     builtin.main()

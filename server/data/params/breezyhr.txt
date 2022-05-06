@@ -560,3 +560,4 @@ autouncle
 fluree
 modern-tribe
 ilumivu
+termscout

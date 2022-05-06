@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests
 import random
+import modules.create_temp_json as create_temp_json
 # import headers as h
 # import proxies as p
 
@@ -24,6 +25,7 @@ class Get:
 
         return response
 
+import random
 
 class List_Of_Companies:
     def __init__(self, file_path: str):
@@ -34,6 +36,7 @@ class List_Of_Companies:
         f = open(file_path, "r")
         companies = [company.strip() for company in f]
         f.close()
+        random.shuffle(companies)
         return companies
 
 
@@ -58,6 +61,21 @@ class Page_Not_Found:
                 error.write(p+"\n")
         file.close()
         error.close()
+
+
+class Filter_Jobs:
+    def __init__(self, posting: list):
+        self.posting = posting
+
+    def filter(self):
+        posting = self.posting
+        data = create_temp_json.data
+        scraped = create_temp_json.scraped
+        title = posting["title"]
+        company = posting["company"]
+        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Programmer" in title or "Develover" in title) and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title):
+            data.append(posting)
+            scraped.add(company)
 
 
 class Handle_Jobs:
@@ -140,25 +158,21 @@ class Handle_Jobs:
 
 
 class Update_Key_Values:
+
     def filter_companies():
         if isfile("./data/params/key_values.txt"):
             print("=> key_values: Deleting old parameters")
             t = open(f"./data/temp/temp_data.json", "r+")
             t.truncate(0)
             t.close()
-
         url = "https://www.keyvalues.com/"
         html = requests.get(url).text
         soup = BeautifulSoup(html, "lxml")
-
         company = open("./data/params/key_values.txt", "w")
-
         links = soup.find_all("a", {"class": "thumbnail-link"}, href=True)
-
         f = open("./data/params/key_values_unwanted.txt")
         unwanted = [w.strip() for w in f]
         f.close()
-
         for link in links:
             if link["href"] not in unwanted:
                 company.write(link["href"]+"\n")
@@ -172,34 +186,27 @@ class Create_JSON:
 
     def create_temp_file(data):
         temp = "./data/temp/temp_data.json"
-
         if isfile(temp):
             print("=> temp_data.json: Deleting old content")
             t = open(temp, "r+")
             t.truncate(0)
             t.close()
-
         with open(temp, "a", encoding="utf-8") as file:
             print("=> temp_data.json: Generating new content")
             json.dump(data, file, ensure_ascii=False, indent=4)
 
     def create_file():
         temp = "./data/temp/temp_data.json"
-
         f = open(temp)
         data = json.load(f)
         f.close()
-
         main = "./data/data.json"
-
         if isfile(main):
             print("=> data.json: Deleting old content")
             t = open(main, "r+")
             t.truncate(0)
             t.close()
-
         ordered_data = sorted(data, key=lambda i: i["timestamp"], reverse=True)
-
         with open(main, "a", encoding="utf-8") as file:
             print("=> data.json: Generating new content")
             json.dump(ordered_data, file, ensure_ascii=False, indent=4)
@@ -211,13 +218,11 @@ class Create_Temp_JSON:
 
     def create_temp_file(self):
         temp = "./data/temp/temp_data.json"
-
         if isfile(temp):
             print("=> temp_data.json: Deleting old content")
             t = open(temp, "r+")
             t.truncate(0)
             t.close()
-
         with open(temp, "a", encoding="utf-8") as file:
             print("=> temp_data.json: Generating new content")
             json.dump(self.data, file, ensure_ascii=False, indent=4)

@@ -1,4 +1,8 @@
-import requests, json, sys, time, random
+import requests
+import json
+import sys
+import time
+import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
@@ -10,8 +14,9 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
     data = create_temp_json.data
     scraped = create_temp_json.scraped
 
-    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S%z"))
-    
+    post_date = datetime.timestamp(
+        datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S%z"))
+
     data.append({
         "timestamp": post_date,
         "title": position,
@@ -29,21 +34,19 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str):
 
 def get_results(item: str):
     jobs = item["jobs"]
-
     for j in jobs:
-        if "Engineer" in j["data"]["title"] or "Data" in j["data"]["title"] or "Support" in j["data"]["title"] or "IT " in j["data"]["title"] or "Programmer" in j["data"]["title"] or "QA" in j["data"]["title"] or "Software" in j["data"]["title"]  or "Tech " in j["data"]["title"] or "Help" in j["data"]["title"] or "Desk" in j["data"]["title"] or "Developer" in j["data"]["title"] and ("Mechnicial" not in j["data"]["title"] and "Electrical" not in j["data"]["title"] and "Front Desk" not in j["data"]["title"]):
+        if "Engineer" in j["data"]["title"] or "Data" in j["data"]["title"] or "Support" in j["data"]["title"] or "IT " in j["data"]["title"] or "Programmer" in j["data"]["title"] or "QA" in j["data"]["title"] or "Software" in j["data"]["title"] or "Tech " in j["data"]["title"] or "Help" in j["data"]["title"] or "Desk" in j["data"]["title"] or "Developer" in j["data"]["title"] and ("Mechnicial" not in j["data"]["title"] and "Electrical" not in j["data"]["title"] and "Front Desk" not in j["data"]["title"]):
             date = j["data"]["create_date"]
             position = j["data"]["title"].strip()
             company_name = "Indeed"
-            apply_url = "https://search.indeed.jobs/main/jobs/"+j["data"]["req_id"].strip()
+            apply_url = "https://search.indeed.jobs/main/jobs/" + \
+                j["data"]["req_id"].strip()
             locations_string = j["data"]["full_location"].strip()
-
             get_jobs(date, apply_url, company_name, position, locations_string)
 
 
 def get_url():
     page = 1
-
     while True:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
@@ -51,14 +54,15 @@ def get_url():
             response = requests.get(url, headers=headers)
             data = json.loads(response.text)
 
-            if len(data["jobs"]) > 0:               
+            if len(data["jobs"]) > 0:
                 get_results(data)
                 # if page % 1 == 0: time.sleep(2)
-                page+=1
+                page += 1
             else:
-                break                
+                break
         except:
-            print(f"=> indeed: Error for page {page}. Status code: {response.status_code}.")
+            print(
+                f"=> indeed: Error for page {page}. Status code: {response.status_code}.")
             break
 
 

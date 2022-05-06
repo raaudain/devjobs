@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import requests, sys
+import requests
+import sys
 # from .modules import create_temp_json
 import modules.create_temp_json as create_temp_json
 
@@ -8,19 +9,17 @@ import modules.create_temp_json as create_temp_json
 data = create_temp_json.data
 scraped = create_temp_json.scraped
 
+
 def getJobs(date, title, company, url):
     date = date
     title = title
     company = company
     url = "https://justremote.co"+url
     location = "Remote"
-
     age = datetime.timestamp(datetime.now() - timedelta(days=14))
     postDate = datetime.timestamp(datetime.strptime(date, "%Y %d %b"))
-
     if url not in scraped:
         if age <= postDate:
-            # print(date, title, company, url, location)
             data.append({
                 "timestamp": postDate,
                 "title": title,
@@ -39,8 +38,10 @@ def getJobs(date, title, company, url):
 
 def getResults(item):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("div", {"class": "new-job-item__JobInnerWrapper-sc-1qa4r36-12 doExVb"})
-    r = soup.find_all("div", class_="new-job-item__JobInnerWrapper-sc-1qa4r36-12 doExVb")
+    results = soup.find_all(
+        "div", {"class": "new-job-item__JobInnerWrapper-sc-1qa4r36-12 doExVb"})
+    r = soup.find_all(
+        "div", class_="new-job-item__JobInnerWrapper-sc-1qa4r36-12 doExVb")
     # results = soup.find_all("h2", {"class": "job-listings__Title-sc-8ldju0-8 bHpcli"})[1]
 
     print(r)
@@ -50,11 +51,12 @@ def getResults(item):
     #     company = result.find("div", {"class": "new-job-item__JobItemCompany-sc-1qa4r36-4 jNtqCf"}).text.strip()
     #     url = result.find("a", {"class": "new-job-item__JobMeta-sc-1qa4r36-7 eFiLvL"}, href=True)["href"]
 
-        # getJobs(date, title, company, url)
+    # getJobs(date, title, company, url)
 
 
 def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
     url = "https://justremote.co/remote-developer-jobs"
     response = requests.get(url, headers=headers).text
@@ -62,8 +64,10 @@ def getURL():
     getResults(response)
     # print(response)
 
+
 def main():
     getURL()
+
 
 main()
 sys.exit(0)
