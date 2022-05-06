@@ -245,7 +245,6 @@ amount
 carbonhealth
 demicon
 tokenmetrics
-forto
 fevo
 truepill
 boweryfarming
@@ -823,9 +822,7 @@ healthverity
 mheducation
 govini
 flatfile
-pintclickcare
 silo
-selfbook
 dwolla
 prelay
 passportshipping
