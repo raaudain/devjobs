@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests
 import random
-import create_temp_json
+from . import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import headers as h
 # import proxies as p
