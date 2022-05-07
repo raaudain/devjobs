@@ -64,7 +64,7 @@ def get_url(companies: list):
             data = json.loads(response.text)
             name = None
             logo = None
-            if json.loads(res.text)["data"]["organization"]:
+            if "organization" in json.loads(res.text)["data"]:
                 try:
                     name = json.loads(res.text)["data"]["organization"]["name"]
                     logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(
