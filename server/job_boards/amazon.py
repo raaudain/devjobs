@@ -4,12 +4,13 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules.classes import Create_JSON, Filter_Jobs
+from .modules.classes import Filter_Jobs
 from .modules import create_temp_json
 from .modules import headers as h
 
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
+# import modules.classes as c
 
 
 def get_jobs(date: str, url: str, company: str, position: str, location: str):

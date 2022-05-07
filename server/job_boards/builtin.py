@@ -4,8 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
-
-from server.job_boards.modules.classes import Filter_Jobs
+from .modules.classes import Filter_Jobs
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
