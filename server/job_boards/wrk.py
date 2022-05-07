@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import List_Of_Companies, Page_Not_Found
+from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -39,33 +39,41 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, na
 
 def get_results(item: str, name: str):
     jobs = item["items"]
-
     if jobs:
         for j in jobs:
-            if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT " in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"] or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
-                date = j["published_at"]
-                position = j["title"].strip()
-                company_name = j["organization_name"].strip()
-                apply_url = j["job_post_url"].strip()
-                city = f"{j['city'].strip()}, " if j['city'] else ""
-                state = f"{j['state_region'].strip()}, " if j["state_region"] else ""
-                country = f"{j['country'].strip()}" if j["country"] else ""
-                remote = f" | {j['remoteness_pretty'].strip()}" if j["remoteness_pretty"] and "No" not in j["remoteness_pretty"] else ""
-                locations_string = city+state+country+remote
-
-                get_jobs(date, apply_url, company_name,
-                         position, locations_string, name)
+            # if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT " in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"] or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
+            date = j["published_at"]
+            post_date = datetime.timestamp(
+                datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
+            position = j["title"].strip()
+            company_name = j["organization_name"].strip()
+            apply_url = j["job_post_url"].strip()
+            city = f"{j['city'].strip()}, " if j['city'] else ""
+            state = f"{j['state_region'].strip()}, " if j["state_region"] else ""
+            country = f"{j['country'].strip()}" if j["country"] else ""
+            remote = f" | {j['remoteness_pretty'].strip()}" if j["remoteness_pretty"] and "No" not in j["remoteness_pretty"] else ""
+            location = city+state+country+remote
+            Filter_Jobs({
+                "timestamp": post_date,
+                "title": position,
+                "company": company_name,
+                "company_logo": None,
+                "url": apply_url,
+                "location": location,
+                "source": company_name,
+                "source_url": f"https://jobs.wrk.xyz/{name}"
+            })
+            # get_jobs(date, apply_url, company_name,
+            #             position, locations_string, name)
 
 
 def get_url(companies: list):
     count = 1
-
     for name in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://jobs.wrk.xyz/api/v1/public/organizations/{name}/jobs/"
             response = requests.get(url, headers=headers)
-
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, name)
@@ -73,8 +81,7 @@ def get_url(companies: list):
                     time.sleep(5)
                 count += 1
             elif response.status_code == 404:
-                not_found = Page_Not_Found(FILE_PATH, name)
-                not_found.remove_not_found()
+                Remove_Not_Found(FILE_PATH, name)
             else:
                 print(f"=> wrk: Status code {response.status_code} for {name}")
         except:
@@ -82,7 +89,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

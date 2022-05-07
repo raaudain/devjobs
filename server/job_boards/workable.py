@@ -4,7 +4,7 @@ import json
 import sys
 import time
 import random
-from .modules.classes import List_Of_Companies, Page_Not_Found
+from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -38,16 +38,28 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
     for data in jobs:
-        if "Software" in data["title"] or "Support" in data["title"] or "Developer" in data["title"] or "Data" in data["title"] or "Programmer" in data["title"] or "Engineer" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"] or "Tech " in data["title"] or "devops" in data["title"].lower():
-            date = datetime.strptime(
-                data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
-            company_name = company.strip()
-            position = data["title"].strip()
-            state = f"{data['location']['city']}, {data['location']['region']}, "
-            locations_string = f"{state if data['location']['city'] else ''}{data['location']['country']}"
-            get_jobs(date, apply_url, company_name,
-                     position, locations_string, logo, param)
+        # if "Software" in data["title"] or "Support" in data["title"] or "Developer" in data["title"] or "Data" in data["title"] or "Programmer" in data["title"] or "Engineer" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"] or "Tech " in data["title"] or "devops" in data["title"].lower():
+        date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
+        postDate = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
+        company_name = company.strip()
+        position = data["title"].strip()
+        state = f"{data['location']['city']}, {data['location']['region']}, "
+        location = f"{state if data['location']['city'] else ''}{data['location']['country']}"
+        source_url = f"https://apply.workable.com/{param}/"
+        # get_jobs(date, apply_url, company_name,
+        #          position, locations_string, logo, param)
+        Filter_Jobs({
+            "timestamp": postDate,
+            "title": position,
+            "company": company_name,
+            "company_logo": logo,
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": source_url,
+        })
 
 
 def get_url(companies: list):
@@ -69,8 +81,7 @@ def get_url(companies: list):
                 }
                 response = requests.post(url, json=payload, headers=headers)
                 if response.status_code == 404:
-                    not_found = Page_Not_Found(FILE_PATH, company)
-                    not_found.remove_not_found()
+                    Remove_Not_Found(FILE_PATH, company)
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
                 name = json.loads(info)["name"].strip()
@@ -78,7 +89,7 @@ def get_url(companies: list):
                     info) else None
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
-                if count % 10 == 0:
+                if count % 20 == 0:
                     time.sleep(60)
                 count += 1
         except:
@@ -92,8 +103,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
-    random.shuffle(companies)
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

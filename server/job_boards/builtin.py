@@ -4,6 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
+
+from server.job_boards.modules.classes import Filter_Jobs
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -41,9 +43,9 @@ def get_jobs(date: str, url: str, company: str, position: str, location: str, lo
 
 
 def get_results(item: str):
+    global IS_TRUE
     jobs = item["jobs"]
     companies = item["companies"]
-
     # Remove unwanted data
     for i in range(len(companies)):
         # if "company_perks" in companies[i]: del companies[i]["company_perks"]
@@ -55,7 +57,6 @@ def get_results(item: str):
         # if "company_perks" in companies[i]: del companies[i]["premium"]
         # if "company_perks" in companies[i]: del companies[i]["region_id"]
         companies[i]["company"] = companies[i]["title"]
-
     for i in range(len(jobs)):
         # del jobs[i]["category_id"]
         # del jobs[i]["body"]
@@ -70,7 +71,6 @@ def get_results(item: str):
         # del jobs[i]["sub_category_id"]
         # del jobs[i]["id"]
         jobs[i]["id"] = jobs[i]["company_id"]
-
     # Merge dictionaries by id
     data = {d["id"]: d for d in companies}
     for j in jobs:
@@ -80,6 +80,9 @@ def get_results(item: str):
         if d["company"] not in scraped:
             date = datetime.strptime(
                 d["sort_job"], "%a, %d %b %Y %H:%M:%S GMT")
+            age = datetime.timestamp(datetime.now() - timedelta(days=30))
+            post_date = datetime.timestamp(
+                datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
             position = d["title"]
             base_url = None
             if d["region_id"] == 1:
@@ -102,10 +105,22 @@ def get_results(item: str):
             company_name = d["company"]
             logo = f"https://cdn.{base_url.replace('https://www.','')}/cdn-cgi/image/fit=scale-down,sharpen=0.3,f=auto,q=100,w=100,h=100/sites/{base_url.replace('https://','')}/files/{d['logo']}" if d[
                 "logo"] else None
-            locations_string = d["location"]
-            get_jobs(date, apply_url, company_name,
-                     position, locations_string, logo)
-
+            location = d["location"]
+            if apply_url not in scraped and company_name not in scraped:
+                if age <= post_date:
+                    Filter_Jobs({
+                        "timestamp": post_date,
+                        "title": position,
+                        "company": company_name,
+                        "company_logo": logo,
+                        "url": apply_url,
+                        "location": location,
+                        "source": "Built In",
+                        "source_url": "https://builtin.com/"
+                    })
+            else:
+                IS_TRUE = False
+            
 
 def get_url():
     page = 1

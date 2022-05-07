@@ -7,7 +7,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import List_Of_Companies, Page_Not_Found
+from .modules.classes import Read_List_Of_Companies, Remove_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -103,8 +103,8 @@ def get_url(companies: list):
                     time.sleep(5)
                 count += 1
             elif response.status_code == 404:
-                not_found = Page_Not_Found(FILE_PATH, name)
-                not_found.remove_not_found()
+                Remove_Not_Found(FILE_PATH, name)
+                
             else:
                 print(
                     f"=> greenhouse.io: Status code {response.status_code} for {name}")
@@ -113,7 +113,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

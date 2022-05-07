@@ -5,7 +5,7 @@ import random
 import json
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import Create_Temp_JSON, List_Of_Companies, Page_Not_Found
+from .modules.classes import Create_Temp_JSON, Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -49,17 +49,26 @@ def get_results(item: str, param: str):
         company = param.upper()
     for d in data:
         title = d.find("td", class_="posTitle reqitem ReqRowClick").text
-        if "Engineer" in title or "Data" in title or "IT " in title or "Support" in title or "Cloud" in title or "Software" in title or "Developer" in title and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title and "Data Entry" not in title and "Medication" not in title and "Environmental" not in title and "Nurse" not in title and "Manufactur" not in title and "Maintenance" not in title and "Health" not in title and "Civil" not in title):
-            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-            apply_url = f"https://{param}.hrmdirect.com/employment/" + \
-                d.find("a", href=True)["href"]
-            company_name = company
-            position = title.strip()
-            city = d.find("a", href=True).find_next()
-            state = city.find_next()
-            locations_string = f"{city.text.strip()}, {state.text.strip()}"
-            get_jobs(date, apply_url, company_name,
-                     position, locations_string, param)
+        # if "Engineer" in title or "Data" in title or "IT " in title or "Support" in title or "Cloud" in title or "Software" in title or "Developer" in title and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title and "Data Entry" not in title and "Medication" not in title and "Environmental" not in title and "Nurse" not in title and "Manufactur" not in title and "Maintenance" not in title and "Health" not in title and "Civil" not in title):
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        apply_url = f"https://{param}.hrmdirect.com/employment/" + \
+            d.find("a", href=True)["href"]
+        company_name = company
+        position = title.strip()
+        city = d.find("a", href=True).find_next()
+        state = city.find_next()
+        location = f"{city.text.strip()}, {state.text.strip()}"
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": f"https://{param}.hrmdirect.com/employment/job-openings.php?search=true&dept=-1"
+        })
 
 
 def get_url(companies: list):
@@ -75,8 +84,7 @@ def get_url(companies: list):
                     time.sleep(5)
                 page += 1
             elif response.status_code == 404:
-                not_found = Page_Not_Found(FILE_PATH, company)
-                not_found.remove_not_found()
+                Remove_Not_Found(FILE_PATH, company)
             else:
                 print(
                     f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
@@ -85,8 +93,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
-    random.shuffle(companies)
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

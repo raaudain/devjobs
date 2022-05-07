@@ -1,7 +1,7 @@
 import requests, sys, time, random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import List_Of_Companies, Page_Not_Found
+from .modules.classes import Read_List_Of_Companies, Remove_Not_Found
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -72,8 +72,7 @@ def get_url(companies: list):
         if response.ok: 
             get_results(response.text, name)
         elif response.status_code == 404:
-            not_found = Page_Not_Found(FILE_PATH, name)
-            not_found.remove_not_found()
+            Remove_Not_Found(FILE_PATH, name)
         else: 
             print(f"=> lever.co: Error for {name} - Response status", response.status_code)
         
@@ -83,7 +82,7 @@ def get_url(companies: list):
         
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
+    companies = Read_List_Of_Companies(FILE_PATH)
     random.shuffle(companies)
     get_url(companies)
 

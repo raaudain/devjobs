@@ -7,7 +7,7 @@ import time
 import random
 from .modules.headers import headers as h
 from .modules import create_temp_json
-from .modules.classes import List_Of_Companies, Page_Not_Found
+from .modules.classes import Read_List_Of_Companies, Remove_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as headers
 
@@ -88,15 +88,15 @@ def get_url(companies: list):
                 time.sleep(5)
             count += 1
         elif response.status_code == 404:
-            not_found = Page_Not_Found(FILE_PATH, name)
-            not_found.remove_not_found()
+            Remove_Not_Found(FILE_PATH, name)
+            
         else:
             print(
                 f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

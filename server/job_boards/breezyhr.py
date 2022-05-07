@@ -6,33 +6,13 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import Create_Temp_JSON, List_Of_Companies, Page_Not_Found
+from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
 
 FILE_PATH = "./data/params/breezyhr.txt"
-
-
-def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, name: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        "company": company,
-        "company_logo": logo,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": f"https://{name}.breezy.hr",
-        "category": "job"
-    })
-    scraped.add(company)
-    print(f"=> breezyhr: Added {position} for {company}")
 
 
 def get_results(item: str, name: str):
@@ -48,23 +28,31 @@ def get_results(item: str, name: str):
             h2 = r.find("h2").text
             if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text:
                 date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+                post_date = datetime.timestamp(
+                    datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
                 apply_url = f'https://{name}.breezy.hr{r.find("a")["href"].strip()}'
                 company_name = company.strip()
                 position = r.find("h2").text.strip()
-                locations_string = "See description"
-
+                location = "See description"
                 if "%LABEL_POSITION_TYPE_REMOTE%" in r.find("li", class_="location").text:
-                    locations_string = r.find("li", class_="location").text.replace(
+                    location = r.find("li", class_="location").text.replace(
                         "%LABEL_POSITION_TYPE_REMOTE%", "Remote")
                 elif "%LABEL_POSITION_TYPE_WORLDWIDE%" in r.find("li", class_="location").text:
-                    locations_string = r.find("li", class_="location").text.replace(
+                    location = r.find("li", class_="location").text.replace(
                         "%LABEL_POSITION_TYPE_WORLDWIDE%", "Remote")
                 elif r.find("li", class_="location"):
-                    locations_string = r.find(
+                    location = r.find(
                         "li", class_="location").text.strip()
-
-                get_jobs(date, apply_url, company_name,
-                         position, locations_string, logo, name)
+                Filter_Jobs({
+                    "timestamp": post_date,
+                    "title": position,
+                    "company": company_name,
+                    "company_logo": logo,
+                    "url": apply_url,
+                    "location": location,
+                    "source": company,
+                    "source_url": f"https://{name}.breezy.hr"
+                })
     except AttributeError as err:
         print(f"=> breezyhr: Error for {name}.", err)
 
@@ -82,8 +70,7 @@ def get_url(companies: list):
                     time.sleep(5)
                 page += 1
             elif response.status_code == 404:
-                not_found = Page_Not_Found(FILE_PATH, company)
-                not_found.remove_unwanted()
+                Remove_Not_Found(FILE_PATH, company)
             elif str(response.status_code)[0] == "5":
                 print(
                     f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
@@ -96,8 +83,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = List_Of_Companies(FILE_PATH).read_file()
-    random.shuffle(companies)
+    companies = Read_List_Of_Companies(FILE_PATH)
     get_url(companies)
 
 

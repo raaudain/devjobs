@@ -4,7 +4,7 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import List_Of_Companies, Update_Key_Values, Create_JSON
+from .modules.classes import Read_List_Of_Companies, Update_Key_Values, Create_JSON
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.classes as c
@@ -74,7 +74,7 @@ def get_url(params: list):
 
 def main():
     Update_Key_Values.filter_companies()
-    params = List_Of_Companies(FILE_PATH).read_file()
+    params = Read_List_Of_Companies(FILE_PATH)
     get_url(params)
 
 

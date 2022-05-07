@@ -5,38 +5,26 @@ from bs4 import BeautifulSoup
 # from .modules import headers as h
 import modules.create_temp_json as create_temp_json
 import modules.headers as h
-
-
-def get_jobs(date: str, url: str, company: str, position: str, location: str):
-    data = create_temp_json.data
-    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
-    
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        # "qualifications": qualifications,
-        "company": company,
-        "url": url,
-        "location": location,
-        "source": "Bloomberg",
-        "source_url": "https://www.bloomberg.com/company/what-we-do/",
-        "category": "job"
-    })
-    print(f"=> bloomberg: Added {position} for {company}")
+from .modules.classes import Filter_Jobs
 
 
 def get_results(item):
     date = item["datePosted"]
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
     apply_url = item["url"]
     company_name = "Bloomberg"
     position = item["jobTitle"]
-    locations_string = item["jobLocation"]
-    # soup = BeautifulSoup(item["jobDescription"], "lxml")
-    # results = soup.find_all("ul")[-1].find_all_next("li")
-    # desc = []
-
-    # for i in results: desc.append(i.text.strip())
-    get_jobs(date, apply_url, company_name, position, locations_string)
+    location = item["jobLocation"]
+    Filter_Jobs({
+        "timestamp": post_date,
+        "title": position,
+        # "qualifications": qualifications,
+        "company": company_name,
+        "url": apply_url,
+        "location": location,
+        "source": "Bloomberg",
+        "source_url": "https://www.bloomberg.com/company/what-we-do/"
+    })
 
 
 def get_url():
