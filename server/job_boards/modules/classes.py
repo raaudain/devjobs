@@ -44,7 +44,7 @@ class Remove_Not_Found:
 
 
 class Filter_Jobs:
-    def __init__(self, posting: object):
+    def __init__(self, posting: dict):
         self.posting = posting
         posting = self.posting
         data = create_temp_json.data
