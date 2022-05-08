@@ -3,6 +3,7 @@ import json
 import sys
 import time
 import random
+from lxml import html
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
@@ -30,15 +31,20 @@ def get_results(item: str, name: str):
             country = f"{j['country'].strip()}" if j["country"] else ""
             remote = f" | {j['remoteness_pretty'].strip()}" if j["remoteness_pretty"] and "No" not in j["remoteness_pretty"] else ""
             location = city+state+country+remote
+            source_url = f"https://jobs.wrk.xyz/{name}"
+            r = requests.get(source_url)
+            tree = html.fromstring(r.content)
+            img = tree.xpath("//div[@class='header__logo']/img/@src")
+            logo = img if img else None
             Filter_Jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,
-                "company_logo": None,
+                "company_logo": logo,
                 "url": apply_url,
                 "location": location,
                 "source": company_name,
-                "source_url": f"https://jobs.wrk.xyz/{name}"
+                "source_url": source_url
             })
 
 
