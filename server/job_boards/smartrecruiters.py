@@ -36,7 +36,7 @@ def get_results(item: str, name: str):
                     if r.ok:
                         tree = html.fromstring(r.content)
                         img = tree.xpath(
-                            "//span[@class='header-logo logo']//img/@src")
+                            "//span[@class='header-logo logo']//img/@src")[0]
                         if img:
                             logo = img
                             images[name] = logo

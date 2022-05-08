@@ -34,7 +34,7 @@ def get_results(item: str, name: str):
             source_url = f"https://jobs.wrk.xyz/{name}"
             r = requests.get(source_url)
             tree = html.fromstring(r.content)
-            img = tree.xpath("//div[@class='header__logo']/img/@src")
+            img = tree.xpath("//div[@class='header__logo']/img/@src")[0]
             logo = img if img else None
             Filter_Jobs({
                 "timestamp": post_date,
