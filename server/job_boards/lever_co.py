@@ -53,7 +53,7 @@ def get_url(companies: list):
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, company)
-                if count % 20 == 0:
+                if count % 30 == 0:
                     time.sleep(60)
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)

@@ -6,7 +6,6 @@ import time
 import random
 from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
-from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -82,7 +81,7 @@ def get_url(companies: list):
                     info_dict[company]["logo"] = logo
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
-                if count % 20 == 0:
+                if count % 30 == 0:
                     time.sleep(60)
                 count += 1
         except:
