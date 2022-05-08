@@ -47,13 +47,13 @@ class Filter_Jobs:
     def __init__(self, posting: dict):
         self.posting = posting
         posting = self.posting
-        data = create_temp_json.data
-        scraped = create_temp_json.scraped
+        data = Create_JSON.data
+        scraped = Create_JSON.scraped
         title = posting["title"]
         company = posting["company"]
         url = posting["url"]
         source_url = posting["source_url"]
-        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title) and ("Electrical" not in title and "HVAC" not in title and "Mechnical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title):
+        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web" in title or "Front End" in title or "Agile" in title) and ("Elect" not in title and "HVAC" not in title and "Mechnical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title):
             data.append(posting)
             scraped.add(company)
             scraped.add(url)
@@ -86,16 +86,16 @@ class Create_JSON:
     data = []
     scraped = set()
 
-    def create_temp_file(data):
+    def create_temp_file(item):
         temp = "./data/temp/temp_data.json"
         if isfile(temp):
-            print("=> temp_data.json: Deleting old content")
+            print("=> temp_data.json: Deleting old data")
             t = open(temp, "r+")
             t.truncate(0)
             t.close()
         with open(temp, "a", encoding="utf-8") as file:
-            print("=> temp_data.json: Generating new content")
-            json.dump(data, file, ensure_ascii=False, indent=4)
+            print("=> temp_data.json: Generating new data")
+            json.dump(item, file, ensure_ascii=False, indent=4)
 
     def create_file():
         temp = "./data/temp/temp_data.json"
@@ -104,14 +104,19 @@ class Create_JSON:
         f.close()
         main = "./data/data.json"
         if isfile(main):
-            print("=> data.json: Deleting old content")
-            t = open(main, "r+")
-            t.truncate(0)
-            t.close()
+            print("=> data.json: Deleting old data")
+            m = open(main, "r+")
+            m.truncate(0)
+            m.close()
         ordered_data = sorted(data, key=lambda i: i["timestamp"], reverse=True)
         with open(main, "a", encoding="utf-8") as file:
-            print("=> data.json: Generating new content")
+            print("=> data.json: Generating new data")
             json.dump(ordered_data, file, ensure_ascii=False, indent=4)
+        if isfile(temp):
+            print("=> temp_data.json: Deleting temporary data")
+            t = open(temp, "r+")
+            t.truncate(0)
+            t.close()
 
 
 class Create_Temp_JSON:

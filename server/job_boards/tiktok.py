@@ -1,14 +1,16 @@
+import sys
+import time
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from .modules import create_temp_json
 from .modules import driver
+from .modules.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.driver as driver
-import sys
 
 
 # options = webdriver.FirefoxOptions()
@@ -22,69 +24,47 @@ browser = webdriver.Chrome(executable_path=driver, options=options)
 wait = WebDriverWait(browser, 30)
 
 
-def get_jobs(date, apply_url, company_name, position, locations_string):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-
-    date = str(date)
-    title = position
-    company = company_name
-    url = apply_url
-    location = locations_string
-
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-
-    if url not in scraped:
-        data.append({
-            "timestamp": postDate,
-            "title": title,
-            "company": company,
-            "company_logo": "https://www.citypng.com/public/uploads/preview/tiktok-circle-round-logo-brand-video-tik-tok-11583757667gwiiaepkzu.png",
-            "url": url,
-            "location": location,
-            "source": company,
-            "source_url": "https://careers.tiktok.com/",
-            "category": "job"
-        })
-        scraped.add(url)
-        print(f"=> tiktok: Added {title}")
-
-
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("a", {"data-id":True})
-
+    results = soup.find_all("a", {"data-id": True})
     for r in results:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = "https://careers.tiktok.com"+r["href"]
         company_name = "TikTok"
-        position = r.find("span", class_="positionItem-title-text").text.strip()
-        locations_string = r.find("span", class_="content__3ZUKJ clamp-content").text
-        
-        get_jobs(date, apply_url, company_name, position, locations_string)
+        position = r.find(
+            "span", class_="positionItem-title-text").text.strip()
+        location = r.find("span", class_="content__3ZUKJ clamp-content").text
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "company_logo": "https://www.citypng.com/public/uploads/preview/tiktok-circle-round-logo-brand-video-tik-tok-11583757667gwiiaepkzu.png",
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": "https://careers.tiktok.com/"
+        })
 
 
 def get_url():
-    keywords = ["engineer", "data ", "developer"] 
-
-    for keyword in keywords:
+    page = 1
+    while page < 4:
         try:
-            url = f"https://careers.tiktok.com/position?keywords={keyword}&category=&location=&project=&type=&job_hot_flag=&current=1&limit=1000"
-
+            url = f"https://careers.tiktok.com/position?keywords=&category=6704215862603155720%2C6850051244971526414%2C6704215901438216462%2C6704215864629004552%2C6704215913488451847&location=&project=&type=&job_hot_flag=&current={page}&limit=1000&functionCategory="
             browser.get(url)
-            
-
-            wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='positionItem__1giWi positionItem']")))
-
-            response = browser.find_element_by_xpath("//html").get_attribute("outerHTML")
-
+            wait.until(EC.presence_of_element_located(
+                (By.XPATH, "//div[@class='positionItem__1giWi positionItem']")))
+            response = browser.find_element_by_xpath(
+                "//html").get_attribute("outerHTML")
             get_results(response)
+            page += 1
+            time.sleep(10)
         except:
-            print(f"=> Failed to scrape TikTok for {keyword}")
-
+            print(f"=> Failed to scrape TikTok for page {page}")
     browser.quit()
-    
-    # print(response)
+
 
 def main():
     get_url()

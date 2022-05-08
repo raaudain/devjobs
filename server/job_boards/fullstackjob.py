@@ -5,31 +5,9 @@ import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
-
-
-def get_jobs(url: str, date: str, company: str, position: str, location: str, logo: str, source: str, source_url: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    d = datetime.strptime(date, "%Y-%m-%d")
-    post_date = datetime.timestamp(
-        datetime.strptime(str(d), "%Y-%m-%d %H:%M:%S"))
-    if company not in scraped and url not in scraped:
-        data.append({
-            "timestamp": post_date,
-            "title": position,
-            "company": company,
-            "company_logo": logo,
-            "url": url,
-            "location": location,
-            "source": source,
-            "source_url": source_url,
-            "category": "job"
-        })
-        print(f"=> fullstackjob: Added {position} for {company}")
-        scraped.add(company)
-        scraped.add(url)
 
 
 def get_results(item: str):
@@ -38,6 +16,9 @@ def get_results(item: str):
         for data in jobs:
             apply_url = data["applicationLink"].strip()
             date = data["added"]
+            d = datetime.strptime(date, "%Y-%m-%d")
+            post_date = datetime.timestamp(
+                datetime.strptime(str(d), "%Y-%m-%d %H:%M:%S"))
             company_name = data["company"].strip()
             logo = data["companyLogo"].strip() if len(
                 data["companyLogo"]) > 0 else "https://fullstackjob.com/img/icons/favicon-32x32.png"
@@ -46,11 +27,19 @@ def get_results(item: str):
                 data["location"]) > 0 else ""
             country = data["country"].strip()
             remote = " | Remote" if data["remoteOk"] != "false" else ""
-            locations_string = location+country+remote
+            location = location+country+remote
             source = data["ownerTenant"]["host"]
             source_url = "https://"+data["ownerTenant"]["host"]
-            get_jobs(apply_url, date, company_name, position,
-                     locations_string, logo, source, source_url)
+            Filter_Jobs({
+                "timestamp": post_date,
+                "title": position,
+                "company": company_name,
+                "company_logo": logo,
+                "url": apply_url,
+                "location": location,
+                "source": source,
+                "source_url": source_url
+            })
 
 
 def get_url():

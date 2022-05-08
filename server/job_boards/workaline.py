@@ -1,78 +1,58 @@
+import requests
+import json
+import sys
+import time
+import random
 from datetime import datetime
-import requests, json, sys, time
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
+from .modules.classes import Filter_Jobs
+from .modules import headers as h
 
 
-data = create_temp_json.data
-scraped = create_temp_json.scraped
-
-def getJobs(date, url, company, position, location):
-    date = str(date)
-    title = position
-    company = company
-    url = url
-    location = location
-
-    # print(date, title, company, url, location)
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-    
-    if company not in scraped:
-        data.append({
-            "timestamp": postDate,
-            "title": title,
-            "company": company,
-            "company_logo": "https://workaline.com/static/img/tinypng@logo-no-bg-transparent@small.png",
-            "url": url,
-            "location": location,
-            "source": "Workaline",
-            "source_url": "https://www.workaline.com",
-            "category": "job"
-        })
-        print(f"=> workline: Added {title} for {company}")
-
-
-def getResults(item):
+def get_results(item):
     jobs = item["data"]
-
     for data in jobs:
         try:
-            if "hacker" in data["source"].lower() or "stack" in data["source"]:
-                date = datetime.strptime(data["published_at"], "%Y-%m-%dT%H:%M:%S.%fZ")
-                apply_url = data["url"].strip()
-                company_name = data["company"].strip() if data["company"] else None
-                position = data["title"].strip()
-                locations_string = "Remote"
-                getJobs(date, apply_url, company_name, position, locations_string)
+            date = datetime.strptime(
+                data["published_at"], "%Y-%m-%dT%H:%M:%S.%fZ")
+            post_date = datetime.timestamp(
+                datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+            apply_url = data["url"].strip()
+            company_name = data["company"].strip() if data["company"] else None
+            position = data["title"].strip()
+            location = "Remote"
+            Filter_Jobs({
+                "timestamp": post_date,
+                "title": position,
+                "company": company_name,
+                "company_logo": "https://workaline.com/static/img/tinypng@logo-no-bg-transparent@small.png",
+                "url": apply_url,
+                "location": location,
+                "source": "Workaline",
+                "source_url": "https://www.workaline.com"
+            })
         except:
             continue
 
-def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
+def get_url():
     page = 1
-
     while page <= 100:
         try:
+            headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://workaline.com/api/web/listings?page={page}&per_page=20&include=developer,engineer,frontend,backend,fullstack,front,develop,program,engine,dev,integration,data,tech,technical,cloud,microservice,query,maintenance,operation,ops,system,window,linux&exclude=sales"
             response = requests.get(url, headers=headers)
-
             print("=> workline: Page", page)
             data = json.loads(response.text)
-            getResults(data)
-
-            if page % 10 == 0: time.sleep(5)
-
+            get_results(data)
+            if page % 10 == 0:
+                time.sleep(5)
         except:
             continue
-        
-        
-
         page += 1
 
 
 def main():
-    getURL()
+    get_url()
 
 # main()
 # sys.exit(0)

@@ -1,5 +1,4 @@
 import random
-from .modules.classes import Create_JSON
 from . import comeet
 from . import clearcompany
 from . import eightfold
@@ -23,7 +22,7 @@ from . import hireart
 from . import usajobs
 from . import amazon
 from . import smartrecruiters
-from . import nocsok
+# from . import nocsok
 from . import workwithindies
 from . import ashbyhq
 from . import nintendo
@@ -41,28 +40,28 @@ from . import wrk
 from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
-from .modules import create_temp_json
-# from .modules import create_main_json
 from datetime import datetime, timedelta
-import sys, os
+# from .modules import create_temp_json
+# from .modules import create_main_json
+from .modules.classes import Create_JSON
 
 
 def main():
-    f = open(f"./data/params/craigslist.txt", "r")
+    f = open("./data/params/craigslist.txt", "r")
     locations = [location.strip() for location in f]
     f.close()
 
-    w = open(f"./data/params/workable.txt", "r")
+    w = open("./data/params/workable.txt", "r")
     work = [l.strip() for l in w]
     random.shuffle(work)
     w.close()
 
-    g = open(f"./data/params/greenhouse_io.txt", "r")
+    g = open("./data/params/greenhouse_io.txt", "r")
     green = [l.strip() for l in g]
     g.close()
 
     # w_half = len(work)//2
-    # workable1 = work[:w_half] 
+    # workable1 = work[:w_half]
     # workable2 = work[w_half:]
 
     # m = open(f"./data/params/miami.txt", "r")
@@ -80,7 +79,7 @@ def main():
     target.main()
     # craigslist_gigs.main()
     nbc.main()
-    nocsok.main()
+    # nocsok.main()
     workable.get_url(work[1::5])
     smartrecruiters.main()
     greenhouse_io.get_url(green[::2])
@@ -123,13 +122,10 @@ def main():
     workable.get_url(work[4::5])
     dailyremote.main()
     builtin.main()
-    create_temp_json.createJSON(create_temp_json.data)
+    # create_temp_json.createJSON(create_temp_json.data)
     # create_main_json.createJSON()
-    # Create_JSON.create_temp_file(Create_JSON.data)
+    # print(Create_JSON.data)
+    Create_JSON.create_temp_file(Create_JSON.data)
     Create_JSON.create_file()
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
-
-
-# main()
-# sys.exit(0)

@@ -7,42 +7,14 @@ from datetime import datetime
 from .modules.classes import Filter_Jobs
 from .modules import create_temp_json
 from .modules import headers as h
-
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    # data = Create_Temp_JSON.data
-    # scraped = Create_Temp_JSON.scraped
-
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-
-    if url not in scraped:
-        data.append({
-            "timestamp": post_date,
-            "title": position,
-            # "qualifications": qualifications,
-            "company": company,
-            "company_logo": "https://tauchcomputertest.de/wp-content/uploads/2016/11/Amazon-Logo.png",
-            "url": url,
-            "location": location,
-            "source": "Amazon",
-            "source_url": "https://www.amazon.jobs",
-            "category": "job"
-        })
-        print(f"=> amazon: Added {position} for {company}")
-        scraped.add(url)
-
-
 def get_results(item: str):
     data = item["jobs"]
     for d in data:
-        # if "Engineer" in d["title"] or "Data" in d["title"] or "Tech " in d["title"] or "IT" in d["title"] or "Support" in d["title"]:
         date = datetime.strptime(d["posted_date"], "%B %d, %Y")
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
@@ -52,8 +24,6 @@ def get_results(item: str):
         job_path = d["job_path"].strip()
         apply_url = f"https://amazon.jobs{job_path}"
         location = d["normalized_location"]
-
-        # get_jobs(date, apply_url, company_name, position, locations_string)
         Filter_Jobs({
             "timestamp": post_date,
             "title": position,
@@ -64,9 +34,6 @@ def get_results(item: str):
             "source": "Amazon",
             "source_url": "https://www.amazon.jobs",
         })
-
-        # get_job = Handle_Jobs(date, apply_url, company_name, position, locations_string, "Amazon", "https://www.amazon.jobs", "amazon")
-        # get_job.add_job()
 
 
 def get_url():

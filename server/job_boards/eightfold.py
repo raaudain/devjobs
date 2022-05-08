@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import Read_List_Of_Companies, Remove_Not_Found
+from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -15,37 +15,26 @@ from .modules.classes import Read_List_Of_Companies, Remove_Not_Found
 FILE_PATH = "./data/params/eightfold.txt"
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, param: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        "company": company,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": f"https://{param}.eightfold.ai/careers/",
-        "category": "job"
-    })
-    scraped.add(company)
-    print(f"=> eightfold.ai: Added {position} for {company}")
-
-
 def get_results(item: str, param: str):
     jobs = item["positions"]
     company = item["branding"]["companyName"] if "companyName" in item["branding"] else param.upper()
     for j in jobs:
-        if "Engineer" in j["name"] or "Data" in j["name"] or "Support" in j["name"] or "IT" in j["name"] or "Programmer" in j["name"] or "QA" in j["name"] or "Software" in j["name"] or "Tech " in j["name"] or "Help" in j["name"] or "Desk" in j["name"] or "Developer" in j["name"] or "Web" in j["name"] and ("Mechnicial" not in j["name"] and "Electrical" not in j["name"] and "Front Desk" not in j["name"] and "Data Entry" not in j["name"] and "Facilities" not in j["name"] and "Nurse" not in j["name"]):
-            date = datetime.fromtimestamp(j["t_create"])
-            position = j["name"].strip()
-            company_name = company.strip()
-            apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
-            locations_string = " | ".join(j["locations"])
-            get_jobs(date, apply_url, company_name,
-                     position, locations_string, param)
+        date = datetime.fromtimestamp(j["t_create"])
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        position = j["name"].strip()
+        company_name = company.strip()
+        apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
+        location = " | ".join(j["locations"])
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": f"https://{param}.eightfold.ai/careers/"
+        })
 
 
 def get_url(companies: list):
@@ -62,7 +51,6 @@ def get_url(companies: list):
             count += 1
         elif response.status_code == 404:
             Remove_Not_Found(FILE_PATH, name)
-            
         else:
             print(
                 f"=> eightfold.ai: Status code {response.status_code} for {name}")

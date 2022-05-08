@@ -14,33 +14,6 @@ from .modules import headers as h
 IS_TRUE = True
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str):
-    global IS_TRUE
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    age = datetime.timestamp(datetime.now() - timedelta(days=30))
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-    if url not in scraped and company not in scraped:
-        if age <= post_date:
-            data.append({
-                "timestamp": post_date,
-                "title": position,
-                "company": company,
-                "company_logo": logo,
-                "url": url,
-                "location": location,
-                "source": "Built In",
-                "source_url": "https://builtin.com/",
-                "category": "job"
-            })
-            scraped.add(url)
-            print(f"=> builtin: Added {position} for {company}")
-        else:
-            print(f"=> builtin: Reached limit. Stopping scrape")
-            IS_TRUE = False
-
-
 def get_results(item: str):
     global IS_TRUE
     jobs = item["jobs"]
@@ -117,8 +90,8 @@ def get_results(item: str):
                         "source": "Built In",
                         "source_url": "https://builtin.com/"
                     })
-            else:
-                IS_TRUE = False
+                else:
+                    IS_TRUE = False
             
 
 def get_url():
@@ -130,7 +103,7 @@ def get_url():
                 break
             headers = {"User-Agent": random.choice(
                 h.headers), "Origin": "https://builtin.com", "Referer": "https://builtin.com/"}
-            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=100&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)

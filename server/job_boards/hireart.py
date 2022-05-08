@@ -6,28 +6,9 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import create_temp_json
 from .modules import headers as h
+from .modules.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
-
-
-def get_jobs(url: str, company: str, position: str, location: str):
-    data = create_temp_json.data
-    date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
-    post_date = datetime.timestamp(
-        datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        # "qualifications": qualifications,
-        "company": company,
-        "company_logo": "https://www.hireart.com/assets/ha-headerlogo-brand-400.svg",
-        "url": url,
-        "location": location,
-        "source": "HireArt",
-        "source_url": "https://www.hireart.com",
-        "category": "job"
-    })
-    print(f"=> hireart: Added {position} for {company}")
 
 
 def get_results(item: str):
@@ -35,16 +16,22 @@ def get_results(item: str):
     if jobs:
         for data in jobs:
             apply_url = data["apply_url"].strip()
-            # response = requests.get(apply_url, headers=headers).text
-            # soup = BeautifulSoup(response, "lxml")
-            # results = soup.find("div", class_="job-requirements").find_all("li")
-            # desc = [i.text for i in results]
-            # desc = None
-
+            date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+            post_date = datetime.timestamp(
+                datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
             company_name = data["company_name"].strip()
             position = data["position"].strip()
-            locations_string = data["locations_string"].strip()
-            get_jobs(apply_url, company_name, position, locations_string)
+            location = data["locations_string"].strip()
+            Filter_Jobs({
+                "timestamp": post_date,
+                "title": position,
+                "company": company_name,
+                "company_logo": "https://www.hireart.com/assets/ha-headerlogo-brand-400.svg",
+                "url": apply_url,
+                "location": location,
+                "source": "HireArt",
+                "source_url": "https://www.hireart.com",
+            })
 
 
 def get_url():

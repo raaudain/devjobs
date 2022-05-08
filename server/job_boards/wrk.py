@@ -15,33 +15,10 @@ from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Fou
 FILE_PATH = "./data/params/wrk.txt"
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, name: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
-
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        "company": company,
-        "company_logo": None,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": f"https://jobs.wrk.xyz/{name}",
-        "category": "job"
-    })
-    scraped.add(company)
-    print(f"=> wrk: Added {position} for {company}")
-
-
 def get_results(item: str, name: str):
     jobs = item["items"]
     if jobs:
         for j in jobs:
-            # if "Engineer" in j["title"] or "Data" in j["title"] or "Support" in j["title"] or "IT " in j["title"] or "Programmer" in j["title"] or "QA" in j["title"] or "Software" in j["title"] or "Tech " in j["title"] or "Help" in j["title"] or "Desk" in j["title"] or "Developer" in j["title"] and ("Mechnicial" not in j["title"] and "Electrical" not in j["title"] and "Front Desk" not in j["title"]):
             date = j["published_at"]
             post_date = datetime.timestamp(
                 datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ"))
@@ -63,8 +40,6 @@ def get_results(item: str, name: str):
                 "source": company_name,
                 "source_url": f"https://jobs.wrk.xyz/{name}"
             })
-            # get_jobs(date, apply_url, company_name,
-            #             position, locations_string, name)
 
 
 def get_url(companies: list):

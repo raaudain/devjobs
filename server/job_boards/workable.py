@@ -15,30 +15,9 @@ from .modules import create_temp_json
 FILE_PATH = "./data/params/workable.txt"
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-    postDate = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-    data.append({
-        "timestamp": postDate,
-        "title": position,
-        "company": company,
-        "company_logo": logo,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": f"https://apply.workable.com/{param}/",
-        "category": "job"
-    })
-    scraped.add(company)
-    print(f"=> workable: Added {position} for {company}")
-
-
 def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
     for data in jobs:
-        # if "Software" in data["title"] or "Support" in data["title"] or "Developer" in data["title"] or "Data" in data["title"] or "Programmer" in data["title"] or "Engineer" in data["title"] or "QA" in data["title"] or "IT " in data["title"] or "ML" in data["title"] or "Tech " in data["title"] or "devops" in data["title"].lower():
         date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
         postDate = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
@@ -48,8 +27,6 @@ def get_results(item: str, param: str, company: str, logo: str):
         state = f"{data['location']['city']}, {data['location']['region']}, "
         location = f"{state if data['location']['city'] else ''}{data['location']['country']}"
         source_url = f"https://apply.workable.com/{param}/"
-        # get_jobs(date, apply_url, company_name,
-        #          position, locations_string, logo, param)
         Filter_Jobs({
             "timestamp": postDate,
             "title": position,
@@ -64,6 +41,7 @@ def get_results(item: str, param: str, company: str, logo: str):
 
 def get_url(companies: list):
     count = 0
+    retries = 0
     for company in companies:
         token = "0"
         try:
@@ -84,9 +62,24 @@ def get_url(companies: list):
                     Remove_Not_Found(FILE_PATH, company)
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
-                name = json.loads(info)["name"].strip()
-                logo = json.loads(info)["logo"] if "logo" in json.loads(
+                # Add name and logo to dictionary to reduce requests
+                info_dict = {}
+                info_dict[company] = {"name": None, "logo": None}
+                name = None
+                logo = None
+                if info_dict[company]["name"]:
+                    name = info_dict[company]["name"]
+                    print(f"=> workable: used name in dictionary for {company}")
+                else:
+                    name = json.loads(info)["name"].strip()
+                    info_dict[company]["name"] = name
+                if info_dict[company]["logo"]:
+                    print(f"=> workable: used logo in dictionary for {company}")
+                    logo = info_dict[company]["logo"]
+                else:
+                    logo = json.loads(info)["logo"] if "logo" in json.loads(
                     info) else None
+                    info_dict[company]["logo"] = logo
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
                 if count % 20 == 0:
@@ -96,7 +89,13 @@ def get_url(companies: list):
             if response.status_code == 429:
                 print(
                     f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
-                break
+                if retries <= 3:
+                    time.sleep(120)
+                    retries += 1
+                else:
+                    print(
+                        f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
+                    break
             else:
                 print(
                     f"=> workable: Failed for {company}. Status code: {response.status_code}.")

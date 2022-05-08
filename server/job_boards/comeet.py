@@ -16,31 +16,6 @@ from .modules import headers as h
 FILE_PATH = "./data/params/comeet.txt"
 
 
-def get_jobs(date: str, url: str, company: str, position: str, location: str, logo: str, param: str):
-    data = create_temp_json.data
-    scraped = create_temp_json.scraped
-
-    # data = Create_Temp_JSON.data
-    # scraped = Create_Temp_JSON.scraped
-
-    post_date = datetime.timestamp(
-        datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-
-    data.append({
-        "timestamp": post_date,
-        "title": position,
-        "company": company,
-        "company_logo": logo,
-        "url": url,
-        "location": location,
-        "source": company,
-        "source_url": f"https://www.comeet.com/jobs/{param}",
-        "category": "job"
-    })
-    scraped.add(company)
-    print(f"=> comeet: Added {position} for {company}")
-
-
 def get_results(item: str, param: str):
     soup = BeautifulSoup(item, "lxml")
     logo = None
@@ -56,7 +31,6 @@ def get_results(item: str, param: str):
             logo = v["original"]["url"]
     for d in data:
         if d["location"]:
-            # if "Engineer" in d["name"] or "Data" in d["name"] or "Data" in d["name"] or "IT " in d["name"] or "Tech" in d["name"] or "Support" in d["name"] or "Cloud" in d["name"] or "Software" in d["name"] or "Developer" in d["name"] and ("Electrical" not in d["name"] and "HVAC" not in d["name"] and "Mechnical" not in d["name"] and "Hardware" not in d["name"]):
             date = datetime.strptime(d["time_updated"], "%Y-%m-%dT%H:%M:%SZ")
             post_date = datetime.timestamp(
                 datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))

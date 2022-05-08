@@ -5,16 +5,18 @@ import sys
 import re
 import time
 import random
+from .modules.classes import Filter_Jobs
 from .modules import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-def get_jobs(item):
-    data = create_temp_json.data
+def get_results(item):
+    soup = BeautifulSoup(item, "lxml")
+    results = soup.find_all("article")
     scraped = create_temp_json.scraped
-    for job in item:
+    for job in results:
         date = job.find(
             class_="company-name display-flex").find_all("span")[4].text.strip()
         title = job.find(class_="job-position").text.strip()
@@ -61,7 +63,7 @@ def get_jobs(item):
         postDate = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
         if company not in scraped:
-            data.append({
+            Filter_Jobs({
                 "timestamp": postDate,
                 "title": title,
                 "company": company,
@@ -72,15 +74,6 @@ def get_jobs(item):
                 "source_url": f"https://dailyremote.com",
                 "category": "job"
             })
-            print(f"=> dailyremote: Added {title} for {company}")
-        else:
-            print(f"=> dailyremote: Reached limit. Stopping scrape")
-
-
-def get_results(item):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("article")
-    get_jobs(results)
 
 
 def get_url():

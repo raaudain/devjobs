@@ -1,53 +1,51 @@
+import requests
+import sys
+import random
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import requests, sys
-from .modules import create_temp_json
-# import modules.create_temp_json as create_temp_json
+from datetime import datetime
+from .modules.classes import Filter_Jobs
+from .modules import headers as h
 
 
-def getJobs(item: list):
-    data = create_temp_json.data
-
-    for job in item:
-        date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-        title = job.find("div", {"class": "job-card-title"}).text
-        company = job.find_all("div", {"class": "job-card-text bold"})[0].text
-        url = "https://www.workwithindies.com"+job["href"]
-        location = job.find_all("div", {"class": "job-card-text bold"})[1].text
-
-        # print(date, title, company, url, location)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
-
-        data.append({
-            "timestamp": postDate,
-            "title": title,
-            "company": company,
-            "url": url,
+def get_results(item: str):
+    soup = BeautifulSoup(item, "lxml")
+    results = soup.find_all("a", class_="job-card w-inline-block")
+    for job in results:
+        date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        position = job.find("div", class_="job-card-title").text
+        company_name = job.find_all(
+            "div", class_="job-card-text bold")[0].text
+        logo = job.find("img", class_="company-logo")["src"] if job.find(
+            "img", class_="company-logo", src=True) else None
+        apply_url = "https://www.workwithindies.com"+job["href"]
+        location = job.find_all("div", class_="job-card-text bold")[1].text
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "company_logo": logo,
+            "url": apply_url,
             "location": location,
             "source": "Work With Indies",
-            "source_url": "https://www.workwithindies.com/",
-            "category": "job"
+            "source_url": "https://www.workwithindies.com/"
         })
-        print(f"=> workwithindies: Added {title}")
 
 
-def getResults(item: str):
-    soup = BeautifulSoup(item, "lxml")
-    results = soup.find_all("a", {"class": "job-card w-inline-block"})
-    getJobs(results)
-
-
-def getURL():
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"}
-    url = f"https://www.workwithindies.com/?categories=programming"
+def get_url():
+    headers = {"User-Agent": random.choice(h.headers)}
+    url = "https://www.workwithindies.com/?categories=business%7Cprogramming%7Cqa-cs"
     response = requests.get(url, headers=headers)
-
-    if response.ok: getResults(response.text)
-    else: print("=> workwithindies: Error - Response status", response.status_code)
+    if response.ok:
+        get_results(response.text)
+    else:
+        print("=> workwithindies: Error - Response status", response.status_code)
 
 
 def main():
-    getURL()
+    get_url()
+
 
 # main()
 # sys.exit(0)
