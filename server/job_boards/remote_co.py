@@ -1,11 +1,9 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json
 import requests
 import sys
 import random
 import re
-from .modules import create_temp_json
 from .modules.classes import Filter_Jobs
 from .modules import headers as h
 

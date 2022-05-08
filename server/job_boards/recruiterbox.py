@@ -42,7 +42,7 @@ def get_url(companies: list):
         if response.bozo == False:
             get_results(response, company)
         elif response.status == 404:
-            Remove_Not_Found(FILE_PATH)
+            Remove_Not_Found(FILE_PATH, company)
         else:
             error = response.bozo_exception
             print(f"=> recruiterbox: Failed {company}. Error: {error}")

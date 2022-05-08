@@ -15,6 +15,13 @@ FILE_PATH = "./data/params/lever_co.txt"
 
 
 def get_results(item, param):
+    source_url = f"https://jobs.lever.co/{param}"
+    r = requests.get(source_url)
+    tree = html.fromstring(r.content)
+    img = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
+    company = tree.xpath("//head/title/text()")[0]
+    company_name = company if company else param.capitalize()
+    logo = img if img else None
     for i in item:
         # use true division by 1e3 (float 1000)
         date = datetime.fromtimestamp(i["createdAt"] / 1e3)
@@ -23,13 +30,6 @@ def get_results(item, param):
         apply_url = i["hostedUrl"].strip()
         position = i["text"].strip()
         location = i["categories"]["location"].strip()
-        source_url = f"https://jobs.lever.co/{param}"
-        r = requests.get(source_url)
-        tree = html.fromstring(r.content)
-        img = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
-        company = tree.xpath("//head/title/text()")[0]
-        company_name = company if company else param.capitalize()
-        logo = img if img else None
         Filter_Jobs({
             "timestamp": post_date,
             "title": position,
@@ -56,7 +56,7 @@ def get_url(companies: list):
                 if count % 20 == 0:
                     time.sleep(60)
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH)
+                Remove_Not_Found(FILE_PATH, company)
             count += 1
         except:
             if response.status_code == 429:

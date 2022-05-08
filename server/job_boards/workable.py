@@ -42,9 +42,12 @@ def get_results(item: str, param: str, company: str, logo: str):
 def get_url(companies: list):
     count = 0
     retries = 0
+    info_dict = {}
     for company in companies:
         token = "0"
         try:
+            # Add name and logo to dictionary to reduce requests
+            info_dict[company] = {"name": None, "logo": None}
             while token:
                 headers = {"User-Agent": random.choice(h.headers)}
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
@@ -62,9 +65,6 @@ def get_url(companies: list):
                     Remove_Not_Found(FILE_PATH, company)
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
-                # Add name and logo to dictionary to reduce requests
-                info_dict = {}
-                info_dict[company] = {"name": None, "logo": None}
                 name = None
                 logo = None
                 if info_dict[company]["name"]:
