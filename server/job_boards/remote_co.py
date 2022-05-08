@@ -10,7 +10,7 @@ from .modules.classes import Filter_Jobs
 from .modules import headers as h
 
 
-def getResults(item):
+def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all(
         "a", class_="card m-0 border-left-0 border-right-0 border-top-0 border-bottom")
@@ -50,15 +50,15 @@ def getResults(item):
             })
 
 
-def getURL():
+def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
     url = "https://remote.co/remote-jobs/developer"
     response = requests.get(url, headers=headers)
     if response.ok:
-        getResults(response.text)
+        get_results(response.text)
     else:
         print("=> remote.co: Error - Response status", response.status_code)
 
 
 def main():
-    getURL()
+    get_url()
