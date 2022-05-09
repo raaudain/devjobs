@@ -103,7 +103,7 @@ def get_url():
                 break
             headers = {"User-Agent": random.choice(
                 h.headers), "Origin": "https://builtin.com", "Referer": "https://builtin.com/"}
-            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=100&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
+            url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)
