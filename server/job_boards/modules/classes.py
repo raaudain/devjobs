@@ -1,14 +1,8 @@
 from os.path import isfile
 import json
 import requests
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import requests
 import random
-from . import create_temp_json
-# import modules.create_temp_json as create_temp_json
-# import headers as h
-# import proxies as p
+from bs4 import BeautifulSoup
 
 
 class Read_List_Of_Companies:
@@ -53,7 +47,7 @@ class Filter_Jobs:
         company = posting["company"]
         url = posting["url"]
         source_url = posting["source_url"]
-        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech" in title or "Support" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web" in title or "Front End" in title or "Agile" in title and "Cyber" in title) and ("Elect" not in title and "HVAC" not in title and "Mechanical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title and "Water" not in title and "Dispatch" not in title and "Saw" not in title and "Facilities" not in title and "AML" not in title):
+        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech " in title or "Support" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web" in title or "Front End" in title or "Agile" in title and "Cyber" in title) and ("Elect" not in title and "HVAC" not in title and "Mechanical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title and "Water" not in title and "Dispatch" not in title and "Saw" not in title and "Facilities" not in title and "AML" not in title):
             data.append(posting)
             scraped.add(company)
             scraped.add(url)
@@ -71,7 +65,7 @@ class Update_Key_Values:
         html = requests.get(url).text
         soup = BeautifulSoup(html, "lxml")
         company = open("./data/params/key_values.txt", "w")
-        links = soup.find_all("a", {"class": "thumbnail-link"}, href=True)
+        links = soup.find_all("a", class_="thumbnail-link", href=True)
         f = open("./data/params/key_values_unwanted.txt")
         unwanted = [w.strip() for w in f]
         f.close()

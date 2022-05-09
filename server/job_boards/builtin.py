@@ -4,7 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
-from .modules.classes import Filter_Jobs
+from .modules.classes import Filter_Jobs, Create_JSON
 from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -16,6 +16,7 @@ IS_TRUE = True
 
 def get_results(item: str):
     global IS_TRUE
+    scraped = Create_JSON.scraped
     jobs = item["jobs"]
     companies = item["companies"]
     # Remove unwanted data
@@ -47,7 +48,6 @@ def get_results(item: str):
     data = {d["id"]: d for d in companies}
     for j in jobs:
         data[j["id"]].update(j)
-    scraped = create_temp_json.scraped
     for d in list(data.values()):
         if d["company"] not in scraped:
             date = datetime.strptime(

@@ -5,7 +5,7 @@ import sys
 import re
 import time
 import random
-from .modules.classes import Filter_Jobs
+from .modules.classes import Create_JSON, Filter_Jobs
 from .modules import headers as h
 from .modules import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -15,7 +15,7 @@ from .modules import create_temp_json
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("article")
-    scraped = create_temp_json.scraped
+    scraped = Create_JSON.scraped
     for job in results:
         date = job.find(
             class_="company-name display-flex").find_all("span")[4].text.strip()
@@ -60,18 +60,18 @@ def get_results(item):
             time = datetime.now()
             date = datetime.strftime(time, "%Y-%m-%d %H:%M:%S")
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
-        postDate = datetime.timestamp(
+        post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
         if company not in scraped:
             Filter_Jobs({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "company": company,
                 "company_logo": logo,
                 "url": url,
                 "location": location,
                 "source": "Daily Remote",
-                "source_url": f"https://dailyremote.com",
+                "source_url": "https://dailyremote.com",
                 "category": "job"
             })
 
@@ -85,8 +85,8 @@ def get_url():
             url = f"https://dailyremote.com/remote-software-development-jobs?search=&page={page}&sort_by=time#main"
             response = requests.get(url, headers=headers).text
             get_results(response)
-            if page % 10 == 0:
-                time.sleep(2)
+            # if page % 10 == 0:
+            #     time.sleep(2)
             page += 1
         except:
             print(f"=> dailyremote: Error on page {page}")

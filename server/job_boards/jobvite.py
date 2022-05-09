@@ -3,12 +3,9 @@ import sys
 import time
 import random
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-from .modules import create_temp_json
+from datetime import datetime
 from .modules import headers as h
-from .modules import proxies as p
 from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
-# import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
@@ -58,7 +55,7 @@ def get_url(companies: list):
             if response.ok:
                 get_results(response.text, name)
             elif response.status_code == 404:
-                Remove_Not_Found("./data/params/jobvite.txt", name)
+                Remove_Not_Found(FILE_PATH, name)
             else:
                 res = requests.get(
                     f"https://jobs.jobvite.com/{name}/jobs", headers=headers)

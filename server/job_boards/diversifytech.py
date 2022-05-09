@@ -4,9 +4,7 @@ import sys
 import random
 from datetime import datetime
 from .modules.classes import Filter_Jobs
-from .modules import create_temp_json
 from .modules import headers as h
-# import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
@@ -36,7 +34,7 @@ def get_results(item: str):
 def get_url():
     try:
         headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://www.diversifytech.co/page-data/job-board/page-data.json"
+        url = "https://www.diversifytech.co/page-data/job-board/page-data.json"
         response = requests.get(url, headers=headers)
         data = json.loads(response.text)[
             "result"]["data"]["allAirtable"]["edges"]

@@ -27,18 +27,18 @@ def get_results(item: str, name: str):
             company_name = i["company"]["name"]
             apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
             logo = None
-            if name in images:
-                logo = images[name]
-            else:
-                r = requests.get(apply_url)
-                if r.ok:
-                    tree = html.fromstring(r.content)
-                    img = tree.xpath(
-                        "//*[@class='header-logo logo']")
-                    if img:
-                        image = tree.xpath("//*[@class='header-logo logo']//img/@src")
-                        logo = image
-                        images[name] = logo
+            # if name in images:
+            #     logo = images[name]
+            # else:
+            #     r = requests.get(apply_url)
+            #     if r.ok:
+            #         tree = html.fromstring(r.content)
+            #         img = tree.xpath(
+            #             "//*[@class='header-logo logo']")
+            #         if img:
+            #             image = tree.xpath("//*[@class='header-logo logo']//img/@src")
+            #             logo = image
+            #             images[name] = logo
             position = i["name"]
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
@@ -71,14 +71,19 @@ def get_url(companies: list):
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, name)
-                if count % 10 == 0:
+                if count % 20 == 0:
                     time.sleep(5)
                 count += 1
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, name)
         except:
-            print(
-                f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
+            if response.status_code == 429:
+                print(
+                    f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
+                break
+            else:
+                print(
+                    f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
 
 
 def main():

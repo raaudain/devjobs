@@ -41,10 +41,11 @@ from . import wrk
 from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
-from datetime import datetime, timedelta
+from datetime import datetime
 # from .modules import create_temp_json
 # from .modules import create_main_json
 from .modules.classes import Create_JSON
+
 
 logging.basicConfig(
     level=logging.CRITICAL,
@@ -80,18 +81,17 @@ def main():
         print("=> Scanning job boards")
         start = datetime.now()
         # bloomberg.main()
-        # workable.get_url(work[::5])
+        workable.get_url(work[::5])
         diversifytech.main()
         wrk.main()
         indeed.main()
         tiktok.main()
         target.main()
-        # craigslist_gigs.main()
         nbc.main()
         # nocsok.main()
-        # workable.get_url(work[1::5])
+        workable.get_url(work[1::5])
         smartrecruiters.main()
-        # greenhouse_io.get_url(green[::2])
+        greenhouse_io.get_url(green[::2])
         craigslist.get_url(locations)
         jobvite.main()
         breezyhr.main()
@@ -99,26 +99,22 @@ def main():
         eightfold.main()
         jazzhr.main()
         clearcompany.main()
-        # craigslist.get_url_miami(miamis)
-        # workable.get_url(work[2::5])
+        workable.get_url(work[2::5])
         comeet.main()
         craigslist.get_url_it(locations)
-        # greenhouse_io.get_url(green[1::2])
-        # lever_co.main()
+        greenhouse_io.get_url(green[1::2])
+        lever_co.main()
         ashbyhq.main()
-        # craigslist.get_url_miami_it(miamis)
         recruiterbox.main()
         nintendo.main()
         vuejobs.main()
         hireart.main()
-        # craigslist.get_url_miami_network(miamis)
         amazon.main()
         craigslist.get_url_web(locations)
-        # workable.get_url(work[3::5])
+        workable.get_url(work[3::5])
         twitter.main()
         usajobs.main()
         key_values.main()
-        # zillow.main()
         workwithindies.main()
         weworkremotely.main()
         fullstackjob.main()
@@ -126,17 +122,14 @@ def main():
         remote_co.main()
         remoteok.main()
         craigslist.get_url_network(locations)
-        # stackoverflow.main()
-        # dice.main()
-        # workable.get_url(work[4::5])
-        # dailyremote.main()
+        workable.get_url(work[4::5])
+        dailyremote.main()
         builtin.main()
         # create_temp_json.createJSON(create_temp_json.data)
         # create_main_json.createJSON()
-        # print(Create_JSON.data)
         Create_JSON.create_temp_file(Create_JSON.data)
         Create_JSON.create_file()
-    except Exception:
+    except Exception as e:
         logging.critical("Exception occured: ", exc_info=True)
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))

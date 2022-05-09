@@ -40,7 +40,6 @@ def get_results(item: str, param: str, company: str, logo: str):
 
 def get_url(companies: list):
     count = 0
-    retries = 0
     info_dict = {}
     for company in companies:
         token = "0"
@@ -81,20 +80,14 @@ def get_url(companies: list):
                     info_dict[company]["logo"] = logo
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
-                if count % 30 == 0:
-                    time.sleep(60)
+                if count % 20 == 0:
+                    time.sleep(10)
                 count += 1
         except:
             if response.status_code == 429:
                 print(
                     f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
-                if retries <= 3:
-                    time.sleep(120)
-                    retries += 1
-                else:
-                    print(
-                        f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
-                    break
+                break
             else:
                 print(
                     f"=> workable: Failed for {company}. Status code: {response.status_code}.")

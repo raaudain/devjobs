@@ -44,7 +44,6 @@ def get_results(item, param):
 
 def get_url(companies: list):
     count = 0
-    retries = 0
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
@@ -53,8 +52,8 @@ def get_url(companies: list):
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, company)
-                if count % 30 == 0:
-                    time.sleep(60)
+                if count % 20 == 0:
+                    time.sleep(10)
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)
             count += 1
@@ -62,13 +61,7 @@ def get_url(companies: list):
             if response.status_code == 429:
                 print(
                     f"=> lever.co: Failed to scrape {company}. Status code: {response.status_code}.")
-                if retries <= 3:
-                    time.sleep(120)
-                    retries += 1
-                else:
-                    print(
-                        f"=> lever.co: Failed to scrape {company}. Status code: {response.status_code}.")
-                    break
+                break
             else:
                 print(
                     f"=> lever.co: Failed for {company}. Status code: {response.status_code}.")
