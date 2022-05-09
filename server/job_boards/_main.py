@@ -48,7 +48,7 @@ from .modules.classes import Create_JSON
 
 
 logging.basicConfig(
-    level=logging.CRITICAL,
+    level=logging.DEBUG,
     format="{asctime} {levelname:<8} {message}",
     style="{",
     filename="error.log",
@@ -130,6 +130,6 @@ def main():
         Create_JSON.create_temp_file(Create_JSON.data)
         Create_JSON.create_file()
     except Exception as e:
-        logging.critical("Exception occured: ", exc_info=True)
+        logging.debug("Exception occured: ", exc_info=True)
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))
