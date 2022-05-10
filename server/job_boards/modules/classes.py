@@ -47,7 +47,7 @@ class Filter_Jobs:
         company = posting["company"]
         url = posting["url"]
         source_url = posting["source_url"]
-        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech " in title or "Support" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web" in title or "Front End" in title or "Agile" in title and "Cyber" in title) and ("Elect" not in title and "HVAC" not in title and "Mechanical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title and "Water" not in title and "Dispatch" not in title and "Saw" not in title and "Facilities" not in title and "AML" not in title):
+        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech " in title or "QA" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web" in title or "Front End" in title or "Agile" in title and "Cyber" in title) and ("Elect" not in title and "HVAC" not in title and "Mechanical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title and "Water" not in title and "Dispatch" not in title and "Saw" not in title and "Facilities" not in title and "AML" not in title and "Sheet Metal" not in title and "Metallurgical" not in title and "Materials" not in title):
             data.append(posting)
             scraped.add(company)
             scraped.add(url)
@@ -92,11 +92,11 @@ class Create_JSON:
             json.dump(item, file, ensure_ascii=False, indent=4)
 
     def create_file():
-        temp = "./data/temp/temp_data.json"
+        temp = "server/data/temp/temp_data.json"
         f = open(temp)
         data = json.load(f)
         f.close()
-        main = "./data/data.json"
+        main = "server/data/data.json"
         if isfile(main):
             print("=> data.json: Deleting old data")
             m = open(main, "r+")
@@ -111,19 +111,3 @@ class Create_JSON:
             t = open(temp, "r+")
             t.truncate(0)
             t.close()
-
-
-class Create_Temp_JSON:
-    data = []
-    scraped = set()
-
-    def create_temp_file(self):
-        temp = "./data/temp/temp_data.json"
-        if isfile(temp):
-            print("=> temp_data.json: Deleting old content")
-            t = open(temp, "r+")
-            t.truncate(0)
-            t.close()
-        with open(temp, "a", encoding="utf-8") as file:
-            print("=> temp_data.json: Generating new content")
-            json.dump(self.data, file, ensure_ascii=False, indent=4)

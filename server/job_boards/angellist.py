@@ -12,9 +12,7 @@ from .modules import create_temp_json
 import sys, re, time
 
 
-options = uc.ChromeOptions()
-options.add_argument("--user-data-dir=/Users/ramon/Library/Application Support/Google/Chrome/Profile 2")
-browser = uc.Chrome(options=options)
+
 
 
 wait = WebDriverWait(browser, 15)
