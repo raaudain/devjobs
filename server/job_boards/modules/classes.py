@@ -92,11 +92,11 @@ class Create_JSON:
             json.dump(item, file, ensure_ascii=False, indent=4)
 
     def create_file():
-        temp = "server/data/temp/temp_data.json"
+        temp = "./data/temp/temp_data.json"
         f = open(temp)
         data = json.load(f)
         f.close()
-        main = "server/data/data.json"
+        main = "./data/data.json"
         if isfile(main):
             print("=> data.json: Deleting old data")
             m = open(main, "r+")

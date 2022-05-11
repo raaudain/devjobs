@@ -123,7 +123,7 @@ def main():
         dailyremote.main()
         builtin.main()
         Create_JSON.create_temp_file(Create_JSON.data)
-        Create_JSON.create_file()
+        # Create_JSON.create_file()
     except Exception as e:
         logging.debug("Exception occured: ", exc_info=True)
     print("=> Done")
