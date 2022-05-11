@@ -561,3 +561,4 @@ fluree
 modern-tribe
 ilumivu
 termscout
+daring-bit-assembly

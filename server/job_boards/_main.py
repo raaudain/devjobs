@@ -6,7 +6,7 @@ from . import eightfold
 from . import craigslist
 from . import greenhouse_io
 # from . import bloomberg
-# from . import bamboohr
+from . import bamboohr
 from . import lever_co
 from . import workaline
 from . import workable
@@ -19,7 +19,6 @@ from . import dailyremote
 from . import hireart
 # from . import stackoverflow
 # from . import dice
-# from . import zillow
 from . import usajobs
 from . import amazon
 from . import smartrecruiters
@@ -42,13 +41,11 @@ from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
 from datetime import datetime
-# from .modules import create_temp_json
-# from .modules import create_main_json
 from .modules.classes import Create_JSON
 
 
 logging.basicConfig(
-    level=logging.CRITICAL,
+    level=logging.DEBUG,
     format="{asctime} {levelname:<8} {message}",
     style="{",
     filename="error.log",
@@ -95,7 +92,7 @@ def main():
         craigslist.get_url(locations)
         jobvite.main()
         breezyhr.main()
-        # bamboohr.main()
+        bamboohr.main()
         eightfold.main()
         jazzhr.main()
         clearcompany.main()
@@ -125,11 +122,9 @@ def main():
         workable.get_url(work[4::5])
         dailyremote.main()
         builtin.main()
-        # create_temp_json.createJSON(create_temp_json.data)
-        # create_main_json.createJSON()
         Create_JSON.create_temp_file(Create_JSON.data)
         Create_JSON.create_file()
     except Exception as e:
-        logging.critical("Exception occured: ", exc_info=True)
+        logging.debug("Exception occured: ", exc_info=True)
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))

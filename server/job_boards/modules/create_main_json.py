@@ -19,6 +19,6 @@ def createJSON():
         print("=> data.json: Generating new content")
         json.dump(orderedData, file, ensure_ascii=False, indent=4)
 
-# createJSON()
+createJSON()
 
-# sys.exit(0)
+sys.exit(0)

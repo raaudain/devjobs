@@ -831,3 +831,5 @@ Ionic
 cision
 nextech
 happymoney
+sphinxdefense
+lumafield

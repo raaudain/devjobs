@@ -24,12 +24,16 @@ def get_results(item: str, param: str):
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         position = j["name"].strip()
         company_name = company.strip()
+        description = j["job_description"]
+        department = j["department"]
         apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
         location = " | ".join(j["locations"])
         Filter_Jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
+            "description": description,
+            "department": department,
             "url": apply_url,
             "location": location,
             "source": company_name,

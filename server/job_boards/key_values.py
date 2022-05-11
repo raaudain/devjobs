@@ -14,7 +14,7 @@ from .modules import headers as h
 FILE_PATH = "./data/params/key_values.txt"
 
 
-def get_results(item: str):
+def get_results(item: str, url: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", class_="open-position-item-contents")
     logo = soup.find(class_="hero-logo")["style"].replace("background: url(", "").replace(
@@ -36,7 +36,7 @@ def get_results(item: str):
             "url": apply_url,
             "location": location,
             "source": "Key Values",
-            "source_url": "https://www.keyvalues.com",
+            "source_url": url,
         })
 
 
@@ -46,7 +46,7 @@ def get_url(params: list):
         url = f"https://www.keyvalues.com{param}"
         response = requests.get(url, headers=headers)
         if response.ok:
-            get_results(response.text)
+            get_results(response.text, url)
         else:
             print(f"=> key_values: Error. Status code:", response.status_code)
         time.sleep(2)
