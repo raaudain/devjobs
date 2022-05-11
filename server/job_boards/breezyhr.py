@@ -57,8 +57,8 @@ def get_results(item: str, name: str):
 
 def get_url(companies: list):
     page = 1
-    try:
-        for company in companies:
+    for company in companies:
+        try:
             headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://{company}.breezy.hr"
             response = requests.get(url, headers=headers)
@@ -69,15 +69,16 @@ def get_url(companies: list):
                 page += 1
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)
-            elif str(response.status_code)[0] == "5":
+            else:
+                print(
+                    f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
+        except:
+            if response.status_code == 429 or str(response.status_code)[0] == "5":
                 print(
                     f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
                 break
             else:
-                print(
-                    f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
-    except:
-        print("=> breezyhr: Failed to scrape.")
+                print(f"=> breezyhr: Failed to scrape {company}.")
 
 
 def main():
