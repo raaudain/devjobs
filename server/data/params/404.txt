@@ -327,3 +327,5 @@ Teamblind
 upandup
 tbloomllc
 day1company
+halodotscience
+onelogin
