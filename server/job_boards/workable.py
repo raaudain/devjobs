@@ -67,12 +67,10 @@ def get_url(companies: list):
                 logo = None
                 if info_dict[company]["name"]:
                     name = info_dict[company]["name"]
-                    print(f"=> workable: used name in dictionary for {company}")
                 else:
                     name = json.loads(info)["name"].strip()
                     info_dict[company]["name"] = name
                 if info_dict[company]["logo"]:
-                    print(f"=> workable: used logo in dictionary for {company}")
                     logo = info_dict[company]["logo"]
                 else:
                     logo = json.loads(info)["logo"] if "logo" in json.loads(
