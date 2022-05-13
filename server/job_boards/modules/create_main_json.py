@@ -18,7 +18,11 @@ def createJSON():
     with open(main, "a", encoding="utf-8") as file:
         print("=> data.json: Generating new content")
         json.dump(orderedData, file, ensure_ascii=False, indent=4)
+    if isfile(temp):
+        print("=> temp_data.json: Deleting temporary data")
+        t = open(temp, "r+")
+        t.truncate(0)
+        t.close()
 
 createJSON()
-
 sys.exit(0)

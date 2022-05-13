@@ -1,7 +1,7 @@
-from os.path import isfile
 import json
 import requests
 import random
+from os.path import isfile
 from bs4 import BeautifulSoup
 
 
@@ -51,7 +51,6 @@ class Filter_Jobs:
             data.append(posting)
             scraped.add(company)
             scraped.add(url)
-            print(f"=> {source_url}: Added {title} for {company}")
 
 
 class Update_Key_Values:

@@ -41,6 +41,7 @@ from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
 from datetime import datetime
+from .modules.create_main_json import createJSON
 from .modules.classes import Create_JSON
 
 
@@ -48,7 +49,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="{asctime} {levelname:<8} {message}",
     style="{",
-    filename="error.log",
+    filename="../../../devjobs.log",
     filemode="w"
 )
 
@@ -123,7 +124,7 @@ def main():
     builtin.main()
     Create_JSON.create_temp_file(Create_JSON.data)
     try:
-        Create_JSON.create_file()
+        createJSON();
     except Exception as e:
         logging.debug("Exception occured: ", e, exc_info=True)
     print("=> Done")
