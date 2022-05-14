@@ -92,10 +92,9 @@ class Create_JSON:
 
     def create_file():
         temp = "./data/temp/temp_data.json"
-        if isfile(temp):
-            f = open(temp)
-            data = json.load(f)
-            f.close()
+        f = open(temp, "r")
+        data = json.load(f)
+        f.close()
         main = "./data/data.json"
         if isfile(main):
             print("=> data.json: Deleting old data")

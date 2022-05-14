@@ -41,7 +41,7 @@ from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
 from datetime import datetime
-from .modules import createJSON
+# from .modules import createJSON
 from .modules.classes import Create_JSON
 
 
@@ -124,7 +124,7 @@ def main():
     builtin.main()
     Create_JSON.create_temp_file(Create_JSON.data)
     try:
-        createJSON();
+        Create_JSON.create_file()
     except Exception as e:
         logging.debug("Exception occured: ", e, exc_info=True)
     print("=> Done")
