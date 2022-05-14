@@ -50,7 +50,7 @@ logging.basicConfig(
     format="{asctime} {levelname:<8} {message}",
     style="{",
     filename="../../../devjobs.log",
-    filemode="w"
+    filemode="a"
 )
 
 
