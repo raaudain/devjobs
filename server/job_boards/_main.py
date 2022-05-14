@@ -41,7 +41,7 @@ from . import indeed
 from . import diversifytech
 # from . import craigslist_gigs
 from datetime import datetime
-from .modules.create_main_json import createJSON
+from .modules import createJSON
 from .modules.classes import Create_JSON
 
 
