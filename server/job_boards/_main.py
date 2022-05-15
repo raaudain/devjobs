@@ -49,7 +49,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="{asctime} {levelname:<8} {message}",
     style="{",
-    filename="~/devjobs.log",
+    filename="../../../devjobs.log",
     filemode="a"
 )
 
