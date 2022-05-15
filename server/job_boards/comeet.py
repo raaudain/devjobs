@@ -71,8 +71,8 @@ def get_url(companies: list):
             else:
                 print(
                     f"=> comeet: Failed to scrape {company}. Status code: {response.status_code}")
-        except:
-            print(f"Error for {company}")
+        except Exception as e:
+            print(f"Error for {company}. {e}")
 
 
 def main():

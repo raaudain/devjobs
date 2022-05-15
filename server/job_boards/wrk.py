@@ -65,8 +65,8 @@ def get_url(companies: list):
                 Remove_Not_Found(FILE_PATH, name)
             else:
                 print(f"=> wrk: Status code {response.status_code} for {name}")
-        except:
-            print(f"=> wrk: Error for {name}.")
+        except Exception as e:
+            print(f"=> wrk: Error for {name}. {e}")
 
 
 def main():

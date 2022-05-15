@@ -67,7 +67,6 @@ def get_url(companies: list):
             headers = {"User-Agent": random.choice(h.headers)}
             url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
             response = requests.get(url, headers=headers)
-            print(response.ok)
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, name)
