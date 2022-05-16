@@ -194,7 +194,6 @@ unsupervisedai
 upstart
 vidyard
 vimeo
-volley
 wayfair
 wizeline
 yext
