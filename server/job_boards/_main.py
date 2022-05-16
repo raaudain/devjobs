@@ -123,9 +123,9 @@ def main():
     dailyremote.main()
     builtin.main()
     Create_JSON.create_temp_file(Create_JSON.data)
-    try:
-        Create_JSON.create_file()
-    except Exception as e:
-        logging.debug("Exception occured: ", e, exc_info=True)
+    # try:
+    #     Create_JSON.create_file()
+    # except Exception as e:
+    #     logging.debug("Exception occured: ", e, exc_info=True)
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))

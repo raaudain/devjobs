@@ -91,8 +91,8 @@ class Create_JSON:
             json.dump(item, file, ensure_ascii=False, indent=4)
 
     def create_file():
-        temp = "/home/pi/Documents/devjobs/server/data/temp/temp_data.json"
-        f = open(temp)
+        temp = "./data/temp/temp_data.json"
+        f = open(temp, "r")
         data = json.load(f)
         f.close()
         main = "./data/data.json"
