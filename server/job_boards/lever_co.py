@@ -54,6 +54,8 @@ def get_url(companies: list):
                 get_results(data, company)
                 if count % 20 == 0:
                     time.sleep(10)
+                else:
+                    time.sleep(0.05)
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)
             count += 1

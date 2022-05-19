@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+import time
 import random
 from datetime import datetime
 from .modules import create_temp_json
@@ -53,6 +54,7 @@ def get_url():
             get_results(data)
         else:
             print("=> fullstackjob: Error - Response status", response.status_code)
+        time.sleep(0.05)
 
 
 def main():

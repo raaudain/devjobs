@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+import time
 import random
 from datetime import datetime
 from .modules import headers as h
@@ -42,6 +43,7 @@ def get_url(ids: list):
             response = requests.get(url, headers=headers)
             data = json.loads(response.text)
             get_results(data["data"])
+            time.sleep(0.05)
         except Exception as e:
             print(f"=> bootup: Error. {e}")
 

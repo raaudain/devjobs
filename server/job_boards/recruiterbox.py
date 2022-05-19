@@ -1,8 +1,8 @@
 from datetime import datetime
 import sys
+import time
 import feedparser
 from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
-# import modules.create_temp_json as create_temp_json
 
 
 FILE_PATH = "./data/params/recruiterbox.txt"
@@ -46,6 +46,7 @@ def get_url(companies: list):
         else:
             error = response.bozo_exception
             print(f"=> recruiterbox: Failed {company}. Error: {error}")
+        time.sleep(0.05)
 
 
 def main():

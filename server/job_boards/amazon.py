@@ -48,6 +48,8 @@ def get_url():
                 get_results(data)
                 if page % 10 == 0:
                     time.sleep(5)
+                else:
+                    time.sleep(0.05)
                 page += 1
             else:
                 print(

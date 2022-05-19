@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+import time
 import random
 from datetime import datetime
 from .modules.classes import Filter_Jobs
@@ -40,6 +41,7 @@ def get_url():
             "result"]["data"]["allAirtable"]["edges"]
         if len(data) > 0:
             get_results(data)
+        time.sleep(0.05)
     except:
         print(f"=> diversifytech: Status code: {response.status_code}.")
 

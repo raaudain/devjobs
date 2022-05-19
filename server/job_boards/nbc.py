@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+import time
 import random
 from datetime import datetime
 from .modules import create_temp_json
@@ -46,6 +47,7 @@ def get_url():
             print(f"Error. Status Code:", response.status_code)
         page += 1
         items = len(data)
+        time.sleep(0.05)
 
 
 def main():

@@ -58,6 +58,8 @@ def get_url(companies: list):
             f"Error for {company}. Status code: {response.status_code}"
         if page % 10 == 0:
             time.sleep(5)
+        else:
+            time.sleep(0.05)
         page += 1
 
 

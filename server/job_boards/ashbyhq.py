@@ -76,6 +76,8 @@ def get_url(companies: list):
             get_results(data, company, name, logo)
             if page % 10 == 0:
                 time.sleep(5)
+            else:
+                time.sleep(0.05)
             page += 1
         else:
             print(

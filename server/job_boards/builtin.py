@@ -108,8 +108,10 @@ def get_url():
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data)
-                if page % 1 == 0:
+                if page % 5 == 0:
                     time.sleep(10)
+                else:
+                    time.sleep(0.05)
                 page += 1
             else:
                 print(

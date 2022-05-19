@@ -48,6 +48,8 @@ def getURL():
             getResults(data)
             if page % 5 == 0:
                 time.sleep(5)
+            else:
+                time.sleep(0.05)
             page += 1
         except:
             print(f"=> usajobs: Failed to scrap page {page}")

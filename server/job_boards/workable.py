@@ -79,7 +79,9 @@ def get_url(companies: list):
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
                 if count % 20 == 0:
-                    time.sleep(10)
+                    time.sleep(60)
+                else:
+                    time.sleep(0.05)
                 count += 1
         except:
             if response.status_code == 429:
