@@ -308,7 +308,6 @@ the-consulting-co
 buzzvil
 sparkdigital
 duneanalytics
-iorahealth
 teladochealth
 queenly
 everfi
@@ -331,4 +330,3 @@ halodotscience
 onelogin
 volley
 autopilot
-complexnetworks
