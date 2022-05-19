@@ -4,22 +4,23 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules.classes import Filter_Jobs
+from .modules.classes import Filter_Jobs, Create_JSON
 from .modules import headers as h
 
 
 def get_results(item):
+    scraped = Create_JSON.scraped
     jobs = item["data"]
     for data in jobs:
-        try:
-            date = datetime.strptime(
-                data["published_at"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            post_date = datetime.timestamp(
-                datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-            apply_url = data["url"].strip()
-            company_name = data["company"].strip() if data["company"] else None
-            position = data["title"].strip()
-            location = "Remote"
+        date = datetime.strptime(
+            data["published_at"], "%Y-%m-%dT%H:%M:%S.%fZ")
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        apply_url = data["url"].strip()
+        company_name = data["company"].strip() if data["company"] else None
+        position = data["title"].strip()
+        location = "Remote"
+        if company_name not in scraped:
             Filter_Jobs({
                 "timestamp": post_date,
                 "title": position,
@@ -30,8 +31,6 @@ def get_results(item):
                 "source": "Workaline",
                 "source_url": "https://www.workaline.com"
             })
-        except:
-            continue
 
 
 def get_url():

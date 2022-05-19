@@ -79,7 +79,6 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
-    bootup.main()
     workable.get_url(work[::5])
     diversifytech.main()
     wrk.main()
@@ -123,6 +122,7 @@ def main():
     craigslist.get_url_network(locations)
     workable.get_url(work[4::5])
     dailyremote.main()
+    bootup.main()
     builtin.main()
     Create_JSON.create_temp_file(Create_JSON.data)
     # try:
