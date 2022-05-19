@@ -604,7 +604,6 @@ clearfield
 kaizengaming
 collegetrack
 nanit
-autopilot
 financialtechnologypartners
 tigergraph
 planetlabs
