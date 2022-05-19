@@ -39,6 +39,7 @@ from . import fullstackjob
 from . import wrk
 from . import indeed
 from . import diversifytech
+from . import bootup
 # from . import craigslist_gigs
 from datetime import datetime
 # from .modules import createJSON
@@ -78,6 +79,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    bootup.main()
     workable.get_url(work[::5])
     diversifytech.main()
     wrk.main()
