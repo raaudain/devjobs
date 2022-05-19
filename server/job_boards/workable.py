@@ -51,7 +51,7 @@ def get_url(companies: list):
                 url = f"https://apply.workable.com/api/v3/accounts/{company}/jobs"
                 url2 = f"https://apply.workable.com/api/v1/accounts/{company}"
                 payload = {
-                    "query": "engineer, developer",
+                    "query": "engineer, developer, it, cloud, programmer, web, qa, data",
                     "location": [],
                     "department": [],
                     "worktype": [],
@@ -74,7 +74,7 @@ def get_url(companies: list):
                     logo = info_dict[company]["logo"]
                 else:
                     logo = json.loads(info)["logo"] if "logo" in json.loads(
-                    info) else None
+                        info) else None
                     info_dict[company]["logo"] = logo
                 get_results(data, company, name, logo)
                 token = data["nextPage"] if "nextPage" in data else ""
