@@ -46,7 +46,7 @@ def get_url(companies: list):
         else:
             error = response.bozo_exception
             print(f"=> recruiterbox: Failed {company}. Error: {error}")
-        time.sleep(0.05)
+        time.sleep(0.2)
 
 
 def main():

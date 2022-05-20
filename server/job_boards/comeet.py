@@ -66,7 +66,7 @@ def get_url(companies: list):
                 if page % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)

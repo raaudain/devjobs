@@ -59,7 +59,7 @@ def get_url(companies: list):
         if page % 10 == 0:
             time.sleep(5)
         else:
-            time.sleep(0.05)
+            time.sleep(0.2)
         page += 1
 
 

@@ -81,7 +81,7 @@ def get_url(companies: list):
                 if count % 9 == 0:
                     time.sleep(30)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
                 count += 1
         except:
             if response.status_code == 429:

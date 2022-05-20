@@ -69,7 +69,7 @@ def get_url(companies: list):
         if count % 20 == 0:
             time.sleep(5)
         else:
-            time.sleep(0.05)
+            time.sleep(0.2)
         count += 1
 
 

@@ -53,7 +53,7 @@ def get_url(companies: list):
             if count % 15 == 0:
                 time.sleep(60)
             else:
-                time.sleep(0.05)
+                time.sleep(0.2)
             count += 1
         elif response.status_code == 404:
             Remove_Not_Found(FILE_PATH, name)

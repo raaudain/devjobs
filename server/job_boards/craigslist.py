@@ -431,7 +431,7 @@ def get_url(items: list):
                 if count % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
             else:
                 print(
                     f"=> craigslist: Error for {location}: {response.status_code}")
@@ -472,7 +472,7 @@ def get_url_it(items: list):
                 if count % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
             else:
                 print(
                     f"=> craigslist: Error for {location}: {response.status_code}")
@@ -493,7 +493,7 @@ def get_url_miami_it(items: list):
             if count % 10 == 0:
                 time.sleep(5)
             else:
-                time.sleep(0.05)
+                time.sleep(0.2)
         else:
             print(
                 f"=> craigslist: Error for {location}: {response.status_code}")
@@ -513,7 +513,7 @@ def get_url_network(items: list):
                 if count % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
             else:
                 print(
                     f"=> craigslist: Error for {location}: {response.status_code}")
@@ -535,7 +535,7 @@ def get_url_web(items: list):
                 if count % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
             else:
                 print(
                     f"=> craigslist: Error for {location}: {response.status_code}")
@@ -557,7 +557,7 @@ def get_url_miami_network(items: list):
                 if count % 10 == 0:
                     time.sleep(5)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
         except:
             print(
                 f"=> craigslist: Error for {location}: {response.status_code}")

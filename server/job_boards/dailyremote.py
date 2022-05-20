@@ -85,7 +85,7 @@ def get_url():
             url = f"https://dailyremote.com/remote-software-development-jobs?search=&page={page}&sort_by=time#main"
             response = requests.get(url, headers=headers).text
             get_results(response)
-            time.sleep(0.05)
+            time.sleep(0.2)
             page += 1
         except:
             print(f"=> dailyremote: Error on page {page}")

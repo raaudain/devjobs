@@ -41,7 +41,7 @@ def get_url():
             "result"]["data"]["allAirtable"]["edges"]
         if len(data) > 0:
             get_results(data)
-        time.sleep(0.05)
+        time.sleep(0.2)
     except:
         print(f"=> diversifytech: Status code: {response.status_code}.")
 

@@ -46,7 +46,7 @@ def get_url():
             if page % 10 == 0:
                 time.sleep(5)
             else:
-                time.sleep(0.05)
+                time.sleep(0.2)
         except:
             continue
         page += 1

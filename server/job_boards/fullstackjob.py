@@ -54,7 +54,7 @@ def get_url():
             get_results(data)
         else:
             print("=> fullstackjob: Error - Response status", response.status_code)
-        time.sleep(0.05)
+        time.sleep(0.2)
 
 
 def main():

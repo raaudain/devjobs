@@ -111,7 +111,7 @@ def get_url():
                 if page % 5 == 0:
                     time.sleep(10)
                 else:
-                    time.sleep(0.05)
+                    time.sleep(0.2)
                 page += 1
             else:
                 print(

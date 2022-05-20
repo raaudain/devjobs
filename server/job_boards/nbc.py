@@ -47,7 +47,7 @@ def get_url():
             print(f"Error. Status Code:", response.status_code)
         page += 1
         items = len(data)
-        time.sleep(0.05)
+        time.sleep(0.2)
 
 
 def main():
