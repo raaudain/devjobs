@@ -66,7 +66,7 @@ def get_url(companies: list):
                 if data and company:
                     get_results(data, name, company, logo)
                 if count % 20 == 0:
-                    time.sleep(5)
+                    time.sleep(10)
                 else:
                     time.sleep(0.05)
                 count += 1

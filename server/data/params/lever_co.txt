@@ -843,3 +843,7 @@ insider-intelligence
 industrydive
 sentilink
 timely-md
+goat
+nielson
+crunchbase
+happyco
