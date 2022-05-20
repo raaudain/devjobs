@@ -17,6 +17,7 @@ def get_results(item: str):
         apply_url = i["url"].strip()
         company_name = i["company"].strip()
         position = i["title"].strip()
+        description = i["description"]
         location = i["location"].strip()
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         if age <= post_date:
@@ -24,11 +25,11 @@ def get_results(item: str):
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,
+                "description": description,
                 "url": apply_url,
                 "location": location,
                 "source": "VueJobs",
-                "source_url": "https://vuejobs.com/",
-                "category": "job"
+                "source_url": "https://vuejobs.com/"
             })
 
 
