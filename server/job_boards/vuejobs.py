@@ -16,6 +16,7 @@ def get_results(item: str):
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = i["url"].strip()
         company_name = i["company"].strip()
+        logo = "https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/27671/vuejobs.jpg"
         position = i["title"].strip()
         description = i["description"]
         location = i["location"].strip()
@@ -25,6 +26,7 @@ def get_results(item: str):
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,
+                "company_logo": logo,
                 "description": description,
                 "url": apply_url,
                 "location": location,
