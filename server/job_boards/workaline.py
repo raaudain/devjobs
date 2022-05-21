@@ -17,7 +17,7 @@ def get_results(item):
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = data["url"].strip()
-        company_name = data["company"].strip() if data["company"] else None
+        company_name = data["company"].strip() if "company" in data else None
         position = data["title"].strip()
         location = "Remote"
         if company_name not in scraped:
