@@ -47,7 +47,7 @@ from .modules.classes import Create_JSON
 
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="{asctime} {levelname:<8} {message}",
     style="{",
     filename="../../../devjobs.log",
