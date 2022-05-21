@@ -11,11 +11,11 @@ jobs = ["developer", "software engineer", "devops", "support engineer", "fronten
 
 def getJobs(date, url, company, position, location, logo):
     # age = datetime.timestamp(datetime.now() - timedelta(days=7))
-    postDate = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+    post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
     
     if url not in scraped and company not in scraped:
         data.append({
-            "timestamp": postDate,
+            "timestamp": post_date,
             "title": position,
             "company": company,
             "company_logo": logo,

@@ -30,10 +30,10 @@ def getJobs(date, apply_url, company_name, position, locations_string):
     url = apply_url
     location = locations_string
 
-    postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
     data.append({
-        "timestamp": postDate,
+        "timestamp": post_date,
         "title": title,
         "company": company,
         "url": url,

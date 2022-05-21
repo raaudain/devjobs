@@ -18,7 +18,7 @@ def get_results(item: str, param: str):
     jobs = item["jobs"]
     for job in jobs:
         date = datetime.strptime(job["published_on"], "%Y-%m-%d")
-        postDate = datetime.timestamp(
+        post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = job["url"].strip()
         company_name = company.strip()
@@ -32,7 +32,7 @@ def get_results(item: str, param: str):
         location = f"{city} {state} {country} {remote}".strip()
         source_url = f"https://apply.workable.com/{param}/"
         Filter_Jobs({
-            "timestamp": postDate,
+            "timestamp": post_date,
             "title": position,
             "company": company_name,
             "company_logo": logo,
@@ -60,14 +60,14 @@ def get_url(companies: list):
             else:
                 time.sleep(0.2)
             count += 1
-        except:
+        except Exception as e:
             if response.status_code == 429:
                 print(
                     f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
                 break
             else:
                 print(
-                    f"=> workable: Failed for {company}. Status code: {response.status_code}.")
+                    f"=> workable: Failed for {company}. Status code: {response.status_code}. Error: {e}.")
 
 
 def main():

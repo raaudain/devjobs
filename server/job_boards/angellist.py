@@ -73,10 +73,10 @@ def getJobs(item, company):
         
 
         # print(date, title, company, url, location)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
         data.append({
-            "timestamp": postDate,
+            "timestamp": post_date,
             "title": title,
             "company": company,
             "url": url,

@@ -18,7 +18,7 @@ def get_results(item: str, param: str, company: str, logo: str):
     jobs = item["results"]
     for data in jobs:
         date = datetime.strptime(data["published"], "%Y-%m-%dT%H:%M:%S.%fZ")
-        postDate = datetime.timestamp(
+        post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = f"https://apply.workable.com/{param}/j/{data['shortcode']}/"
         company_name = company.strip()
@@ -27,7 +27,7 @@ def get_results(item: str, param: str, company: str, logo: str):
         location = f"{state if data['location']['city'] else ''}{data['location']['country']}"
         source_url = f"https://apply.workable.com/{param}/"
         Filter_Jobs({
-            "timestamp": postDate,
+            "timestamp": post_date,
             "title": position,
             "company": company_name,
             "company_logo": logo,

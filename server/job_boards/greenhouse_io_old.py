@@ -21,11 +21,11 @@ def getJobs(item, company, name):
         location = job.find("span", {"class": "location"}).text.strip()
 
         # print(date, title, company, url, location)
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d"))
 
         if url not in scraped:
             data.append({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "company": company,
                 "url": url,

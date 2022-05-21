@@ -4,6 +4,7 @@ import json
 import sys
 import time
 import random
+from lxml import html
 from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
 # import modules.headers as h
@@ -15,19 +16,22 @@ FILE_PATH = "./data/params/recruitee.txt"
 
 def get_results(item: str, param: str):
     jobs = item["offers"]
+    source_url = f"https://{param}.recruitee.com"
+    r = requests.get(source_url)
+    tree = html.fromstring(r.content)
+    img = tree.xpath("//img/@src")[0]
+    logo = img if img else None
     for job in jobs:
         date = datetime.strptime(job["published_at"], "%Y-%m-%d %H:%M:%S UTC")
-        postDate = datetime.timestamp(
+        post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = job["careers_url"].strip()
         company_name = job["company_name"].strip()
-        logo = None
         position = job["title"].strip()
         description = job["description"]
         location = job["location"].strip()
-        source_url = f"https://{param}.recruitee.com/"
         Filter_Jobs({
-            "timestamp": postDate,
+            "timestamp": post_date,
             "title": position,
             "company": company_name,
             "company_logo": logo,

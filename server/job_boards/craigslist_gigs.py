@@ -30,12 +30,12 @@ def getGigs(item):
         area = str(gig.find("span", {"class": "result-hood"})).replace('<span class="result-hood"> (', "").replace(")</span>", "")
         
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
-        postDate = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
+        post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M"))
 
-        if age <= postDate and url not in scraped:
-            # createJSON(postDate, title, url, area, "gig")
+        if age <= post_date and url not in scraped:
+            # createJSON(post_date, title, url, area, "gig")
             data.append({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "url": url,
                 "area": area,

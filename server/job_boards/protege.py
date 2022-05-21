@@ -31,11 +31,11 @@ def getJobs(item):
         # print(date, title, company, url, location)
 
         age = datetime.timestamp(datetime.now() - timedelta(days=7))
-        postDate = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
+        post_date = datetime.timestamp(datetime.strptime(str(date)[:-9], "%Y-%m-%d"))
 
-        if age <= postDate:
+        if age <= post_date:
             data.append({
-                "timestamp": postDate,
+                "timestamp": post_date,
                 "title": title,
                 "company": company,
                 "url": url,
