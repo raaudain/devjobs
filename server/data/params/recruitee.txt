@@ -33,7 +33,6 @@ krikri
 cvonlineestonia
 smartsupp
 degustabox
-dtgo
 ladylight
 omniconsultcorp
 swedex
@@ -116,7 +115,6 @@ interbrandsmarketingdistributionsrl
 ascendaloyalty
 carbotec
 vertigis
-nammos
 cbsapac
 vandervalkluxembourg
 numinus
