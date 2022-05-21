@@ -1,9 +1,10 @@
-from datetime import datetime
+from email.mime import image
 import requests
 import json
 import sys
 import time
 import random
+from datetime import datetime
 from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
 # import modules.headers as h
@@ -16,13 +17,29 @@ FILE_PATH = "./data/params/workable.txt"
 def get_results(item: str, param: str):
     company = item["name"]
     jobs = item["jobs"]
+    workable_imgs = "./data/images/workable_imgs.txt"
+    logo: None
+    source_url = f"https://apply.workable.com/{param}/"
+    images = {}
+    with open(workable_imgs, "r") as f:
+        for img in f:
+            img = img.split("+")
+            images[img[0]] = img[1].rstrip("\n") if len(img) > 0 else None
+    if param in images:
+        logo = images[param]
+    else:
+        r = requests.get(f"https://apply.workable.com/api/v1/accounts/{param}").text
+        i = json.loads(r)["logo"] if "logo" in json.loads(r) else ""
+        with open(workable_imgs, "a") as a:
+            img_url = i
+            a.write(f"{param}+{img_url}\n")
+        logo = i if i else None
     for job in jobs:
         date = datetime.strptime(job["published_on"], "%Y-%m-%d")
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = job["url"].strip()
         company_name = company.strip()
-        logo: None
         position = job["title"].strip()
         description = job["description"]
         remote = "Remote" if job["telecommuting"] else ""
@@ -30,7 +47,6 @@ def get_results(item: str, param: str):
         city = f"{job['city']}" if len(job["city"]) > 0 else ""
         state = f"{job['state']}" if len(job["state"]) > 0 else ""
         location = f"{city} {state} {country} {remote}".strip()
-        source_url = f"https://apply.workable.com/{param}/"
         Filter_Jobs({
             "timestamp": post_date,
             "title": position,
@@ -56,7 +72,7 @@ def get_url(companies: list):
             data = json.loads(response.text)
             get_results(data, company)
             if count % 9 == 0:
-                time.sleep(30)
+                time.sleep(15)
             else:
                 time.sleep(0.2)
             count += 1

@@ -17,10 +17,10 @@ FILE_PATH = "./data/params/recruitee.txt"
 def get_results(item: str, param: str):
     jobs = item["offers"]
     source_url = f"https://{param}.recruitee.com"
-    r = requests.get(source_url)
-    tree = html.fromstring(r.content)
-    img = tree.xpath("//img/@src")[0]
-    logo = img if img else None
+    logo = None
+    # r = requests.get(source_url)
+    # tree = html.fromstring(r.content)
+    # img = tree.xpath("//img/@src")[0]
     for job in jobs:
         date = datetime.strptime(job["published_at"], "%Y-%m-%d %H:%M:%S UTC")
         post_date = datetime.timestamp(
@@ -62,11 +62,11 @@ def get_url(companies: list):
         except Exception as e:
             if response.status_code == 429:
                 print(
-                    f"=> workable: Failed to scrape {company}. Status code: {response.status_code}.")
+                    f"=> recruitee: Failed to scrape {company}. Status code: {response.status_code}.")
                 break
             else:
                 print(
-                    f"=> workable: Failed for {company}. Status code: {response.status_code}. Error: {e}")
+                    f"=> recruitee: Failed for {company}. Status code: {response.status_code}. Error: {e}")
 
 
 def main():

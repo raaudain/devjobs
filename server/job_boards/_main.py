@@ -47,7 +47,7 @@ from .modules.classes import Create_JSON
 
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format="{asctime} {levelname:<8} {message}",
     style="{",
     filename="../../../devjobs.log",
@@ -79,7 +79,9 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    workaline.main()
     recruitee.main()
+    breezyhr.main()
     workable.get_url(work[::5])
     diversifytech.main()
     wrk.main()
@@ -93,7 +95,6 @@ def main():
     greenhouse_io.get_url(green[::2])
     craigslist.get_url(locations)
     jobvite.main()
-    breezyhr.main()
     bamboohr.main()
     eightfold.main()
     jazzhr.main()
@@ -117,7 +118,6 @@ def main():
     workwithindies.main()
     weworkremotely.main()
     fullstackjob.main()
-    workaline.main()
     remote_co.main()
     remoteok.main()
     craigslist.get_url_network(locations)

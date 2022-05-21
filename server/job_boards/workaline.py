@@ -47,9 +47,9 @@ def get_url():
                 time.sleep(5)
             else:
                 time.sleep(0.2)
-        except:
-            continue
-        page += 1
+            page += 1
+        except Exception as e:
+            print(f"=> workline: Error: {e}.")
 
 
 def main():
