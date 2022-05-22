@@ -2,6 +2,7 @@ import requests
 import sys
 import time
 import random
+from lxml import html
 from datetime import datetime
 from bs4 import BeautifulSoup
 from .modules import headers as h
@@ -15,15 +16,15 @@ FILE_PATH = "./data/params/breezyhr.txt"
 
 def get_results(item: str, name: str):
     soup = BeautifulSoup(item, "lxml")
-    logo = None
+    tree = html.fromstring(item)
+    logo = tree.xpath("//a[@class='attribute-value' and contains(@href, 'https://gallery-cdn.breezy.hr')]/text()")[0]
+
     # if soup.find(class_="brand").find("img"):
     #     logo = soup.find(class_="brand").find("img")["src"]
     results = soup.find_all("li", class_="position transition")
     company = soup.find("meta", {"name": "twitter:data1"})["content"] if soup.find(
         "meta", {"name": "twitter:data1"}) else name
     for r in results:
-        h2 = r.find("h2").text
-        # if "Engineer" in h2 or "Data" in h2 or "IT " in h2 or "Support" in h2 or "Developer" in h2 or "QA " in h2 or "Engineer" in r.find("li", class_="department").text:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
