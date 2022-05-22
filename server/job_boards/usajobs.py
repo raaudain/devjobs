@@ -53,6 +53,7 @@ def getURL():
             page += 1
         except Exception as e:
             print(f"=> usajobs: Failed to scrap page {page}. Error: {e}.")
+            break
 
 
 def main():
