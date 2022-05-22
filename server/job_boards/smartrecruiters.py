@@ -6,7 +6,7 @@ import json
 import time
 import random
 from .modules import headers as h
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 # import modules.headers as h
 # import modules.classes as c
 
@@ -14,9 +14,11 @@ from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Fou
 FILE_PATH = "./data/params/smartrecruiters.txt"
 
 
-def get_results(item: str, name: str):
+def get_results(item: str, param: str):
     data = item["content"]
-    # images = {}
+    sr = "./data/assets/smartrecruiters_assets.txt"
+    table = Get_Stored_Data(sr)
+    logo = None
     if data:
         for i in data:
             date = datetime.strptime(
@@ -25,17 +27,19 @@ def get_results(item: str, name: str):
                 datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
             jobId = i["id"]
             company_name = i["company"]["name"]
-            apply_url = f"https://jobs.smartrecruiters.com/{name}/{jobId}"
-            logo = None
-            # if name in images:
-            #     logo = images[name]
-            # else:
-            #     r = requests.get(apply_url)
-            #     tree = html.fromstring(r.content)
-            #     image = tree.xpath(
-            #         "//*[@class='header-logo logo']//img/@src")[0]
-            #     logo = image if image else None
-            #     images[name] = logo
+            apply_url = f"https://jobs.smartrecruiters.com/{param}/{jobId}"
+            if param in table:
+                logo = table[param]["logo"]
+            else:
+                try:
+                    r = requests.get(apply_url)
+                    tree = html.fromstring(r.content)
+                    logo = tree.xpath(
+                        "//a[@class='attribute-value' and contains(@href, 'https://c.smartrecruiters.com/sr-company-logo')]/text()")[0]
+                    with open(sr, "a") as a:
+                        a.write(f"{param}`n/a`{i}\n")
+                except Exception as e:
+                    print(f"=> smartrecruiter: Error getting logo. {e}.")
             position = i["name"]
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
@@ -50,11 +54,11 @@ def get_results(item: str, name: str):
                 "url": apply_url,
                 "location": location,
                 "source": company_name,
-                "source_url": f"https://careers.smartrecruiters.com/{name}/",
+                "source_url": f"https://careers.smartrecruiters.com/{param}/",
                 "category": "job"
             })
     else:
-        print(f"=> smartrecruiters: No jobs for {name}.")
+        print(f"=> smartrecruiters: No jobs for {param}.")
 
 
 def get_url(companies: list):

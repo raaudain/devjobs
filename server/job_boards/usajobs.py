@@ -51,9 +51,8 @@ def getURL():
             else:
                 time.sleep(0.2)
             page += 1
-        except:
-            print(f"=> usajobs: Failed to scrap page {page}")
-            continue
+        except Exception as e:
+            print(f"=> usajobs: Failed to scrap page {page}. Error: {e}.")
 
 
 def main():

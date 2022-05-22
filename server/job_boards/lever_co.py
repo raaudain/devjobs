@@ -14,7 +14,7 @@ from .modules.classes import Filter_Jobs, Get_Stored_Data, Remove_Not_Found, Rea
 FILE_PATH = "./data/params/lever_co.txt"
 
 
-def get_results(item, param):
+def get_results(item: str, param: str):
     source_url = f"https://jobs.lever.co/{param}"
     company_name = None
     logo = None
@@ -24,14 +24,17 @@ def get_results(item, param):
         company_name = table[param]["name"]
         logo = table[param]["logo"]
     else:
-        r = requests.get(source_url)
-        tree = html.fromstring(r.content)
-        img_url = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
-        company = tree.xpath("//head/title/text()")[0]
-        with open(lever, "a") as a:
-            a.write(f"{param}`{company}`{img_url}\n")
-        logo = img_url if img_url else None
-        company_name = company if company else param.capitalize()
+        try:
+            r = requests.get(source_url)
+            tree = html.fromstring(r.content)
+            img_url = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
+            company = tree.xpath("//head/title/text()")[0]
+            with open(lever, "a") as a:
+                a.write(f"{param}`{company}`{img_url}\n")
+            logo = img_url if img_url else None
+            company_name = company if company else param.capitalize()
+        except Exception as e:
+            print(f"=> lever.co: Failed to get logo for {param}. Error: {e}.")
     for i in item:
         # use true division by 1e3 (float 1000)
         date = datetime.fromtimestamp(i["createdAt"] / 1e3)
