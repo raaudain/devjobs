@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from lxml import html
 from .modules import headers as h
-from .modules.classes import Filter_Jobs, Remove_Not_Found, Read_List_Of_Companies
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Remove_Not_Found, Read_List_Of_Companies
 # import modules.headers as h
 # import modules.classes as c
 
@@ -19,20 +19,10 @@ def get_results(item, param):
     company_name = None
     logo = None
     lever = "./data/assets/lever_assets.txt"
-    assets = {}
-    with open(lever, "r") as f:
-        for e in f:
-            e = e.split("`")
-            p = e[0]
-            name = e[1]
-            img = e[2]
-            assets[p] = {
-                "name": name if name else param.capitalize(),
-                "logo": img.rstrip("\n") if len(img) > 0 else None
-            }
-    if param in assets:
-        company_name = assets[param]["name"]
-        logo = assets[param]["logo"]
+    table = Get_Stored_Data(lever)
+    if param in table:
+        company_name = table[param]["name"]
+        logo = table[param]["logo"]
     else:
         r = requests.get(source_url)
         tree = html.fromstring(r.content)

@@ -5,7 +5,7 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
 # import modules.headers as h
 # import modules.classes as c
@@ -20,19 +20,14 @@ def get_results(item: str, param: str):
     workable_imgs = "./data/assets/workable_imgs.txt"
     logo: None
     source_url = f"https://apply.workable.com/{param}/"
-    images = {}
-    with open(workable_imgs, "r") as f:
-        for img in f:
-            img = img.split("`")
-            images[img[0]] = img[1].rstrip("\n") if len(img) > 0 else None
-    if param in images:
-        logo = images[param]
+    table = Get_Stored_Data(workable_imgs)
+    if param in table:
+        logo = table[param]["logo"]
     else:
         r = requests.get(f"https://apply.workable.com/api/v1/accounts/{param}").text
         i = json.loads(r)["logo"] if "logo" in json.loads(r) else ""
         with open(workable_imgs, "a") as a:
-            img_url = i
-            a.write(f"{param}`{img_url}\n")
+            a.write(f"{param}`n/a`{i}\n")
         logo = i if i else None
     for job in jobs:
         date = datetime.strptime(job["published_on"], "%Y-%m-%d")

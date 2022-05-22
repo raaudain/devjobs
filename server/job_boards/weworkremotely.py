@@ -3,11 +3,12 @@ import sys
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from .modules.classes import Filter_Jobs
+from .modules.classes import Create_JSON, Filter_Jobs
 from .modules import headers as h
 
 
 def get_results(item: str):
+    scraped = Create_JSON.scraped
     try:
         soup = BeautifulSoup(item, "lxml")
         results = soup.find_all("li", class_=["feature", ""])
@@ -25,7 +26,7 @@ def get_results(item: str):
             logo = job.find(class_="flag-logo")["style"].replace("background-image:url(", "").replace(
                 "?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress)", "") if job.find(class_="flag-logo") else None
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
-            if age <= post_date:
+            if age <= post_date and company_name not in scraped:
                 Filter_Jobs({
                     "timestamp": post_date,
                     "title": position,
@@ -36,8 +37,8 @@ def get_results(item: str):
                     "source": "WeWorkRemotely",
                     "source_url": "https://weworkremotely.com/"
                 })
-    except:
-        print(f"=> weworkremotely: Error.")
+    except Exception as e:
+        print(f"=> weworkremotely: Error: {e}.")
 
 
 def get_url():
