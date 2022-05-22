@@ -17,13 +17,13 @@ FILE_PATH = "./data/params/workable.txt"
 def get_results(item: str, param: str):
     company = item["name"]
     jobs = item["jobs"]
-    workable_imgs = "./data/images/workable_imgs.txt"
+    workable_imgs = "./data/assets/workable_imgs.txt"
     logo: None
     source_url = f"https://apply.workable.com/{param}/"
     images = {}
     with open(workable_imgs, "r") as f:
         for img in f:
-            img = img.split("+")
+            img = img.split("`")
             images[img[0]] = img[1].rstrip("\n") if len(img) > 0 else None
     if param in images:
         logo = images[param]
@@ -32,7 +32,7 @@ def get_results(item: str, param: str):
         i = json.loads(r)["logo"] if "logo" in json.loads(r) else ""
         with open(workable_imgs, "a") as a:
             img_url = i
-            a.write(f"{param}+{img_url}\n")
+            a.write(f"{param}`{img_url}\n")
         logo = i if i else None
     for job in jobs:
         date = datetime.strptime(job["published_on"], "%Y-%m-%d")
