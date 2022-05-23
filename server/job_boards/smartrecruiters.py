@@ -1,10 +1,10 @@
-from datetime import datetime
-from lxml import html
 import requests
 import sys
 import json
 import time
 import random
+from datetime import datetime
+from lxml import html
 from .modules import headers as h
 from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 # import modules.headers as h
@@ -28,19 +28,20 @@ def get_results(item: str, param: str):
             jobId = i["id"]
             company_name = i["company"]["name"]
             apply_url = f"https://jobs.smartrecruiters.com/{param}/{jobId}"
+            position = i["name"]
             if param in table:
                 logo = table[param]["logo"]
             else:
                 try:
-                    r = requests.get(apply_url)
-                    tree = html.fromstring(r.content)
-                    logo = tree.xpath(
-                        "//img[contains(@src, 'https://c.smartrecruiters.com/sr-company-logo')]/@src")[0]
-                    with open(sr, "a") as a:
-                        a.write(f"{param}`n/a`{logo}\n")
+                    if ("Engineer" in position or "Data" in position or "IT " in position or "Tech " in position or "QA" in position or "Programmer" in position or "Developer" in position or "ML" in position or "SDET" in position or "devops" in position.lower() or "AWS" in position or "Cloud" in position or "Software" in position or "Help" in position or "Web " in position or "Front End" in position or "Agile" in position and "Cyber" in position) and ("Elect" not in position and "HVAC" not in position and "Mechanical" not in position and "Manufactur" not in position and "Data Entry" not in position and "Nurse" not in position and "Maintenance" not in position and "Civil" not in position and "Environmental" not in position and "Hardware" not in position and "Front Desk" not in position and "Helper" not in position and "Peer Support" not in position and "Bridge" not in position and "Water" not in position and "Dispatch" not in position and "Saw" not in position and "Facilities" not in position and "AML" not in position and "Sheet Metal" not in position and "Metallurgical" not in position and "Materials" not in position):
+                        r = requests.get(apply_url)
+                        tree = html.fromstring(r.content)
+                        logo = tree.xpath(
+                            "//img[contains(@src, 'https://c.smartrecruiters.com/sr-company-logo')]/@src")[0]
+                        with open(sr, "a") as a:
+                            a.write(f"{param}`n/a`{logo}\n")
                 except Exception as e:
                     print(f"=> smartrecruiter: Error getting logo. {e}.")
-            position = i["name"]
             city = f'{i["location"]["city"]}, '
             region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
             country = i["location"]["country"].upper()
