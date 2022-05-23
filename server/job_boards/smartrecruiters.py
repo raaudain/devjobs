@@ -35,7 +35,7 @@ def get_results(item: str, param: str):
                     r = requests.get(apply_url)
                     tree = html.fromstring(r.content)
                     logo = tree.xpath(
-                        "//a[@class='attribute-value' and contains(@href, 'https://c.smartrecruiters.com/sr-company-logo')]/text()")[0]
+                        "//img[contains(@src, 'https://c.smartrecruiters.com/sr-company-logo')]/@src")[0]
                     with open(sr, "a") as a:
                         a.write(f"{param}`n/a`{i}\n")
                 except Exception as e:
