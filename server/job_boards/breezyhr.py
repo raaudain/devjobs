@@ -19,7 +19,8 @@ def get_results(item: str, param: str):
     tree = html.fromstring(item)
     logo = None
     try:
-        logo = tree.xpath("//a[@class='attribute-value' and contains(@href, 'https://gallery-cdn.breezy.hr')]/text()")[0]
+        logo = tree.xpath(
+            "//img[contains(@src, 'https://gallery-cdn.breezy.hr')]/@src")[0]
     except Exception as e:
         print(f"=> breezyhr: Failed to get logo for {param}. Error: {e}.")
 
@@ -46,15 +47,15 @@ def get_results(item: str, param: str):
             location = r.find(
                 "li", class_="location").text.strip()
         Filter_Jobs({
-                "timestamp": post_date,
-                "title": position,
-                "company": company_name,
-                "company_logo": logo,
-                "url": apply_url,
-                "location": location,
-                "source": company,
-                "source_url": f"https://{param}.breezy.hr"
-            })
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "company_logo": logo,
+            "url": apply_url,
+            "location": location,
+            "source": company,
+            "source_url": f"https://{param}.breezy.hr"
+        })
 
 
 def get_url(companies: list):
