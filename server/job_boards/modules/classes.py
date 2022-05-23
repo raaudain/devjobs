@@ -21,12 +21,13 @@ class Remove_Not_Found:
         self.param = param
         file_path = self.file_path
         param = self.param
-        with open(file_path, "r+") as f, open("./data/params/404.txt", "a") as not_found:
+        # r+ writes in binary
+        with open(file_path, "r+") as f, open(file_path, "w") as file, open("./data/params/404.txt", "a") as not_found:
             params = [param.strip() for param in f]
             f.truncate(0)
             for p in params:
                 if p != param:
-                    f.write(p+"\n")
+                    file.write(p+"\n")
                 else:
                     not_found.write(p+"\n")
 
