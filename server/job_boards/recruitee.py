@@ -18,9 +18,12 @@ def get_results(item: str, param: str):
     jobs = item["offers"]
     source_url = f"https://{param}.recruitee.com"
     logo = None
-    # r = requests.get(source_url)
-    # tree = html.fromstring(r.content)
-    # img = tree.xpath("//img/@src")[0]
+    try:
+        r = requests.get(source_url)
+        tree = html.fromstring(r.content)
+        logo = tree.xpath("//h1[@class='brand']//img/@src")[0]
+    except Exception as e:
+        print(f"=> recruitee: Failed to get logo for {param}. Error: {e}.")
     for job in jobs:
         date = datetime.strptime(job["published_at"], "%Y-%m-%d %H:%M:%S UTC")
         post_date = datetime.timestamp(

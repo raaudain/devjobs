@@ -39,7 +39,7 @@ def get_results(item: str, param: str):
         # use true division by 1e3 (float 1000)
         date = datetime.fromtimestamp(i["createdAt"] / 1e3)
         post_date = datetime.timestamp(
-            datetime.strptime(str(date)[:-8], "%Y-%m-%d %H:%M:%S"))
+            datetime.strptime(str(date)[:-9], "%Y-%m-%d %H:%M:%S"))
         apply_url = i["hostedUrl"].strip()
         description = i["descriptionPlain"]
         position = i["text"].strip()
