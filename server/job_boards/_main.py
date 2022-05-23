@@ -1,5 +1,6 @@
 import random
 import logging
+import time
 from . import comeet
 from . import clearcompany
 from . import eightfold
@@ -126,6 +127,7 @@ def main():
     bootup.main()
     builtin.main()
     Create_JSON.create_temp_file(Create_JSON.data)
+    time.sleep(5)
     # try:
     #     Create_JSON.create_file()
     # except Exception as e:

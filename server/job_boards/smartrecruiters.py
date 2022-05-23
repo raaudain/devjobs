@@ -37,7 +37,7 @@ def get_results(item: str, param: str):
                     logo = tree.xpath(
                         "//img[contains(@src, 'https://c.smartrecruiters.com/sr-company-logo')]/@src")[0]
                     with open(sr, "a") as a:
-                        a.write(f"{param}`n/a`{i}\n")
+                        a.write(f"{param}`n/a`{logo}\n")
                 except Exception as e:
                     print(f"=> smartrecruiter: Error getting logo. {e}.")
             position = i["name"]
