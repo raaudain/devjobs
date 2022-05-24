@@ -41,6 +41,7 @@ def get_results(item: str, param: str):
                             "//img[contains(@src, 'https://c.smartrecruiters.com/sr-company-logo')]/@src")[0].rsplit("&")[0]
                         with open(sr, "a") as a:
                             a.write(f"{param}`n/a`{logo}\n")
+                        table[param] = {"name": "n/a", "logo": logo}
                 except Exception as e:
                     print(f"=> smartrecruiter: Error getting logo. {e}.")
             city = f'{i["location"]["city"]}, '
