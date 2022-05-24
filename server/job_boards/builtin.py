@@ -5,9 +5,7 @@ import time
 import random
 from datetime import datetime, timedelta
 from .modules.classes import Filter_Jobs, Create_JSON
-from .modules import create_temp_json
 from .modules import headers as h
-# import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 

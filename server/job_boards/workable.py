@@ -23,13 +23,11 @@ def get_results(item: str, param: str):
     table = Get_Stored_Data(workable_imgs)
     if param in table:
         logo = table[param]["logo"]
-        print("Success!!!")
     else:
         r = requests.get(f"https://apply.workable.com/api/v1/accounts/{param}").text
-        i = json.loads(r)["logo"] if "logo" in json.loads(r) else ""
+        logo = json.loads(r)["logo"] if "logo" in json.loads(r) else None
         with open(workable_imgs, "a") as a:
-            a.write(f"{param}`n/a`{i}\n")
-        logo = i if i else None
+            a.write(f"{param}`n/a`{logo}\n")
     for job in jobs:
         date = datetime.strptime(job["published_on"], "%Y-%m-%d")
         post_date = datetime.timestamp(

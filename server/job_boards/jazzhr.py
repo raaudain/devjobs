@@ -47,20 +47,23 @@ def get_results(item: str, name: str):
 def get_url(companies: list):
     page = 1
     for company in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{company}.applytojob.com"
-        response = requests.get(url, headers=headers)
-        if response.ok:
-            get_results(response.text, company)
-        elif response.status_code == 404:
-            Remove_Not_Found(FILE_PATH, company)
-        else:
-            f"Error for {company}. Status code: {response.status_code}"
-        if page % 10 == 0:
-            time.sleep(5)
-        else:
-            time.sleep(0.2)
-        page += 1
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{company}.applytojob.com"
+            response = requests.get(url, headers=headers)
+            if response.ok:
+                get_results(response.text, company)
+            elif response.status_code == 404:
+                Remove_Not_Found(FILE_PATH, company)
+            else:
+                f"=> jazzhr: Error for {company}. Status code: {response.status_code}"
+            if page % 10 == 0:
+                time.sleep(5)
+            else:
+                time.sleep(0.2)
+            page += 1
+        except Exception as e:
+            print(f"=> jazzhr: Error for {company}. {e}")
 
 
 def main():

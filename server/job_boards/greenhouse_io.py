@@ -5,10 +5,8 @@ import time
 import random
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
-# import modules.create_temp_json as create_temp_json
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 # import modules.headers as h
 # import modules.classes as c
 
@@ -16,8 +14,31 @@ from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Fou
 FILE_PATH = "./data/params/greenhouse_io.txt"
 
 
-def get_results(item: str, name: str, company: str, logo: str):
+def get_results(item: str, param: str):
+    source_url = f"https://boards.greenhouse.io/{param}"
+    gh = "./data/assets/greenhouse_assets.txt"
+    company_name = None
+    logo = None
     jobs = item["jobs"]
+    table = Get_Stored_Data(gh)
+    if param in table:
+        company_name = table[param]["name"]
+        logo = table[param]["logo"]
+    else:
+        try:
+            res = requests.get(
+                f"https://boards-api.greenhouse.io/v1/boards/{param}/")
+            company_name = json.loads(res.text)["name"].strip(
+            ) if "name" in json.loads(res.text) else param.capitalize()
+            r = requests.get(source_url)
+            soup = BeautifulSoup(r.text, "lxml")
+            logo = soup.find(id="logo").find("img")[
+                "src"] if soup.find(id="logo") else None
+            with open(gh, "a") as a:
+                a.write(f"{param}`{company_name}`{logo}\n")
+        except Exception as e:
+            print(
+                f"=> greenhouse.io: Error getting logo for {param}. {e}.")
     if jobs:
         for j in jobs:
             date = datetime.strptime(
@@ -25,7 +46,6 @@ def get_results(item: str, name: str, company: str, logo: str):
             post_date = datetime.timestamp(
                 datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S%z"))
             position = j["title"].strip()
-            company_name = company
             apply_url = j["absolute_url"].strip()
             location = j["location"]["name"].strip()
             Filter_Jobs({
@@ -36,47 +56,33 @@ def get_results(item: str, name: str, company: str, logo: str):
                 "url": apply_url,
                 "location": location,
                 "source": company_name,
-                "source_url": f"https://boards.greenhouse.io/{name}"
+                "source_url": source_url
             })
 
 
 def get_url(companies: list):
     count = 1
-    for name in companies:
+    for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://boards-api.greenhouse.io/v1/boards/{name}/jobs"
-            url2 = f"https://boards-api.greenhouse.io/v1/boards/{name}/"
-            url3 = f"https://boards.greenhouse.io/{name}"
+            url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
             response = requests.get(url, headers=headers)
-            res = requests.get(url2, headers=headers)
-            if response.ok and res.ok:
+            if response.ok:
                 data = json.loads(response.text)
-                company = json.loads(res.text)["name"].strip()
-                logo = None
-                if name != "intersystems":
-                    try:
-                        r = requests.get(url3, headers=headers)
-                        soup = BeautifulSoup(r.text, "lxml")
-                        logo = soup.find(id="logo").find("img")[
-                            "src"] if soup.find(id="logo") else None
-                    except:
-                        print(
-                            f"=> greenhouse.io: Error getting logo for {name}.")
-                if data and company:
-                    get_results(data, name, company, logo)
-                if count % 20 == 0:
-                    time.sleep(10)
-                else:
-                    time.sleep(0.2)
-                count += 1
+                if data:
+                    get_results(data, company)
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, name)
+                Remove_Not_Found(FILE_PATH, company)
             else:
                 print(
-                    f"=> greenhouse.io: Status code {response.status_code} for {name}")
-        except:
-            print(f"Error for {name}.")
+                    f"=> greenhouse.io: Status code {response.status_code} for {company}")
+            if count % 20 == 0:
+                time.sleep(10)
+            else:
+                time.sleep(0.2)
+            count += 1
+        except Exception as e:
+            print(f"=> greenhouse.io: Error for {company}. {e}")
 
 
 def main():
