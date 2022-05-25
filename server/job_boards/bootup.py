@@ -26,7 +26,7 @@ def get_results(item: str):
             "timestamp": post_date,
             "title": position,
             "company": company_name,
-            "description": description,
+            #"description": description,
             "company_logo": "https://candidate.joinbootup.com/LogoDarkText.svg",
             "url": apply_url,
             "location": location,

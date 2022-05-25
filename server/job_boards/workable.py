@@ -46,7 +46,7 @@ def get_results(item: str, param: str):
             "title": position,
             "company": company_name,
             "company_logo": logo,
-            "description": description,
+            #"description": description,
             "url": apply_url,
             "location": location,
             "source": company_name,

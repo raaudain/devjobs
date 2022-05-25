@@ -66,29 +66,29 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     count = 1
-    for name in companies:
+    for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://api.smartrecruiters.com/v1/companies/{name}/postings/"
+            url = f"https://api.smartrecruiters.com/v1/companies/{company}/postings/"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)
-                get_results(data, name)
+                get_results(data, company)
                 if count % 20 == 0:
                     time.sleep(5)
                 else:
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, name)
-        except:
+                Remove_Not_Found(FILE_PATH, company)
+        except Exception as e:
             if response.status_code == 429:
                 print(
-                    f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
+                    f"=> smartrecruiters: Failed to scraped {company}. Status code: {response.status_code}.")
                 break
             else:
                 print(
-                    f"=> smartrecruiters: Failed to scraped {name}. Status code: {response.status_code}.")
+                    f"=> smartrecruiters: Failed to scraped {company}. Error: {e}.")
 
 
 def main():

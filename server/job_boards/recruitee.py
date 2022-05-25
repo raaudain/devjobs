@@ -5,7 +5,7 @@ import sys
 import time
 import random
 from lxml import html
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 from .modules import headers as h
 # import modules.headers as h
 # import modules.classes as c
@@ -16,12 +16,19 @@ FILE_PATH = "./data/params/recruitee.txt"
 
 def get_results(item: str, param: str):
     jobs = item["offers"]
+    re = "./data/assets/recruitee_assets.txt"
     source_url = f"https://{param}.recruitee.com"
     logo = None
+    table = Get_Stored_Data(re)
+    if param in table:
+        logo = table[param]["logo"]
     try:
         r = requests.get(source_url)
         tree = html.fromstring(r.content)
-        logo = tree.xpath("//h1[@class='brand']//img/@src")[0]
+        logo = tree.xpath(
+            "//img[contains(@src, 'https://d27i7n2isjbnbi.cloudfront.net/')]/@src")[0]
+        with open(re, "a") as a:
+            a.write(f"{param}`n/a`{logo}\n")
     except Exception as e:
         print(f"=> recruitee: Failed to get logo for {param}. Error: {e}.")
     for job in jobs:
@@ -38,7 +45,7 @@ def get_results(item: str, param: str):
             "title": position,
             "company": company_name,
             "company_logo": logo,
-            "description": description,
+            #"description": description,
             "url": apply_url,
             "location": location,
             "source": company_name,

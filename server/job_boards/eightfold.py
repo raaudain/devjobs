@@ -32,7 +32,7 @@ def get_results(item: str, param: str):
             "timestamp": post_date,
             "title": position,
             "company": company_name,
-            "description": description,
+            #"description": description,
             "department": department,
             "url": apply_url,
             "location": location,
