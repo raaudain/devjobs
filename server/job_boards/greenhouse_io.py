@@ -33,31 +33,30 @@ def get_results(item: str, param: str):
             r = requests.get(source_url)
             soup = BeautifulSoup(r.text, "lxml")
             logo = soup.find(id="logo").find("img")[
-                "src"] if soup.find(id="logo") else None
+                "src"].rsplit("?")[0] if soup.find(id="logo") else None
             with open(gh, "a") as a:
                 a.write(f"{param}`{company_name}`{logo}\n")
         except Exception as e:
             print(
                 f"=> greenhouse.io: Error getting logo for {param}. {e}.")
-    if jobs:
-        for j in jobs:
-            date = datetime.strptime(
-                j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
-            post_date = datetime.timestamp(
-                datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S%z"))
-            position = j["title"].strip()
-            apply_url = j["absolute_url"].strip()
-            location = j["location"]["name"].strip()
-            Filter_Jobs({
-                "timestamp": post_date,
-                "title": position,
-                "company": company_name,
-                "company_logo": logo,
-                "url": apply_url,
-                "location": location,
-                "source": company_name,
-                "source_url": source_url
-            })
+    for j in jobs:
+        date = datetime.strptime(
+            j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")
+        post_date = datetime.timestamp(
+            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S%z"))
+        position = j["title"].strip()
+        apply_url = j["absolute_url"].strip()
+        location = j["location"]["name"].strip()
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "company_logo": logo,
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": source_url
+        })
 
 
 def get_url(companies: list):
@@ -82,7 +81,7 @@ def get_url(companies: list):
                 time.sleep(0.2)
             count += 1
         except Exception as e:
-            print(f"=> greenhouse.io: Error for {company}. {e}")
+            print(f"=> greenhouse.io: Error for {company}. {e}.")
 
 
 def main():

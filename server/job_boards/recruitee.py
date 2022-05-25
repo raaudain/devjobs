@@ -76,7 +76,7 @@ def get_url(companies: list):
                 break
             else:
                 print(
-                    f"=> recruitee: Failed for {company}. Status code: {response.status_code}. Error: {e}")
+                    f"=> recruitee: Failed for {company}. Error: {e}.")
 
 
 def main():

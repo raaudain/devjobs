@@ -3,11 +3,10 @@ import json
 import sys
 import time
 import random
+from lxml import html
 from datetime import datetime
-from .modules import create_temp_json
 from .modules import headers as h
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
-# import modules.create_temp_json as create_temp_json
+from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
 # import modules.headers as h
 # import modules.classes as c
 
@@ -17,13 +16,29 @@ FILE_PATH = "./data/params/eightfold.txt"
 
 def get_results(item: str, param: str):
     jobs = item["positions"]
-    company = item["branding"]["companyName"] if "companyName" in item["branding"] else param.upper()
+    company_name = item["branding"]["companyName"].strip(
+    ) if "companyName" in item["branding"] else param.capitalize()
+    logo = None
+    source_url = f"https://{param}.eightfold.ai/careers/"
+    ef = "./data/assets/eightfold_assets.txt"
+    table = Get_Stored_Data(ef)
+    if param in table:
+        logo = table[param]["logo"]
+    else:
+        try:
+            r = requests.get(source_url)
+            tree = html.fromstring(r.content)
+            logo = tree.xpath(
+                "//img[@class='d-inline-block align-top']/@src")[0]
+            with open(ef, "a") as a:
+                a.write(f"{param}`n/a`{logo}\n")
+        except Exception as e:
+            print(f"=> eightfold.ai: Error getting logo for {param}. {e}.")
     for j in jobs:
         date = datetime.fromtimestamp(j["t_create"])
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         position = j["name"].strip()
-        company_name = company.strip()
         description = j["job_description"]
         department = j["department"]
         apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
@@ -32,34 +47,38 @@ def get_results(item: str, param: str):
             "timestamp": post_date,
             "title": position,
             "company": company_name,
-            #"description": description,
-            "department": department,
+            "company_logo": logo,
+            # "description": description,
+            # "department": department,
             "url": apply_url,
             "location": location,
             "source": company_name,
-            "source_url": f"https://{param}.eightfold.ai/careers/"
+            "source_url": source_url
         })
 
 
 def get_url(companies: list):
     count = 1
-    for name in companies:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://{name}.eightfold.ai/api/apply/v2/jobs?start=0&num=1000"
-        response = requests.get(url, headers=headers)
-        if response.ok:
-            data = json.loads(response.text)
-            get_results(data, name)
-            if count % 15 == 0:
-                time.sleep(60)
+    for company in companies:
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://{company}.eightfold.ai/api/apply/v2/jobs?start=0&num=1000"
+            response = requests.get(url, headers=headers)
+            if response.ok:
+                data = json.loads(response.text)
+                get_results(data, company)
+                if count % 15 == 0:
+                    time.sleep(60)
+                else:
+                    time.sleep(0.2)
+                count += 1
+            elif response.status_code == 404:
+                Remove_Not_Found(FILE_PATH, company)
             else:
-                time.sleep(0.2)
-            count += 1
-        elif response.status_code == 404:
-            Remove_Not_Found(FILE_PATH, name)
-        else:
-            print(
-                f"=> eightfold.ai: Status code {response.status_code} for {name}")
+                print(
+                    f"=> eightfold.ai: Status code {response.status_code} for {company}.")
+        except Exception as e:
+            print(f"=> eightfold.ai: Error for {company}. {e}.")
 
 
 def main():
