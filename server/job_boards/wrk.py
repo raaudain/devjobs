@@ -57,25 +57,25 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     count = 1
-    for name in companies:
+    for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://jobs.wrk.xyz/api/v1/public/organizations/{name}/jobs/"
+            url = f"https://jobs.wrk.xyz/api/v1/public/organizations/{company}/jobs/"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)
-                get_results(data, name)
+                get_results(data, company)
                 if count % 20 == 0:
                     time.sleep(5)
                 else:
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, name)
+                Remove_Not_Found(FILE_PATH, company)
             else:
-                print(f"=> wrk: Status code {response.status_code} for {name}")
+                print(f"=> wrk: Status code {response.status_code} for {company}")
         except Exception as e:
-            print(f"=> wrk: Error for {name}. {e}")
+            print(f"=> wrk: Error for {company}. {e}")
 
 
 def main():
