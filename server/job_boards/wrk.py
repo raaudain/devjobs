@@ -15,7 +15,7 @@ FILE_PATH = "./data/params/wrk.txt"
 
 
 def get_results(item: str, param: str):
-    wrk = "../data/assets/wrk_assets.txt"
+    wrk = "./data/assets/wrk_assets.txt"
     source_url = f"https://jobs.wrk.xyz/{param}"
     logo = None
     table = Get_Stored_Data(wrk)
