@@ -386,3 +386,5 @@ Rituals1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c388502e828
 Chromalloy1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5db78830cf36f301dce00ab6/150px?r=s3-eu-central-1
 DynamicSoftware1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d0a36b291d6213654a670f6/150px?r=s3-eu-central-1
 Expeditors`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/54f8c9d6e4b038bfc90c332d/0253825a-c2e4-49f5-8c8d-844bdeb039f6
+InvinityEnergySystems`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/601c3822c234d83a6013aa4e/huge?r=s3-eu-central-1
+ImplementConsultingGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5df76f50a9c9d95cce05e9f8/huge?r=s3-eu-central-1
