@@ -16,23 +16,21 @@ FILE_PATH = "./data/params/lever_co.txt"
 
 def get_results(item: str, param: str):
     source_url = f"https://jobs.lever.co/{param}"
-    company_name = None
+    company_name = param.capitalize()
     logo = None
     lever = "./data/assets/lever_assets.txt"
     table = Get_Stored_Data(lever)
     if param in table:
-        company_name = table[param]["name"]
+        company_name = table[param]["name"] 
         logo = table[param]["logo"]
     else:
         try:
             r = requests.get(source_url)
             tree = html.fromstring(r.content)
-            img_url = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
-            company = tree.xpath("//head/title/text()")[0]
+            logo = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
+            company_name = tree.xpath("//head/title/text()")[0]
             with open(lever, "a") as a:
-                a.write(f"{param}`{company}`{img_url}\n")
-            logo = img_url if img_url else None
-            company_name = company if company else param.capitalize()
+                a.write(f"{param}`{company_name}`{logo}\n")
         except Exception as e:
             print(f"=> lever.co: Failed to get logo for {param}. Error: {e}.")
     for i in item:
