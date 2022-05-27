@@ -27,7 +27,7 @@ def get_results(item: str, param: str):
             tree = html.fromstring(r.content)
             logo = tree.xpath("//div[@class='header__logo']/img/@src")[0]
             with open(wrk, "a") as a:
-                a.write(f"{param}`n/a`{logo}")
+                a.write(f"{param}`n/a`{logo}\n")
         except Exception as e:
             print(f"=> wrk: Error getting logo for {param}. {e}.")
     jobs = item["items"]
