@@ -158,7 +158,6 @@ danieljansen
 bricklane
 neara
 ihorizon
-pelco
 saschastarck
 macellan
 parkwind

@@ -388,3 +388,5 @@ DynamicSoftware1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d0a
 Expeditors`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/54f8c9d6e4b038bfc90c332d/0253825a-c2e4-49f5-8c8d-844bdeb039f6
 InvinityEnergySystems`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/601c3822c234d83a6013aa4e/huge?r=s3-eu-central-1
 ImplementConsultingGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5df76f50a9c9d95cce05e9f8/huge?r=s3-eu-central-1
+PremiumTechnology`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/522f39a4e4b0357cecb5ae92/huge?r=s3
+shopify`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f52777d12f03b3c6e852545/huge?r=s3-eu-central-1
