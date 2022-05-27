@@ -29,7 +29,7 @@ def get_results(item: str, param: str):
             r = requests.get(source_url)
             tree = html.fromstring(r.content)
             logo = tree.xpath(
-                "//img[@class='d-inline-block align-top']/@src")[0]
+                "//img[@alt='eightfold-logo']/@src")[0]
             with open(ef, "a") as a:
                 a.write(f"{param}`n/a`{logo}\n")
         except Exception as e:
