@@ -49,7 +49,7 @@ class Get_Stored_Data:
                 img = e[2]
                 table[p] = {
                     "name": name if name else p.capitalize(),
-                    "logo": img.rstrip("\n") if len(img) > 4 else None
+                    "logo": img.rstrip("\n") if len(img) > 6 else None
                 }
         return table
 
