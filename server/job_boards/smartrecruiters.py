@@ -54,21 +54,21 @@ def get_results(item: str, param: str):
             except Exception as e:
                 print(
                     f"=> smartrecruiter: Error getting logo for {param}. {e}.")
-            city = f'{i["location"]["city"]}, '
-            region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
-            country = i["location"]["country"].upper()
-            remote = " | Remote" if i["location"]["remote"] else ""
-            location = f"{city}{region}{country}{remote}"
-            Filter_Jobs({
-                "timestamp": post_date,
-                "title": position,
-                "company": company_name,
-                "company_logo": logo,
-                "url": apply_url,
-                "location": location,
-                "source": company_name,
-                "source_url": source_url
-            })
+        city = f'{i["location"]["city"]}, '
+        region = f'{i["location"]["region"]}, ' if "region" in i["location"] else ""
+        country = i["location"]["country"].upper()
+        remote = " | Remote" if i["location"]["remote"] else ""
+        location = f"{city}{region}{country}{remote}"
+        Filter_Jobs({
+            "timestamp": post_date,
+            "title": position,
+            "company": company_name,
+            "company_logo": logo,
+            "url": apply_url,
+            "location": location,
+            "source": company_name,
+            "source_url": source_url
+        })
 
 
 def get_url(companies: list):
