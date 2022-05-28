@@ -17,7 +17,7 @@ FILE_PATH = "./data/params/greenhouse_io.txt"
 def get_results(item: str, param: str):
     source_url = f"https://boards.greenhouse.io/{param}"
     gh = "./data/assets/greenhouse_assets.txt"
-    company_name = None
+    company_name = param.capitalize()
     logo = None
     jobs = item["jobs"]
     table = Get_Stored_Data(gh)

@@ -22,15 +22,16 @@ def get_results(item: str, param: str):
     table = Get_Stored_Data(re)
     if param in table:
         logo = table[param]["logo"]
-    try:
-        r = requests.get(source_url)
-        tree = html.fromstring(r.content)
-        logo = tree.xpath(
-            "//img[contains(@src, 'https://d27i7n2isjbnbi.cloudfront.net/')]/@src")[0]
-        with open(re, "a") as a:
-            a.write(f"{param}`n/a`{logo}\n")
-    except Exception as e:
-        print(f"=> recruitee: Failed to get logo for {param}. Error: {e}.")
+    else:
+        try:
+            r = requests.get(source_url)
+            tree = html.fromstring(r.content)
+            logo = tree.xpath(
+                "//img[contains(@src, 'https://d27i7n2isjbnbi.cloudfront.net/')]/@src")[0]
+            with open(re, "a") as a:
+                a.write(f"{param}`n/a`{logo}\n")
+        except Exception as e:
+            print(f"=> recruitee: Failed to get logo for {param}. Error: {e}.")
     for job in jobs:
         date = datetime.strptime(job["published_at"], "%Y-%m-%d %H:%M:%S UTC")
         post_date = datetime.timestamp(
@@ -45,7 +46,7 @@ def get_results(item: str, param: str):
             "title": position,
             "company": company_name,
             "company_logo": logo,
-            #"description": description,
+            # "description": description,
             "url": apply_url,
             "location": location,
             "source": company_name,
