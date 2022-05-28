@@ -390,3 +390,5 @@ InvinityEnergySystems`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5
 ImplementConsultingGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5df76f50a9c9d95cce05e9f8/huge?r=s3-eu-central-1
 PremiumTechnology`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/522f39a4e4b0357cecb5ae92/huge?r=s3
 shopify`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f52777d12f03b3c6e852545/huge?r=s3-eu-central-1
+AbercrombieAndFitchCo`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5af0aa39e4b0ec805f00af84/huge?r=s3-eu-central-1
+Wolt`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f05b5736bbcbc0ff2f7e7f3/huge?r=s3-eu-central-1
