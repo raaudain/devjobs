@@ -392,3 +392,4 @@ PremiumTechnology`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/522f39a
 shopify`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f52777d12f03b3c6e852545/huge?r=s3-eu-central-1
 AbercrombieAndFitchCo`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5af0aa39e4b0ec805f00af84/huge?r=s3-eu-central-1
 Wolt`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f05b5736bbcbc0ff2f7e7f3/huge?r=s3-eu-central-1
+MAZARS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d9aeefc5ba0ab4489a7fadc/huge?r=s3-eu-central-1
