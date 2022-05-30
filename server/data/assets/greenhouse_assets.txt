@@ -745,7 +745,7 @@ fathom`FATHOM`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_bo
 signifyd95`Signifyd`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/871/resized/Primary-Medium-White_Background-TEST.png
 sundae`Sundae`None
 phmg`PHMG Careers`None
-fidelityguarantylife`Fidelity & Guaranty Life Insurance Company`../images/F&G_Logo.svg
+fidelityguarantylife`Fidelity & Guaranty Life Insurance Company`https://www.fglife.com/images/F&G_Logo.svg
 fossa`FOSSA`None
 postings`Acorio`None
 banza`Banza`None
