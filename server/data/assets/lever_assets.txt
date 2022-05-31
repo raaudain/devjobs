@@ -810,3 +810,4 @@ atlassian`Atlassian`https://lever-client-logos.s3-us-west-2.amazonaws.com/ed85a5
 wearedream`DREAM`https://lever-client-logos.s3.amazonaws.com/e9f5db3a-4958-4fbf-b601-5350bc63afa9-1563914367180.png
 protegrity`Protegrity`https://lever-client-logos.s3.us-west-2.amazonaws.com/566dc441-42aa-4653-958e-ab21946778bd-1634678375468.png
 sanabenefits`Sana Benefits`https://lever-client-logos.s3.amazonaws.com/254162b4-1849-484f-b554-6a7af5170e4a-1567004200280.png
+runway`Runway`https://lever-client-logos.s3.us-west-2.amazonaws.com/30e6b9e5-e668-4a08-9d9b-71a41ad33c2e-1641412535606.png
