@@ -842,7 +842,6 @@ upstatement
 amplitude
 guru
 pathai
-linearb
 careersatwonder
 ixllearning
 system
@@ -850,7 +849,6 @@ motus
 carrotfertility
 carbonfive
 karat
-symbiorobotics
 rebelliondefense
 c4adsinternships
 c4ads
