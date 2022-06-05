@@ -400,3 +400,4 @@ Zscaler`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/607f0a1628283
 seakrengineering`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b9ad45be4b046df7a421a50/huge?r=s3-eu-central-1
 ACCESA`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c501bf5dc0e8200078dbbaf/huge?r=s3-eu-central-1
 SerpaPackagingSolutions`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/535eae99e4b03bc416873d83/huge?r=s3
+DatavalueConsulting`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/605cc529ba272446568f1d97/huge?r=s3-eu-central-1
