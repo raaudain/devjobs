@@ -403,3 +403,6 @@ SerpaPackagingSolutions`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5
 DatavalueConsulting`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/605cc529ba272446568f1d97/huge?r=s3-eu-central-1
 CASES`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5510866ce4b0c87706bf4677/huge?r=s3
 Devexperts`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e414302d0a9a44747e766c7/huge?r=s3-eu-central-1
+PriviaHealth`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/615b1fdc3b37f67f3cecbfbd/huge?r=s3-eu-central-1
+SquareTrade1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f34097729a8a51f07839dbd/huge?r=s3-eu-central-1
+TuftsMedicalCenter1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f4413f67e83f021fc51fb97/huge?r=s3-eu-central-1

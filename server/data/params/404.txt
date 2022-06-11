@@ -341,3 +341,6 @@ linearb
 symbiorobotics
 cignpostdiagnostics
 melio
+asuseuropebv
+vigere
+talmundo
