@@ -407,3 +407,4 @@ PriviaHealth`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/615b1fdc
 SquareTrade1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f34097729a8a51f07839dbd/huge?r=s3-eu-central-1
 TuftsMedicalCenter1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f4413f67e83f021fc51fb97/huge?r=s3-eu-central-1
 Salomon`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b4f33d8e4b0693a9ba7c636/huge?r=s3-eu-central-1
+CERN`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5241b1d0e4b0ed152cd9d36a/huge?r=s3
