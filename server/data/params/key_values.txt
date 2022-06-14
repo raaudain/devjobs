@@ -1,3 +1,4 @@
+/course-hero
 /snap
 /plus
 /upduo

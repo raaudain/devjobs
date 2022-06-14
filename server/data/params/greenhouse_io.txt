@@ -687,7 +687,6 @@ whogivesacrap
 pax8
 twinhealth
 clutter
-fingerprintjs
 mackweldon
 8thlightrebuild
 chaossearch

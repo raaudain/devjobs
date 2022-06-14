@@ -344,3 +344,4 @@ melio
 asuseuropebv
 vigere
 talmundo
+fingerprintjs
