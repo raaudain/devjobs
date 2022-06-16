@@ -17,7 +17,7 @@ from . import remoteok
 from . import weworkremotely
 from . import builtin
 from . import dailyremote
-from . import hireart
+# from . import hireart
 # from . import stackoverflow
 # from . import dice
 from . import usajobs
@@ -109,7 +109,7 @@ def main():
     recruiterbox.main()
     nintendo.main()
     vuejobs.main()
-    hireart.main()
+    # hireart.main()
     amazon.main()
     craigslist.get_url_web(locations)
     workable.get_url(work[3::5])

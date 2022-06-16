@@ -1,11 +1,13 @@
-from datetime import datetime
+from logging import Filter
 import requests
 import json
 import sys
 import time
 import random
-from .modules import headers as h
-from .modules.classes import Filter_Jobs
+sys.path.insert(0, ".")
+from datetime import datetime
+from modules import headers as h
+from modules.classes import Filter_Jobs
 
 
 def getResults(item):
@@ -60,5 +62,5 @@ def main():
     getURL()
 
 
-# main()
-# sys.exit(0)
+if __name__ == "__main__":
+    main()

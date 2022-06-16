@@ -2,11 +2,10 @@ import requests
 import json
 import sys
 import random
+sys.path.insert(0, ".")
+from modules.classes import Filter_Jobs
+from modules import headers as h
 from datetime import datetime
-from bs4 import BeautifulSoup
-from .modules import create_temp_json
-from .modules import headers as h
-from .modules.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -36,7 +35,7 @@ def get_results(item: str):
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
-    url = "https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=10000"
+    url = "https://www.hireart.com/v1/candidates/browse_jobs?region&job_category=engineering&page=1&per=1000"
     response = requests.get(url, headers=headers)
     if response.ok:
         data = json.loads(response.text)
@@ -49,5 +48,5 @@ def main():
     get_url()
 
 
-# main()
-# sys.exit(0)
+if __name__ == "__main__":
+    main()
