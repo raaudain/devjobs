@@ -5,7 +5,6 @@ import time
 import random
 from datetime import datetime
 from .modules.classes import Filter_Jobs
-from .modules import create_temp_json
 from .modules import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
@@ -63,5 +62,5 @@ def main():
     get_url()
 
 
-# main()
-# sys.exit(0)
+if __name__ == "__main__":
+    main()

@@ -1,13 +1,11 @@
-from logging import Filter
 import requests
 import json
 import sys
 import time
 import random
-sys.path.insert(0, ".")
 from datetime import datetime
-from modules import headers as h
-from modules.classes import Filter_Jobs
+from .modules import headers as h
+from .modules.classes import Filter_Jobs
 
 
 def getResults(item):
