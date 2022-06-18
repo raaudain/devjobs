@@ -62,5 +62,5 @@ def main():
     get_url()
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
