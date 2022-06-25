@@ -345,3 +345,5 @@ asuseuropebv
 vigere
 talmundo
 fingerprintjs
+poppy
+pgmedia
