@@ -412,3 +412,6 @@ SEEK`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e6acb35903e4704
 wish`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5efb94ac9f901125a0ee9c8e/huge?r=s3-eu-central-1
 TSSConsultancyPvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c98860846e0fb00070e32a5/huge?r=s3-eu-central-1
 Varrlyn`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bdab95478e08943d10c026a/huge?r=s3-eu-central-1
+KimohaTechnologies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c8a925cc9e77c0007aebc5d/huge?r=s3-eu-central-1
+Insightsoftware`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f2d980cfa36a66c1ac6a1e7/huge?r=s3-eu-central-1
+Nets`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/605e1560c886c05bfbb3884a/huge?r=s3-eu-central-1

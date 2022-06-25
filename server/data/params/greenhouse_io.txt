@@ -497,7 +497,6 @@ phmg
 christiancareministry
 fidelityguarantylife
 modulrfinance
-fossa
 parsebiosciences
 postings
 retorio
@@ -1014,3 +1013,4 @@ betterworks
 decodable
 tubitv
 oddball
+fingerprint
