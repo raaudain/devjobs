@@ -31,7 +31,7 @@ from . import jazzhr
 from . import breezyhr
 from . import target
 from . import twitter
-from . import tiktok
+# from . import tiktok
 from . import vuejobs
 from . import jobvite
 from . import recruiterbox
@@ -85,7 +85,7 @@ def main():
     diversifytech.main()
     wrk.main()
     indeed.main()
-    tiktok.main()
+    # tiktok.main()
     recruitee.main()
     target.main()
     nbc.main()
