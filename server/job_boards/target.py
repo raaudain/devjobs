@@ -13,6 +13,7 @@ from .modules.classes import Filter_Jobs
 driver = driver.chrome
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
+options.add_argument("--remote-debugging-port=9222")
 browser = webdriver.Chrome(executable_path=driver, options=options)
 
 
