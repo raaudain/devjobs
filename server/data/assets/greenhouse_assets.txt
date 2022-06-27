@@ -1000,3 +1000,5 @@ thymecare`Thyme Care`None
 melio`Melio`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/440/400/resized/melio-short-logo.png
 betterworks`Betterworks`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/580/resized/BW_Logo_Black.png
 tubitv`Tubi`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/009/132/resized/810h1ApSqGL.png
+oddball`Oddball`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/089/600/resized/og_logo_green.png
+fingerprint`Fingerprint`None

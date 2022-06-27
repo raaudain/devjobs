@@ -200,7 +200,6 @@ protekto
 europeanliberalforum
 intouch
 krinnerjobs
-relimetrics
 mbw
 greensuperfood
 triplejump
@@ -255,7 +254,6 @@ zooplusitalia
 inovo1
 qlfbrands
 gcbiotech
-ecoag3
 zooplusnetherlands
 jamwerkt
 dckgroup

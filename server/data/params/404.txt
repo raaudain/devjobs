@@ -348,3 +348,6 @@ fingerprintjs
 poppy
 pgmedia
 fossa
+relimetrics
+ecoag3
+sequoia
