@@ -943,7 +943,6 @@ thedailybeast31
 newsrevenuehub
 rainberry
 voxmedia
-textiq
 pipetechnologies
 smule
 loftvagas
