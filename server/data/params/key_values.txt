@@ -1,3 +1,4 @@
+/ladder
 /course-hero
 /snap
 /plus
