@@ -37,7 +37,7 @@ from . import jobvite
 from . import recruiterbox
 from . import nbc
 from . import fullstackjob
-from . import wrk
+from . import polymer
 from . import indeed
 from . import diversifytech
 from . import bootup
@@ -83,7 +83,7 @@ def main():
     usajobs.main()
     workable.get_url(work[::5])
     diversifytech.main()
-    wrk.main()
+    polymer.main()
     indeed.main()
     # tiktok.main()
     recruitee.main()

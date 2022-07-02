@@ -11,12 +11,12 @@ from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companie
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/wrk.txt"
+FILE_PATH = "./data/params/polymer.txt"
 
 
 def get_results(item: str, param: str):
-    wrk = "./data/assets/wrk_assets.txt"
-    source_url = f"https://jobs.wrk.xyz/{param}"
+    wrk = "./data/assets/polymer_assets.txt"
+    source_url = f"https://jobs.polymer.co/{param}"
     logo = None
     table = Get_Stored_Data(wrk)
     if param in table:
@@ -60,7 +60,7 @@ def get_url(companies: list):
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://jobs.wrk.xyz/api/v1/public/organizations/{company}/jobs/"
+            url = f"https://jobs.polymer.co/api/v1/public/organizations/{company}/jobs/"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)
@@ -73,9 +73,9 @@ def get_url(companies: list):
             elif response.status_code == 404:
                 Remove_Not_Found(FILE_PATH, company)
             else:
-                print(f"=> wrk: Status code {response.status_code} for {company}")
+                print(f"=> polymer: Status code {response.status_code} for {company}")
         except Exception as e:
-            print(f"=> wrk: Error for {company}. {e}")
+            print(f"=> polymer: Error for {company}. {e}")
 
 
 def main():
