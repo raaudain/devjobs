@@ -619,7 +619,6 @@ integrichain
 r4d
 elenas
 apartmentlife
-sequoia
 Insitro
 BAMTradingServices
 kwx

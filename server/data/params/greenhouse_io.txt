@@ -149,7 +149,6 @@ nurx
 okta
 ordergroove
 pantheon
-patientpop
 patreon
 paybyphone
 peloton
@@ -943,7 +942,6 @@ thedailybeast31
 newsrevenuehub
 rainberry
 voxmedia
-textiq
 pipetechnologies
 smule
 loftvagas
