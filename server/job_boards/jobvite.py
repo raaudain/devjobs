@@ -49,7 +49,7 @@ def get_url(companies: list):
     count = 1
     for name in companies:
         headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://jobs.jobvite.com/careers/{name}"
+        url = f"https://jobs.jobvite.com/{name}/search"
         try:
             response = requests.get(url, headers=headers)
             if response.ok:
