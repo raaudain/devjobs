@@ -1002,3 +1002,101 @@ betterworks`Betterworks`https://recruiting.cdn.greenhouse.io/external_greenhouse
 tubitv`Tubi`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/009/132/resized/810h1ApSqGL.png
 oddball`Oddball`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/089/600/resized/og_logo_green.png
 fingerprint`Fingerprint`None
+veranoholdings`Verano`None
+theravancebiopharma`Theravance Biopharma`None
+aura798`Aura Sub, LLC`None
+billgo`BillGO`None
+hengrui`Luzsana Biotechnology`None
+illuvium`Illuvium`None
+singulargenomics`Singular Genomics`None
+dominodatalab`Domino Data Lab`None
+crookedmedia`Crooked Media`None
+aviatrix`Aviatrix`None
+miqdigital`MiQ Digital`None
+originfinancial`Origin`None
+autoleap`AutoLeap`None
+zestypaws`Zesty Paws`None
+nugget`Nugget`None
+johnkenyoneyecenter`John Kenyon Eye Center`None
+origin`Origin`None
+barrysbootcamp`Barry's`None
+touchbistro`TouchBistro`None
+dustyrobotics`Dusty Robotics`None
+gigwage`Gig Wage`None
+ihiterrasun`IHI Terrasun Solutions Inc.`None
+bluestatedigital`Blue State`None
+halodotscience`Halo`None
+phantom45`Phantom`None
+flaschenpostag`​flaschenpost SE`None
+taittowers`TAIT Towers`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/365/500/resized/TAIT_Logo_Dark__RGB__-_BR2021.png
+givelify`Givelify`None
+stonecomercial`Stone - Comercial`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/463/300/resized/Logo_Stone_Co_2.png
+cobblestoneenergy2`Cobblestone`None
+levio`Levio - Site internet`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/164/800/resized/content.png
+ibkr`Interactive Brokers`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/540/500/resized/ib-logo-stacked.png
+birdview`BIRDVIEW`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/560/400/resized/1._버드뷰로고.png
+sumologic`Sumo Logic`None
+diligentcorporation`Diligent Corporation`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/674/100/resized/Diligent_Logo_2021_RGB_(1).png
+nomadhealth`Nomad Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/829/600/resized/nomad_icon_green_small.png
+junglescout`Jungle Scout`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/456/700/resized/js-logo-transparent.png
+point72`Point72`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/949/600/resized/Logo.png
+unispace`Unispace`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/532/500/resized/UNISPACE-LOGO-LIME-AQUA-BLUE-RGB.jpg
+manygroup`ManyPets`None
+seamoney`SeaMoney`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/918/500/resized/sea_money_logo_h.png
+thealleninstitute`The Allen Institute for AI`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/005/581/resized/Greenhouse-AI2-JobBoard-Logo.png
+datasocietyresearchinstitute`Data & Society Research Institute`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/459/200/resized/Data___Society_logo_(black).jpg
+cyluscybersecurity`Cylus Cybersecurity`None
+deepsource`DeepSource`None
+terramera`Terramera`None
+xosinc`Xos, Inc.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/765/400/resized/XOS_wm_black_rev_WEB.png
+northport`The Gallery at North Port - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/914/800/resized/The_Gallery_NP_2020_Vertical_CMYK.png
+cyware`Cyware`None
+eden18`Eden Workplace`None
+rev`Rev.com`None
+survata`Upwave`None
+freeassociation`Free Association`None
+aalphabio`A-Alpha Bio`None
+lexmarkets`LEX Markets`None
+understood`Understood`None
+veracode`Veracode`None
+ospreyfunds`Osprey Funds`None
+greenlightbiosciences`Greenlight Biosciences`None
+flarehr`Flare`None
+shopmonkey`Shopmonkey`None
+vestiairecollective`Vestiaire Collective`None
+remotetcx`Tucows Inc.`None
+replicated`Replicated, Inc.`None
+gv`GV`/img/icons/gv-black.png
+galileo`Galileo`None
+autopilot`Ortto`None
+opensesame`OpenSesame`None
+Kettle`Kettle`None
+agilityrobotics`Agility Robotics`None
+loveseat`Loveseat`None
+mako`Mako`None
+aitherapeutics1`AI Therapeutics`None
+aloft`Aloft Appraisal`None
+krafton`KRAFTON`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/963/700/resized/KRAFTON_Black.png
+archer56`Archer`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/250/100/resized/Archer_Symbol_RGB_Red.png
+sunnyside`Sunnyside*`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/875/200/resized/ezgif.com-gif-maker.png
+wonderjobs`Wonder Careers`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/586/000/resized/Logo_08312021.png
+carta`Carta`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/110/100/resized/Frame_1.png
+cruise`Cruise`None
+lush`Lush Handmade Cosmetics`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/580/resized/lush-logo.jpg
+bloomreach`Bloomreach`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/392/resized/bloomreach.png
+taxbit`TaxBit`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/200/500/resized/TaxBit_Inverse_Transparent_Medium.png
+glovo`Glovo`None
+silananotechnologies`Sila Nanotechnologies`None
+berlinrosen`BerlinRosen`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/703/100/resized/BR_social_icon_400x400px.png
+komodohealth`Komodo Health`None
+cytokinetics`Cytokinetics`None
+tbwachiatday`TBWA\Chiat\Day`None
+schrdinger`Schrödinger`None
+forage`Forage`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/369/800/resized/Forage_Logo_Icon_Horiz_Green_RGB_(1).png
+groundtruth`GroundTruth`None
+bucknerinternational`Buckner`None
+highmetric`NewRocket`None
+chanzuckerberginitiative`Chan Zuckerberg Initiative`None
+ccah`Central California Alliance for Health`None
+teampicnic`Picnic`None
+oaks`The Oaks at Flower Mound - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/439/200/resized/The-Oaks-Logo-Normal.png

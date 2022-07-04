@@ -1026,7 +1026,6 @@ illuvium
 freeassociation
 singulargenomics
 aalphabio
-fossa
 lexmarkets
 dominodatalab
 understood
@@ -1109,7 +1108,6 @@ forage
 datasocietyresearchinstitute
 groundtruth
 wistia
-braintree
 cyluscybersecurity
 bucknerinternational
 deepsource
