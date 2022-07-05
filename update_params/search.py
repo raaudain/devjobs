@@ -14,76 +14,14 @@ Return : Generator (iterator) that yields found URLs. If the stop parameter is N
 from googlesearch import search
 import time
 import sys
+from .data import ats
 
 
 def main():
-    ats = [
-        {
-            "ats": "./temp/lever_temp.txt",
-            "uri": "https://jobs.lever.co/"
-        },
-        {
-            "ats": "./temp/greenhouse_temp.txt",
-            "uri": "https://boards.greenhouse.io/"
-        },
-        {
-            "ats": "./temp/polymer_temp.txt",
-            "uri": "https://jobs.polymer.co/"
-        },
-        {
-            "ats": "./temp/jobvite_temp.txt",
-            "uri": "https://jobs.jobvite.com/"
-        },
-        {
-            "ats": "./temp/ashbyhq_temp.txt",
-            "uri": "https://jobs.ashbyhq.com/"
-        },
-        {
-            "ats": "./temp/workable_temp.txt",
-            "uri": "https://apply.workable.com/"
-        },
-        {
-            "ats": "./temp/smartrecruiters_temp.txt",
-            "uri": "https://careers.smartrecruiters.com/"
-        },
-        {
-            "ats": "./temp/jazzhr_temp.txt",
-            "uri": ".applytojob.com/"
-        },
-        {
-            "ats": "./temp/breezyhr_temp.txt",
-            "uri": ".breezy.hr/"
-        },
-        {
-            "ats": "./temp/recruiterbox_temp.txt",
-            "uri": ".recruiterbox.com/jobs"
-        },
-        {
-            "ats": "./temp/bamboohr_temp.txt",
-            "uri": ".bamboohr.com/jobs"
-        },
-        {
-            "ats": "./temp/comeet_temp.txt",
-            "uri": "https://www.comeet.com/jobs/"
-        },
-        {
-            "ats": "./temp/eightfold_temp.txt",
-            "uri": ".eightfold.ai/careers/"
-        },
-        {
-            "ats": "./temp/clearcompany_temp.txt",
-            "uri": ".hrmdirect.com/"
-        },
-        {
-            "ats": "./temp/recruitee_temp.txt",
-            "uri": ".recruitee.com/"
-        },
-    ]
-
     # to search
     for i in ats:
-        query = f"site:{i['uri']}"
-        file = i["ats"]
+        query = f"site:{i['host']}"
+        file = i["file"]
         query_google(query, file)
 
 def query_google(query, file):
