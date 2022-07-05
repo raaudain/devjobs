@@ -301,7 +301,6 @@ icftechhungary
 abfgroup
 recharge
 hrspecialist
-status
 ciao
 flynthadviseursenaccountants
 binkies
@@ -328,7 +327,6 @@ pivotandedge
 ghocommunicatie
 secondspectrum
 janegoodall
-ebg
 veloretti
 birdsai
 goldenvoiceacademy
@@ -339,13 +337,11 @@ skinfaculty
 evodeck
 halodirobotics
 adeleexpressfr
-protekto
 omroepbrabant
 lunaralife
 wmfs
 innovationseven
 ludewigmarketing
-themarketingpractice
 crateio
 benfatto
 dbpartner

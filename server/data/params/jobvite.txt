@@ -444,7 +444,6 @@ siriuspoint
 pingidentitycareers
 backcountry
 healthmapsolutions
-novaparks
 imperva
 castlighthealth
 justicedigitalandtechnology

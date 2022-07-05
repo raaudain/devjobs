@@ -1124,14 +1124,12 @@ datadome
 riskified
 tesseradata
 carrotinc
-fossa
 tines
 centerforemploymentopportunities
 manhattanbeerdistributors
 fulcrumtherapeutics
 conviva
 adahealth
-jobs2careers
 candid
 ocadotechnologyindeed
 vgw
@@ -1141,5 +1139,4 @@ crescolabs
 schweigerdermatologygroup
 1021creative
 calendly
-braintree
 cometeer
