@@ -35,7 +35,7 @@ def main():
             "uri": "https://jobs.jobvite.com/"
         },
         {
-            "ats": "./temp/ashybyhq_temp.txt",
+            "ats": "./temp/ashbyhq_temp.txt",
             "uri": "https://jobs.ashbyhq.com/"
         },
         {
@@ -53,10 +53,6 @@ def main():
         {
             "ats": "./temp/breezyhr_temp.txt",
             "uri": ".breezy.hr/"
-        },
-        {
-            "ats": "./temp/jobvite_temp.txt",
-            "uri": "https://jobs.jobvite.com/"
         },
         {
             "ats": "./temp/recruiterbox_temp.txt",
@@ -94,11 +90,10 @@ def query_google(query, file):
     count = 0
     results = 0
     while True:
-        for q in search(query, num=100, start=count, stop=None, pause=120):
+        for q in search(query, tld="com", num=100, start=count, stop=None, pause=120, verify_ssl=True):
             with open(file, "a") as a:
                 a.write(f"{q}/\n")
             results += 1
-        print("results:", results)
         count += 100
         time.sleep(0.05)
         if results < count:
