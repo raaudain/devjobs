@@ -894,3 +894,9 @@ DiversifiedRadiology`Diversified Radiology`https://lever-client-logos.s3.us-west
 zopa`Zopa`https://lever-client-logos.s3.amazonaws.com/ec6fb4ca-5fe2-4bb1-8211-6931208964a7-1506435974613.png
 appzen`AppZen, Inc. `https://lever-client-logos.s3.amazonaws.com/fd28568e-5316-4162-8550-f577931e7fdf-1558393946783.png
 assurance`Assurance Careers`https://lever-client-logos.s3.amazonaws.com/c3d163ba-5bea-4a74-8625-69495496077f-1542168046345.png
+kochava`Kochava`https://lever-client-logos.s3.amazonaws.com/b11211d3-0952-46ca-8e91-c4ea8df2dbfc-1559947164506.png
+pricemoov`Pricemoov`https://lever-client-logos.s3.us-west-2.amazonaws.com/f8a7ff73-fff8-49a5-98ec-8e96ce96710f-1653407317257.png
+eh2`Electric Hydrogen`https://lever-client-logos.s3.us-west-2.amazonaws.com/de93925e-8c5e-420a-a6a7-69e4bacf5102-1617982373725.png
+culturekings`Culture Kings`https://lever-client-logos.s3.us-west-2.amazonaws.com/d15ec5ad-e814-49ba-b6c6-0c65a72c389c-1631075121000.png
+pigment`Pigment`https://lever-client-logos.s3.us-west-2.amazonaws.com/a69afe4f-45fa-458f-86b4-1970654756af-1631176040938.png
+relayr`relayr`https://lever-client-logos.s3.us-west-2.amazonaws.com/0a2bb360-03d5-49c5-81a6-c12e511dc7c2-1606765840880.png

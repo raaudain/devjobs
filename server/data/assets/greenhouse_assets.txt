@@ -1100,3 +1100,21 @@ chanzuckerberginitiative`Chan Zuckerberg Initiative`None
 ccah`Central California Alliance for Health`None
 teampicnic`Picnic`None
 oaks`The Oaks at Flower Mound - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/439/200/resized/The-Oaks-Logo-Normal.png
+tesseradata`Tessera Data - Join Our Team`None
+centerforemploymentopportunities`Center for Employment Opportunities`None
+fulcrumtherapeutics`Fulcrum Therapeutics`None
+adahealth`Ada Health GmbH`None
+candid`Candid™`None
+vgw`VGW`None
+jdpower`J.D. Power`None
+schweigerdermatologygroup`Schweiger Dermatology Group`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/273/000/resized/schweiger_logo_1.png
+calendly`Calendly`None
+cometeer`Cometeer`None
+riskified`Riskified`None
+carrotinc`Pivot`None
+tines`Tines`None
+manhattanbeerdistributors`Manhattan Beer Distributors`None
+ocadotechnologyindeed`Ocado Technology`None
+padnos`PADNOS`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/131/300/resized/PADNOS_Logo_Social_Media_Specs_1200x628.jpg
+crescolabs`Cresco Labs`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/586/900/resized/CLLogo_1200x627.jpg
+1021creative`1021 Creative`None

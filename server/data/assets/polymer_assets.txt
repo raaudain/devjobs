@@ -122,3 +122,5 @@ esanjo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/obxr8k9bfjji16mi
 futrli`n/a`https://inflow-public.s3.amazonaws.com/company-logos/5oeu4ym4g245u72r6gdb38zkr8v6.jpeg
 fizz`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hmqgxtyko710c3wtqqlt7nihlmxi.png
 aperturelabs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/RTMzH6wJiMjuKi4nVBXD9unb.jpeg
+runloop`n/a`https://inflow-public.s3.amazonaws.com/company-logos/f86x5l24vu8sfrfdztt53qhlu6yi.png
+proto`n/a`https://inflow-public.s3.amazonaws.com/company-logos/710uuk9thuhy1tcymbxmijq60q3h.jpeg
