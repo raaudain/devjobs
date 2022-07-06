@@ -21,19 +21,12 @@ class Remove_Not_Found:
         self.param = param
         file_path = self.file_path
         param = self.param
-        f = open(file_path, "r+")
-        params = [param.strip() for param in f]
-        f.truncate(0)
-        f.close()
-        file = open(file_path, "w")
-        not_found = open("./data/params/404.txt", "a")
-        for p in params:
-            if p != param:
-                file.write(p+"\n")
-            else:
-                not_found.write(p+"\n")
-        file.close()
-        not_found.close()
+        with open(file_path, "r+") as f, open(file_path, "w") as file:
+            params = [param.strip() for param in f]
+            f.truncate(0)
+            for p in params:
+                if p != param:
+                    file.write(p+"\n")
 
 
 class Get_Stored_Data:
