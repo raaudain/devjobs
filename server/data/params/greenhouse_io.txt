@@ -45,7 +45,6 @@ fueled
 idme
 cobaltio
 alma
-indigo
 mapbox
 classpass
 github
@@ -736,7 +735,6 @@ ragbone
 tiltingpoint
 tekion
 coindesk
-groupninemedia
 enterpret
 onapsis
 nationalresearchgroup

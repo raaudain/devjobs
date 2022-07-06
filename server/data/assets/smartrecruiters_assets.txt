@@ -477,3 +477,5 @@ EMCOCorporation`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6
 StratasFoods`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c7eaed5cff47e00064b94d6/150px?r=s3-eu-central-1
 ChubbFireSecurity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/617a3e325916b84ad8aa2577/150px?r=s3-eu-central-1
 pubmatic`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57a0c896e4b021a1a31b3c84/150px
+FinaktivaSAS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e17901098b2235a48e1651c/huge?r=s3-eu-central-1
+Kioxia`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d782d67750d405b014ad0d6/huge?r=s3-eu-central-1
