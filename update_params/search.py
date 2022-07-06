@@ -28,14 +28,14 @@ def query_google(query, file):
     count = 0
     results = 0
     while True:
-        for q in search(query, tld="com", num=100, start=count, stop=None, pause=120, verify_ssl=True):
+        if results < count:
+            break
+        for q in search(query, tld="com", num=100, start=count, stop=None, pause=90):
             with open(file, "a") as a:
                 a.write(f"{q}/\n")
             results += 1
         count += 100
         time.sleep(0.05)
-        if results < count:
-            break
 
 if __name__ == "__main__":
     main()
