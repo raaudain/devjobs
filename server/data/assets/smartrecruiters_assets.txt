@@ -479,3 +479,5 @@ ChubbFireSecurity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/617
 pubmatic`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57a0c896e4b021a1a31b3c84/150px
 FinaktivaSAS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e17901098b2235a48e1651c/huge?r=s3-eu-central-1
 Kioxia`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d782d67750d405b014ad0d6/huge?r=s3-eu-central-1
+kamernet`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5be161d917d6d85aeba84cce/huge?r=s3-eu-central-1
+Colliers1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58be167be4b046edcb794e70/huge?r=s3
