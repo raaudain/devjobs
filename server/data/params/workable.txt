@@ -73,7 +73,6 @@ overactive-media-group
 7pace
 intellatriage
 freelancer
-switcher-studio
 yet-analytics-inc
 klang-games
 plaisio-careers
