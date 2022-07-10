@@ -1150,7 +1150,6 @@ menlosecurity
 reef
 pilothq
 aptos
-bionicsolution
 assuredguaranty
 eleanorhealth
 thefork
@@ -1164,7 +1163,6 @@ missionassetfund
 2uedx
 freshprints
 enervee
-braintree
 lilium
 golinks
 valsoft

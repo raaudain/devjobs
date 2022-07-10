@@ -1118,3 +1118,31 @@ ocadotechnologyindeed`Ocado Technology`None
 padnos`PADNOS`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/131/300/resized/PADNOS_Logo_Social_Media_Specs_1200x628.jpg
 crescolabs`Cresco Labs`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/586/900/resized/CLLogo_1200x627.jpg
 1021creative`1021 Creative`None
+technologyadvice`TechnologyAdvice`None
+bharatx`BharatX Inc.`None
+lively43`Lively`None
+cloudmasonry`CloudMasonry`None
+menlosecurity`Menlo Security`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/314/300/resized/Logo_MenloSecurity_Signature_Purple_RGB.png
+pilothq`Pilot.com`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/383/400/resized/Greenhouse.png
+eleanorhealth`Eleanor Health`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/826/500/resized/EH-logotype-BLUE-GH.png
+coachhub`CoachHub`None
+drivewealth`DriveWealth`None
+wesang`YOGIYO`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/527/300/resized/quoe1f_bty8-1mq96l6_logo.jpg
+missionassetfund`Mission Asset Fund`None
+freshprints`Fresh Prints`None
+golinks`GoLinks`None
+incrediblehealth`Incredible Health`None
+doctolib`Doctolib`None
+absci`Absci`None
+phoenixcontact`Phoenix Contact`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/005/700/resized/PxC_black_no_tag_line_200x105_300_(002).jpg
+reef`REEF`None
+aptos`Aptos`None
+assuredguaranty`Assured Guaranty`None
+thefork`The Fork`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/369/resized/Logo-TheFork-horizontal-transparent-background.png
+endurance`Constant Contact`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/610/resized/CTCT_Logo_H_Stack_FC_RGB.png
+joor`JOOR`None
+abnormalsecurity`Abnormal Security`None
+2uedx`2U edX`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/985/300/resized/logo_-_2UedX.jpg
+enervee`Enervee`None
+lilium`Lilium`files/theme-lilium/images/logo/lilium_logo.svg
+valsoft`Valsoft`None
