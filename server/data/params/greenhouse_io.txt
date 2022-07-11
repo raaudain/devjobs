@@ -807,7 +807,6 @@ vixxo
 zenjob
 criticalideas
 galaxydigitalservices
-ocadotechnology
 internaljobsatlush
 agero
 g2crowd
@@ -1129,7 +1128,6 @@ fulcrumtherapeutics
 conviva
 adahealth
 candid
-ocadotechnologyindeed
 vgw
 padnos
 jdpower
