@@ -2,7 +2,6 @@ intersystems
 wrapbook
 10xgenomics
 postscript
-sugar
 bensonhillinc
 betterment
 craftco
@@ -620,7 +619,6 @@ hyundaiuam
 venturatravel
 bluegranite
 nextroll
-adswizz
 guideline
 focalsystems
 supplementalhealthcare
@@ -1047,7 +1045,6 @@ gv
 mediamath
 galileo
 barrysbootcamp
-autopilot
 touchbistro
 opensesame
 dustyrobotics

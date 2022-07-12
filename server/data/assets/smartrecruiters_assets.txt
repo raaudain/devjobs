@@ -505,3 +505,4 @@ Leidos1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5987acace4b0351b6
 ALTEXSA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/626bf6ed0ce364607968740d/43b92d80-2ef0-422d-a96b-3c334aa0a13e?r=s3-eu-central-1
 visa`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57a11f9de4b09d766b5b5dd6/150px
 WAES`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bbb20a8e4b06c520e209118/150px?r=s3-eu-central-1
+Cora`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61c1b04aa340d37c2437bb0a/huge?r=s3-eu-central-1

@@ -675,3 +675,7 @@ solaredge
 vimcar
 ocadotechnology
 ocadotechnologyindeed
+sugar
+adswizz
+autopilot
+electricgamebox
