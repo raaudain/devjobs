@@ -1146,3 +1146,8 @@ abnormalsecurity`Abnormal Security`None
 enervee`Enervee`None
 lilium`Lilium`files/theme-lilium/images/logo/lilium_logo.svg
 valsoft`Valsoft`None
+recruitics`Recruitics`None
+mediamath`MediaMath`None
+datadome`DataDome`None
+conviva`Conviva`None
+wistia`Wistia`None

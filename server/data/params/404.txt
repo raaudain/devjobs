@@ -679,3 +679,5 @@ sugar
 adswizz
 autopilot
 electricgamebox
+knowles
+gooddata

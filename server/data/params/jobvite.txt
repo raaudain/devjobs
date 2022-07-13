@@ -62,7 +62,6 @@ victaulic
 actionet
 pac-12-networks
 lazboysouthernontario
-knowles
 logitech
 baylismedical
 evergreenhealth
@@ -284,7 +283,6 @@ gtlaw
 pulsepoint
 360behavioralhealth
 valorcollegiate
-gooddata
 sitecore
 hawaiistevedores
 umlaut

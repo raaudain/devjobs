@@ -506,3 +506,5 @@ ALTEXSA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/626bf6ed0
 visa`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57a11f9de4b09d766b5b5dd6/150px
 WAES`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bbb20a8e4b06c520e209118/150px?r=s3-eu-central-1
 Cora`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61c1b04aa340d37c2437bb0a/huge?r=s3-eu-central-1
+AreteTechnologiesInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/592f0c84e4b09686838a351c/huge?r=s3
+AUTODOC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ee327876a71520a08811a5c/huge?r=s3-eu-central-1
