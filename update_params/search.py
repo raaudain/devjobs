@@ -14,7 +14,7 @@ Return : Generator (iterator) that yields found URLs. If the stop parameter is N
 from googlesearch import search
 import time
 import sys
-from .data import ats
+from data import ats
 
 
 def main():

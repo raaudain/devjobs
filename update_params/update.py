@@ -1,6 +1,6 @@
 import sys
 import re
-from .data import ats
+from data import ats
 
 
 added = set()
