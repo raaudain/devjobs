@@ -1,4 +1,5 @@
 import json
+import re
 import requests
 import random
 from os.path import isfile
@@ -51,12 +52,18 @@ class Filter_Jobs:
     def __init__(self, posting: dict):
         self.posting = posting
         posting = self.posting
+
         data = Create_JSON.data
         scraped = Create_JSON.scraped
         title = posting["title"]
         company = posting["company"]
         url = posting["url"]
-        if ("Engineer" in title or "Data" in title or "IT " in title or "Tech " in title or "QA" in title or "Programmer" in title or "Developer" in title or "ML" in title or "SDET" in title or "devops" in title.lower() or "AWS" in title or "Cloud" in title or "Software" in title or "Help" in title or "Web " in title or "Front End" in title or "Agile" in title and "Cyber" in title) and ("Elect" not in title and "HVAC" not in title and "Mechanical" not in title and "Manufactur" not in title and "Data Entry" not in title and "Nurse" not in title and "Maintenance" not in title and "Civil" not in title and "Environmental" not in title and "Hardware" not in title and "Front Desk" not in title and "Helper" not in title and "Peer Support" not in title and "Bridge" not in title and "Water" not in title and "Dispatch" not in title and "Saw" not in title and "Facilities" not in title and "AML" not in title and "Sheet Metal" not in title and "Metallurgical" not in title and "Materials" not in title and "Expeditor" not in title and "Job Developer" not in title):
+        wanted = ["Engineer", "Data", "IT ",  "Tech ", "QA", "Programmer", "Developer", "ML", "SDET", "DevOps", "AWS", "Cloud", "Software", "Help", "Web ", "Front End", "Agile", "Cyber"]
+        wanted = "(%s)" % "|".join(wanted)
+        unwanted = ["Elect", "HVAC", "Mechanical", "Manufactur", "Data Entry", "Nurse", "Maintenance", "Civil", "Environmental", "Hardware", "Front Desk", "Helper", "Peer Support", "Bridge", "Water", "Dispatch", "Saw", "Facilities", "AML", "Sheet Metal", "Metallurgical", "Materials", "Expeditor", "Job Developer"]
+        unwanted = "(%s)" % "|".join(unwanted)
+
+        if re.search(wanted, title) is not None and re.search(unwanted, title) is None:
             data.append(posting)
             scraped.add(company)
             scraped.add(url)
