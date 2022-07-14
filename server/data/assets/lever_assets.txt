@@ -900,3 +900,24 @@ eh2`Electric Hydrogen`https://lever-client-logos.s3.us-west-2.amazonaws.com/de93
 culturekings`Culture Kings`https://lever-client-logos.s3.us-west-2.amazonaws.com/d15ec5ad-e814-49ba-b6c6-0c65a72c389c-1631075121000.png
 pigment`Pigment`https://lever-client-logos.s3.us-west-2.amazonaws.com/a69afe4f-45fa-458f-86b4-1970654756af-1631176040938.png
 relayr`relayr`https://lever-client-logos.s3.us-west-2.amazonaws.com/0a2bb360-03d5-49c5-81a6-c12e511dc7c2-1606765840880.png
+gess`GESS`https://lever-client-logos.s3.us-west-2.amazonaws.com/deadea13-ac99-4fb3-9d7a-9199748db5b6-1600910741727.png
+treinta`Treinta Inc`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca6f9433-16ef-459d-8b0d-2f6710aa1e3d-1648927704012.png
+gsr`GSR`https://lever-client-logos.s3.us-west-2.amazonaws.com/86ec0535-dfa1-4e3d-92dc-af930188fde5-1639669731136.png
+hcvt`HCVT`https://lever-client-logos.s3.amazonaws.com/18a5cb04-efca-4168-abe6-3313497fc2db-1503351252222.png
+ppmd`Planned Parenthood of Maryland`https://lever-client-logos.s3.amazonaws.com/99da0e02-f384-4a1a-82a5-5f28199f64ba-1507742527717.png
+fireflyon`Firefly`https://lever-client-logos.s3.amazonaws.com/d88e3de4-759e-4bc1-9bca-6371ab4f9b06-1545161732306.png
+lucidworks`Lucidworks`https://lever-client-logos.s3.us-west-2.amazonaws.com/5911ec05-a80c-46e6-90c8-7495e11f4e24-1632759373923.png
+waveapps`Wave HQ`https://lever-client-logos.s3.amazonaws.com/4ee8487d-8065-4261-8789-95bcc6667505-1567779820021.png
+Hakkoda`Hakkoda`https://lever-client-logos.s3.us-west-2.amazonaws.com/4b51c24d-27ad-4337-81ea-225b773b846d-1652733641683.png
+3dhubs`Hubs`https://lever-client-logos.s3.us-west-2.amazonaws.com/3ec5a773-a59b-4fb7-b0eb-003bbef63be6-1622122094301.png
+zeta`Zeta`https://lever-client-logos.s3.amazonaws.com/1ae7615f-b504-43a9-8f3f-6311590fb6fa-1463999313297.png
+arcadia`Arcadia`https://lever-client-logos.s3.us-west-2.amazonaws.com/e53f3b8c-e6c3-45d7-b674-724171318983-1647014553152.png
+yellowai`Yellow.ai`https://lever-client-logos.s3.us-west-2.amazonaws.com/e0120b41-16c1-4bce-9d24-a84dcdc1d67e-1627991436471.png
+zeotap`Zeotap`https://lever-client-logos.s3.amazonaws.com/47858945-2e60-4ba2-9f5d-a15774e7786e-1510652718065.png
+Tive`Tive`https://lever-client-logos.s3.us-west-2.amazonaws.com/f3bd1ace-a2ab-44fe-9ab1-6647165b02e1-1603853474699.png
+honkforhelp`HONK Technologies`https://lever-client-logos.s3-us-west-2.amazonaws.com/5de03972-72d0-41f5-99c1-ca274352b9ce-1598305920820.png
+includedhealth`Included Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/43955daf-8d09-4b66-9f32-76fb4001a83d-1634848778920.png
+biorender`BioRender`https://lever-client-logos.s3-us-west-2.amazonaws.com/0f4b434e-502f-4390-9819-c058d43028c1-1595260531860.png
+sendinblue`Sendinblue`https://lever-client-logos.s3-us-west-2.amazonaws.com/a26491ef-b6d2-4496-bf1c-69c0577df66c-1593096379899.png
+formenergy`Form Energy`https://lever-client-logos.s3.us-west-2.amazonaws.com/11164022-c297-44b0-97f3-485d88599a5b-1619542281487.png
+belvederetrading`Belvedere Trading`https://lever-client-logos.s3.us-west-2.amazonaws.com/c54d2bdf-9992-463d-b50b-a3613bbb828b-1612216612803.png

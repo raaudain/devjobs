@@ -2,7 +2,6 @@ intersystems
 wrapbook
 10xgenomics
 postscript
-sugar
 bensonhillinc
 betterment
 craftco
@@ -45,7 +44,6 @@ fueled
 idme
 cobaltio
 alma
-indigo
 mapbox
 classpass
 github
@@ -621,7 +619,6 @@ hyundaiuam
 venturatravel
 bluegranite
 nextroll
-adswizz
 guideline
 focalsystems
 supplementalhealthcare
@@ -736,7 +733,6 @@ ragbone
 tiltingpoint
 tekion
 coindesk
-groupninemedia
 enterpret
 onapsis
 nationalresearchgroup
@@ -809,7 +805,6 @@ vixxo
 zenjob
 criticalideas
 galaxydigitalservices
-ocadotechnology
 internaljobsatlush
 agero
 g2crowd
@@ -1050,7 +1045,6 @@ gv
 mediamath
 galileo
 barrysbootcamp
-autopilot
 touchbistro
 opensesame
 dustyrobotics
@@ -1131,7 +1125,6 @@ fulcrumtherapeutics
 conviva
 adahealth
 candid
-ocadotechnologyindeed
 vgw
 padnos
 jdpower
@@ -1140,3 +1133,31 @@ schweigerdermatologygroup
 1021creative
 calendly
 cometeer
+technologyadvice
+incrediblehealth
+bharatx
+doctolib
+lively43
+absci
+cloudmasonry
+phoenixcontact
+menlosecurity
+reef
+pilothq
+aptos
+assuredguaranty
+eleanorhealth
+thefork
+coachhub
+endurance
+drivewealth
+joor
+wesang
+abnormalsecurity
+missionassetfund
+2uedx
+freshprints
+enervee
+lilium
+golinks
+valsoft
