@@ -187,7 +187,6 @@ trialspark
 triplelift
 twitch
 unqork
-unsupervisedai
 upstart
 vidyard
 vimeo
@@ -518,7 +517,6 @@ axiom
 synack
 ambys
 samlabs
-carmera
 winreality
 smileidentity
 cosm

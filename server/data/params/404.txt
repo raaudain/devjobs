@@ -681,3 +681,5 @@ autopilot
 electricgamebox
 knowles
 gooddata
+carmera
+unsupervisedai
