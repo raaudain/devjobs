@@ -509,3 +509,13 @@ Cora`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61c1b04aa340d37c
 AreteTechnologiesInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/592f0c84e4b09686838a351c/huge?r=s3
 AUTODOC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ee327876a71520a08811a5c/huge?r=s3-eu-central-1
 PeopleCanFly`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b62c8f6e4b0be20c53e22b2/huge?r=s3-eu-central-1
+AlterSolutions`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/617ba3dc5916b84ad8aa28eb/huge?r=s3-eu-central-1
+DamstraTechnology`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6107377f2ed3db050166ebe7/huge?r=s3-eu-central-1
+McFadyenDigital`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/54a0bc92e4b09e381623fcd8/150px
+TIS1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f228d2b9581426cb9557034/592ab971-44f7-41e1-803d-a3e136e73604?r=s3-eu-central-1
+Ekie1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a38d8b2e4b03fe18520b1ca/150px?r=s3-eu-central-1
+Ludia`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/560af6d3e4b0b0c2587064e7/150px
+PAIDIEM`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61b2662f937b9d472b560e5a/630444d7-8c30-4cac-8836-c6cc7da61240?r=s3-eu-central-1
+ListPartners`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5a04e0b3e4b0e8406e54be3c/348dd277-fd3d-464a-934a-96e1e0a5efc3?r=s3-eu-central-1
+Deezer`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a57b43ee4b06f220be0b53b/150px?r=s3-eu-central-1
+StarbucksAU`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/614a7d4915eb9f73e7a4faec/150px?r=s3-eu-central-1

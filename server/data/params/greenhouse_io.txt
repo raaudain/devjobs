@@ -1161,7 +1161,6 @@ golinks
 valsoft
 nirrin
 seniorly
-jobs2careers
 HarnessWealth
 autopilot
 sonder
@@ -1176,5 +1175,4 @@ somethinelse
 myntraphoenix
 nextrollinc
 polychaincapital
-braintree
 caylent

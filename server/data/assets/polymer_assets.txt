@@ -127,3 +127,4 @@ proto`n/a`https://inflow-public.s3.amazonaws.com/company-logos/710uuk9thuhy1tcym
 oce`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6eFp6ETE5hsMYywy6yChPWt1.png
 caribe`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ap9fnoisr255og4rwibcizkqjdor.png
 vega`n/a`https://inflow-public.s3.amazonaws.com/company-logos/b41b25kni6kglrjl7ch8oy1453z8.png
+upkid`n/a`https://inflow-public.s3.amazonaws.com/company-logos/z474jlao0csj16tfbdpdbaxco05u.jpeg
