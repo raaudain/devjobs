@@ -519,3 +519,6 @@ PAIDIEM`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61b2662f9
 ListPartners`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5a04e0b3e4b0e8406e54be3c/348dd277-fd3d-464a-934a-96e1e0a5efc3?r=s3-eu-central-1
 Deezer`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a57b43ee4b06f220be0b53b/150px?r=s3-eu-central-1
 StarbucksAU`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/614a7d4915eb9f73e7a4faec/150px?r=s3-eu-central-1
+IPsoftInc1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d678e4b0b42dcb459757/huge?r=s3
+AtlanticHousingFoundation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61fc2c0889795757a744bd46/huge?r=s3-eu-central-1
+VAMS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/51fdeb72e4b052567df8b90e/huge?r=s3
