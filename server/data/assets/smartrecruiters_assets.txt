@@ -522,3 +522,6 @@ StarbucksAU`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/614a7d491
 IPsoftInc1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d678e4b0b42dcb459757/huge?r=s3
 AtlanticHousingFoundation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61fc2c0889795757a744bd46/huge?r=s3-eu-central-1
 VAMS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/51fdeb72e4b052567df8b90e/huge?r=s3
+NCBACLUSA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ae9d5ace4b07aa154653dfc/huge?r=s3-eu-central-1
+pirsonal`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a9fb87ce4b07d304e2efbc6/huge?r=s3-eu-central-1
+Savant1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fe3b48763abc74b2006538e/huge?r=s3-eu-central-1

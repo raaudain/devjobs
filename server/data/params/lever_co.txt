@@ -448,7 +448,6 @@ zoox
 wellframe
 desmos
 ntropy-network
-attentivemobile
 springboard
 morningbrew
 connectly
@@ -858,7 +857,6 @@ xero
 ppfa
 arrivelogistics
 kyruus
-pennongroup
 prestashop
 hottopic
 infinitus

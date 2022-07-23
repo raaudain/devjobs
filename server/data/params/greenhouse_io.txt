@@ -262,7 +262,6 @@ yeti
 lyft
 mbooth
 northone
-edx
 picnichealth
 robinhood
 takealotcom
@@ -534,7 +533,6 @@ id5
 eviationaircraft
 dataminr
 studio
-cobblestoneenergy
 scalesec
 paralleljobs
 capitalmanagement
