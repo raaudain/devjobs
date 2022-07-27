@@ -12,7 +12,7 @@ def get_results(item: str):
     for data in jobs:
         date = datetime.fromtimestamp(data["modified"] / 1e3)
         post_date = datetime.timestamp(
-            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+            datetime.strptime(str(date).rsplit(".")[0], "%Y-%m-%d %H:%M:%S"))
         apply_url = data["url"].strip()
         company_name = "Twitter"
         position = data["title"].strip()
