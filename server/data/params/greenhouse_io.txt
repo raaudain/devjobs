@@ -787,7 +787,6 @@ kivaorg
 betsson
 align
 cortica
-tusimplerelocationjobs
 trilogyed
 vaco
 torcrobotics
