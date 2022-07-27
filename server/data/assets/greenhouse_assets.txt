@@ -1151,3 +1151,18 @@ mediamath`MediaMath`None
 datadome`DataDome`None
 conviva`Conviva`None
 wistia`Wistia`None
+seniorly`Seniorly`None
+HarnessWealth`Harness Wealth`None
+sonder`Sonder`None
+girleffect`Girl Effect`None
+waymo`Waymo`None
+horizenlabs`Horizen Labs`None
+somethinelse`Somethin' Else`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/016/100/resized/SME_Logo.jpg
+nextrollinc`NextRoll Inc.`None
+nirrin`Nirrin`None
+dspconcepts`DSP Concepts`None
+mintel`Mintel`None
+foundrydigital`Foundry`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/116/100/resized/foundry8.png
+myntraphoenix`Phoenix`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/963/400/resized/Myntra_logo_vertical.png
+polychaincapital`Polychain Capital`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/292/resized/polychain_original_(2).png
+caylent`Caylent`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/541/600/resized/1.png

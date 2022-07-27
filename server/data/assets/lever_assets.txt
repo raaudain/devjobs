@@ -921,3 +921,23 @@ biorender`BioRender`https://lever-client-logos.s3-us-west-2.amazonaws.com/0f4b43
 sendinblue`Sendinblue`https://lever-client-logos.s3-us-west-2.amazonaws.com/a26491ef-b6d2-4496-bf1c-69c0577df66c-1593096379899.png
 formenergy`Form Energy`https://lever-client-logos.s3.us-west-2.amazonaws.com/11164022-c297-44b0-97f3-485d88599a5b-1619542281487.png
 belvederetrading`Belvedere Trading`https://lever-client-logos.s3.us-west-2.amazonaws.com/c54d2bdf-9992-463d-b50b-a3613bbb828b-1612216612803.png
+airwallex`Airwallex`https://lever-client-logos.s3.amazonaws.com/42d2a81d-42c0-4d33-a367-ea4bb6727b19-1551220687973.png
+aurorasolar`Aurora Solar`https://lever-client-logos.s3.us-west-2.amazonaws.com/4907be6d-c599-400d-83e5-d7b3fd3b5f51-1657205667253.png
+swile`Swile`https://lever-client-logos.s3.us-west-2.amazonaws.com/632ae80e-7155-4aa6-9619-8af43caacef1-1633424877192.png
+kodiak`Kodiak Robotics`https://lever-client-logos.s3-us-west-2.amazonaws.com/cc4abd75-722f-4b88-a1ac-886a106b05da-1586451686802.png
+innovafeed`InnovaFeed`https://lever-client-logos.s3.us-west-2.amazonaws.com/0cc24e06-fa41-445d-950f-6a644c316abf-1647871236908.png
+animocabrands`Animoca Brands Limited`https://lever-client-logos.s3.us-west-2.amazonaws.com/7974b789-e5e3-493b-a778-9daa33f16326-1652413016677.png
+connectassistance`Connect Assistance`https://lever-client-logos.s3.us-west-2.amazonaws.com/c87aad41-79c4-4adb-ac62-5f4246f5c70a-1634337206479.png
+nfq`NFQ`https://lever-client-logos.s3.amazonaws.com/393a1904-53ea-452a-b14c-a9ac3a95904d-1539160415707.png
+embark`Embark`https://lever-client-logos.s3.amazonaws.com/97e6fe91-0f70-47f2-a9c9-14382c65eee2-1495572383822.png
+cherrytechnologies`Cherry Technologies`https://lever-client-logos.s3.amazonaws.com/565bb1ac-e6bc-4876-a536-100bbd15fb6f-1580256937436.png
+wiz`Wiz, Inc. `https://lever-client-logos.s3.us-west-2.amazonaws.com/cb037152-10ac-4b34-aa8d-13a743f1a192-1628596567335.png
+syntronic`Syntronic`https://lever-client-logos.s3.us-west-2.amazonaws.com/46da870e-f701-486f-9d13-36d068f8e3cf-1625934552992.png
+contextis`Context Information Security part of Accenture Security`https://lever-client-logos.s3-us-west-2.amazonaws.com/03dae145-f945-4c2d-8be6-7ed649edcc62-1595322601561.png
+CarbonDirect`Carbon Direct`https://lever-client-logos.s3.us-west-2.amazonaws.com/a0577833-777f-41e2-84bf-132cc39992c8-1643655026168.png
+stackadapt`StackAdapt`https://lever-client-logos.s3.us-west-2.amazonaws.com/8331ef7d-bfc8-4148-a118-50da0fc43f8f-1623722276720.png
+pocketworlds`Pocket Worlds`https://lever-client-logos.s3.us-west-2.amazonaws.com/0c901f11-45f0-4e58-ae65-c45d2abccb0d-1633254088793.png
+ppgreatplains`Planned Parenthood Great Plains`https://lever-client-logos.s3.amazonaws.com/8a012dff-f46b-4c4d-8c95-44b1a89c1fca-1507312988814.png
+blox-route`bloXroute Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/c25794a8-ff35-4113-9723-03de1509ef98-1643993552182.png
+levelai`Level AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/7cde54f2-6206-4df4-9177-f72c73f67ec0-1642549676008.png
+morningconsult`Morning Consult`https://lever-client-logos.s3.us-west-2.amazonaws.com/7ef3a426-8431-49f8-a22b-8991d99ea552-1644591821081.png

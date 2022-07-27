@@ -187,7 +187,6 @@ trialspark
 triplelift
 twitch
 unqork
-unsupervisedai
 upstart
 vidyard
 vimeo
@@ -263,7 +262,6 @@ yeti
 lyft
 mbooth
 northone
-edx
 picnichealth
 robinhood
 takealotcom
@@ -518,7 +516,6 @@ axiom
 synack
 ambys
 samlabs
-carmera
 winreality
 smileidentity
 cosm
@@ -536,7 +533,6 @@ id5
 eviationaircraft
 dataminr
 studio
-cobblestoneenergy
 scalesec
 paralleljobs
 capitalmanagement
@@ -839,7 +835,6 @@ ixllearning
 system
 motus
 carrotfertility
-carbonfive
 karat
 rebelliondefense
 c4adsinternships
@@ -1161,3 +1156,20 @@ enervee
 lilium
 golinks
 valsoft
+nirrin
+seniorly
+HarnessWealth
+autopilot
+sonder
+dspconcepts
+girleffect
+tridge?gh_src=1dea83793us
+waymo
+mintel
+horizenlabs
+foundrydigital
+somethinelse
+myntraphoenix
+nextrollinc
+polychaincapital
+caylent
