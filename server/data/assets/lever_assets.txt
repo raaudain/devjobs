@@ -941,3 +941,4 @@ ppgreatplains`Planned Parenthood Great Plains`https://lever-client-logos.s3.amaz
 blox-route`bloXroute Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/c25794a8-ff35-4113-9723-03de1509ef98-1643993552182.png
 levelai`Level AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/7cde54f2-6206-4df4-9177-f72c73f67ec0-1642549676008.png
 morningconsult`Morning Consult`https://lever-client-logos.s3.us-west-2.amazonaws.com/7ef3a426-8431-49f8-a22b-8991d99ea552-1644591821081.png
+spreedly`Spreedly`https://lever-client-logos.s3.us-west-2.amazonaws.com/da842210-4659-4e7e-9301-56539864f533-1654882475539.png
