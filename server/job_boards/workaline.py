@@ -4,8 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules.classes import Filter_Jobs, Create_JSON
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs, Create_JSON
+from .helpers import headers as h
 
 
 def get_results(item):

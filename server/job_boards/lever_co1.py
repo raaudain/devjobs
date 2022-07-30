@@ -4,9 +4,9 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
-from .modules import create_temp_json
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers import create_temp_json
+from .helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c

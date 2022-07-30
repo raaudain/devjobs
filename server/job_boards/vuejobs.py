@@ -4,8 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
-from .modules import headers as h
-from .modules.classes import Filter_Jobs
+from .helpers import headers as h
+from .helpers.classes import Filter_Jobs
 # import modules.headers as h
 
 

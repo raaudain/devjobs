@@ -3,8 +3,8 @@ import sys
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules.classes import Filter_Jobs
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs
+from .helpers import headers as h
 
 
 def get_results(item: str):

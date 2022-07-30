@@ -3,8 +3,8 @@ import sys
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from .modules.classes import Create_JSON, Filter_Jobs
-from .modules import headers as h
+from .helpers.classes import Create_JSON, Filter_Jobs
+from .helpers import headers as h
 
 
 def get_results(item: str):

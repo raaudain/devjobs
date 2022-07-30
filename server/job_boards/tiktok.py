@@ -6,9 +6,9 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from .modules import create_temp_json
-from .modules import driver
-from .modules.classes import Filter_Jobs
+from .helpers import create_temp_json
+from .helpers import driver
+from .helpers.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.driver as driver
 

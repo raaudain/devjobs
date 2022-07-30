@@ -3,9 +3,9 @@ import json
 import sys
 import random
 from datetime import datetime
-from .modules import create_temp_json
-from .modules import headers as h
-from .modules.classes import Filter_Jobs
+from .helpers import create_temp_json
+from .helpers import headers as h
+from .helpers.classes import Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 

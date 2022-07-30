@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from selenium import webdriver
 import sys, time, re
-from .modules import create_temp_json
-from .modules import driver
+from .helpers import create_temp_json
+from .helpers import driver
 # import modules.driver as driver
 # import modules.create_temp_json as create_temp_json
 

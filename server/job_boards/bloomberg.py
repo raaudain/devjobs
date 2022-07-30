@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 # from .modules import headers as h
 import modules.create_temp_json as create_temp_json
 import modules.headers as h
-from .modules.classes import Filter_Jobs
+from .helpers.classes import Filter_Jobs
 
 
 def get_results(item):

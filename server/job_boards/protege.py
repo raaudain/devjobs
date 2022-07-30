@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json, requests, sys
-from .modules import create_temp_json
+from .helpers import create_temp_json
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from .modules import driver
+from .helpers import driver
 
 
 driver = driver.phantom

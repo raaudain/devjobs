@@ -2,7 +2,7 @@ from datetime import datetime
 import sys
 import time
 import feedparser
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 
 
 FILE_PATH = "./data/params/recruiterbox.txt"

@@ -4,8 +4,8 @@ import requests
 import sys
 import random
 import re
-from .modules.classes import Filter_Jobs
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs
+from .helpers import headers as h
 
 
 def get_results(item):

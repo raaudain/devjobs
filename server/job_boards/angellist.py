@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 # import modules.create_temp_json as create_temp_json
-from .modules import create_temp_json
+from .helpers import create_temp_json
 import sys, re, time
 
 

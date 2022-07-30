@@ -3,8 +3,8 @@ import requests
 import json
 import sys
 import random
-from .modules.classes import Filter_Jobs
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs
+from .helpers import headers as h
 
 
 def get_results(item: str):

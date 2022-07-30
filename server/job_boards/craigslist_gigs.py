@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests, sys, json, time
 # import modules.create_temp_json as create_temp_json
-from .modules import create_temp_json
+from .helpers import create_temp_json
 
 
 f = open(f"./data/params/craigslist.txt", "r")

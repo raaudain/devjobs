@@ -3,9 +3,9 @@ from datetime import datetime, timedelta
 import requests
 import random
 import sys
-from .modules import create_temp_json
-from .modules import headers as h
-from .modules.classes import Filter_Jobs
+from .helpers import create_temp_json
+from .helpers import headers as h
+from .helpers.classes import Filter_Jobs
 
 
 def get_results(item: str):

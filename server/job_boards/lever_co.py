@@ -5,8 +5,8 @@ import time
 import random
 from datetime import datetime
 from lxml import html
-from .modules import headers as h
-from .modules.classes import Filter_Jobs, Get_Stored_Data, Remove_Not_Found, Read_List_Of_Companies
+from .helpers import headers as h
+from .helpers.classes import Filter_Jobs, Get_Stored_Data, Remove_Not_Found, Read_List_Of_Companies
 # import modules.headers as h
 # import modules.classes as c
 

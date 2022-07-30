@@ -4,8 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
-from .modules import headers as h
+from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
 

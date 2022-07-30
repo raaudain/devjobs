@@ -4,8 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules import headers as h
-from .modules.classes import Create_JSON, Filter_Jobs
+from .helpers import headers as h
+from .helpers.classes import Create_JSON, Filter_Jobs
 # import modules.classes as c
 # import modules.headers as h
 

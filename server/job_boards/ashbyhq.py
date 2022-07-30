@@ -4,8 +4,8 @@ import sys
 import time
 import random
 from datetime import datetime
-from .modules import headers as h
-from .modules.classes import Read_List_Of_Companies, Remove_Not_Found, Filter_Jobs
+from .helpers import headers as h
+from .helpers.classes import Read_List_Of_Companies, Remove_Not_Found, Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c

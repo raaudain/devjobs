@@ -4,8 +4,8 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .modules import headers as h
-from .modules.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers import headers as h
+from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
 # import modules.headers as h
 
 

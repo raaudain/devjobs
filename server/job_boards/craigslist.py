@@ -4,9 +4,9 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from .modules import headers as h
-from .modules import create_temp_json
-from .modules.classes import Filter_Jobs
+from .helpers import headers as h
+from .helpers import create_temp_json
+from .helpers.classes import Filter_Jobs
 # import modules.headers as h
 # import modules.create_temp_json as create_temp_json
 

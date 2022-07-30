@@ -44,7 +44,7 @@ from . import bootup
 from . import recruitee
 # from . import craigslist_gigs
 from datetime import datetime
-from .modules.classes import Create_JSON
+from .helpers.classes import Create_JSON
 
 
 logging.basicConfig(

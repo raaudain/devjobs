@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 import requests
 import sys
 import random
-from .modules import headers as h
-from .modules.classes import Create_JSON, Filter_Jobs
+from .helpers import headers as h
+from .helpers.classes import Create_JSON, Filter_Jobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
