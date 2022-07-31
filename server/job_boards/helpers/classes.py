@@ -9,8 +9,7 @@ from bs4 import BeautifulSoup
 class Read_List_Of_Companies:
     def __new__(self, file_path: str):
         self.file_path = file_path
-        file_path = self.file_path
-        with open(file_path, "r") as f:
+        with open(self.file_path, "r") as f:
             companies = [company.strip() for company in f]
             random.shuffle(companies)
             return companies
@@ -20,27 +19,24 @@ class Remove_Not_Found:
     def __init__(self, file_path: str, param: str):
         self.file_path = file_path
         self.param = param
-        file_path = self.file_path
-        param = self.param
-        with open(file_path, "r+") as f, open(file_path, "w") as file:
+        with open(self.file_path, "r+") as f, open(self.file_path, "w") as file:
             params = [param.strip() for param in f]
             f.truncate(0)
             for p in params:
-                if p != param:
+                if p != self.param:
                     file.write(p+"\n")
 
 
 class Get_Stored_Data:
     def __new__(self, file_path: str):
         self.file_path = file_path
-        file_path = self.file_path
         table = {}
-        with open(file_path, "r") as f:
-            for e in f:
-                e = e.split("`")
-                p = e[0]
-                name = e[1]
-                img = e[2]
+        with open(self.file_path, "r") as f:
+            for item in f:
+                item = item.split("`")
+                p = item[0]
+                name = item[1]
+                img = item[2]
                 table[p] = {
                     "name": name if name else p.capitalize(),
                     "logo": img.rstrip("\n") if len(img) > 6 else None
