@@ -1166,3 +1166,43 @@ foundrydigital`Foundry`https://s4-recruiting.cdn.greenhouse.io/external_greenhou
 myntraphoenix`Phoenix`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/963/400/resized/Myntra_logo_vertical.png
 polychaincapital`Polychain Capital`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/292/resized/polychain_original_(2).png
 caylent`Caylent`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/541/600/resized/1.png
+quid`Quid`None
+relocity`Relocity`None
+immoscout24`ImmoScout24`None
+nayya`Nayya`None
+aeroflexx`AeroFlexx`None
+primarybid`PrimaryBid`None
+celonis`Celonis`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/062/000/resized/PrimaryLogo-RGB-mono-black.jpg
+mirakl`Mirakl`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/500/800/resized/Logo-Mirakl.png
+ziforndsolutions`Zifo RnD Solutions`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/039/100/resized/PNG_high.png
+cohesity`Cohesity`None
+clarksville`Jeff Wyler Clarksville Toyota`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/710/900/resized/download.jpeg
+louisvillenissan`Jeff Wyler Louisville Nissan`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/713/300/resized/download.jpeg
+leagueinc`League Inc.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/422/100/resized/league-logo-secondary.png
+emotiveio`Emotive.io`None
+mediacurrent`Mediacurrent`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/955/100/resized/MC_Badge_Blue_(1).png
+hypixelstudios`Hypixel Studios`None
+parsleyhealth`Parsley Health`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/202/600/resized/ph_logo.jpeg
+bnbchain`BNB Chain Labs`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/702/100/resized/Screen_Shot_2022-05-06_at_13.10.10.png
+generalassembly`General Assembly`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/170/resized/GALogoForGreenhouse.png
+knowbe4`KnowBe4`None
+evilgeniuses`Evil Geniuses`https://peak6.com/wp-content/uploads/2022/03/peak6-logo-rgb-blue-200x47-1-1.png
+sparkcognition`SparkCognition`None
+berkadia`Berkadia`None
+homesalive`Homes Alive Pets`None
+retailnext`RetailNext`None
+grafanalabs`Grafana Labs`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/744/400/resized/Career_meta_image.png
+grenevisiongroup`Grene Vision Group`None
+varsitytutors`Varsity Tutors`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/483/resized/Linkedin_1200x628.png
+givedirectly`GiveDirectly`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/328/900/resized/GD_LOGO.jpg
+louisvillehonda`Jeff Wyler Louisville Honda`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/713/400/resized/download.jpeg
+welbehealth`WelbeHealth`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/117/600/resized/MicrosoftTeams-image_(2).png
+gomedia`G/O Media`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/134/resized/G-O_Media_logo.png
+truelogic`Truelogic Software`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/777/000/resized/Green_large_copy.png
+oyster`Oyster`None
+articulate`Articulate`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/767/200/resized/articulate_(3).png
+jobber`Jobber`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/385/800/resized/Jobber-NavyFull.png
+omadahealth`Omada Health`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/637/resized/omada_logo_horizontal-01.jpg
+paper`Paper`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/121/200/resized/PAPER_LOGO_BLUE_RGB-1024x512.png
+compassindia`Compass India`None
+c6bank`C6 Bank`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/046/300/resized/Marca_C6BANK_positivo.png

@@ -525,3 +525,13 @@ VAMS`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/51fdeb72e4b052567df8
 NCBACLUSA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ae9d5ace4b07aa154653dfc/huge?r=s3-eu-central-1
 pirsonal`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a9fb87ce4b07d304e2efbc6/huge?r=s3-eu-central-1
 Savant1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fe3b48763abc74b2006538e/huge?r=s3-eu-central-1
+VeoliaEnvironnementSA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/611ba30e4fbf6c1a026efa02/a52a441f-f691-4389-9f7e-922e8ce4e0be?r=s3-eu-central-1
+MiltonCAT`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/53a34460e4b0a3111eed4135/150px?r=s3
+SottasSA`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/609a3c3b91cd225a06a87436/150px?r=s3-eu-central-1
+AllegisGlobalSolutions`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5bcb8f88e4b0ffa6d76907cf/45574521-d7bf-4b9e-b4f3-792afb5dcba9?r=s3-eu-central-1
+Activy1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c110a4be4b0aacaeb580e36/30eb9a64-435e-442a-aba1-5a4e448881b4?r=s3-eu-central-1
+RestoSaungPlataran`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6273750c2cd37a01c84acb55/150px?r=s3-eu-central-1
+hfscompany`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d658e4b0b42dcb45699d/150px
+DarumaCorporation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55d2a252e4b03992da0dcfba/150px?r=s3
+EnthuseMarketing`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ace64f1e4b0ab47defb8035/ec514213-9059-40cc-a378-e64f07e97ea5?r=s3-eu-central-1
+Numberly`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b227fe4e4b0e61b9685d8da/6f7ff0e3-af81-427f-9c90-123f9ce9f8d4?r=s3-eu-central-1

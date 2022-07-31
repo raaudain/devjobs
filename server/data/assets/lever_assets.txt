@@ -942,3 +942,31 @@ blox-route`bloXroute Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/
 levelai`Level AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/7cde54f2-6206-4df4-9177-f72c73f67ec0-1642549676008.png
 morningconsult`Morning Consult`https://lever-client-logos.s3.us-west-2.amazonaws.com/7ef3a426-8431-49f8-a22b-8991d99ea552-1644591821081.png
 spreedly`Spreedly`https://lever-client-logos.s3.us-west-2.amazonaws.com/da842210-4659-4e7e-9301-56539864f533-1654882475539.png
+MissionWired`MissionWired`https://lever-client-logos.s3.us-west-2.amazonaws.com/4251e8fd-662b-48c7-a1f1-01ca79cbd73d-1626290082226.png
+thetrevorproject`The Trevor Project`https://lever-client-logos.s3.us-west-2.amazonaws.com/ebaac97f-93cd-42de-9308-ad1f9e8cefff-1655230508926.png
+carma`Carma`https://lever-client-logos.s3.us-west-2.amazonaws.com/42ca7d81-44dd-448d-812c-711108a8b56a-1639007276206.png
+merklescience`Merkle Science`https://lever-client-logos.s3.us-west-2.amazonaws.com/57753a33-462e-4784-a67b-ff8a48e8b2fb-1639925814428.png
+entrata`Entrata`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd617cc9-23ed-4979-b75b-f47040f63f51-1636069841647.png
+trustly`Trustly`https://lever-client-logos.s3.us-west-2.amazonaws.com/76a0f8db-0fdf-4729-ba5b-47d0f2af27fe-1604312396306.png
+waremalcomb`Ware Malcomb`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3fca72-b6e4-4483-ac50-e2fdc50e11bb-1625178594337.png
+surfshark`Surfshark`https://lever-client-logos.s3.us-west-2.amazonaws.com/a0c10657-5252-4cc2-8a2e-a5435b4a5901-1637138354059.png
+oda`Oda`https://lever-client-logos.s3.us-west-2.amazonaws.com/2f64e80f-ee13-45e2-ae0f-dd79e9d66bb1-1619517797594.png
+luni`Luni`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0367655-c9e3-4700-996c-b2f3fd130ba9-1657619706201.png
+gobetterfly`Betterfly`https://lever-client-logos.s3.us-west-2.amazonaws.com/f016d551-dc6f-4cdb-9454-046a0390fb38-1649105034602.png
+kitmanlabs`Kitman Labs`https://lever-client-logos.s3.amazonaws.com/00b27a9e-32b0-4248-b224-5147ecacd464-1578335305640.png
+Potloc`Potloc`https://lever-client-logos.s3.us-west-2.amazonaws.com/0b2255d2-7758-421b-b8df-966be3697f6e-1628106241140.png
+adidevelopments`Adi Development Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/96cc08f0-d03b-4c2c-b7ee-3299fc0dc827-1605197974566.png
+goshippo`Shippo`https://lever-client-logos.s3-us-west-2.amazonaws.com/c9d43ccb-3e83-4432-8531-1aa5bf171dc1-1582740411269.png
+brightseedbio`Brightseed`https://lever-client-logos.s3.us-west-2.amazonaws.com/33ca4720-ce37-449c-9fb2-41c108d1e1e3-1600212227765.png
+indiegogo.com`Indiegogo`https://lever-client-logos.s3.amazonaws.com/84963f7c-5208-4789-813f-59b515174479-1452056714146.png
+neo4j`Neo4j`https://lever-client-logos.s3.us-west-2.amazonaws.com/7d12dc05-876c-4d69-baae-74c29586aa46-1619450294135.png
+alictus`Alictus`https://lever-client-logos.s3.us-west-2.amazonaws.com/c7a71767-3e93-49d8-a807-cc4c0d48ee23-1617966675194.png
+droneseed`DroneSeed`https://lever-client-logos.s3.amazonaws.com/24b83556-1a28-4bd8-bf82-a358a30a4773-1570748568607.png
+rgi`Reinventing Geospatial, Inc. (RGi)`https://lever-client-logos.s3.us-west-2.amazonaws.com/0f73f1de-d881-4705-94a2-1859ca7041bf-1648060962692.png
+farfetch`Farfetch`https://lever-client-logos.s3.us-west-2.amazonaws.com/0e2a0c6f-504a-4461-9ad3-9313db78bc62-1615461578788.png
+ada`Ada`https://lever-client-logos.s3.us-west-2.amazonaws.com/cf092cd3-b01b-4f81-98a6-f2d2bd6ab422-1635429351691.png
+appfire`Appfire`https://lever-client-logos.s3.us-west-2.amazonaws.com/8dbd380f-48ef-41c4-aeb3-fbde106b7be4-1622843252836.png
+curefit`Cure.Fit`https://lever-client-logos.s3.amazonaws.com/bbeeed6a-318f-439a-a29f-4302a9f79915-1580971106722.png
+improbable`Improbable`https://lever-client-logos.s3.amazonaws.com/99d5daa2-af49-4e79-b083-1d5da9140d76-1500978450671.png
+natronenergy`Natron Energy`https://lever-client-logos.s3.us-west-2.amazonaws.com/e75f5070-ac11-458d-924c-47ccb959581a-1606681683375.png
+atob`AtoB`https://lever-client-logos.s3.us-west-2.amazonaws.com/8b2ff1a9-1d17-4ac9-82a5-9b3cd1e88875-1635560262766.png

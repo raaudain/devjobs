@@ -128,3 +128,11 @@ oce`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6eFp6ETE5hsMYywy6yC
 caribe`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ap9fnoisr255og4rwibcizkqjdor.png
 vega`n/a`https://inflow-public.s3.amazonaws.com/company-logos/b41b25kni6kglrjl7ch8oy1453z8.png
 upkid`n/a`https://inflow-public.s3.amazonaws.com/company-logos/z474jlao0csj16tfbdpdbaxco05u.jpeg
+mor`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mh8b8jsfxaqyfhk738yc8j5bf9la.png
+etaxbreaks`n/a`https://inflow-public.s3.amazonaws.com/company-logos/31q3q9qjv4vzc7d3pzuajzjeeu1c.png
+verso`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ln3okkfs818cf0ajm9o2nbtyd2m9.png
+posh`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fj0vxjgpm2c0xgra40xu7cxaszgb.png
+superfuture`n/a`https://inflow-public.s3.amazonaws.com/company-logos/2u45grz1k2abridkgy21y3jvevdw.jpeg
+onlab-by-santander`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gey9f852qy5kp7tky2ycl5v5pwce.png
+safara`n/a`https://inflow-public.s3.amazonaws.com/company-logos/8blm561xm9ypjmyzpurpuz4011iz.jpeg
+kappa`n/a`https://inflow-public.s3.amazonaws.com/company-logos/u46bpplu3k0z0kjrob3p7dtoac0u.png
