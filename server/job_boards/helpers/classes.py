@@ -17,14 +17,19 @@ class Read_List_Of_Companies:
 
 class Remove_Not_Found:
     def __init__(self, file_path: str, param: str):
-        self.file_path = file_path
-        self.param = param
-        with open(self.file_path, "r+") as f, open(self.file_path, "w") as file:
-            params = [param.strip() for param in f]
-            f.truncate(0)
-            for p in params:
-                if p != self.param:
-                    file.write(p+"\n")
+        f = open(file_path, "r+")
+        params = [param.strip() for param in f]
+        f.truncate(0)
+        f.close()
+        file = open(file_path, "w")
+        not_found = open("./data/params/404.txt", "a")
+        for p in params:
+            if p != param:
+                file.write(p+"\n")
+            else:
+                not_found.write(p+"\n")
+        file.close()
+        not_found.close()
 
 
 class Get_Stored_Data:
