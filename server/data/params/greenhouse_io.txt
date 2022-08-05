@@ -128,7 +128,6 @@ litify
 liveramp
 logicmonitor
 lookout
-makespace
 marqeta
 masterclass
 degreed
@@ -305,7 +304,6 @@ qualtrics
 relex
 seatgeek
 hootsuite
-americanwageringincdbawilliamhillus
 frameio
 chewycom
 carousell
@@ -498,7 +496,6 @@ retorio
 banza
 flashtract
 zola
-growflow
 thunes
 wellsky
 sonderaustralia
@@ -741,7 +738,6 @@ intrinsicrobotics
 bhs
 toyotaconnected
 eyecarecenter
-rydoo
 clifbar15
 flockfreight
 englertinc
@@ -900,7 +896,6 @@ current81
 beesbrasil
 physiciansimmediatecare
 solidpower
-sidecarhealth
 autoscout24
 zeplin
 akouos
@@ -945,7 +940,6 @@ brunswickgroup
 eastfork
 heritagecrystalcleanllc
 elemy
-elementary
 cdr
 mediahubww
 awarehealthcare
@@ -1186,7 +1180,6 @@ primarybid
 retailnext
 celonis
 grafanalabs
-liminal?t=800a9ab43us
 grenevisiongroup
 mirakl
 varsitytutors
@@ -1212,7 +1205,6 @@ bnbchain
 omadahealth
 generalassembly
 paper
-embed
 compassindia
 knowbe4
 c6bank
