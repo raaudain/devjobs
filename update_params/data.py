@@ -69,7 +69,7 @@ ats = [
         "file": "./temp/comeet_temp.txt",
         "host": "https://www.comeet.com/jobs/",
         "params": "../server/data/params/comeet.txt",
-        "uri": r"https://www.comeet.com/jobs/(.*?)/"
+        "uri": r"https://www.comeet.com/jobs/((.*?)\/(.*?))/"
     },
     {
         "file": "./temp/eightfold_temp.txt",
