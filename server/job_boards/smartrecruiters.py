@@ -43,7 +43,7 @@ def get_results(item: str, param: str):
         company_name = i["company"]["name"]
         apply_url = f"https://jobs.smartrecruiters.com/{param}/{jobId}"
         position = i["name"]
-        if logo == None:
+        if logo is None:
             try:
                 if ("Engineer" in position or "Data" in position or "IT " in position or "Tech " in position or "QA" in position or "Programmer" in position or "Developer" in position or "ML" in position or "SDET" in position or "devops" in position.lower() or "AWS" in position or "Cloud" in position or "Software" in position or "Help" in position or "Web " in position or "Front End" in position or "Agile" in position and "Cyber" in position) and ("Elect" not in position and "HVAC" not in position and "Mechanical" not in position and "Manufactur" not in position and "Data Entry" not in position and "Nurse" not in position and "Maintenance" not in position and "Civil" not in position and "Environmental" not in position and "Hardware" not in position and "Front Desk" not in position and "Helper" not in position and "Peer Support" not in position and "Bridge" not in position and "Water" not in position and "Dispatch" not in position and "Saw" not in position and "Facilities" not in position and "AML" not in position and "Sheet Metal" not in position and "Metallurgical" not in position and "Materials" not in position):
                     r = requests.get(apply_url)

@@ -37,17 +37,20 @@ def get_url():
     page = 0
     items = 10
     while items > 0:
-        headers = {"User-Agent": random.choice(h.headers)}
-        url = f"https://www.nbcunicareers.com/api/brjobs?_format=json&page={page}&profession=1098"
-        response = requests.get(url, headers=headers)
-        if response.ok:
-            data = json.loads(response.text)[0]["rows"]
-            get_results(data)
-        else:
-            print(f"Error. Status Code:", response.status_code)
-        page += 1
-        items = len(data)
-        time.sleep(0.2)
+        try:
+            headers = {"User-Agent": random.choice(h.headers)}
+            url = f"https://www.nbcunicareers.com/api/brjobs?_format=json&page={page}&profession=1098"
+            response = requests.get(url, headers=headers)
+            if response.ok:
+                data = json.loads(response.text)[0]["rows"]
+                get_results(data)
+            else:
+                print(f"Error. Status Code:", response.status_code)
+            page += 1
+            items = len(data)
+            time.sleep(0.2)
+        except Exception as e:
+            print(f"=> nbc: {e}")
 
 
 def main():
