@@ -970,3 +970,21 @@ curefit`Cure.Fit`https://lever-client-logos.s3.amazonaws.com/bbeeed6a-318f-439a-
 improbable`Improbable`https://lever-client-logos.s3.amazonaws.com/99d5daa2-af49-4e79-b083-1d5da9140d76-1500978450671.png
 natronenergy`Natron Energy`https://lever-client-logos.s3.us-west-2.amazonaws.com/e75f5070-ac11-458d-924c-47ccb959581a-1606681683375.png
 atob`AtoB`https://lever-client-logos.s3.us-west-2.amazonaws.com/8b2ff1a9-1d17-4ac9-82a5-9b3cd1e88875-1635560262766.png
+netlight`Netlight`https://lever-client-logos.s3.amazonaws.com/69092485-04e7-49ba-922a-64a660d4492c-1520329705062.png
+insomniacookies`Insomnia Cookies`https://lever-client-logos.s3.us-west-2.amazonaws.com/93ede922-a006-4878-8dcb-088160b4f921-1633548087067.png
+ledger`Ledger`https://lever-client-logos.s3.us-west-2.amazonaws.com/8775cc8e-7e94-494e-8d6e-3f082db0fe2d-1645122882193.png
+loblawdigital`Loblaw Digital`https://lever-client-logos.s3.us-west-2.amazonaws.com/56d70f50-4840-4ec3-88c1-b8270e111882-1620673140635.png
+photoroom`Photoroom`https://lever-client-logos.s3.us-west-2.amazonaws.com/0218a30b-1e33-41d5-af20-24e359af06b2-1625477112748.png
+getaround`Getaround`https://lever-client-logos.s3.amazonaws.com/2bd4cdf9-37f2-497f-9096-c2793296a75f-1557940263369.png
+actionnetwork`The Action Network, Inc.`https://lever-client-logos.s3-us-west-2.amazonaws.com/23e40d66-e905-452e-be2d-2a9cda2359f1-1583864750980.png
+jobandtalent`Jobandtalent`https://lever-client-logos.s3.us-west-2.amazonaws.com/946eed61-2a05-45a2-9892-866b51b14ea9-1624296931776.png
+optimusride`Optimus Ride`https://lever-client-logos.s3.amazonaws.com/60f10e91-e949-488d-b597-97c108f7a8f8-1476304566772.png
+verypossible`Very`https://lever-client-logos.s3-us-west-2.amazonaws.com/3911e661-7112-4425-a1e9-c3e0719a8acc-1593625370828.png
+kyivstar`Kyivstar`https://lever-client-logos.s3.amazonaws.com/641267f5-d995-418c-9c12-6d47d2e2b369-1497862874291.png
+zentail`Zentail`https://lever-client-logos.s3.amazonaws.com/93836ad9-b152-47a6-b121-1ec51979bd31-1547578460997.png
+peachycorp`Peachy`https://lever-client-logos.s3.us-west-2.amazonaws.com/64ef1c50-c41d-41ad-acd9-bc853c0440e0-1611875569291.png
+windownation`Window Nation`https://lever-client-logos.s3.us-west-2.amazonaws.com/18253171-a6e9-4a7b-a00f-4e999cdd2c1d-1653073524754.png
+sirnaomics`Sirnaomics`https://lever-client-logos.s3.us-west-2.amazonaws.com/2c43953e-18a1-48b5-bdcd-b0fd0a64a7ac-1639313970798.png
+brainnest`Brainnest`https://lever-client-logos.s3.us-west-2.amazonaws.com/4b763d35-6104-46eb-abff-28fbe7532b49-1659470749705.png
+sheertex`Sheertex`https://lever-client-logos.s3.us-west-2.amazonaws.com/2b9c5cf1-f0c5-428c-aa9e-3fb7abb6c3c8-1649688670984.png
+LambdaSolutions?hsCtaTracking=bde33108-29b5-42c5-a30a-c0a4260d1282%7Cd6814efb-3940-4cff-a782-94ef0506add8`Lambda Solutions`https://lever-client-logos.s3.us-west-2.amazonaws.com/ebd0a62d-e3a5-4043-8faf-416f29767950-1634331994355.png

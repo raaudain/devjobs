@@ -919,3 +919,15 @@ camaloon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/484289/log
 kihomac`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/457308/logo
 armadillo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/470197/logo
 bazaraki`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/250653/logo
+nacocanada`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535159/logo
+activetheory`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/393521/logo
+ensodata`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/322930/logo
+cirrusmd`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/395270/logo
+walletconnect`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/492879/logo
+busright`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/473407/logo
+learnworlds`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/294505/logo
+xcellink`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/288750/logo
+biofourmis`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/416247/logo
+tribalscale`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/62042/logo
+the-canadian-press`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/29591/Canadian_Press_ENG.jpg
+matchwornshirt`n/a`None

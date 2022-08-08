@@ -535,3 +535,11 @@ hfscompany`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d658e4b0b4
 DarumaCorporation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55d2a252e4b03992da0dcfba/150px?r=s3
 EnthuseMarketing`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ace64f1e4b0ab47defb8035/ec514213-9059-40cc-a378-e64f07e97ea5?r=s3-eu-central-1
 Numberly`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b227fe4e4b0e61b9685d8da/6f7ff0e3-af81-427f-9c90-123f9ce9f8d4?r=s3-eu-central-1
+Evolution`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/575de19de4b0a9835791bab3/17b46b73-83e2-4a66-bbd2-4380bdb09e75?r=s3
+LinenChest`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/612413597c0fe85fc36bdbbb/150px?r=s3-eu-central-1
+TheWonderfulCompany`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/60d34e6184fc4c6e198b9bfe/321c4b1e-b780-4ae1-9db1-f966e5965d93?r=s3-eu-central-1
+CurveGroupHoldingsLimited`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5a69fff7e4b0735ecd232921/887db947-ae44-4ca3-b94c-b3b3c73e9714?r=s3-eu-central-1
+JobTeaser`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/580fd3b0e4b02fa98adab263/150px
+InfiniteBangladesh`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ae3cb58e4b0edd730115892/150px?r=s3-eu-central-1
+GSOFT1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5a39609ee4b0075ed1559d0c/44c5e515-a09f-44b4-8d2f-d2ead0a59e79?r=s3
+MatrixProfessionalStaffingSoluti`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d754e4b0b42dcb46141c/150px?r=s3

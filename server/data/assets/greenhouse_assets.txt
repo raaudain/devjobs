@@ -1206,3 +1206,15 @@ omadahealth`Omada Health`https://recruiting.cdn.greenhouse.io/external_greenhous
 paper`Paper`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/121/200/resized/PAPER_LOGO_BLUE_RGB-1024x512.png
 compassindia`Compass India`None
 c6bank`C6 Bank`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/046/300/resized/Marca_C6BANK_positivo.png
+contingent50`Contingent`None
+synctera`Synctera`None
+buonny`Buonny`None
+rubrik`Rubrik Job Board`None
+syncari`We're hiring!`None
+abodo`Rentable`None
+aces`ACES (Autism Comprehensive Educational Services)`None
+monthly`Studio`None
+MaterialBank`Material Bank`None
+blacksky`BlackSky`None
+dealerinspire`Dealer Inspire`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/965/resized/DISymbol-black.png
+accuweather`AccuWeather Careers`None
