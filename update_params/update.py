@@ -19,7 +19,6 @@ def main():
 def filter_list(links, uri):
     w = []
     for l in links:
-        print(uri, l)
         word = re.findall(uri, l)
         if word:
             w.append(*word)
