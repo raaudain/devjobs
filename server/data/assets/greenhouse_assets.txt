@@ -1219,3 +1219,28 @@ blacksky`BlackSky`None
 dealerinspire`Dealer Inspire`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/965/resized/DISymbol-black.png
 accuweather`AccuWeather Careers`None
 givenscommunities`Givens Communities`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/537/resized/GC_LogoC.png
+cutover`Cutover`None
+plumguide`Plum Guide`None
+pathrobotics`Path Robotics`None
+laika`LAIKA`None
+alphalabcapital`AlphaLab Capital`None
+spins`SPINS`None
+fernish`Fernish`None
+inspire55`Inspire`None
+pebblepost`PebblePost`None
+majorleaguebaseball`Major League Baseball`None
+retool`Retool`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/059/100/resized/logo-full-black.png
+crisistextline86`Crisis Text Line`None
+babbel`Babbel`None
+goldenstatewarriors`GSW Sports, LLC`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/695/resized/All_Logo.png
+houserx`House Rx`None
+wizardcommerce`Wizard`None
+sonic`Sonic`None
+flyzipline`Zipline`None
+linx`Linx`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/676/000/resized/Linx_RGB.png
+repairsmith`RepairSmith`None
+dcp`Downtown College Prep`None
+verifone`Verifone Inc.`None
+truecaller`Truecaller`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/849/resized/Small_logo.png
+insider`Insider Inc`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/736/800/resized/WHT_Insider_Inc.png
+arctouch`ArcTouch`None

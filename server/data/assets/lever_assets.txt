@@ -988,3 +988,8 @@ sirnaomics`Sirnaomics`https://lever-client-logos.s3.us-west-2.amazonaws.com/2c43
 brainnest`Brainnest`https://lever-client-logos.s3.us-west-2.amazonaws.com/4b763d35-6104-46eb-abff-28fbe7532b49-1659470749705.png
 sheertex`Sheertex`https://lever-client-logos.s3.us-west-2.amazonaws.com/2b9c5cf1-f0c5-428c-aa9e-3fb7abb6c3c8-1649688670984.png
 LambdaSolutions?hsCtaTracking=bde33108-29b5-42c5-a30a-c0a4260d1282%7Cd6814efb-3940-4cff-a782-94ef0506add8`Lambda Solutions`https://lever-client-logos.s3.us-west-2.amazonaws.com/ebd0a62d-e3a5-4043-8faf-416f29767950-1634331994355.png
+genopets`Monarch Gaming (Genopets)`https://lever-client-logos.s3.us-west-2.amazonaws.com/6865c8e3-15c3-4780-b069-a682fc0f45d0-1642042119493.png
+vietcetera`Vietcetera`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9f8645a-f19e-4411-b15c-4fa92f4c2202-1613446772709.png
+xagroup`XA Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/87f6cb3b-1ad6-47b7-9d84-021c80e55727-1649142347370.png
+huma`Huma`https://lever-client-logos.s3.us-west-2.amazonaws.com/171f1011-2ffe-4fd3-b51e-f3094e804809-1610988234089.png
+crossfit`CrossFit, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/7744085c-b7f6-4d4a-b5b2-9f310e0bb564-1646405943505.png

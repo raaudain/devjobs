@@ -143,3 +143,6 @@ orcascan`n/a`https://inflow-public.s3.amazonaws.com/company-logos/FtmZkPZNkxA1YG
 backrs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/o1h8jdklw3mylb0anw9p3aql9ibf.jpeg
 lydian`n/a`https://inflow-public.s3.amazonaws.com/company-logos/z1xvtoo7npdkyn8o2g19zapu0r5g.png
 flash`n/a`https://inflow-public.s3.amazonaws.com/company-logos/evygxjgghaqaumzqeh31iondh4bm.png
+cyanbot`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rdnRd3rwmzkXSbnX2wrfNi33.png
+inaza`n/a`https://inflow-public.s3.amazonaws.com/company-logos/8czy2hpnqzxk0l0l6xaodanus0qj.png
+facer`n/a`https://inflow-public.s3.amazonaws.com/company-logos/d5cc85l0kd30qs4fibr4o5rhzt33.png
