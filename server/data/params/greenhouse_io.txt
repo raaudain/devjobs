@@ -387,7 +387,6 @@ godaddy
 mailchimp
 cybereason
 hashicorp
-workboard
 carsdotcom
 myfitnesspal
 omaze
@@ -879,7 +878,6 @@ fourkites
 aclu
 dailypayinc
 seveneightcapital
-tahzoo
 mindgeek
 sofarsounds
 spinskinnylabsincfleetoperations
