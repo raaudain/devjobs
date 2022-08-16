@@ -44,11 +44,11 @@ def get_url(companies: list):
         headers = {"User-Agent": random.choice(h.headers)}
         url = "https://jobs.ashbyhq.com/api/non-user-graphql"
         payload = {
-            "operationName": "ApiJobPostingBriefsWithIds",
+            "operationName":"ApiJobBoardWithTeams",
             "variables": {
-                "organizationHostedJobsPageName": company
-            },
-            "query": "query ApiJobPostingBriefsWithIds($organizationHostedJobsPageName: String!) {\n  jobPostingBriefs: jobPostingBriefsWithIds(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    id\n    title\n    departmentId\n    departmentName\n    locationId\n    locationName\n    employmentType\n    __typename\n  }\n}\n"
+                    "organizationHostedJobsPageName": company
+                },
+            "query":"query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) {\n  jobBoard: jobBoardWithTeams(\n    organizationHostedJobsPageName: $organizationHostedJobsPageName\n  ) {\n    teams {\n      id\n      name\n      parentTeamId\n      __typename\n    }\n    jobPostings {\n      id\n      title\n      teamId\n      locationId\n      locationName\n      employmentType\n      secondaryLocations {\n        ...JobPostingSecondaryLocationParts\n        __typename\n      }\n      __typename\n    }\n    groupBySubDepartment\n    __typename\n  }\n}\n\nfragment JobPostingSecondaryLocationParts on JobPostingSecondaryLocation {\n  locationId\n  locationName\n  __typename\n}"
         }
         payload_2 = {
             "operationName": "ApiOrganizationFromHostedJobsPageName",
@@ -68,7 +68,7 @@ def get_url(companies: list):
                     name = json.loads(res.text)["data"]["organization"]["name"]
                     logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(
                         res.text)["data"]["organization"]["theme"] else None
-                except TypeError as err:
+                except Exception as err:
                     print(f"=> ashbyhq: Error for {company}.", err)
             else:
                 Remove_Not_Found(FILE_PATH, company)
