@@ -136,3 +136,13 @@ superfuture`n/a`https://inflow-public.s3.amazonaws.com/company-logos/2u45grz1k2a
 onlab-by-santander`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gey9f852qy5kp7tky2ycl5v5pwce.png
 safara`n/a`https://inflow-public.s3.amazonaws.com/company-logos/8blm561xm9ypjmyzpurpuz4011iz.jpeg
 kappa`n/a`https://inflow-public.s3.amazonaws.com/company-logos/u46bpplu3k0z0kjrob3p7dtoac0u.png
+libremd`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ssjn2bg2omefeehq9yqrg9h942eg.png
+limited`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mbbhco0upl149t8c93m83ghoi3o5.svg
+cambrico`n/a`https://inflow-public.s3.amazonaws.com/company-logos/3wz59lousihxr6f2qmtth8gdzt66.png
+orcascan`n/a`https://inflow-public.s3.amazonaws.com/company-logos/FtmZkPZNkxA1YGUJv8Bru8Qy.jpeg
+backrs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/o1h8jdklw3mylb0anw9p3aql9ibf.jpeg
+lydian`n/a`https://inflow-public.s3.amazonaws.com/company-logos/z1xvtoo7npdkyn8o2g19zapu0r5g.png
+flash`n/a`https://inflow-public.s3.amazonaws.com/company-logos/evygxjgghaqaumzqeh31iondh4bm.png
+cyanbot`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rdnRd3rwmzkXSbnX2wrfNi33.png
+inaza`n/a`https://inflow-public.s3.amazonaws.com/company-logos/8czy2hpnqzxk0l0l6xaodanus0qj.png
+facer`n/a`https://inflow-public.s3.amazonaws.com/company-logos/d5cc85l0kd30qs4fibr4o5rhzt33.png

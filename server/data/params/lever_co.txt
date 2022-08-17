@@ -276,7 +276,6 @@ invisible
 coreresponse
 nortal
 Extend
-waitrapp
 aeratechnology
 edenhealth
 ppgny
@@ -1047,3 +1046,8 @@ revenueanalytics
 treecard
 prosper
 wasabi
+huma
+xagroup
+genopets
+vietcetera
+crossfit

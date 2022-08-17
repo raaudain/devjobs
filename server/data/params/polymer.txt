@@ -176,3 +176,6 @@ libremd
 turnip
 flash
 cambrico
+cyanbot
+inaza
+facer
