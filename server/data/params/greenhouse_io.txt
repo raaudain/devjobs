@@ -1222,3 +1222,9 @@ syncari
 dealerinspire
 abodo
 accuweather
+samsungresearchamerica
+closedloop
+wisesystems
+split
+fundraiseup
+vim
