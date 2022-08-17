@@ -36,7 +36,7 @@ def get_results(item: str, param: str):
     for i in data:
         # date = datetime.strptime(
         #     i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
-        date = format_date(i["releasedDate"])
+        date = format_date(i["releasedDate"].replace("T", " "))
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         jobId = i["id"]
