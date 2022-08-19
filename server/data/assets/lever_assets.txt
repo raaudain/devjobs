@@ -993,3 +993,16 @@ vietcetera`Vietcetera`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9f8
 xagroup`XA Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/87f6cb3b-1ad6-47b7-9d84-021c80e55727-1649142347370.png
 huma`Huma`https://lever-client-logos.s3.us-west-2.amazonaws.com/171f1011-2ffe-4fd3-b51e-f3094e804809-1610988234089.png
 crossfit`CrossFit, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/7744085c-b7f6-4d4a-b5b2-9f310e0bb564-1646405943505.png
+wasabi`Wasabi Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/d98f1810-e67c-44d1-b358-bb0c16428ed5-1652112781799.png
+immutable`Immutable`https://lever-client-logos.s3.us-west-2.amazonaws.com/a8fc388c-409b-4cfc-88d7-ffe1e2e2e2fd-1655789479486.png
+streamsets`StreamSets`https://lever-client-logos.s3.us-west-2.amazonaws.com/68cb1237-46ae-441e-ba75-1cdd7ea57753-1647504122607.png
+inspiration-mobility`Inspiration Mobility`https://lever-client-logos.s3.us-west-2.amazonaws.com/f446fc6e-6ae0-456d-a9c2-f847132abef2-1640978230903.png
+gopuff`Gopuff`https://lever-client-logos.s3.us-west-2.amazonaws.com/642fb9da-0c96-47e0-9cd4-d9db8f19a677-1616535013585.png
+MaterialSecurity`Material Security`https://lever-client-logos.s3.us-west-2.amazonaws.com/32900168-e3a1-4a19-8a45-0ab7b58ae53a-1652251064890.png
+hophr`HopHR`https://lever-client-logos.s3.us-west-2.amazonaws.com/24e7b4ee-e079-4acc-8411-31306c23e5fb-1599899636594.png
+klearnow`KlearNow`https://lever-client-logos.s3.amazonaws.com/58781432-be74-4596-a621-bb026548fa6a-1568154757107.png
+LambdaSolutions`Lambda Solutions`https://lever-client-logos.s3.us-west-2.amazonaws.com/ebd0a62d-e3a5-4043-8faf-416f29767950-1634331994355.png
+extremenetworks`Extreme Networks`https://lever-client-logos.s3.us-west-2.amazonaws.com/f09a943b-6e61-42f7-b796-739a32b50e84-1657235578542.png
+celestia`Celestia Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/93a672b2-c841-4e57-b76f-9cf5d94ba99b-1654092231244.png
+prosper`Prosper`https://lever-client-logos.s3-us-west-2.amazonaws.com/11c103cf-cf85-4d0b-9811-a2bdb250e68a-1583213572002.png
+revenueanalytics`Revenue Analytics`https://lever-client-logos.s3-us-west-2.amazonaws.com/4a21c6f7-6eda-4748-901c-913f771558bf-1593436338738.png

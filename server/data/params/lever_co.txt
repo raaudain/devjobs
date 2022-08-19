@@ -646,7 +646,6 @@ capchase
 oneconcern
 automationhero
 educative
-leanplum
 cohere
 enlitic
 bloom

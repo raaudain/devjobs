@@ -405,7 +405,6 @@ mrsool
 shopee
 customerio
 pathstream
-pmg
 gatesventures
 remotecom
 misfitsmarket

@@ -1244,3 +1244,9 @@ verifone`Verifone Inc.`None
 truecaller`Truecaller`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/849/resized/Small_logo.png
 insider`Insider Inc`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/736/800/resized/WHT_Insider_Inc.png
 arctouch`ArcTouch`None
+samsungresearchamerica`Samsung Research America`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/559/800/resized/SRA_Logo_1.png
+wisesystems`Wise Systems`None
+fundraiseup`Fundraise Up`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/122/000/resized/Fundraise-Up-Logo.png
+closedloop`ClosedLoop`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/826/000/resized/ClosedLoop_Logo_Stacked.png
+split`Split`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/287/300/resized/split-logo.png
+vim`Vim`None
