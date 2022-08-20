@@ -1250,3 +1250,23 @@ fundraiseup`Fundraise Up`https://s5-recruiting.cdn.greenhouse.io/external_greenh
 closedloop`ClosedLoop`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/826/000/resized/ClosedLoop_Logo_Stacked.png
 split`Split`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/287/300/resized/split-logo.png
 vim`Vim`None
+openzeppelin`OpenZeppelin`None
+precisionhawk`PrecisionHawk`None
+olx`OLX Group`None
+precisionmedicinegroup`Precision Medicine Group`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/019/600/resized/PMG__GHR_Logo.png
+classkick`Classkick`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/606/700/resized/ck_logo.jpeg
+forbes`Forbes`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/637/600/resized/Forbes_Logo2.jpg
+venetoulisinstitute`The Baltimore Banner`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/598/400/resized/baltimore-banner-logos-2022_centered_K.jpg
+stockx`StockX`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/651/600/resized/BR-share.png
+cmrsurgical`CMR Surgical`None
+elementum`Elementum`None
+appliedvaluetech`Applied Value Technologies`None
+jumo`JUMO`None
+freenow`FREE NOW`None
+linkfire`Linkfire Jobs`None
+medmen`MedMen`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/187/900/resized/LinkedIN_Job_Posting_-_LG.jpg
+mrbeastyoutube`MrBeast`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/768/600/resized/vector_logo.png
+rent`Rent.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/032/100/resized/Brand_Rent__Type_Primary_Logo__Saturation_2-Color__Color_Black_3x.png
+gridnews`Grid`None
+paddle`Paddle`None
+parkforest`The Avenues of Park Forest - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/427/600/resized/The_Avenues_Logo_Park_Forest_CMYK.jpg
