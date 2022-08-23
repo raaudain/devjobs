@@ -566,3 +566,7 @@ WithinReach`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f85defe4
 DiscoveryBehavioralHealth`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ff858db4fa1606fbe4c0efb/7f370ac6-ba22-4bf8-92bc-586e17954517?r=s3-eu-central-1
 AgileIT`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d6a7e4b0b42dcb45bfeb/150px
 Firstgas`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ec71b14635c1d70e91b3824/e38f39f0-531d-48e5-844f-4f586a6f0d2f?r=s3-eu-central-1
+DataStax`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e909b7a2493931bdbe4ac13/huge?r=s3-eu-central-1
+TollGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f55e7b323e4e875dfaeb2cc/huge?r=s3-eu-central-1
+OGEGmbH1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6194fcb013543837140d2445/huge?r=s3-eu-central-1
+CREALOGIX`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60bf1c595435c366c163e269/huge?r=s3-eu-central-1
