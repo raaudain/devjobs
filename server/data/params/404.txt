@@ -178,3 +178,6 @@ leanplum
 embed
 captainfresh
 venetoulisinstitute
+printforia
+datto
+OpenStore

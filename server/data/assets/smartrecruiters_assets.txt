@@ -570,3 +570,4 @@ DataStax`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e909b7a2493
 TollGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f55e7b323e4e875dfaeb2cc/huge?r=s3-eu-central-1
 OGEGmbH1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6194fcb013543837140d2445/huge?r=s3-eu-central-1
 CREALOGIX`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60bf1c595435c366c163e269/huge?r=s3-eu-central-1
+ThirdBridge`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5faa9400e557822fee39d436/huge?r=s3-eu-central-1

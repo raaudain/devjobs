@@ -83,7 +83,6 @@ contentful
 craftjack
 cybergrx
 datadog
-datto
 dealpath
 demandbase
 descript
@@ -522,7 +521,6 @@ arthurai
 aptoide
 trellisrx
 latentai
-printforia
 within
 id5
 eviationaircraft

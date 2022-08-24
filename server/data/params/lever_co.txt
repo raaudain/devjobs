@@ -741,7 +741,6 @@ currencycloud
 4dmt
 emilabs
 pinata
-OpenStore
 oomnitza
 martinagency
 migo
