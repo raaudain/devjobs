@@ -141,7 +141,6 @@ netlify
 netskope
 neuroflow
 niantic
-nurx
 okta
 ordergroove
 pantheon
@@ -743,7 +742,6 @@ createme
 universalhydrogen
 reprise
 otterbein
-appneta
 vouchinsurance
 ns1
 fareharbor

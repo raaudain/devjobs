@@ -181,3 +181,6 @@ venetoulisinstitute
 printforia
 datto
 OpenStore
+amzkey
+nurx
+appneta
