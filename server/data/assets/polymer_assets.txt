@@ -150,3 +150,6 @@ affilimate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/nn1jst1z9bqd
 being`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ci7j58thg2u2d4g2lvxs017apgfp.png
 precisepk`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vcjg2qb9apghv7cy9dzcbvz26vf4.png
 fledge`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rkx0la6lgx881frkae7zs5sqigaf.jpeg
+mitti`n/a`https://inflow-public.s3.amazonaws.com/company-logos/pedws7zyefun3nks7p3rlfke7fvs.png
+atlantic-quantum`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s17rfwi6npe9fuu4lwu4nvgydjja.png
+hownovel`n/a`https://inflow-public.s3.amazonaws.com/company-logos/Gvp18GLnZXgQJPQFSz9XjkHb.png

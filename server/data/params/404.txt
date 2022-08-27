@@ -184,3 +184,7 @@ OpenStore
 amzkey
 nurx
 appneta
+exporo
+mailchimp
+venetoulisinstitute
+bionicsolution

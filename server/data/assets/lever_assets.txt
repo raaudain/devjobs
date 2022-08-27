@@ -1030,3 +1030,27 @@ Sherpa`Sherpa`https://lever-client-logos.s3.us-west-2.amazonaws.com/f6f3834f-2b8
 CharlieCristForGovernor`Charlie Crist for Governor`https://lever-client-logos.s3.us-west-2.amazonaws.com/09b93721-edc1-47d9-b733-ec0f056c0f58-1624314184437.png
 sfcg`Search for Common Ground`https://lever-client-logos.s3.us-west-2.amazonaws.com/f43f8a9a-ab1f-43cc-afba-68cfdd825e08-1652218704093.png
 persona`Persona`https://lever-client-logos.s3.us-west-2.amazonaws.com/f57a6ecc-0020-4db8-820c-69f32fbe5dfb-1639517103153.png
+neowiz`Neowiz`https://lever-client-logos.s3.us-west-2.amazonaws.com/8d71399c-c82e-4626-b38a-d55ce43ca12e-1646312400543.png
+tiket`tiket.com`https://lever-client-logos.s3.us-west-2.amazonaws.com/aa433ae1-b814-4449-8a88-c7750043de55-1653357492422.png
+scratchfinancial`Scratch Financial, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/9d5f6732-1b70-4a87-b547-9252f7566a72-1627035276226.png
+equals`Equals Money`https://lever-client-logos.s3.us-west-2.amazonaws.com/ae91079b-ada7-46f0-9376-3a48565b79a2-1602681007622.png
+outrider`Outrider`https://lever-client-logos.s3-us-west-2.amazonaws.com/1f81d6d8-b6c5-450b-94d4-1b6c0290b2aa-1582100187055.png
+comstockcompanies`Comstock Companies`https://lever-client-logos.s3.amazonaws.com/b4b0c609-79a6-47e4-9b81-e8086053c258-1571778593947.png
+papercut`PaperCut Software`https://lever-client-logos.s3.amazonaws.com/402343cc-740b-44fb-ac49-074aeca0b3ec-1565156698444.png
+HolyGrail`Holy Grail`https://lever-client-logos.s3.us-west-2.amazonaws.com/a0565058-573d-4a97-933a-d61977f8cefd-1635452385489.png
+telushealthmycare`TELUS Health MyCare`https://lever-client-logos.s3.us-west-2.amazonaws.com/ba070923-a8c7-4011-872d-abc3c54c75a3-1626982185660.png
+mediaocean`Mediaocean`https://lever-client-logos.s3.us-west-2.amazonaws.com/9cf16c66-0f7b-4e39-9d27-9a18866ba3f7-1650271968447.png
+datalabusa`Datalab USA`https://lever-client-logos.s3.us-west-2.amazonaws.com/833a2fb5-86af-4b3c-982b-086255296906-1627317700141.png
+clovirtualfashion`CLO Virtual Fashion`https://lever-client-logos.s3.us-west-2.amazonaws.com/ece180bb-5057-4109-81e5-b90760e69890-1643862507775.png
+fama`Fama Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/388377d1-e3c4-463c-b1da-ebc99fb58425-1644020504432.png
+intive`intive`https://lever-client-logos.s3.us-west-2.amazonaws.com/907cf966-439c-49b0-902f-43a6fd184e58-1650467443046.png
+koho`KOHO`https://lever-client-logos.s3.amazonaws.com/cd28cdb4-b64a-4531-9755-2df6d7078e82-1577991460239.png
+peoplegrove`PeopleGrove`https://lever-client-logos.s3.us-west-2.amazonaws.com/e008de19-762a-43cb-99db-a71253eb4983-1599061488453.png
+lalamove`Lalamove`https://lever-client-logos.s3.us-west-2.amazonaws.com/3e8d4fba-b68a-4f5b-a7fa-9982677d0e5f-1660533592166.png
+frontify`Frontify`https://lever-client-logos.s3.us-west-2.amazonaws.com/a17274f3-568c-4c7d-8996-31e7bc7ba446-1644592920827.png
+intersectpower`Intersect Power, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd09df8b-3752-4107-8ce6-b3ff586edcc1-1648226785559.png
+plusgrade`Plusgrade`https://lever-client-logos.s3.us-west-2.amazonaws.com/f1c3ccc4-02c2-454b-a2b5-360203cca3d7-1653499521208.png
+mulberry`Mulberry`https://lever-client-logos.s3.amazonaws.com/026be4fe-014f-472c-b36b-95de150fe666-1574439214094.png
+codapayments`Coda Payments`https://lever-client-logos.s3.us-west-2.amazonaws.com/affbe79f-d269-4ab4-bce3-67b9e60fafa9-1630310976432.png
+bpmcpa`BPM LLP`https://lever-client-logos.s3.us-west-2.amazonaws.com/2463dc2e-c267-40d8-abbe-5102805a65f5-1623277485663.png
+zensurance`Zensurance`https://lever-client-logos.s3.amazonaws.com/7c665481-40fb-414e-85b6-e116f085beeb-1568321074829.png

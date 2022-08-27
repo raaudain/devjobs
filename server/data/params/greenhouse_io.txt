@@ -382,7 +382,6 @@ landor
 flipboard
 meetupjobs
 godaddy
-mailchimp
 cybereason
 hashicorp
 carsdotcom
@@ -1287,7 +1286,6 @@ agolo
 mysteryorg
 companycam?gh_src=67c992913us
 doordashhighvolume
-bionicsolution
 catapultsystemsllc
 onrunning
 jumio
@@ -1298,7 +1296,6 @@ humanrightswatch
 proyectosenmexycentroamerica
 transmitsecurity
 parsebiosciences?t=b1c98ca23us
-venetoulisinstitute
 opentech
 tailorbirdinc
 veriff

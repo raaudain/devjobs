@@ -1270,3 +1270,34 @@ rent`Rent.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_board
 gridnews`Grid`None
 paddle`Paddle`None
 parkforest`The Avenues of Park Forest - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/427/600/resized/The_Avenues_Logo_Park_Forest_CMYK.jpg
+evolvevacationrental`Evolve`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/203/800/resized/Greenhouse_LI_Image_-__July_2021.jpg
+optimaldynamics`Optimal Dynamics`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/316/800/resized/OD_SlackProfile_(1).png
+messari`Messari`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/006/200/resized/messari_logo_1.jpg
+deepscribe`DeepScribe`None
+eyecarepartners`EyeCare Partners`None
+applecart`Applecart`None
+kiavi`Kiavi`None
+mysteryorg`Mystery.org`None
+doordashhighvolume`DoorDash, Inc.`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/676/resized/DoorDash_icon_RGB.png
+catapultsystemsllc`Catapult Systems`None
+jumio`Jumio`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/244/100/resized/Jumio_Logo-on_light-01.jpg
+bloombergorg`Bloomberg Philanthropies`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/358/200/resized/Default-BP-OG_(002).jpeg
+humanrightswatch`Human Rights Watch`None
+transmitsecurity`Transmit Security`None
+tailorbirdinc`Tailorbird, Inc.`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/119/100/resized/Tailorbird-new.jpeg
+enjoy`Enjoy Technology`None
+newsela`Newsela`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/391/resized/Other_Logos-Blue_2x.png
+chowbus`Chowbus`None
+fossainc`FOSSA`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/709/600/resized/greenhouse.png
+flexcar`Flexcar`None
+cidersecurity`Cider Security`None
+beyondidcareers`BeyondID`None
+valerahealth`Valera Health`None
+agolo`Agolo`None
+onrunning`On`None
+scaleai`Scale AI`None
+kasaliving`Kasa Living`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/626/900/resized/greenhouse_4d.jpg
+proyectosenmexycentroamerica`Médicos Sin Fronteras en México A.C [Proyectos en México y Centroamérica]`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/264/200/resized/MSF_dual_Spanish_RGB.png
+opentech`Opentech`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/778/700/resized/opentech.jpg
+veriff`Veriff`None
+midtowne`Midtowne - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/437/900/resized/Midtowne-Logo-1x.png
