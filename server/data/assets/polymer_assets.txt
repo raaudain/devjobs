@@ -146,3 +146,7 @@ flash`n/a`https://inflow-public.s3.amazonaws.com/company-logos/evygxjgghaqaumzqe
 cyanbot`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rdnRd3rwmzkXSbnX2wrfNi33.png
 inaza`n/a`https://inflow-public.s3.amazonaws.com/company-logos/8czy2hpnqzxk0l0l6xaodanus0qj.png
 facer`n/a`https://inflow-public.s3.amazonaws.com/company-logos/d5cc85l0kd30qs4fibr4o5rhzt33.png
+affilimate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/nn1jst1z9bqd4z9e27pyl9buggc2.png
+being`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ci7j58thg2u2d4g2lvxs017apgfp.png
+precisepk`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vcjg2qb9apghv7cy9dzcbvz26vf4.png
+fledge`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rkx0la6lgx881frkae7zs5sqigaf.jpeg

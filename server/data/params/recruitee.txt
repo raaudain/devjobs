@@ -154,7 +154,6 @@ parkwind
 learnbydoinginc
 opengovernmentproducts
 leydenlabs
-captainfresh
 sauelsthueringen
 missionlabscareers
 bibliu
@@ -467,7 +466,6 @@ summit
 constructivedialogue
 finecobancaprivadakutxabank
 funeralia
-amzkey
 ridestoreab
 skillfishergmbh
 manhattanspecialtycare
