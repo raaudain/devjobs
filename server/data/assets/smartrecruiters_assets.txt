@@ -592,3 +592,6 @@ FINXFLO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60c96b587535b
 Vetoquinol`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f2d13a2553dd304bbc967e8/huge?r=s3-eu-central-1
 CarrWorkplaces`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/552d31e8e4b09ff030881ac1/huge?r=s3
 ReitmansCanadaLteLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fa06de3656dcd6c2a5db9ac/huge?r=s3-eu-central-1
+PharmaCannis`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5501a955e4b0eab934aff930/huge?r=s3
+DeutscheTelekomITSolutions`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61aa44e098ef260f8496382a/huge?r=s3-eu-central-1
+Exinity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61e6727fa110494bb281c3e5/huge?r=s3-eu-central-1
