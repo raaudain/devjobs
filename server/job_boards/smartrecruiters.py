@@ -7,7 +7,7 @@ from datetime import datetime
 from lxml import html
 from .helpers import headers as h
 from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
-from .helpers.format_date import format_date
+from .helpers.date_formatter import date_formatter
 # import modules.headers as h
 # import modules.classes as c
 
@@ -36,7 +36,7 @@ def get_results(item: str, param: str):
     for i in data:
         # date = datetime.strptime(
         #     i["releasedDate"], "%Y-%m-%dT%H:%M:%S.%fZ")
-        date = format_date(i["releasedDate"])
+        date = date_formatter(i["releasedDate"])
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         jobId = i["id"]

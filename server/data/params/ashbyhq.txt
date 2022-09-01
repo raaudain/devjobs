@@ -232,7 +232,6 @@ reservoirlabs
 system2
 threadrobotics
 starlight
-oneapp
 streetbees
 Octane11
 Boulevard
@@ -283,7 +282,6 @@ column
 Adaptive
 weld
 reddit
-oneapp
 nextmatter
 hqo
 StationLabs
