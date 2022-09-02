@@ -189,3 +189,6 @@ mailchimp
 venetoulisinstitute
 bionicsolution
 terramera
+aptoide
+remesh
+rektglobal

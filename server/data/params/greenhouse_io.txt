@@ -151,7 +151,6 @@ pixlee
 policygenius
 poshmark
 pushpay
-remesh
 remind
 remitly
 roblox
@@ -516,7 +515,6 @@ nichecom
 postlight
 zylo
 arthurai
-aptoide
 trellisrx
 latentai
 within
