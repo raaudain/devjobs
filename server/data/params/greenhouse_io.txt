@@ -1302,7 +1302,6 @@ sendbird
 cybrary
 myriad360
 flumehealth
-aptoide
 ivalua
 billtrust2
 purewatercraft
@@ -1314,7 +1313,6 @@ obamafoundation
 umojabiopharma
 stackexchange
 cohley
-hyperfine
 techtalentsouth
 thoughtworksreferral
 amwell

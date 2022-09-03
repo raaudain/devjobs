@@ -1301,3 +1301,32 @@ proyectosenmexycentroamerica`Médicos Sin Fronteras en México A.C [Proyectos en
 opentech`Opentech`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/778/700/resized/opentech.jpg
 veriff`Veriff`None
 midtowne`Midtowne - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/437/900/resized/Midtowne-Logo-1x.png
+sendbird`Sendbird`None
+myriad360`Myriad360`None
+billtrust2`Billtrust EU Careers`None
+kkr`Careers at KKR`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/167/100/resized/kkr-logo-370x229.jpg
+abinbev`AB InBev`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/855/600/resized/AbInbev-Logo.png
+obamafoundation`The Obama Foundation`None
+stackexchange`Stack Overflow`None
+thoughtworksreferral`Referrals Only`None
+bioptimizers`Careers at BiOptimizers`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/464/700/resized/BiOptimizer.png
+airbase`Airbase`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/799/500/resized/Career_Page_(1).jpg
+clearfork`Clear Fork - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/435/600/resized/clear-fork-logo-1x.png
+dianahealth`Diana Health`None
+d2l`D2L`None
+cybrary`Cybrary`None
+flumehealth`Flume Health`None
+ivalua`Ivalua`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/126/resized/logo-ivalua-2020-rgb-72dpi-V1-greenhouse.jpg
+purewatercraft`Pure Watercraft`None
+opentable`OpenTable`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/418/700/resized/Logo_vertical_RGB.png
+dandy`Dandy`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/436/800/resized/dandy_logo.png
+umojabiopharma`Umoja Biopharma`None
+cohley`Cohley`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/122/900/resized/Cohley_Logo_-_Transparent.png
+techtalentsouth`Tech Talent & Strategy`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/810/600/resized/SmallLogo_SansText.png
+amwell`Amwell`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/474/300/resized/1200x628_Amwell_Logo.png
+juullabs`Juul Labs`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/003/853/resized/061520_JuulLabs_Logos_800x152_Juul_EF_JLI-Blue.jpg
+shelf`Shelf`None
+fundedclub`Funded.club`None
+hitachivantaracorporation`Hitachi Vantara Corporation`None
+firstkeyhomes`FirstKey Homes`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/005/000/resized/1625238848952.jpeg
+codersclan`CodersClan`None

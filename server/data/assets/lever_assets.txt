@@ -1054,3 +1054,27 @@ mulberry`Mulberry`https://lever-client-logos.s3.amazonaws.com/026be4fe-014f-472c
 codapayments`Coda Payments`https://lever-client-logos.s3.us-west-2.amazonaws.com/affbe79f-d269-4ab4-bce3-67b9e60fafa9-1630310976432.png
 bpmcpa`BPM LLP`https://lever-client-logos.s3.us-west-2.amazonaws.com/2463dc2e-c267-40d8-abbe-5102805a65f5-1623277485663.png
 zensurance`Zensurance`https://lever-client-logos.s3.amazonaws.com/7c665481-40fb-414e-85b6-e116f085beeb-1568321074829.png
+terra`Terraform Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/79c1f347-7e48-49e9-918f-8578d90ce467-1659704291832.png
+masterycharter`Mastery Charter Schools`https://lever-client-logos.s3.amazonaws.com/3f367db1-1d66-4f60-a2c6-b87b127459a9-1554139073883.png
+helbiz`Helbiz Inc.`https://lever-client-logos.s3.amazonaws.com/3d165f40-eaa3-4139-962b-5173edeec32b-1543935174149.png
+bridgebio`BridgeBio`https://lever-client-logos.s3.us-west-2.amazonaws.com/aac89d6d-6bcb-4aa1-80d9-44b1ab3d558c-1614267010730.png
+q-centrix`Q-Centrix`https://lever-client-logos.s3.us-west-2.amazonaws.com/d0900c1e-012b-49f0-89a0-0dbebd6e5641-1628014265135.png
+highspot`Highspot`https://lever-client-logos.s3-us-west-2.amazonaws.com/35037215-017a-4ec0-b314-1ce725b3d9bf-1586299956275.png
+boldpenguin`Bold Penguin`https://lever-client-logos.s3.us-west-2.amazonaws.com/215f0cee-08ef-47cd-8b40-cfc99f07f61c-1644008854314.png
+synapseint`Synapse International`https://lever-client-logos.s3.amazonaws.com/feb176ec-1b35-4423-a1da-7bcad157c7a2-1480116643735.png
+bixal`Bixal`https://lever-client-logos.s3-us-west-2.amazonaws.com/fa8124e5-1477-4f5b-a2bc-951cae869adb-1586875158505.png
+ouster`Ouster`https://lever-client-logos.s3.us-west-2.amazonaws.com/904b956c-6c33-441a-a6ed-f76112031236-1623876370532.png
+analogfolk`AnalogFolk`https://lever-client-logos.s3-us-west-2.amazonaws.com/674b9711-86d0-4721-a041-3b69b6d399e9-1597753020600.png
+Quantgene`Quantgene`https://lever-client-logos.s3.us-west-2.amazonaws.com/a2ee7c56-55bf-4ad9-84ff-fd9806afe01b-1622746572785.png
+barrel`Barrel`https://lever-client-logos.s3.us-west-2.amazonaws.com/4f3d1baf-14e4-47e5-ba91-2d40c96d438b-1623263799168.png
+sierrawireless`Sierra Wireless`https://lever-client-logos.s3-us-west-2.amazonaws.com/756f871c-d08c-42ad-a03d-d1a55b5f74e2-1591837333065.png
+wealthsimple`Wealthsimple`https://lever-client-logos.s3.us-west-2.amazonaws.com/21ec6969-f4c8-4fd6-862e-2f2f36c0e5ac-1623252375820.png
+ironcladapp`Ironclad`https://lever-client-logos.s3.amazonaws.com/c38e3d7b-afc6-41de-9d59-cb176d4888b8-1576253944815.png
+launcherspace`Launcher`https://lever-client-logos.s3.us-west-2.amazonaws.com/0a345bcf-fc22-4815-b736-8caa7b699170-1622643537876.png
+humcapital`Hum Capital`https://lever-client-logos.s3.us-west-2.amazonaws.com/6bc85fdd-13cd-4a31-a0ca-579f41489d87-1623799129633.png
+ciandt`CI&T`https://lever-client-logos.s3-us-west-2.amazonaws.com/bd60685b-4d32-480d-b133-37e7461f528d-1596062288132.png
+mcachicago`Museum of Contemporary Art Chicago`https://lever-client-logos.s3.us-west-2.amazonaws.com/668c53e8-4ee3-4629-9125-434a1b0a958c-1636049976569.png
+redoxengine`Redox`https://lever-client-logos.s3.amazonaws.com/71a1f973-a10d-4799-ac63-ceb14ae7ae37-1549995755427.png
+starburstdata`Starburst`https://lever-client-logos.s3.us-west-2.amazonaws.com/5dea05c0-9df4-42a5-967b-763acfe59aa1-1614050405190.png
+directi`Directi`https://lever-client-logos.s3.amazonaws.com/bbf01a3f-555b-4cbd-a070-79ec7e7182b9-1535447434895.png
+Polygon`Polygon`https://lever-client-logos.s3.us-west-2.amazonaws.com/7fb55e63-b76e-4d3c-b15c-ecb8fa5399db-1633069374539.png

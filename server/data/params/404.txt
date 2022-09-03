@@ -192,3 +192,6 @@ terramera
 aptoide
 remesh
 rektglobal
+brainnest
+aptoide
+hyperfine

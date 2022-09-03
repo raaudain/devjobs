@@ -153,3 +153,6 @@ fledge`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rkx0la6lgx881frk
 mitti`n/a`https://inflow-public.s3.amazonaws.com/company-logos/pedws7zyefun3nks7p3rlfke7fvs.png
 atlantic-quantum`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s17rfwi6npe9fuu4lwu4nvgydjja.png
 hownovel`n/a`https://inflow-public.s3.amazonaws.com/company-logos/Gvp18GLnZXgQJPQFSz9XjkHb.png
+ledgercomm`n/a`https://inflow-public.s3.amazonaws.com/company-logos/q95e1hswqqcn8btx8awfcgqanfdb.png
+askenigma`n/a`https://inflow-public.s3.amazonaws.com/company-logos/w4xq4viy7w9vn385bffslb3clh3q.png
+speedproxies`n/a`https://inflow-public.s3.amazonaws.com/company-logos/97ulfpavqvi5db6rsovpvesemdhn.png

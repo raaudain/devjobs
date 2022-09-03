@@ -595,3 +595,12 @@ ReitmansCanadaLteLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/
 PharmaCannis`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5501a955e4b0eab934aff930/huge?r=s3
 DeutscheTelekomITSolutions`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61aa44e098ef260f8496382a/huge?r=s3-eu-central-1
 Exinity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61e6727fa110494bb281c3e5/huge?r=s3-eu-central-1
+DXCTechnology16`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61d71644de8797587bb0aeca/huge?r=s3-eu-central-1
+SKIM1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/597a3fa4e4b0574ec0a2a7ec/150px?r=s3
+Biogen`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d9764828c8e7200164d07d0/150px?r=s3-eu-central-1
+LampenweltGmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6165bc5b20651b27207012c6/150px?r=s3-eu-central-1
+Videotron`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5e7379351f4f36010aefa653/4b67a411-1742-4953-ba99-763e61ca46df?r=s3-eu-central-1
+NewbornFoodProductsIncorporated`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58cf4255e4b0a4639f60e08b/150px?r=s3
+BMMLogisticsInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/536d42d8e4b00b07b6577b0b/150px?r=s3
+EnerkemInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/56af6949e4b00da17a2a81e9/150px
+KittitasValleyHealthcare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57e93d5ee4b0afd48d54b80d/150px
