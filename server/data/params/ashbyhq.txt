@@ -227,7 +227,6 @@ flexspace
 braid
 miashare
 insurgrid
-tilt
 reservoirlabs
 system2
 threadrobotics
@@ -268,7 +267,6 @@ motion
 glyphic
 readme
 smlxl
-tango
 growtherapy
 V7
 vital
@@ -329,8 +327,6 @@ minimum
 talentful
 nomic
 glyphic
-tango
-tilt
 miashare
 smlxl
 freshpaint
@@ -356,13 +352,7 @@ Paysail
 craze
 Release
 env-int
-tilt?utm_source=dAKKRWX2jL
-Exofreight?embed=js
-glyphic?embed=js
-nomic?utm_source=nomic_launch
-tango?embed=js
 Community%20Phone
-smlxl?utm_source=website
 PostHog
 Runway
 Namespacelabs

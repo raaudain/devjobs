@@ -26,6 +26,7 @@ def filter_list(links, uri):
 
 def update_params(words_list, params, text):
     for c in words_list:
+        c = c.split("?")[0]
         d = c.lower()
         if d not in text and d not in added and d != "j":
             with open(params, "a") as a:
