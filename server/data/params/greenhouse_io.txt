@@ -1047,15 +1047,13 @@ stonecomercial
 sunnyside
 cobblestoneenergy2
 wonderjobs
-simplepractice55?utm_source=startupers
+simplepractice55
 carta
 levio
 cruise
 ibkr
 lush
 birdview
-lattice?utm_source=startupers
-docusign?utm_source=startupers
 bloomreach
 sumologic
 taxbit
@@ -1069,8 +1067,8 @@ point72
 komodohealth
 unispace
 cytokinetics
-thinkific?gh_src=817510fd2
-stepmobile?utm_source=startupers
+thinkific
+stepmobile
 manygroup
 tbwachiatday
 seamoney
@@ -1085,7 +1083,6 @@ bucknerinternational
 deepsource
 highmetric
 chanzuckerberginitiative
-stashinvest?utm_source=startupers
 ccah
 xosinc
 teampicnic
@@ -1260,13 +1257,11 @@ olx
 freenow
 mixpanel
 linkfire
-blacksky?t=e0182f802us
 medmen
 precisionmedicinegroup
 mrbeastyoutube
 classkick
 rent
-shopee?t=6cc0a0722us
 gridnews
 forbes
 paddle
@@ -1281,7 +1276,7 @@ valerahealth
 kiavi
 agolo
 mysteryorg
-companycam?gh_src=67c992913us
+companycam
 doordashhighvolume
 catapultsystemsllc
 onrunning
@@ -1292,7 +1287,6 @@ kasaliving
 humanrightswatch
 proyectosenmexycentroamerica
 transmitsecurity
-parsebiosciences?t=b1c98ca23us
 opentech
 tailorbirdinc
 veriff
@@ -1326,5 +1320,4 @@ dianahealth
 hitachivantaracorporation
 d2l
 firstkeyhomes
-robinhood?t=NaN
 codersclan
