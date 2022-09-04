@@ -1330,3 +1330,7 @@ fundedclub`Funded.club`None
 hitachivantaracorporation`Hitachi Vantara Corporation`None
 firstkeyhomes`FirstKey Homes`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/005/000/resized/1625238848952.jpeg
 codersclan`CodersClan`None
+stepmobile`Step`None
+companycam`CompanyCam`None
+simplepractice55`SimplePractice`None
+thinkific`Thinkific`None
