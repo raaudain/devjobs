@@ -604,3 +604,4 @@ NewbornFoodProductsIncorporated`n/a`https://c.smartrecruiters.com/sr-company-log
 BMMLogisticsInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/536d42d8e4b00b07b6577b0b/150px?r=s3
 EnerkemInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/56af6949e4b00da17a2a81e9/150px
 KittitasValleyHealthcare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57e93d5ee4b0afd48d54b80d/150px
+RolandBerger`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d8338c48d0c9e41bb879f87/huge?r=s3-eu-central-1
