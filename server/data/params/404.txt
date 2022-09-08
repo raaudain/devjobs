@@ -195,3 +195,6 @@ rektglobal
 brainnest
 aptoide
 hyperfine
+aiven
+flashtract
+snowplowanalytics
