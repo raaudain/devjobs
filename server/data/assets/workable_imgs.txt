@@ -1009,3 +1009,17 @@ unitary`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/537595/logo
 alchemy`n/a`None
 neoleap`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/501187/logo
 apogee`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/395813/logo
+freeagent`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/23357/logo
+truphone`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/409431/logo
+assemblyglobal`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/160953/logo
+bitstamp`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/530694/logo
+sourcechain`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/434634/logo
+vavacars`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/350657/logo
+osome`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/482754/logo
+subaru`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/98420/logo
+katalon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/475564/logo
+k3btg`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/265724/logo
+european-dynamics`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5048/logo
+aliaxis`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/214101/logo
+blackstone`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/33562/logo
+1kosmos`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535559/logo

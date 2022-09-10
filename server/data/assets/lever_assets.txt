@@ -1078,3 +1078,19 @@ redoxengine`Redox`https://lever-client-logos.s3.amazonaws.com/71a1f973-a10d-4799
 starburstdata`Starburst`https://lever-client-logos.s3.us-west-2.amazonaws.com/5dea05c0-9df4-42a5-967b-763acfe59aa1-1614050405190.png
 directi`Directi`https://lever-client-logos.s3.amazonaws.com/bbf01a3f-555b-4cbd-a070-79ec7e7182b9-1535447434895.png
 Polygon`Polygon`https://lever-client-logos.s3.us-west-2.amazonaws.com/7fb55e63-b76e-4d3c-b15c-ecb8fa5399db-1633069374539.png
+done`Done`https://lever-client-logos.s3.us-west-2.amazonaws.com/f6a686d8-50a6-480b-afb4-2198c8bc7f13-1612293259916.png
+attabotics`Attabotics`https://lever-client-logos.s3.amazonaws.com/fd92f95a-b6b6-43a5-9ed9-47ceb3509462-1564610141004.png
+realvision`Real Vision`https://lever-client-logos.s3.us-west-2.amazonaws.com/98b2f2d4-d7db-4f8f-a747-c7b3646e045c-1654830889773.png
+bhvr`Behaviour Interactive`https://lever-client-logos.s3.us-west-2.amazonaws.com/cdbc9438-c4fb-4645-812d-1a0a6d27b915-1599224665511.png
+cloudwalk`CloudWalk`https://lever-client-logos.s3.us-west-2.amazonaws.com/92d4b656-11a5-4a25-bbd2-bd3ba150b899-1654893885672.png
+tapasmedia`Tapas Entertainment`https://lever-client-logos.s3.us-west-2.amazonaws.com/f2b43227-4c41-4008-acb5-372cac407574-1660926338430.png
+eastsidegamestudio`East Side Games`https://lever-client-logos.s3.us-west-2.amazonaws.com/518d9e69-f19b-4917-918f-308653116933-1641935452840.png
+1password`1Password`https://lever-client-logos.s3-us-west-2.amazonaws.com/f2192f1c-fc87-4e38-9764-293c0eb616a2-1591722029366.png
+leantaas`LeanTaaS`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b522368-29eb-40e6-a457-ce4e870b7e6f-1653513359053.png
+trailappliances`Trail Appliances Ltd.`https://lever-client-logos.s3.amazonaws.com/ba166e62-1681-4162-b7c0-92a817dd90a7-1553026915424.png
+mollie`Mollie`https://lever-client-logos.s3.amazonaws.com/3ce813b6-50d8-4238-bf4d-7afa5ae8550f-1568189611836.png
+veo`Veo Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/83bd9f2d-6d1b-4436-9fdd-5472b25ec1cd-1611830448520.png
+impossiblefoods`Impossible Foods`https://lever-client-logos.s3.amazonaws.com/30e7e727-cc27-4ee3-b9e0-8c8ef6b4dc46-1529519230852.png
+swissborg`SwissBorg`https://lever-client-logos.s3.amazonaws.com/9292430f-91e2-468c-9ac0-341004aa23ad-1542641513949.png
+LightspeedVenturePartners`LSVP`https://lever-client-logos.s3.us-west-2.amazonaws.com/ac335d36-d791-42b9-b33b-541ac0ca2994-1633017885533.png
+heetch`Heetch`https://lever-client-logos.s3.amazonaws.com/f7871096-23db-4647-927c-2e30ac45d403-1569210090298.png

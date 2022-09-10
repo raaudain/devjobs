@@ -1334,3 +1334,23 @@ stepmobile`Step`None
 companycam`CompanyCam`None
 simplepractice55`SimplePractice`None
 thinkific`Thinkific`None
+clarifai`Clarifai`https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png
+marmalade`Marmalade`None
+cambridgemobiletelematics`Cambridge Mobile Telematics`None
+samsungsemiconductor`Samsung Semiconductor, Inc.`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/339/900/resized/Job_Board_Share_Image.png
+sigmacomputing`Sigma Computing`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/150/000/resized/logo-01.png
+kaiahealth`Kaia Health`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/152/800/resized/Kaia_PP_Typo_Stack_Logo.png
+beautycounter`Beautycounter`None
+eyeo`eyeo`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/366/resized/eyeologo.PNG
+trace3`Trace3`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/142/resized/Trace3_logo_RGB.png
+cordial81`Cordial`None
+stokespacetechnologies`STOKE Space Technologies`None
+polymathventures`Polymath Ventures`None
+integrateai`integrate.ai`None
+mcpeakvisionpartners`McPeak Vision Partners`None
+atompower`Atom Power`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/118/500/resized/170926_-_Atom_Power_-_Atom_Power_Vertical_Logo_(2).png
+life360`Life360`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/245/300/resized/life360-horizontal-logo-trimmed.png
+reciprocity`Reciprocity`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/890/resized/Reciprocity-logo_new_1200x627.png
+semafor`Semafor`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/290/300/resized/logo_semafor_black_transp_noborder.png
+starry`Starry`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/353/000/resized/RecruitingArtwork01.jpg
+themarkup`The Markup`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/393/600/resized/avatar-1c.png

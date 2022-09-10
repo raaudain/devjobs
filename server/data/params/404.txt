@@ -199,3 +199,5 @@ aiven
 flashtract
 snowplowanalytics
 tibormink
+jobs2careers
+brainnest
