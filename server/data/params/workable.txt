@@ -1018,5 +1018,4 @@ european-dynamics
 subaru
 bitstamp
 k3btg
-osome
 katalon

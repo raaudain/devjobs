@@ -612,3 +612,5 @@ oceanstarshipscom`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d6f
 CRB`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61b1192844454e5885db2a79/150px?r=s3-eu-central-1
 ShowroomPriv`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55426d5ae4b03fb81595acc0/150px
 G2AExecutiveSearch`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5523ef18e4b09eef8cbabfc8/e6300f45-eead-44c2-8ce6-4f098e56dbe4?r=s3
+Nagarro1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61aa1e97c8432600c0c3e193/huge?r=s3-eu-central-1
+AllianceAnimalHealth`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5eea53910e318e7044920807/huge?r=s3-eu-central-1
