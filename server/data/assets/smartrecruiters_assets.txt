@@ -614,3 +614,4 @@ ShowroomPriv`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55426d5ae4b0
 G2AExecutiveSearch`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5523ef18e4b09eef8cbabfc8/e6300f45-eead-44c2-8ce6-4f098e56dbe4?r=s3
 Nagarro1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61aa1e97c8432600c0c3e193/huge?r=s3-eu-central-1
 AllianceAnimalHealth`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5eea53910e318e7044920807/huge?r=s3-eu-central-1
+ClientSolvTechnologies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/524b2126e4b0841ae5fa60f9/huge?r=s3

@@ -231,7 +231,6 @@ asana
 point
 alto
 janetechnologies
-lightstep
 digit
 cameo
 gusto
@@ -266,7 +265,6 @@ geniussports
 dailyharvest
 rivian
 calm
-farmstead
 outsetmedical
 panoramaed
 talkspace
@@ -1009,7 +1007,6 @@ miqdigital
 greenlightbiosciences
 originfinancial
 flarehr
-autoleap
 shopmonkey
 zestypaws
 vestiairecollective
@@ -1203,7 +1200,6 @@ blacksky
 syncari
 dealerinspire
 abodo
-accuweather
 samsungresearchamerica
 closedloop
 wisesystems
