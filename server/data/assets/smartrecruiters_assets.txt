@@ -615,3 +615,4 @@ G2AExecutiveSearch`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/55
 Nagarro1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61aa1e97c8432600c0c3e193/huge?r=s3-eu-central-1
 AllianceAnimalHealth`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5eea53910e318e7044920807/huge?r=s3-eu-central-1
 ClientSolvTechnologies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/524b2126e4b0841ae5fa60f9/huge?r=s3
+EyasGaming`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f7acb0d49aeda342cf1ad7a/huge?r=s3-eu-central-1
