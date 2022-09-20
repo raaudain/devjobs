@@ -357,7 +357,6 @@ cic
 findora
 resonanceglobal
 kivaconfections
-aifoundation
 bayzat
 dragos
 weride
