@@ -1188,7 +1188,6 @@ paper
 compassindia
 knowbe4
 c6bank
-contingent50
 aces
 synctera
 monthly

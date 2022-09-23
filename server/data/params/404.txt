@@ -212,3 +212,4 @@ accuweather
 macedonia
 aifoundation
 softbankrobotics
+contingent50

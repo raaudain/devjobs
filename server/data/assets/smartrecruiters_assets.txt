@@ -618,3 +618,4 @@ ClientSolvTechnologies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/52
 EyasGaming`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f7acb0d49aeda342cf1ad7a/huge?r=s3-eu-central-1
 SonicAutomotive`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5dfd423c5430522fc3a49298/huge?r=s3-eu-central-1
 ApexCleanEnergy`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60020ef1a1b34a112b03587b/huge?r=s3-eu-central-1
+Navigatr`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b60890be4b0a155eb202f5a/huge?r=s3-eu-central-1
