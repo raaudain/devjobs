@@ -157,3 +157,4 @@ ledgercomm`n/a`https://inflow-public.s3.amazonaws.com/company-logos/q95e1hswqqcn
 askenigma`n/a`https://inflow-public.s3.amazonaws.com/company-logos/w4xq4viy7w9vn385bffslb3clh3q.png
 speedproxies`n/a`https://inflow-public.s3.amazonaws.com/company-logos/97ulfpavqvi5db6rsovpvesemdhn.png
 paradime`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hx0oc6r49ogm0b5dwpn1wj0i49p3.png
+staytuned`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ivsxnmie66kmqjz6xxy3gt5bqe8c.png

@@ -1094,3 +1094,16 @@ impossiblefoods`Impossible Foods`https://lever-client-logos.s3.amazonaws.com/30e
 swissborg`SwissBorg`https://lever-client-logos.s3.amazonaws.com/9292430f-91e2-468c-9ac0-341004aa23ad-1542641513949.png
 LightspeedVenturePartners`LSVP`https://lever-client-logos.s3.us-west-2.amazonaws.com/ac335d36-d791-42b9-b33b-541ac0ca2994-1633017885533.png
 heetch`Heetch`https://lever-client-logos.s3.amazonaws.com/f7871096-23db-4647-927c-2e30ac45d403-1569210090298.png
+southwestwater`South West Water`https://lever-client-logos.s3.us-west-2.amazonaws.com/1a597e6e-7afe-43b7-87bd-94a8425718af-1645722579941.png
+winewarehouse`Wine Warehouse California`https://lever-client-logos.s3.us-west-2.amazonaws.com/5e7f36b3-ada7-4217-99fa-85fe386c2e30-1640129579191.png
+versapay`Versapay`https://lever-client-logos.s3.us-west-2.amazonaws.com/f41e5ee4-b78b-4cd2-8099-638f04a40574-1623885458036.png
+hostinger`Hostinger`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca256a2b-eb0c-42f6-a310-cee260ddbed8-1652532589840.png
+campusworksinc`CampusWorks, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/4ee44c57-95b1-42ee-838d-37f8d9a6130f-1657128986837.png
+vippetcare`PetIQ`https://lever-client-logos.s3-us-west-2.amazonaws.com/ff3b716f-5a8f-4991-a449-5661550c822e-1596472468628.png
+pathrise`Pathrise`https://lever-client-logos.s3.amazonaws.com/9d08acb8-554d-4649-bd09-1f7f62767cf4-1575515056913.png
+dodmg`HRL Laboratories`https://lever-client-logos.s3.us-west-2.amazonaws.com/5b14d5e9-66a8-43bd-a080-9bc46e3eb855-1658421293314.png
+poplarhomes`Poplar Homes`https://lever-client-logos.s3.us-west-2.amazonaws.com/838f35e4-4c8d-4ffa-ab5b-ac97b872ca13-1638832047153.png
+participantmedia`Participant`https://lever-client-logos.s3.amazonaws.com/0ef112fc-bde8-420f-9333-5bdf20009b07-1568673544159.png
+mcrmed`Meridian Clinical Research`https://lever-client-logos.s3.us-west-2.amazonaws.com/a01be559-2246-4cec-8703-629358fb0b01-1603921412511.png
+drivekyte`Kyte`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca1e7d0d-4dc7-44cc-94a7-59787063e296-1639612980956.png
+tend`Tend`https://lever-client-logos.s3.amazonaws.com/9a9c43b5-17eb-4582-b79b-0a0015507f81-1554211506706.png
