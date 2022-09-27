@@ -219,7 +219,6 @@ pagerduty
 signaladvisors
 passbase
 gohealth
-zipwhip
 workrise
 axon
 coupang
@@ -247,7 +246,6 @@ greenhouse
 nextdoor
 ethyca
 sponsorsforeducationalopportunity
-metromile
 bird
 sharebite
 naughtydog
@@ -393,7 +391,6 @@ zenefits
 sendwaveapp
 ebanx
 sondermind
-brookfieldresidential
 catawiki
 mrsool
 shopee

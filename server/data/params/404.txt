@@ -214,3 +214,7 @@ aifoundation
 softbankrobotics
 contingent50
 embed
+ludewigmarketing
+zipwhip
+metromile
+brookfieldresidential
