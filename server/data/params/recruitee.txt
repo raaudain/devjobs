@@ -173,7 +173,6 @@ startupsjobs
 angelicoussisgroup
 msf
 checkdgroup
-circleeconomy
 affideaireland
 manikonailsgmbh
 companisto
