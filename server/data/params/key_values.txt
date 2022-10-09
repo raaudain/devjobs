@@ -1,3 +1,4 @@
+/caremessage
 /ladder
 /course-hero
 /snap

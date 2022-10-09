@@ -1330,3 +1330,57 @@ fundedclub`Funded.club`None
 hitachivantaracorporation`Hitachi Vantara Corporation`None
 firstkeyhomes`FirstKey Homes`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/005/000/resized/1625238848952.jpeg
 codersclan`CodersClan`None
+stepmobile`Step`None
+companycam`CompanyCam`None
+simplepractice55`SimplePractice`None
+thinkific`Thinkific`None
+clarifai`Clarifai`https://www.clarifai.com/hs-fs/hubfs/logo/Clarifai/clarifai-740x150.png
+marmalade`Marmalade`None
+cambridgemobiletelematics`Cambridge Mobile Telematics`None
+samsungsemiconductor`Samsung Semiconductor, Inc.`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/339/900/resized/Job_Board_Share_Image.png
+sigmacomputing`Sigma Computing`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/150/000/resized/logo-01.png
+kaiahealth`Kaia Health`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/152/800/resized/Kaia_PP_Typo_Stack_Logo.png
+beautycounter`Beautycounter`None
+eyeo`eyeo`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/366/resized/eyeologo.PNG
+trace3`Trace3`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/142/resized/Trace3_logo_RGB.png
+cordial81`Cordial`None
+stokespacetechnologies`STOKE Space Technologies`None
+polymathventures`Polymath Ventures`None
+integrateai`integrate.ai`None
+mcpeakvisionpartners`McPeak Vision Partners`None
+atompower`Atom Power`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/118/500/resized/170926_-_Atom_Power_-_Atom_Power_Vertical_Logo_(2).png
+life360`Life360`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/245/300/resized/life360-horizontal-logo-trimmed.png
+reciprocity`Reciprocity`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/890/resized/Reciprocity-logo_new_1200x627.png
+semafor`Semafor`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/290/300/resized/logo_semafor_black_transp_noborder.png
+starry`Starry`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/353/000/resized/RecruitingArtwork01.jpg
+themarkup`The Markup`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/393/600/resized/avatar-1c.png
+codility`Codility`None
+hourglasscosmetics`Hourglass Cosmetics`None
+dimagi`Dimagi`None
+homeoffice`Home Office`None
+evergreennephrology`Evergreen Nephrology`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/086/900/resized/EN.PNG24.png
+snowpeak`Snow Peak USA`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/174/400/resized/SP_logo_Horiz_no_creator_black.png
+extrahopnetworks`ExtraHop`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/321/800/resized/logo_whitebg_2x-100.jpg
+phonepe`PhonePe`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/547/300/resized/logo_version_Pe-01.png
+nationalpublicradioinc`National Public Radio, Inc.`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/332/000/resized/NPRLogo_RGB_whiteborder.png
+nylas`Nylas`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/264/300/resized/Nylas-Logo-Stacked-Blue.jpg
+hightouch`Hightouch`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/141/000/resized/logo.png
+substack`Substack`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/121/800/resized/substack_logo_(2).jpg
+broadsign`Broadsign Careers`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/115/700/resized/broadsign_logo_1200x628.png
+raft`Raft Company Website`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/073/000/resized/Raft_logo_dark.png
+vynyl`VYNYL`None
+intervenn`InterVenn Biosciences`None
+homage`Homage Care`None
+unstoppabledomains`Unstoppable Domains`None
+sagansystems`Gladly`None
+practicefusion`Practice Fusion`None
+teltech`TelTech`None
+rockstargames`Rockstar Games`None
+nurix`Nurix`None
+helix`Helix`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/600/resized/email_logo_rgb_4c_square2_sm.png
+commsor`Commsor`None
+magicleapinc`Magic Leap, Inc.`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/621/resized/Magic_Leap_Word___Brand_Mark_64x64_Black_Meteorite.jpg
+techstars57`Techstars`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/759/500/resized/1200x630-techstars_2x.jpg
+dataiku`Dataiku`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/683/800/resized/jobs-board-logo.png
+makeship`Makeship`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/220/100/resized/Icon_Blue-Green.png
+zapier`Zapier`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/287/500/resized/zapier-logomark.png
