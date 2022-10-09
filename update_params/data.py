@@ -89,4 +89,10 @@ ats = [
         "params": "../server/data/params/recruitee.txt",
         "uri": r"https://(.*?).recruitee.com/"
     },
+    {
+        "file": "./temp/crew_temp.txt",
+        "host": ".crew.work/",
+        "params": "../server/data/params/crew.txt",
+        "uri": r"https://(.*?).crew.work/"
+    },
 ]
