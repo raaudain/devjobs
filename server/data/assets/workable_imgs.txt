@@ -1070,3 +1070,5 @@ pixsy`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/36807/logo
 twine`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/16054/logo
 thetie`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/520955/logo
 european-reliance-sa`n/a`None
+lumanity`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/538463/logo
+spindrift`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/284262/logo
