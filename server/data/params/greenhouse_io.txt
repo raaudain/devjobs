@@ -639,7 +639,6 @@ nuro
 seldon
 bandwidth
 interfolio
-kava
 digitalocean98
 hypercube
 rhombuspower
@@ -666,7 +665,6 @@ chaossearch
 willowtree
 whipmedia
 figs15
-convercent
 philo
 codeclimate
 bubble
@@ -866,7 +864,6 @@ seveneightcapital
 mindgeek
 sofarsounds
 spinskinnylabsincfleetoperations
-docusign
 indexexchange
 mikebloomberg2020
 presidentssummit
@@ -1078,8 +1075,6 @@ ccah
 xosinc
 teampicnic
 northport
-oaks
-datadome
 riskified
 tesseradata
 carrotinc
@@ -1255,7 +1250,6 @@ gridnews
 forbes
 paddle
 stockx
-parkforest
 deepscribe
 cidersecurity
 beyondidcareers
@@ -1392,10 +1386,8 @@ whatnot
 thirtymadison
 orium
 dashlane
-embed
 fieldwire
 adgear
-bionicsolution
 lifelabslearning
 elevatek12
 form3
@@ -1407,7 +1399,6 @@ countrygreenery
 smartcatplatforminc
 greynoiseintelligence
 fibersense
-bridgefinancialtechnology
 fubogaming
 headinghealth
 manticoregames

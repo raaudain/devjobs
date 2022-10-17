@@ -13,7 +13,6 @@ spja
 onxmaps
 uvto
 profootballhof
-baiminstitute
 peoplesrx
 younglife
 shareourstrength
@@ -46,7 +45,6 @@ azcourts
 activecapitalltd
 5rcattle
 cfaobgw
-benzerpharmacy
 sunsrce
 ace
 fahertybrand
@@ -61,7 +59,6 @@ salus
 sci
 fumch
 hewlett
-serestherapeutics
 icebox
 depinc
 navantigroup
@@ -87,10 +84,8 @@ wtgmerch
 thegranitegroup
 chefpointcafe
 mcw
-coastalvillages
 sumariasystems
 washcoll
-tenica
 uslbm
 carenewengland
 vitalsmiles
@@ -134,7 +129,6 @@ wellairsolutions
 bobbydodd
 northridge4x4
 lifeems
-doehler
 maxsent
 jasonsdeli
 blhnurses
@@ -145,8 +139,6 @@ legacy92
 ppgh
 paxfg
 idexpertscorp
-varmour
-tekfor
 gulfcoastunderground
 helpusa
 lemanacademy
@@ -156,7 +148,6 @@ thewalkerschool
 aquafinance
 nhmaltbeverage
 takasago
-designpoint
 mckinneycomm
 cfadenver
 choicesinseniorcare
@@ -164,11 +155,9 @@ tateinc
 gulfdist
 creekview
 parkvista
-roughdraftrestaurantgroup
 councilforastrongamerica
 miamisci
 mecu
-wildor
 supportkind
 staypineapple
 poulinlumber
@@ -180,7 +169,6 @@ hslasset
 ushe
 pueblolibrary
 cspring
-medicalmodalities
 facinghistory
 tscg
 cfashortpump
@@ -208,7 +196,6 @@ mdmasonichomes
 intoxalock
 precisionbiosciences
 wisenbaker
-tspcompanies
 cafeservicesinc
 cirtecmed
 parkersav
@@ -229,5 +216,4 @@ achievementcenters
 defynedbrands
 kongregate
 tgkentucky
-arielcpa
 southwestgen
