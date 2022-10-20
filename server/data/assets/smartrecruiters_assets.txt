@@ -661,3 +661,5 @@ VolumetricBuildingCompanies`n/a`https://c.smartrecruiters.com/sr-company-logo-pr
 DresdenPartners`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5367a51fe4b0a3bde6240edd/150px
 AlpadiaLanguageSchoolsSA`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5404625ce4b072eeba6c14ec/150px
 TechnicolorCreativeStudios1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/57bd5545e4b08e936b9341a4/c241531d-9358-4377-9f43-251dd17e830e?r=s3
+KIPP`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f5ba9ae70ade110632b7618/huge?r=s3-eu-central-1
+HomeInsteadCare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b6c307ee4b07c33fa61c463/huge?r=s3-eu-central-1

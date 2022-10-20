@@ -250,7 +250,6 @@ bird
 sharebite
 naughtydog
 dialexa
-wellhealthinc
 yeti
 lyft
 mbooth
@@ -633,7 +632,6 @@ recharge
 zupinnovation
 ledgestone
 techridge
-collact
 sada
 nuro
 seldon
@@ -846,7 +844,6 @@ supplyhouse
 hypergiant
 ngmbiopharmaceuticals
 scout24
-Cresicor
 acuitymd
 humancapital
 synchron
@@ -1305,7 +1302,6 @@ firstkeyhomes
 codersclan
 clarifai
 polymathventures
-marmalade
 integrateai
 cambridgemobiletelematics
 aptoide
