@@ -604,7 +604,6 @@ taptapsend
 nordsec
 percona
 brightfin
-snapcommerce
 mathpresso
 applovin
 rackspace
