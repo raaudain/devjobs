@@ -1156,3 +1156,12 @@ kddia`KDDI America`https://lever-client-logos.s3.us-west-2.amazonaws.com/b7e4cbc
 CareAccessResearch`Care Access`https://lever-client-logos.s3.us-west-2.amazonaws.com/2b7aa110-8f2a-4a1c-8ee7-84419f43c880-1624973200516.png
 coalfire`Coalfire`https://lever-client-logos.s3.us-west-2.amazonaws.com/c3d94203-36f0-4cf3-954e-a8260848b937-1629838760800.png
 relayfi`Relay Financial`https://lever-client-logos.s3.us-west-2.amazonaws.com/374719e2-45ee-47b5-a97e-ee6d42fdf841-1661887287666.png
+simulmedia`Simulmedia`https://lever-client-logos.s3.us-west-2.amazonaws.com/8d14dea5-c231-41d8-8031-996e2ddfbb88-1630513408538.png
+kippsocal`KIPP SoCal Public Schools`https://lever-client-logos.s3.amazonaws.com/16e0ab38-f499-4ac7-9ea6-e399c7114661-1561668471490.png
+smartadserver`Equativ`https://lever-client-logos.s3.us-west-2.amazonaws.com/369e124b-d360-43af-a46f-89b04a1fd001-1656345249689.png
+tophat`Top Hat`https://lever-client-logos.s3.amazonaws.com/ddff86f1-b174-46e1-b6f8-f1fc760c1fce-1504631052154.png
+trolley`Trolley`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc6ddece-7131-40f0-b464-246c5b7cb55b-1651650724920.png
+Yassir`Yassir`https://lever-client-logos.s3.us-west-2.amazonaws.com/96eb5b27-9507-4b47-92e8-ca4f044b1456-1639588962611.png
+arcoeducacao`Arco Educação`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0a31c6e-9c8c-4fce-84fe-402fc9fe17e1-1634567264044.png
+makpar`Makpar`https://lever-client-logos.s3-us-west-2.amazonaws.com/a12ea13a-2ff4-416b-bd7c-55e6cc96b5a8-1589998633988.png
+intouchgroup`EVERSANA INTOUCH`https://lever-client-logos.s3.us-west-2.amazonaws.com/b9debbf1-ba1d-463f-91c0-4a5380edfa50-1654617725024.png

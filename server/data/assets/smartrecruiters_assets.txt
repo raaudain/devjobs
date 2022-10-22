@@ -663,3 +663,9 @@ AlpadiaLanguageSchoolsSA`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/
 TechnicolorCreativeStudios1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/57bd5545e4b08e936b9341a4/c241531d-9358-4377-9f43-251dd17e830e?r=s3
 KIPP`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f5ba9ae70ade110632b7618/huge?r=s3-eu-central-1
 HomeInsteadCare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b6c307ee4b07c33fa61c463/huge?r=s3-eu-central-1
+GHSPtL`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d69be4b0b42dcb45b6a3/150px
+undabot`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c3262d6d601800007664157/huge?r=s3-eu-central-1
+SampoernaSchoolsSystem`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6024b7187debbb2a5baab4b4/150px?r=s3-eu-central-1
+Vantiva`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/623983290c7a9c69c8ac3de9/4e48f30c-1b1f-4b05-8ec1-605d505538ac?r=s3-eu-central-1
+TransitionalCareManagement`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d838a103c4d891e502d3c40/150px?r=s3-eu-central-1
+PiringKecilResto`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/620cff4a3a44466e3085c47a/150px?r=s3-eu-central-1

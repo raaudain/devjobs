@@ -262,3 +262,7 @@ collact
 marmalade
 cfaraintreedrive
 snapcommerce
+marmalade
+fubogaming
+blueprint
+embed

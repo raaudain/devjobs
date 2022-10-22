@@ -1453,3 +1453,25 @@ domo`Domo`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/lo
 uniamerica`UniAmérica`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/678/400/resized/uniamerica-descomplica_png.png
 clipboardhealth`Clipboard Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/315/500/resized/CBH_Logo_1200x628_721_DPI.png
 zymergen`Zymergen`None
+secondharvest`Second Harvest`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/009/500/resized/SH_Logo.png
+bigpanda`BigPanda`None
+springhealth66`Spring Health`None
+magnitudecapital`Magnitude Capital`None
+graymatterrobotics`GrayMatter Robotics`None
+alabamavisioncenter`Alabama Vision Center`None
+scaledrobotics`Scaled Robotics`None
+sollishealth`Sollis Health`None
+andela`Andela`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/212/resized/Andela_PowertoFly_430x430.jpg
+cerebral`Cerebral`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/300/900/resized/Logo_3x.png
+escribers`eScribers`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/426/200/resized/escribers-logo.jpg
+dynamotechnologies`Dynamo Technologies`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/328/900/resized/DYNAMO-LOGO-NEGATIVE-RED.jpg
+bgbgroup`BGB Group`None
+emids`emids`None
+avepoint`AvePoint`None
+aztecgroup`Aztec Group`None
+Atrium`Atrium`None
+razorpaysoftwareprivatelimited`Razorpay Software Private Limited`None
+alchemy`Alchemy`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/252/600/resized/alchemy-logo.png
+financialtimes33`Financial Times`https://s101-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/034/410/resized/FT_FullColour_RGB.jpg
+aptoslabs`Aptos`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/079/300/resized/Aptos_wordmark_transparent_BLK.png
+spothero`SpotHero`None

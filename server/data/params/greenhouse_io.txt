@@ -1423,13 +1423,10 @@ clipboardhealth
 secondharvest
 emids
 bigpanda
-marmalade
 springhealth66
-fubogaming
 magnitudecapital
 avepoint
 graymatterrobotics
-blueprint
 alabamavisioncenter
 aztecgroup
 scaledrobotics
@@ -1443,6 +1440,5 @@ financialtimes33
 escribers
 aptoslabs
 dynamotechnologies
-embed
 bgbgroup
 spothero
