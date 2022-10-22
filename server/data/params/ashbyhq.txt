@@ -416,3 +416,10 @@ convex-dev
 Able
 Metaplane
 baseten
+nucleus
+Pocus
+latchai
+Servicebell
+somos
+Joro
+resq
