@@ -298,7 +298,6 @@ seatgeek
 hootsuite
 frameio
 chewycom
-carousell
 sisense
 frog
 lexer
