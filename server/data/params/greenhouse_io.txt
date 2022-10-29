@@ -591,7 +591,6 @@ catalyst10
 canonical
 somnio
 capco
-hyundaiuam
 venturatravel
 bluegranite
 nextroll
@@ -989,7 +988,6 @@ understood
 crookedmedia
 veracode
 aviatrix
-ospreyfunds
 miqdigital
 greenlightbiosciences
 originfinancial
@@ -1443,19 +1441,15 @@ spothero
 aeyeinc
 bitwarden
 tshirtventures
-marmalade
 cloudops
-fubogaming
 tifin
 charliehealth
 commentsold
 glossgenius
-trilogyed
 pfm
 smartbear
 regrow
 perrystreetsoftware
 monad
-embed
 buildarocketboy
 xwing

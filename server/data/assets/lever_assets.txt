@@ -1165,3 +1165,13 @@ Yassir`Yassir`https://lever-client-logos.s3.us-west-2.amazonaws.com/96eb5b27-950
 arcoeducacao`Arco Educação`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0a31c6e-9c8c-4fce-84fe-402fc9fe17e1-1634567264044.png
 makpar`Makpar`https://lever-client-logos.s3-us-west-2.amazonaws.com/a12ea13a-2ff4-416b-bd7c-55e6cc96b5a8-1589998633988.png
 intouchgroup`EVERSANA INTOUCH`https://lever-client-logos.s3.us-west-2.amazonaws.com/b9debbf1-ba1d-463f-91c0-4a5380edfa50-1654617725024.png
+titmouse`Titmouse`https://lever-client-logos.s3.amazonaws.com/0e3ab840-683f-4bcc-a555-bf2cb4402c6b-1580857758415.png
+headout`Headout`https://lever-client-logos.s3.us-west-2.amazonaws.com/c095b983-92d0-417a-a622-cff12f3a9d86-1634299055517.png
+atlan`Atlan`https://lever-client-logos.s3.us-west-2.amazonaws.com/9ea32fba-868a-4f56-a2b4-2c497dccefcd-1665578157799.png
+cloud-academy`Cloud Academy`https://lever-client-logos.s3.us-west-2.amazonaws.com/afdcada2-e646-4c96-88e6-260fa2e707cf-1611101156859.png
+windowsbyrba`Renewal by Andersen`https://lever-client-logos.s3.us-west-2.amazonaws.com/2dbb2089-88b2-4a57-8560-586ed9a5f056-1612470553947.png
+penumbrainc`Penumbra`https://lever-client-logos.s3.amazonaws.com/84963f7c-5208-4789-813f-59b515174479-1453317144798.jpg
+moxionpower`Moxion Power`https://lever-client-logos.s3.us-west-2.amazonaws.com/b71e23ed-d489-40ed-9581-9785267ac70a-1654034655023.png
+swordhealth`Sword `https://lever-client-logos.s3.us-west-2.amazonaws.com/f57b0b25-4023-4df5-85b7-650e11aa1a0e-1656770856727.png
+firsthand`firsthand`https://lever-client-logos.s3.us-west-2.amazonaws.com/501db313-5d20-400c-af8a-6e99131cdde8-1647369435449.png
+younited`Younited`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b6008f9-6c16-4f53-9929-90edfc6561ff-1637312732478.png

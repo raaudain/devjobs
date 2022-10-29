@@ -1475,3 +1475,19 @@ alchemy`Alchemy`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_
 financialtimes33`Financial Times`https://s101-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/034/410/resized/FT_FullColour_RGB.jpg
 aptoslabs`Aptos`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/079/300/resized/Aptos_wordmark_transparent_BLK.png
 spothero`SpotHero`None
+aeyeinc`AEye, Inc`None
+tshirtventures`T-shirt Ventures`None
+cloudops`CloudOps`None
+tifin`TIFIN`None
+commentsold`CommentSold`None
+smartbear`SmartBear`None
+perrystreetsoftware`Perry Street Software`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/638/100/resized/pss-box-black.png
+xwing`Xwing`None
+prefect`Prefect`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/317/000/resized/prefect-profile-image-logo-white.png
+bitwarden`Bitwarden`None
+charliehealth`Charlie Health`None
+glossgenius`GlossGenius`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/488/300/resized/GG_we_are_hiring_-_1_1_generic_banner__(1)_(1).jpg
+pfm`Precision for Medicine`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/057/400/resized/PFM_GHR_Logo.png
+regrow`Regrow`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/031/000/resized/2_Color_Symbol___1_Color_Wordmark_Lockup.png
+monad`Monad`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/183/500/resized/monad_black.png
+buildarocketboy`Build A Rocket Boy`None

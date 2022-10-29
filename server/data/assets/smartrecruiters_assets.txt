@@ -669,3 +669,12 @@ SampoernaSchoolsSystem`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc
 Vantiva`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/623983290c7a9c69c8ac3de9/4e48f30c-1b1f-4b05-8ec1-605d505538ac?r=s3-eu-central-1
 TransitionalCareManagement`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d838a103c4d891e502d3c40/150px?r=s3-eu-central-1
 PiringKecilResto`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/620cff4a3a44466e3085c47a/150px?r=s3-eu-central-1
+CityFibre`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/602fa2a73333d71da26ea465/huge?r=s3-eu-central-1
+JATGlobalPvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5693968de4b0fb3354f42e48/150px?r=s3
+KaizenCPAsAdvisors`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5526ee8ee4b0dc016dbc4459/3603bf59-fc77-4386-be94-014214fda703?r=s3
+Ocorian`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6113dbd04fbf6c1a026ef9e2/98fb9fce-a75f-4810-936a-7ec3b4431414?r=s3-eu-central-1
+RCA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/624ef1abb327c655c2985fc0/150px?r=s3-eu-central-1
+SwivelGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5d6744b117993619c76c3ca5/6d182a01-8abd-4555-8ae0-6de7513ba12a?r=s3-eu-central-1
+EnpalGmbH`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/626a82a8a5c87908efab5713/009cceeb-5770-42fd-8fd0-f4d6a54a0c1f?r=s3-eu-central-1
+SiterNeubauer`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/52a8c461e4b0d0c89a664768/150px
+Cineplex`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5a57cf05e4b0520ce81cbe04/255d1c42-904b-41fa-8be4-5b5125ba7306?r=s3-eu-central-1

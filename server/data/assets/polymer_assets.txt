@@ -164,3 +164,5 @@ bridgesplit`n/a`https://inflow-public.s3.amazonaws.com/company-logos/m8owmefdju8
 shackle`n/a`https://inflow-public.s3.amazonaws.com/company-logos/3fhgv2n28s3lxytdt9wpmkmcppli.jpeg
 clutch`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ZNs5txowVo4VjmKofmedTk1r.png
 aboard`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6elj3priv01xthy05gqgu5j1iu7y.png
+natel-energy`n/a`https://inflow-public.s3.amazonaws.com/company-logos/p8sj10nnavjwm2some8gg8ydaksk.png
+novalabs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/u7p9v2slkz72y1eavh12elpdsxt7.png
