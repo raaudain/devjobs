@@ -1107,3 +1107,61 @@ participantmedia`Participant`https://lever-client-logos.s3.amazonaws.com/0ef112f
 mcrmed`Meridian Clinical Research`https://lever-client-logos.s3.us-west-2.amazonaws.com/a01be559-2246-4cec-8703-629358fb0b01-1603921412511.png
 drivekyte`Kyte`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca1e7d0d-4dc7-44cc-94a7-59787063e296-1639612980956.png
 tend`Tend`https://lever-client-logos.s3.amazonaws.com/9a9c43b5-17eb-4582-b79b-0a0015507f81-1554211506706.png
+ghjadvisors`GHJ`https://lever-client-logos.s3.us-west-2.amazonaws.com/f24f1c83-6376-4e62-ad12-a0b979b08f0c-1641362423204.png
+density`Density`https://lever-client-logos.s3.amazonaws.com/cdbcbd9e-c7b7-4c3b-80bc-9d00b5745d0f-1525096030587.png
+backmarket`Back Market`https://lever-client-logos.s3.amazonaws.com/e8005da9-a3ce-4c86-8256-1d523416bb08-1558968117783.png
+openlogix`Openlogix Corporation`https://lever-client-logos.s3.amazonaws.com/b4ccd451-73a7-446c-b339-ae42d74aeb38-1581380417033.png
+fullscript`Fullscript`https://lever-client-logos.s3.us-west-2.amazonaws.com/727af32a-6170-486c-954b-3dde57293262-1619616321981.png
+smalldoor`Small Door Veterinary`https://lever-client-logos.s3.us-west-2.amazonaws.com/4e99cbff-e68b-4770-909d-6936c03c2563-1658452374796.png
+saviynt`Saviynt`https://lever-client-logos.s3.us-west-2.amazonaws.com/ce99b770-5388-4dab-9ded-1f9c58e887a4-1608667806175.png
+aceandtate`Ace & Tate`https://lever-client-logos.s3.amazonaws.com/49406bb0-ffbc-4bdd-bb56-b79be0047746-1573489392086.png
+crusoeenergy`Crusoe Energy`https://lever-client-logos.s3.us-west-2.amazonaws.com/2e3b6a4e-f0f9-41a9-9ec9-5592c1c4e57b-1623189675124.png
+bazaarvoice`Bazaarvoice`https://lever-client-logos.s3.us-west-2.amazonaws.com/714170d1-1117-4943-89d7-fa08f7e6af25-1599041824947.png
+sunshinesachs`Sunshine Sachs Morgan & Lylis`https://lever-client-logos.s3.us-west-2.amazonaws.com/2a953084-1e0e-43bc-aea1-af72744a53fe-1647714241335.png
+merlinlabs`Merlin Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/ef3cc6ce-fb7f-4e7c-bd80-1dfee2f2c585-1657647229343.png
+cscgeneration-2`CSC Generation`https://lever-client-logos.s3.us-west-2.amazonaws.com/a2399369-889f-4200-a5ce-1ed0156b7f57-1659552358595.png
+observeinc`Observe, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/e6ee7e29-a1ed-41f8-a0ab-b92af681d215-1648491151964.png
+noahmed`Noah Medical`https://lever-client-logos.s3.us-west-2.amazonaws.com/f8d2c327-2dd3-43b8-a237-3195564d11dd-1647538468995.png
+rhaffaires`RHA international `https://lever-client-logos.s3.us-west-2.amazonaws.com/a71ba812-ea11-4eea-84cd-8d0674a1e200-1605030077024.png
+pickethomes`Picket Homes`https://lever-client-logos.s3.us-west-2.amazonaws.com/c4ab5f4d-dc87-4586-bac1-57a5d9d3560f-1610751134226.png
+framework`Framework`https://lever-client-logos.s3.us-west-2.amazonaws.com/dcb76da7-f209-4e0e-a0e5-20d4cac0adf1-1601947120299.png
+varomoney`Varo Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/1810717f-bd4f-42c3-9c9a-d74add86aac7-1612565352159.png
+cdcfoundation`CDC Foundation`https://lever-client-logos.s3.us-west-2.amazonaws.com/a3e16d25-edaa-4e9d-9dec-882ea1d82d6a-1620150057944.png
+buyboxexperts`Buy Box Experts`https://lever-client-logos.s3.us-west-2.amazonaws.com/3991df9f-b826-4f1d-9b93-152c2f617543-1628624897113.png
+oatly`Oatly`https://lever-client-logos.s3.amazonaws.com/90ff89df-5c41-447c-a786-3b28d902fe9a-1569349995746.png
+quincyinst`Quincy Institute`https://lever-client-logos.s3.amazonaws.com/503d0d8f-101d-4a8b-8b73-83b01e487f1a-1577132586339.png
+edpuzzle`Edpuzzle`https://lever-client-logos.s3.us-west-2.amazonaws.com/228d01a5-7849-4297-b593-b9dd7b1ed137-1656446808072.png
+theguarantors`TheGuarantors`https://lever-client-logos.s3.us-west-2.amazonaws.com/56efad4b-89e2-4d88-b3df-41d1481c3a38-1637244549510.png
+sfmoma`SFMOMA`https://lever-client-logos.s3.us-west-2.amazonaws.com/9a6ef14e-a44b-40ca-b0f3-691fcad8b27e-1650933661895.png
+zipongo`Foodsmart`https://lever-client-logos.s3.us-west-2.amazonaws.com/8451c84f-cb3d-4bf5-b811-9af7da52983b-1605764181590.png
+%20FoschiniRetailGroup`Bash`https://lever-client-logos.s3.us-west-2.amazonaws.com/32ac2ae3-8d43-4f0c-bcdd-936f17e36026-1665593865351.png
+ogury`Ogury`https://lever-client-logos.s3.amazonaws.com/c87e8e1c-5f57-474e-9141-86c0ba94d6e2-1576246921737.png
+SprinterHealth`Sprinter Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/b347b58f-b59b-47c3-8db4-6613e5670793-1629309435348.png
+willowinc`Willow`https://lever-client-logos.s3.us-west-2.amazonaws.com/9289d284-9b68-426a-943c-6836a499b422-1620713637733.png
+fiscalnote`FiscalNote`https://lever-client-logos.s3.us-west-2.amazonaws.com/6fb458f7-5ca7-468a-8399-9a01240be4fd-1663775956260.png
+agiloft`Agiloft`https://lever-client-logos.s3.us-west-2.amazonaws.com/3e6f9e40-90d3-496a-820d-7ae3201a4d71-1651064016848.png
+CopyAI`CopyAI`https://lever-client-logos.s3.us-west-2.amazonaws.com/b3327b6f-1152-4abe-9cae-0b251e4b6e00-1624982450463.png
+seaoil`SEAOIL Philippines`https://lever-client-logos.s3.amazonaws.com/ddef372d-088d-48cf-9b16-80b256b8eb81-1567732746695.png
+momnt`Momnt`https://lever-client-logos.s3.us-west-2.amazonaws.com/95d70002-5de5-4369-a670-95fed93d101b-1662151342937.png
+navisite`Navisite`https://lever-client-logos.s3.us-west-2.amazonaws.com/d171aad2-e118-4362-8e1e-3f42ce48d3b5-1620245295248.png
+3pillarglobal`3Pillar Global`https://lever-client-logos.s3.amazonaws.com/84963f7c-5208-4789-813f-59b515174479-1447197441540.png
+carewest`Carewest Innovative Healthcare`https://lever-client-logos.s3.us-west-2.amazonaws.com/29956411-0b1f-405a-972b-9db35fc4070f-1607717952200.png
+improvadoio`Improvado`https://lever-client-logos.s3.us-west-2.amazonaws.com/c187a161-e2c4-461b-86c5-06116562c216-1657764880599.png
+sambatv`Samba TV`https://lever-client-logos.s3-us-west-2.amazonaws.com/44bde038-69b8-4b42-afaf-28ce85f47b49-1595890743863.png
+circleco`Circle`https://lever-client-logos.s3.us-west-2.amazonaws.com/3b00b20d-12c8-4ed9-ae9e-97d8601567b2-1639596067303.png
+winnco`WinnCompanies`https://lever-client-logos.s3.us-west-2.amazonaws.com/ba3df205-d735-44b3-bf9d-3435fdc8ec83-1645569678416.png
+infrastructureontario`Infrastructure Ontario`https://lever-client-logos.s3.us-west-2.amazonaws.com/7a2f96ec-cc35-4791-b488-b71e1049c93c-1613664471994.png
+onupkeep`UpKeep`https://lever-client-logos.s3.us-west-2.amazonaws.com/f1d76389-123e-4578-bcc9-7291877b156c-1601580663730.png
+kddia`KDDI America`https://lever-client-logos.s3.us-west-2.amazonaws.com/b7e4cbc1-e53d-4b0b-961f-662f501d7a7a-1665582347004.png
+CareAccessResearch`Care Access`https://lever-client-logos.s3.us-west-2.amazonaws.com/2b7aa110-8f2a-4a1c-8ee7-84419f43c880-1624973200516.png
+coalfire`Coalfire`https://lever-client-logos.s3.us-west-2.amazonaws.com/c3d94203-36f0-4cf3-954e-a8260848b937-1629838760800.png
+relayfi`Relay Financial`https://lever-client-logos.s3.us-west-2.amazonaws.com/374719e2-45ee-47b5-a97e-ee6d42fdf841-1661887287666.png
+simulmedia`Simulmedia`https://lever-client-logos.s3.us-west-2.amazonaws.com/8d14dea5-c231-41d8-8031-996e2ddfbb88-1630513408538.png
+kippsocal`KIPP SoCal Public Schools`https://lever-client-logos.s3.amazonaws.com/16e0ab38-f499-4ac7-9ea6-e399c7114661-1561668471490.png
+smartadserver`Equativ`https://lever-client-logos.s3.us-west-2.amazonaws.com/369e124b-d360-43af-a46f-89b04a1fd001-1656345249689.png
+tophat`Top Hat`https://lever-client-logos.s3.amazonaws.com/ddff86f1-b174-46e1-b6f8-f1fc760c1fce-1504631052154.png
+trolley`Trolley`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc6ddece-7131-40f0-b464-246c5b7cb55b-1651650724920.png
+Yassir`Yassir`https://lever-client-logos.s3.us-west-2.amazonaws.com/96eb5b27-9507-4b47-92e8-ca4f044b1456-1639588962611.png
+arcoeducacao`Arco Educação`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0a31c6e-9c8c-4fce-84fe-402fc9fe17e1-1634567264044.png
+makpar`Makpar`https://lever-client-logos.s3-us-west-2.amazonaws.com/a12ea13a-2ff4-416b-bd7c-55e6cc96b5a8-1589998633988.png
+intouchgroup`EVERSANA INTOUCH`https://lever-client-logos.s3.us-west-2.amazonaws.com/b9debbf1-ba1d-463f-91c0-4a5380edfa50-1654617725024.png

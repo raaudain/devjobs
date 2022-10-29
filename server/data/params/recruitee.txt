@@ -95,7 +95,6 @@ emnormandie
 offtherecord
 alpeganv
 boldteam
-rebellionpay
 focushomeinteractive
 sonnerie
 veaxo
@@ -215,7 +214,6 @@ hollandstartup
 even3
 neni
 visorai
-wrnch
 atome3d
 salonkee
 connecterra
@@ -314,7 +312,6 @@ ghocommunicatie
 secondspectrum
 janegoodall
 veloretti
-birdsai
 goldenvoiceacademy
 farminsect
 icebreakervc
@@ -325,7 +322,6 @@ halodirobotics
 adeleexpressfr
 omroepbrabant
 lunaralife
-wmfs
 innovationseven
 crateio
 benfatto
@@ -354,7 +350,6 @@ foxrh
 gevgroupltd
 hmclause
 kraaijeveldgroentenenfruit
-ccma
 delicarte
 demvsystems
 forma
@@ -400,12 +395,10 @@ vandervalkhoteleindhoven
 bankvanbreda
 robinradar
 crunchanalytics1
-tourismgroup
 prozenda
 avsverkehrssicherunggmbh
 inhousify
 s2corporation
-stolwijkkennisnetwerk
 missionmittelstandgmbh
 vervegroup
 metrikagmbh
@@ -466,7 +459,6 @@ manhattanspecialtycare
 unwatch
 relimetrics
 blueprintautomation
-vintagecashcow
 syone2
 kiwusconsultinggmbh
 osterhausconsultinggmbh
