@@ -5,7 +5,7 @@ import random
 from datetime import datetime
 from bs4 import BeautifulSoup
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.create_temp_json as create_temp_json
 
 
@@ -23,7 +23,7 @@ def get_results(item: str):
         # desc = None
         location = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip(
         )
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

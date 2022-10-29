@@ -4,7 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 from .helpers import headers as h
 # import modules.headers as h
 
@@ -20,7 +20,7 @@ def get_results(item: str):
         logo = job["Company"][0]["data"]["Logo"][0]["thumbnails"]["large"]["url"]
         apply_url = "https://www.diversifytech.co/job-board/"+job["Job_ID"]
         location = job["Location"].strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

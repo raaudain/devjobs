@@ -5,7 +5,7 @@ import random
 import sys
 from .helpers import create_temp_json
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 
 
 def get_results(item: str):
@@ -23,7 +23,7 @@ def get_results(item: str):
         post_date = datetime.timestamp(
             datetime.strptime(str(date)[:-9], "%Y-%m-%d "))
         if age <= post_date:
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": title,
                 "company": company_name,

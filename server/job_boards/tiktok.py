@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from .helpers import create_temp_json
 from .helpers import driver
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.create_temp_json as create_temp_json
 # import modules.driver as driver
 
@@ -37,7 +37,7 @@ def get_results(item):
         position = r.find(
             "span", class_="positionItem-title-text").text.strip()
         location = r.find("span", class_="content__3ZUKJ clamp-content").text
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

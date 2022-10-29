@@ -6,7 +6,7 @@ from os.path import isfile
 from bs4 import BeautifulSoup
 
 
-class Read_List_Of_Companies:
+class ReadListOfCompanies:
     def __new__(self, file_path: str):
         self.file_path = file_path
         with open(self.file_path, "r") as f:
@@ -15,7 +15,7 @@ class Read_List_Of_Companies:
             return companies
 
 
-class Remove_Not_Found:
+class RemoveNotFound:
     def __init__(self, file_path: str, param: str):
         f = open(file_path, "r+")
         params = [param.strip() for param in f]
@@ -32,7 +32,7 @@ class Remove_Not_Found:
         not_found.close()
 
 
-class Get_Stored_Data:
+class GetStoredData:
     def __new__(self, file_path: str):
         self.file_path = file_path
         table = {}
@@ -49,13 +49,13 @@ class Get_Stored_Data:
         return table
 
 
-class Filter_Jobs:
+class FilterJobs:
     def __init__(self, posting: dict):
         self.posting = posting
         posting = self.posting
 
-        data = Create_JSON.data
-        scraped = Create_JSON.scraped
+        data = CreateJson.data
+        scraped = CreateJson.scraped
 
         title = posting["title"]
         company = posting["company"]
@@ -73,7 +73,7 @@ class Filter_Jobs:
             scraped.add(url)
 
 
-class Update_Key_Values:
+class UpdateKeyValues:
     def filter_companies():
         url = "https://www.keyvalues.com/"
         html = requests.get(url).text
@@ -87,7 +87,7 @@ class Update_Key_Values:
             print("=> key_values: Updated parameters")
 
 
-class Create_JSON:
+class CreateJson:
     data = []
     scraped = set()
 

@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from .helpers import headers as h
 from .helpers import create_temp_json
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.headers as h
 # import modules.create_temp_json as create_temp_json
 
@@ -407,7 +407,7 @@ def get_results(item: str, city: str):
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M"))
         if age <= post_date:
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": None,

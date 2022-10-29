@@ -5,7 +5,7 @@ import json
 from selenium import webdriver
 from .helpers import create_temp_json
 from .helpers import driver
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.create_temp_json as create_temp_json
 # import modules.driver as driver
 
@@ -33,7 +33,7 @@ def get_results(item: str):
             location = str(i.find("span", class_="job-location")).replace(
                 '<span class="job-location">', "").replace("</span>", "").strip()
             if "None" not in position:
-                Filter_Jobs({
+                FilterJobs({
                     "timestamp": post_date,
                     "title": position,
                     "company": company_name,

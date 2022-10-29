@@ -5,7 +5,7 @@ import time
 import random
 from datetime import datetime, timedelta
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.headers as h
 
 
@@ -22,7 +22,7 @@ def get_results(item: str):
         location = i["location"].strip()
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         if age <= post_date:
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,

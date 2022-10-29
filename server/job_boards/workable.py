@@ -4,7 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 from .helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
@@ -19,7 +19,7 @@ def get_results(item: str, param: str):
     workable_imgs = "./data/assets/workable_imgs.txt"
     logo: None
     source_url = f"https://apply.workable.com/{param}/"
-    table = Get_Stored_Data(workable_imgs)
+    table = GetStoredData(workable_imgs)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -40,7 +40,7 @@ def get_results(item: str, param: str):
         city = f"{job['city']}" if len(job["city"]) > 0 else ""
         state = f"{job['state']}" if len(job["state"]) > 0 else ""
         location = f"{city} {state} {country} {remote}".strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -61,7 +61,7 @@ def get_url(companies: list):
             url = f"https://www.workable.com/api/accounts/{company}?details=true"
             response = requests.get(url, headers=headers)
             if response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             data = json.loads(response.text)
             get_results(data, company)
             if count % 9 == 0:
@@ -80,7 +80,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

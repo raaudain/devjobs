@@ -5,7 +5,7 @@ import sys
 import re
 import time
 import random
-from .helpers.classes import Create_JSON, Filter_Jobs
+from .helpers.classes import CreateJson, FilterJobs
 from .helpers import headers as h
 from .helpers import create_temp_json
 # import modules.create_temp_json as create_temp_json
@@ -15,7 +15,7 @@ from .helpers import create_temp_json
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("article")
-    scraped = Create_JSON.scraped
+    scraped = CreateJson.scraped
     for job in results:
         date = job.find(
             class_="company-name display-flex").find_all("span")[4].text.strip()
@@ -63,7 +63,7 @@ def get_results(item):
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
         if company not in scraped:
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": title,
                 "company": company,

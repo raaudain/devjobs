@@ -6,7 +6,7 @@ import time
 import random
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Read_List_Of_Companies, Remove_Not_Found, Filter_Jobs
+from .helpers.classes import ReadListOfCompanies, RemoveNotFound, FilterJobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
@@ -27,7 +27,7 @@ def get_results(item: str, param: str, name: str, logo: str):
         position = data["title"].strip()
         locations_string = data["locationName"].strip()
         source_url = f"https://jobs.ashbyhq.com/{param}"
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +70,7 @@ def get_url(companies: list):
                     logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(
                         res.text)["data"]["organization"]["theme"] else None
                 else:
-                    Remove_Not_Found(FILE_PATH, company)
+                    RemoveNotFound(FILE_PATH, company)
                 get_results(data, company, name, logo)
                 if page % 10 == 0:
                     time.sleep(5)
@@ -81,7 +81,7 @@ def get_url(companies: list):
             print(f"=> ashbyhq: Failed to scrape {company}. Error: {e}.")
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

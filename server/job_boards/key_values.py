@@ -4,7 +4,7 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Update_Key_Values
+from .helpers.classes import FilterJobs, ReadListOfCompanies, UpdateKeyValues
 from .helpers import headers as h
 # import modules.classes as c
 # import modules.create_temp_json as create_temp_json
@@ -28,7 +28,7 @@ def get_results(item: str, url: str):
         apply_url = job.find("a", href=True)["href"]
         location = job.find(
             "div", class_="open-position--job-information").find_all("p")[0].text
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": title,
             "company": company,
@@ -53,8 +53,8 @@ def get_url(params: list):
 
 
 def main():
-    Update_Key_Values.filter_companies()
-    params = Read_List_Of_Companies(FILE_PATH)
+    UpdateKeyValues.filter_companies()
+    params = ReadListOfCompanies(FILE_PATH)
     get_url(params)
 
 

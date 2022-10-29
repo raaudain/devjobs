@@ -42,9 +42,10 @@ from . import indeed
 from . import diversifytech
 from . import bootup
 from . import recruitee
+from . import crew
 # from . import craigslist_gigs
 from datetime import datetime
-from .helpers.classes import Create_JSON
+from .helpers.classes import CreateJson
 
 
 logging.basicConfig(
@@ -80,6 +81,7 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     # bloomberg.main()
+    crew.main()
     usajobs.main()
     workable.get_url(work[::5])
     diversifytech.main()
@@ -126,9 +128,9 @@ def main():
     dailyremote.main()
     bootup.main()
     builtin.main()
-    Create_JSON.create_temp_file(Create_JSON.data)
+    CreateJson.create_temp_file(CreateJson.data)
     # try:
-    #     Create_JSON.create_file()
+    #     CreateJson.create_file()
     # except Exception as e:
     #     logging.debug("Exception occured: ", e, exc_info=True)
     print("=> Done")

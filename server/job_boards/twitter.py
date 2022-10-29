@@ -3,7 +3,7 @@ import requests
 import json
 import sys
 import random
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 from .helpers import headers as h
 
 
@@ -20,7 +20,7 @@ def get_results(item: str):
         for i in data["locations"]:
             locations += i["title"]+", "
         location = locations.rstrip(", ")
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

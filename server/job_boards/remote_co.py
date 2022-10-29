@@ -4,7 +4,7 @@ import requests
 import sys
 import random
 import re
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 from .helpers import headers as h
 
 
@@ -36,7 +36,7 @@ def get_results(item):
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M"))
         if age <= post_date:
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": title,
                 "company": company,

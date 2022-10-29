@@ -4,7 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
-from .helpers.classes import Filter_Jobs, Create_JSON
+from .helpers.classes import FilterJobs, CreateJson
 from .helpers import headers as h
 # import modules.headers as h
 
@@ -14,7 +14,7 @@ IS_TRUE = True
 
 def get_results(item: str):
     global IS_TRUE
-    scraped = Create_JSON.scraped
+    scraped = CreateJson.scraped
     jobs = item["jobs"]
     companies = item["companies"]
     # Remove unwanted data
@@ -78,7 +78,7 @@ def get_results(item: str):
             location = d["location"]
             if apply_url not in scraped and company_name not in scraped:
                 if age <= post_date:
-                    Filter_Jobs({
+                    FilterJobs({
                         "timestamp": post_date,
                         "title": position,
                         "company": company_name,

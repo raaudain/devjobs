@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from lxml import html
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 from .helpers.date_formatter import date_formatter
 # import modules.headers as h
 # import modules.classes as c
@@ -19,7 +19,7 @@ def get_results(item: str, param: str):
     source_url = f"https://careers.smartrecruiters.com/{param}/"
     data = item["content"]
     sr = "./data/assets/smartrecruiters_assets.txt"
-    table = Get_Stored_Data(sr)
+    table = GetStoredData(sr)
     logo = None
     if param in table:
         logo = table[param]["logo"]
@@ -61,7 +61,7 @@ def get_results(item: str, param: str):
         country = i["location"]["country"].upper()
         remote = " | Remote" if i["location"]["remote"] else ""
         location = f"{city}{region}{country}{remote}"
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -89,7 +89,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
         except Exception as e:
             if response.status_code == 429:
                 print(
@@ -101,7 +101,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

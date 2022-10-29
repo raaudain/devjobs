@@ -5,7 +5,7 @@ import random
 import json
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
 from .helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
@@ -29,7 +29,7 @@ def get_results(item: str, param: str):
         company_name = company.strip()
         position = d["jobOpeningName"].strip()
         location = f"{d['location']['city'].strip()}, {d['location']['state'].strip() if d['location']['state'] else d['location']['country'].strip()}"
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -56,7 +56,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
         except:
             if response.status_code == 429:
                 print(
@@ -68,7 +68,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

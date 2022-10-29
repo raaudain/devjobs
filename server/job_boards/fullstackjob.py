@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from .helpers import create_temp_json
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -31,7 +31,7 @@ def get_results(item: str):
             location = location+country+remote
             source = data["ownerTenant"]["host"]
             source_url = "https://"+data["ownerTenant"]["host"]
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,

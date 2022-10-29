@@ -27,13 +27,16 @@ def main():
 def query_google(query, file):
     count = 0
     results = 0
+
     while True:
         if results < count:
             break
+
         for q in search(query, tld="com", num=100, start=count, stop=None, pause=90):
             with open(file, "a") as a:
                 a.write(f"{q}/\n")
             results += 1
+
         count += 100
         time.sleep(0.05)
 

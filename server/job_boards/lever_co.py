@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from lxml import html
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Remove_Not_Found, Read_List_Of_Companies
+from .helpers.classes import FilterJobs, GetStoredData, RemoveNotFound, ReadListOfCompanies
 # import modules.headers as h
 # import modules.classes as c
 
@@ -19,7 +19,7 @@ def get_results(item: str, param: str):
     company_name = param.capitalize()
     logo = None
     lever = "./data/assets/lever_assets.txt"
-    table = Get_Stored_Data(lever)
+    table = GetStoredData(lever)
     if param in table:
         company_name = table[param]["name"] 
         logo = table[param]["logo"]
@@ -42,7 +42,7 @@ def get_results(item: str, param: str):
         description = i["descriptionPlain"]
         position = i["text"].strip()
         location = i["categories"]["location"].strip() if "location" in i["categories"] else "See description"
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +70,7 @@ def get_url(companies: list):
                 else:
                     time.sleep(0.2)
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             count += 1
         except Exception as e:
             if response.status_code == 429:
@@ -83,7 +83,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

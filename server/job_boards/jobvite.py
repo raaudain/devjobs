@@ -5,7 +5,7 @@ import random
 from bs4 import BeautifulSoup
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
 # import modules.headers as h
 
 
@@ -33,7 +33,7 @@ def get_results(item: str, name: str):
             position = title
             location = r.find("td", class_="jv-job-list-location").text.strip() if r.find(
                 "td", class_="jv-job-list-location") else "See description for location"
-            Filter_Jobs({
+            FilterJobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,
@@ -55,7 +55,7 @@ def get_url(companies: list):
             if response.ok:
                 get_results(response.text, name)
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, name)
+                RemoveNotFound(FILE_PATH, name)
             else:
                 res = requests.get(
                     f"https://jobs.jobvite.com/{name}/jobs", headers=headers)
@@ -74,7 +74,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

@@ -1,6 +1,6 @@
-from job_boards.helpers.classes import Create_JSON
+from job_boards.helpers.classes import CreateJson
 import sys
 
-Create_JSON.create_file()
+CreateJson.create_file()
 
 sys.exit(0)

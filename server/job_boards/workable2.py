@@ -4,7 +4,7 @@ import json
 import sys
 import time
 import random
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
 from .helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
@@ -26,7 +26,7 @@ def get_results(item: str, param: str, company: str, logo: str):
         state = f"{data['location']['city']}, {data['location']['region']}, "
         location = f"{state if data['location']['city'] else ''}{data['location']['country']}"
         source_url = f"https://apply.workable.com/{param}/"
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -60,7 +60,7 @@ def get_url(companies: list):
                 }
                 response = requests.post(url, json=payload, headers=headers)
                 if response.status_code == 404:
-                    Remove_Not_Found(FILE_PATH, company)
+                    RemoveNotFound(FILE_PATH, company)
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
                 name = None
@@ -94,7 +94,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

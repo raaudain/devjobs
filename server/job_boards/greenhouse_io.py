@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 from bs4 import BeautifulSoup
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 # import modules.headers as h
 # import modules.classes as c
 
@@ -20,7 +20,7 @@ def get_results(item: str, param: str):
     company_name = param.capitalize()
     logo = None
     jobs = item["jobs"]
-    table = Get_Stored_Data(gh)
+    table = GetStoredData(gh)
     if param in table:
         company_name = table[param]["name"]
         logo = table[param]["logo"]
@@ -47,7 +47,7 @@ def get_results(item: str, param: str):
         position = j["title"].strip()
         apply_url = j["absolute_url"].strip()
         location = j["location"]["name"].strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -71,7 +71,7 @@ def get_url(companies: list):
                 if data:
                     get_results(data, company)
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             else:
                 print(
                     f"=> greenhouse.io: Status code {response.status_code} for {company}")
@@ -85,7 +85,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

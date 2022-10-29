@@ -4,7 +4,7 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
 from .helpers import create_temp_json
 from .helpers import headers as h
 # import modules.create_temp_json as create_temp_json
@@ -31,7 +31,7 @@ def get_results(item: str, name: str):
         apply_url = job["href"]
         location = job.find("span", class_="sort-by-location posting-category small-category-label").text if job.find(
             "span", class_="sort-by-location posting-category small-category-label") else None
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": title,
             "company": company_name,
@@ -52,7 +52,7 @@ def get_url(companies: list):
         if response.ok:
             get_results(response.text, name)
         elif response.status_code == 404:
-            Remove_Not_Found(FILE_PATH, name)
+            RemoveNotFound(FILE_PATH, name)
         else:
             print(
                 f"=> lever.co: Error for {name} - Response status", response.status_code)
@@ -62,7 +62,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

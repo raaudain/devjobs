@@ -4,7 +4,7 @@ import requests
 import sys
 import random
 from .helpers import headers as h
-from .helpers.classes import Create_JSON, Filter_Jobs
+from .helpers.classes import CreateJson, FilterJobs
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
@@ -12,7 +12,7 @@ from .helpers.classes import Create_JSON, Filter_Jobs
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("tr")
-    scraped = Create_JSON.scraped
+    scraped = CreateJson.scraped
     for job in results:
         if job.find("time"):
             date = job.find("time")["datetime"].replace("T", " ")[:-9]
@@ -28,7 +28,7 @@ def get_results(item: str):
             ) if job.find("div", class_="location tooltip") else "Remote"
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
             if age <= post_date and company_name not in scraped:
-                Filter_Jobs({
+                FilterJobs({
                     "timestamp": post_date,
                     "title": position,
                     "company": company_name,

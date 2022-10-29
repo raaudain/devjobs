@@ -5,7 +5,7 @@ import time
 import random
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 
 
 def getResults(item):
@@ -18,7 +18,7 @@ def getResults(item):
         company_name = data["Agency"].strip()
         position = data["Title"].strip()
         location = data["Location"].strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

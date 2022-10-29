@@ -6,7 +6,7 @@ import random
 from lxml import html
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 # import modules.headers as h
 # import modules.classes as c
 
@@ -18,7 +18,7 @@ def get_results(item: str, param: str):
     wrk = "./data/assets/polymer_assets.txt"
     source_url = f"https://jobs.polymer.co/{param}"
     logo = None
-    table = Get_Stored_Data(wrk)
+    table = GetStoredData(wrk)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -43,7 +43,7 @@ def get_results(item: str, param: str):
         country = f"{j['country'].strip()}" if j["country"] else ""
         remote = f" | {j['remoteness_pretty'].strip()}" if j["remoteness_pretty"] and "No" not in j["remoteness_pretty"] else ""
         location = city+state+country+remote
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -71,7 +71,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             else:
                 print(f"=> polymer: Status code {response.status_code} for {company}")
         except Exception as e:
@@ -79,7 +79,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

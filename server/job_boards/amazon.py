@@ -4,7 +4,7 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import Filter_Jobs
+from .helpers.classes import FilterJobs
 from .helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
@@ -23,7 +23,7 @@ def get_results(item: str):
         job_path = d["job_path"].strip()
         apply_url = f"https://amazon.jobs{job_path}"
         location = d["normalized_location"]
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

@@ -5,13 +5,13 @@ import time
 import random
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Create_JSON, Filter_Jobs
+from .helpers.classes import CreateJson, FilterJobs
 # import modules.classes as c
 # import modules.headers as h
 
 
 def get_results(item: str):
-    scraped = Create_JSON.scraped
+    scraped = CreateJson.scraped
     date = item["created_at"]
     post_date = datetime.timestamp(
         datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S"))
@@ -22,7 +22,7 @@ def get_results(item: str):
     location = item["locations"][0]["location"]["city_state"] if len(
         item["locations"]) > 0 else "See Description"
     if company_name not in scraped:
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

@@ -5,7 +5,7 @@ import sys
 import time
 import random
 from lxml import html
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 from .helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
@@ -19,7 +19,7 @@ def get_results(item: str, param: str):
     re = "./data/assets/recruitee_assets.txt"
     source_url = f"https://{param}.recruitee.com"
     logo = None
-    table = Get_Stored_Data(re)
+    table = GetStoredData(re)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -41,7 +41,7 @@ def get_results(item: str, param: str):
         position = job["title"].strip()
         description = job["description"]
         location = job["location"].strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -62,7 +62,7 @@ def get_url(companies: list):
             url = f"https://{company}.recruitee.com/api/offers/"
             response = requests.get(url, headers=headers)
             if response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             data = json.loads(response.text)
             get_results(data, company)
             if count % 20 == 0:
@@ -81,7 +81,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

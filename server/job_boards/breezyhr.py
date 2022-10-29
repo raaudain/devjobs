@@ -6,7 +6,7 @@ from lxml import html
 from datetime import datetime
 from bs4 import BeautifulSoup
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
 # import modules.headers as h
 # import modules.classes as c
 
@@ -43,7 +43,7 @@ def get_results(item: str, param: str):
         elif r.find("li", class_="location"):
             location = r.find(
                 "li", class_="location").text.strip()
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +70,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             else:
                 print(
                     f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
@@ -84,7 +84,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 

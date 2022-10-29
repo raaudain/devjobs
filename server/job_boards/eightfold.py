@@ -6,7 +6,7 @@ import random
 from lxml import html
 from datetime import datetime
 from .helpers import headers as h
-from .helpers.classes import Filter_Jobs, Get_Stored_Data, Read_List_Of_Companies, Remove_Not_Found
+from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
 # import modules.headers as h
 # import modules.classes as c
 
@@ -21,7 +21,7 @@ def get_results(item: str, param: str):
     logo = None
     source_url = f"https://{param}.eightfold.ai/careers/"
     ef = "./data/assets/eightfold_assets.txt"
-    table = Get_Stored_Data(ef)
+    table = GetStoredData(ef)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -43,7 +43,7 @@ def get_results(item: str, param: str):
         department = j["department"]
         apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
         location = " | ".join(j["locations"])
-        Filter_Jobs({
+        FilterJobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -73,7 +73,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                Remove_Not_Found(FILE_PATH, company)
+                RemoveNotFound(FILE_PATH, company)
             else:
                 print(
                     f"=> eightfold.ai: Status code {response.status_code} for {company}.")
@@ -82,7 +82,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = Read_List_Of_Companies(FILE_PATH)
+    companies = ReadListOfCompanies(FILE_PATH)
     get_url(companies)
 
 
