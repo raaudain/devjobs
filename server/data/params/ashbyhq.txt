@@ -423,3 +423,10 @@ Servicebell
 somos
 Joro
 resq
+enode
+talkbase
+slite
+complete
+quant-aq
+picogrid
+Prysm
