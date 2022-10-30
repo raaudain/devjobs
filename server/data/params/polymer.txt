@@ -206,3 +206,6 @@ clutch
 rockx
 phaserx
 aboard
+novalabs
+natel-energy
+cloudmazing-b-v
