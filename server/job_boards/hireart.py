@@ -3,12 +3,14 @@ import json
 import sys
 import random
 sys.path.insert(0, ".")
-from modules.classes import FilterJobs
-from modules import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 from datetime import datetime
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     jobs = item["jobs"]
@@ -21,7 +23,7 @@ def get_results(item: str):
             company_name = data["company_name"].strip()
             position = data["position"].strip()
             location = data["locations_string"].strip()
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,

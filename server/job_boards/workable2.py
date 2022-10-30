@@ -4,14 +4,15 @@ import json
 import sys
 import time
 import random
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
-from .helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/workable.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/workable.txt"
 
 
 def get_results(item: str, param: str, company: str, logo: str):
@@ -26,7 +27,7 @@ def get_results(item: str, param: str, company: str, logo: str):
         state = f"{data['location']['city']}, {data['location']['region']}, "
         location = f"{state if data['location']['city'] else ''}{data['location']['country']}"
         source_url = f"https://apply.workable.com/{param}/"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -60,7 +61,7 @@ def get_url(companies: list):
                 }
                 response = requests.post(url, json=payload, headers=headers)
                 if response.status_code == 404:
-                    RemoveNotFound(FILE_PATH, company)
+                    process_data.remove_not_found(FILE_PATH, company)
                 info = requests.get(url2, headers=headers).text
                 data = json.loads(response.text)
                 name = None
@@ -94,7 +95,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

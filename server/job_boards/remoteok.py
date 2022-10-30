@@ -3,11 +3,15 @@ from datetime import datetime, timedelta
 import requests
 import sys
 import random
-from .helpers import headers as h
-from .helpers.classes import CreateJson, FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers.classes import CreateJson
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
@@ -28,7 +32,7 @@ def get_results(item: str):
             ) if job.find("div", class_="location tooltip") else "Remote"
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
             if age <= post_date and company_name not in scraped:
-                FilterJobs({
+                process_data.filter_jobs({
                     "timestamp": post_date,
                     "title": position,
                     "company": company_name,

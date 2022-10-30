@@ -5,21 +5,23 @@ import time
 import random
 from datetime import datetime
 from lxml import html
-from .helpers import headers as h
-from .helpers.classes import FilterJobs, GetStoredData, RemoveNotFound, ReadListOfCompanies
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/lever_co.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/lever_co.txt"
 
 
 def get_results(item: str, param: str):
     source_url = f"https://jobs.lever.co/{param}"
     company_name = param.capitalize()
     logo = None
-    lever = "./data/assets/lever_assets.txt"
-    table = GetStoredData(lever)
+    lever = "server/data/assets/lever_assets.txt"
+    table = process_data.get_stored_data(lever)
     if param in table:
         company_name = table[param]["name"] 
         logo = table[param]["logo"]
@@ -42,7 +44,7 @@ def get_results(item: str, param: str):
         description = i["descriptionPlain"]
         position = i["text"].strip()
         location = i["categories"]["location"].strip() if "location" in i["categories"] else "See description"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +72,7 @@ def get_url(companies: list):
                 else:
                     time.sleep(0.2)
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             count += 1
         except Exception as e:
             if response.status_code == 429:
@@ -83,7 +85,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 # from .modules import headers as h
 import modules.create_temp_json as create_temp_json
 import modules.headers as h
-from .helpers.classes import FilterJobs
+server.job_boards.helpers.classes import filter_jobs
 
 
 def get_results(item):
@@ -15,7 +15,7 @@ def get_results(item):
     company_name = "Bloomberg"
     position = item["jobTitle"]
     location = item["jobLocation"]
-    FilterJobs({
+    process_data.filter_jobs({
         "timestamp": post_date,
         "title": position,
         # "qualifications": qualifications,

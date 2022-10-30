@@ -4,22 +4,24 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/workable.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/workable.txt"
 
 
 def get_results(item: str, param: str):
     company = item["name"]
     jobs = item["jobs"]
-    workable_imgs = "./data/assets/workable_imgs.txt"
+    workable_imgs = "server/data/assets/workable_imgs.txt"
     logo: None
     source_url = f"https://apply.workable.com/{param}/"
-    table = GetStoredData(workable_imgs)
+    table = process_data.get_stored_data(workable_imgs)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -40,7 +42,7 @@ def get_results(item: str, param: str):
         city = f"{job['city']}" if len(job["city"]) > 0 else ""
         state = f"{job['state']}" if len(job["state"]) > 0 else ""
         location = f"{city} {state} {country} {remote}".strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -61,7 +63,7 @@ def get_url(companies: list):
             url = f"https://www.workable.com/api/accounts/{company}?details=true"
             response = requests.get(url, headers=headers)
             if response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             data = json.loads(response.text)
             get_results(data, company)
             if count % 9 == 0:
@@ -80,7 +82,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

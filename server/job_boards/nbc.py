@@ -4,12 +4,14 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers import create_temp_json
-from .helpers import headers as h
-from .helpers.classes import FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     for i in item:
@@ -21,7 +23,7 @@ def get_results(item: str):
         apply_url = i["field_detailurl"].replace("&amp;", "&").strip()
         location = ",".join(i["field_location"].split(",")[::-1]).replace(",United States", "").strip() if len(
             i["field_location"].split(",")) < 4 else i["field_location"].replace("United States,", "").strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

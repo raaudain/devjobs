@@ -4,12 +4,12 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from .helpers import headers as h
-from .helpers import create_temp_json
-from .helpers.classes import FilterJobs
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 # import modules.create_temp_json as create_temp_json
 
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str, city: str):
     cities = {
@@ -407,7 +407,7 @@ def get_results(item: str, city: str):
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M"))
         if age <= post_date:
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": None,
@@ -565,10 +565,10 @@ def get_url_miami_network(items: list):
 
 
 def main():
-    f = open("./data/params/craigslist.txt", "r")
+    f = open("server/data/params/craigslist.txt", "r")
     locations = [location.strip() for location in f]
     f.close()
-    m = open("./data/params/miami.txt", "r")
+    m = open("server/data/params/miami.txt", "r")
     miamis = [miami.strip() for miami in m]
     m.close()
     get_url_network(locations)

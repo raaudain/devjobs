@@ -5,13 +5,14 @@ import random
 import json
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
 
-
-FILE_PATH = "./data/params/clearcompany.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/clearcompany.txt"
 
 
 def get_results(item: str, param: str):
@@ -38,7 +39,7 @@ def get_results(item: str, param: str):
         city = d.find("a", href=True).find_next()
         state = city.find_next()
         location = f"{city.text.strip()}, {state.text.strip()}"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -64,7 +65,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             else:
                 print(
                     f"=> clearcompany: Failed to scrape {company}. Status code: {response.status_code}")
@@ -73,7 +74,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

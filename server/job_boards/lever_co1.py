@@ -4,15 +4,15 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 from .helpers import create_temp_json
-from .helpers import headers as h
+from server.job_boards.helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/lever_co.txt"
+FILE_PATH = "server/data/params/lever_co.txt"
 
 
 def get_results(item: str, name: str):
@@ -31,7 +31,7 @@ def get_results(item: str, name: str):
         apply_url = job["href"]
         location = job.find("span", class_="sort-by-location posting-category small-category-label").text if job.find(
             "span", class_="sort-by-location posting-category small-category-label") else None
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": title,
             "company": company_name,
@@ -52,7 +52,7 @@ def get_url(companies: list):
         if response.ok:
             get_results(response.text, name)
         elif response.status_code == 404:
-            RemoveNotFound(FILE_PATH, name)
+            process_data.remove_not_found(FILE_PATH, name)
         else:
             print(
                 f"=> lever.co: Error for {name} - Response status", response.status_code)
@@ -62,7 +62,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

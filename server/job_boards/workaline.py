@@ -4,9 +4,13 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import FilterJobs, CreateJson
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import CreateJson
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item):
     scraped = CreateJson.scraped
@@ -21,7 +25,7 @@ def get_results(item):
         position = data["title"].strip()
         location = "Remote"
         if company_name not in scraped:
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,

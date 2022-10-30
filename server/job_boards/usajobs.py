@@ -4,9 +4,12 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers import headers as h
-from .helpers.classes import FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 
+
+process_data = ProcessCompanyJobData()
 
 def getResults(item):
     jobs = item["Jobs"]
@@ -18,7 +21,7 @@ def getResults(item):
         company_name = data["Agency"].strip()
         position = data["Title"].strip()
         location = data["Location"].strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

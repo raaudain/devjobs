@@ -5,13 +5,14 @@ import random
 from lxml import html
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .helpers import headers as h
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 # import modules.classes as c
 
-
-FILE_PATH = "./data/params/breezyhr.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/breezyhr.txt"
 
 
 def get_results(item: str, param: str):
@@ -43,7 +44,7 @@ def get_results(item: str, param: str):
         elif r.find("li", class_="location"):
             location = r.find(
                 "li", class_="location").text.strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +71,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             else:
                 print(
                     f"=> breezyhr: Failed to scrape {company}. Status code: {response.status_code}")
@@ -84,7 +85,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

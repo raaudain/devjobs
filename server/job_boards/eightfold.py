@@ -5,13 +5,15 @@ import time
 import random
 from lxml import html
 from datetime import datetime
-from .helpers import headers as h
-from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/eightfold.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/eightfold.txt"
 
 
 def get_results(item: str, param: str):
@@ -20,8 +22,8 @@ def get_results(item: str, param: str):
     ) if "companyName" in item["branding"] else param.capitalize()
     logo = None
     source_url = f"https://{param}.eightfold.ai/careers/"
-    ef = "./data/assets/eightfold_assets.txt"
-    table = GetStoredData(ef)
+    ef = "server/data/assets/eightfold_assets.txt"
+    table = process_data.get_stored_data(ef)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -43,7 +45,7 @@ def get_results(item: str, param: str):
         department = j["department"]
         apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
         location = " | ".join(j["locations"])
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -73,7 +75,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 count += 1
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             else:
                 print(
                     f"=> eightfold.ai: Status code {response.status_code} for {company}.")
@@ -82,7 +84,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

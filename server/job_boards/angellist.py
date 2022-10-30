@@ -19,7 +19,7 @@ wait = WebDriverWait(browser, 15)
 
 data = create_temp_json.data
 
-f = open(f"./data/params/angellist.txt", "r")
+f = open(f"server/data/params/angellist.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 

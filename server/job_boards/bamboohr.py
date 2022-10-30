@@ -5,13 +5,15 @@ import random
 import json
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/bamboohr.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/bamboohr.txt"
 
 
 def get_results(item: str, param: str):
@@ -29,7 +31,7 @@ def get_results(item: str, param: str):
         company_name = company.strip()
         position = d["jobOpeningName"].strip()
         location = f"{d['location']['city'].strip()}, {d['location']['state'].strip() if d['location']['state'] else d['location']['country'].strip()}"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -56,7 +58,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
         except:
             if response.status_code == 429:
                 print(
@@ -68,7 +70,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

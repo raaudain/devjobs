@@ -4,9 +4,11 @@ import requests
 import sys
 import random
 import re
-from .helpers.classes import FilterJobs
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+process_data = ProcessCompanyJobData()
 
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
@@ -36,7 +38,7 @@ def get_results(item):
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M"))
         if age <= post_date:
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": title,
                 "company": company,

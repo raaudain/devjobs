@@ -4,10 +4,13 @@ import sys
 import random
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .helpers import headers as h
-from .helpers.classes import FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.create_temp_json as create_temp_json
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     for data in item:
@@ -23,7 +26,7 @@ def get_results(item: str):
         # desc = None
         location = f"{data['JobPrimaryLocationCode']}, {data['JobLocationStateAbbrev']}".strip(
         )
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

@@ -1,6 +1,7 @@
 import random
 import logging
 import time
+import sys
 from . import comeet
 from . import clearcompany
 from . import eightfold
@@ -45,7 +46,8 @@ from . import recruitee
 from . import crew
 # from . import craigslist_gigs
 from datetime import datetime
-from .helpers.classes import CreateJson
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import CreateJson
 
 
 logging.basicConfig(
@@ -58,16 +60,16 @@ logging.basicConfig(
 
 
 def main():
-    f = open("./data/params/craigslist.txt", "r")
+    f = open("server/data/params/craigslist.txt", "r")
     locations = [location.strip() for location in f]
     f.close()
 
-    w = open("./data/params/workable.txt", "r")
+    w = open("server/data/params/workable.txt", "r")
     work = [l.strip() for l in w]
     random.shuffle(work)
     w.close()
 
-    g = open("./data/params/greenhouse_io.txt", "r")
+    g = open("server/data/params/greenhouse_io.txt", "r")
     green = [l.strip() for l in g]
     g.close()
 
@@ -75,7 +77,7 @@ def main():
     # workable1 = work[:w_half]
     # workable2 = work[w_half:]
 
-    # m = open(f"./data/params/miami.txt", "r")
+    # m = open(f"server/data/params/miami.txt", "r")
     # miamis = [miami.strip() for miami in m]
     # m.close()
     print("=> Scanning job boards")

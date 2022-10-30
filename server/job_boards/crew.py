@@ -4,12 +4,12 @@ import json
 import time
 import random
 from datetime import datetime
-from .helpers import headers as h
-from .helpers.classes import FilterJobs, RemoveNotFound, ReadListOfCompanies
+sys.path.insert(0, ".")
+from server.job_boards.helpers import ProcessCompanyJobData, date_formatter, headers as h
 
 
-FILE_PATH = "./data/params/crew.txt"
-
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/crew.txt"
 
 def get_results(item: str, param: str):
     source_url = f"https://{param}.crew.work/jobs"
@@ -17,7 +17,7 @@ def get_results(item: str, param: str):
     logo = item.get("logo")
 
     for i in item["jobs"]:
-        date = datetime.strptime(i["updatedAt"].rsplit(".")[0], "%Y-%m-%dT%H:%M:%S")
+        date = date_formatter(i["updatedAt"])
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         apply_url = f"{source_url}/{i['id']}"
@@ -25,7 +25,7 @@ def get_results(item: str, param: str):
         position = i["name"].strip()
         location = i["location"].strip()
 
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -40,6 +40,7 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     count = 0
+
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(h.headers)}
@@ -54,24 +55,19 @@ def get_url(companies: list):
                 else:
                     time.sleep(0.2)
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             count += 1
 
         except Exception as e:
-            if response.status_code == 429:
-                print(
-                    f"=> crew.work: Failed to scrape {company}. Status code: {response.status_code}.")
-                break
-            else:
-                print(
-                    f"=> crew.work: Failed for {company}. Status code: {response.status_code}. Error: {e}.")
+            print(
+                f"=> crew.work: Failed for {company}. Status code: {response.status_code}. Error: {e}.")
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 
-# if __name__ == "__main__":
-#     main()
-#     sys.exit(0)
+if __name__ == "__main__":
+    main()
+    # sys.exit(0)

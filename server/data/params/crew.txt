@@ -40,7 +40,6 @@ liki24
 findable
 cycle
 bits
-console
 gaia-family
 la-solive
 voggt

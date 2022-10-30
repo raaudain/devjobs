@@ -3,9 +3,13 @@ import sys
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from .helpers.classes import CreateJson, FilterJobs
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import CreateJson
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     scraped = CreateJson.scraped
@@ -27,7 +31,7 @@ def get_results(item: str):
                 "?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress)", "") if job.find(class_="flag-logo") else None
             age = datetime.timestamp(datetime.now() - timedelta(days=30))
             if age <= post_date and company_name not in scraped:
-                FilterJobs({
+                process_data.filter_jobs({
                     "timestamp": post_date,
                     "title": position,
                     "company": company_name,

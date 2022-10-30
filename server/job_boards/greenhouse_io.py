@@ -5,22 +5,24 @@ import time
 import random
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .helpers import headers as h
-from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/greenhouse_io.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/greenhouse_io.txt"
 
 
 def get_results(item: str, param: str):
     source_url = f"https://boards.greenhouse.io/{param}"
-    gh = "./data/assets/greenhouse_assets.txt"
+    gh = "server/data/assets/greenhouse_assets.txt"
     company_name = param.capitalize()
     logo = None
     jobs = item["jobs"]
-    table = GetStoredData(gh)
+    table = process_data.get_stored_data(gh)
     if param in table:
         company_name = table[param]["name"]
         logo = table[param]["logo"]
@@ -47,7 +49,7 @@ def get_results(item: str, param: str):
         position = j["title"].strip()
         apply_url = j["absolute_url"].strip()
         location = j["location"]["name"].strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -71,7 +73,7 @@ def get_url(companies: list):
                 if data:
                     get_results(data, company)
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             else:
                 print(
                     f"=> greenhouse.io: Status code {response.status_code} for {company}")
@@ -85,7 +87,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

@@ -4,14 +4,16 @@ import time
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import FilterJobs, ReadListOfCompanies, UpdateKeyValues
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.classes as c
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-FILE_PATH = "./data/params/key_values.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/key_values.txt"
 
 
 def get_results(item: str, url: str):
@@ -28,7 +30,7 @@ def get_results(item: str, url: str):
         apply_url = job.find("a", href=True)["href"]
         location = job.find(
             "div", class_="open-position--job-information").find_all("p")[0].text
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": title,
             "company": company,
@@ -53,8 +55,8 @@ def get_url(params: list):
 
 
 def main():
-    UpdateKeyValues.filter_companies()
-    params = ReadListOfCompanies(FILE_PATH)
+    process_data.filter_key_values_companies()
+    params = process_data.read_list_of_companies(FILE_PATH)
     get_url(params)
 
 

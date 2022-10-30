@@ -4,10 +4,12 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import FilterJobs
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.headers as h
 
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     for i in item:
@@ -20,7 +22,7 @@ def get_results(item: str):
         logo = job["Company"][0]["data"]["Logo"][0]["thumbnails"]["large"]["url"]
         apply_url = "https://www.diversifytech.co/job-board/"+job["Job_ID"]
         location = job["Location"].strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -42,13 +44,13 @@ def get_url():
         if len(data) > 0:
             get_results(data)
         time.sleep(0.2)
-    except:
-        print(f"=> diversifytech: Status code: {response.status_code}.")
+    except Exception as e:
+        print(f"=> diversifytech: Status code: {response.status_code}. Error: {e}..")
 
 
 def main():
     get_url()
 
-
-# main()
+if __name__ == "__main__":
+    main()
 # sys.exit(0)

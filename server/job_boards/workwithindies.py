@@ -3,9 +3,12 @@ import sys
 import random
 from bs4 import BeautifulSoup
 from datetime import datetime
-from .helpers.classes import FilterJobs
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
@@ -21,7 +24,7 @@ def get_results(item: str):
             "img", class_="company-logo", src=True) else None
         apply_url = "https://www.workwithindies.com"+job["href"]
         location = job.find_all("div", class_="job-card-text bold")[1].text
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

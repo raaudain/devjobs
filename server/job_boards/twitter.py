@@ -3,9 +3,12 @@ import requests
 import json
 import sys
 import random
-from .helpers.classes import FilterJobs
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     jobs = item["results"]
@@ -20,7 +23,7 @@ def get_results(item: str):
         for i in data["locations"]:
             locations += i["title"]+", "
         location = locations.rstrip(", ")
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

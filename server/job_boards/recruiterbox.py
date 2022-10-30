@@ -2,10 +2,12 @@ from datetime import datetime
 import sys
 import time
 import feedparser
-from .helpers.classes import FilterJobs, ReadListOfCompanies, RemoveNotFound
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 
 
-FILE_PATH = "./data/params/recruiterbox.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/recruiterbox.txt"
 
 
 def get_results(item: str, name: str):
@@ -23,7 +25,7 @@ def get_results(item: str, name: str):
         country = f', {i["job_locationcountry"]}' if i["job_locationcountry"] else ""
         location = f"{city}{region}{country}"
         source_url = f"https://{name}.recruiterbox.com/jobs"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -42,7 +44,7 @@ def get_url(companies: list):
         if response.bozo == False:
             get_results(response, company)
         elif response.status == 404:
-            RemoveNotFound(FILE_PATH, company)
+            process_data.remove_not_found(FILE_PATH, company)
         else:
             error = response.bozo_exception
             print(f"=> recruiterbox: Failed {company}. Error: {error}")
@@ -50,7 +52,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

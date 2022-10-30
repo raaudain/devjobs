@@ -8,7 +8,7 @@ import modules.create_temp_json as create_temp_json
 data = create_temp_json.data
 scraped = create_temp_json.scraped
 
-f = open(f"./data/params/greenhouse_io.txt", "r")
+f = open(f"server/data/params/greenhouse_io.txt", "r")
 companies = [company.strip() for company in f]
 f.close()
 

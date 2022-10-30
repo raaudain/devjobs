@@ -4,14 +4,15 @@ import time
 import random
 from datetime import datetime
 from bs4 import BeautifulSoup
-from .helpers.classes import FilterJobs, RemoveNotFound, ReadListOfCompanies
-from .helpers import create_temp_json
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
 
-FILE_PATH = "./data/params/jazzhr.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/jazzhr.txt"
 
 
 def get_results(item: str, name: str):
@@ -30,7 +31,7 @@ def get_results(item: str, name: str):
             company_name = company.strip()
             position = r.find("a").text.strip()
             location = r.find("ul").text.strip()
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,
@@ -54,7 +55,7 @@ def get_url(companies: list):
             if response.ok:
                 get_results(response.text, company)
             elif response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             else:
                 f"=> jazzhr: Error for {company}. Status code: {response.status_code}"
             if page % 10 == 0:
@@ -67,7 +68,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

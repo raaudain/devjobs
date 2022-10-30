@@ -5,21 +5,23 @@ import sys
 import time
 import random
 from lxml import html
-from .helpers.classes import FilterJobs, GetStoredData, ReadListOfCompanies, RemoveNotFound
-from .helpers import headers as h
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 # import modules.headers as h
 # import modules.classes as c
 
 
-FILE_PATH = "./data/params/recruitee.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/recruitee.txt"
 
 
 def get_results(item: str, param: str):
     jobs = item["offers"]
-    re = "./data/assets/recruitee_assets.txt"
+    re = "server/data/assets/recruitee_assets.txt"
     source_url = f"https://{param}.recruitee.com"
     logo = None
-    table = GetStoredData(re)
+    table = process_data.get_stored_data(re)
     if param in table:
         logo = table[param]["logo"]
     else:
@@ -41,7 +43,7 @@ def get_results(item: str, param: str):
         position = job["title"].strip()
         description = job["description"]
         location = job["location"].strip()
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -62,7 +64,7 @@ def get_url(companies: list):
             url = f"https://{company}.recruitee.com/api/offers/"
             response = requests.get(url, headers=headers)
             if response.status_code == 404:
-                RemoveNotFound(FILE_PATH, company)
+                process_data.remove_not_found(FILE_PATH, company)
             data = json.loads(response.text)
             get_results(data, company)
             if count % 20 == 0:
@@ -81,7 +83,7 @@ def get_url(companies: list):
 
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

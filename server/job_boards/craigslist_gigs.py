@@ -5,11 +5,11 @@ import requests, sys, json, time
 from .helpers import create_temp_json
 
 
-f = open(f"./data/params/craigslist.txt", "r")
+f = open(f"server/data/params/craigslist.txt", "r")
 locations = [location.rstrip() for location in f]
 f.close()
 
-m = open(f"./data/params/miami.txt", "r")
+m = open(f"server/data/params/miami.txt", "r")
 miamis = [miami.rstrip() for miami in m]
 m.close()
 

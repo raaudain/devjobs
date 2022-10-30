@@ -6,37 +6,35 @@ from os.path import isfile
 from bs4 import BeautifulSoup
 
 
-class ReadListOfCompanies:
-    def __new__(self, file_path: str):
-        self.file_path = file_path
-        with open(self.file_path, "r") as f:
+class ProcessCompanyJobData:
+    def read_list_of_companies(self, file_path: str):
+        with open(file_path, "r") as f:
             companies = [company.strip() for company in f]
             random.shuffle(companies)
             return companies
 
-
-class RemoveNotFound:
-    def __init__(self, file_path: str, param: str):
+    def remove_not_found(self, file_path: str, param: str):
         f = open(file_path, "r+")
         params = [param.strip() for param in f]
         f.truncate(0)
         f.close()
+
         file = open(file_path, "w")
-        not_found = open("./data/params/404.txt", "a")
+        not_found = open("server/data/params/404.txt", "a")
+
         for p in params:
             if p != param:
                 file.write(p+"\n")
             else:
                 not_found.write(p+"\n")
+
         file.close()
         not_found.close()
 
-
-class GetStoredData:
-    def __new__(self, file_path: str):
-        self.file_path = file_path
+    def get_stored_data(self, file_path: str):
         table = {}
-        with open(self.file_path, "r") as f:
+
+        with open(file_path, "r") as f:
             for item in f:
                 item = item.split("`")
                 p = item[0]
@@ -48,12 +46,7 @@ class GetStoredData:
                 }
         return table
 
-
-class FilterJobs:
-    def __init__(self, posting: dict):
-        self.posting = posting
-        posting = self.posting
-
+    def filter_jobs(self, posting: dict):
         data = CreateJson.data
         scraped = CreateJson.scraped
 
@@ -72,40 +65,41 @@ class FilterJobs:
             scraped.add(company)
             scraped.add(url)
 
-
-class UpdateKeyValues:
-    def filter_companies():
+    def filter_key_values_companies(self):
         url = "https://www.keyvalues.com/"
         html = requests.get(url).text
         soup = BeautifulSoup(html, "lxml")
-        with open("./data/params/key_values.txt", "w+") as company, open("./data/params/key_values_unwanted.txt", "r") as f:
+
+        with open("server/data/params/key_values.txt", "w+") as company, open("server/data/params/key_values_unwanted.txt", "r") as f:
             links = soup.find_all("a", class_="thumbnail-link", href=True)
             unwanted = [w.strip() for w in f]
+
             for link in links:
                 if link["href"] not in unwanted:
                     company.write(link["href"]+"\n")
             print("=> key_values: Updated parameters")
 
-
 class CreateJson:
     data = []
     scraped = set()
 
-    def create_temp_file(item):
-        temp = "./data/temp/temp_data.json"
+    def create_temp_file(self, item):
+        temp = "server/data/temp/temp_data.json"
         with open(temp, "w+", encoding="utf-8") as file:
             print("=> temp_data.json: Generating new data")
             json.dump(item, file, ensure_ascii=False, indent=4)
 
-    def create_file():
-        temp = "./data/temp/temp_data.json"
-        main = "./data/data.json"
+    def create_file(self):
+        temp = "server/data/temp/temp_data.json"
+        main = "server/data/data.json"
+
         with open(main, "w+", encoding="utf-8") as file, open(temp, "r+") as f:
             data = json.load(f)
             ordered_data = sorted(
                 data, key=lambda i: i["timestamp"], reverse=True)
             print("=> data.json: Generating new data")
             json.dump(ordered_data, file, ensure_ascii=False, indent=4)
+
             if isfile(temp):
                 print("=> temp_data.json: Deleting temporary data")
                 f.truncate(0)

@@ -29,14 +29,17 @@ def filter_list(links, uri):
     return w
 
 def update_params(words_list, params, text):
-    for c in words_list:
-        c = c.split("?")[0]
-        d = c.lower()
+    try:
+        for c in words_list:
+            c = c.split("?")[0]
+            d = c.lower()
 
-        if d not in text and d not in added and d != "j":
-            with open(params, "a") as a:
-                a.write(f"{c}\n")
-            added.add(d)
+            if d not in text and d not in added and d != "j":
+                with open(params, "a") as a:
+                    a.write(f"{c}\n")
+                added.add(d)
+    except Exception as e:
+        print(f"{params}: Error: {e}.")
 
 if __name__ == "__main__":
     main()

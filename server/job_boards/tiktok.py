@@ -6,9 +6,9 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from .helpers import create_temp_json
-from .helpers import driver
-from .helpers.classes import FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import driver
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.create_temp_json as create_temp_json
 # import modules.driver as driver
 
@@ -17,6 +17,7 @@ from .helpers.classes import FilterJobs
 # options.add_argument("--headless")
 # browser = webdriver.Firefox(executable_path=driver, options=options)
 
+process_data = ProcessCompanyJobData()
 driver = driver.chrome
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
@@ -37,7 +38,7 @@ def get_results(item):
         position = r.find(
             "span", class_="positionItem-title-text").text.strip()
         location = r.find("span", class_="content__3ZUKJ clamp-content").text
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,

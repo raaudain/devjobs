@@ -5,17 +5,18 @@ import sys
 import re
 import time
 import random
-from .helpers.classes import CreateJson, FilterJobs
-from .helpers import headers as h
-from .helpers import create_temp_json
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 
+process_data = ProcessCompanyJobData()
 
 def get_results(item):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("article")
-    scraped = CreateJson.scraped
+
     for job in results:
         date = job.find(
             class_="company-name display-flex").find_all("span")[4].text.strip()
@@ -62,18 +63,18 @@ def get_results(item):
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         post_date = datetime.timestamp(
             datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-        if company not in scraped:
-            FilterJobs({
-                "timestamp": post_date,
-                "title": title,
-                "company": company,
-                "company_logo": logo,
-                "url": url,
-                "location": location,
-                "source": "Daily Remote",
-                "source_url": "https://dailyremote.com",
-                "category": "job"
-            })
+
+        process_data.filter_jobs({
+            "timestamp": post_date,
+            "title": title,
+            "company": company,
+            "company_logo": logo,
+            "url": url,
+            "location": location,
+            "source": "Daily Remote",
+            "source_url": "https://dailyremote.com",
+            "category": "job"
+        })
 
 
 def get_url():

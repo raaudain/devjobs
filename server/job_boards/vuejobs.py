@@ -4,10 +4,13 @@ import sys
 import time
 import random
 from datetime import datetime, timedelta
-from .helpers import headers as h
-from .helpers.classes import FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 
+
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     for i in item["data"]:
@@ -22,7 +25,7 @@ def get_results(item: str):
         location = i["location"].strip()
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         if age <= post_date:
-            FilterJobs({
+            process_data.filter_jobs({
                 "timestamp": post_date,
                 "title": position,
                 "company": company_name,

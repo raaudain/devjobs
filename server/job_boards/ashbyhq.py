@@ -1,18 +1,18 @@
 import requests
 import json
 import sys
-# sys.path.insert(0, ".")
 import time
 import random
 from datetime import datetime
-from .helpers import headers as h
-from .helpers.classes import ReadListOfCompanies, RemoveNotFound, FilterJobs
+sys.path.insert(0, ".")
+from server.job_boards.helpers import headers as h
+from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.create_temp_json as create_temp_json
 # import modules.headers as h
 # import modules.classes as c
 
-
-FILE_PATH = "./data/params/ashbyhq.txt"
+process_data = ProcessCompanyJobData()
+FILE_PATH = "server/data/params/ashbyhq.txt"
 
 
 def get_results(item: str, param: str, name: str, logo: str):
@@ -27,7 +27,7 @@ def get_results(item: str, param: str, name: str, logo: str):
         position = data["title"].strip()
         locations_string = data["locationName"].strip()
         source_url = f"https://jobs.ashbyhq.com/{param}"
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -70,7 +70,7 @@ def get_url(companies: list):
                     logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(
                         res.text)["data"]["organization"]["theme"] else None
                 else:
-                    RemoveNotFound(FILE_PATH, company)
+                    process_data.remove_not_found(FILE_PATH, company)
                 get_results(data, company, name, logo)
                 if page % 10 == 0:
                     time.sleep(5)
@@ -81,7 +81,7 @@ def get_url(companies: list):
             print(f"=> ashbyhq: Failed to scrape {company}. Error: {e}.")
 
 def main():
-    companies = ReadListOfCompanies(FILE_PATH)
+    companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
 
 

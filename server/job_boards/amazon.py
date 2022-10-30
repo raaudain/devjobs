@@ -4,12 +4,11 @@ import sys
 import time
 import random
 from datetime import datetime
-from .helpers.classes import FilterJobs
-from .helpers import headers as h
-# import modules.create_temp_json as create_temp_json
-# import modules.headers as h
-# import modules.classes as c
+sys.path.insert(0, ".")
+from server.job_boards.helpers.classes import ProcessCompanyJobData
+from server.job_boards.helpers import headers as h
 
+process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     data = item["jobs"]
@@ -23,7 +22,7 @@ def get_results(item: str):
         job_path = d["job_path"].strip()
         apply_url = f"https://amazon.jobs{job_path}"
         location = d["normalized_location"]
-        FilterJobs({
+        process_data.filter_jobs({
             "timestamp": post_date,
             "title": position,
             "company": company_name,
@@ -62,5 +61,5 @@ def main():
     get_url()
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
