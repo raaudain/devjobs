@@ -6,14 +6,11 @@ import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-from server.job_boards.helpers import headers as h
-# import modules.headers as h
-# import modules.classes as c
+from server.job_boards.helpers import ProcessCompanyJobData, headers as h
+
 
 process_data = ProcessCompanyJobData()
 FILE_PATH = "server/data/params/comeet.txt"
-
 
 def get_results(item: str, param: str):
     soup = BeautifulSoup(item, "lxml")
