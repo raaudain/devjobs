@@ -17,8 +17,7 @@ def get_results(item: str, param: str):
     logo = None
     results = soup.find("title").find_next(
         attrs={"type": "text/javascript"}).string
-    r = results.split("COMPANY_POSITIONS_DATA = ",
-                      1)[-1].rsplit("\n")[0].rstrip(";")
+    r = results.split("COMPANY_POSITIONS_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
     l = results.split("COMPANY_DATA = ", 1)[-1].rsplit("\n")[0].rstrip(";")
     data = json.loads(r)
     img = json.loads(l)

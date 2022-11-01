@@ -18,7 +18,7 @@ from . import remoteok
 from . import weworkremotely
 from . import builtin
 from . import dailyremote
-# from . import hireart
+from . import hireart
 # from . import stackoverflow
 # from . import dice
 from . import usajobs
@@ -105,7 +105,7 @@ def main():
     jazzhr.main()
     clearcompany.main()
     workable.get_url(work[2::5])
-    comeet.main()
+    # comeet.main()
     craigslist.get_url_it(locations)
     greenhouse_io.get_url(green[1::2])
     lever_co.main()
@@ -113,7 +113,7 @@ def main():
     recruiterbox.main()
     nintendo.main()
     vuejobs.main()
-    # hireart.main()
+    hireart.main()
     amazon.main()
     craigslist.get_url_web(locations)
     workable.get_url(work[3::5])
