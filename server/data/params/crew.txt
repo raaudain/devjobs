@@ -56,7 +56,4 @@ ef
 wequity
 cometh
 kokoon
-community
-www
 zensite
-console
