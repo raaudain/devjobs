@@ -83,11 +83,11 @@ class CreateJson:
     data = []
     scraped = set()
 
-    def create_temp_file(self, item):
+    def create_temp_file(self):
         temp = "server/data/temp/temp_data.json"
         with open(temp, "w+", encoding="utf-8") as file:
             print("=> temp_data.json: Generating new data")
-            json.dump(item, file, ensure_ascii=False, indent=4)
+            json.dump(self.data, file, ensure_ascii=False, indent=4)
 
     def create_file(self):
         temp = "server/data/temp/temp_data.json"
