@@ -1491,3 +1491,18 @@ pfm`Precision for Medicine`https://s4-recruiting.cdn.greenhouse.io/external_gree
 regrow`Regrow`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/031/000/resized/2_Color_Symbol___1_Color_Wordmark_Lockup.png
 monad`Monad`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/183/500/resized/monad_black.png
 buildarocketboy`Build A Rocket Boy`None
+tesserachile`Tessera Data - Chile`None
+chainsafesystems`ChainSafe Systems`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/562/600/resized/chainsafe.png
+choco`Choco`None
+gotion`Gotion, Inc.`None
+supabase`Supabase`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/588/400/resized/profile_pic.png
+riotgamesinc`Riot Games, Inc.`None
+praxio`Praxio`None
+seamlessai`Seamless.AI`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/377/300/resized/2022_seamlessai_hiring-22.png
+manifoldai`Manifold AI`None
+jamf`Jamf`None
+cockroachlabs`Cockroach Labs`None
+productred`(RED)`None
+shipbobinc`ShipBob, Inc.`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/040/800/resized/ShipBob_mark_color_(1).png
+xpinc`XP Inc.`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/806/600/resized/Logo-XP.png
+lisc`Local Initiatives Support Corporation`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/332/500/resized/lisc_primary_black.2c7daeb15514.png

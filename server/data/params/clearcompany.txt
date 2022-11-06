@@ -214,7 +214,6 @@ defynedbrands
 kongregate
 tgkentucky
 southwestgen
-cfaheritagetownecrossing
 topgunpressurewashing
 justpoke
 trismartsolar
@@ -226,6 +225,5 @@ eandbortho
 revereplasticssystems
 crisiscenter
 pse
-doehler
 estify
 nga

@@ -1175,3 +1175,13 @@ moxionpower`Moxion Power`https://lever-client-logos.s3.us-west-2.amazonaws.com/b
 swordhealth`Sword `https://lever-client-logos.s3.us-west-2.amazonaws.com/f57b0b25-4023-4df5-85b7-650e11aa1a0e-1656770856727.png
 firsthand`firsthand`https://lever-client-logos.s3.us-west-2.amazonaws.com/501db313-5d20-400c-af8a-6e99131cdde8-1647369435449.png
 younited`Younited`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b6008f9-6c16-4f53-9929-90edfc6561ff-1637312732478.png
+servicerocket`ServiceRocket`https://lever-client-logos.s3.us-west-2.amazonaws.com/c1554741-dc6e-482b-9557-701a35e6fe35-1625688528659.png
+nexii`Nexii Building Solutions Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/897f68a9-eeb7-4335-b487-613d0e3087bf-1638395485250.png
+anomali`Anomali`https://lever-client-logos.s3.amazonaws.com/21f973cf-7ff0-437a-969e-a8856f2368d9-1468889360605.png
+rewind.ai`Rewind`https://lever-client-logos.s3.us-west-2.amazonaws.com/f453a996-010d-49d9-bed4-891a8ffcc7bb-1667234031515.png
+atomicmachines`Atomic Machines Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/4b33afd6-7aa2-4a13-a0c9-d772b51846e8-1638392664498.png
+codelitt`Codelitt`https://lever-client-logos.s3.us-west-2.amazonaws.com/44975691-a172-49a2-a867-3c8c7a37f927-1609975343473.png
+harvesthosts`Harvest Hosts`https://lever-client-logos.s3.us-west-2.amazonaws.com/fb7105dc-86ca-47b1-99d7-a1310b88bb55-1633572412159.png
+nimblerx`NimbleRx`https://lever-client-logos.s3.us-west-2.amazonaws.com/a60d8feb-10bf-4f8a-b2e4-e4ee36be7bf2-1641489831751.png
+virtuous`Virtuous`https://lever-client-logos.s3.us-west-2.amazonaws.com/cb9ba596-f8c4-4e83-939b-cb89bd74617f-1649184760644.png
+SKIMS`SKIMS`https://lever-client-logos.s3.us-west-2.amazonaws.com/d0aedebe-6ec3-4e21-bb99-89a9cb2e8b7c-1667519514877.png

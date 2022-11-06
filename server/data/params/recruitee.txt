@@ -478,7 +478,6 @@ orientswiss
 carterbenson
 intergiro
 wayhome
-status
 codification
 nodalview
 modulussa
@@ -487,7 +486,6 @@ funktional
 caremanagementsuissegmbh
 atolye
 personalhub
-supersoda
 talentheroes
 hilfeinnotpflegegmbh
 aajt
@@ -529,7 +527,6 @@ tritilitylimited
 saphe
 thefabricant
 feedback
-support
 macecareers
 brinkstransport
 cignpostdiagnostics
