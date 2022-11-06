@@ -6,9 +6,8 @@ import random
 from datetime import datetime
 from lxml import html
 sys.path.insert(0, ".")
-from server.job_boards.helpers import headers as h
+from server.job_boards.helpers import headers as h, date_formatter
 from server.job_boards.helpers.classes import ProcessCompanyJobData
-from .helpers.date_formatter import date_formatter
 # import modules.headers as h
 # import modules.classes as c
 

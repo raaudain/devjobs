@@ -47,8 +47,8 @@ class ProcessCompanyJobData:
         return table
 
     def filter_jobs(self, posting: dict):
-        data = CreateJson.data
-        scraped = CreateJson.scraped
+        data = CreateJson().data
+        scraped = CreateJson().scraped
 
         title = posting["title"]
         company = posting["company"]

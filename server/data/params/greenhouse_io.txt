@@ -831,7 +831,6 @@ collectivehealth
 mixtiles
 publica
 muv
-kavakcareers
 bluerivertech
 schubergphilis
 karunatherapeutics
@@ -1120,7 +1119,6 @@ autopilot
 sonder
 dspconcepts
 girleffect
-tridge?gh_src=1dea83793us
 waymo
 mintel
 horizenlabs
@@ -1148,7 +1146,6 @@ grenevisiongroup
 mirakl
 varsitytutors
 ziforndsolutions
-bench?utm_source=startupers
 cohesity
 givedirectly
 clarksville
@@ -1387,7 +1384,6 @@ elevatek12teachwithus
 udemy
 bloomscape
 astspacemobile
-countrygreenery
 smartcatplatforminc
 greynoiseintelligence
 fibersense
