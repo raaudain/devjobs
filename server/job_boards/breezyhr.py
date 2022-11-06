@@ -21,7 +21,7 @@ def get_results(item: str, param: str):
     logo = None
     try:
         logo = tree.xpath(
-            "//img[contains(@src, 'https://gallery-cdn.breezy.hr')]/@src")[0]
+            "//img[contains(@src, 'https://gallery-cdn.breezy.hr') or contains(@src, 'https://attachments-cdn.breezy.hr')]/@src")[0]
     except Exception as e:
         print(f"=> breezyhr: Failed to get logo for {param}. Error: {e}.")
     results = soup.find_all("li", class_="position transition")

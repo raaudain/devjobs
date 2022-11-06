@@ -9,7 +9,6 @@ aspeninstitute
 alleninstitute
 amelexinc
 coastalfarm
-spja
 onxmaps
 uvto
 profootballhof
@@ -113,7 +112,6 @@ dlrgroup
 mckinleycc
 meridianhs
 nexdine
-agilespace
 actforchildren
 thethirdfloorinc
 mtrustcompany

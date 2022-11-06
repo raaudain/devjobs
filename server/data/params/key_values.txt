@@ -9,7 +9,6 @@
 /reduct
 /chani
 /the-mom-project
-/drivers-seat
 /sibi
 /range
 /retired-culture-biosciences

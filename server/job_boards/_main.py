@@ -1,53 +1,10 @@
 import random
 import logging
-import time
 import sys
-# from . import comeet
-from . import clearcompany
-from . import eightfold
-from . import craigslist
-from . import greenhouse_io
-# from . import bloomberg
-from . import bamboohr
-from . import lever_co
-from . import workaline
-from . import workable
-from . import key_values
-from . import remote_co
-from . import remoteok
-from . import weworkremotely
-from . import builtin
-from . import dailyremote
-from . import hireart
-# from . import stackoverflow
-# from . import dice
-from . import usajobs
-from . import amazon
-from . import smartrecruiters
-# from . import nocsok
-from . import workwithindies
-from . import ashbyhq
-from . import nintendo
-from . import jazzhr
-from . import breezyhr
-from . import target
-from . import twitter
-# from . import tiktok
-from . import vuejobs
-from . import jobvite
-from . import recruiterbox
-from . import nbc
-from . import fullstackjob
-from . import polymer
-from . import indeed
-from . import diversifytech
-from . import bootup
-from . import recruitee
-from . import crew
-# from . import craigslist_gigs
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import CreateJson
+from server.job_boards.helpers import CreateJson
+from server.job_boards import *
 
 
 logging.basicConfig(
@@ -58,6 +15,7 @@ logging.basicConfig(
     filemode="a"
 )
 
+create_json : CreateJson
 
 def main():
     f = open("server/data/params/craigslist.txt", "r")
@@ -88,7 +46,7 @@ def main():
     workable.get_url(work[::5])
     diversifytech.main()
     polymer.main()
-    indeed.main()
+    # indeed.main()
     # tiktok.main()
     recruitee.main()
     target.main()
@@ -130,7 +88,7 @@ def main():
     dailyremote.main()
     bootup.main()
     builtin.main()
-    CreateJson.create_temp_file(CreateJson.data)
+    create_json.create_temp_file(create_json.data)
     # try:
     #     CreateJson.create_file()
     # except Exception as e:

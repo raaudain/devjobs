@@ -59,14 +59,14 @@ def get_url(companies: list):
                 page += 1
             elif response.status_code == 404:
                 process_data.remove_not_found(FILE_PATH, company)
-        except:
+        except Exception as e:
             if response.status_code == 429:
                 print(
-                    f"=> bamboohr: Failed to scrape {company}. Status code: {response.status_code}")
+                    f"=> bamboohr: Failed to scrape {company}. Error: {e}.")
                 break
             else:
                 print(
-                    f"=> bamboohr: Failed to scrape {company}. Status code: {response.status_code}")
+                    f"=> bamboohr: Failed to scrape {company}. Error: {e}.")
 
 
 def main():
