@@ -77,7 +77,6 @@ circleci
 classy
 clearcover
 coinlist
-coinme
 commercehub
 contentful
 craftjack
@@ -438,7 +437,6 @@ airtable
 bandainamco
 tripactions
 argo
-livelyhearingcorporation
 evidation
 redislabs
 unisonhomeownershipinvestors
@@ -620,7 +618,6 @@ slicareers
 earlycareerprograms
 hopin
 duolingo
-m4az
 nubank
 plenty
 fender
@@ -658,7 +655,6 @@ mackweldon
 8thlightrebuild
 chaossearch
 willowtree
-whipmedia
 figs15
 philo
 codeclimate
@@ -1006,7 +1002,6 @@ barrysbootcamp
 touchbistro
 opensesame
 dustyrobotics
-Kettle
 gigwage
 agilityrobotics
 ihiterrasun
