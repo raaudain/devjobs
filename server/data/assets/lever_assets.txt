@@ -1185,3 +1185,8 @@ harvesthosts`Harvest Hosts`https://lever-client-logos.s3.us-west-2.amazonaws.com
 nimblerx`NimbleRx`https://lever-client-logos.s3.us-west-2.amazonaws.com/a60d8feb-10bf-4f8a-b2e4-e4ee36be7bf2-1641489831751.png
 virtuous`Virtuous`https://lever-client-logos.s3.us-west-2.amazonaws.com/cb9ba596-f8c4-4e83-939b-cb89bd74617f-1649184760644.png
 SKIMS`SKIMS`https://lever-client-logos.s3.us-west-2.amazonaws.com/d0aedebe-6ec3-4e21-bb99-89a9cb2e8b7c-1667519514877.png
+loopio`Loopio`https://lever-client-logos.s3-us-west-2.amazonaws.com/5f695eed-1d8e-4a0e-9a70-c7925b1f7789-1595010168880.png
+tangraminteriors`Tangram Interiors`https://lever-client-logos.s3.amazonaws.com/dac74583-6287-4fb6-9cec-fb4ad44d0a86-1574726484077.png
+sanctuary`Sanctuary AI`https://lever-client-logos.s3-us-west-2.amazonaws.com/5c59a057-116f-493f-bcbc-43c29faae921-1589502053125.png
+rocketlawyer`Rocket Lawyer`https://lever-client-logos.s3.amazonaws.com/676d3de8-bf16-40f6-98be-f6e8fe5b9942-1515436616701.png
+nobullproject`NOBULL `https://lever-client-logos.s3.us-west-2.amazonaws.com/e5eaf29f-284b-429e-a9a6-bb8cc0987846-1634758202392.png

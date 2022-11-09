@@ -57,6 +57,5 @@ wequity
 cometh
 kokoon
 zensite
-community
 www
 console

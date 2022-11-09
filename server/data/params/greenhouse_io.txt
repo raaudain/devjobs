@@ -1460,8 +1460,6 @@ praxio
 lisc
 seamlessai
 fortify
-ospreyfunds
-Kettle
 getshogun
 wework
 habi

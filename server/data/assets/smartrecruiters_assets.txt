@@ -690,3 +690,10 @@ CRDCareersIndependentRecruiters`n/a`https://c.smartrecruiters.com/sr-careersite-
 MANGOPAY`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6273cab35497b925295f22a9/huge?r=s3-eu-central-1
 PegasysSoft`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5417554ce4b077f150b3b660/150px
 SLPTele`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62e33f94305d0158aa7b48a7/55248d97-87cc-4a5a-a434-6fd64e738ce1?r=s3-eu-central-1
+mcdonaldsaustralia`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c944698ee35880006a1b3a5/028d09fa-883d-497e-a56b-6a431fe4a065?r=s3-eu-central-1
+BelovEDCommunityEmpowermentAcademyCharterSchools`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/516193d0e4b04221b4911794/150px
+Authenticx`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60e76680a3df604cb8840458/huge?r=s3-eu-central-1
+GriffithUniversity`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6270a47a0ce364607968742b/1e5ff443-adb2-48ab-ba6c-2fc6f32e957d?r=s3-eu-central-1
+Veranova`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/625944aa48ab8025884b936b/46d0356a-878b-4d95-8dca-23315d4ca853?r=s3-eu-central-1
+UtilityWarehouse1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62ce9d2906872e1ccee07a80/150px?r=s3-eu-central-1
+DPDGroupUK1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5dea78b3c1c1602d644ac390/huge?r=s3-eu-central-1
