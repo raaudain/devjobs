@@ -262,7 +262,6 @@ dailyharvest
 rivian
 calm
 outsetmedical
-panoramaed
 talkspace
 lift
 xapo61
