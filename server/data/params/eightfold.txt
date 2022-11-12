@@ -56,3 +56,5 @@ durapart
 epicgames
 zebra
 fonix
+dsm
+nttdata
