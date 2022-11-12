@@ -59,5 +59,4 @@ kokoon
 zensite
 www
 console
-community
 skillz

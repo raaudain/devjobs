@@ -1514,3 +1514,25 @@ fortify`Fortify`None
 wework`WeWork External`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/050/000/resized/WeWork_logo_transparent-black.png
 processstreet`Process Street`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/842/900/resized/Process-Street-Logo-Original.png
 bamboohr17`BambooHR`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/797/800/resized/bamboohr_logo_1200x628.jpg
+staffbase`Staffbase`None
+venncity`Venn`None
+worldsurfleague`World Surf League`None
+veazievet`Veazie Veterinary Clinic`None
+ocrolusinc`Ocrolus Inc.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/771/900/resized/Logo_1000x400.jpg
+avantstay`AvantStay`None
+energyandenvironmentlab`UChicago Energy & Environment Lab`None
+billtrust`Billtrust US Careers`None
+kindbody`Kindbody`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/207/600/resized/Screen_Shot_2018-05-07_at_11.10.32_AM.png
+syros`Syros Pharmaceuticals`None
+appliedintuition`Applied Intuition`None
+kiratalent`Kira Talent`None
+preciselyusjobs`Precisely US Jobs`None
+tomorrow`Tomorrow.io`None
+affinity`Affinity`None
+diginnother`DIG Chefs-In-Training`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/009/477/resized/DIG_Logo.png
+bancopan`Banco PAN`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/689/700/resized/logo-pan-branco.png
+truebill`Rocket Money`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/252/300/resized/LinkedIn_Profile.png
+mightybuildings`Mighty Buildings`None
+glenwoodpethospital`Glenwood Pet Hospital`None
+healthgorilla`Health Gorilla`None
+valleyview`Valley View - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/439/300/resized/Valley-View-Logo-1xb.png

@@ -1190,3 +1190,14 @@ tangraminteriors`Tangram Interiors`https://lever-client-logos.s3.amazonaws.com/d
 sanctuary`Sanctuary AI`https://lever-client-logos.s3-us-west-2.amazonaws.com/5c59a057-116f-493f-bcbc-43c29faae921-1589502053125.png
 rocketlawyer`Rocket Lawyer`https://lever-client-logos.s3.amazonaws.com/676d3de8-bf16-40f6-98be-f6e8fe5b9942-1515436616701.png
 nobullproject`NOBULL `https://lever-client-logos.s3.us-west-2.amazonaws.com/e5eaf29f-284b-429e-a9a6-bb8cc0987846-1634758202392.png
+tryjeeves`Jeeves`https://lever-client-logos.s3.us-west-2.amazonaws.com/e2a4cb30-ca10-4b24-ba60-626e74b72122-1661877768946.png
+hlkagency`HLK`https://lever-client-logos.s3.amazonaws.com/47726038-aa11-4cef-a93d-3a7e3b6f1e99-1525713578699.png
+dlocal`dLocal`https://lever-client-logos.s3.us-west-2.amazonaws.com/db3b91f2-5eca-4a2e-9635-d9b158c0d00f-1657628090463.png
+clarateam`Clara`https://lever-client-logos.s3.us-west-2.amazonaws.com/af66aa93-e52e-4278-854c-98338dabc71e-1633462824140.png
+kunai`Kunai`https://lever-client-logos.s3.us-west-2.amazonaws.com/0db4847d-066b-4051-9513-5c9dfb037d11-1636494372636.png
+FTXUS`FTX US`https://lever-client-logos.s3.us-west-2.amazonaws.com/f470f452-359b-44b5-9376-c9b90d4f5590-1624897878756.png
+3xmgroup`3XM Group`https://lever-client-logos.s3.amazonaws.com/292b4ef7-8708-4e94-89d3-844caaa6d30d-1574873784112.png
+Onehouse`Onehouse`https://lever-client-logos.s3.us-west-2.amazonaws.com/1d18aaca-8b3e-4f2b-b63d-ce8684a1dafa-1643245786970.png
+studio71us`Studio71`https://lever-client-logos.s3.amazonaws.com/8dddb44a-6255-4303-be68-5c869b7a529c-1550701188288.png
+ciceksepeti`Çiçeksepeti`https://lever-client-logos.s3.us-west-2.amazonaws.com/de4eebbf-97f1-4bdb-b542-4fa65a0b48ab-1662467464737.png
+Qashier`Qashier`https://lever-client-logos.s3.us-west-2.amazonaws.com/efa08e89-695a-4573-bc96-b5a436955a1f-1641972176198.png
