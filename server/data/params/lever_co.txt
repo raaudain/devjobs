@@ -43,7 +43,6 @@ openphone
 oso
 outschool
 automox
-printavo
 workos
 replit
 zoba

@@ -199,7 +199,6 @@ quizizz
 hirevue
 neami-national
 hostinger
-altus-assessments
 languagewire
 issuetrak
 klivvr
@@ -604,7 +603,6 @@ statice
 suade
 shares
 voicy
-metabolicliving
 carwow
 interapt
 pamb

@@ -425,7 +425,6 @@ si
 togetherwork
 currentcatalog
 padsplit
-pythnetwork
 inmobi
 omidyarnetwork
 thatlot
@@ -474,7 +473,6 @@ christiancareministry
 fidelityguarantylife
 modulrfinance
 parsebiosciences
-postings
 retorio
 banza
 zola
@@ -772,7 +770,6 @@ agero
 g2crowd
 joinsharenow
 nuvalent
-parchill
 collectiveinc
 grandofprospect
 digitaltrends
@@ -1058,7 +1055,6 @@ chanzuckerberginitiative
 ccah
 xosinc
 teampicnic
-northport
 riskified
 tesseradata
 carrotinc

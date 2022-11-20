@@ -115,7 +115,6 @@ opsramp
 wearemusiversal
 cybermason
 singular
-cordonbleu
 gpbullhound
 mec
 medapp
@@ -207,7 +206,6 @@ zoopluspoland
 snapeda
 trustedshopsbv
 hollandstartup
-even3
 neni
 visorai
 atome3d
@@ -320,7 +318,6 @@ lunaralife
 innovationseven
 crateio
 benfatto
-dbpartner
 dwkkurierdienstgmbh
 movetexas
 ukeventmedicalserviceslimited
@@ -356,7 +353,6 @@ jensrabe
 sapphiresystemsplc
 avisia
 dragongries
-finoagmbh
 primo
 hightechgenesiscareers
 incloud
