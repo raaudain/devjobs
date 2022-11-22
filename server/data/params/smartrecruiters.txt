@@ -140,7 +140,6 @@ HUG
 genomicsengland
 EyasGaming
 BlueOptima
-MedHealth3
 WernerMertzGmbH
 CDPROJEKTRED
 SedusGruppe
@@ -228,7 +227,6 @@ USITSolutionsInc
 RoljobsTechnologyServicesPvtLtd
 SalvusHealth
 RPIConsultants
-NuViewConnectionsInc
 PremiumTechnology
 Dailymotion
 SanmaxInc
@@ -266,7 +264,6 @@ WakeForestBaptistHealth
 TescoBengaluru
 SPTHoldings
 KonnectRecruitmentLimited
-ATIALtd
 BlueprintManagementGroup
 GermanZeroEV
 LeoPharma
@@ -311,7 +308,6 @@ Infobip
 ProcoreTechnologies
 UpliftEducation1
 Xplor
-natureO
 TheTileShop1
 CityAndCountyOfSanFrancisco1
 Iziwork
@@ -361,7 +357,6 @@ netatmo
 Acomodeo
 carsales
 kimmelcenter
-Wellcare3
 Slice1
 SynergyRecruitment1
 IndustrieCo
@@ -384,7 +379,6 @@ BeyondConsultingSolutions
 EagleRecruit
 EnsisTechnologies
 RICEFWTechnologiesInc1
-CopiousSoftware
 MiseEnPlaceLondon
 TivertonAdvisors
 CoxEnterprises2
@@ -506,7 +500,7 @@ Litgrid
 IFixScreens1
 RenardResources
 MetropolitanPubCompany
-KGTiger2  
+KGTiger2
 MindPointGroupLLC
 SundanceHoldingsGroupLLC
 ATOMEducation
@@ -578,7 +572,6 @@ Dynatrace1
 StratasFoods
 KaneIsAble
 ScalableGmbH
-somfysystemsinc
 TrueFoodKitchen
 Genea
 Superloop
@@ -634,7 +627,6 @@ SottasSA
 DarumaCorporation
 MiltonCAT
 hfscompany
-EnthuseMarketing
 RestoSaungPlataran
 Evolution
 GSOFT1
@@ -672,7 +664,6 @@ CulinaGroup1
 DiscoveryBehavioralHealth
 Staubli
 FINXFLO
-MyRepublic
 CarrWorkplaces
 Nagarro1
 wnpower

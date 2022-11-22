@@ -1,3 +1,4 @@
+/allspice
 /mudflap
 /cocoon
 /caremessage

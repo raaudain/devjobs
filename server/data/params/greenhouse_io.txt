@@ -487,7 +487,6 @@ preply
 moneytree33
 thoughtspot
 pointdigitalfinance
-firstwestern
 floridamedicalclinic
 axiom
 synack
@@ -1456,7 +1455,6 @@ seamlessai
 fortify
 getshogun
 wework
-habi
 processstreet
 allstripes
 bamboohr17
