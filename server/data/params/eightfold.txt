@@ -58,3 +58,5 @@ zebra
 fonix
 dsm
 nttdata
+whirlpool
+realogy
