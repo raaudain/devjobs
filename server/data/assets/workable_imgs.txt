@@ -1218,3 +1218,15 @@ bitget`n/a`None
 flyability`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/569031/logo
 fabulousco`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/518492/logo
 cosmos-sport-s-dot-a`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/478046/logo
+autofleet`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/445657/logo
+maveriscareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/442352/logo
+zoneandco`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535303/logo
+teknique`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/2374/logo
+storonsky`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/538156/logo
+houst`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/556693/logo
+divestudiosmindset`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/504588/logo
+foundersforum`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/153388/logo
+denverpolicerecruiting`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/136172/logo
+aldrin`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535732/logo
+inspectorio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/487006/logo
+matchesfashion`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/428955/logo

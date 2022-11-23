@@ -609,7 +609,6 @@ ardentmc
 tecovas
 libertasfunding
 zava
-classedu
 slicareers
 earlycareerprograms
 hopin
@@ -1160,7 +1159,6 @@ c6bank
 aces
 synctera
 monthly
-buonny
 MaterialBank
 rubrik
 blacksky
@@ -1246,7 +1244,6 @@ kasaliving
 humanrightswatch
 proyectosenmexycentroamerica
 transmitsecurity
-opentech
 tailorbirdinc
 veriff
 enjoy
@@ -1342,7 +1339,6 @@ atlasxhm
 awardco
 bedrocksystems
 truelayer
-bsoft
 helloalfred58
 psiquantum
 numeradecareers
@@ -1449,7 +1445,6 @@ shipbobinc
 supabase
 xpinc
 riotgamesinc
-praxio
 lisc
 seamlessai
 fortify
@@ -1483,14 +1478,11 @@ rightwayhealthcare
 appliedintuition
 valleyview
 autonomic
-ospreyfunds
 taxdoo
 wheely
 drata
-Kettle
 humandx
 vytalizehealth
-habi
 upbound
 sporttrade
 logixboard

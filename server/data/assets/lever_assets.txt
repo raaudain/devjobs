@@ -1201,3 +1201,13 @@ Onehouse`Onehouse`https://lever-client-logos.s3.us-west-2.amazonaws.com/1d18aaca
 studio71us`Studio71`https://lever-client-logos.s3.amazonaws.com/8dddb44a-6255-4303-be68-5c869b7a529c-1550701188288.png
 ciceksepeti`Çiçeksepeti`https://lever-client-logos.s3.us-west-2.amazonaws.com/de4eebbf-97f1-4bdb-b542-4fa65a0b48ab-1662467464737.png
 Qashier`Qashier`https://lever-client-logos.s3.us-west-2.amazonaws.com/efa08e89-695a-4573-bc96-b5a436955a1f-1641972176198.png
+sait`SAIT`https://lever-client-logos.s3.us-west-2.amazonaws.com/af0f440d-af91-4471-8c11-b0d3e60dbf59-1630587976360.png
+empower.me`Empower`https://lever-client-logos.s3.us-west-2.amazonaws.com/2e1a369c-b58f-41ac-8d86-4b0a77695e68-1627064290124.png
+pinkoi`Pinkoi`https://lever-client-logos.s3.us-west-2.amazonaws.com/21422d72-bff5-4693-b6e1-6cc321bee056-1661162364763.png
+launchhousing`Launch Housing`https://lever-client-logos.s3.us-west-2.amazonaws.com/62b5c677-c3dd-4cad-895b-88baaf7f92c4-1661130495229.png
+pennylane`Pennylane`https://lever-client-logos.s3.us-west-2.amazonaws.com/ccd4dabe-fd79-465c-8aa6-3cca717754e7-1649328696312.png
+missioncloud`Mission`https://lever-client-logos.s3.us-west-2.amazonaws.com/750e6428-3d85-4094-b3a2-b8180f49ff1a-1650487326225.png
+Tixr`Tixr`https://lever-client-logos.s3.us-west-2.amazonaws.com/c375f116-8426-4d0a-8382-5f841b96c6a4-1631047385837.png
+compstak`CompStak`https://lever-client-logos.s3-us-west-2.amazonaws.com/ee9ae2cd-8171-402c-be59-df682fa3e7d3-1582140802037.png
+nomihealth`Nomi Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/7fdde48e-7fa1-41d7-80f9-044c6da307c1-1667414917369.png
+docebo`Docebo`https://lever-client-logos.s3.us-west-2.amazonaws.com/6f69134d-fba0-471f-9c22-091d4b1640b6-1640203375136.png

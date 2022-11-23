@@ -630,7 +630,6 @@ erschaffedichneu
 limgroup
 mijndomein
 jobs
-status
 parfumado
 atz
 pluecker
@@ -639,7 +638,6 @@ viroclinicsddl
 mantel
 upstageai
 crunchr
-cordonbleu
 werkenbijgupta
 baeckertrunk
 mclaren

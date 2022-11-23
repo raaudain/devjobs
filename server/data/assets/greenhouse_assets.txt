@@ -1536,3 +1536,18 @@ mightybuildings`Mighty Buildings`None
 glenwoodpethospital`Glenwood Pet Hospital`None
 healthgorilla`Health Gorilla`None
 valleyview`Valley View - A Civitas Senior Living Community`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/439/300/resized/Valley-View-Logo-1xb.png
+autonomic`Autonomic`None
+taxdoo`Taxdoo`None
+drata`Careers at Drata`None
+humandx`Human Dx`None
+sporttrade`Sporttrade Inc.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/131/800/resized/st-logo_horizontal_alt-color-opacity_white-bg_small_(1).png
+science37`Science 37`None
+ssreferrals`Sprout General Referrals`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/010/970/resized/Sprout-Social-Logo-Icon-4x.png
+medarrive`MedArrive`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/929/700/resized/MedArrive_LinkedIn.png
+wheely`Wheely`None
+vytalizehealth`Vytalize Health`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/167/300/resized/Vytalize_Logo.png
+upbound`Upbound`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/006/800/resized/Logo_Inverted_1x_(1).png
+logixboard`Logixboard`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/092/500/resized/lxb_logo.png
+interest`Automattic: General Interest Submissions`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/908/resized/automattic-logo-isolated-nopadding.png
+invision`InVision`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/011/resized/logo_try.png
+securityscorecard`SecurityScorecard`None

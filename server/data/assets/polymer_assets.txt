@@ -167,3 +167,8 @@ aboard`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6elj3priv01xthy0
 natel-energy`n/a`https://inflow-public.s3.amazonaws.com/company-logos/p8sj10nnavjwm2some8gg8ydaksk.png
 novalabs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/u7p9v2slkz72y1eavh12elpdsxt7.png
 dx`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4mvkaj00ew4ogjynkuderof8vcal.png
+othersphere`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xntbh9nqbk8feua1wdp4kd77oyoc.png
+futurefamily`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s979dg2jqfowc8f2ohv99ud8ftyr.jpeg
+skillet`n/a`https://inflow-public.s3.amazonaws.com/company-logos/1pdyry66vqpiw253bcw5a3yghlnr.png
+null-studios`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s451ytq57p7aojc012cv8k6o9hlq.png
+global-press`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xqhr6fmxqf427xa15dt1w1elqwoh.png
