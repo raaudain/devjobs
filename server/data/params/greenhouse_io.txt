@@ -1212,7 +1212,6 @@ honeybook
 appliedvaluetech
 yieldmo
 jumo
-olx
 freenow
 mixpanel
 linkfire
