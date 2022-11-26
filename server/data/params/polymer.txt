@@ -215,3 +215,5 @@ othersphere
 skillet
 null-studios
 global-press
+serenade
+berachain
