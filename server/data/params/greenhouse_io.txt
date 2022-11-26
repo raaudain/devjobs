@@ -1500,10 +1500,8 @@ tulip
 dynamicyield
 pelacase
 dataai
-bsoft
 lightforgegames
 edxbootcamps
 2023fellows
 housinganywhere
 redsixaerospace
-embed

@@ -1230,3 +1230,17 @@ denverpolicerecruiting`n/a`https://workablehr.s3.amazonaws.com/uploads/account/l
 aldrin`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535732/logo
 inspectorio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/487006/logo
 matchesfashion`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/428955/logo
+mightyrhino`n/a`None
+ojahq`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/502946/logo
+simplemills`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/90601/logo
+accellor`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/574016/logo
+northpass`n/a`None
+fsc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/516769/logo
+ganymede`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/539514/logo
+sidekicker`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/542132/logo
+titanbay`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/472004/logo
+siceanz`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/550996/logo
+milanote`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/194209/logo
+bynry`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/531696/logo
+lightyear`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575226/logo
+ohalo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/490866/logo

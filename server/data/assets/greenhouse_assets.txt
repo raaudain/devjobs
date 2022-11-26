@@ -1551,3 +1551,15 @@ logixboard`Logixboard`https://s4-recruiting.cdn.greenhouse.io/external_greenhous
 interest`Automattic: General Interest Submissions`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/908/resized/automattic-logo-isolated-nopadding.png
 invision`InVision`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/011/resized/logo_try.png
 securityscorecard`SecurityScorecard`None
+bcgdv`BCGDV`None
+slingshotaerospace`Slingshot Aerospace`None
+pelacase`Pela Case`None
+edxbootcamps`edX Boot Camps`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/892/300/resized/edx-logo-registered-black.png
+housinganywhere`HousingAnywhere 🌏🏡`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/150/400/resized/HA_logo_HighRes.png
+cityblockhealth`Cityblock Health`None
+daangn`당근마켓`None
+ultragenyxpharmaceutical`Ultragenyx Pharmaceutical`None
+dataai`data.ai`None
+lightforgegames`Lightforge Games`None
+2023fellows`2023 Fellows Program`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/033/100/resized/kleiner-perkins-fellows-black.png
+redsixaerospace`Red Six Aerospace`None

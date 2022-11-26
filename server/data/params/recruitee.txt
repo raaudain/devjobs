@@ -663,7 +663,6 @@ vibes
 backereimensing
 h2fly
 leoderbacker
-electricantlabbv
 talkieai
 advicepay1
 assentio
@@ -671,7 +670,6 @@ werkenbijdekempervennen
 makemarketingmagic
 nieuwunicum
 zilverzorg
-status
 vanboxtel
 xfive
 fourthline
@@ -679,4 +677,3 @@ ridbv
 energyagency
 studibuch
 stpaulsschool
-equalture

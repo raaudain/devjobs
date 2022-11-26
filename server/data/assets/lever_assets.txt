@@ -1211,3 +1211,15 @@ Tixr`Tixr`https://lever-client-logos.s3.us-west-2.amazonaws.com/c375f116-8426-4d
 compstak`CompStak`https://lever-client-logos.s3-us-west-2.amazonaws.com/ee9ae2cd-8171-402c-be59-df682fa3e7d3-1582140802037.png
 nomihealth`Nomi Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/7fdde48e-7fa1-41d7-80f9-044c6da307c1-1667414917369.png
 docebo`Docebo`https://lever-client-logos.s3.us-west-2.amazonaws.com/6f69134d-fba0-471f-9c22-091d4b1640b6-1640203375136.png
+ultragenyx`Ultragenyx Pharmaceutical Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/869b5212-637b-40c8-a464-c3757c1e3412-1606150705310.png
+marcusmillichap`Marcus & Millichap`https://lever-client-logos.s3.us-west-2.amazonaws.com/a074580f-e645-4315-866e-e97c0239b6e5-1636125997749.png
+thetrainline`Trainline`https://lever-client-logos.s3.us-west-2.amazonaws.com/e7325281-bcf1-44ee-8fbb-cac3cc210349-1602514054516.png
+creadits`Creadits `https://lever-client-logos.s3.us-west-2.amazonaws.com/8540ab83-e10d-4ed9-8acf-7aea8351c028-1646258818995.png
+hearsaysystems`Hearsay Systems`https://lever-client-logos.s3.us-west-2.amazonaws.com/562fdeb9-41f7-4937-a501-d7aeaff63cf4-1632257299306.png
+annalise`annalise.ai`https://lever-client-logos.s3.us-west-2.amazonaws.com/9145a69b-e6b9-4ce7-af5a-95ecb8fb85d4-1660893603030.png
+knix`Knix`https://lever-client-logos.s3.us-west-2.amazonaws.com/ac8357dc-add3-42d2-9524-65a6e5a92bbf-1630074261220.png
+lcbcchurch`LCBC Church`https://lever-client-logos.s3.amazonaws.com/1421bf89-bdbf-4f67-91b8-c324dfa12564-1566498333780.png
+aronsonllc`Aronson LLC`https://lever-client-logos.s3.amazonaws.com/aronsonlogo-jpg.png
+picus`Picus`https://lever-client-logos.s3.us-west-2.amazonaws.com/f66bee82-55ca-4698-8908-50a50b56fc84-1655207588152.png
+StudioThree`Studio Three`https://lever-client-logos.s3.us-west-2.amazonaws.com/cfcee7a5-e14e-4631-b2fe-c54b11885610-1635950214277.png
+thedispatch`The Dispatch`https://lever-client-logos.s3.us-west-2.amazonaws.com/89fe3201-2b1a-43da-83f7-76f10bc00c9e-1661460775461.png

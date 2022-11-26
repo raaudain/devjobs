@@ -721,3 +721,9 @@ EPSA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6349901ec6b4
 CatenonWorldwideExecutiveSearch1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/54586883e4b0f9948ecc0449/150px
 BusinessInsiderDeutschland`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/620237dc394d9f63de4453e5/c5fbe3b1-1bf4-48e2-a718-09b7be0ac3e8?r=s3-eu-central-1
 Kaelo`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b326c9ee4b0e61b9685dc0b/ccba48e3-cffe-44a8-962f-87070df6de4a?r=s3-eu-central-1
+CDIT1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c6a33ea713c090006f67046/150px?r=s3-eu-central-1
+TEDConferencesLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62338bb2d45fab550941375c/150px?r=s3-eu-central-1
+Nexity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/59e8c6cce4b0aae409ef8f82/150px?r=s3
+RecoursFourKenyaConsultantsLimited`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5469f411e4b0ea2f7a7761f1/150px
+Sollan`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c41f07d52faff0006ab8233/150px?r=s3-eu-central-1
+MUFGInvestorServices`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f3fd2681a64a97c1b4b6bc7/150px?r=s3-eu-central-1

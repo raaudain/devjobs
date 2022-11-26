@@ -172,3 +172,5 @@ futurefamily`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s979dg2jqf
 skillet`n/a`https://inflow-public.s3.amazonaws.com/company-logos/1pdyry66vqpiw253bcw5a3yghlnr.png
 null-studios`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s451ytq57p7aojc012cv8k6o9hlq.png
 global-press`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xqhr6fmxqf427xa15dt1w1elqwoh.png
+serenade`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ke4itdkvqnqfjmle4t1vekwvqmdv.jpeg
+berachain`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rp70b2xrm5pm8fvgl8ogjyvwigm5.jpeg
