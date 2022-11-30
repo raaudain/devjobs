@@ -1563,3 +1563,8 @@ dataai`data.ai`None
 lightforgegames`Lightforge Games`None
 2023fellows`2023 Fellows Program`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/033/100/resized/kleiner-perkins-fellows-black.png
 redsixaerospace`Red Six Aerospace`None
+clicktherapeutics`Click Therapeutics`None
+ouihelp`Ouihelp`None
+volvocarmobility`Volvo On Demand`None
+zabertechnologies`Zaber Technologies`None
+cloverhealth`Clover Health`None

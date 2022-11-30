@@ -1187,7 +1187,6 @@ theguarantors
 agiloft
 willowinc
 observeinc
-zipongo
 openlogix
 circleco
 bazaarvoice

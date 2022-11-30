@@ -1223,3 +1223,11 @@ aronsonllc`Aronson LLC`https://lever-client-logos.s3.amazonaws.com/aronsonlogo-j
 picus`Picus`https://lever-client-logos.s3.us-west-2.amazonaws.com/f66bee82-55ca-4698-8908-50a50b56fc84-1655207588152.png
 StudioThree`Studio Three`https://lever-client-logos.s3.us-west-2.amazonaws.com/cfcee7a5-e14e-4631-b2fe-c54b11885610-1635950214277.png
 thedispatch`The Dispatch`https://lever-client-logos.s3.us-west-2.amazonaws.com/89fe3201-2b1a-43da-83f7-76f10bc00c9e-1661460775461.png
+ppsat`Planned Parenthood South Atlantic`https://lever-client-logos.s3-us-west-2.amazonaws.com/ecd87f65-3ee6-4083-b088-4e264032cb54-1585252517745.png
+yummysuperapp`Yummy`https://lever-client-logos.s3.us-west-2.amazonaws.com/30bc4eb0-161a-43b6-86f5-6c4b021f0261-1635997088198.png
+wpromote`WPROMOTE`https://lever-client-logos.s3.us-west-2.amazonaws.com/7c34bf79-88f6-4f75-ae0b-0b6e2de79384-1612893333291.png
+sai360`SAI360`https://lever-client-logos.s3.us-west-2.amazonaws.com/0fad6820-a7e1-48df-8a75-21dbbb0f062d-1652453990783.png
+deputy`Deputy`https://lever-client-logos.s3.us-west-2.amazonaws.com/d20056fd-6295-4ec6-b809-a6477a1d79f0-1615158495863.png
+synapsefi`Synapse`https://lever-client-logos.s3.amazonaws.com/16dff1b6-769e-4d60-9543-f53b90cdc26a-1556586704053.png
+educationatwork`Education at Work`https://lever-client-logos.s3-us-west-2.amazonaws.com/ac9ed076-c868-482c-a41c-fba2fa446f53-1584460717308.png
+eqbank`Equitable Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/b77bfb66-093c-48f3-9901-c64c652f0c34-1623639111732.png

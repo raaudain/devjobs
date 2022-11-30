@@ -1244,3 +1244,16 @@ milanote`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/194209/log
 bynry`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/531696/logo
 lightyear`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575226/logo
 ohalo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/490866/logo
+kitchen-united`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/353779/logo
+besterand-co`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/422367/logo
+carbonre`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/518812/logo
+matrak`n/a`None
+beyond12`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/16022/B12_logo_PMS.png
+mojo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/311374/logo
+answerrocket`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/527791/logo
+routereports`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/510390/logo
+wearejude`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/516214/logo
+multigate`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/481198/logo
+fieldfisherbelgium`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/437661/logo
+climatearc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/556311/logo
+supportyourapp`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/105485/logo

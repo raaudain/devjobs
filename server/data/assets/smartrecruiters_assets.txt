@@ -727,3 +727,8 @@ Nexity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/59e8c6cce4b0aae409
 RecoursFourKenyaConsultantsLimited`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5469f411e4b0ea2f7a7761f1/150px
 Sollan`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c41f07d52faff0006ab8233/150px?r=s3-eu-central-1
 MUFGInvestorServices`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f3fd2681a64a97c1b4b6bc7/150px?r=s3-eu-central-1
+LendiGroup1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63437ef32edbb523b6d098e2/188e6288-74c5-4673-8739-37dbec537287?r=s3-eu-central-1
+CarousellGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62e4dac1305d0158aa7b48ba/e0686c12-5e8c-42cf-b36e-fc955c1326c2?r=s3-eu-central-1
+IFS1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5dfce360dff23c4bbfcd259c/huge?r=s3-eu-central-1
+StreemEnergy`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f914691b79db6510c5cfe55/e3933531-a667-468c-aa8e-35e9bc12b430?r=s3-eu-central-1
+AWTPetersGmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b73cdefe4b027a515933dbd/150px?r=s3-eu-central-1

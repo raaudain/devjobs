@@ -693,7 +693,6 @@ werkenbijmotracindustries
 rkmedia
 spro
 airapps
-status
 elevatejobs
 werkenbijmasters
 pexip
@@ -701,4 +700,3 @@ thespastudios
 seatankterminal1
 nvb
 plantix
-easyship
