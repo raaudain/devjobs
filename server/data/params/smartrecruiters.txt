@@ -827,3 +827,9 @@ CDIT1
 MelioraGlobal
 RecoursFourKenyaConsultantsLimited
 TEDConferencesLLC
+LendiGroup1
+CarousellGroup
+AWTPetersGmbH
+IFS1
+CGAConsulting
+StreemEnergy
