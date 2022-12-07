@@ -1287,3 +1287,13 @@ tyro
 goguardian
 offchainlabs
 Pillow
+zenogroup
+pprm
+klue
+terawattinfrastructure
+tegus
+dynamiccatholic
+coingecko
+bostondynamicsaiinstitute
+overbond
+5xdata
