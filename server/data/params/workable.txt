@@ -64,7 +64,6 @@ athletic-greens-hiring
 taskforce
 kidztopros
 kianite
-genius-guild-llc
 frontiers
 lawn-love
 plutus-dot-it
@@ -94,7 +93,6 @@ webenertia
 stuart
 remotive
 wp-media
-tribeplatform
 chargify
 fauna
 connected
@@ -346,7 +344,6 @@ wagestream
 speexx
 medmetry
 datawow
-kaleido
 evolvery
 getbaraka
 turquoisehealth
@@ -462,7 +459,6 @@ zerolight
 havehalalwilltravel
 brinc
 kandidate
-swimply
 freshgravity
 tciscareers
 epignosis
@@ -684,7 +680,6 @@ electrameccanica
 multisafepay
 levelshealth
 corcentric
-ionenergy
 bonsai
 naturalmojo
 bizagi
@@ -726,11 +721,9 @@ ripjar
 decideact
 azimo
 keylane
-swim
 liminalinsights
 lets-do-this
 artory
-brainpop
 domain-tools
 rdxworks
 glorify

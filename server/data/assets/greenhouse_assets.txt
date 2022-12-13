@@ -1568,3 +1568,26 @@ ouihelp`Ouihelp`None
 volvocarmobility`Volvo On Demand`None
 zabertechnologies`Zaber Technologies`None
 cloverhealth`Clover Health`None
+meruhealth`Meru Health`None
+pagoda`Pagoda`None
+getprospa`Prospa`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/103/000/resized/prospa_logo-01_(1).png
+jasper23`Jasper`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/074/900/resized/Jasper_Social_Share_Image_-_Careers.jpg
+samsungresearchamericainternship`Samsung Research America Internship`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/637/000/resized/SRA_Logo_1.png
+jusbrasil`Jusbrasil`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/546/200/resized/jusbrasil.png
+rareform`Rareform`None
+sparkcares`Spark Lifecare`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/591/400/resized/spark_web_logo_color_500w.png
+keyme`KeyMe`None
+extend`Extend`None
+commissiondelasantementaleducanadafrancais`Commission de la santé mentale du Canada - Français`None
+workshopdigital`Current Job Openings at Workshop Digital`None
+swiftnavigation`Swift Navigation`None
+vorihealth`Vori Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/818/900/resized/logo_emblem.png
+mastercardfoundation`Mastercard Foundation`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/728/400/resized/MastercardFdn_Colour-POS.png
+thearenagroup`The Arena Group`None
+abovelending`Above Lending`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/747/resized/above-lending-logo.2ab676f7.png
+atmosphere`Atmosphere-TV`None
+securly13`Securly`None
+vacasa`Vacasa`None
+ustwo`ustwo`None
+firstlookmedia`First Look Media`None
+easyship`Easyship`None

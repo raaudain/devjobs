@@ -4,7 +4,6 @@ wrapbook
 postscript
 bensonhillinc
 betterment
-craftco
 dfinity
 singlestore
 gitlab
@@ -297,7 +296,6 @@ hootsuite
 frameio
 chewycom
 sisense
-frog
 lexer
 ribbon
 gohealthsales
@@ -490,7 +488,6 @@ pointdigitalfinance
 floridamedicalclinic
 axiom
 synack
-ambys
 samlabs
 winreality
 smileidentity
@@ -782,7 +779,6 @@ nerdery
 u410
 artsy
 axios
-shortcut
 influxdb
 sourcegraph91
 webflow
@@ -1375,7 +1371,6 @@ theseus
 aquahydrex
 uniswaplabs
 productboard
-2022productdesigner
 vestahealthcare
 rubyreceptionists
 shift5
@@ -1520,14 +1515,10 @@ samsungresearchamericainternship
 thearenagroup
 jusbrasil
 abovelending
-embed
 atmosphere
-praxio
 securly13
-bridgefinancialtechnology
 vacasa
 rareform
-countrygreenery
 sparkcares
 ustwo
 keyme

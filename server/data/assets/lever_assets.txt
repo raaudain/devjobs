@@ -1231,3 +1231,24 @@ deputy`Deputy`https://lever-client-logos.s3.us-west-2.amazonaws.com/d20056fd-629
 synapsefi`Synapse`https://lever-client-logos.s3.amazonaws.com/16dff1b6-769e-4d60-9543-f53b90cdc26a-1556586704053.png
 educationatwork`Education at Work`https://lever-client-logos.s3-us-west-2.amazonaws.com/ac9ed076-c868-482c-a41c-fba2fa446f53-1584460717308.png
 eqbank`Equitable Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/b77bfb66-093c-48f3-9901-c64c652f0c34-1623639111732.png
+brandwatch`Brandwatch`https://lever-client-logos.s3.us-west-2.amazonaws.com/1fadfd91-c47f-407b-9bc5-720a5df48803-1646992172522.png
+charmindustrial`Charm Industrial`https://lever-client-logos.s3.us-west-2.amazonaws.com/5b6af6e3-cb6c-4b78-85b7-0c87fbb1ab9a-1625421345817.png
+terawattinfrastructure`TeraWatt Infrastructure`https://lever-client-logos.s3.us-west-2.amazonaws.com/7a0975fa-2341-4f01-acec-fc0e38086b6c-1626311919879.png
+tyro`Tyro`https://lever-client-logos.s3.amazonaws.com/8ee7ffac-1a04-4c77-a0ce-d64d1ebdf387-1565760441272.png
+crosscountry-consulting`CrossCountry Consulting`https://lever-client-logos.s3.us-west-2.amazonaws.com/857aa648-56e0-4ff7-b422-6514887903db-1670331787594.png
+websummit`Web Summit`https://lever-client-logos.s3.us-west-2.amazonaws.com/9631d833-394f-4914-b5e4-a24444257060-1654608039848.png
+tegus`Tegus`https://lever-client-logos.s3.us-west-2.amazonaws.com/2006885e-5ddf-4116-8abf-72d909430ba8-1653346372687.png
+goguardian`GoGuardian`https://lever-client-logos.s3.us-west-2.amazonaws.com/27d7e88f-a449-4ab1-ba7a-e9ad201c43b9-1622759928099.png
+offchainlabs`Offchain Labs`https://lever-client-logos.s3.amazonaws.com/6a5129dc-228e-4991-944b-c52e267911a5-1567473093653.png
+klue`Klue`https://lever-client-logos.s3.us-west-2.amazonaws.com/555d7e34-ce4f-4b7a-9eb2-efd2fa3ee212-1638321856482.png
+overbond`Overbond`https://lever-client-logos.s3.amazonaws.com/f1194a18-fa90-417c-9a73-a836186e86a1-1467217503208.png
+coingecko`CoinGecko`https://lever-client-logos.s3.us-west-2.amazonaws.com/3530792d-a2b9-422a-8e00-dc0ea639941b-1632720076474.png
+pprm`Planned Parenthood of the Rocky Mountains, Inc.`https://lever-client-logos.s3.amazonaws.com/526e1ddc-0950-4957-b472-8acf470a176d-1510949465560.png
+fatetherapeutics`Fate Therapeutics, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd210a59-c9d6-4c21-9ff5-aa0e50c9b3d8-1640108158304.png
+rivosinc`Rivos`https://lever-client-logos.s3.us-west-2.amazonaws.com/1a6b5737-0423-4ebd-9459-44c777a23656-1631728659003.png
+fazzfinancial`Fazz Financial Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/feb577d0-ce0c-4ad2-949b-71484118c764-1662968909881.png
+zenogroup`Zeno Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9919c1c-e1f3-4aa2-8076-ed2eb379a607-1603462267023.png
+5xdata`5x`https://lever-client-logos.s3.us-west-2.amazonaws.com/8aa10bb9-6afc-4f05-b959-ffd08db35e82-1649227051417.png
+kpmgnz`KPMG New Zealand`https://lever-client-logos.s3.amazonaws.com/459e2e3c-c637-4996-8389-f4acb6bf3e47-1501807382294.png
+bostondynamicsaiinstitute`Boston Dynamics AI Institute`https://lever-client-logos.s3.us-west-2.amazonaws.com/92af420d-f973-41ac-b140-00e79cadf6d6-1665004148735.png
+dynamiccatholic`Dynamic Catholic`https://lever-client-logos.s3.amazonaws.com/029e4ade-a717-4879-b601-c2da6fc32191-1540562200367.png

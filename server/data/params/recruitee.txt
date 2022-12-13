@@ -311,7 +311,6 @@ evodeck
 halodirobotics
 adeleexpressfr
 omroepbrabant
-lunaralife
 innovationseven
 crateio
 benfatto
@@ -533,7 +532,6 @@ strategyeng
 eventix
 birdsai
 learnshipnetworksgmbh
-evergreenenergy
 heckthilft
 yarukiswitchgroup
 go2
@@ -706,17 +704,14 @@ garcia
 warmteservice
 bunq
 orixamedia
-status
 codeintelligence
 xe
 robovision
-ideas2ittechnologies
 gerdesag
 innocentdrinks
 verder
 workrateuk
 zivver
-easyship
 alpsresidenceholidayservicegmbh
 steuerberatervester
 albertagroup
