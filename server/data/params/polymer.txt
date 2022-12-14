@@ -218,3 +218,4 @@ global-press
 serenade
 berachain
 return
+sellscale
