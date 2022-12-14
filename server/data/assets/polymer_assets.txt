@@ -175,3 +175,4 @@ global-press`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xqhr6fmxqf
 serenade`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ke4itdkvqnqfjmle4t1vekwvqmdv.jpeg
 berachain`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rp70b2xrm5pm8fvgl8ogjyvwigm5.jpeg
 return`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ivv8quyffii6g3f2ymppgrb1cjvo.png
+sellscale`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mblnp0qawcd4t4pxepeuzkwifknq.png

@@ -754,3 +754,8 @@ VillageGreen1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bb7c95
 schnabelgeostructuraldesignconstruction`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/570bf696e4b05fe517ef85f1/150px
 TalleysLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60ebacc6b2049e386631d526/150px?r=s3-eu-central-1
 PenelopeBourbon`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6178b7eb289e97426c2d0a87/150px?r=s3-eu-central-1
+ASOS`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/620e8f9e0c7a9c69c8ac3c65/9d35b07b-5c78-459c-963b-40da8aa95545?r=s3-eu-central-1
+JETRealEstate`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fdc53711118f941c1bcb544/150px?r=s3-eu-central-1
+InternationalSOS`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5836bacfe4b06491118936fc/9fd136e9-8846-44b9-aa75-e78ccd9e6109?r=s3
+Blend360`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/614507a576b76d504b17939a/d7b64f2c-0db9-46d5-ac99-dd6ecc3b9ffa?r=s3-eu-central-1
+KABS`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/552457c0e4b09eef8cbabff4/7497eb4d-547e-4dea-8d27-d0a5cac8d8ea

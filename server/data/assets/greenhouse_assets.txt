@@ -1591,3 +1591,22 @@ vacasa`Vacasa`None
 ustwo`ustwo`None
 firstlookmedia`First Look Media`None
 easyship`Easyship`None
+oni`ONI`None
+vuestorefront`Vue Storefront`None
+rvohealth`RVO Health`None
+oliverbrazil`OLIVER Brasil`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/623/resized/OLIVER_M_PB.png
+mlbdataops`MLB Data Operations`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/469/resized/1559162389910.png
+oscar`Oscar Health`None
+inspire`Inspire`None
+eon`EON`None
+8451`84.51°`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/120/500/resized/84.51_Logo_-_New.png
+accelbyte`AccelByte`None
+swirlds`Swirlds Labs`None
+aiserajobs`Aisera`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/378/100/resized/Aisera_logo.png
+hillel`Hillel International`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/440/200/resized/Hillel_International_Logo-2022_Blue.png
+goguardian`GoGuardian`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/054/000/resized/main_logo.png
+nasstudios`Nas Studios`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/680/300/resized/Nas_Studios.jpg
+descomplica`Descomplica`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/485/400/resized/LogoDescomplica.png
+virgo`Virgo Health`None
+homee`Homee, Inc.`None
+enstoa`Enstoa`None

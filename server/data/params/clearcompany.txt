@@ -247,5 +247,3 @@ refresh
 thinkaksarben
 homecaredelivered
 sbpdiscovery
-doehler
-blog

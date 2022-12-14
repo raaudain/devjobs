@@ -1252,3 +1252,20 @@ zenogroup`Zeno Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9919
 kpmgnz`KPMG New Zealand`https://lever-client-logos.s3.amazonaws.com/459e2e3c-c637-4996-8389-f4acb6bf3e47-1501807382294.png
 bostondynamicsaiinstitute`Boston Dynamics AI Institute`https://lever-client-logos.s3.us-west-2.amazonaws.com/92af420d-f973-41ac-b140-00e79cadf6d6-1665004148735.png
 dynamiccatholic`Dynamic Catholic`https://lever-client-logos.s3.amazonaws.com/029e4ade-a717-4879-b601-c2da6fc32191-1540562200367.png
+immocapital`IMMO`https://lever-client-logos.s3.us-west-2.amazonaws.com/616cc84c-e027-4ad9-8a17-bd7dfc9303ef-1658183876127.png
+truv`Truv`https://lever-client-logos.s3.us-west-2.amazonaws.com/f8676dfd-30a8-4874-8ba2-e6980f718d83-1646218929949.png
+ppau`Planned Parenthood Association of Utah`https://lever-client-logos.s3.amazonaws.com/ceb263be-bc2a-42ba-b7e4-4946c33fb786-1501100422343.png
+allegiantair`Allegiant`https://lever-client-logos.s3.us-west-2.amazonaws.com/187b59af-1a37-41fc-b173-0a5a80342877-1631214799494.png
+clearedge`ClearEdge`https://lever-client-logos.s3.amazonaws.com/a6a6c10c-0b68-4355-8167-6a9daaed063a-1573764890846.png
+espace`E-SPACE`https://lever-client-logos.s3.us-west-2.amazonaws.com/566fe5aa-fd17-4562-9164-b4f1289cf7e9-1639599146360.png
+zurichinstruments`Zurich Instruments`https://lever-client-logos.s3.amazonaws.com/d70eff83-cb1e-4c15-873e-c1b4f4e75986-1569222426094.png
+ispace-inc`ispace, inc. `https://lever-client-logos.s3.amazonaws.com/318a1480-d229-4ea4-b25e-593cf2afb7a7-1512414833927.png
+accolitedigital`Accolite Digital`https://lever-client-logos.s3.us-west-2.amazonaws.com/3f46748d-52fd-47dc-ba95-1172d582f4de-1652116773352.png
+quotapath`QuotaPath`https://lever-client-logos.s3.us-west-2.amazonaws.com/eaae0dad-dea6-49fb-b291-f5c8f87eac3a-1630606118906.png
+bigtime`Big Time Studios`https://lever-client-logos.s3.us-west-2.amazonaws.com/76b98a5c-38b5-43b3-8c35-a1e831fbd1cf-1645821324792.png
+mindsdb`MindsDB`https://lever-client-logos.s3.us-west-2.amazonaws.com/df2cb049-f236-48be-863e-1c03abaec2e5-1634589461497.png
+sporty`Sporty Group `https://lever-client-logos.s3.us-west-2.amazonaws.com/6616a346-760f-4098-a325-0a582aa0542e-1608646767819.png
+swapcard`Swapcard`https://lever-client-logos.s3.us-west-2.amazonaws.com/640164d0-0255-467f-8fa7-5f0c325d7d18-1626837993239.png
+neon`Neon Pagamentos`https://lever-client-logos.s3.us-west-2.amazonaws.com/d49ba528-6658-44f3-9132-e0a22b5da77e-1669725320118.png
+the-free-press`The Free Press`https://lever-client-logos.s3.us-west-2.amazonaws.com/3d244a79-2a2e-4260-a74b-a28bc76c1f47-1670547152494.png
+gausslabs`Gauss Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/d9f646e4-9c03-4d49-ab39-30db37ebd7d2-1620026992722.png
