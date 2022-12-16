@@ -445,7 +445,6 @@ healthmapsolutions
 imperva
 castlighthealth
 justicedigitalandtechnology
-oxfordhealthcare
 lumileds
 trademe
 satelliteoffice
