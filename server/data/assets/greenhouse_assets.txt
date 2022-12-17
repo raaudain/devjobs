@@ -1610,3 +1610,9 @@ descomplica`Descomplica`https://s3-recruiting.cdn.greenhouse.io/external_greenho
 virgo`Virgo Health`None
 homee`Homee, Inc.`None
 enstoa`Enstoa`None
+coconutsoftware`Coconut Software`None
+icapitalnetwork`iCapital`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/562/700/resized/iCapital_logo_RGB_-_GHR.png
+titelmedia`Highsnobiety`None
+fullbeaker`Full Beaker`None
+merchantsfleetmanagement`Merchants Fleet`None
+firaxis`Firaxis`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/374/000/resized/firaxis-white.png

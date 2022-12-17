@@ -775,7 +775,6 @@ owow
 inbank
 superconductive
 storktronic
-status
 alphabrothers
 redsky
 stxfixedincome

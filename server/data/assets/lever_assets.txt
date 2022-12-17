@@ -1269,3 +1269,13 @@ swapcard`Swapcard`https://lever-client-logos.s3.us-west-2.amazonaws.com/640164d0
 neon`Neon Pagamentos`https://lever-client-logos.s3.us-west-2.amazonaws.com/d49ba528-6658-44f3-9132-e0a22b5da77e-1669725320118.png
 the-free-press`The Free Press`https://lever-client-logos.s3.us-west-2.amazonaws.com/3d244a79-2a2e-4260-a74b-a28bc76c1f47-1670547152494.png
 gausslabs`Gauss Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/d9f646e4-9c03-4d49-ab39-30db37ebd7d2-1620026992722.png
+pmdsoft`pMD`https://lever-client-logos.s3.amazonaws.com/ba949e17-a065-43a9-98c7-a9bdfd93f987-1545152286922.png
+lodgify`Lodgify`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca97788e-2c9b-4786-b0c8-a57c8ee99fc1-1655830440249.png
+CPP`Cosmetic Physician Partners `https://lever-client-logos.s3.us-west-2.amazonaws.com/c2cf5200-6ce8-47ad-b537-f5bae66d4028-1656358548382.png
+roserocket`Rose Rocket`https://lever-client-logos.s3.us-west-2.amazonaws.com/69f6abc9-3ae2-46df-accc-ec54a68c8a9e-1638890506806.png
+doola`doola`https://lever-client-logos.s3.us-west-2.amazonaws.com/d321da41-12e5-4a0d-89e5-d5e792be6564-1645905392610.png
+idmworks`IDMWORKS`https://lever-client-logos.s3.us-west-2.amazonaws.com/11fc3c60-24c4-41ee-b1db-7545e4554138-1658953048313.png
+biobot`Biobot Analytics`https://lever-client-logos.s3.amazonaws.com/71386249-44a2-4f3f-b0ee-0a9534c287e0-1565985600878.png
+prochoiceamerica`NARAL Pro-Choice America`https://lever-client-logos.s3.us-west-2.amazonaws.com/049be915-6b5a-4469-9095-5ee9622cf072-1601413123382.png
+go-yubi`Yubi`https://lever-client-logos.s3.us-west-2.amazonaws.com/a05ca8b1-fb38-457c-9c4c-7d8800f0c9fe-1655881991482.png
+luxurypresence`Luxury Presence`https://lever-client-logos.s3.us-west-2.amazonaws.com/ee99e1f1-698e-454b-a6f8-0998b8692e11-1656700658992.png

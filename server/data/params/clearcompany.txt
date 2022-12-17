@@ -249,5 +249,3 @@ homecaredelivered
 sbpdiscovery
 www.reataglen
 altusts
-doehler
-blog

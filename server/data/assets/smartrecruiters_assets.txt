@@ -759,3 +759,11 @@ JETRealEstate`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fdc537
 InternationalSOS`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5836bacfe4b06491118936fc/9fd136e9-8846-44b9-aa75-e78ccd9e6109?r=s3
 Blend360`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/614507a576b76d504b17939a/d7b64f2c-0db9-46d5-ac99-dd6ecc3b9ffa?r=s3-eu-central-1
 KABS`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/552457c0e4b09eef8cbabff4/7497eb4d-547e-4dea-8d27-d0a5cac8d8ea
+Devoteam`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b9a4a7be4b045da8100cde4/de5437d5-939c-47e0-a659-ee8715ef5ac8?r=s3-eu-central-1
+LiniumResources`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/55253904e4b06b0ca495403a/9dd31888-2bb3-4426-bd5d-6ba3e1e55e52
+Sears2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/54c10686e4b0ea04bddba580/150px
+AspenSkiingCompany`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ea8542934c0461384c97eac/52bad331-a93e-4c38-b255-04b0d8b0e425?r=s3-eu-central-1
+RiseUp`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6273992b0ce3646079687454/e1cb38f0-9b02-47c9-945c-43e30be1cdce?r=s3-eu-central-1
+BluBanyan`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/614b80e9b5fd1c25ed30cc6a/150px?r=s3-eu-central-1
+Dominos`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/607603f1f6e0434123deda49/150px?r=s3-eu-central-1
+Docplanner`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62d16ba2cec07a6388f5fbd7/150px?r=s3-eu-central-1
