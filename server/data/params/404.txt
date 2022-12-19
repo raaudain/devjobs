@@ -428,3 +428,6 @@ status
 blog
 doehler
 embed
+moneytree33
+classkick
+asymmetrik

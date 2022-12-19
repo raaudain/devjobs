@@ -55,7 +55,6 @@ alayacare
 alphasense
 appian
 algolia
-asymmetrik
 atbay
 benchling
 betterup
@@ -482,7 +481,6 @@ nextiva
 flagshippioneeringinc
 onfleet
 preply
-moneytree33
 thoughtspot
 pointdigitalfinance
 floridamedicalclinic
@@ -1212,7 +1210,6 @@ linkfire
 medmen
 precisionmedicinegroup
 mrbeastyoutube
-classkick
 rent
 gridnews
 forbes
