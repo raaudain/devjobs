@@ -90,7 +90,6 @@ flowspace
 gametime
 getwith
 goodrx
-gospotcheck
 hackerone
 healthsherpa
 hopper
