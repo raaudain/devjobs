@@ -64,3 +64,4 @@ directsourcepro-bpm
 dexcom
 directsourcepro-spk
 johndeere
+directsourcepro-wky
