@@ -1616,3 +1616,11 @@ titelmedia`Highsnobiety`None
 fullbeaker`Full Beaker`None
 merchantsfleetmanagement`Merchants Fleet`None
 firaxis`Firaxis`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/374/000/resized/firaxis-white.png
+shopltk`LTK USA`None
+rdccareers`Realtor.com Careers`None
+blueconic`BlueConic`None
+10pearls`10Pearls - LATAM`None
+marpipe`Marpipe`None
+helionenergy`Helion Energy`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/255/600/resized/Helion-logo.png
+affinidi`Affinidi`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/619/900/resized/Affinidi_logo_No_bg_Greenhouse_specs_(1).png
+gurussolutions`GURUS Solutions`None

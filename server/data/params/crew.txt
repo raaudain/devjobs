@@ -65,4 +65,3 @@ column
 hexa
 mstudio
 payflows
-community

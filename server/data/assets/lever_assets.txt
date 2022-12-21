@@ -1279,3 +1279,4 @@ biobot`Biobot Analytics`https://lever-client-logos.s3.amazonaws.com/71386249-44a
 prochoiceamerica`NARAL Pro-Choice America`https://lever-client-logos.s3.us-west-2.amazonaws.com/049be915-6b5a-4469-9095-5ee9622cf072-1601413123382.png
 go-yubi`Yubi`https://lever-client-logos.s3.us-west-2.amazonaws.com/a05ca8b1-fb38-457c-9c4c-7d8800f0c9fe-1655881991482.png
 luxurypresence`Luxury Presence`https://lever-client-logos.s3.us-west-2.amazonaws.com/ee99e1f1-698e-454b-a6f8-0998b8692e11-1656700658992.png
+thiga`Thiga`https://lever-client-logos.s3.amazonaws.com/6447652c-a539-4057-9b02-3693644f98bb-1551201986951.png

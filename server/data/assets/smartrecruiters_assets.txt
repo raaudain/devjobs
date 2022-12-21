@@ -767,3 +767,10 @@ RiseUp`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6273992b0c
 BluBanyan`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/614b80e9b5fd1c25ed30cc6a/150px?r=s3-eu-central-1
 Dominos`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/607603f1f6e0434123deda49/150px?r=s3-eu-central-1
 Docplanner`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62d16ba2cec07a6388f5fbd7/150px?r=s3-eu-central-1
+TalkNMoreCommunications`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d718e4b0b42dcb45fa9b/huge?r=s3
+Effy`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/603d1b0dc4dd970fd041b0da/150px?r=s3-eu-central-1
+MattelInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fa08fbe88246d01c0abd157/huge?r=s3-eu-central-1
+HangryIndonesia1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62bab2539d08c12dafd8e9d0/huge?r=s3-eu-central-1
+ISAACInstruments`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5c94d8dd5f15030006b8de42/87488ae1-62c7-470c-9ad9-ae36667c6299?r=s3
+RKSConsulting`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e98370ce318b877369dad4f/150px?r=s3-eu-central-1
+OceanaGold`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62357e9c0c7a9c69c8ac3dd8/40c2a144-7908-43a7-83c3-df27e32d8d3b?r=s3-eu-central-1

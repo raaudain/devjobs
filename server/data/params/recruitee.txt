@@ -794,7 +794,6 @@ cldin
 sportparkgruppe
 bischoffundpartner
 slingshotgroup1
-status
 salesbywomen
 ascensionisland
 cloudacademy
