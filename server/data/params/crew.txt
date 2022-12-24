@@ -65,3 +65,6 @@ column
 hexa
 mstudio
 payflows
+community
+ripen
+blog

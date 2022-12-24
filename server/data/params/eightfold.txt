@@ -65,3 +65,5 @@ dexcom
 directsourcepro-spk
 johndeere
 directsourcepro-wky
+directsourcepro-tya
+directsourcepro-inv

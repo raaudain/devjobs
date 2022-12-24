@@ -1317,3 +1317,11 @@ go-yubi
 pmdsoft
 lodgify
 thiga
+kitware
+blinq
+sunhero
+cloudnc
+Plooto
+truventuro
+parcellab
+northbaysolutions

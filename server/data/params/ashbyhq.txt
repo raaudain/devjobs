@@ -520,3 +520,8 @@ producthunt
 mentava
 Anima
 Fairing
+copilot
+southgeeks
+treble.ai
+stelolabs
+modernfi
