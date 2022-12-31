@@ -1259,3 +1259,12 @@ awp
 hutchcc
 paq
 greenco
+glm
+spiralscout
+metacompliance
+umbralab
+stonebranch
+ofifc
+wingsofhope
+swissquant
+thrivehealth
