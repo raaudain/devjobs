@@ -1,3 +1,4 @@
+/ribbon-health
 /allspice
 /mudflap
 /cocoon
@@ -9,7 +10,7 @@
 /upduo
 /reduct
 /chani
-/the-mom-project
+/retired-the-mom-project
 /sibi
 /retired-culture-biosciences
 /indent

@@ -246,7 +246,6 @@ truepill
 boweryfarming
 xometry
 klick
-lucid
 life
 wepay
 foodstuffs

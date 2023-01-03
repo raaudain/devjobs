@@ -224,7 +224,6 @@ notion
 honor
 automatticcareers
 asana
-point
 alto
 janetechnologies
 digit
@@ -421,7 +420,6 @@ enova
 si
 togetherwork
 currentcatalog
-padsplit
 inmobi
 omidyarnetwork
 thatlot
@@ -1558,15 +1556,12 @@ blueconic
 affinidi
 gurussolutions
 stackcommerce
-moneytree33
 viessmanninternational
 copperbanking
 pecanai
 tremorvideodsp
-praxio
 viessmann
 upgrade
-embed
 duplocloud
 huntclub
 nesn

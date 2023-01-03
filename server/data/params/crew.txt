@@ -57,7 +57,6 @@ wequity
 cometh
 kokoon
 zensite
-www
 console
 skillz
 recast
@@ -65,6 +64,4 @@ column
 hexa
 mstudio
 payflows
-community
 ripen
-blog

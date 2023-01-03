@@ -1624,3 +1624,14 @@ marpipe`Marpipe`None
 helionenergy`Helion Energy`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/255/600/resized/Helion-logo.png
 affinidi`Affinidi`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/619/900/resized/Affinidi_logo_No_bg_Greenhouse_specs_(1).png
 gurussolutions`GURUS Solutions`None
+copperbanking`Copper Banking`None
+viessmann`Viessmann Group (DE)`None
+huntclub`Hunt Club`None
+taskrabbit`Taskrabbit`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/470/resized/TR_Linkedin_1200x644_monstera_(1).jpg
+incubator`a Portfolio company of the AI2 Incubator`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/685/resized/AI2_Incubator_Logo.png
+viessmanninternational`Viessmann Group (EN)`None
+pecanai`Pecan Ai`None
+upgrade`Upgrade`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/352/900/resized/Upgrade_(1).png
+duplocloud`DuploCloud`None
+nesn`New England Sports Network`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/636/700/resized/thumbnail_NESN_Linkedin_01.png
+nsrg`North Star Resource Group`None
