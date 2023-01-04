@@ -1303,3 +1303,10 @@ modeln`Model N`https://lever-client-logos.s3.us-west-2.amazonaws.com/16e98298-eb
 softrams`Softrams`https://lever-client-logos.s3.amazonaws.com/97405592-b6c4-42de-a435-95770f63af12-1558525199494.png
 USMobile`US Mobile`https://lever-client-logos.s3.us-west-2.amazonaws.com/fb70315c-4630-47b8-a11d-9b5b532eacc4-1663617724094.png
 webfx`webfx.com`https://lever-client-logos.s3-us-west-2.amazonaws.com/3f4a1490-d8b2-4b84-8e68-ca668c886eae-1582815376935.png
+OXMAN`OXMAN`https://lever-client-logos.s3.us-west-2.amazonaws.com/40c56032-e509-42a8-876e-4856e43d650a-1650992230910.png
+asap`ASAP.com`https://lever-client-logos.s3.us-west-2.amazonaws.com/93c87f0c-2465-48d9-b9c4-ec95218d960e-1660565106727.png
+mytraffic`mytraffic`https://lever-client-logos.s3.us-west-2.amazonaws.com/28fe3fe2-c7e1-4e46-a09e-faa7a335bd10-1613055527368.png
+scholarrock`Scholar Rock`https://lever-client-logos.s3-us-west-2.amazonaws.com/5fb7150d-b1f7-4f3c-8a06-42e1538500ea-1594992882573.png
+roadrunnerwm`RoadRunner Recycling`https://lever-client-logos.s3.us-west-2.amazonaws.com/25162734-b23e-480a-964a-19d5648bbb80-1629902026610.png
+atekinc`A-TEK, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/9cb4fa03-995d-4877-ac88-28a0c8c71f3d-1635183573229.png
+agicap`Agicap`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9f7859f-9200-455b-a1e4-9268dda3c605-1619796089385.png

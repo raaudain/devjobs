@@ -1635,3 +1635,7 @@ upgrade`Upgrade`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_
 duplocloud`DuploCloud`None
 nesn`New England Sports Network`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/636/700/resized/thumbnail_NESN_Linkedin_01.png
 nsrg`North Star Resource Group`None
+disco`DISCO`None
+sedai`Sedai.io`None
+samsungaustinsemiconductor`Samsung Austin Semiconductor`None
+path`Path Mental Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/322/000/resized/Logo_(Primary).jpg

@@ -1330,3 +1330,13 @@ continuumcloud`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/3746
 nillion`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/527556/logo
 adia`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/448845/logo
 lifemdcareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/545258/logo
+acdisaster`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/476842/logo
+life-is-good`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/165737/logo
+weatherxm`n/a`None
+chroniclebooks`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/530571/logo
+tiendanube-nuvemshop`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/197759/logo
+cttxhealth`n/a`None
+nagarrodv`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/68799/logo
+broadlume`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/465920/logo
+hello-rache`n/a`None
+twobulls`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/9994/logo

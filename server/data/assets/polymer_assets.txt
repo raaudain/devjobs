@@ -177,3 +177,4 @@ berachain`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rp70b2xrm5pm8
 return`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ivv8quyffii6g3f2ymppgrb1cjvo.png
 sellscale`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mblnp0qawcd4t4pxepeuzkwifknq.png
 mode`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mbiqqekavuv6ktzqjgsmfjgg38as.png
+flexspace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/crzf6isg9ishq49ju2g1437c16sb.png

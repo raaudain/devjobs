@@ -1572,4 +1572,3 @@ disco
 samsungaustinsemiconductor
 sedai
 path
-embed
