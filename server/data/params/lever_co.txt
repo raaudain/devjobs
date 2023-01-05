@@ -567,7 +567,6 @@ slab
 leandatainc
 apollographql
 tonkean
-voxbone-2
 veeva
 dbtlabs
 AmbassadorLabs
