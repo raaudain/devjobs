@@ -461,7 +461,6 @@ fathom
 siftscience
 signifyd95
 d2iq
-sundae
 codeandtheory
 phmg
 christiancareministry
@@ -472,7 +471,6 @@ retorio
 banza
 zola
 thunes
-wellsky
 sonderaustralia
 lexicondigital
 nextiva
@@ -747,7 +745,6 @@ vaco
 torcrobotics
 cabify
 greenthumbindustries
-eositsolutions
 changeis
 innovaccer
 centriahealthcare
@@ -1152,7 +1149,6 @@ monthly
 MaterialBank
 rubrik
 blacksky
-syncari
 dealerinspire
 abodo
 samsungresearchamerica
@@ -1250,7 +1246,6 @@ dandy
 obamafoundation
 umojabiopharma
 stackexchange
-cohley
 techtalentsouth
 thoughtworksreferral
 amwell
@@ -1264,12 +1259,10 @@ dianahealth
 hitachivantaracorporation
 d2l
 firstkeyhomes
-codersclan
 clarifai
 polymathventures
 integrateai
 cambridgemobiletelematics
-aptoide
 mcpeakvisionpartners
 samsungsemiconductor
 adjust
@@ -1374,7 +1367,6 @@ brightinsight
 hypermint
 formidable
 insomniac
-decide
 alterahealth
 snackpass
 domo
