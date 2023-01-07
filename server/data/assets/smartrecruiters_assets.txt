@@ -801,3 +801,5 @@ StudentImpact`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/607
 AnchorPointTechnologyResources1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/546f4518e4b01e7ceaaeeb35/150px
 CanadaGooseInc1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6061e7f7c52cd4013e2cdcb5/aee07772-43e4-4577-b4ab-6a0f59362de2?r=s3-eu-central-1
 AxelSpringerNewsMediaNational`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60e32917f257844aae3cd6b3/150px?r=s3-eu-central-1
+Verisk`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c4a089ce4b033af355e78ef/ad38c375-7a81-4d73-afc3-5b9d1836ff82?r=s3-eu-central-1
+CaliforniaCreativeSolutionsInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/525d6d37e4b02fd0ae819e1e/150px

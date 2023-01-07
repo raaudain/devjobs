@@ -1639,3 +1639,10 @@ disco`DISCO`None
 sedai`Sedai.io`None
 samsungaustinsemiconductor`Samsung Austin Semiconductor`None
 path`Path Mental Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/322/000/resized/Logo_(Primary).jpg
+nutrisense`Nutrisense`None
+lastpass`LastPass`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/399/300/resized/LastPass_NE_Black_HEX_copy.jpg
+saltbox`Saltbox`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/006/000/resized/SaltboxLogo_Color_-320.png
+stxgroup`STX Group`None
+neo4j`Neo4j`None
+amedigital`Ame Digital`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/807/800/resized/Capa-temos-vagas.png
+triplebarbio`Triplebar`None

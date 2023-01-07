@@ -1310,3 +1310,8 @@ scholarrock`Scholar Rock`https://lever-client-logos.s3-us-west-2.amazonaws.com/5
 roadrunnerwm`RoadRunner Recycling`https://lever-client-logos.s3.us-west-2.amazonaws.com/25162734-b23e-480a-964a-19d5648bbb80-1629902026610.png
 atekinc`A-TEK, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/9cb4fa03-995d-4877-ac88-28a0c8c71f3d-1635183573229.png
 agicap`Agicap`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9f7859f-9200-455b-a1e4-9268dda3c605-1619796089385.png
+getgo`GetGo Technologies Pte Ltd`https://lever-client-logos.s3.us-west-2.amazonaws.com/6ad4dddd-2615-4c94-b9b6-7dbed8fd9b35-1670923057177.png
+quizlet-2`Quizlet`https://lever-client-logos.s3.us-west-2.amazonaws.com/e1ea51e3-336f-4fba-bb2c-e8450a3313fa-1638913713870.png
+you`You.com`https://lever-client-logos.s3.us-west-2.amazonaws.com/99639c3a-b827-4360-847c-5b7b0018fd4b-1672872610255.png
+payjoy`PayJoy`https://lever-client-logos.s3.us-west-2.amazonaws.com/f19d04b2-27e8-4205-80ac-e94365e375c2-1616623785911.png
+gojek`Gojek`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-4989-8596-ac871e4a9e82-1649956791151.png

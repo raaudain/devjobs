@@ -842,7 +842,6 @@ wusthof
 catenate
 leaseplan
 dirkkreuter
-status
 muellerundkollegen
 solarisandmoregmbh
 zunchlabstelecomsolutions
