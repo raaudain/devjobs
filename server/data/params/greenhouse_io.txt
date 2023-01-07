@@ -1564,3 +1564,14 @@ disco
 samsungaustinsemiconductor
 sedai
 path
+syncari
+wellsky
+nutrisense
+stxgroup
+aptoide
+neo4j
+lastpass
+amedigital
+embed
+triplebarbio
+saltbox

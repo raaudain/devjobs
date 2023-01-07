@@ -739,3 +739,5 @@ epcor
 feedingamerica
 inarimedical
 morrisonkids
+usana
+americancampus

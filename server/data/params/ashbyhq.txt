@@ -534,3 +534,10 @@ nuvo
 lassolabs
 ArborXR
 Passthrough
+lightning
+zaptic
+Ceremonia
+verdance
+maxio
+succinct
+Prospyr

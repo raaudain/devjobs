@@ -65,3 +65,7 @@ hexa
 mstudio
 payflows
 ripen
+community
+blog
+www
+mindday
