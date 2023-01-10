@@ -1646,3 +1646,6 @@ stxgroup`STX Group`None
 neo4j`Neo4j`None
 amedigital`Ame Digital`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/807/800/resized/Capa-temos-vagas.png
 triplebarbio`Triplebar`None
+adgear`Samsung Ads`None
+integrate`Integrate`None
+stackcommerce`StackCommerce`None
