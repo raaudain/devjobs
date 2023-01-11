@@ -1315,3 +1315,6 @@ quizlet-2`Quizlet`https://lever-client-logos.s3.us-west-2.amazonaws.com/e1ea51e3
 you`You.com`https://lever-client-logos.s3.us-west-2.amazonaws.com/99639c3a-b827-4360-847c-5b7b0018fd4b-1672872610255.png
 payjoy`PayJoy`https://lever-client-logos.s3.us-west-2.amazonaws.com/f19d04b2-27e8-4205-80ac-e94365e375c2-1616623785911.png
 gojek`Gojek`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-4989-8596-ac871e4a9e82-1649956791151.png
+quotient`Quotient Technology`https://lever-client-logos.s3.us-west-2.amazonaws.com/6f209741-322c-4337-9224-68ff66a07b52-1652383341824.png
+Anthropic`Anthropic`https://lever-client-logos.s3.us-west-2.amazonaws.com/d63643d1-7a20-4e1b-b46d-5308d32d64c2-1622139505411.png
+DirectiveConsulting`Directive Consulting`https://lever-client-logos.s3.us-west-2.amazonaws.com/f6998c3d-31e7-4b5f-8bd0-07b6f9ea2dde-1622603334007.png

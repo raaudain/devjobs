@@ -1357,3 +1357,6 @@ petfolk`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/487519/logo
 jungledevs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/431636/logo
 fairmoney`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/519744/logo
 bswarena`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/61054/BSWA_Identity2016_PMS286.jpg
+eandd`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/584093/logo
+fleek`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553164/logo
+cheil`n/a`None

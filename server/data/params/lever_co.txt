@@ -581,7 +581,6 @@ playvs
 raya
 ciedigital
 peerspace
-scottscheapflights
 silverbackstrategies
 nextbite
 findhelp
@@ -627,7 +626,6 @@ kpaonline
 metopera
 ppcentralcoast
 windfalldata
-Curbio
 flowinc
 Vivun
 capchase

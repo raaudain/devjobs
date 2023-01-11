@@ -66,7 +66,3 @@ mstudio
 payflows
 ripen
 mindday
-community
-api-docs
-blog
-www

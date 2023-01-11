@@ -803,3 +803,7 @@ CanadaGooseInc1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6
 AxelSpringerNewsMediaNational`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60e32917f257844aae3cd6b3/150px?r=s3-eu-central-1
 Verisk`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c4a089ce4b033af355e78ef/ad38c375-7a81-4d73-afc3-5b9d1836ff82?r=s3-eu-central-1
 CaliforniaCreativeSolutionsInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/525d6d37e4b02fd0ae819e1e/150px
+Kynite`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f874fa8ae04584ca1fef2ce/150px?r=s3-eu-central-1
+EDCConsulting1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58dc0c8ae4b00050a286a609/150px?r=s3
+TimocomGmbH1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6156c5a8fee5464e1e363197/huge?r=s3-eu-central-1
+Vitol`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f170010632f2d243dd5be58/150px?r=s3-eu-central-1

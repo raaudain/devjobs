@@ -1649,3 +1649,15 @@ triplebarbio`Triplebar`None
 adgear`Samsung Ads`None
 integrate`Integrate`None
 stackcommerce`StackCommerce`None
+hoplark`Hoplark`None
+runzero`runZero`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/538/900/resized/runZero_logo_horizontal_primary-teal_100.png
+goalzimbabwe`GOAL Zimbabwe`None
+engieenergyaccess`ENGIE Energy Access`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/138/800/resized/Engie_Logo.png
+casetify`CASETiFY`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/316/300/resized/Casetify_logo.png
+shiftsmart`Shiftsmart`None
+coterie`Coterie`None
+morganmorganjobsapplynow`Morgan & Morgan, P.A.`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/367/800/resized/logo-black-and-yellow.png
+zenvia`ZENVIA`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/023/000/resized/logo-white.png
+ideoorg`IDEO.org`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/379/resized/IDEOorg_logo_arcs-01_(1).png
+remergegmbh`Remerge`None
+innovecs`Innovecs`None
