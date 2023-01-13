@@ -632,7 +632,6 @@ oneconcern
 automationhero
 educative
 cohere
-enlitic
 bloom
 atomlearning
 getsetup
@@ -643,7 +642,6 @@ cyngn
 honeycomb
 returntocorp
 hedvig
-evolutioniq
 bimone
 marigoldhealth
 blackpanda

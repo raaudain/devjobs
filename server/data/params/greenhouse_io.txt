@@ -424,7 +424,6 @@ inmobi
 omidyarnetwork
 thatlot
 markforged
-yoursuper
 golin
 airtable
 bandainamco
@@ -1192,7 +1191,6 @@ messari
 flexcar
 openzeppelin
 cmrsurgical
-precisionhawk
 elementum
 honeybook
 appliedvaluetech
