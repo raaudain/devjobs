@@ -1351,3 +1351,8 @@ quotient
 DirectiveConsulting
 Anthropic
 HealthTensor
+aeva
+markit
+culdesac
+apolloagriculture
+good-party
