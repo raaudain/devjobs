@@ -807,3 +807,9 @@ Kynite`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f874fa8ae0458
 EDCConsulting1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58dc0c8ae4b00050a286a609/150px?r=s3
 TimocomGmbH1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6156c5a8fee5464e1e363197/huge?r=s3-eu-central-1
 Vitol`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f170010632f2d243dd5be58/150px?r=s3-eu-central-1
+Eurowag`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61b34b6a44454e5885db3022/150px?r=s3-eu-central-1
+Consultadd4`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/54cf864de4b0b6dac27f51e4/150px
+sporttechie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5360404be4b0e2884882d8b3/150px?r=s3
+PatronusGroup1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/628c9486cd759650d43c7bb1/86042169-12de-4a93-ac0f-40312a60b03d?r=s3-eu-central-1
+Ignitisgroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5bebfd36e4b0feb6375d30c5/2cf1c411-c03e-4b6e-83d0-625b0c3b1716?r=s3-eu-central-1
+SyngentaGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6290dde4a8afba3bbed11a40/d7290807-54c9-4d73-aae2-e953046fdcd6?r=s3-eu-central-1

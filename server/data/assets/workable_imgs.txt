@@ -1360,3 +1360,13 @@ bswarena`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/61054/BSWA
 eandd`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/584093/logo
 fleek`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553164/logo
 cheil`n/a`None
+tactic`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/509811/logo
+qminder`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/459257/logo
+get-reliance-health`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/581188/logo
+welcome`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/25663/logo
+mdlz`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/303197/logo
+allucent`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/524815/logo
+novata`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/549858/logo
+v7labs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/360259/logo
+counciloncj`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/455384/logo
+joinmakropro`n/a`None

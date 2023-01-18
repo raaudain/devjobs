@@ -1318,3 +1318,8 @@ gojek`Gojek`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-
 quotient`Quotient Technology`https://lever-client-logos.s3.us-west-2.amazonaws.com/6f209741-322c-4337-9224-68ff66a07b52-1652383341824.png
 Anthropic`Anthropic`https://lever-client-logos.s3.us-west-2.amazonaws.com/d63643d1-7a20-4e1b-b46d-5308d32d64c2-1622139505411.png
 DirectiveConsulting`Directive Consulting`https://lever-client-logos.s3.us-west-2.amazonaws.com/f6998c3d-31e7-4b5f-8bd0-07b6f9ea2dde-1622603334007.png
+apolloagriculture`Apollo Agriculture`https://lever-client-logos.s3.amazonaws.com/b1111c3d-2a0d-46ef-9b8e-9fb4a0a73d3b-1568191981658.png
+culdesac`Culdesac`https://lever-client-logos.s3.amazonaws.com/962ff2db-08e6-44e5-aa0b-2a711c356dbe-1573608435319.png
+aeva`Aeva, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/7aa7365f-3e82-479a-9020-089631d276bb-1629244452219.png
+good-party`Good Party`https://lever-client-logos.s3.us-west-2.amazonaws.com/cfe2b9b9-cefb-4043-9ae9-11daf291020e-1635957441603.png
+markit`Markit`https://lever-client-logos.s3.amazonaws.com/2f84a4d6-3ca5-4552-906c-f3b4256a4c4a-1533282678025.png

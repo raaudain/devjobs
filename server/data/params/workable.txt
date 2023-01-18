@@ -1315,7 +1315,6 @@ twobulls
 life-is-good
 nagarrodv
 okadoc
-sconcierge
 blabs
 lilli
 dispel
@@ -1345,3 +1344,11 @@ tactic
 novata
 allucent
 get-reliance-health
+usepixie
+vable
+nuaware
+tamatem
+sconcierge
+starling-bank
+mixcloud-limited
+civica-uk-ltd-1

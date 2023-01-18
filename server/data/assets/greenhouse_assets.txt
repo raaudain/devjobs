@@ -1661,3 +1661,11 @@ zenvia`ZENVIA`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_bo
 ideoorg`IDEO.org`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/379/resized/IDEOorg_logo_arcs-01_(1).png
 remergegmbh`Remerge`None
 innovecs`Innovecs`None
+marketaxesscorporation`MarketAxess Corporation`None
+earli`Earli, Inc.`None
+beyond`Join Our Team`None
+zen`Zen`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/191/700/resized/1627916091464.jpeg
+arenanet`ArenaNet`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/334/resized/arenanet_blackbgrd_1200x627.png
+goldenhippo`Golden Hippo`None
+gympass`Gympass`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/188/200/resized/Gympass_cover.png
+storybuilt`StoryBuilt`None

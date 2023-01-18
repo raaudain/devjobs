@@ -223,3 +223,6 @@ mode
 spellbound
 flexspace
 moonlight
+w4w
+signglasses
+skillpop

@@ -156,7 +156,6 @@ yardzen
 yelp
 yieldstreet
 wealthfront
-readme
 neednova
 kong
 torch
@@ -209,7 +208,6 @@ roosterteeth
 kernel-2
 centerfield
 thistle.co
-modsy
 arcteryx.com
 uniphore
 close.io
@@ -1356,3 +1354,17 @@ markit
 culdesac
 apolloagriculture
 good-party
+oowlish
+tramgroup
+captiv8
+buckmason
+disabilityrightsca
+lochgroup
+parallelsystems
+btmg
+RyzLabs
+biggergames
+cority
+humi-2
+UnlearnAI
+turvo
