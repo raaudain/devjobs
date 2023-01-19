@@ -258,9 +258,5 @@ tscan
 www.sumariasystems
 input1
 www.creekview
-stonewall
-eataly
-sunsrce
-ciriorancho
 towerloan
 hallorancg

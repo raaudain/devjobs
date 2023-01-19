@@ -67,7 +67,3 @@ payflows
 ripen
 mindday
 tint
-community
-api-docs
-blog
-www

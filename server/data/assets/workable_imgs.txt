@@ -1370,3 +1370,11 @@ novata`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/549858/logo
 v7labs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/360259/logo
 counciloncj`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/455384/logo
 joinmakropro`n/a`None
+usepixie`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/518804/logo
+mixcloud-limited`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/77009/logo
+civica-uk-ltd-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/570317/logo
+starling-bank`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/71732/logo
+nuaware`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/571984/logo
+sh24`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/507340/logo
+vable`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/136782/logo
+tamatem`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/559963/logo

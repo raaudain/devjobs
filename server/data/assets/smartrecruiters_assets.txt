@@ -813,3 +813,4 @@ sporttechie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5360404be4b0e
 PatronusGroup1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/628c9486cd759650d43c7bb1/86042169-12de-4a93-ac0f-40312a60b03d?r=s3-eu-central-1
 Ignitisgroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5bebfd36e4b0feb6375d30c5/2cf1c411-c03e-4b6e-83d0-625b0c3b1716?r=s3-eu-central-1
 SyngentaGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6290dde4a8afba3bbed11a40/d7290807-54c9-4d73-aae2-e953046fdcd6?r=s3-eu-central-1
+Dexterra`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bab8ab4e4b092eefdba9a09/huge?r=s3-eu-central-1

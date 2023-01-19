@@ -1131,7 +1131,6 @@ pathrise
 participantmedia
 dodmg
 backmarket
-aceandtate
 noahmed
 carewest
 pickethomes

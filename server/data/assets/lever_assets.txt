@@ -1323,3 +1323,17 @@ culdesac`Culdesac`https://lever-client-logos.s3.amazonaws.com/962ff2db-08e6-44e5
 aeva`Aeva, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/7aa7365f-3e82-479a-9020-089631d276bb-1629244452219.png
 good-party`Good Party`https://lever-client-logos.s3.us-west-2.amazonaws.com/cfe2b9b9-cefb-4043-9ae9-11daf291020e-1635957441603.png
 markit`Markit`https://lever-client-logos.s3.amazonaws.com/2f84a4d6-3ca5-4552-906c-f3b4256a4c4a-1533282678025.png
+btmg`Altais`https://lever-client-logos.s3.us-west-2.amazonaws.com/4e3bf570-77cc-4a65-acd8-0316b59beb66-1671729939097.png
+disabilityrightsca`Disability Rights California`https://lever-client-logos.s3.amazonaws.com/e982f5dd-1786-4ef1-863c-905722716297-1541113868888.png
+humi-2`Humi`https://lever-client-logos.s3.us-west-2.amazonaws.com/7b4b5123-5811-4f5b-bb4c-d99092115bb5-1651786722702.png
+lochgroup`Lochmueller Group`https://lever-client-logos.s3-us-west-2.amazonaws.com/1127e3b4-22d4-4916-be4d-60aa97338798-1584728625392.png
+tramgroup`Tokai Rika Group`https://lever-client-logos.s3.amazonaws.com/b6e65afe-21f9-4771-82de-aa0990fb69f5-1554382589328.png
+captiv8`Captiv8`https://lever-client-logos.s3.us-west-2.amazonaws.com/ddd1ab18-45cf-43b5-b220-471ce04cddd2-1660073467795.png
+parallelsystems`Parallel Systems`https://lever-client-logos.s3.us-west-2.amazonaws.com/87c52377-0858-4007-b2f6-44abdf417038-1616629214269.png
+RyzLabs`RYZ Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/4ff8673c-a6da-46a8-a0e1-415b8bac5bbb-1629314641419.png
+turvo`Turvo`https://lever-client-logos.s3.amazonaws.com/96dc2dd7-0449-4907-af07-7bde71b46b13-1539738992465.png
+cority`Cority`https://lever-client-logos.s3.us-west-2.amazonaws.com/1610a315-ba2a-4bd4-b48d-a5d7c5991e2f-1632842988816.png
+UnlearnAI`Unlearn.AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/fa4a9bca-aa62-476e-b7c3-56a615db8a27-1615911753094.png
+buckmason`Buck Mason`https://lever-client-logos.s3.amazonaws.com/buck-mason-logo.png
+biggergames`Bigger Games`https://lever-client-logos.s3-us-west-2.amazonaws.com/3ddb8b19-fc7d-4f1b-a47d-1253c41a6e83-1589720764752.png
+oowlish`Oowlish Technology`https://lever-client-logos.s3.us-west-2.amazonaws.com/7f79646a-e11b-4235-a63b-8b22e5034eac-1626955554904.png

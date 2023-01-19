@@ -178,3 +178,6 @@ return`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ivv8quyffii6g3f2
 sellscale`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mblnp0qawcd4t4pxepeuzkwifknq.png
 mode`n/a`https://inflow-public.s3.amazonaws.com/company-logos/mbiqqekavuv6ktzqjgsmfjgg38as.png
 flexspace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/crzf6isg9ishq49ju2g1437c16sb.png
+signglasses`n/a`https://inflow-public.s3.amazonaws.com/company-logos/nd8inhe5nno89nfh74x44km6n32v.png
+w4w`n/a`https://inflow-public.s3.amazonaws.com/company-logos/llxgvdwnz5mseo1kxxwicub9foix.jpeg
+skillpop`n/a`https://inflow-public.s3.amazonaws.com/company-logos/Wv4a6jJEH3LmUHw4gSYUiB7x.png

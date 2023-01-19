@@ -885,7 +885,6 @@ nupg
 houseoflowcode
 effecty
 railnova
-status
 roslinct
 werkenbijpijnackernootdorp
 primesolutions

@@ -459,7 +459,6 @@ stocktwits
 fathom
 siftscience
 signifyd95
-d2iq
 codeandtheory
 phmg
 christiancareministry
@@ -875,7 +874,6 @@ newsrevenuehub
 rainberry
 voxmedia
 pipetechnologies
-smule
 loftvagas
 cambridgecourt
 riotgames
@@ -1553,7 +1551,6 @@ tremorvideodsp
 viessmann
 upgrade
 duplocloud
-huntclub
 nesn
 taskrabbit
 nsrg
@@ -1591,9 +1588,6 @@ arenanet
 stepstone
 sypartners
 credible
-aptoide
-syncari
-cohley
 robinhealthcare
 Mill
 arcadiacareers

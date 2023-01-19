@@ -1669,3 +1669,10 @@ arenanet`ArenaNet`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_b
 goldenhippo`Golden Hippo`None
 gympass`Gympass`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/188/200/resized/Gympass_cover.png
 storybuilt`StoryBuilt`None
+stepstone`StepStone Group`None
+credible`Credible`None
+robinhealthcare`Robin Healthcare`None
+arcadiacareers`Arcadia`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/851/900/resized/Arcadia_Logo.png
+sypartners`SYPartners`None
+Mill`Mill`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/499/500/resized/Mill_Social_Icon_200x200.jpg
+debutbiotech`Debut`None
