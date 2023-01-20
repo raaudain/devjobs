@@ -1,3 +1,5 @@
+/ribbon-health
+/allspice
 /mudflap
 /cocoon
 /caremessage
@@ -8,13 +10,9 @@
 /upduo
 /reduct
 /chani
-/the-mom-project
+/retired-the-mom-project
 /sibi
-/range
 /retired-culture-biosciences
 /indent
 /orbit
-/the-financial-gym
-/new-relic
-/dark
 /coast
