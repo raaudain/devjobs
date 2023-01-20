@@ -49,7 +49,7 @@ def main():
     # indeed.main()
     # tiktok.main()
     recruitee.main()
-    target.main()
+    # target.main()
     nbc.main()
     # nocsok.main()
     workable.get_url(work[1::5])
