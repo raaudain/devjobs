@@ -347,7 +347,6 @@ tivix
 skello
 augmedix
 cic
-findora
 resonanceglobal
 kivaconfections
 bayzat

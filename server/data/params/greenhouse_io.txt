@@ -805,7 +805,6 @@ kincartaeurope
 scandit
 collectivehealth
 mixtiles
-publica
 muv
 bluerivertech
 schubergphilis
