@@ -181,3 +181,4 @@ flexspace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/crzf6isg9ishq
 signglasses`n/a`https://inflow-public.s3.amazonaws.com/company-logos/nd8inhe5nno89nfh74x44km6n32v.png
 w4w`n/a`https://inflow-public.s3.amazonaws.com/company-logos/llxgvdwnz5mseo1kxxwicub9foix.jpeg
 skillpop`n/a`https://inflow-public.s3.amazonaws.com/company-logos/Wv4a6jJEH3LmUHw4gSYUiB7x.png
+spellbound`n/a`https://inflow-public.s3.amazonaws.com/company-logos/wtuhp4d90qc1hnq72ckt86pn3mvg.png

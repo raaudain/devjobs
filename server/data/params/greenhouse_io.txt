@@ -1378,7 +1378,6 @@ avepoint
 graymatterrobotics
 alabamavisioncenter
 aztecgroup
-scaledrobotics
 Atrium
 sollishealth
 razorpaysoftwareprivatelimited
@@ -1485,7 +1484,6 @@ zabertechnologies
 ouihelp
 cloverhealth
 commissiondelasantementaleducanadafrancais
-meruhealth
 workshopdigital
 pagoda
 swiftnavigation

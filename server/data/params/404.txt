@@ -550,3 +550,5 @@ publica
 findora
 ridestoreab
 alliedcloud
+scaledrobotics
+meruhealth
