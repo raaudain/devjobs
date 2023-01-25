@@ -1199,7 +1199,6 @@ linkfire
 medmen
 precisionmedicinegroup
 mrbeastyoutube
-rent
 gridnews
 forbes
 paddle
@@ -1475,7 +1474,6 @@ pelacase
 dataai
 lightforgegames
 edxbootcamps
-2023fellows
 housinganywhere
 redsixaerospace
 volvocarmobility
@@ -1593,15 +1591,11 @@ meruhealth
 iwf
 shipin
 trexsolutions
-publica
 wavexr
 medlyhealth
-aptoide
 rarebasepbc
-syncari
 launchpadtechnologiesinc
 ifoodcarreiras
 wargamingen
 wargamingru
 oneacrefund
-sundae

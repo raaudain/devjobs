@@ -1676,3 +1676,14 @@ arcadiacareers`Arcadia`https://s2-recruiting.cdn.greenhouse.io/external_greenhou
 sypartners`SYPartners`None
 Mill`Mill`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/499/500/resized/Mill_Social_Icon_200x200.jpg
 debutbiotech`Debut`None
+iwf`IWF`None
+trexsolutions`T-Rex Solutions`None
+wavexr`‏‏‎ ‎`None
+ifoodcarreiras`iFood`None
+wargamingru`Wargaming Global`None
+shipin`ShipIn`None
+medlyhealth`Medly Pharmacy`None
+rarebasepbc`Rarebase`None
+launchpadtechnologiesinc`Launchpad Technologies`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/023/300/resized/Frame_1312.png
+wargamingen`Wargaming`None
+oneacrefund`One Acre Fund`None

@@ -1337,3 +1337,17 @@ UnlearnAI`Unlearn.AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/fa4a9
 buckmason`Buck Mason`https://lever-client-logos.s3.amazonaws.com/buck-mason-logo.png
 biggergames`Bigger Games`https://lever-client-logos.s3-us-west-2.amazonaws.com/3ddb8b19-fc7d-4f1b-a47d-1253c41a6e83-1589720764752.png
 oowlish`Oowlish Technology`https://lever-client-logos.s3.us-west-2.amazonaws.com/7f79646a-e11b-4235-a63b-8b22e5034eac-1626955554904.png
+nautical-commerce`Nautical Commerce`https://lever-client-logos.s3.us-west-2.amazonaws.com/dee8af60-c58f-40ff-853c-0926504de6fb-1664810378621.png
+amarbank`Amar Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/78ba667f-2bc4-4d36-9fa9-50a6607148f5-1657686536533.png
+crypto`Crypto.com`https://lever-client-logos.s3.us-west-2.amazonaws.com/47ab464a-8ed5-47a0-8226-45d6149956fb-1647492517079.png
+gouspack`US Pack Services LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b745547-9a5a-41cd-81cb-c2a2cad8a848-1650384298011.png
+qualified`Qualified`https://lever-client-logos.s3.us-west-2.amazonaws.com/e3e95847-7ff7-4228-9061-35651c972771-1674611362487.png
+Fairmat`Fairmat`https://lever-client-logos.s3.us-west-2.amazonaws.com/a49a5f83-e477-4066-b6bb-15c863aa09c7-1626710756780.png
+beyondmeat`Beyond Meat`https://lever-client-logos.s3.us-west-2.amazonaws.com/c6e5451d-7dbf-4153-86ca-252cea3df1c3-1599770603336.png
+sigfig-2`SigFig`https://lever-client-logos.s3.us-west-2.amazonaws.com/a2383efd-28b8-425c-9c05-1e5eefa4d8ac-1647535439393.png
+definitivelogic`Definitive Logic`https://lever-client-logos.s3.us-west-2.amazonaws.com/a7bc4426-23f4-48b7-8753-13df2858e0c3-1646846542981.png
+20four7VA`20four7VA`https://lever-client-logos.s3.us-west-2.amazonaws.com/0fd5d141-f433-4dfc-890f-e00ea419d7a0-1599469885320.png
+simplybusiness`Simply Business`https://lever-client-logos.s3.amazonaws.com/3ca8d0ce-f668-4130-b9f7-b4f665b52a72-1529592068843.png
+percipient`percipient.ai`https://lever-client-logos.s3-us-west-2.amazonaws.com/9ec37873-60aa-417b-be05-c6d938bbd63d-1585014268185.png
+alluxio`Alluxio`https://lever-client-logos.s3.amazonaws.com/1f2442ab-8031-4df0-8cd9-f38a1de76d8f-1458828357731.png
+orum`Orum`https://lever-client-logos.s3.us-west-2.amazonaws.com/385b8d19-1fe5-42f1-8901-04526f87cbd2-1656804183660.png
