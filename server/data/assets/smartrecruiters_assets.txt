@@ -816,3 +816,4 @@ SyngentaGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/629
 Dexterra`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bab8ab4e4b092eefdba9a09/huge?r=s3-eu-central-1
 CEDA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e13b41c050a5d3413d1084b/150px?r=s3-eu-central-1
 CAVISTA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5557a693e4b0970a5ffad521/7df007e3-e9b5-4bfb-9c11-041b2433630a?r=s3
+HanaGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6278e7636090085d43f4f25a/huge?r=s3-eu-central-1
