@@ -504,7 +504,6 @@ pysae
 nostosgenomics
 atasssports
 tritilitylimited
-saphe
 thefabricant
 feedback
 macecareers

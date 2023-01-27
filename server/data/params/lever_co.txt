@@ -721,7 +721,6 @@ currencycloud
 emilabs
 pinata
 oomnitza
-martinagency
 migo
 WeMaintain
 Laced
@@ -824,7 +823,6 @@ accesso
 medialab
 anchorage
 idealscorp
-sevenbridges
 sensortower
 fluence
 xero
