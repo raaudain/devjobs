@@ -758,3 +758,6 @@ elementscience
 flexwareinnovation
 vipdeskconnect
 suffolkuniversity
+controlup
+worldfirst
+sto-building-group
