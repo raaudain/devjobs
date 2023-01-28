@@ -1388,3 +1388,12 @@ universalquantum`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/53
 museumoficecream`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/555064/logo
 nimaworks`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/167445/logo
 circulee`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/529107/logo
+engagetechuk`n/a`None
+papertiger`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/17548/logo
+thoughtbot`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/147210/logo
+realpython`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/470089/logo
+gohenry`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/351011/logo
+moviepass`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/573268/logo
+dunlop`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/193319/dl_logo-black.png
+dext`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/255786/logo
+orderdesk`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/127865/logo

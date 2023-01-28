@@ -817,3 +817,13 @@ Dexterra`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bab8ab4e4b0
 CEDA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e13b41c050a5d3413d1084b/150px?r=s3-eu-central-1
 CAVISTA`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5557a693e4b0970a5ffad521/7df007e3-e9b5-4bfb-9c11-041b2433630a?r=s3
 HanaGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6278e7636090085d43f4f25a/huge?r=s3-eu-central-1
+North40Outfitters`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5af088e0e4b095f7723bfb6c/150px?r=s3-eu-central-1
+DONTNOD`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61c05be46144a26ed0e0600a/452c38ad-197f-4bae-9fd3-35ed9a8f6d30?r=s3-eu-central-1
+StemXpert1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/520b921fe4b0441c820d6015/huge?r=s3
+VisionElevatorsPtyLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d6bbe4b0b42dcb45cbd5/150px
+SISLInfotechPvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/605b0b4cd651ac1c407a2ff5/150px?r=s3-eu-central-1
+Altisource`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5e583093e0f8620d8d72bb90/f5494e90-be0e-4f41-bb03-6cb9949ea5d5?r=s3-eu-central-1
+GEHealthcare2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/550868a3e4b02581c19a8837/150px?r=s3
+ASML1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5fc7ffaf615fde70f9fe4d4c/4ce817da-41f2-4b23-b824-deab26c7a666?r=s3-eu-central-1
+toplegal`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a7dd1c5e4b0aff9e7ce9279/150px?r=s3-eu-central-1
+RestoranDeNathally`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e73578321110f48ac306e7d/150px?r=s3-eu-central-1

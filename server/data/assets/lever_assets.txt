@@ -1351,3 +1351,6 @@ simplybusiness`Simply Business`https://lever-client-logos.s3.amazonaws.com/3ca8d
 percipient`percipient.ai`https://lever-client-logos.s3-us-west-2.amazonaws.com/9ec37873-60aa-417b-be05-c6d938bbd63d-1585014268185.png
 alluxio`Alluxio`https://lever-client-logos.s3.amazonaws.com/1f2442ab-8031-4df0-8cd9-f38a1de76d8f-1458828357731.png
 orum`Orum`https://lever-client-logos.s3.us-west-2.amazonaws.com/385b8d19-1fe5-42f1-8901-04526f87cbd2-1656804183660.png
+playonsports`PlayOn! Sports`https://lever-client-logos.s3.us-west-2.amazonaws.com/41a41462-61a1-46dd-9190-73fd66fa11ee-1656096708496.png
+paymongo`PayMongo`https://lever-client-logos.s3-us-west-2.amazonaws.com/5ccaf3a3-54c2-4ceb-bb84-39ad502ed9a7-1596680449049.png
+MaintainX`MaintainX`https://lever-client-logos.s3.us-west-2.amazonaws.com/ab99f16d-6338-4bfd-8560-2ab1c324c9ed-1648492414283.png

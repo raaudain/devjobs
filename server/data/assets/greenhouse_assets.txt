@@ -1687,3 +1687,12 @@ rarebasepbc`Rarebase`None
 launchpadtechnologiesinc`Launchpad Technologies`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/023/300/resized/Frame_1312.png
 wargamingen`Wargaming`None
 oneacrefund`One Acre Fund`None
+unibuddy`Unibuddy`None
+ebot7`e-bot7`None
+breezeairways`Breeze Airways™`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/503/900/resized/Breeze_Logo_1.PNG
+thatsnomoonentertainment`That's No Moon Entertainment`None
+sweetgreen`sweetgreen`None
+moloco`MOLOCO`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/292/600/resized/Logo.png
+fyllo`Fyllo`None
+tripwireinteractive`Tripwire Interactive`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/391/200/resized/Tripwire-Logo_Color.jpg
+sothebys`Sotheby's`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/034/700/resized/Sotheby's_Logo.png
