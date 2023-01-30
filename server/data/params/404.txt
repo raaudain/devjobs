@@ -582,3 +582,4 @@ sunsrce
 heliosx
 aptoide
 syncari
+intelie
