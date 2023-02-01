@@ -688,7 +688,6 @@ wpphp
 21ilab
 pressreader
 cybsafe
-fonda
 argenthq
 unacademy
 mindex

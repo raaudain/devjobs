@@ -28,7 +28,6 @@ brighthire
 quantummetric
 goodeggs
 teamsnap
-VeteransAdvantage
 dataiku
 newfrontinsurance
 rollbar

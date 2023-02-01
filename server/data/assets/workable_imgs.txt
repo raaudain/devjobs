@@ -1397,3 +1397,10 @@ moviepass`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/573268/lo
 dunlop`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/193319/dl_logo-black.png
 dext`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/255786/logo
 orderdesk`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/127865/logo
+momtovirtualassistant`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/571238/logo
+mmit`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/556360/logo
+biomediaholdings`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/483466/logo
+intracom-telecom-2`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/186028/INTRACOM-TELECOM_logo.jpg
+optimegroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/526190/logo
+stellar-entertainment`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/513614/logo
+wushu-studios`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/572909/logo

@@ -1354,3 +1354,13 @@ orum`Orum`https://lever-client-logos.s3.us-west-2.amazonaws.com/385b8d19-1fe5-42
 playonsports`PlayOn! Sports`https://lever-client-logos.s3.us-west-2.amazonaws.com/41a41462-61a1-46dd-9190-73fd66fa11ee-1656096708496.png
 paymongo`PayMongo`https://lever-client-logos.s3-us-west-2.amazonaws.com/5ccaf3a3-54c2-4ceb-bb84-39ad502ed9a7-1596680449049.png
 MaintainX`MaintainX`https://lever-client-logos.s3.us-west-2.amazonaws.com/ab99f16d-6338-4bfd-8560-2ab1c324c9ed-1648492414283.png
+komaza`Komaza Forestry Ltd`https://lever-client-logos.s3.us-west-2.amazonaws.com/54940ca7-f4e9-4e2c-a58c-9d64ab5ba54b-1635808921027.png
+pento`Pento`https://lever-client-logos.s3.us-west-2.amazonaws.com/2eaafd32-769d-468e-8e2a-d6ca59ea0edd-1658739771950.png
+BusaraCenter`Busara Center for Behavioral Economics`https://lever-client-logos.s3.us-west-2.amazonaws.com/d02b254e-ae6d-49c5-ad75-6bd38102988b-1614934675453.png
+Amberflo`Amberflo.io, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/ae34d32e-20e3-42df-a01a-938d01d5f3bf-1669061441841.png
+coatesgroup`Coates Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/62c95f9e-9790-4a19-b3d2-5279800c162d-1644881327929.png
+todaytixgroup`TodayTix Group `https://lever-client-logos.s3.us-west-2.amazonaws.com/c845e393-629a-4c7d-9b89-2fae1979e9ea-1638397766404.png
+blur`Blur`https://lever-client-logos.s3.us-west-2.amazonaws.com/73b7d29b-2893-4687-83fc-ddef68666622-1610388861652.png
+skyboxlabs`SkyBox Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/fd3d8449-f372-4a29-8883-cd3c4bffc8fc-1653610886362.png
+egensolutions`Egen`https://lever-client-logos.s3.us-west-2.amazonaws.com/b459274d-8000-4b6c-b89d-770f8cd9eee8-1629634149033.png
+Bosta`Bosta`https://lever-client-logos.s3.us-west-2.amazonaws.com/4a536633-277c-4c83-afa7-586bfcce7dd0-1636574104926.png

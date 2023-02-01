@@ -827,3 +827,10 @@ GEHealthcare2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/550868a3e4b
 ASML1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5fc7ffaf615fde70f9fe4d4c/4ce817da-41f2-4b23-b824-deab26c7a666?r=s3-eu-central-1
 toplegal`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a7dd1c5e4b0aff9e7ce9279/150px?r=s3-eu-central-1
 RestoranDeNathally`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e73578321110f48ac306e7d/150px?r=s3-eu-central-1
+DruckerAndFalkLLC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/545d569de4b02a86342d38f5/62cdbb68-94a6-4988-9c7e-45800a096895
+FartherFinance`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5cf6f0d08d67b11df77af848/fa0458d4-0910-4ccc-8472-19b958b81982?r=s3-eu-central-1
+Etsy2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5dfa5626525de75ea8345966/150px?r=s3-eu-central-1
+AgilentTechnologies2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/611a7f41346b3743ca2ccbe2/huge?r=s3-eu-central-1
+Volo2`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f909827b79db6510c5cfe50/0a94ce4d-e4f6-41a5-9c19-6e217ccdf324?r=s3-eu-central-1
+TravelRadar`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62929ff8b5b1622a6407c1b5/bddc07c0-20f2-4112-9b96-c71482e282cb?r=s3-eu-central-1
+KoninklijkeVerkadeNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e466be2234a5869123e81a1/150px?r=s3-eu-central-1

@@ -1696,3 +1696,19 @@ moloco`MOLOCO`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_bo
 fyllo`Fyllo`None
 tripwireinteractive`Tripwire Interactive`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/391/200/resized/Tripwire-Logo_Color.jpg
 sothebys`Sotheby's`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/034/700/resized/Sotheby's_Logo.png
+preciselyinternationaljobs`Precisely International Jobs`None
+rplanetearth`rPlanet Earth`None
+sproutsocial`Sprout Social`None
+tropic`Tropic`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/776/400/resized/tropic-logo-padded.png
+trumid`Trumid`None
+hopskipdrive`HopSkipDrive`None
+purposefreelance`Purpose Freelance`None
+weee`Weee! Inc`None
+baystatephysicaltherapy`Bay State Physical Therapy - Corporate/Non-Clinical Opportunities`None
+complyant`ComplYant`None
+byheart`ByHeart`None
+accruenthq`Accruent`None
+barstoolsports`Barstool Sports`None
+productiv`Productiv Inc`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/106/600/resized/Screen_Shot_2021-08-20_at_10.07.29_AM.png
+arkoselabs`Arkose Labs`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/552/400/resized/Logo_Post_White_1.jpg
+vsapartners`VSA Partners`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/688/600/resized/VSA_Logo.png
