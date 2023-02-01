@@ -932,3 +932,10 @@ ASML1
 VisionElevatorsPtyLtd
 GEHealthcare2
 DONTNOD
+Volo2
+Etsy2
+TravelRadar
+DruckerAndFalkLLC
+AgilentTechnologies2
+KoninklijkeVerkadeNV
+FartherFinance
