@@ -16,7 +16,6 @@ portchain
 noblepro
 mailgun
 borrowell
-faithlife
 oviahealth
 zus-health
 abide
@@ -979,7 +978,6 @@ uplearn
 neoleap
 bchannels
 laba
-agreena
 telesoftas
 dialexa
 sfskc

@@ -17,7 +17,6 @@ metropolis
 level
 monzo
 airtamejobs
-grailed
 commercetools
 adhocteam
 updater
@@ -1130,7 +1129,6 @@ hypixelstudios
 articulate
 parsleyhealth
 jobber
-bnbchain
 omadahealth
 generalassembly
 paper

@@ -28,7 +28,6 @@ brighthire
 quantummetric
 goodeggs
 teamsnap
-dataiku
 newfrontinsurance
 rollbar
 rainforest
