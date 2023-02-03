@@ -614,7 +614,6 @@ memrise
 consortiagroup
 neuraxpharm
 closeconcerns
-bioaxis
 droplette
 currenthealth
 jitera

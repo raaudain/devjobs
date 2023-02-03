@@ -1332,9 +1332,7 @@ dashlane
 fieldwire
 adgear
 lifelabslearning
-elevatek12
 form3
-elevatek12teachwithus
 udemy
 bloomscape
 astspacemobile
@@ -1395,7 +1393,6 @@ commentsold
 glossgenius
 pfm
 smartbear
-regrow
 perrystreetsoftware
 monad
 buildarocketboy
