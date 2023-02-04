@@ -939,3 +939,5 @@ DruckerAndFalkLLC
 AgilentTechnologies2
 KoninklijkeVerkadeNV
 FartherFinance
+IntegrityNextGmbH
+PathwayToLiving

@@ -227,3 +227,5 @@ w4w
 signglasses
 skillpop
 farmless
+mprs
+techshaw
