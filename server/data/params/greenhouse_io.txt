@@ -665,7 +665,6 @@ stream
 righthandrobotics
 openweb
 headway
-neqca
 phdata
 acadiapharmaceuticals
 enfusion
@@ -1554,7 +1553,6 @@ lastpass
 amedigital
 triplebarbio
 saltbox
-shiftsmart
 hoplark
 coterie
 morganmorganjobsapplynow
@@ -1616,18 +1614,14 @@ hopskipdrive
 arkoselabs
 purposefreelance
 vsapartners
-shipin
 tradeledger
 confiant
 elevatek12
 shapr3d
-syncari
 datometry
-cohley
 builder
 mizzenandmain
 tatari
 aptportfolio
 guerrilla
-embed
 redwoodmaterials

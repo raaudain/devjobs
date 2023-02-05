@@ -834,3 +834,5 @@ AgilentTechnologies2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/
 Volo2`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f909827b79db6510c5cfe50/0a94ce4d-e4f6-41a5-9c19-6e217ccdf324?r=s3-eu-central-1
 TravelRadar`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62929ff8b5b1622a6407c1b5/bddc07c0-20f2-4112-9b96-c71482e282cb?r=s3-eu-central-1
 KoninklijkeVerkadeNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e466be2234a5869123e81a1/150px?r=s3-eu-central-1
+IntegrityNextGmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6107fc35e709402cacc2c7d8/150px?r=s3-eu-central-1
+PathwayToLiving`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/61541e445115275b68e38815/2765d53b-f0ae-441c-a498-93b6f7ebcff9?r=s3-us-east-2

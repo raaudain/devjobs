@@ -183,3 +183,5 @@ w4w`n/a`https://inflow-public.s3.amazonaws.com/company-logos/llxgvdwnz5mseo1kxxw
 skillpop`n/a`https://inflow-public.s3.amazonaws.com/company-logos/Wv4a6jJEH3LmUHw4gSYUiB7x.png
 spellbound`n/a`https://inflow-public.s3.amazonaws.com/company-logos/wtuhp4d90qc1hnq72ckt86pn3mvg.png
 farmless`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vmaw3mc8u4l43vd2hnk7tnmi3yem.png
+mprs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/v52vbvrxl83hbfiswl5e8ccx8sg5.png
+techshaw`n/a`https://inflow-public.s3.amazonaws.com/company-logos/23dq30b1c38o4junrbafx7xzspo5.jpeg

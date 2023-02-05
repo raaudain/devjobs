@@ -554,7 +554,6 @@ upguard
 roundglass
 brooksrunning
 verkada
-vts
 myvest
 brightcellars
 slab

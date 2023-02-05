@@ -1404,3 +1404,15 @@ intracom-telecom-2`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/
 optimegroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/526190/logo
 stellar-entertainment`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/513614/logo
 wushu-studios`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/572909/logo
+broadwaygaming`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/194993/logo
+skiplagged`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/214202/logo_2_withbackground.jpg
+spatial`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/195391/logo
+icarda`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/313774/logo
+quantive`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/466500/logo
+elopage`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/484329/logo
+upstream`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/1130/upstream2.png
+nomadglobal`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/567409/logo
+bad-dragon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/116669/bad_dragon_careers_banner.png
+twyn`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/484518/logo
+piratagroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/359813/logo
+voyago`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5598/logo

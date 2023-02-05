@@ -1364,3 +1364,13 @@ blur`Blur`https://lever-client-logos.s3.us-west-2.amazonaws.com/73b7d29b-2893-46
 skyboxlabs`SkyBox Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/fd3d8449-f372-4a29-8883-cd3c4bffc8fc-1653610886362.png
 egensolutions`Egen`https://lever-client-logos.s3.us-west-2.amazonaws.com/b459274d-8000-4b6c-b89d-770f8cd9eee8-1629634149033.png
 Bosta`Bosta`https://lever-client-logos.s3.us-west-2.amazonaws.com/4a536633-277c-4c83-afa7-586bfcce7dd0-1636574104926.png
+ekohealth`Eko `https://lever-client-logos.s3.us-west-2.amazonaws.com/2c98612a-ba98-4b9d-9ebb-0b8dc52f9910-1605026147417.png
+food52`Food52`https://lever-client-logos.s3-us-west-2.amazonaws.com/f8fd53a8-44d5-43c2-b2de-3c6d4572d3ac-1595265572171.png
+clevertap`CleverTap`https://lever-client-logos.s3.us-west-2.amazonaws.com/386dfde8-19ac-43a8-84f9-1b5ea2ee02ca-1673270718509.png
+tripalink`Tripalink`https://lever-client-logos.s3.us-west-2.amazonaws.com/cffe264b-be06-4c3e-a1a7-0074ca15d2ab-1667000473385.png
+commonlit`CommonLit`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b99e910-39f3-4e65-b746-2fea8c74c047-1663810757056.png
+lifestance`LifeStance Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/e268b051-1e5f-4017-ba41-fa01b1916dd5-1606743732337.png
+pendulum`Pendulum™ `https://lever-client-logos.s3.amazonaws.com/be0583c0-c72d-401e-9ccd-3d8ed17d16d6-1568658821936.png
+sar`SAR Academy & SAR High School`https://lever-client-logos.s3.us-west-2.amazonaws.com/bc5649f4-0056-4a22-a413-5e9d6f220fb8-1622814112036.png
+wachter`Wachter, Inc. `https://lever-client-logos.s3.amazonaws.com/f58a3dc7-cedb-410c-bd43-57c7bb06c2d7-1538756846592.png
+portagepointpartners`Portage Point Partners`https://lever-client-logos.s3-us-west-2.amazonaws.com/889d0468-7091-4fd6-99bf-7ddd011b1e4f-1596579449253.png
