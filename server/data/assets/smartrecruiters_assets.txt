@@ -836,3 +836,4 @@ TravelRadar`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62929
 KoninklijkeVerkadeNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e466be2234a5869123e81a1/150px?r=s3-eu-central-1
 IntegrityNextGmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6107fc35e709402cacc2c7d8/150px?r=s3-eu-central-1
 PathwayToLiving`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/61541e445115275b68e38815/2765d53b-f0ae-441c-a498-93b6f7ebcff9?r=s3-us-east-2
+JYSKBaltics`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60016e1b0930c8247f868c1c/huge?r=s3-eu-central-1

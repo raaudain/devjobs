@@ -619,3 +619,7 @@ cohley
 embed
 vts
 shiftsmart
+lett
+wargamingru
+medallia
+4dmt

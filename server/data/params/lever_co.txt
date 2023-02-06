@@ -58,7 +58,6 @@ homelister
 hashtagpaid
 aledade
 clubhouse
-medallia
 activecampaign
 alation
 amobee
@@ -714,7 +713,6 @@ Tul
 fullstacklabs
 bloomon
 currencycloud
-4dmt
 emilabs
 pinata
 oomnitza
