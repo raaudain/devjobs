@@ -78,7 +78,6 @@ deepgram
 delphix
 disqo
 eargo
-ease
 everbridge
 fast
 flexe
