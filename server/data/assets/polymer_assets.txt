@@ -185,3 +185,4 @@ spellbound`n/a`https://inflow-public.s3.amazonaws.com/company-logos/wtuhp4d90qc1
 farmless`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vmaw3mc8u4l43vd2hnk7tnmi3yem.png
 mprs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/v52vbvrxl83hbfiswl5e8ccx8sg5.png
 techshaw`n/a`https://inflow-public.s3.amazonaws.com/company-logos/23dq30b1c38o4junrbafx7xzspo5.jpeg
+gymdesk`n/a`https://inflow-public.s3.amazonaws.com/company-logos/pa8xkf52stcpmgw9v5pdsmollpyl.png

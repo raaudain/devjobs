@@ -1374,3 +1374,12 @@ pendulum`Pendulum™ `https://lever-client-logos.s3.amazonaws.com/be0583c0-c72d-
 sar`SAR Academy & SAR High School`https://lever-client-logos.s3.us-west-2.amazonaws.com/bc5649f4-0056-4a22-a413-5e9d6f220fb8-1622814112036.png
 wachter`Wachter, Inc. `https://lever-client-logos.s3.amazonaws.com/f58a3dc7-cedb-410c-bd43-57c7bb06c2d7-1538756846592.png
 portagepointpartners`Portage Point Partners`https://lever-client-logos.s3-us-west-2.amazonaws.com/889d0468-7091-4fd6-99bf-7ddd011b1e4f-1596579449253.png
+voodoo`Voodoo`https://lever-client-logos.s3.us-west-2.amazonaws.com/b17632d9-9756-4497-a966-8f9b7d11c4fe-1651769836972.png
+cogitocorp`Cogito`https://lever-client-logos.s3.us-west-2.amazonaws.com/47efde7f-9e22-442f-bf3c-392f599d2d2f-1607978093596.png
+placemakr`Placemakr`https://lever-client-logos.s3.us-west-2.amazonaws.com/c9c8cc24-4404-4c4b-a1df-4328b03d472a-1668092947033.png
+sta`Saudi Tourism Authority`https://lever-client-logos.s3.us-west-2.amazonaws.com/f4c13e70-dc20-489b-9040-593013b4dc14-1623584666758.png
+jar-app`Jar`https://lever-client-logos.s3.us-west-2.amazonaws.com/2a81954c-124c-4e43-a34f-916adc6d3e9a-1662369420918.png
+crestoperations`Crest Industries`https://lever-client-logos.s3.us-west-2.amazonaws.com/5241d1c9-7524-4973-8aba-8eb6e506a5cf-1670280759916.png
+unzer`Unzer`https://lever-client-logos.s3.us-west-2.amazonaws.com/fd0325f6-9ee0-40eb-901d-29bd077d59ab-1652194974683.png
+rise`RISE`https://lever-client-logos.s3.amazonaws.com/eb1f122e-674b-4a11-81ab-eb50b37ec77a-1568015560714.png
+acuityads`AcuityAds`https://lever-client-logos.s3.us-west-2.amazonaws.com/36670c88-6cb7-4c1e-95a4-c2e8ff19a482-1669221201021.png

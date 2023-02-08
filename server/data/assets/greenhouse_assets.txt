@@ -1722,3 +1722,7 @@ redwoodmaterials`Redwood Materials`None
 tradeledger`Trade Ledger`None
 mizzenandmain`Mizzen+Main`None
 aptportfolio`APT Portfolio`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/848/200/resized/linkedin_profile_image.jpg
+103644278`Lume Deodorant`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/876/resized/Lume_Logo_orange_2022-01.png
+crossmint`Crossmint.io | Making NFTs Accessible to Everyone`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/149/400/resized/DISCORD_ICON.png
+turquoisehealth`Turquoise Health`None
+genialcare`Genial Care`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/192/500/resized/Genial-Care-logo.png

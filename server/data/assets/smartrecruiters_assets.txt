@@ -837,3 +837,10 @@ KoninklijkeVerkadeNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/
 IntegrityNextGmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6107fc35e709402cacc2c7d8/150px?r=s3-eu-central-1
 PathwayToLiving`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/61541e445115275b68e38815/2765d53b-f0ae-441c-a498-93b6f7ebcff9?r=s3-us-east-2
 JYSKBaltics`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60016e1b0930c8247f868c1c/huge?r=s3-eu-central-1
+VizExperts`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d659e4b0b42dcb456b79/150px
+LivewireMarkets`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62ba8f8b2da4c51dfb368d6f/e191b16c-e7bd-4baa-a69b-eef9bde34f83?r=s3-eu-central-1
+GroupeCanam`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e14830bc56593451a14d6ce/huge?r=s3-eu-central-1
+RFConnect`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/570d1749e4b0d74512c3ad8c/150px?r=s3
+FASe`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e2efb93b1bb5b076a77727b/150px?r=s3-eu-central-1
+AdeebaEServicesPvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/554218a7e4b0279aa3bf2130/150px?r=s3
+RentokilInitial1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62b43c369e881e775383eecb/150px?r=s3-eu-central-1
