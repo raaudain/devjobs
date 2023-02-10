@@ -139,7 +139,6 @@ dotph
 sparkschools
 everledger
 silverstripe
-wonderbly
 signal
 extremereach
 lingoace

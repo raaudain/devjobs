@@ -54,7 +54,6 @@ alayacare
 alphasense
 appian
 algolia
-atbay
 benchling
 betterup
 bigid
@@ -557,7 +556,6 @@ clearfield
 kaizengaming
 collegetrack
 nanit
-financialtechnologypartners
 tigergraph
 planetlabs
 drift
