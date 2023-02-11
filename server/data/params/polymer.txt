@@ -230,3 +230,4 @@ farmless
 mprs
 techshaw
 gymdesk
+ministry-pass
