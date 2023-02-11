@@ -197,7 +197,6 @@ kieszon
 zoopluspoland
 snapeda
 trustedshopsbv
-hollandstartup
 neni
 visorai
 atome3d
@@ -935,8 +934,6 @@ freiheitmedia
 convious
 makersitegmbh
 nemo
-status
 climeworks
 bluecrux
 coindcx
-easyship

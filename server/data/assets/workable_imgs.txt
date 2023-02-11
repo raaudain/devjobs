@@ -1429,3 +1429,10 @@ rooteco`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/545944/logo
 portcast`n/a`None
 emed`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/475264/logo
 ayana`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/566735/logo
+enfusegroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/513954/logo
+caxton`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/86329/caxton_logo.jpg
+massarcapital`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/566919/logo
+ioby`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/21143/logo
+praytell`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/512245/logo
+blackbridge`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575623/logo
+mssc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/574724/logo

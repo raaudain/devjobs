@@ -1726,3 +1726,23 @@ aptportfolio`APT Portfolio`https://s2-recruiting.cdn.greenhouse.io/external_gree
 crossmint`Crossmint.io | Making NFTs Accessible to Everyone`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/149/400/resized/DISCORD_ICON.png
 turquoisehealth`Turquoise Health`None
 genialcare`Genial Care`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/192/500/resized/Genial-Care-logo.png
+abacusinsights`Abacus Insights`None
+floyd`Floyd`None
+elixirr`Elixirr`None
+seres`SERES`None
+rex`Rex`None
+maymobility`May Mobility`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/577/100/resized/MayMobilityHorizLogo_MM_Greenhouse.png
+portworx`Portworx`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/709/resized/portworx-logo-2.png
+covetool`cove.tool`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/042/800/resized/covetool_logo_72dpi-transparentbg.png
+beekeeper`Beekeeper`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/001/117/resized/beekeeper_logo_linkedin.png
+medallion`Medallion`None
+watershed`Watershed Informatics`None
+atomica`Atomica`None
+mighty`Mighty`None
+inovalon`Inovalon`https://www.inovalon.com/wp-content/uploads/2021/11/Logo-Normal.png
+braintrust`Braintrust`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/385/400/resized/Braintrust_Lockup_Black.png
+quiknodeinc`QuickNode`None
+transcarent`Transcarent`None
+modernmeadow`Modern Meadow`None
+cortexbuildingintelligence`Cortex Sustainability Intelligence`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/107/400/resized/Cortex_Logo.jpg
+vicai`Vic.ai`None

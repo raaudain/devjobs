@@ -1383,3 +1383,10 @@ crestoperations`Crest Industries`https://lever-client-logos.s3.us-west-2.amazona
 unzer`Unzer`https://lever-client-logos.s3.us-west-2.amazonaws.com/fd0325f6-9ee0-40eb-901d-29bd077d59ab-1652194974683.png
 rise`RISE`https://lever-client-logos.s3.amazonaws.com/eb1f122e-674b-4a11-81ab-eb50b37ec77a-1568015560714.png
 acuityads`AcuityAds`https://lever-client-logos.s3.us-west-2.amazonaws.com/36670c88-6cb7-4c1e-95a4-c2e8ff19a482-1669221201021.png
+regrow.ag`Regrow Ag Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/ff7d01cc-2a97-46e7-b383-2b6ae62f22c3-1674081521049.png
+attentive`Attentive`https://lever-client-logos.s3.us-west-2.amazonaws.com/3ef1346b-0ef8-46dd-8acc-243805fceacc-1617837410876.png
+KPayMerchantServiceLimited`KPay Merchant Service Limited`https://lever-client-logos.s3.us-west-2.amazonaws.com/f946774e-4f3d-424b-b9cc-1a5d7eb04701-1670392134248.png
+PhoenixTailings`Phoenix Tailings`https://lever-client-logos.s3.us-west-2.amazonaws.com/5359b2f4-7077-4251-97e7-3dfccb911bdb-1631225789778.png
+multiversx`MultiversX`https://lever-client-logos.s3.us-west-2.amazonaws.com/e70f7436-1af9-4ff8-a3a1-1df42dc2c9d3-1675248858494.png
+airslate`airSlate`https://lever-client-logos.s3.us-west-2.amazonaws.com/9603eae5-b2eb-4244-b875-9cab383422a2-1654260641312.png
+loftorbital`Loft Orbital Solutions`https://lever-client-logos.s3.amazonaws.com/fbd77dc5-28de-4786-9124-b500a1d6ff78-1563840129197.png

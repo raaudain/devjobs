@@ -354,7 +354,6 @@ cruisecontract
 calicolabs
 m1finance
 forwardfinancing
-timebyping
 ixlayercareers
 movableink
 consensysinc
@@ -1636,16 +1635,13 @@ seres
 mighty
 rex
 inovalon
-syncari
 braintrust
 maymobility
 quiknodeinc
 portworx
 transcarent
-embed
 modernmeadow
 covetool
 cortexbuildingintelligence
 beekeeper
 vicai
-sundae

@@ -844,3 +844,9 @@ RFConnect`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/570d1749e4b0d74
 FASe`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5e2efb93b1bb5b076a77727b/150px?r=s3-eu-central-1
 AdeebaEServicesPvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/554218a7e4b0279aa3bf2130/150px?r=s3
 RentokilInitial1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62b43c369e881e775383eecb/150px?r=s3-eu-central-1
+EntCreditUnion1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6152254f9b50361b5d3e2a1f/02684180-7cf2-4c16-85f6-7c2107e1090c?r=s3-eu-central-1
+Humanity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f4bc1ce7d41d14953309477/150px?r=s3-eu-central-1
+MIPartners`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5be17447131c1e4fa97ddee8/150px?r=s3-eu-central-1
+WilshireAdvisorsLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6373dbd7be72a15a8488a98b/150px?r=s3-eu-central-1
+Altenar`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/59db6f1fe4b0cf7250063c9a/27d15149-3b44-4614-b3cb-b42492f7d456?r=s3
+USM2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/546f69f5e4b01e7ceaaeecc1/huge?r=s3
