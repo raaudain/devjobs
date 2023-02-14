@@ -458,7 +458,6 @@ codification
 nodalview
 modulussa
 chillhopmusic
-funktional
 caremanagementsuissegmbh
 atolye
 personalhub

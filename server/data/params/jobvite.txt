@@ -492,7 +492,6 @@ evgo
 turbocam
 iboss
 selina
-bandiflorida
 amplifon-pt
 impinj
 fprs

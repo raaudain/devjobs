@@ -289,7 +289,6 @@ qualtrics
 relex
 seatgeek
 hootsuite
-frameio
 chewycom
 sisense
 lexer
@@ -356,7 +355,6 @@ m1finance
 forwardfinancing
 ixlayercareers
 movableink
-consensysinc
 weedmaps77
 gravitypayments
 specialized
@@ -382,7 +380,6 @@ ebanx
 sondermind
 catawiki
 mrsool
-shopee
 customerio
 pathstream
 gatesventures
@@ -648,7 +645,6 @@ fashionnova
 versussystems
 jellyvision
 ocient39
-metova
 caribou
 ready2order
 tangocard
@@ -963,7 +959,6 @@ nugget
 remotetcx
 johnkenyoneyecenter
 replicated
-origin
 gv
 mediamath
 galileo
@@ -1014,7 +1009,6 @@ thinkific
 stepmobile
 manygroup
 tbwachiatday
-seamoney
 schrdinger
 thealleninstitute
 forage
@@ -1441,7 +1435,6 @@ autonomic
 taxdoo
 wheely
 drata
-humandx
 vytalizehealth
 upbound
 sporttrade
@@ -1585,7 +1578,6 @@ launchpadtechnologiesinc
 ifoodcarreiras
 wargamingen
 oneacrefund
-unibuddy
 moloco
 ebot7
 breezeairways
