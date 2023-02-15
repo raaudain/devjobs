@@ -186,3 +186,6 @@ farmless`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vmaw3mc8u4l43v
 mprs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/v52vbvrxl83hbfiswl5e8ccx8sg5.png
 techshaw`n/a`https://inflow-public.s3.amazonaws.com/company-logos/23dq30b1c38o4junrbafx7xzspo5.jpeg
 gymdesk`n/a`https://inflow-public.s3.amazonaws.com/company-logos/pa8xkf52stcpmgw9v5pdsmollpyl.png
+localvr`n/a`https://inflow-public.s3.amazonaws.com/company-logos/cm4zaxu4pwv1ykg3ucqb698nwe48.png
+rarebase`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rfvwjJCEqyHa4fwouQuEbGzb.svg
+fairly`n/a`https://inflow-public.s3.amazonaws.com/company-logos/iMivfkRHyFr6zLwyGYftCf58.svg

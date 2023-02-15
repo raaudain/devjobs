@@ -936,8 +936,4 @@ climeworks
 bluecrux
 coindcx
 dpd
-offtherecord
-status
 berthaearth
-hollandstartup
-easyship

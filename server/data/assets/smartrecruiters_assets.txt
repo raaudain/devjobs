@@ -850,3 +850,8 @@ MIPartners`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5be1744713
 WilshireAdvisorsLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6373dbd7be72a15a8488a98b/150px?r=s3-eu-central-1
 Altenar`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/59db6f1fe4b0cf7250063c9a/27d15149-3b44-4614-b3cb-b42492f7d456?r=s3
 USM2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/546f69f5e4b01e7ceaaeecc1/huge?r=s3
+AIRCommunities`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5ee14f2da1e86a6f912f1966/5fb3c2b7-9dd3-4017-9993-b10888b6e152?r=s3-eu-central-1
+PSICRO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a83fdd3e4b0d8713c02f63e/150px?r=s3-eu-central-1
+LaunchCode`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55f792b7e4b07e9f1e9b2d6f/150px?r=s3
+Morguard`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6111515062fe6f4b9034fa25/150px?r=s3-eu-central-1
+FosterFarms`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/56b4d597e4b0bcf66df31fda/150px

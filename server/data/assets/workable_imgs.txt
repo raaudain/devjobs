@@ -1436,3 +1436,9 @@ ioby`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/21143/logo
 praytell`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/512245/logo
 blackbridge`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575623/logo
 mssc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/574724/logo
+mi-homes`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575504/logo
+invygo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/580079/logo
+reedsy`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575638/logo
+finisterre`n/a`None
+perchpeek`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/467973/logo
+credrails`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/523131/logo

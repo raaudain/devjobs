@@ -1333,7 +1333,6 @@ headinghealth
 manticoregames
 tensureconsulting
 weavegrid
-theseus
 aquahydrex
 uniswaplabs
 productboard
@@ -1639,13 +1638,8 @@ beekeeper
 vicai
 keydataassociates
 elevatek12teachwithus
-origin
-frameio
-humandx
-neqca
 lumafinancialtechnologies
 educate
 stone
 ilia
-sundae
 motivpowersystems

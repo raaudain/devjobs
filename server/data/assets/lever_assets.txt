@@ -1390,3 +1390,9 @@ PhoenixTailings`Phoenix Tailings`https://lever-client-logos.s3.us-west-2.amazona
 multiversx`MultiversX`https://lever-client-logos.s3.us-west-2.amazonaws.com/e70f7436-1af9-4ff8-a3a1-1df42dc2c9d3-1675248858494.png
 airslate`airSlate`https://lever-client-logos.s3.us-west-2.amazonaws.com/9603eae5-b2eb-4244-b875-9cab383422a2-1654260641312.png
 loftorbital`Loft Orbital Solutions`https://lever-client-logos.s3.amazonaws.com/fbd77dc5-28de-4786-9124-b500a1d6ff78-1563840129197.png
+regalvoice`Regal.io`https://lever-client-logos.s3.us-west-2.amazonaws.com/2e92f2e3-9c03-4cba-af85-ed0a6b2b8479-1662668777342.png
+crytek`Crytek`https://lever-client-logos.s3-us-west-2.amazonaws.com/2a61cdfd-29d3-4707-b965-c4527aa67d0c-1593500521772.png
+appen-2`Appen`https://lever-client-logos.s3.us-west-2.amazonaws.com/6300632e-6b44-4aaa-8a33-58d96878a05a-1676051296780.png
+onfido`Onfido`https://lever-client-logos.s3.amazonaws.com/8936722a-117d-4e2b-a8a0-1a329a93b977-1573135220269.png
+stevenstransport`Stevens Transport`https://lever-client-logos.s3.us-west-2.amazonaws.com/5e06d8bd-7490-4964-83f2-3f71ebe3355c-1656010602528.png
+givebutter`Givebutter`https://lever-client-logos.s3.us-west-2.amazonaws.com/aae97790-6fdc-4539-942c-3b02d2f5cb34-1666891710690.png
