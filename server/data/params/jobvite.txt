@@ -521,7 +521,6 @@ benchmark
 havasmedia
 ezra
 mtc
-manhattanstrategy
 avalara
 cmgfi
 ivyrehab
