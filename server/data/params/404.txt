@@ -675,3 +675,7 @@ sundae
 manhattanstrategy
 stanleysecuritynederland
 wildbit
+syncari
+cohley
+manhattanstrategy
+frameio

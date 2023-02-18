@@ -1396,3 +1396,18 @@ appen-2`Appen`https://lever-client-logos.s3.us-west-2.amazonaws.com/6300632e-6b4
 onfido`Onfido`https://lever-client-logos.s3.amazonaws.com/8936722a-117d-4e2b-a8a0-1a329a93b977-1573135220269.png
 stevenstransport`Stevens Transport`https://lever-client-logos.s3.us-west-2.amazonaws.com/5e06d8bd-7490-4964-83f2-3f71ebe3355c-1656010602528.png
 givebutter`Givebutter`https://lever-client-logos.s3.us-west-2.amazonaws.com/aae97790-6fdc-4539-942c-3b02d2f5cb34-1666891710690.png
+takeoff`Takeoff Technologies`https://lever-client-logos.s3-us-west-2.amazonaws.com/14e592de-90c5-46d9-aa74-71e52017b99a-1589300982404.png
+formstack`Formstack`https://lever-client-logos.s3.us-west-2.amazonaws.com/c95d8d84-c9f2-4bf0-9b59-6c81b4a7c559-1661870357450.png
+desafiolatam`Desafío Latam`https://lever-client-logos.s3.us-west-2.amazonaws.com/25f40b68-174d-4990-91d5-3781ff4f98fe-1658769798714.png
+T6TalentPartners`T6 Talent Partners`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9a8c820-c344-470a-900f-acd01c57e2d0-1641912062184.png
+reflectorentertainment`Reflector Entertainment`https://lever-client-logos.s3.amazonaws.com/6aaf6658-752c-4092-b761-382d1b7bf32c-1547587502106.png
+with-foundation`Foundation`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9eb89c1-2f27-41af-9bc4-dd6698259556-1623285294160.png
+loop-health`Loop Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/6b5206ff-51c0-457d-b68c-3dca2366e078-1654878840170.png
+aperturehealth`Verisys`https://lever-client-logos.s3.us-west-2.amazonaws.com/496be8cc-5a82-4a0a-a386-fb8dfe389903-1631307144450.png
+ecosystem`Ecosystem`https://lever-client-logos.s3.us-west-2.amazonaws.com/735d38ae-c379-430e-b696-0f943857966e-1605199631374.png
+tesorio`Tesorio`https://lever-client-logos.s3.us-west-2.amazonaws.com/bf4c027e-b968-432b-a2d3-2f78be983e9d-1624035663253.png
+canvasww`Canvas Worldwide`https://lever-client-logos.s3.us-west-2.amazonaws.com/44d32198-952a-44dd-944d-c6d57b613d0c-1668043029677.png
+themuse`The Muse`https://lever-client-logos.s3.amazonaws.com/ac8794d1-2fca-4d94-913c-00e6986b8a63-1564752637249.png
+wildlight`Wildlight Entertainment`https://lever-client-logos.s3.us-west-2.amazonaws.com/867690fb-627a-4c4b-92bf-b618013882fa-1676425449990.png
+qredo`Qredo`https://lever-client-logos.s3.us-west-2.amazonaws.com/f70537c1-5881-411b-b38b-d10c9f88d51b-1660880277056.png
+m-kopa`M-KOPA`https://lever-client-logos.s3.us-west-2.amazonaws.com/39bc3c98-c9a9-4f6a-b738-bc4fc25aa333-1633354764236.png

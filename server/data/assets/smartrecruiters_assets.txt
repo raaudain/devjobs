@@ -855,3 +855,12 @@ PSICRO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a83fdd3e4b0d8
 LaunchCode`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55f792b7e4b07e9f1e9b2d6f/150px?r=s3
 Morguard`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6111515062fe6f4b9034fa25/150px?r=s3-eu-central-1
 FosterFarms`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/56b4d597e4b0bcf66df31fda/150px
+AspireSystemsInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5435cb30e4b0e4036185ebfe/150px?r=s3
+MarketIndex`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/638bcc996ead8461eefdbe43/8b5b2b3e-2759-4d1c-9c11-46385bfbaefd?r=s3-eu-central-1
+Finastra1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/622f23fc0c7a9c69c8ac3d81/335b748f-9b66-45f3-accf-e5e7271761d1?r=s3-eu-central-1
+KIMEPUniversity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c65210546e0fb00069979bf/huge?r=s3-eu-central-1
+UncommonSchools`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c06acd5e4b099fbf2232381/809c5dc0-cd69-41df-ba23-ffe3a098b109?r=s3-eu-central-1
+InternationalDairyQueen`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6114005c25616210b033177c/huge?r=s3-eu-central-1
+CSGROUP`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/618b9f6a10bade23d2d5dd4c/7c440191-c803-434c-8ee4-eb46556df337?r=s3-eu-central-1
+TheAutoClubGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/52effcd3e4b09dec3637f747/150px
+ClearLeafConsultingPtyLtd`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/59bd54fbe4b0d6ed8055fca4/99afffe6-718a-4ed0-a49d-d13a8a6e41f4?r=s3
