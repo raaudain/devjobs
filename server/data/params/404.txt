@@ -680,3 +680,5 @@ cohley
 manhattanstrategy
 frameio
 webenertia
+aopmfg
+hume
