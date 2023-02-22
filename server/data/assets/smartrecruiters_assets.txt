@@ -864,3 +864,8 @@ InternationalDairyQueen`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-d
 CSGROUP`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/618b9f6a10bade23d2d5dd4c/7c440191-c803-434c-8ee4-eb46556df337?r=s3-eu-central-1
 TheAutoClubGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/52effcd3e4b09dec3637f747/150px
 ClearLeafConsultingPtyLtd`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/59bd54fbe4b0d6ed8055fca4/99afffe6-718a-4ed0-a49d-d13a8a6e41f4?r=s3
+AtriaGroupLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d72ae4b0b42dcb46026a/huge?r=s3
+PROVALLIANCE`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61efbeb25c1c636b5a49480c/150px?r=s3-eu-central-1
+QuandooGmbH1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5981e180e4b0dcb5846a60d7/3255846f-44db-4882-9126-4e94c00bcdda?r=s3
+EVERSANA1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63c6ad0d06d92d0c82fbc3eb/291869c1-b367-4799-bd99-2ad310e547e4?r=s3-eu-central-1
+SBMSiteServicesLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5192521be4b02e555f760c47/huge?r=s3

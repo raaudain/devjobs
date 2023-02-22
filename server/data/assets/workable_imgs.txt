@@ -1463,3 +1463,9 @@ lofty`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/548927/logo
 plainconcepts`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/64732/resize__2_.png
 neuralspace`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/581323/logo
 setflow`n/a`None
+moneycast`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/549917/logo
+laterite`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/521381/logo
+autorentals`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/480622/logo
+enpal`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/372196/logo
+sendmybag`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/452260/logo
+algooru`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/589013/logo

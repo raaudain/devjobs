@@ -1411,3 +1411,18 @@ themuse`The Muse`https://lever-client-logos.s3.amazonaws.com/ac8794d1-2fca-4d94-
 wildlight`Wildlight Entertainment`https://lever-client-logos.s3.us-west-2.amazonaws.com/867690fb-627a-4c4b-92bf-b618013882fa-1676425449990.png
 qredo`Qredo`https://lever-client-logos.s3.us-west-2.amazonaws.com/f70537c1-5881-411b-b38b-d10c9f88d51b-1660880277056.png
 m-kopa`M-KOPA`https://lever-client-logos.s3.us-west-2.amazonaws.com/39bc3c98-c9a9-4f6a-b738-bc4fc25aa333-1633354764236.png
+DoraHacks`DoraHacks`https://lever-client-logos.s3.us-west-2.amazonaws.com/96f741d4-2424-47ad-8ac0-fd3b5f115d6d-1655773677290.png
+curio.gg`Curio Research`https://lever-client-logos.s3.us-west-2.amazonaws.com/b9cd670f-ff8b-4fa4-99d5-41bf18eec6dd-1668205479522.png
+deliveryrelay`Relay Delivery`https://lever-client-logos.s3.us-west-2.amazonaws.com/0933ae94-1e48-4960-9054-8686215523ef-1662749991675.png
+axionray`Axion Ray Inc`https://lever-client-logos.s3.us-west-2.amazonaws.com/3bf71272-f4b8-4ceb-b4dc-386bd3ae2a91-1670463946321.png
+theoremonellc`TheoremOne, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/218b88f4-5e35-45a2-aaa8-55e4ed826270-1642807563041.png
+despegar`Despegar`https://lever-client-logos.s3.us-west-2.amazonaws.com/fcb74b6d-49f6-4915-b8c4-1b88ff1a141a-1670358804538.png
+ConverseNow`ConverseNow.ai`https://lever-client-logos.s3.us-west-2.amazonaws.com/421fd2fa-a747-4fd4-b835-08af33c5afc2-1652982790728.png
+Presto`Presto`https://lever-client-logos.s3.us-west-2.amazonaws.com/e68f5d69-9391-4af3-8c41-6d922ca39ab3-1599773585349.png
+super-com`Super`https://lever-client-logos.s3.us-west-2.amazonaws.com/636f4898-b364-4421-8baf-1bcd34f614b4-1666123189995.png
+ajax`Ajax Systems`https://lever-client-logos.s3.us-west-2.amazonaws.com/d22c4e2a-67b4-4650-accf-1626246e4901-1662552399517.png
+xepelin`Xepelin`https://lever-client-logos.s3.us-west-2.amazonaws.com/ff35ed55-5a25-4a22-ae65-0ead11e5d5bb-1666366026240.png
+flowlife`Flow`https://lever-client-logos.s3.us-west-2.amazonaws.com/85e90e95-9df5-49d5-8ba5-027caaa13168-1668715068031.png
+opengov`OpenGov`https://lever-client-logos.s3.amazonaws.com/60ca6075-e79d-4635-902c-19ea46d48acc-1516838173196.png
+cubesoftware`Cube`https://lever-client-logos.s3.us-west-2.amazonaws.com/365ebc11-6397-4d87-9b7a-c9869a7ac732-1627405009899.png
+joinpapa`Papa`https://lever-client-logos.s3.us-west-2.amazonaws.com/4a064574-65b4-4f01-bdb2-2bd8b7b6b7aa-1657754947301.png

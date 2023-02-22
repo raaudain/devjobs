@@ -793,5 +793,4 @@ the-mars-agency
 firstbank
 nobuhotels
 elire
-manhattanstrategy
 alivecor

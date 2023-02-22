@@ -231,7 +231,6 @@ tarabut-gateway
 storied
 save-my-exams
 sinch
-youthcollaboratory
 serko-ltd
 fluorescent-design-inc
 ubds
