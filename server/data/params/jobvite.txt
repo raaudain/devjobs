@@ -790,3 +790,8 @@ g100-companies
 resilinc
 oak-street-health
 the-mars-agency
+firstbank
+nobuhotels
+elire
+manhattanstrategy
+alivecor

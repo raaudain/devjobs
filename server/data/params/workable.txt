@@ -1429,3 +1429,9 @@ logical-media-group
 martin-automotive-group
 bitquery
 lofty
+algooru
+sendmybag
+moneycast
+autorentals
+laterite
+enpal
