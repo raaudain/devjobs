@@ -368,7 +368,6 @@ girlswhocode
 ppwi
 captivateiq
 pplm
-boulevard
 upstox
 cred
 reorgresearch
@@ -579,7 +578,6 @@ urwelcome
 reviewtrackers
 izotope
 runkeeper
-hotschedules
 taptapsend
 nordsec
 percona
