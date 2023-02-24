@@ -129,7 +129,6 @@ gremco
 transcomserbia
 planatol
 hensoldtcyber
-photoguru
 danieljansen
 ihorizon
 saschastarck
@@ -282,7 +281,6 @@ nimble
 affideaswitzerland
 arcenergie
 orangeworks
-rolandroettger
 lippepersonal
 arzbau
 wuesthof
@@ -345,7 +343,6 @@ fluvia
 redhouse
 innovationbooster
 werkenbijevansantvoort
-exsis1
 sauelsfrischewurstgmbhfleischwarencokg
 groupe30a
 interviewme
