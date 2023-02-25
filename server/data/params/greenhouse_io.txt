@@ -1532,7 +1532,6 @@ nsrg
 incubator
 disco
 samsungaustinsemiconductor
-sedai
 path
 nutrisense
 stxgroup
@@ -1674,7 +1673,6 @@ songfinch
 bayada
 workatbackbase
 cruiseuniversity
-cohley
 globalsavingsgroup
 solsten
 rcgglobalservices

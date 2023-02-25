@@ -1780,3 +1780,10 @@ syndigo`Syndigo`None
 jobsforthefuture`JFF`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/859/000/resized/JFF_LogoLockup.png
 taketwo`Take-Two Interactive Software, Inc.`None
 songfinch`Songfinch`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/226/700/resized/Profile_Square_Crop.png
+workatbackbase`Backbase`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/156/resized/Backbase-2022-Icon.png
+solsten`Solsten`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/581/800/resized/Solsten_logo_Greenhouse.png
+inter`Inter Carreiras`None
+bayada`BAYADA Home Health Care`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/069/300/resized/BAYADA_logo_1200x628.jpg
+cruiseuniversity`Cruise - University`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/343/resized/Cruise-Greenhouse-Wordmark.png
+globalsavingsgroup`Global Savings Group`None
+rcgglobalservices`RCG Global Services (Career Site)`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/162/100/resized/RCG_logo.png

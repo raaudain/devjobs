@@ -797,5 +797,4 @@ alivecor
 novo
 4gclinical
 bfhp
-manhattanstrategy
 trianz

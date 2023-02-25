@@ -1426,3 +1426,18 @@ flowlife`Flow`https://lever-client-logos.s3.us-west-2.amazonaws.com/85e90e95-9df
 opengov`OpenGov`https://lever-client-logos.s3.amazonaws.com/60ca6075-e79d-4635-902c-19ea46d48acc-1516838173196.png
 cubesoftware`Cube`https://lever-client-logos.s3.us-west-2.amazonaws.com/365ebc11-6397-4d87-9b7a-c9869a7ac732-1627405009899.png
 joinpapa`Papa`https://lever-client-logos.s3.us-west-2.amazonaws.com/4a064574-65b4-4f01-bdb2-2bd8b7b6b7aa-1657754947301.png
+ailens`Truera`https://lever-client-logos.s3.us-west-2.amazonaws.com/f3a4439e-8671-4c98-a4ac-fa98747e4234-1639701152070.png
+ableserve`ABM.Com`https://lever-client-logos.s3.us-west-2.amazonaws.com/f28438dd-a902-4fa2-9ec9-e8968f485877-1647634828007.png
+p3vetpartners`P3 Veterinary Partners`https://lever-client-logos.s3.us-west-2.amazonaws.com/d6118477-bec6-4178-8da5-1e018bd03195-1673448734680.png
+HeirloomTechnologies`Heirloom`https://lever-client-logos.s3.us-west-2.amazonaws.com/338e9cba-660a-4955-823d-a2c865edc5ec-1615840185784.png
+ppsp`Planned Parenthood Southeastern Pennsylvania`https://lever-client-logos.s3.amazonaws.com/5a132b84-14ab-4538-9921-9ddb9748b352-1508518109108.png
+diamondage3d`Diamond Age`https://lever-client-logos.s3.us-west-2.amazonaws.com/f7bfffb4-2727-4448-aab6-a227f03be9fa-1666892174540.png
+lingoda`Lingoda`https://lever-client-logos.s3.us-west-2.amazonaws.com/af6841b5-7dad-4a9c-892f-0a232eb410ae-1615971135314.png
+honeybeerobotics`Honeybee Robotics`https://lever-client-logos.s3.us-west-2.amazonaws.com/4fdf3daa-17db-4a56-8ba3-ba73eb67662f-1672336224974.png
+usasurveyjob`USPollsJobBoard`https://lever-client-logos.s3.amazonaws.com/c148ea12-7e8a-4b5e-9d8c-ad8318f812c4-1574354213544.png
+leafgroup`Leaf Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/6f8605eb-1416-4447-9dc1-9f08127f092c-1634844194827.png
+thebrowser-company`Browser Company`https://lever-client-logos.s3.us-west-2.amazonaws.com/d362d7c8-a9e5-49d8-a259-750b33368c47-1633103694519.png
+climate-collaborative`India Climate Collaborative`https://lever-client-logos.s3.us-west-2.amazonaws.com/5ea3d810-ba7a-4ef0-8152-ce76e0e79d1b-1613585862560.png
+inlaze`inlaze`https://lever-client-logos.s3.us-west-2.amazonaws.com/5b28529d-1ff7-4117-b49b-69c947e596c6-1661172114117.png
+intropic`Intropic`https://lever-client-logos.s3.us-west-2.amazonaws.com/dbd0562c-2114-47b4-a8bb-3c91bae44d4e-1646743343967.png
+abelsontaylor`AbelsonTaylor`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd57cd89-a929-41c6-bf44-e61ff305684a-1629143188056.png

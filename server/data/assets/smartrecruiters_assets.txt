@@ -869,3 +869,5 @@ PROVALLIANCE`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61efbeb2
 QuandooGmbH1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/5981e180e4b0dcb5846a60d7/3255846f-44db-4882-9126-4e94c00bcdda?r=s3
 EVERSANA1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63c6ad0d06d92d0c82fbc3eb/291869c1-b367-4799-bd99-2ad310e547e4?r=s3-eu-central-1
 SBMSiteServicesLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5192521be4b02e555f760c47/huge?r=s3
+GNC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63805a180a952c20dd21e71a/9c06cc1a-0399-4787-9597-bd7577034167?r=s3-eu-central-1
+Homzmart`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f045735e045723c5d69cfe5/150px?r=s3-eu-central-1
