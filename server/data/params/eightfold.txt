@@ -70,3 +70,4 @@ directsourcepro-inv
 box
 costar
 demo
+morganstanley
