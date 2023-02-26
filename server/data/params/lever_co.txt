@@ -7,7 +7,6 @@ frontapp
 nylas
 olo
 divvyhomes
-grafana
 nestwealth
 seesaw
 pex
