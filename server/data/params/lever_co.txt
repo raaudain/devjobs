@@ -801,7 +801,6 @@ insider-intelligence
 industrydive
 sentilink
 timely-md
-goat
 crunchbase
 happyco
 axiomzen
