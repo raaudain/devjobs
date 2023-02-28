@@ -218,7 +218,6 @@ hdiglobal
 rrws
 epsilonsystems
 toyoda
-cwellnessv
 hpylaw
 hgrinc
 kernfcu
