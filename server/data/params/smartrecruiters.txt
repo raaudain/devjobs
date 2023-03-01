@@ -979,3 +979,5 @@ PROVALLIANCE
 AtriaGroupLLC
 GNC
 Homzmart
+Trigo
+VuoriInc
