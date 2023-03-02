@@ -1441,3 +1441,19 @@ climate-collaborative`India Climate Collaborative`https://lever-client-logos.s3.
 inlaze`inlaze`https://lever-client-logos.s3.us-west-2.amazonaws.com/5b28529d-1ff7-4117-b49b-69c947e596c6-1661172114117.png
 intropic`Intropic`https://lever-client-logos.s3.us-west-2.amazonaws.com/dbd0562c-2114-47b4-a8bb-3c91bae44d4e-1646743343967.png
 abelsontaylor`AbelsonTaylor`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd57cd89-a929-41c6-bf44-e61ff305684a-1629143188056.png
+winamax`WINAMAX`https://lever-client-logos.s3.us-west-2.amazonaws.com/71117a08-0c6c-499d-aa39-5464ddde795c-1671709110651.png
+RabbitHoleStudios`RabbitHole`https://lever-client-logos.s3.us-west-2.amazonaws.com/0eb263a1-c9ee-4365-bc0e-b1c62f8e3754-1676317825972.png
+bluerocktx`BlueRock Therapeutics`https://lever-client-logos.s3.us-west-2.amazonaws.com/017d1933-d20b-434d-9b50-966f21ee7d2d-1642695473692.png
+illumination`Illumination`https://lever-client-logos.s3.us-west-2.amazonaws.com/d1c60a89-bed4-49c4-9a94-07fd53d7ab53-1668197900904.png
+benlabs`BENlabs`https://lever-client-logos.s3.us-west-2.amazonaws.com/4c46fdfb-6586-44a8-8cef-93ba5bb5c561-1673467498130.png
+verse-medical`Verse Medical`https://lever-client-logos.s3.us-west-2.amazonaws.com/afe0010c-b9f8-4e0b-ba56-ee7c430a1dee-1659564047488.png
+thewanderlustgroup`The Wanderlust Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/95672f53-fd36-4c5c-a620-a00333e416bf-1646839803422.png
+Osano` Osano, Inc., A Public Benefit Corporation`https://lever-client-logos.s3.us-west-2.amazonaws.com/c5bb25b4-1f52-4647-a3e9-dd8b748f6c44-1646764299707.png
+meridianlink`MeridianLink`https://lever-client-logos.s3.us-west-2.amazonaws.com/0a32afe0-d6df-4852-bf1f-af4e40c5bc16-1634078630000.png
+shyftlabs`ShyftLabs`https://lever-client-logos.s3.us-west-2.amazonaws.com/e51a226b-a430-49c3-951a-828fb3a7fe71-1657119020322.png
+delfidiagnostics`Delfi Diagnostics Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/acf3e3ce-c17c-4503-872c-24c5b2b97fea-1620923924812.png
+miteksystems-2`Mitek Systems`https://lever-client-logos.s3.us-west-2.amazonaws.com/c7d98db2-f00c-46df-8e0e-d808e93beafe-1666191880794.png
+feathr`Feathr`https://lever-client-logos.s3.us-west-2.amazonaws.com/78f61fd1-d697-4f7d-8e96-ba39f5627a78-1623089693689.png
+relativity`Relativity`https://lever-client-logos.s3.amazonaws.com/58f14b62-e545-47a4-bf79-674ad73b42e3-1515010593285.png
+JourneyClinical`Journey Clinical`https://lever-client-logos.s3.us-west-2.amazonaws.com/10732ab7-c21c-4fdd-abfc-dbf3a90e2e3f-1675803595854.png
+global-vc`Global Ventures `https://lever-client-logos.s3.us-west-2.amazonaws.com/d338ca71-8df8-4704-9b93-7d608ef0b65e-1632823544465.png

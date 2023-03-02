@@ -871,3 +871,6 @@ EVERSANA1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63c6ad0
 SBMSiteServicesLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5192521be4b02e555f760c47/huge?r=s3
 GNC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63805a180a952c20dd21e71a/9c06cc1a-0399-4787-9597-bd7577034167?r=s3-eu-central-1
 Homzmart`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f045735e045723c5d69cfe5/150px?r=s3-eu-central-1
+VuoriInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63852e50a08c184a0bd3adb6/huge?r=s3-eu-central-1
+SilentGames`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fabbeb97923d3184be59556/huge?r=s3-eu-central-1
+Trigo`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6362d6d8ba28d84b4f59dccd/4305d2f5-0582-449c-be33-2e5d8b6e2fb9?r=s3-eu-central-1

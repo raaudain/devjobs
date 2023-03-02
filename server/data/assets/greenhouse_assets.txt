@@ -1787,3 +1787,15 @@ bayada`BAYADA Home Health Care`https://s2-recruiting.cdn.greenhouse.io/external_
 cruiseuniversity`Cruise - University`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/343/resized/Cruise-Greenhouse-Wordmark.png
 globalsavingsgroup`Global Savings Group`None
 rcgglobalservices`RCG Global Services (Career Site)`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/162/100/resized/RCG_logo.png
+truv`Truv`None
+tide`Careers at Tide`None
+vaynermedia`VaynerMedia LLC`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/393/resized/VM_Logo_LINKEDIN.png
+themartinagency`The Martin Agency`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/797/600/resized/usB9o4rK_400x400.png
+sezzle`Sezzle`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/196/500/resized/Greenhouse_Logo.jpg
+guidepointsecurity`GuidePoint Security`None
+teads`Teads`None
+incode`Incode Technologies`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/560/200/resized/Incode_Logo.jpg
+squarepointcapital`Squarepoint Capital`None
+evolutioniq`EvolutionIQ`None
+uniteus`Unite Us`None
+vivi`Vivi`None

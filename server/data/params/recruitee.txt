@@ -182,7 +182,6 @@ comsof
 pennyappealusa
 ultratendency
 ninjasinpyjamas
-zooplusfrance
 defshopgmbh
 ohpolly
 systemssunlight
@@ -192,7 +191,6 @@ institutminestelecom
 ockto
 hazera
 kieszon
-zoopluspoland
 snapeda
 trustedshopsbv
 neni
@@ -215,11 +213,9 @@ werkenbijsolis
 lemonwayjobcareers
 guts
 fcb
-zooplusitalia
 inovo1
 qlfbrands
 gcbiotech
-zooplusnetherlands
 jamwerkt
 dckgroup
 wizbii2
@@ -231,7 +227,6 @@ hardthyperloop
 softwareimprovementgroup
 sportsolutions
 kodi
-zooplusaustria
 werkeninleisure
 mobielnl
 novritschtrading
@@ -313,7 +308,6 @@ tullochconsulting
 4411
 vigere
 monstarlab
-zooplusspain
 hotzegruppe
 funke
 nsecure
@@ -518,7 +512,6 @@ upcloud
 protonmail
 dauvister
 schneidermarketing
-zoolog
 fairfamily
 cellexgmbh
 cvonwf
@@ -873,7 +866,6 @@ simplifiedconceptsgroup
 businessadvisors
 rivierduinen
 cordaan
-zooplusuk
 werraenergie
 sandwave
 eclecticiq
@@ -963,10 +955,8 @@ sunwebgroup1
 ikbenfrits
 upside
 lindemanngmbh
-status
 krimphove
 flyingbisons
-ridestoreab
 xsarus
 treenation
 fuga
@@ -974,6 +964,5 @@ newmotion
 myjobtech
 uniplacescareers
 capcar
-easyship
 hacheundseelinger
 werkenbijmicazu

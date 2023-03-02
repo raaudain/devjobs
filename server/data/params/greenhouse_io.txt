@@ -60,7 +60,6 @@ bigid
 bigspring
 bitgo
 blend
-blockfi
 brave
 bugcrowd
 buzzfeed
@@ -480,7 +479,6 @@ smileidentity
 cosm
 dalbergdesign
 nichecom
-postlight
 zylo
 arthurai
 trellisrx
@@ -1680,17 +1678,12 @@ inter
 teads
 truv
 incode
-cohley
 squarepointcapital
 tide
-kettle
 vaynermedia
 evolutioniq
 themartinagency
 uniteus
 sezzle
-sundae
-graphenedx
 vivi
 guidepointsecurity
-syncari

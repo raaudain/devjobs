@@ -68,8 +68,4 @@ ripen
 mindday
 tint
 just
-www
-community
-api-docs
-blog
 lafamigliavc

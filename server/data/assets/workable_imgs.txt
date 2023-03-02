@@ -1482,3 +1482,12 @@ prismplus`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/535411/lo
 peoplepowered`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/470841/logo
 solaimpact`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/586744/logo
 msps-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/563593/logo
+debiopharm`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/258937/logo
+voyager-ventures`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/549469/logo
+whiparound`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/285204/logo
+kule`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/409663/logo
+drinkprime`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/591762/logo
+ninjatech-ai`n/a`None
+e-food`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/21334/logo
+metabolic-careers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/94920/logo
+monite`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/538198/logo

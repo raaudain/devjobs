@@ -413,7 +413,6 @@ bresmed
 mediacorp
 inboxhealth
 qoala
-kitch
 uswitch
 multiplicatalent
 elephanthealthcare
