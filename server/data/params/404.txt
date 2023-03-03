@@ -751,3 +751,5 @@ kettle
 sundae
 syncari
 bridg
+smartly
+crewbloom
