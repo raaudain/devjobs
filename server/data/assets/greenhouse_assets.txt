@@ -1799,3 +1799,17 @@ squarepointcapital`Squarepoint Capital`None
 evolutioniq`EvolutionIQ`None
 uniteus`Unite Us`None
 vivi`Vivi`None
+illumio`Illumio`None
+mhi`Myers-Holum`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/206/000/resized/MHI_Canva1.png
+venn`Venn`None
+thenewyorktimes`The New York Times`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/378/700/resized/NYT-WMK-K-RGB_(4).png
+lookoutinc`Lookout Inc`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/997/resized/Lookout-Indeed-Logo-200x200px.jpg
+junipersquare`Juniper Square`None
+rippling`Rippling`None
+withinhealth`Within Health`None
+unitedmedia`United Media`None
+rebuildmanufacturing`Re:Build Manufacturing`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/037/200/resized/Rebuild-manufacturing-logo-full_2x.jpg
+gafg`Global Atlantic Financial Group`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/009/399/resized/9.9_LinkedIn_GAFG_icon.png
+onetrust`OneTrust`None
+mynd`Mynd`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/051/700/resized/Mynd_LI_cover_neon.jpg
+valimailinc`Valimail`None

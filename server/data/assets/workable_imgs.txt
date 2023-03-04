@@ -1491,3 +1491,17 @@ ninjatech-ai`n/a`None
 e-food`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/21334/logo
 metabolic-careers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/94920/logo
 monite`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/538198/logo
+agility`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/501923/logo
+space-matrix`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/64847/SM-Logo_Transparent.png
+snowed-in-studios-3`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/551811/logo
+terminal49`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/341422/logo
+circles`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/356977/logo
+talis-group-limited`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/13317/logo
+theouai`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/579456/logo
+fairmatic`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/576439/logo
+lakshyadigitalglobal`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/551819/logo
+skan`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/447601/logo
+access-bank`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/174550/logo
+selfpublishing`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/405913/logo
+onfolio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/587455/logo
+taylorpond`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575366/logo

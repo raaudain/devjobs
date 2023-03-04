@@ -968,9 +968,7 @@ hacheundseelinger
 werkenbijmicazu
 rotzingergruppe
 adjuvaris
-status
 asbnordwest
-auth
 mpeople
 engin
 cscfi
@@ -980,9 +978,5 @@ salosi
 biximontreal
 trafilea
 tameson
-zooplusfrance
 bucherinvestgmbh
-zooplusitalia
-zooplusnetherlands
-zooplusaustria
 mobalytics

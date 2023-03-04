@@ -1465,7 +1465,6 @@ swiftnavigation
 getprospa
 vorihealth
 jasper23
-mastercardfoundation
 samsungresearchamericainternship
 thearenagroup
 jusbrasil
@@ -1686,13 +1685,11 @@ uniteus
 sezzle
 vivi
 guidepointsecurity
-seniorly
 withinhealth
 illumio
 unitedmedia
 mhi
 rebuildmanufacturing
-cohley
 gafg
 venn
 onetrust
@@ -1701,5 +1698,4 @@ mynd
 lookoutinc
 valimailinc
 junipersquare
-sundae
 rippling

@@ -1457,3 +1457,11 @@ feathr`Feathr`https://lever-client-logos.s3.us-west-2.amazonaws.com/78f61fd1-d69
 relativity`Relativity`https://lever-client-logos.s3.amazonaws.com/58f14b62-e545-47a4-bf79-674ad73b42e3-1515010593285.png
 JourneyClinical`Journey Clinical`https://lever-client-logos.s3.us-west-2.amazonaws.com/10732ab7-c21c-4fdd-abfc-dbf3a90e2e3f-1675803595854.png
 global-vc`Global Ventures `https://lever-client-logos.s3.us-west-2.amazonaws.com/d338ca71-8df8-4704-9b93-7d608ef0b65e-1632823544465.png
+OdaiaIntelligence`ODAIA Intelligence Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9a9271a-45b2-447f-9ee8-e031801be477-1634589732268.png
+hatchit`Hatch IT`https://lever-client-logos.s3.amazonaws.com/5a426610-f14f-4430-a0fd-69d88c43b82c-1543340198221.png
+emilyslist`EMILYs List`https://lever-client-logos.s3.us-west-2.amazonaws.com/88d5cf85-9030-4be2-a895-1eb18a92b065-1661874076792.png
+remedyentertainment`Remedy Entertainment`https://lever-client-logos.s3.amazonaws.com/dd100026-61ba-45a5-bd81-bddfadd830a1-1540538390278.png
+voleon`The Voleon Group`https://lever-client-logos.s3.amazonaws.com/3b9df4d1-8342-4deb-8976-b664c5d59682-1460752797439.png
+nzero`nZero`https://lever-client-logos.s3.us-west-2.amazonaws.com/af895096-9a46-43f0-b50c-c15dfd750152-1675895198755.png
+uberflip`Uberflip`https://lever-client-logos.s3.us-west-2.amazonaws.com/13c52d9d-6434-49cd-970c-6e45428a2cce-1601331388611.png
+loaded`Loaded`https://lever-client-logos.s3.us-west-2.amazonaws.com/cc1c532f-8882-4b80-8530-0c91efbd4b11-1622072746713.png
