@@ -981,3 +981,5 @@ GNC
 Homzmart
 Trigo
 VuoriInc
+SensaraBV
+RepRiskAG
