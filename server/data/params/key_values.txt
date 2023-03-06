@@ -10,7 +10,6 @@
 /upduo
 /reduct
 /chani
-/retired-the-mom-project
 /retired-monograph
 /sibi
 /indent

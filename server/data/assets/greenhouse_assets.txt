@@ -1813,3 +1813,4 @@ gafg`Global Atlantic Financial Group`https://recruiting.cdn.greenhouse.io/extern
 onetrust`OneTrust`None
 mynd`Mynd`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/051/700/resized/Mynd_LI_cover_neon.jpg
 valimailinc`Valimail`None
+honeybook`HoneyBook`None
