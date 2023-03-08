@@ -626,3 +626,5 @@ magicbrief
 thera
 Empo%20Health
 Tome
+arcade
+lumen.energy

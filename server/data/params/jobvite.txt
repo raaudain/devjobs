@@ -811,3 +811,7 @@ tradex
 tegriarcm
 tocgrp
 wedgewood
+espares
+phunware
+uplight
+manhattanstrategy
