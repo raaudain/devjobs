@@ -70,8 +70,4 @@ tint
 just
 lafamigliavc
 juno
-www
-community
-api-docs
-blog
 kate

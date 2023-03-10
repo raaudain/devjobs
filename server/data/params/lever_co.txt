@@ -41,7 +41,6 @@ outschool
 automox
 workos
 replit
-zoba
 mattermost
 heyrowan
 greenlight
@@ -530,7 +529,6 @@ saturn
 devacurl
 pibenchmark
 metabase
-Lottery
 sheerid
 doxel
 skyways

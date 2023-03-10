@@ -1814,3 +1814,10 @@ onetrust`OneTrust`None
 mynd`Mynd`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/051/700/resized/Mynd_LI_cover_neon.jpg
 valimailinc`Valimail`None
 honeybook`HoneyBook`None
+velocity`Velocity`None
+viamrobotics`Viam`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/273/100/resized/logo.png
+wizinc`Wiz, Inc.`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/061/500/resized/Wiz_Hiring_Neon_Sign_compressed_v2.gif
+leveltenenergy`LevelTen Energy`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/138/700/resized/LevelTen_Core_Icon-01.jpg
+lighthouseautismcenter`Lighthouse Autism Center`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/793/300/resized/lighthouse-primary.png
+educators2324schoolyear`Alliance College-Ready Public Schools (Educators)`None
+gomotive`Motive`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/003/400/resized/img-linkedin-companyavatar_2x.png

@@ -1505,3 +1505,15 @@ access-bank`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/174550/
 selfpublishing`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/405913/logo
 onfolio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/587455/logo
 taylorpond`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575366/logo
+starry`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/163729/logo
+gccservices`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/96543/logo
+jump`n/a`None
+resource-innovations`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/385704/logo
+mygrantglass`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/447558/logo
+4most`n/a`None
+alfadocs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/22999/logo
+mysociety`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/208747/mysociety-logo.jpg
+prescriberpoint`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553532/logo
+torklaw`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/256753/logo
+attio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/536532/logo
+bizforcenow`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/565227/logo

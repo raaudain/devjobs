@@ -876,3 +876,9 @@ SilentGames`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fabbeb97
 Trigo`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6362d6d8ba28d84b4f59dccd/4305d2f5-0582-449c-be33-2e5d8b6e2fb9?r=s3-eu-central-1
 RepRiskAG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60e45f09848a602f77247b2c/huge?r=s3-eu-central-1
 SensaraBV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bed8b8aee358800073884ab/150px?r=s3-eu-central-1
+PriorsCourt`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fd110996d389253eef0e37e/huge?r=s3-eu-central-1
+Averna1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/627581f77ccded6e5b26b927/150px?r=s3-eu-central-1
+IAGGBS1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/637cc99d3b8215568128c8cb/150px?r=s3-eu-central-1
+Conga`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63655e4a333af931b9673066/6e5e8b36-9523-42ce-b06e-40ea24ad359a?r=s3-eu-central-1
+UnitekLearning`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63654eec83ac936387503633/150px?r=s3-eu-central-1
+Ramboll3`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61976143f5f3344e7268f31e/42b2a37d-0498-4fdd-adaf-106bf49c17fe?r=s3-eu-central-1

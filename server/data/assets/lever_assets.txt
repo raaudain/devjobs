@@ -1465,3 +1465,11 @@ voleon`The Voleon Group`https://lever-client-logos.s3.amazonaws.com/3b9df4d1-834
 nzero`nZero`https://lever-client-logos.s3.us-west-2.amazonaws.com/af895096-9a46-43f0-b50c-c15dfd750152-1675895198755.png
 uberflip`Uberflip`https://lever-client-logos.s3.us-west-2.amazonaws.com/13c52d9d-6434-49cd-970c-6e45428a2cce-1601331388611.png
 loaded`Loaded`https://lever-client-logos.s3.us-west-2.amazonaws.com/cc1c532f-8882-4b80-8530-0c91efbd4b11-1622072746713.png
+theflexcompany`The Flex Company`https://lever-client-logos.s3.us-west-2.amazonaws.com/56c15211-5288-488c-843f-272ce26d4ef6-1637602946471.png
+causal-app`Causal`https://lever-client-logos.s3.us-west-2.amazonaws.com/3c288f56-c8ba-429c-9bd1-14a41561092a-1638792012446.png
+algorex`N1 Health (formerly Algorex Health)`https://lever-client-logos.s3.us-west-2.amazonaws.com/b5a80905-f012-4740-ae2b-c4b1e4a58018-1661348794717.png
+trader`AutoTrader.ca`https://lever-client-logos.s3.us-west-2.amazonaws.com/a8fa8661-de47-4b20-b96d-235ee82aaa11-1652199359040.png
+RunForSomething`Run For Something`https://lever-client-logos.s3.us-west-2.amazonaws.com/233ee7a3-e417-47bc-8288-b49b7a821748-1631479993977.png
+via`Via.Work`https://lever-client-logos.s3-us-west-2.amazonaws.com/f478ee8a-b3b2-4e7d-bf78-6bd797d73434-1585324194364.png
+sunpower`SunPower`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0d46f52-0997-49d1-baa2-84657e960894-1652922760767.png
+freedompay`FreedomPay`https://lever-client-logos.s3-us-west-2.amazonaws.com/82a8e6d2-2951-425c-9707-8419f8ec295f-1595338145713.png

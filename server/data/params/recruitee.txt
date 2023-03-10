@@ -312,7 +312,6 @@ funke
 nsecure
 crossphase
 thirdway
-barkyn
 foxrh
 gevgroupltd
 hmclause
@@ -900,7 +899,6 @@ backereibrunnerkg
 tbibankgr
 wannabeatonytoo
 exp1consulting
-clubllondon
 hofmannmetallgmbh
 spletnik
 heydayfm
@@ -980,11 +978,9 @@ bucherinvestgmbh
 mobalytics
 dynamicpeople
 riversidecruises
-status
 gemeindelilienthal
 reframe
 bettercollective
 iliabeauty
-auth
 deepsea
 lakatoolsgmbh

@@ -380,7 +380,6 @@ amplifon-il
 gohealthuc
 pathwayshealth
 yespreppublicschools
-deltaconstructors
 nirvc
 mersana
 alverno-laboratories
@@ -814,4 +813,3 @@ wedgewood
 espares
 phunware
 uplight
-manhattanstrategy

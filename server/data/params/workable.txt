@@ -150,7 +150,6 @@ wappier
 pixelogicmedia
 fluent
 bmlltech
-landinsight
 finexio
 conversion
 within3
@@ -1113,7 +1112,6 @@ weetabix
 lapoflovejobs
 getbits
 6point6
-girteka
 lincolnavenue
 avvir
 eathoshr
