@@ -1821,3 +1821,16 @@ leveltenenergy`LevelTen Energy`https://s4-recruiting.cdn.greenhouse.io/external_
 lighthouseautismcenter`Lighthouse Autism Center`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/793/300/resized/lighthouse-primary.png
 educators2324schoolyear`Alliance College-Ready Public Schools (Educators)`None
 gomotive`Motive`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/003/400/resized/img-linkedin-companyavatar_2x.png
+leafguard`LeafGuard`None
+pawp`Pawp`None
+atomwise`Atomwise`None
+glance`Glance`None
+rapidrobotics`Rapid Robotics`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/168/900/resized/RR_userpic_round_copy.png
+magoosh`Magoosh`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/000/836/resized/magoosh_logo_200x.png
+biofourmis`Biofourmis`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/653/800/resized/biofourmis-logo-blue-rgb-900px-w-72ppi.png
+baystateptjobs`Bay State Physical Therapy - PT jobs`None
+pfl`PFL`None
+spanio`SPAN`None
+spotai`Spot AI`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/622/500/resized/spot-ai-logo-greenhouse_2x.png
+farmersbusinessnetwork`Farmer's Business Network, Inc.`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/004/552/resized/ACFrOgCvL0h9X6PZvRX46v5RJRaS14MSbCRpo7cCR0ePZGD32wg1Q7yn2uYmMovU55sI0A7ffjF_VKw_5IGA5vNqKzyNfu4OcRHrZsmc23ehOIFHU3qf4pxeUMF-lKoCAlPqIgQ872mZe27MBXPI.jpg
+sunsetanytime`Sunset Animal Hospital`None

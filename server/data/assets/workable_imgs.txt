@@ -1517,3 +1517,15 @@ prescriberpoint`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553
 torklaw`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/256753/logo
 attio`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/536532/logo
 bizforcenow`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/565227/logo
+demo-s-dot-a`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/465624/logo
+indico`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/561932/logo
+publicgroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/465193/logo
+papernest`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/275541/logo
+worldfish`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/51682/WorldFish-Logo-23mm.jpg
+cebroker`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/538197/logo
+jobjack`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/569549/logo
+assogroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/527524/logo
+firstleaf`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/244708/logo
+stacker`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/454668/logo
+pirate-studios`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/383901/logo
+space48`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/434668/logo

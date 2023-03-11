@@ -882,3 +882,5 @@ IAGGBS1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/637cc99d3b821
 Conga`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63655e4a333af931b9673066/6e5e8b36-9523-42ce-b06e-40ea24ad359a?r=s3-eu-central-1
 UnitekLearning`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63654eec83ac936387503633/150px?r=s3-eu-central-1
 Ramboll3`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61976143f5f3344e7268f31e/42b2a37d-0498-4fdd-adaf-106bf49c17fe?r=s3-eu-central-1
+SMGSwissMarketplaceGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62e8ca2ce5a0274664572dbf/150px?r=s3-eu-central-1
+ChiquitaBrandsInternationalSrl`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bf68d9b131c1e3d3dea7a97/150px?r=s3-eu-central-1

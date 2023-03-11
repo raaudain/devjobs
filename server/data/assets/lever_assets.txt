@@ -1473,3 +1473,15 @@ RunForSomething`Run For Something`https://lever-client-logos.s3.us-west-2.amazon
 via`Via.Work`https://lever-client-logos.s3-us-west-2.amazonaws.com/f478ee8a-b3b2-4e7d-bf78-6bd797d73434-1585324194364.png
 sunpower`SunPower`https://lever-client-logos.s3.us-west-2.amazonaws.com/c0d46f52-0997-49d1-baa2-84657e960894-1652922760767.png
 freedompay`FreedomPay`https://lever-client-logos.s3-us-west-2.amazonaws.com/82a8e6d2-2951-425c-9707-8419f8ec295f-1595338145713.png
+Scalapay`Scalapay`https://lever-client-logos.s3.us-west-2.amazonaws.com/5ec6b7b7-24fb-4eba-ac64-ccbe8c4b425e-1622774611562.png
+vrchat`VRChat`https://lever-client-logos.s3.us-west-2.amazonaws.com/16c5d1d1-0ac1-4408-b9c1-b6e5457f2d8d-1639612289951.png
+reebelo`Reebelo`https://lever-client-logos.s3.us-west-2.amazonaws.com/620b37ff-0a1d-4086-82a6-8b04c1e090af-1644391993015.png
+shipmonk`ShipMonk`https://lever-client-logos.s3.us-west-2.amazonaws.com/5286afe3-b01c-4321-bcd1-e2c47bc7397d-1627575422310.png
+lightship`Lightship`https://lever-client-logos.s3.us-west-2.amazonaws.com/23d75b00-b37e-49dc-bcf6-955ac4243ec4-1678231406122.png
+sgff.org`Sheryl Sandberg & Dave Goldberg Family Foundation`https://lever-client-logos.s3.amazonaws.com/70966443-d78d-4eea-872d-b19ead9ef375-1535821819615.png
+esimplicity`eSimplicity`https://lever-client-logos.s3-us-west-2.amazonaws.com/604f6d08-b258-47df-a902-6def5fe5a3a9-1591904096199.png
+oxio`OXIO`https://lever-client-logos.s3.us-west-2.amazonaws.com/10d0cf36-cb6e-4038-8d72-06c5aaa1cc8c-1656689461733.png
+SparkClimateSolutions`Spark Climate Solutions`https://lever-client-logos.s3.us-west-2.amazonaws.com/3ae3fc46-0add-47a7-a366-70c739b2654b-1657310081363.png
+bucketlisters`Bucket Listers`https://lever-client-logos.s3.us-west-2.amazonaws.com/ce49735a-06f7-429c-9601-8679609b57b0-1677294570020.png
+memfault`Memfault`https://lever-client-logos.s3.us-west-2.amazonaws.com/3203830f-81f9-406e-8f68-e3f9208ef252-1617224981710.png
+matillion`Matillion`https://lever-client-logos.s3.us-west-2.amazonaws.com/11ffabca-4096-418a-9793-00629e322ce0-1617180984511.png
