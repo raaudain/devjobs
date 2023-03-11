@@ -991,3 +991,5 @@ Conga
 Metasys
 PriorsCourt
 EPSOG
+SMGSwissMarketplaceGroup
+ChiquitaBrandsInternationalSrl
