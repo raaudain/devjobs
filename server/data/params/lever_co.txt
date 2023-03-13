@@ -185,7 +185,6 @@ messari
 nexient
 bellhops
 color
-airship
 lyrahealth
 superpedestrian
 skillshare
@@ -435,7 +434,6 @@ connectly
 evenfinancial
 ibble
 loyalfordogs
-lunchclub
 BoomandBucket
 narmi
 walkerandcompany
