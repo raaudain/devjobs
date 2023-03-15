@@ -993,3 +993,5 @@ PriorsCourt
 EPSOG
 SMGSwissMarketplaceGroup
 ChiquitaBrandsInternationalSrl
+TheSpringsLiving
+SeniorLifestyle1

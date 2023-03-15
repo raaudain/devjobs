@@ -634,3 +634,6 @@ svix
 halo
 willreed
 Solana%20Foundation
+Mnemonic
+keyrock
+gravitysketch
