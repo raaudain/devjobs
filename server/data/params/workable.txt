@@ -1475,7 +1475,6 @@ jump
 torklaw
 bizforcenow
 4most
-attio
 resource-innovations
 starry
 mysociety

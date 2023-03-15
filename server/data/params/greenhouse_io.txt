@@ -373,7 +373,6 @@ vardaspace
 acronis
 cajalneuro
 zenefits
-sendwaveapp
 ebanx
 sondermind
 catawiki
@@ -1723,7 +1722,6 @@ smalldoor
 adept
 la2028
 definitivehcindia
-sundae
 googlefiber
 tarsusrx
 bloomerang

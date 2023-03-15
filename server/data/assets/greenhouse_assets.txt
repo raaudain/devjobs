@@ -1834,3 +1834,17 @@ spanio`SPAN`None
 spotai`Spot AI`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/622/500/resized/spot-ai-logo-greenhouse_2x.png
 farmersbusinessnetwork`Farmer's Business Network, Inc.`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/004/552/resized/ACFrOgCvL0h9X6PZvRX46v5RJRaS14MSbCRpo7cCR0ePZGD32wg1Q7yn2uYmMovU55sI0A7ffjF_VKw_5IGA5vNqKzyNfu4OcRHrZsmc23ehOIFHU3qf4pxeUMF-lKoCAlPqIgQ872mZe27MBXPI.jpg
 sunsetanytime`Sunset Animal Hospital`None
+corvusinsurance`Corvus Insurance`None
+wrike`Wrike Careers Page`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/249/300/resized/Create-image-for-hiring-04.jpg
+diligentrobotics`Diligent Robotics`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/058/900/resized/Diligent_Robotics_Logo-36206.png
+curaleaf`Curaleaf`None
+adept`Adept`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/237/200/resized/adept-logo.png
+definitivehcindia`Definitive Healthcare, India`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/918/800/resized/DefinitiveHealthcare_Logo_FullColor_April_2021-01.png
+googlefiber`GFiber`None
+bloomerang`Bloomerang`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/016/100/resized/Logo_-_Clear_Small.jpeg
+hederahashgraph77`Hedera Hashgraph`None
+blueridgepower`Blue Ridge Power`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/657/400/resized/Logo_Horizontal_color.png
+aescape`Aescape, Inc.`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/106/100/resized/AescapeLogo-Greenhouse.png
+smalldoor`Small Door Veterinary`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/018/400/resized/SmallDoor_PrimaryMark_CMYK_Black_(1).png
+la2028`LA28`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/127/700/resized/LA28_Dual_Emblem_GradientScript_Prism.png
+tarsusrx`Tarsus Pharmaceuticals`None

@@ -817,6 +817,5 @@ osufoundation
 proag
 dmg
 mcn
-deltaconstructors
 premier-research
 upland-software

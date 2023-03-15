@@ -1529,3 +1529,7 @@ firstleaf`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/244708/lo
 stacker`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/454668/logo
 pirate-studios`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/383901/logo
 space48`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/434668/logo
+openhealth`n/a`None
+molecule`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/27877/logo
+aryeo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/435659/logo
+livemorecapital`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/451480/logo

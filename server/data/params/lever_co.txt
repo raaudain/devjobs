@@ -4,7 +4,6 @@ tessian
 Continu
 frontapp
 3box
-nylas
 olo
 divvyhomes
 nestwealth

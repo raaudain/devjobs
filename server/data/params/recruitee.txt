@@ -448,7 +448,6 @@ chillhopmusic
 caremanagementsuissegmbh
 atolye
 personalhub
-talentheroes
 hilfeinnotpflegegmbh
 aajt
 affideaportugal
@@ -834,7 +833,6 @@ lindemannsilikon
 americanbusinesscoalition
 boname
 hvkstevens
-phase
 navinfoeurope
 thollembeek
 scanbotsdk
