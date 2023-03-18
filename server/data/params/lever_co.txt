@@ -177,7 +177,6 @@ hipcamp
 covariant
 onuniverse
 angaza
-figma
 palantir
 matchgroup
 messari
@@ -769,7 +768,6 @@ hive
 DeliberateSolutions
 smartcar
 healthverity
-mheducation
 govini
 flatfile
 silo

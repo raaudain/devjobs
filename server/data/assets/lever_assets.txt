@@ -1493,3 +1493,8 @@ rover`Rover.com`https://lever-client-logos.s3.amazonaws.com/0084b9a2-d129-4f1d-8
 ecosia`Ecosia`https://lever-client-logos.s3.us-west-2.amazonaws.com/d67caf41-9d0a-40f9-893b-9f73a0bbac0c-1654772541204.png
 thehousemajoritypac`House Majority PAC`https://lever-client-logos.s3.us-west-2.amazonaws.com/20572421-5dd6-4f94-88e0-27190385e520-1635449507310.png
 ushur`Ushur`https://lever-client-logos.s3.us-west-2.amazonaws.com/41c6e8c5-b695-4c73-a525-00c20e32c65d-1661363050976.png
+dga`Democratic Governors Association`https://lever-client-logos.s3.amazonaws.com/8ecd04c2-dfcc-4e2a-af81-309fdf44b0af-1563895014322.png
+Prodigal`Prodigal`https://lever-client-logos.s3.us-west-2.amazonaws.com/18e66ebe-8507-4a98-b617-fcf6fb0a80bb-1627545919102.png
+linq`LINQ`https://lever-client-logos.s3.us-west-2.amazonaws.com/161515e2-8c0c-4ed0-a802-5fe1c0b2360a-1673996666684.png
+logically`Logically`https://lever-client-logos.s3.us-west-2.amazonaws.com/5395655d-5b2a-4be6-97e1-6340679f7013-1643026457155.png
+fullstacklabs`FullStack Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/3561957e-5435-4b83-a866-a9a3b2b80903-1679005512523.png
