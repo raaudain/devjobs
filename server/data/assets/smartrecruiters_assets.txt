@@ -886,3 +886,9 @@ SMGSwissMarketplaceGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-
 ChiquitaBrandsInternationalSrl`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bf68d9b131c1e3d3dea7a97/150px?r=s3-eu-central-1
 TheSpringsLiving`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/545d5a7ee4b0f73bc052554e/5c893624-1fb6-4803-9369-f90439df3840
 McDonaldsOesterreich`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d97c33cb5c7ff4cc8a70a27/huge?r=s3-eu-central-1
+besix`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5a293492e4b0aa023ed45237/9ce5e4a4-afb5-427a-8fae-3ed29c777878?r=s3-eu-central-1
+wellnesspointe`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d6b1e4b0b42dcb45c52a/150px
+Trainline`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63d261594d6a3830d58856f5/f561914d-4945-45ce-9f04-28fb6d34a60a?r=s3-eu-central-1
+CoffmanEngineersInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ddeec6a6dc45f7f844e4d89/huge?r=s3-eu-central-1
+Eataly`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/606e0aab9f34d25f9c85ba99/huge?r=s3-eu-central-1
+TruckCentersInc`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/554e5fe0e4b0b693957e53a9/a464aa1d-952a-4bd6-824e-a774c5b9bff5?r=s3

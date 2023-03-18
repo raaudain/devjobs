@@ -1848,3 +1848,8 @@ aescape`Aescape, Inc.`https://s6-recruiting.cdn.greenhouse.io/external_greenhous
 smalldoor`Small Door Veterinary`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/018/400/resized/SmallDoor_PrimaryMark_CMYK_Black_(1).png
 la2028`LA28`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/127/700/resized/LA28_Dual_Emblem_GradientScript_Prism.png
 tarsusrx`Tarsus Pharmaceuticals`None
+somatus`Somatus`None
+assetliving`Asset Living`None
+earnin`EarnIn`None
+nexuscareers`Nexus`None
+coalition`Coalition`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/269/700/resized/JoinOurTeam-StyleB.png

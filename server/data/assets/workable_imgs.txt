@@ -1533,3 +1533,13 @@ openhealth`n/a`None
 molecule`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/27877/logo
 aryeo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/435659/logo
 livemorecapital`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/451480/logo
+listella`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/580513/logo
+tyme`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/546852/logo
+maisie-hill-ltd`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/532675/logo
+oqc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/474173/logo
+kidadl`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/529453/logo
+mews`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/463583/logo
+feedr`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/423902/logo
+experoinc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5118/Logo_Slogan.png
+control-risks-6`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/482301/logo
+knorex`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/261892/logo
