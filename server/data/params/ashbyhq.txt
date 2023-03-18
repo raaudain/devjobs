@@ -637,3 +637,8 @@ Solana%20Foundation
 Mnemonic
 keyrock
 gravitysketch
+axiom
+hoxtonfarms
+croporg
+fig
+equals

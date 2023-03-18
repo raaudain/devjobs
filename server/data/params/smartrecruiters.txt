@@ -995,3 +995,9 @@ SMGSwissMarketplaceGroup
 ChiquitaBrandsInternationalSrl
 TheSpringsLiving
 SeniorLifestyle1
+Eataly
+besix
+TruckCentersInc
+wellnesspointe
+CoffmanEngineersInc
+Trainline

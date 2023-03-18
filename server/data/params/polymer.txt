@@ -235,3 +235,6 @@ rarebase
 fairly
 localvr
 duende
+dep
+loci
+nfty
