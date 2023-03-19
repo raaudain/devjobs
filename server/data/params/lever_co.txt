@@ -88,7 +88,6 @@ healthsherpa
 hopper
 hyperscience
 icertis
-ifttt
 immuta
 instawork
 instructure
