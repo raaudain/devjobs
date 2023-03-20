@@ -892,3 +892,4 @@ Trainline`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63d2615
 CoffmanEngineersInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5ddeec6a6dc45f7f844e4d89/huge?r=s3-eu-central-1
 Eataly`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/606e0aab9f34d25f9c85ba99/huge?r=s3-eu-central-1
 TruckCentersInc`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/554e5fe0e4b0b693957e53a9/a464aa1d-952a-4bd6-824e-a774c5b9bff5?r=s3
+GroupementLesMousquetaires`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60a391e9c78b3a13574744c0/huge?r=s3-eu-central-1

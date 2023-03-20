@@ -1498,3 +1498,4 @@ Prodigal`Prodigal`https://lever-client-logos.s3.us-west-2.amazonaws.com/18e66ebe
 linq`LINQ`https://lever-client-logos.s3.us-west-2.amazonaws.com/161515e2-8c0c-4ed0-a802-5fe1c0b2360a-1673996666684.png
 logically`Logically`https://lever-client-logos.s3.us-west-2.amazonaws.com/5395655d-5b2a-4be6-97e1-6340679f7013-1643026457155.png
 fullstacklabs`FullStack Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/3561957e-5435-4b83-a866-a9a3b2b80903-1679005512523.png
+cfgi`CFGI`https://lever-client-logos.s3.us-west-2.amazonaws.com/8d81187e-0296-4a5b-8b40-e71d915dbe0d-1679327031140.png
