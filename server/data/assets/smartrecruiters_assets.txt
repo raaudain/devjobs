@@ -893,3 +893,7 @@ CoffmanEngineersInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5
 Eataly`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/606e0aab9f34d25f9c85ba99/huge?r=s3-eu-central-1
 TruckCentersInc`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/554e5fe0e4b0b693957e53a9/a464aa1d-952a-4bd6-824e-a774c5b9bff5?r=s3
 GroupementLesMousquetaires`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60a391e9c78b3a13574744c0/huge?r=s3-eu-central-1
+CleverConnect`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5beda553cff47e00063a6de9/huge?r=s3-eu-central-1
+BEUMERGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a817ee0e4b0d8713c02f35b/150px?r=s3-eu-central-1
+ApplusIDIADA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63579c925c57fb6848381ddf/150px?r=s3-eu-central-1
+TotemCourtage`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f0edb369ca86439e9c982fe/150px?r=s3-eu-central-1

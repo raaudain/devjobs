@@ -190,3 +190,4 @@ localvr`n/a`https://inflow-public.s3.amazonaws.com/company-logos/cm4zaxu4pwv1ykg
 rarebase`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rfvwjJCEqyHa4fwouQuEbGzb.svg
 fairly`n/a`https://inflow-public.s3.amazonaws.com/company-logos/iMivfkRHyFr6zLwyGYftCf58.svg
 nfty`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zeoe0zcklotus9vwmce3c8jh9fpp.png
+hedral`n/a`https://inflow-public.s3.amazonaws.com/company-logos/b4hsxemdfqxgaa3kqigscv3qnrkt.png

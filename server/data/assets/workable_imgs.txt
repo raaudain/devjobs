@@ -1543,3 +1543,7 @@ feedr`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/423902/logo
 experoinc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5118/Logo_Slogan.png
 control-risks-6`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/482301/logo
 knorex`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/261892/logo
+thermulon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/592750/logo
+harrishmc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/527706/logo
+lattice-1`n/a`None
+sernabio`n/a`None

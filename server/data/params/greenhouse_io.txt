@@ -321,7 +321,6 @@ goalsyria
 marsdiscoverydistrict
 foursquare26
 bungie
-traveloka
 logrhythm
 livescore9
 wundercapital
@@ -1017,7 +1016,6 @@ ccah
 xosinc
 teampicnic
 riskified
-tesseradata
 carrotinc
 tines
 centerforemploymentopportunities
@@ -1733,4 +1731,3 @@ thriveworks
 flipp
 frequenceinc
 duda
-sundae

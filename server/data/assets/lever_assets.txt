@@ -1499,3 +1499,14 @@ linq`LINQ`https://lever-client-logos.s3.us-west-2.amazonaws.com/161515e2-8c0c-4e
 logically`Logically`https://lever-client-logos.s3.us-west-2.amazonaws.com/5395655d-5b2a-4be6-97e1-6340679f7013-1643026457155.png
 fullstacklabs`FullStack Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/3561957e-5435-4b83-a866-a9a3b2b80903-1679005512523.png
 cfgi`CFGI`https://lever-client-logos.s3.us-west-2.amazonaws.com/8d81187e-0296-4a5b-8b40-e71d915dbe0d-1679327031140.png
+mable`Mable`https://lever-client-logos.s3.us-west-2.amazonaws.com/ef05ab95-4e78-47d3-99ed-01db7cc885da-1652243287205.png
+dreamgames`Dream Games`https://lever-client-logos.s3.us-west-2.amazonaws.com/375de147-b02c-41a5-812b-09d7d35489ba-1641984583194.png
+warmly`Warmly,`https://lever-client-logos.s3.us-west-2.amazonaws.com/2f8dd292-b7bb-40ce-b9fd-8c4c5426817a-1633454296614.png
+sygnaturediscovery`Sygnature Discovery Limited`https://lever-client-logos.s3.us-west-2.amazonaws.com/0d266214-55e0-491d-bc80-e105f7434ee5-1660837768438.png
+cimgroup`CIM Group, LP`https://lever-client-logos.s3.amazonaws.com/0bd44ea2-4b98-49f2-af79-712e8200b879-1524507206472.png
+climatepower`Climate Power`https://lever-client-logos.s3.us-west-2.amazonaws.com/77a4d150-4cfa-4bd2-9cc2-45099e386476-1617374430148.png
+superside`Superside`https://lever-client-logos.s3.us-west-2.amazonaws.com/93575c98-6b60-4265-a640-4aa50297dd47-1674730165901.png
+altarum`Altarum`https://lever-client-logos.s3.us-west-2.amazonaws.com/ccd2daf6-eb18-4234-a02b-814a76de368f-1676486772666.png
+revinate`Revinate`https://lever-client-logos.s3.us-west-2.amazonaws.com/9f4562e7-3d86-42bb-8e37-07cb595ff43a-1664811532223.png
+remedyproductstudio`Remedy Product Studio`https://lever-client-logos.s3.us-west-2.amazonaws.com/c4a2cde1-0a25-4608-93f4-bb9a80a10254-1675170626749.png
+scanlinevfx`Scanline VFX`https://lever-client-logos.s3.us-west-2.amazonaws.com/8e8f8187-fa13-4def-ac08-57ebddc51278-1679450421784.png
