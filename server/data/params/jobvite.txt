@@ -824,3 +824,7 @@ ipsy
 amplifon-in
 anthology
 gantry
+manhattanstrategy
+deltaconstructors
+triton-digital
+barracuda-networks-inc
