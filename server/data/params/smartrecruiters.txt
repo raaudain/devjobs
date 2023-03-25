@@ -1006,3 +1006,7 @@ CleverConnect
 MedHealth3
 BEUMERGroup1
 TotemCourtage
+OFX1
+SmartCapital
+VeredusDC
+SaungPlataranResto

@@ -170,7 +170,6 @@ academia
 render
 doppler
 curai
-grouparoo
 HumanFirst
 hipcamp
 covariant
@@ -427,7 +426,6 @@ ntropy-network
 springboard
 morningbrew
 connectly
-evenfinancial
 ibble
 loyalfordogs
 BoomandBucket
@@ -595,7 +593,6 @@ onefootball
 synthego
 spenmo
 yugabyte
-vicarious
 homex
 theblockcrypto
 dialogdesign
@@ -1520,3 +1517,11 @@ superside
 warmly
 coderpad
 remedyproductstudio
+entrupy
+arcadiascience
+hone
+terrascend
+rupa
+h1
+archivecom
+respondent

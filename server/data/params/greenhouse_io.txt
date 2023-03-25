@@ -202,7 +202,6 @@ thefarmersdog
 vsco39
 braze
 renttherunway
-quora
 bark
 joinhandshake
 grammarly
@@ -230,7 +229,6 @@ aptible
 checkr
 nexhealth
 culturebiosciences
-sprinklr
 flickr
 brex
 greenhouse
@@ -479,7 +477,6 @@ zylo
 arthurai
 trellisrx
 latentai
-within
 id5
 eviationaircraft
 dataminr
@@ -923,7 +920,6 @@ fingerprint
 veranoholdings
 cyware
 theravancebiopharma
-eden18
 aura798
 rev
 billgo
@@ -1374,7 +1370,6 @@ monad
 buildarocketboy
 xwing
 manifoldai
-tesserachile
 jamf
 chainsafesystems
 cockroachlabs
@@ -1596,7 +1591,6 @@ redwoodmaterials
 turquoisehealth
 103644278
 genialcare
-crossmint
 abacusinsights
 medallion
 floyd
@@ -1731,3 +1725,13 @@ thriveworks
 flipp
 frequenceinc
 duda
+naskaai
+spotnanatechnology
+tesseradata
+squareroots
+faire
+alertmedia
+smartwarehousing
+kellyscottmadison
+disco36
+syncari
