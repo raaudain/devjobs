@@ -1011,7 +1011,6 @@ conxillium
 tesorion
 schaferundweber
 rmember
-status
 bartundbastian
 xlnt
 kanzleibrands
@@ -1022,5 +1021,4 @@ brew
 datarade
 trunkrs
 fastned
-antavojobs
 alpakas

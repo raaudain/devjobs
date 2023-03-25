@@ -828,5 +828,3 @@ triton-digital
 barracuda-networks-inc
 pragmaticplay
 tasekomines
-manhattanstrategy
-deltaconstructors

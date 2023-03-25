@@ -897,3 +897,7 @@ CleverConnect`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5beda55
 BEUMERGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5a817ee0e4b0d8713c02f35b/150px?r=s3-eu-central-1
 ApplusIDIADA1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63579c925c57fb6848381ddf/150px?r=s3-eu-central-1
 TotemCourtage`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f0edb369ca86439e9c982fe/150px?r=s3-eu-central-1
+VeredusDC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d662e4b0b42dcb457b44/150px
+SmartCapital`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5e329d4603e468348784ae66/e7874031-a859-4ba0-8d86-af79c85184d9?r=s3-eu-central-1
+OFX1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61e4ae0e32959e6e268adf4c/26880edc-2a7c-455a-b007-1d79c72b74b4?r=s3-eu-central-1
+SaungPlataranResto`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62a951d71a17910e77b4ec6a/150px?r=s3-eu-central-1

@@ -1510,3 +1510,11 @@ altarum`Altarum`https://lever-client-logos.s3.us-west-2.amazonaws.com/ccd2daf6-e
 revinate`Revinate`https://lever-client-logos.s3.us-west-2.amazonaws.com/9f4562e7-3d86-42bb-8e37-07cb595ff43a-1664811532223.png
 remedyproductstudio`Remedy Product Studio`https://lever-client-logos.s3.us-west-2.amazonaws.com/c4a2cde1-0a25-4608-93f4-bb9a80a10254-1675170626749.png
 scanlinevfx`Scanline VFX`https://lever-client-logos.s3.us-west-2.amazonaws.com/8e8f8187-fa13-4def-ac08-57ebddc51278-1679450421784.png
+arcadiascience`Arcadia Science`https://lever-client-logos.s3.us-west-2.amazonaws.com/3318b032-217e-498a-ac00-f9d55bfc6bec-1649980247068.png
+terrascend`TerrAscend USA Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/c5bead71-57c8-4c48-a1b3-765c3d287a58-1670093206604.png
+entrupy`Entrupy`https://lever-client-logos.s3.us-west-2.amazonaws.com/15bb1d19-9a79-4236-939b-a74edc3af383-1643719847867.png
+rupa`Rupa Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/bb220f23-1fb7-43b3-8235-4e063895601d-1604697596739.png
+h1`H1`https://lever-client-logos.s3.us-west-2.amazonaws.com/3586ad6b-0298-4809-be34-19fb89f17ca7-1666029319127.png
+hone`Hone`https://lever-client-logos.s3.us-west-2.amazonaws.com/77034200-71a2-46ee-b9e7-3dd072bef42f-1625111980030.png
+archivecom`Archive`https://lever-client-logos.s3.us-west-2.amazonaws.com/35937dcd-ca66-46fd-9f2c-422392000be2-1620776880791.png
+respondent`Respondent`https://lever-client-logos.s3.amazonaws.com/89503e5c-7910-4bfd-a71b-d02235efd163-1566832903052.png

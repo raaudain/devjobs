@@ -205,7 +205,6 @@ goforward
 certik
 ginkgobioworks
 wearedream
-helloahead
 anduril
 payfit
 sugarcrm
@@ -725,7 +724,6 @@ cp
 mystenlabs
 didomi
 clabs
-theroutingcompany
 fintual
 harrisinsights
 sparkfund

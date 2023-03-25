@@ -71,9 +71,5 @@ just
 lafamigliavc
 juno
 kate
-www
-community
-api-docs
 sosh
-blog
 surfe

@@ -1547,3 +1547,10 @@ thermulon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/592750/lo
 harrishmc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/527706/logo
 lattice-1`n/a`None
 sernabio`n/a`None
+dr-tavel`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/9796/logo
+danaosshipping`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/577077/logo
+clerk-dev`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/455712/logo
+ascendis-pharma`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/406063/logo
+apryse`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/305119/logo
+fundaciondelsaber`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/552864/logo
+afa`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/560465/logo
