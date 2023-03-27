@@ -926,7 +926,6 @@ morningconsult
 CarbonDirect
 aidash
 blox-route
-republic
 waremalcomb
 entrata
 kitmanlabs
