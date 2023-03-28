@@ -39,7 +39,6 @@ oso
 outschool
 automox
 workos
-replit
 mattermost
 heyrowan
 greenlight
@@ -158,7 +157,6 @@ trueaccord
 livecontrol
 medium
 fightcamp
-getspruce
 imo-online
 harness
 grove
@@ -167,7 +165,6 @@ polleverywhere
 jitxinc
 paperspace
 academia
-render
 doppler
 curai
 HumanFirst
@@ -267,7 +264,6 @@ hingehealth
 cambly
 ondeck
 cprime
-homechef
 halvik
 terminus
 ppil
@@ -369,7 +365,6 @@ pelmorex
 honeypot
 naturesfynd
 pppsgv
-partnerstack
 thrivemarket
 buildzoom
 hendersonengineers
@@ -569,7 +564,6 @@ runkeeper
 taptapsend
 nordsec
 percona
-brightfin
 mathpresso
 applovin
 rackspace
@@ -929,7 +923,6 @@ blox-route
 waremalcomb
 entrata
 kitmanlabs
-appfire
 gobetterfly
 ada
 improbable
