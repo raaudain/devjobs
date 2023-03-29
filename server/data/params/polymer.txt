@@ -240,3 +240,5 @@ loci
 nfty
 hedral
 involvio
+kinn
+prospera
