@@ -63,7 +63,6 @@ aquabyte
 atlassian
 authentic8
 bolt
-centralreach
 chartbeat
 chownow
 coalitioninc
@@ -111,7 +110,6 @@ onesignal
 opendoor
 outreach
 peek
-pieinsurance
 plastiq
 pngme
 pythian
@@ -145,7 +143,6 @@ whoop
 workramp
 yardzen
 yelp
-yieldstreet
 wealthfront
 neednova
 kong
@@ -174,7 +171,6 @@ onuniverse
 angaza
 palantir
 matchgroup
-messari
 nexient
 bellhops
 color
@@ -253,7 +249,6 @@ arrival
 invisible
 coreresponse
 nortal
-Extend
 aeratechnology
 edenhealth
 ppgny
@@ -274,10 +269,8 @@ adaptavist
 ekimetrics
 ppro
 meero
-projekt202
 centro
 hypebeast
-commure
 musixmatch
 talkingrain
 vevo
@@ -308,7 +301,6 @@ ion
 walkme
 pexa
 neueda
-tomonetworks
 benchsci
 curology
 zenitech
@@ -340,13 +332,11 @@ kpler
 tataunistore
 waabi
 meetingstreetschools
-airbase
 princesspolly
 bambee
 akabrands
 viome
 inveon
-utilitywarehouse
 bplaunchpad
 nava
 alector
@@ -377,7 +367,6 @@ Hobbii
 workwave
 netvirta
 anyscale
-pave
 hatch
 gatik
 kandji
@@ -428,7 +417,6 @@ walkerandcompany
 FLASH
 pingcap
 einblick
-joinroot
 tuned
 bespokepost
 helloalpha
@@ -439,7 +427,6 @@ transcend
 system1
 BDG
 atonarp
-bornlogic
 frubana
 welocalize
 researchgate
@@ -584,7 +571,6 @@ veepee
 govirtuo
 onefootball
 synthego
-spenmo
 yugabyte
 homex
 theblockcrypto
@@ -611,7 +597,6 @@ pactum
 cyngn
 honeycomb
 returntocorp
-hedvig
 bimone
 marigoldhealth
 blackpanda
@@ -626,7 +611,6 @@ ppsenfl
 class
 Resilience
 15five
-shakepay
 juneshine
 oxygen
 Kevala
@@ -722,10 +706,8 @@ fintual
 harrisinsights
 sparkfund
 trailofbits
-myrealm
 runway
 HowGood
-Waymark
 orbitalsidekick
 522productions
 mednow
@@ -812,7 +794,6 @@ lahaus
 jupiter
 unico
 klubworks
-vir
 publicprep
 zuru
 sagesure
@@ -953,7 +934,6 @@ brainnest
 windownation
 actionnetwork
 getaround
-optimusride
 netlight
 jobandtalent
 ledger

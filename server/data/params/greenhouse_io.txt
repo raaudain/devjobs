@@ -1234,7 +1234,6 @@ atompower
 kaiahealth
 life360
 beautycounter
-reciprocity
 eyeo
 semafor
 trace3
@@ -1737,9 +1736,7 @@ mountanvil
 isn
 headoutcareers
 calloquypbc
-classified
 knak
-syncari
 usertesting48
 gatikaiinc
 moonpay

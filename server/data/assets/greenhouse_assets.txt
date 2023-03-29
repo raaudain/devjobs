@@ -1865,3 +1865,12 @@ naskaai`Naska.AI`None
 faire`Faire`None
 smartwarehousing`Smart Warehousing`None
 disco36`Disco Technology`None
+isn`ISN Software Corporation`None
+calloquypbc`Calloquy, PBC`None
+usertesting48`UserTesting`None
+moonpay`MoonPay`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/549/300/resized/1664214447938.gif
+venturewell`VentureWell`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/320/000/resized/VentureWell_logo_w_tag_LARGE.jpg
+mountanvil`Mount Anvil`None
+headoutcareers`Headout`None
+gatikaiinc`Gatik AI, Inc.`None
+altium`Altium`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/094/300/resized/AltiumGreenhouseImage_(1).png

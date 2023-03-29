@@ -1554,3 +1554,13 @@ ascendis-pharma`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/406
 apryse`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/305119/logo
 fundaciondelsaber`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/552864/logo
 afa`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/560465/logo
+odp-askrindo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/455619/logo
+costello-medical`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/150423/Costello_Logo_RGB_JPG.jpg
+netguru`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/3668/resize.png
+citeline`n/a`None
+throo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553824/logo
+staxpayments`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/265563/logo
+multimediallc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/395832/logo
+edgility-consulting-4`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/468836/logo
+iapwe`n/a`None
+shippo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/591164/logo

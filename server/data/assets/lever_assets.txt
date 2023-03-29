@@ -1518,3 +1518,5 @@ h1`H1`https://lever-client-logos.s3.us-west-2.amazonaws.com/3586ad6b-0298-4809-b
 hone`Hone`https://lever-client-logos.s3.us-west-2.amazonaws.com/77034200-71a2-46ee-b9e7-3dd072bef42f-1625111980030.png
 archivecom`Archive`https://lever-client-logos.s3.us-west-2.amazonaws.com/35937dcd-ca66-46fd-9f2c-422392000be2-1620776880791.png
 respondent`Respondent`https://lever-client-logos.s3.amazonaws.com/89503e5c-7910-4bfd-a71b-d02235efd163-1566832903052.png
+ethereumfoundation`Ethereum Foundation`https://lever-client-logos.s3.us-west-2.amazonaws.com/b4cfe414-b949-4989-b62f-e34bb1817ee3-1644535907857.png
+mechanism-2`Mechanism`https://lever-client-logos.s3.us-west-2.amazonaws.com/4efc25fb-a5a3-4755-9dbc-96775632ad2d-1622209680285.png

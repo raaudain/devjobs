@@ -901,3 +901,9 @@ VeredusDC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5135d662e4b0b42
 SmartCapital`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5e329d4603e468348784ae66/e7874031-a859-4ba0-8d86-af79c85184d9?r=s3-eu-central-1
 OFX1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61e4ae0e32959e6e268adf4c/26880edc-2a7c-455a-b007-1d79c72b74b4?r=s3-eu-central-1
 SaungPlataranResto`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62a951d71a17910e77b4ec6a/150px?r=s3-eu-central-1
+Kindred`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/62d576ce5ce5cd264daad56a/3e89ae7a-0779-4c1a-8094-b57410b9e50d?r=s3-us-east-2
+PerfectDynamicsVirtualSolutionsLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/533f6280e4b0a80ff22fe64c/150px
+NetworkForGood`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/51753a02e4b04221b4912ee9/150px
+UniversityOfMarylandMedicalSystem`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/632922837dd47e012051777d/aeeb16c4-41a0-4d4e-9a7a-205d9f259c4d?r=s3-us-east-2
+METROMAKRO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62e2259147fbdf336cb4d064/150px?r=s3-eu-central-1
+WeAreRosie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc11/62911d9181194b1b769d68ef/huge?r=s3-us-east-2
