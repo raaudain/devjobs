@@ -882,7 +882,6 @@ convoso
 liveperson
 adyen
 therealreal
-airbyte
 whispir
 via
 monograph

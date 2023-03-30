@@ -34,7 +34,6 @@ Wefunder
 fuzzypethealth
 lumosity
 distru
-openphone
 oso
 outschool
 automox
@@ -62,7 +61,6 @@ anyroad
 aquabyte
 atlassian
 authentic8
-bolt
 chartbeat
 chownow
 coalitioninc
@@ -74,7 +72,6 @@ delphix
 disqo
 eargo
 everbridge
-fast
 flexe
 floqast
 flowspace
@@ -89,7 +86,6 @@ icertis
 immuta
 instawork
 instructure
-italic
 jumpcloud
 knotch
 labelbox
@@ -114,7 +110,6 @@ plastiq
 pngme
 pythian
 quantcast
-rappi
 roofstock
 safeai
 scribd
@@ -135,7 +130,6 @@ textnow
 thrasio
 tune
 udemy
-upgrade
 videahealth
 wandb
 wattpad
@@ -300,7 +294,6 @@ lime
 ion
 walkme
 pexa
-neueda
 benchsci
 curology
 zenitech
@@ -318,7 +311,6 @@ jobcase
 quantumscape
 zip
 mindtickle
-joyn
 tivix
 skello
 augmedix
@@ -336,7 +328,6 @@ princesspolly
 bambee
 akabrands
 viome
-inveon
 bplaunchpad
 nava
 alector
@@ -373,7 +364,6 @@ kandji
 brilliant
 doctrine
 doolyresearch
-hash
 perfectday
 ppaz
 riverdale
@@ -404,7 +394,6 @@ zazzle
 nio
 zoox
 wellframe
-desmos
 ntropy-network
 springboard
 morningbrew
@@ -498,14 +487,12 @@ econstruct
 ideasunited
 booknooklearning
 CoinFlip
-saturn
 devacurl
 pibenchmark
 metabase
 sheerid
 doxel
 skyways
-Uniswap
 joshstoysandgames
 finix
 hirezstudios
@@ -535,7 +522,6 @@ ansira
 envato-2
 stackline
 people-ai
-loftium
 playvs
 raya
 ciedigital
@@ -546,7 +532,6 @@ findhelp
 digitalturbine
 urwelcome
 reviewtrackers
-izotope
 runkeeper
 taptapsend
 nordsec
@@ -593,7 +578,6 @@ atomlearning
 getsetup
 vidsy
 commencis
-pactum
 cyngn
 honeycomb
 returntocorp
@@ -699,14 +683,12 @@ skyslope
 gyant
 parallel
 cp
-mystenlabs
 didomi
 clabs
 fintual
 harrisinsights
 sparkfund
 trailofbits
-runway
 HowGood
 orbitalsidekick
 522productions
@@ -716,14 +698,12 @@ kikoff
 ramenvr
 gouconnect
 hivebrite
-wetransfer
 businesswire
 dollskill
 slate
 supportninja
 paytm
 ottertune
-industry-arts
 vhslab
 forusall
 exabeam
@@ -834,7 +814,6 @@ m13
 appzen
 acpl
 contentsquare
-code.org
 playplay
 forourfuturefund
 cartrawler
