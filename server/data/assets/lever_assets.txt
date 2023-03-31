@@ -1520,3 +1520,4 @@ archivecom`Archive`https://lever-client-logos.s3.us-west-2.amazonaws.com/35937dc
 respondent`Respondent`https://lever-client-logos.s3.amazonaws.com/89503e5c-7910-4bfd-a71b-d02235efd163-1566832903052.png
 ethereumfoundation`Ethereum Foundation`https://lever-client-logos.s3.us-west-2.amazonaws.com/b4cfe414-b949-4989-b62f-e34bb1817ee3-1644535907857.png
 mechanism-2`Mechanism`https://lever-client-logos.s3.us-west-2.amazonaws.com/4efc25fb-a5a3-4755-9dbc-96775632ad2d-1622209680285.png
+StubHubHoldings`StubHub`https://lever-client-logos.s3.us-west-2.amazonaws.com/274100f7-f7df-454e-84cf-9b2f6d428737-1680209740420.png

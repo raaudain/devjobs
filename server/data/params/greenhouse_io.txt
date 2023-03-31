@@ -1462,7 +1462,6 @@ firstlookmedia
 extend
 easyship
 accelbyte
-oni
 swirlds
 aiserajobs
 vuestorefront
