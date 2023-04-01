@@ -101,7 +101,6 @@ notarize
 ntopology
 nuorder
 onesignal
-opendoor
 outreach
 peek
 plastiq
@@ -272,7 +271,6 @@ prodigyeducation
 wyze
 rockcontent
 circlemedical
-divvypay
 decathlon
 class101
 newwestern
@@ -692,7 +690,6 @@ slate
 supportninja
 paytm
 ottertune
-vhslab
 forusall
 exabeam
 reliable
@@ -804,7 +801,6 @@ contentsquare
 playplay
 forourfuturefund
 cartrawler
-checkout
 oxylabs
 itech
 lvs1
@@ -994,7 +990,6 @@ redoxengine
 highspot
 starburstdata
 bixal
-q-centrix
 ironcladapp
 analogfolk
 boldpenguin
@@ -1058,7 +1053,6 @@ sambatv
 cdcfoundation
 navisite
 buyboxexperts
-ghjadvisors
 merlinlabs
 smalldoor
 relayfi
@@ -1145,7 +1139,6 @@ marcusmillichap
 knix
 creadits
 picus
-ultragenyx
 lcbcchurch
 StudioThree
 thedispatch

@@ -1521,3 +1521,12 @@ respondent`Respondent`https://lever-client-logos.s3.amazonaws.com/89503e5c-7910-
 ethereumfoundation`Ethereum Foundation`https://lever-client-logos.s3.us-west-2.amazonaws.com/b4cfe414-b949-4989-b62f-e34bb1817ee3-1644535907857.png
 mechanism-2`Mechanism`https://lever-client-logos.s3.us-west-2.amazonaws.com/4efc25fb-a5a3-4755-9dbc-96775632ad2d-1622209680285.png
 StubHubHoldings`StubHub`https://lever-client-logos.s3.us-west-2.amazonaws.com/274100f7-f7df-454e-84cf-9b2f6d428737-1680209740420.png
+disruptivegames`Disruptive Games`https://lever-client-logos.s3.us-west-2.amazonaws.com/d766be09-f3ab-42f8-8e87-fd992b548e0a-1680288117628.png
+insiderealestate.com`Inside Real Estate`https://lever-client-logos.s3.us-west-2.amazonaws.com/035d99be-98af-422a-aeb3-25d8c844018f-1678718584279.png
+lendbuzz`Lendbuzz`https://lever-client-logos.s3.us-west-2.amazonaws.com/9b7d7dc7-be86-4308-870f-f7da5620ba63-1624373605791.png
+clearbit`Clearbit`https://lever-client-logos.s3.amazonaws.com/5b3030df-8b33-46b6-a784-8b7f54274641-1559858581612.png
+secureframe`Secureframe`https://lever-client-logos.s3.us-west-2.amazonaws.com/e6802418-0653-479d-ae12-32f277b1554c-1600818539841.png
+okendo`Okendo`https://lever-client-logos.s3.us-west-2.amazonaws.com/68facdb1-fc3a-4620-87e3-a51c75204ff2-1664284657380.png
+helpshift`Helpshift`https://lever-client-logos.s3.amazonaws.com/14ca64d6-a791-401f-8108-d7bc3197c3a3-1553718708774.png
+trella`Trella`https://lever-client-logos.s3.us-west-2.amazonaws.com/7930dbbf-38ec-4881-aab6-420e85197738-1638709797840.png
+2brains`BBK+2Brains`https://lever-client-logos.s3.us-west-2.amazonaws.com/2c5619c0-cc4c-46c2-9ca4-200b772258a4-1671120661522.png

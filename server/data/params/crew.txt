@@ -73,8 +73,4 @@ juno
 kate
 sosh
 surfe
-www
-community
-api-docs
-blog
 mystic

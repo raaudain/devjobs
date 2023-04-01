@@ -1024,9 +1024,7 @@ kfzteile24
 kodify
 123fahrschule
 resalepartners
-status
 sezo
-alpeganv
 swhsoftwarehausheidergmbh
 canny
 hygraph

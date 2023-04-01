@@ -907,3 +907,8 @@ NetworkForGood`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/51753a02e4
 UniversityOfMarylandMedicalSystem`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc11/632922837dd47e012051777d/aeeb16c4-41a0-4d4e-9a7a-205d9f259c4d?r=s3-us-east-2
 METROMAKRO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62e2259147fbdf336cb4d064/150px?r=s3-eu-central-1
 WeAreRosie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc11/62911d9181194b1b769d68ef/huge?r=s3-us-east-2
+AFFCO`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5d06cd9cc045773e68001a24/150px?r=s3-eu-central-1
+TBCBANK`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/60abb5a50001717849b56412/b392cc71-e82a-4cae-84e3-7277ec441e7a?r=s3-eu-central-1
+TransatAT1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63effa5049992d794353d94f/1fbd98b9-c894-4f10-96e4-229a4c1ad5b6?r=s3-eu-central-1
+HearingLabTechnologyLLC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/569e6adce4b03366c86336c4/55aec270-9c55-485a-ab69-e39601c48497?r=s3
+SeniorResourceGroupLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6183f6d3f2b777405c26b66b/150px?r=s3-eu-central-1

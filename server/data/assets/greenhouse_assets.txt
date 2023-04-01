@@ -1874,3 +1874,9 @@ mountanvil`Mount Anvil`None
 headoutcareers`Headout`None
 gatikaiinc`Gatik AI, Inc.`None
 altium`Altium`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/094/300/resized/AltiumGreenhouseImage_(1).png
+abclegalservices`ABC Legal Services`None
+cpm`Chicago Public Media`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/141/700/resized/WBEZ_Logo_STACKED_Black_Red.png
+rubilaboratories33`Rubi Laboratories`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/200/000/resized/_Walsh_Rubi_Black_Logo_with_White_Background.png
+elastic`Elastic`None
+mercury`Mercury`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/607/000/resized/mercury-icon-black_(1).png
+catchpoint`Catchpoint`None
