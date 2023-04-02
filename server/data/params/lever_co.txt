@@ -561,7 +561,6 @@ educative
 cohere
 bloom
 atomlearning
-getsetup
 vidsy
 commencis
 cyngn
@@ -600,7 +599,6 @@ leap-2
 exygy
 BloomTech
 Smile.io
-connectrn
 Leapfin
 noyo
 qualified
@@ -885,7 +883,6 @@ goshippo
 droneseed
 thetrevorproject
 StubHubHoldings
-neo4j
 indiegogo.com
 Potloc
 alictus
