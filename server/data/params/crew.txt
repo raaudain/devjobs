@@ -74,8 +74,4 @@ kate
 sosh
 surfe
 mystic
-www
-community
-api-docs
-blog
 collective

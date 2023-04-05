@@ -1880,3 +1880,11 @@ rubilaboratories33`Rubi Laboratories`https://s6-recruiting.cdn.greenhouse.io/ext
 elastic`Elastic`None
 mercury`Mercury`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/607/000/resized/mercury-icon-black_(1).png
 catchpoint`Catchpoint`None
+nice`NICE`None
+woebot`Woebot Health`None
+crossmediainc`Crossmedia Inc`None
+teneo`Teneo`None
+forgebiologics`Forge Biologics`None
+rdstation`RD Station`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/382/100/resized/ptbr-time-gif_light.gif
+trailofbits`Trail of Bits`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/081/300/resized/161227_TOB_Logo_Black___Grey.png
+oneproject`One Project`None

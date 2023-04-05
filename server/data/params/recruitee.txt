@@ -128,7 +128,6 @@ gremco
 transcomserbia
 planatol
 hensoldtcyber
-danieljansen
 ihorizon
 saschastarck
 macellan
@@ -1036,10 +1035,6 @@ katoennatie
 ecommercede
 tfpfertilitygroup
 schroedergruppe
-status
 codingchiefsbv
 pcdiga
-auth
-strongminds1
-antavojobs
 carandclassic

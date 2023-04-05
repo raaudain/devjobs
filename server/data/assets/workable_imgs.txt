@@ -1573,3 +1573,13 @@ schoolinks`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/454958/l
 sdo`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575653/logo
 hello-sunshine`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/517492/logo
 treblle`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/596819/logo
+cloudmore`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/456973/logo
+cloudline`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/543039/logo
+archimed`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/570872/logo
+heni`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/566611/logo
+zoopworks`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/594476/logo
+skywalker`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/50766/logo
+learnlight`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/206785/logo
+xcelirate`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/332464/logo
+prince-of-travel`n/a`None
+logodotcom`n/a`None

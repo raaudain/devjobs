@@ -913,3 +913,8 @@ TransatAT1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63effa
 HearingLabTechnologyLLC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/569e6adce4b03366c86336c4/55aec270-9c55-485a-ab69-e39601c48497?r=s3
 SeniorResourceGroupLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6183f6d3f2b777405c26b66b/150px?r=s3-eu-central-1
 SeniorLifestyle1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62963b28a3de340d1cb27d90/huge?r=s3-eu-central-1
+iKhokha`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62628cb343c76a368b4e69bf/150px?r=s3-eu-central-1
+LavanyaSolusiHumanika`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63783347ba2e8651116bf28c/150px?r=s3-eu-central-1
+3AmigosRecruiting`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/62a7475c3ffb587431ca5b9d/b4dc620b-29f2-49d1-b3a0-035cacf87844?r=s3-eu-central-1
+AWPSafety`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6408ace8bbd8bc64d503d99d/150px?r=s3-eu-central-1
+Kennametal1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60351486a075233c9751c89b/huge?r=s3-eu-central-1

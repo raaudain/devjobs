@@ -1530,3 +1530,11 @@ okendo`Okendo`https://lever-client-logos.s3.us-west-2.amazonaws.com/68facdb1-fc3
 helpshift`Helpshift`https://lever-client-logos.s3.amazonaws.com/14ca64d6-a791-401f-8108-d7bc3197c3a3-1553718708774.png
 trella`Trella`https://lever-client-logos.s3.us-west-2.amazonaws.com/7930dbbf-38ec-4881-aab6-420e85197738-1638709797840.png
 2brains`BBK+2Brains`https://lever-client-logos.s3.us-west-2.amazonaws.com/2c5619c0-cc4c-46c2-9ca4-200b772258a4-1671120661522.png
+cagents`CAI`https://lever-client-logos.s3.amazonaws.com/1076a155-b59b-4927-81b3-5cf19a1f6d1d-1553798984099.png
+nium`Nium`https://lever-client-logos.s3.us-west-2.amazonaws.com/729a250d-760f-48e3-b5d0-32372b8a427a-1679055484788.png
+bluecatnetworks`BlueCat`https://lever-client-logos.s3.amazonaws.com/c33c8a1d-247f-41a0-b412-a21557ec0606-1530189882431.png
+SeiLabs`Sei Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/d26132a1-21c0-4630-b1fa-be8a08b13e18-1661729855996.png
+AngleHealth`Angle Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/d4fea26e-142f-4191-b1f9-04a48e25cd2d-1623381310009.png
+cobaltrobotics`Cobalt Robotics`https://lever-client-logos.s3.amazonaws.com/8231ec97-5fd4-4f63-844a-451ae1024834-1542239607779.png
+rently`Rently`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9fd6142-c02c-4b39-858d-4e0534052737-1624660253179.png
+larian`Larian Studios`https://lever-client-logos.s3.amazonaws.com/8d796936-f355-4dcb-a6f4-9b10fa88a74c-1574345920271.png

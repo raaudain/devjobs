@@ -191,3 +191,5 @@ rarebase`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rfvwjJCEqyHa4f
 fairly`n/a`https://inflow-public.s3.amazonaws.com/company-logos/iMivfkRHyFr6zLwyGYftCf58.svg
 nfty`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zeoe0zcklotus9vwmce3c8jh9fpp.png
 hedral`n/a`https://inflow-public.s3.amazonaws.com/company-logos/b4hsxemdfqxgaa3kqigscv3qnrkt.png
+teton`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9xp7riw3mfjb5ayxhcvgp33ye0p2.png
+chemfinitytech`n/a`https://inflow-public.s3.amazonaws.com/company-logos/jgynwxyl20icbjq45n4w8pu0ktff.jpeg

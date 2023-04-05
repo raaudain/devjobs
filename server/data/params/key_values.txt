@@ -10,8 +10,6 @@
 /plus
 /upduo
 /reduct
-/chani
-/retired-monograph
 /indent
 /orbit
 /coast

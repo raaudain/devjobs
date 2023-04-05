@@ -137,7 +137,6 @@ okta
 ordergroove
 pantheon
 patreon
-paybyphone
 peloton
 pixlee
 policygenius
@@ -319,7 +318,6 @@ goalsyria
 marsdiscoverydistrict
 foursquare26
 bungie
-logrhythm
 livescore9
 wundercapital
 avenuestheworldschool
@@ -415,7 +413,6 @@ golin
 airtable
 bandainamco
 tripactions
-argo
 evidation
 redislabs
 unisonhomeownershipinvestors
@@ -707,7 +704,6 @@ surveymonkey
 mediamonks
 foodpandathailand
 2k
-breakthroughenergy38
 decibio
 doma
 tripadvisor
@@ -886,7 +882,6 @@ whispir
 via
 monograph
 propel
-fieldlevel
 billcom
 loominc
 grindr
@@ -1042,7 +1037,6 @@ aptos
 assuredguaranty
 eleanorhealth
 thefork
-coachhub
 drivewealth
 joor
 wesang
@@ -1587,7 +1581,6 @@ guerrilla
 redwoodmaterials
 turquoisehealth
 103644278
-genialcare
 abacusinsights
 medallion
 floyd
@@ -1699,7 +1692,6 @@ biofourmis
 sunsetanytime
 hederahashgraph77
 corvusinsurance
-contingent50
 wrike
 blueridgepower
 diligentrobotics
@@ -1747,12 +1739,8 @@ mercury
 rubilaboratories33
 catchpoint
 nice
-Kettle
 woebot
-eden18
 crossmediainc
-tesseradata
-syncari
 rdstation
 teneo
 trailofbits
