@@ -912,3 +912,4 @@ TBCBANK`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/60abb5a50
 TransatAT1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63effa5049992d794353d94f/1fbd98b9-c894-4f10-96e4-229a4c1ad5b6?r=s3-eu-central-1
 HearingLabTechnologyLLC`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/569e6adce4b03366c86336c4/55aec270-9c55-485a-ab69-e39601c48497?r=s3
 SeniorResourceGroupLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6183f6d3f2b777405c26b66b/150px?r=s3-eu-central-1
+SeniorLifestyle1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62963b28a3de340d1cb27d90/huge?r=s3-eu-central-1

@@ -486,7 +486,6 @@ brinkstransport
 cignpostdiagnostics
 producthackers
 vaughanbassettfurniturecoinc
-strongminds1
 intercarsbg
 safetica
 aramazdigital
@@ -866,7 +865,6 @@ dagangan
 campusdelft
 metyisag
 tko
-lesresidencessoleil
 113zelfmoordpreventie
 mennerichrecruiting
 goedemiddag
@@ -1032,3 +1030,16 @@ protectdemocracy
 dpgmedia
 lss
 obilet
+atrix
+zonova
+katoennatie
+ecommercede
+tfpfertilitygroup
+schroedergruppe
+status
+codingchiefsbv
+pcdiga
+auth
+strongminds1
+antavojobs
+carandclassic

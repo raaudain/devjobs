@@ -1035,3 +1035,5 @@ antavojobs
 getsetup
 neo4j
 connectrn
+strongminds1
+lesresidencessoleil
