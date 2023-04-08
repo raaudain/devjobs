@@ -1538,3 +1538,9 @@ AngleHealth`Angle Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/d
 cobaltrobotics`Cobalt Robotics`https://lever-client-logos.s3.amazonaws.com/8231ec97-5fd4-4f63-844a-451ae1024834-1542239607779.png
 rently`Rently`https://lever-client-logos.s3.us-west-2.amazonaws.com/a9fd6142-c02c-4b39-858d-4e0534052737-1624660253179.png
 larian`Larian Studios`https://lever-client-logos.s3.amazonaws.com/8d796936-f355-4dcb-a6f4-9b10fa88a74c-1574345920271.png
+istaridigital.ai`Istari, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/a343e537-107d-4989-befe-1ffb4326743a-1667290620941.png
+fabric`fabric`https://lever-client-logos.s3.us-west-2.amazonaws.com/877964ff-3655-4e30-b1ff-5e51b2571e4b-1660752783296.png
+asapp-2`ASAPP`https://lever-client-logos.s3.amazonaws.com/fae1a084-c900-4fbe-9706-2620e45a2814-1575406000855.png
+roo`Roo`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc775f7c-7522-4210-9081-e53b0ce6073e-1659985873653.png
+typology`Typology`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9a74ca8-f090-4649-985e-0483ff3c6274-1618840370538.png
+littleotter`Little Otter`https://lever-client-logos.s3.us-west-2.amazonaws.com/fdf8ce5f-cb5e-4b13-a326-7273f217c69a-1610060269609.png

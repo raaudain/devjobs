@@ -845,4 +845,3 @@ work-at-whereoware
 sharpcommunitymedicalgroup
 truevelocity
 privacera
-deltaconstructors
