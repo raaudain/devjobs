@@ -1465,3 +1465,9 @@ cobaltrobotics
 AngleHealth
 rently
 SeiLabs
+littleotter
+typology
+fabric
+istaridigital.ai
+roo
+asapp-2
