@@ -222,7 +222,6 @@ hamelin
 hotjar
 hardthyperloop
 softwareimprovementgroup
-sportsolutions
 kodi
 werkeninleisure
 mobielnl
