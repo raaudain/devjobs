@@ -270,7 +270,6 @@ cazoo
 betterindia
 bottomlinetechnologies
 archrival
-guildeducation
 revel
 mojangab
 cardlytics
@@ -497,7 +496,6 @@ deliveryherokoreatech
 connatix
 dnli
 glassdoor
-heal
 wizardsofthecoast
 hugeinc
 shieldshealthsolutions
@@ -1031,7 +1029,6 @@ absci
 cloudmasonry
 phoenixcontact
 menlosecurity
-reef
 pilothq
 aptos
 assuredguaranty
@@ -1374,7 +1371,6 @@ xpinc
 riotgamesinc
 lisc
 seamlessai
-fortify
 getshogun
 wework
 processstreet
@@ -1491,7 +1487,6 @@ affinidi
 gurussolutions
 stackcommerce
 viessmanninternational
-copperbanking
 pecanai
 tremorvideodsp
 viessmann
@@ -1755,10 +1750,6 @@ tia
 memphismeats
 dialpad
 sorcero
-tesserachile
-Kettle
-syncari
 carbonrobotics
 meritamerica
 formatservices
-sundae

@@ -1601,3 +1601,12 @@ pepperstone`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/564195/
 vintrus`n/a`None
 alpher`n/a`None
 threatx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/493312/logo
+droneup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/590324/logo
+whitespectre`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/491567/logo
+inpixon`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/552511/logo
+zfx-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/582922/logo
+ao-2`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/600390/logo
+assist-rx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/10923/logo
+nira`n/a`None
+pawlicy`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553511/logo
+consult-red`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/544477/logo

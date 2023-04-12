@@ -269,7 +269,6 @@ dnc
 popmenu
 prodigyeducation
 wyze
-rockcontent
 circlemedical
 decathlon
 class101
@@ -478,7 +477,6 @@ devacurl
 pibenchmark
 metabase
 sheerid
-doxel
 skyways
 joshstoysandgames
 finix
@@ -720,7 +718,6 @@ gravie
 insider-intelligence
 industrydive
 sentilink
-crunchbase
 happyco
 axiomzen
 nielsen
@@ -877,7 +874,6 @@ luni
 brightseedbio
 curefit
 goshippo
-droneseed
 thetrevorproject
 StubHubHoldings
 indiegogo.com
@@ -1010,7 +1006,6 @@ eastsidegamestudio
 leantaas
 winewarehouse
 southwestwater
-boldbusiness
 vippetcare
 mcrmed
 tend

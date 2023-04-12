@@ -29,7 +29,6 @@ krikri
 cvonlineestonia
 smartsupp
 degustabox
-ladylight
 omniconsultcorp
 swedex
 werkenbijcenterparcszandvoort
@@ -1048,6 +1047,5 @@ transcomtunisia
 uhlenhaus
 valsight
 eeveemobility
-status
 werkenbijtrip
 mosadexehealth

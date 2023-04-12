@@ -1895,3 +1895,7 @@ splash`Splash`None
 iherb`iHerb`None
 qcentrix`Q-Centrix`None
 memphismeats`UPSIDE Foods`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/473/400/resized/email_logo.png
+sorcero`Sorcero`None
+carbonrobotics`Carbon Robotics`None
+formatservices`Format Services`None
+meritamerica`Merit America`None

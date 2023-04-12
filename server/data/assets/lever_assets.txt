@@ -1544,3 +1544,7 @@ asapp-2`ASAPP`https://lever-client-logos.s3.amazonaws.com/fae1a084-c900-4fbe-970
 roo`Roo`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc775f7c-7522-4210-9081-e53b0ce6073e-1659985873653.png
 typology`Typology`https://lever-client-logos.s3.us-west-2.amazonaws.com/f9a74ca8-f090-4649-985e-0483ff3c6274-1618840370538.png
 littleotter`Little Otter`https://lever-client-logos.s3.us-west-2.amazonaws.com/fdf8ce5f-cb5e-4b13-a326-7273f217c69a-1610060269609.png
+rqteam`RQM+`https://lever-client-logos.s3.us-west-2.amazonaws.com/98c803ce-61b4-4786-95a6-8a94b5605e87-1676884603830.png
+charitywater`charity: water`https://lever-client-logos.s3.us-west-2.amazonaws.com/07ba71b4-cace-4d28-b026-58a64e21128c-1647885411174.png
+orcabiosystems`Orca Bio`https://lever-client-logos.s3.us-west-2.amazonaws.com/795388a9-4569-4828-87fb-7793f206cfaf-1654114246344.png
+vicicollection`VICI`https://lever-client-logos.s3-us-west-2.amazonaws.com/80df93e3-423d-4a0e-9cf9-81a916459d1a-1597431911238.png

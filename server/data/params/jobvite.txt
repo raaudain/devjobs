@@ -852,4 +852,3 @@ climate
 trg
 ascentresources
 riversidelab
-deltaconstructors
