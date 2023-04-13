@@ -486,7 +486,6 @@ couchbase
 alan
 muni
 dnb
-ruangguru
 revolut
 bluebottlecoffee
 upguard
@@ -784,7 +783,6 @@ OpenSea
 asimov
 akinon
 watchguard
-ambient
 Vial
 m13
 appzen
