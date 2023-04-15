@@ -1899,3 +1899,10 @@ sorcero`Sorcero`None
 carbonrobotics`Carbon Robotics`None
 formatservices`Format Services`None
 meritamerica`Merit America`None
+wingspan`Wingspan`None
+KorroBio`Korro Bio`None
+braintrustcore`Braintrust Internal`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/784/700/resized/Braintrust_Lockup_Black.png
+weareservicemax`ServiceMax`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/487/000/resized/Thrive-Email-Hero-540x282-_NEW.png
+wheelhouse`Wheelhouse`None
+oafkenya`One Acre Fund - Kenya`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/012/resized/OAF_Logo_Teal.png
+czero`C-Zero`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/086/700/resized/logo.png

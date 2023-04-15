@@ -1610,3 +1610,12 @@ assist-rx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/10923/log
 nira`n/a`None
 pawlicy`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/553511/logo
 consult-red`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/544477/logo
+kingsisle-entertainment-inc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/586127/logo
+fotografiska`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/461610/logo
+rassini`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/312445/logo
+qwire`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/600569/logo
+ischool`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/591876/logo
+villagereachcareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/66463/logo
+hospitable`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/550146/logo
+coretek-services`n/a`None
+nalamoney`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/516667/logo

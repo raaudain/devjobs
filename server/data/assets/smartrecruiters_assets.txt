@@ -927,3 +927,4 @@ RaptusAG`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/59b378b6e4b0
 EntertainmentFuse`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5145e336e4b0ef989b0487fc/150px?r=s3
 MobInspirePvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bd6d59117d6d83739337c0c/huge?r=s3-eu-central-1
 Securitas`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6267f01c0539de752ae0799a/huge?r=s3-eu-central-1
+JobsForHumanity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/600991847e242e4dc5c536b8/huge?r=s3-eu-central-1

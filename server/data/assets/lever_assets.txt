@@ -1548,3 +1548,11 @@ rqteam`RQM+`https://lever-client-logos.s3.us-west-2.amazonaws.com/98c803ce-61b4-
 charitywater`charity: water`https://lever-client-logos.s3.us-west-2.amazonaws.com/07ba71b4-cace-4d28-b026-58a64e21128c-1647885411174.png
 orcabiosystems`Orca Bio`https://lever-client-logos.s3.us-west-2.amazonaws.com/795388a9-4569-4828-87fb-7793f206cfaf-1654114246344.png
 vicicollection`VICI`https://lever-client-logos.s3-us-west-2.amazonaws.com/80df93e3-423d-4a0e-9cf9-81a916459d1a-1597431911238.png
+makers`Makers`https://lever-client-logos.s3.us-west-2.amazonaws.com/c68393e4-8aa3-4d03-a529-b8767fa374c6-1681151308131.png
+ablspacesystems`ABL Space Systems`https://lever-client-logos.s3.us-west-2.amazonaws.com/b0c398b8-4c11-48a3-b88c-c013f20634e5-1637195630017.png
+kbd`KBD`https://lever-client-logos.s3.us-west-2.amazonaws.com/04d83646-1d44-4553-97e1-c37f3ab055e6-1638288035540.png
+carestino`Carestino`https://lever-client-logos.s3.us-west-2.amazonaws.com/f7a37e99-0248-463f-b53a-82c1d1b8e4fc-1614362843874.png
+Mona`Mona`https://lever-client-logos.s3.us-west-2.amazonaws.com/3e7751de-fe5c-4ca4-96ee-0fa4aa17dda7-1673988702227.png
+newzealandtradeandenterprise`New Zealand Trade and Enterprise`https://lever-client-logos.s3.amazonaws.com/9f27077f-1aa3-4ef4-afd9-b99e94a8f30c-1535540587395.png
+malt`Malt`https://lever-client-logos.s3.us-west-2.amazonaws.com/2f4de33b-7255-4524-bbb0-cf1a6937143b-1671556259072.png
+leena`Leena AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/e68dbc47-c579-4dd5-93f6-b998b6c8bf86-1658951630410.png
