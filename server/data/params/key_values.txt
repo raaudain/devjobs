@@ -1,3 +1,4 @@
+/paper
 /sibi
 /ribbon-health
 /allspice

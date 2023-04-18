@@ -99,7 +99,6 @@ moo
 netflix
 notarize
 ntopology
-nuorder
 onesignal
 outreach
 peek
@@ -467,7 +466,6 @@ viabill
 invenia
 Rarible
 NimbleAI
-workbravely
 intelligentsiacoffee
 econstruct
 ideasunited
@@ -1290,7 +1288,6 @@ rise
 crestoperations
 unzer
 placemakr
-acuityads
 cogitocorp
 sta
 jar-app
