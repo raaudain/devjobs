@@ -194,3 +194,4 @@ hedral`n/a`https://inflow-public.s3.amazonaws.com/company-logos/b4hsxemdfqxgaa3k
 teton`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9xp7riw3mfjb5ayxhcvgp33ye0p2.png
 chemfinitytech`n/a`https://inflow-public.s3.amazonaws.com/company-logos/jgynwxyl20icbjq45n4w8pu0ktff.jpeg
 paragonsdao`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vz5m2ri5vz31bdtupp8a72ghtzfv.png
+bitcoinl2labs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fy9b3lidfq1b14ladrwq68dfd3k2.png

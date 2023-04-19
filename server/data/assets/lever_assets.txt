@@ -1556,3 +1556,12 @@ Mona`Mona`https://lever-client-logos.s3.us-west-2.amazonaws.com/3e7751de-fe5c-4c
 newzealandtradeandenterprise`New Zealand Trade and Enterprise`https://lever-client-logos.s3.amazonaws.com/9f27077f-1aa3-4ef4-afd9-b99e94a8f30c-1535540587395.png
 malt`Malt`https://lever-client-logos.s3.us-west-2.amazonaws.com/2f4de33b-7255-4524-bbb0-cf1a6937143b-1671556259072.png
 leena`Leena AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/e68dbc47-c579-4dd5-93f6-b998b6c8bf86-1658951630410.png
+crickethealth`Interwell Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/2e6d756d-1abc-480e-b0ca-1985258043e6-1669929433145.png
+restaurant365`Restaurant365`https://lever-client-logos.s3.amazonaws.com/7f246cde-e7a6-4c49-93fc-ac6e8ce68c96-1564170287538.png
+cognitiv`Cognitiv`https://lever-client-logos.s3.us-west-2.amazonaws.com/017d9e09-50a1-478c-8fd1-bef18f4dca96-1672950508096.png
+thenotcompany`NotCo`https://lever-client-logos.s3.us-west-2.amazonaws.com/9c66b252-ef4a-4fb6-8d90-1109e18f0517-1643820697019.png
+milliondollarbabyco`Million Dollar Baby Co.`https://lever-client-logos.s3-us-west-2.amazonaws.com/bd99a99b-3d5b-491e-873d-7272438e9b89-1596661112136.png
+investorflow`InvestorFlow`https://lever-client-logos.s3.us-west-2.amazonaws.com/e14e10db-8334-438b-a134-0c0b61ad2fad-1665005576983.png
+solidcore`[solidcore]`https://lever-client-logos.s3.amazonaws.com/a8c4516d-b196-4351-a2b1-6dbce913f7d8-1545934710966.png
+filevine`Filevine`https://lever-client-logos.s3.us-west-2.amazonaws.com/2cda28e2-3447-47b0-986b-aadaed4d340b-1631560620435.png
+FinleyTechnologies`Finley Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/43be64f4-9596-4af6-bdcd-762165889f75-1614125072291.png

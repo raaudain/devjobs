@@ -928,3 +928,7 @@ EntertainmentFuse`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/5145e33
 MobInspirePvtLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5bd6d59117d6d83739337c0c/huge?r=s3-eu-central-1
 Securitas`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6267f01c0539de752ae0799a/huge?r=s3-eu-central-1
 JobsForHumanity`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/600991847e242e4dc5c536b8/huge?r=s3-eu-central-1
+JYSKCanada`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5fa1ebfac1457565a9da0ee1/150px?r=s3-eu-central-1
+Vanksen`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/633c1e65e4a8e630c8d0ea64/5f2bd688-7747-418c-b0e3-979cb6c86f0f?r=s3-eu-central-1
+BETSOL`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62d1501bd5543a0f8df67b62/150px?r=s3-eu-central-1
+Together`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5cdaa204ad66f94dbe8ce6d7/bd5ca2d0-9534-4158-beb7-108113dbf22c?r=s3-eu-central-1

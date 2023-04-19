@@ -1619,3 +1619,8 @@ villagereachcareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo
 hospitable`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/550146/logo
 coretek-services`n/a`None
 nalamoney`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/516667/logo
+ampcap`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/577620/logo
+f45training`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/222580/logo
+silverbird`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/491998/logo
+exigent`n/a`None
+trocaire`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/100094/logo

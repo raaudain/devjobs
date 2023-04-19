@@ -1906,3 +1906,12 @@ weareservicemax`ServiceMax`https://s2-recruiting.cdn.greenhouse.io/external_gree
 wheelhouse`Wheelhouse`None
 oafkenya`One Acre Fund - Kenya`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/011/012/resized/OAF_Logo_Teal.png
 czero`C-Zero`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/086/700/resized/logo.png
+octanelending`Octane`None
+bigleafnetworks`Bigleaf Networks`None
+memorahealth`Memora Health`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/229/000/resized/Memora_Logo.png
+casetext`Casetext`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/236/200/resized/logo_dark.png
+zelusanalytics`Zelus Analytics`None
+learfield`LEARFIELD`None
+higherlogic`Higher Logic`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/088/200/resized/higherLogiclogo2020.png
+huddle01`Huddle01`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/099/000/resized/Secondary_Logomark_(1).png
+readyset`ReadySet`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/092/800/resized/ReadySet_Logo_Horizontal_OnWhite_Large_(1).png
