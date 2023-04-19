@@ -1039,3 +1039,8 @@ StandardBankGroup
 EntertainmentFuse
 TheSRGroup1
 JobsForHumanity
+JYSKCanada
+Together
+BETSOL
+Vanksen
+WinMaxSystemsCorporation

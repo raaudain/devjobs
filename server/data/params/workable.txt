@@ -1575,3 +1575,8 @@ coretek-services
 kingsisle-entertainment-inc
 rassini
 nalamoney
+silverbird
+exigent
+f45training
+trocaire
+ampcap
