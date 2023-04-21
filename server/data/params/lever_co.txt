@@ -247,7 +247,6 @@ cprime
 halvik
 terminus
 ppil
-getbuilt
 metlife
 tba
 adaptavist
@@ -448,7 +447,6 @@ blinkux
 shef
 aofl
 ppkeystone
-tari
 objective
 mcgrathnicol
 AMIRI
@@ -528,7 +526,6 @@ integrichain
 r4d
 elenas
 apartmentlife
-Insitro
 BAMTradingServices
 kwx
 cornershopapp
@@ -909,7 +906,6 @@ wasabi
 huma
 xagroup
 genopets
-vietcetera
 crossfit
 fama
 scratchfinancial
@@ -1222,7 +1218,6 @@ payjoy
 getgo
 you
 quizlet-2
-gojek
 quotient
 DirectiveConsulting
 Anthropic
