@@ -1565,3 +1565,10 @@ investorflow`InvestorFlow`https://lever-client-logos.s3.us-west-2.amazonaws.com/
 solidcore`[solidcore]`https://lever-client-logos.s3.amazonaws.com/a8c4516d-b196-4351-a2b1-6dbce913f7d8-1545934710966.png
 filevine`Filevine`https://lever-client-logos.s3.us-west-2.amazonaws.com/2cda28e2-3447-47b0-986b-aadaed4d340b-1631560620435.png
 FinleyTechnologies`Finley Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/43be64f4-9596-4af6-bdcd-762165889f75-1614125072291.png
+repurposeglobal`rePurpose Global`https://lever-client-logos.s3.us-west-2.amazonaws.com/012d6ccd-8aeb-48b8-b3d2-31f6ef34c11c-1668146233437.png
+pollyex`Polly`https://lever-client-logos.s3.us-west-2.amazonaws.com/5c194da5-e7de-4566-8b49-a44c7b8175f9-1615338092421.png
+cresta`Cresta`https://lever-client-logos.s3.us-west-2.amazonaws.com/80a91fca-97f0-4053-896a-db3c1a148f7e-1611169701013.png
+hiro`Hiro `https://lever-client-logos.s3.us-west-2.amazonaws.com/7e352a0c-9e67-43aa-857f-18420307b456-1665900839285.png
+igmbio`IGM Biosciences, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/13ac38a1-9efd-4c61-a916-43d38045bbee-1632305138206.png
+bluecoding`Blue Coding`https://lever-client-logos.s3.us-west-2.amazonaws.com/3c1d9ac7-6738-46c5-b6ca-a35fa2a0df57-1666278594128.png
+moogsoft`Moogsoft`https://lever-client-logos.s3.us-west-2.amazonaws.com/34504418-a4ac-41b9-8603-0efa8cbcf21a-1617983489207.png

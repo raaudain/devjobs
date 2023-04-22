@@ -434,7 +434,6 @@ intergiro
 wayhome
 nodalview
 modulussa
-chillhopmusic
 caremanagementsuissegmbh
 atolye
 personalhub
@@ -1060,14 +1059,11 @@ elinvar
 orbitlove
 kraus
 synapseanalytics
-support
 kwskarriere
-status
 satori
 giocoffee
 agaseurope
 timeshift
-graphitehq
 werkenbijbrandnewday
 castolin
 centamg
@@ -1080,4 +1076,3 @@ medecinssansfrontiereswaca
 callista
 mteam
 signode
-protonmail

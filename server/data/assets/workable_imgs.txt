@@ -1624,3 +1624,11 @@ f45training`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/222580/
 silverbird`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/491998/logo
 exigent`n/a`None
 trocaire`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/100094/logo
+24-7intouch`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/419844/logo
+janes`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/550831/logo
+dnsimple`n/a`None
+our-future-health`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/466874/logo
+djirra`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/257546/logo
+pixelynx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/568312/logo
+onlogic-inc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/426994/logo
+codi`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/437246/logo
