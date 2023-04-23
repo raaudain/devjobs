@@ -338,7 +338,6 @@ theinnercircle
 sopro
 centuria2
 loadingsystems
-monemploi
 letsgetdigital
 hued
 squeezestudio
