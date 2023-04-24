@@ -390,7 +390,6 @@ narmi
 walkerandcompany
 FLASH
 pingcap
-einblick
 tuned
 bespokepost
 helloalpha
@@ -1073,7 +1072,6 @@ firsthand
 PestoTech
 headout
 titmouse
-cloud-academy
 servicerocket
 nexii
 virtuous
@@ -1333,7 +1331,6 @@ ConverseNow
 joinpapa
 cubesoftware
 Presto
-openleague
 ableserve
 honeybeerobotics
 p3vetpartners
