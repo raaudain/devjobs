@@ -258,7 +258,6 @@ fdlgroup
 booksy-1
 sierra-interactive
 supermassive-games
-crypto-dot-com
 forefront-telecare
 carry1st
 datacom1
