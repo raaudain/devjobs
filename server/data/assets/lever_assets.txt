@@ -1572,3 +1572,11 @@ hiro`Hiro `https://lever-client-logos.s3.us-west-2.amazonaws.com/7e352a0c-9e67-4
 igmbio`IGM Biosciences, Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/13ac38a1-9efd-4c61-a916-43d38045bbee-1632305138206.png
 bluecoding`Blue Coding`https://lever-client-logos.s3.us-west-2.amazonaws.com/3c1d9ac7-6738-46c5-b6ca-a35fa2a0df57-1666278594128.png
 moogsoft`Moogsoft`https://lever-client-logos.s3.us-west-2.amazonaws.com/34504418-a4ac-41b9-8603-0efa8cbcf21a-1617983489207.png
+thinkahead`AHEAD`https://lever-client-logos.s3.amazonaws.com/bb19aa03-5cd9-499e-a863-a40a6356c47f-1580314236897.png
+civitech`Civitech`https://lever-client-logos.s3.us-west-2.amazonaws.com/44acebe4-16cd-4ec6-8fa3-83fe4446595a-1675104829904.png
+kakaobrain`kakaobrain`https://lever-client-logos.s3.us-west-2.amazonaws.com/f0290fbd-94d3-4f60-bd50-90a2f51dc71c-1647588914700.png
+Mosaicbuilders`Mosaic`https://lever-client-logos.s3.us-west-2.amazonaws.com/e93e95c9-de12-4bdd-8ccc-e0f7406aff34-1628092489375.png
+observeai`Observe.AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/5c03e138-e197-4ca6-ad3e-6ff0b0f0af21-1668726014668.png
+semgrep`Semgrep`https://lever-client-logos.s3.us-west-2.amazonaws.com/d1dffe41-4d6f-451f-a2d3-71f6e0c036a9-1680279972463.png
+cashrewards`Cashrewards`https://lever-client-logos.s3.us-west-2.amazonaws.com/fcaa7c06-792a-4316-837a-73ef2af7e86c-1660819215367.png
+edfarm`Ed Farm`https://lever-client-logos.s3.us-west-2.amazonaws.com/8ffc5553-0560-49bb-9367-3e7aa425c446-1632177584840.png

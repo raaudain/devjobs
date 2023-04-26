@@ -934,3 +934,5 @@ BETSOL`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62d1501bd5543a
 Together`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5cdaa204ad66f94dbe8ce6d7/bd5ca2d0-9534-4158-beb7-108113dbf22c?r=s3-eu-central-1
 EASYVISTA`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62c3e8310253c06515deb6ab/huge?r=s3-eu-central-1
 WSPAfrica`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/627505d2bbeed819479f2a80/huge?r=s3-eu-central-1
+SNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58919688e4b0672cc03331a9/150px?r=s3
+HaloGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/589a2394e4b02464493073c9/150px?r=s3
