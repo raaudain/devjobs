@@ -1482,3 +1482,12 @@ pollyex
 bluecoding
 repurposeglobal
 moogsoft
+thinkahead
+edfarm
+semgrep
+observeai
+fizz
+civitech
+kakaobrain
+Mosaicbuilders
+cashrewards

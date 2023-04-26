@@ -1048,3 +1048,6 @@ StraumannGroup1
 WSPAfrica
 TheYirosShop
 EASYVISTA
+HaloGroup1
+SNV
+McgregorRecruitment
