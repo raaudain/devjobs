@@ -364,7 +364,6 @@ undergroundcellar
 neighbor
 dompe
 bitwiseinvestments
-middletonmeyers
 emersoncollective
 kiddom
 ava
@@ -610,7 +609,6 @@ redsox
 meesho
 dazn
 blackriflecoffee
-zeus
 printify
 EnergyVault
 geotab

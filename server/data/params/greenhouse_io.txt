@@ -207,7 +207,6 @@ grammarly
 crunchyroll
 pagerduty
 signaladvisors
-passbase
 gohealth
 workrise
 axon
@@ -908,7 +907,6 @@ oddball
 fingerprint
 veranoholdings
 cyware
-theravancebiopharma
 aura798
 rev
 billgo
@@ -1156,7 +1154,6 @@ linkfire
 medmen
 precisionmedicinegroup
 mrbeastyoutube
-gridnews
 forbes
 paddle
 stockx
@@ -1255,7 +1252,6 @@ techstars57
 nylas
 dataiku
 hightouch
-makeship
 substack
 zapier
 broadsign
