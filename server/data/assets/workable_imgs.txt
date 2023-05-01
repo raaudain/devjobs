@@ -1640,3 +1640,9 @@ thesocialelement`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/56
 sky-mavis`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/502384/logo
 thena`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/556593/logo
 easyknock`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/469417/logo
+silobreaker`n/a`None
+lafosse`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/291952/logo
+pharmathen`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/161543/logo
+vivo-energy`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/333016/logo
+queryclick`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/385600/logo
+nogood`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/457470/logo

@@ -1580,3 +1580,16 @@ observeai`Observe.AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/5c03e
 semgrep`Semgrep`https://lever-client-logos.s3.us-west-2.amazonaws.com/d1dffe41-4d6f-451f-a2d3-71f6e0c036a9-1680279972463.png
 cashrewards`Cashrewards`https://lever-client-logos.s3.us-west-2.amazonaws.com/fcaa7c06-792a-4316-837a-73ef2af7e86c-1660819215367.png
 edfarm`Ed Farm`https://lever-client-logos.s3.us-west-2.amazonaws.com/8ffc5553-0560-49bb-9367-3e7aa425c446-1632177584840.png
+verytechnology`Very`https://lever-client-logos.s3.us-west-2.amazonaws.com/3911e661-7112-4425-a1e9-c3e0719a8acc-1670248532429.png
+ironfish`Iron Fish`https://lever-client-logos.s3.us-west-2.amazonaws.com/c9824e20-1778-49ba-8434-33ddecb9312f-1630435929617.png
+character`Character Technologies Inc`https://lever-client-logos.s3.us-west-2.amazonaws.com/99ef4a4a-337d-4438-bdea-c6e8a2b1ff6a-1679553260888.png
+glassnode`Glassnode`https://lever-client-logos.s3.us-west-2.amazonaws.com/ca6a01a0-6c38-4166-bc05-0886f4e9eac0-1649935407912.png
+empassion.com`Empassion`https://lever-client-logos.s3.us-west-2.amazonaws.com/c5a0af31-9c35-492b-8132-b1c296362682-1669745675356.png
+apogeetherapeutics`Apogee Therapeutics`https://lever-client-logos.s3.us-west-2.amazonaws.com/303be842-156e-42b0-99b5-2f12668fe510-1680630651674.png
+talkwalker`Talkwalker`https://lever-client-logos.s3-us-west-2.amazonaws.com/b88212cf-b6aa-49e6-aede-96fb4d147673-1592291863385.png
+baller`BallerTV`https://lever-client-logos.s3.us-west-2.amazonaws.com/c93af05b-ca7b-4e48-bdf0-0d9273769f5e-1669130662603.png
+sumo-digital`Sumo Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/486e3065-7652-4579-8384-677f5cf1c04f-1682496880408.png
+Walnut`Walnut`https://lever-client-logos.s3.us-west-2.amazonaws.com/82c1a58f-b6c0-4e13-935b-889baed88a72-1640463550353.png
+deep6`Deep 6 AI`https://lever-client-logos.s3.amazonaws.com/f32fb6af-d4cf-440c-bf46-b0b3c48e9532-1559840023248.png
+ultra`Ultra`https://lever-client-logos.s3-us-west-2.amazonaws.com/ce127c54-652d-420f-aaee-f73914b3c428-1589375895145.png
+actian`Actian Corporation`https://lever-client-logos.s3.us-west-2.amazonaws.com/947c6e34-445a-4d3e-9b24-570766be9c0a-1644609549526.png

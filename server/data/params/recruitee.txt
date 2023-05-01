@@ -60,7 +60,6 @@ teqball
 logicline
 nextbigthingag2
 asaltech
-deinebaustoffe
 badischebackstub
 newlawbusinessmodel
 vangelder
@@ -147,7 +146,6 @@ fysius
 toku
 fillingpieces
 avantarte
-startupsjobs
 angelicoussisgroup
 msf
 checkdgroup
@@ -1087,13 +1085,10 @@ szh
 woningnet
 sparkoptimus
 moosmann
-status
 cbreexcellerate
 adamsmithinternational1
 riderlevettbucknall
 skyscrapers
-yagora
-protonmail
 affideaspain
 uscloud
 trustflight

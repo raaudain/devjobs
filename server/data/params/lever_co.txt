@@ -34,7 +34,6 @@ fuzzypethealth
 lumosity
 distru
 oso
-outschool
 automox
 workos
 mattermost
@@ -98,7 +97,6 @@ molekule
 moo
 netflix
 notarize
-ntopology
 onesignal
 outreach
 peek
@@ -451,7 +449,6 @@ AMIRI
 epifi
 kokonetworks
 riiidlabs
-motorwerks
 convex
 energyrecovery
 houm
@@ -493,7 +490,6 @@ leandatainc
 apollographql
 tonkean
 veeva
-dbtlabs
 AmbassadorLabs
 dronedeploy
 ansira
@@ -969,7 +965,6 @@ starburstdata
 bixal
 ironcladapp
 analogfolk
-boldpenguin
 bridgebio
 humcapital
 directi

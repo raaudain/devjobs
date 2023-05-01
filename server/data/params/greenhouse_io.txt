@@ -1151,7 +1151,6 @@ jumo
 freenow
 mixpanel
 linkfire
-medmen
 precisionmedicinegroup
 mrbeastyoutube
 forbes
@@ -1569,7 +1568,6 @@ turquoisehealth
 103644278
 abacusinsights
 medallion
-floyd
 watershed
 elixirr
 atomica
@@ -1771,18 +1769,13 @@ radiant
 cleoindia
 mediaartslab
 olipop
-theravancebiopharma
 petersonpetclinic
 swoogo
 toast
-Kettle
-ebot7
-syncari
 recordedfuture
 theroom
 athenaeducation
 merama
 truehold
-sundae
 raintherapeutics
 arascorporation

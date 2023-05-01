@@ -1933,3 +1933,13 @@ tremorvideodsp`Tremor Video`None
 flipp`Flipp`None
 withumsmithbrown`WithumSmith+Brown`None
 cleoindia`Cleo (India)`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/367/500/resized/Cleo-Blue.png
+petersonpetclinic`Petersen Pet Clinic`None
+toast`Toast`None
+recordedfuture`Recorded Future`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/069/500/resized/LinkedIn_Logo.png
+athenaeducation`Athena Education`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/180/100/resized/Athena_primary.png
+truehold`Truehold`None
+raintherapeutics`Rain Oncology`None
+swoogo`Swoogo`None
+theroom`THE ROOM`None
+merama`Merama`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/618/700/resized/Logo-Mark-Gray-Backround.jpg
+arascorporation`Aras Corporation`None
