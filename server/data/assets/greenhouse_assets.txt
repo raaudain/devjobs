@@ -1943,3 +1943,17 @@ swoogo`Swoogo`None
 theroom`THE ROOM`None
 merama`Merama`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/618/700/resized/Logo-Mark-Gray-Backround.jpg
 arascorporation`Aras Corporation`None
+republicschools`RePublic Schools`None
+thecollegeboard`The College Board`None
+generatebiomedicines`Generate Biomedicines`None
+genies`Genies, Inc.`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/224/000/resized/geniesg-transparent.jpeg
+hungryroot`Hungryroot`None
+hotelengine`Hotel Engine`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/588/300/resized/Hiring_Image.png
+webershandwick`Weber Shandwick`None
+celtx`Celtx`None
+katmaitech`Katmai Tech`None
+edgedelta`Edge Delta`None
+gooddog`Careers at Good Dog`None
+fountain`Fountain`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/141/500/resized/blue-white-logo.jpg
+moovfinancial`Moov Financial`None
+inflectionai`Inflection AI`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/236/100/resized/inflection_logo.jpeg

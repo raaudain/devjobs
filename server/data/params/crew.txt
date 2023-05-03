@@ -76,9 +76,5 @@ surfe
 mystic
 collective
 doctrio
-www
-community
-api-docs
-blog
 capsule
 slabs

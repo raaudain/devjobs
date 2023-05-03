@@ -1593,3 +1593,5 @@ Walnut`Walnut`https://lever-client-logos.s3.us-west-2.amazonaws.com/82c1a58f-b6c
 deep6`Deep 6 AI`https://lever-client-logos.s3.amazonaws.com/f32fb6af-d4cf-440c-bf46-b0b3c48e9532-1559840023248.png
 ultra`Ultra`https://lever-client-logos.s3-us-west-2.amazonaws.com/ce127c54-652d-420f-aaee-f73914b3c428-1589375895145.png
 actian`Actian Corporation`https://lever-client-logos.s3.us-west-2.amazonaws.com/947c6e34-445a-4d3e-9b24-570766be9c0a-1644609549526.png
+opencare`Opencare`https://lever-client-logos.s3.us-west-2.amazonaws.com/813fcfdd-d4e0-4001-9e79-4faa9853bfee-1601055125634.png
+chatmeter`Chatmeter`https://lever-client-logos.s3.us-west-2.amazonaws.com/3edceaf7-398a-4a7d-bf43-d0fabd8d9d94-1679608844279.png

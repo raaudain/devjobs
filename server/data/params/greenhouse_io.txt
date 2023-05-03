@@ -1774,7 +1774,6 @@ merama
 truehold
 raintherapeutics
 arascorporation
-theravancebiopharma
 webershandwick
 republicschools
 celtx
@@ -1782,13 +1781,10 @@ thecollegeboard
 katmaitech
 generatebiomedicines
 edgedelta
-fortify
 gooddog
-ebot7
 fountain
 genies
 moovfinancial
 hungryroot
 inflectionai
 hotelengine
-sundae

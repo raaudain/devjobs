@@ -937,3 +937,7 @@ WSPAfrica`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/627505d2bbe
 SNV`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/58919688e4b0672cc03331a9/150px?r=s3
 HaloGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/589a2394e4b02464493073c9/150px?r=s3
 AmpleInsightInc`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c400750c9e77c0006ad111b/huge?r=s3-eu-central-1
+StowGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/623331da3723083dbe49cc63/huge?r=s3-eu-central-1
+inhabit`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b88b031e4b01c87868aa2ee/86f8aba6-5e46-45ed-b3bb-69d092df6cd1?r=s3-eu-central-1
+AdtalemGlobalEducation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6351a66ebb3e374458eb0954/huge?r=s3-eu-central-1
+WorldwideTechServices`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/636bf71604b6d6529675a228/150px?r=s3-eu-central-1
