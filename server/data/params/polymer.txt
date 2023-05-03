@@ -248,3 +248,4 @@ teton
 paragonsdao
 samedays
 bitcoinl2labs
+wexel

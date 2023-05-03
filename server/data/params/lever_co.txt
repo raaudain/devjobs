@@ -1496,3 +1496,5 @@ empassion.com
 sumo-digital
 talkwalker
 verytechnology
+chatmeter
+opencare
