@@ -97,7 +97,6 @@ molekule
 moo
 netflix
 notarize
-onesignal
 outreach
 peek
 plastiq
@@ -625,7 +624,6 @@ fullstacklabs
 bloomon
 currencycloud
 emilabs
-pinata
 oomnitza
 migo
 WeMaintain
@@ -877,7 +875,6 @@ sheertex
 loblawdigital
 kyivstar
 sirnaomics
-peachycorp
 zentail
 photoroom
 LambdaSolutions

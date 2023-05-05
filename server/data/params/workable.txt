@@ -144,7 +144,6 @@ lingoace
 criadvantage
 followloop
 pepperhq
-dsq
 aviso
 wappier
 pixelogicmedia
@@ -518,7 +517,6 @@ kidoschools
 vizibl
 exinity
 wizcorp
-flowingstreams
 cmic
 cloud9
 telegraph
