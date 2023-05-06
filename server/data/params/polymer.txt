@@ -249,3 +249,5 @@ paragonsdao
 samedays
 bitcoinl2labs
 wexel
+bunsen
+hoodpay

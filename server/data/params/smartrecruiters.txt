@@ -1056,3 +1056,5 @@ AdtalemGlobalEducation
 WorldwideTechServices
 StowGroup
 inhabit
+ColonyHardware
+PTGoldenLogistikJayaindo
