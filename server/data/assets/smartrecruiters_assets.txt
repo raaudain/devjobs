@@ -941,3 +941,5 @@ StowGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/623331da372
 inhabit`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5b88b031e4b01c87868aa2ee/86f8aba6-5e46-45ed-b3bb-69d092df6cd1?r=s3-eu-central-1
 AdtalemGlobalEducation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6351a66ebb3e374458eb0954/huge?r=s3-eu-central-1
 WorldwideTechServices`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/636bf71604b6d6529675a228/150px?r=s3-eu-central-1
+ChantierDavieCanada`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61d6eb30de8797587bb0ae7d/huge?r=s3-eu-central-1
+PTGoldenLogistikJayaindo`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/640175bb477d6c41bdcf6856/150px?r=s3-eu-central-1

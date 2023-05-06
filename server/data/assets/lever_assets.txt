@@ -1595,3 +1595,12 @@ ultra`Ultra`https://lever-client-logos.s3-us-west-2.amazonaws.com/ce127c54-652d-
 actian`Actian Corporation`https://lever-client-logos.s3.us-west-2.amazonaws.com/947c6e34-445a-4d3e-9b24-570766be9c0a-1644609549526.png
 opencare`Opencare`https://lever-client-logos.s3.us-west-2.amazonaws.com/813fcfdd-d4e0-4001-9e79-4faa9853bfee-1601055125634.png
 chatmeter`Chatmeter`https://lever-client-logos.s3.us-west-2.amazonaws.com/3edceaf7-398a-4a7d-bf43-d0fabd8d9d94-1679608844279.png
+tri`Toyota Research Institute`https://lever-client-logos.s3.amazonaws.com/b0c61671-acab-409c-8f89-4b8a9ae7cec2-1468960124705.png
+coforma`Coforma`https://lever-client-logos.s3.us-west-2.amazonaws.com/d469341d-d7d9-43b5-9b93-e82d5792eae7-1602006045141.png
+Icon-iq`ICON-IQ`https://lever-client-logos.s3.us-west-2.amazonaws.com/cd459e35-2a58-4ef7-8883-d7b7f2235820-1680018104036.png
+anybotics`ANYbotics`https://lever-client-logos.s3.amazonaws.com/835be098-154c-4c89-85bf-38cb1b2cdcc4-1566243935657.png
+ritual`Ritual`https://lever-client-logos.s3.amazonaws.com/cf161472-08cf-4acc-9bfc-0a404ee0e5e5-1532132002170.png
+bridge`Bridge Partners`https://lever-client-logos.s3.us-west-2.amazonaws.com/ed30a270-51bb-41bf-91a1-3fa2d205b491-1680564153696.png
+electrum`Electrum`https://lever-client-logos.s3.us-west-2.amazonaws.com/35e367a9-39e4-48fc-811b-496786b60b55-1639412553619.png
+z1tech`Z1 Tech`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc3ad913-7702-47ba-93ff-6b652719dc4c-1680276059771.png
+ignite`Ignite`https://lever-client-logos.s3.us-west-2.amazonaws.com/72a98023-05fd-4884-9657-1df10fc8cab9-1646233007231.png

@@ -1957,3 +1957,11 @@ gooddog`Careers at Good Dog`None
 fountain`Fountain`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/141/500/resized/blue-white-logo.jpg
 moovfinancial`Moov Financial`None
 inflectionai`Inflection AI`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/236/100/resized/inflection_logo.jpeg
+altisales`AltiSales`None
+getyourguide`GetYourGuide`None
+archrivaladidas`Archrival Agents | adidas Brand Program`None
+typeform`Typeform`None
+rbifrenchcareers`Restaurant Brands International French`None
+goldinauctions`Goldin`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/445/300/resized/Goldin_logo.png
+shifttechnology`Shift Technology`None
+janestreet`Jane Street`None

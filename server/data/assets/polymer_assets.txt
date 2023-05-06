@@ -195,3 +195,5 @@ teton`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9xp7riw3mfjb5ayxh
 chemfinitytech`n/a`https://inflow-public.s3.amazonaws.com/company-logos/jgynwxyl20icbjq45n4w8pu0ktff.jpeg
 paragonsdao`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vz5m2ri5vz31bdtupp8a72ghtzfv.png
 bitcoinl2labs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fy9b3lidfq1b14ladrwq68dfd3k2.png
+bunsen`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qqkhvd165yr6d5b7o7nmddbfy2t7.svg
+hoodpay`n/a`https://inflow-public.s3.amazonaws.com/company-logos/dwao99arelrkpcpct0o78tl3lriz.png
