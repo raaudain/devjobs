@@ -1247,3 +1247,5 @@ syncari
 sundae
 ebot7
 siwaresystems
+splashfinancial
+sendinblue
