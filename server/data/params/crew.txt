@@ -80,3 +80,12 @@ capsule
 slabs
 sonio
 praiz
+www
+community
+api-docs
+blog
+hashnode
+topo
+loona
+learn
+usual

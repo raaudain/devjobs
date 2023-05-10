@@ -1058,3 +1058,11 @@ StowGroup
 inhabit
 ColonyHardware
 PTGoldenLogistikJayaindo
+FinanzennetGmbH
+WorkaroundGmbH
+IOMAXISLLC
+REWEInternationalDienstleistungsgesellschaftmbH
+PTOttoMenaraGlobalindo1
+Shawbrook
+GhobashGroup
+WNSGlobalServices144
