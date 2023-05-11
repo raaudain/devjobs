@@ -197,3 +197,5 @@ paragonsdao`n/a`https://inflow-public.s3.amazonaws.com/company-logos/vz5m2ri5vz3
 bitcoinl2labs`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fy9b3lidfq1b14ladrwq68dfd3k2.png
 bunsen`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qqkhvd165yr6d5b7o7nmddbfy2t7.svg
 hoodpay`n/a`https://inflow-public.s3.amazonaws.com/company-logos/dwao99arelrkpcpct0o78tl3lriz.png
+superform`n/a`https://inflow-public.s3.amazonaws.com/company-logos/kpsulbv3ks7wb68gkxiuc3ab56kw.png
+mutual-group`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hzfvj9d5oxcvy5f2x6jtmu8ebnwl.png

@@ -943,3 +943,9 @@ AdtalemGlobalEducation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc
 WorldwideTechServices`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/636bf71604b6d6529675a228/150px?r=s3-eu-central-1
 ChantierDavieCanada`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61d6eb30de8797587bb0ae7d/huge?r=s3-eu-central-1
 PTGoldenLogistikJayaindo`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/640175bb477d6c41bdcf6856/150px?r=s3-eu-central-1
+IOMAXISLLC`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc11/6296b3a081194b1b769d68fc/huge?r=s3-us-east-2
+FinanzennetGmbH`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/6143116176b76d504b179391/4b8295fb-429d-427d-8ef0-0c4f3c4ed64a?r=s3-eu-central-1
+WorkaroundGmbH`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/636d136cba28d84b4f59ddde/9ac0625e-0f06-4632-b3e0-c4d9bf5b2264?r=s3-eu-central-1
+Shawbrook`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/613aabdeaaff93691e6f1e8a/9e4fb0bd-fe7b-4a58-8ff6-106a52d44caf?r=s3-eu-central-1
+PTOttoMenaraGlobalindo1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61283ed1524b73175632c182/150px?r=s3-eu-central-1
+WNSGlobalServices144`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63fe28be18f7825fdd19ed43/150px?r=s3-eu-central-1

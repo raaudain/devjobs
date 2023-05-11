@@ -148,7 +148,6 @@ fillingpieces
 avantarte
 angelicoussisgroup
 msf
-checkdgroup
 affideaireland
 manikonailsgmbh
 companisto
@@ -1109,15 +1108,11 @@ kleurrijkwonen
 spiegltecgmbh1
 sequra
 shvenergy
-vermontstudiocenter
 kregeliussauerrosinskibredegbrwirtschaftsprufersteuerberater
 werkenbijseabournelogistics
-deinebaustoffe
-status
 bruno
 dillinggroup
 actionnetwork
 fab4minds
 plesner
-gpsdataservice
 startupsjobs

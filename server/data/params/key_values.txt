@@ -7,7 +7,6 @@
 /caremessage
 /ladder
 /course-hero
-/snap
 /plus
 /upduo
 /reduct

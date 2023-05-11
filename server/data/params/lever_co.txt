@@ -5,7 +5,6 @@ Continu
 frontapp
 3box
 olo
-divvyhomes
 nestwealth
 seesaw
 pex
@@ -69,7 +68,6 @@ delphix
 disqo
 eargo
 everbridge
-flexe
 floqast
 flowspace
 gametime
@@ -118,7 +116,6 @@ talend
 tamr
 tapcart
 teachable
-tealium
 textnow
 thrasio
 tune
@@ -430,7 +427,6 @@ xsolla
 spruce
 meetalbert
 quincus
-everlaw
 moonpig
 aero
 diamondfoundry
@@ -509,7 +505,6 @@ taptapsend
 nordsec
 percona
 mathpresso
-applovin
 rackspace
 alamodrafthouse
 scorpion
@@ -644,7 +639,6 @@ superannotate
 januaryinc
 skyslope
 gyant
-parallel
 cp
 didomi
 clabs
@@ -699,7 +693,6 @@ jupiterone
 Auros
 gravie
 insider-intelligence
-industrydive
 sentilink
 happyco
 axiomzen
@@ -854,7 +847,6 @@ merklescience
 luni
 brightseedbio
 curefit
-goshippo
 thetrevorproject
 StubHubHoldings
 indiegogo.com
@@ -862,7 +854,6 @@ Potloc
 alictus
 atob
 insomniacookies
-brainnest
 windownation
 actionnetwork
 getaround
@@ -958,7 +949,6 @@ redoxengine
 highspot
 starburstdata
 bixal
-ironcladapp
 analogfolk
 bridgebio
 humcapital
@@ -1219,7 +1209,6 @@ buckmason
 disabilityrightsca
 lochgroup
 parallelsystems
-btmg
 RyzLabs
 biggergames
 cority

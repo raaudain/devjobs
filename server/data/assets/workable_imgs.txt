@@ -1660,3 +1660,10 @@ vizrtgroup`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/579439/l
 unspun`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/590972/logo
 jigsaw`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/250398/jigsaw_tag_colour.jpg
 chandonusa`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/409233/logo
+measurabl`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/549078/logo
+angkas`n/a`None
+bcw-emea`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/174997/logo
+primait`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/554980/logo
+ndreams`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/94020/logo
+getellipsis`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/397442/logo
+carreraskiewitmx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/584933/logo

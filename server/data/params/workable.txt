@@ -97,7 +97,6 @@ connected
 banzai
 cti-jobs
 vultr
-checkly
 hiretual-3
 hookbang
 careers
@@ -168,7 +167,6 @@ draxis
 appearhere
 scientia
 thrasio
-iview
 jellydrops
 medicaldirector
 transloc-inc
@@ -715,7 +713,6 @@ domain-tools
 rdxworks
 glorify
 passendo
-honeybricks
 simpay
 yapily
 makersite
@@ -1616,7 +1613,6 @@ ndreams
 angkas
 measurabl
 primait
-dsq
 getellipsis
 carreraskiewitmx
 bcw-emea

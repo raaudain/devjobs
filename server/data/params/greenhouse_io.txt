@@ -296,7 +296,6 @@ morganfranklinconsultingllc
 effectual
 rbicareers
 gosite
-prodperfect
 nerdwallet
 ginger
 tucows
@@ -518,7 +517,6 @@ agoda
 warbyparker
 thesciongroupllc
 freshbooks
-tencent
 adhocexternal
 khealth
 careem
@@ -914,7 +912,6 @@ illuvium
 freeassociation
 singulargenomics
 aalphabio
-lexmarkets
 dominodatalab
 understood
 crookedmedia
@@ -976,7 +973,6 @@ berlinrosen
 point72
 komodohealth
 unispace
-cytokinetics
 thinkific
 stepmobile
 manygroup
@@ -1011,7 +1007,6 @@ crescolabs
 schweigerdermatologygroup
 1021creative
 calendly
-cometeer
 technologyadvice
 incrediblehealth
 bharatx
@@ -1036,7 +1031,6 @@ freshprints
 enervee
 lilium
 golinks
-valsoft
 nirrin
 HarnessWealth
 sonder
@@ -1119,7 +1113,6 @@ linx
 inspire55
 repairsmith
 pebblepost
-dcp
 majorleaguebaseball
 verifone
 retool
@@ -1239,7 +1232,6 @@ nurix
 extrahopnetworks
 helix
 phonepe
-commsor
 nationalpublicradioinc
 magicleapinc
 accuweather
@@ -1801,10 +1793,7 @@ sbenergy
 capvision
 fluxfederation
 quantumvisioncenters
-ebot7
-syncari
 quimbee
 couchbaseinc
 rothys
 vultr
-sundae

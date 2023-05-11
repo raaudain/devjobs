@@ -1604,3 +1604,9 @@ bridge`Bridge Partners`https://lever-client-logos.s3.us-west-2.amazonaws.com/ed3
 electrum`Electrum`https://lever-client-logos.s3.us-west-2.amazonaws.com/35e367a9-39e4-48fc-811b-496786b60b55-1639412553619.png
 z1tech`Z1 Tech`https://lever-client-logos.s3.us-west-2.amazonaws.com/dc3ad913-7702-47ba-93ff-6b652719dc4c-1680276059771.png
 ignite`Ignite`https://lever-client-logos.s3.us-west-2.amazonaws.com/72a98023-05fd-4884-9657-1df10fc8cab9-1646233007231.png
+greatergoodhealth`Greater Good Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/b9729d55-8d16-48b8-b51a-4dffc4893b35-1660841695295.png
+ppsouthtexas`Planned Parenthood South Texas`https://lever-client-logos.s3.amazonaws.com/959ddb4d-aa76-4e8e-b365-a917974e674d-1502377177993.png
+clarifyhealth`Clarify Health`https://lever-client-logos.s3.us-west-2.amazonaws.com/adfe366d-f2f4-4dc9-b9e4-73f95fd12137-1610060621198.png
+ellevationeducation`Ellevation`https://lever-client-logos.s3.amazonaws.com/224585d7-53c2-4aaf-ad4f-161f34ad231e-1557932561806.png
+galepartners`GALE`https://lever-client-logos.s3.us-west-2.amazonaws.com/8ceea23a-6f1b-4afa-add9-cd3495650bb0-1656512997079.png
+climateai`ClimateAI`https://lever-client-logos.s3.us-west-2.amazonaws.com/9e86ed9a-3d99-4047-9858-2fac2f23ddbe-1678918105442.png
