@@ -949,3 +949,4 @@ WorkaroundGmbH`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63
 Shawbrook`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/613aabdeaaff93691e6f1e8a/9e4fb0bd-fe7b-4a58-8ff6-106a52d44caf?r=s3-eu-central-1
 PTOttoMenaraGlobalindo1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/61283ed1524b73175632c182/150px?r=s3-eu-central-1
 WNSGlobalServices144`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/63fe28be18f7825fdd19ed43/150px?r=s3-eu-central-1
+PortmanDentalCare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/637653ffbdb250703a781193/huge?r=s3-eu-central-1
