@@ -1974,3 +1974,9 @@ sbenergy`SB Energy`None
 fluxfederation`Flux Federation`None
 quimbee`Quimbee`None
 rothys`Rothy's`None
+headoutlinkedin`Headout LI`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/251/800/resized/headout-logo-purps.png
+hexagonbio`Hexagon Bio`None
+4dmoleculartherapeutics`4D Molecular Therapeutics`None
+wellsaidlabs`WellSaid Labs`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/001/400/resized/download.png
+foodpandaphilippines`foodpanda Philippines`None
+codeforsciencesociety`Code for Science & Society`None

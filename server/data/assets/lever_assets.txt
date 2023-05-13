@@ -1610,3 +1610,13 @@ clarifyhealth`Clarify Health`https://lever-client-logos.s3.us-west-2.amazonaws.c
 ellevationeducation`Ellevation`https://lever-client-logos.s3.amazonaws.com/224585d7-53c2-4aaf-ad4f-161f34ad231e-1557932561806.png
 galepartners`GALE`https://lever-client-logos.s3.us-west-2.amazonaws.com/8ceea23a-6f1b-4afa-add9-cd3495650bb0-1656512997079.png
 climateai`ClimateAI`https://lever-client-logos.s3.us-west-2.amazonaws.com/9e86ed9a-3d99-4047-9858-2fac2f23ddbe-1678918105442.png
+prolegis`Prolegis`https://lever-client-logos.s3.us-west-2.amazonaws.com/20812fcb-02c6-421e-87a3-a2c2f3771881-1600806607498.png
+perpetualabs.com`Perpetua `https://lever-client-logos.s3.us-west-2.amazonaws.com/07fffee5-0149-485c-a113-38a276fececa-1637075800335.png
+priorities`Priorities`https://lever-client-logos.s3.amazonaws.com/a8fad71c-c2fa-4bdb-9201-174672bfe3e3-1516299257969.png
+lwolf`Lone Wolf Technologies`https://lever-client-logos.s3.us-west-2.amazonaws.com/29d084a1-17ee-4167-a375-c7615b9b0669-1644944385319.png
+stemprepacademy`STEM Prep Academy`https://lever-client-logos.s3-us-west-2.amazonaws.com/3899838b-f420-4f18-b0ac-cc81b7297556-1582896343470.png
+CoAktion`Coaktion`https://lever-client-logos.s3.us-west-2.amazonaws.com/fd8bfc75-e28b-448c-9186-0d11aabd8cbc-1671046033654.png
+flexcollegeprep`FLEX College Prep`https://lever-client-logos.s3.us-west-2.amazonaws.com/0e3f15e9-58a7-4fd9-98c8-8af815ecf7c4-1659131861354.png
+expliseat`Expliseat`https://lever-client-logos.s3.us-west-2.amazonaws.com/42c7702a-6df3-4169-b579-caa1eaf27819-1675791989640.png
+Gogolook`Gogolook`https://lever-client-logos.s3.us-west-2.amazonaws.com/c12ae6a6-e51c-457a-bdab-05a46c219ef7-1647339659249.png
+braveventurelabs`Brave Venture Labs`https://lever-client-logos.s3-us-west-2.amazonaws.com/a58e02db-0d88-43c3-a27c-6c4d5c500d70-1596109722412.png

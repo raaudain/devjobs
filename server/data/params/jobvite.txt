@@ -890,5 +890,4 @@ litera
 simplyioa
 ispschools
 lordco
-parkplacetechnologies
 pcmag
