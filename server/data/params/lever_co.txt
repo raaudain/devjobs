@@ -735,7 +735,6 @@ zopa
 sonarsource
 8x8
 butterflymx
-kkbox
 nisum
 plum
 stuart

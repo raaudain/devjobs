@@ -217,7 +217,6 @@ honor
 automatticcareers
 asana
 alto
-janetechnologies
 digit
 cameo
 gusto
