@@ -85,8 +85,4 @@ topo
 loona
 learn
 usual
-www
-community
-api-docs
-blog
 latamtechnicalservices

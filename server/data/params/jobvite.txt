@@ -894,5 +894,4 @@ pcmag
 premisehealth
 swiftpreparedfoods
 childserve
-parkplacetechnologies
 gid

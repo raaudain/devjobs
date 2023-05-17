@@ -353,7 +353,6 @@ threatconnect
 synthesia
 clearpayeu
 cajoo
-searchspring
 benevolentai
 zyte
 pangaia

@@ -1674,3 +1674,11 @@ shepherdcareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/582
 yakoa`n/a`None
 vouched`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/485870/logo
 snug`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/472985/logo
+gelato-digital`n/a`None
+avantstay`n/a`None
+campusink`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/575679/logo
+liferaft`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/602776/logo
+flat6labs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/52918/logo
+zerolabs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/558186/logo
+dlthub`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/587703/logo
+islacare`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/578633/logo

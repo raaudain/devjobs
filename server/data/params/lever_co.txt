@@ -259,7 +259,6 @@ dnc
 360learning
 popmenu
 prodigyeducation
-wyze
 circlemedical
 decathlon
 class101
@@ -1517,6 +1516,5 @@ pulsedata
 obol-tech
 thebouqs.com
 agreena
-kkbox
 kensho
 transfrvr

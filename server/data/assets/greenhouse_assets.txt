@@ -1980,3 +1980,12 @@ hexagonbio`Hexagon Bio`None
 wellsaidlabs`WellSaid Labs`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/001/400/resized/download.png
 foodpandaphilippines`foodpanda Philippines`None
 codeforsciencesociety`Code for Science & Society`None
+cascadedatalabs`Cascade Data Labs`None
+mainstreethealth`Main Street Health`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/081/600/resized/MainStreet_Health_Logo_RGB.png
+kindsnacks`KIND Snacks`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/226/900/resized/KINDLogo_RGB_Pos_1000px.png
+parallellearning`Parallel`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/328/100/resized/social-brandmark.png
+supernal`Supernal`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/570/100/resized/Greenhouse_Jobs_Posting_LI_Horizontal.jpg
+vegaamericas`VEGA Americas`None
+zepzgroup`Zepz`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/401/200/resized/Zepz_rezise_1024x512px.png
+divvyhomes`Divvy Homes`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/102/800/resized/Divvy_Homes_logo-full-b.png
+petfolk`Petfolk`None

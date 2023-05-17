@@ -1620,3 +1620,15 @@ flexcollegeprep`FLEX College Prep`https://lever-client-logos.s3.us-west-2.amazon
 expliseat`Expliseat`https://lever-client-logos.s3.us-west-2.amazonaws.com/42c7702a-6df3-4169-b579-caa1eaf27819-1675791989640.png
 Gogolook`Gogolook`https://lever-client-logos.s3.us-west-2.amazonaws.com/c12ae6a6-e51c-457a-bdab-05a46c219ef7-1647339659249.png
 braveventurelabs`Brave Venture Labs`https://lever-client-logos.s3-us-west-2.amazonaws.com/a58e02db-0d88-43c3-a27c-6c4d5c500d70-1596109722412.png
+agreena`Agreena`https://lever-client-logos.s3.us-west-2.amazonaws.com/27c755d1-9361-4843-b19c-3bda6c3a0146-1673556889110.png
+obol-tech`Obol`https://lever-client-logos.s3.us-west-2.amazonaws.com/8c68a433-5ea9-4aff-9a82-56ea555a908a-1659962381352.png
+patch`Patch`https://lever-client-logos.s3.us-west-2.amazonaws.com/c5a8f444-1b96-47d5-9842-7a445743af09-1676059520991.png
+generallyintelligent`Generally Intelligent`https://lever-client-logos.s3.us-west-2.amazonaws.com/50862d4d-2221-4d29-a3f6-fd355d4c6d22-1666227179269.png
+temporal`Temporal Technologies Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/490b7432-472f-4ac3-a351-433d97155cc4-1603463727932.png
+workingfamilies`Working Families Party`https://lever-client-logos.s3.us-west-2.amazonaws.com/55418442-21fa-4183-aecd-c9c51a26c831-1651767717818.png
+quitgenius`Quit Genius`https://lever-client-logos.s3.us-west-2.amazonaws.com/a8e24ede-b4e7-45c5-9b11-1dc38f85d5fa-1605714926370.png
+kensho`Kensho`https://lever-client-logos.s3.us-west-2.amazonaws.com/e3e4a69e-f746-499c-a699-392d6be9bade-1633445533156.png
+firstround`First Round Capital`https://lever-client-logos.s3.us-west-2.amazonaws.com/c563c988-94dd-4a72-9f51-985841540ff8-1683832144103.png
+transfrvr`Transfr`https://lever-client-logos.s3.us-west-2.amazonaws.com/cba2b9b4-7642-4de7-836f-f8117e460b67-1646416004247.png
+thebouqs.com`The Bouqs Company`https://lever-client-logos.s3.us-west-2.amazonaws.com/4152f944-d082-403c-98f9-5493d4e6a3ec-1634583111677.png
+GoToGroup`GoTo Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-4989-8596-ac871e4a9e82-1682066441676.png
