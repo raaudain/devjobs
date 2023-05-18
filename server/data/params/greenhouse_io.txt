@@ -1632,7 +1632,6 @@ mynd
 lookoutinc
 valimailinc
 junipersquare
-rippling
 velocity
 lighthouseautismcenter
 viamrobotics

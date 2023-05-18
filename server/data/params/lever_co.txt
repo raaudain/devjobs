@@ -51,7 +51,6 @@ aledade
 clubhouse
 activecampaign
 alation
-amobee
 angellist
 anyroad
 aquabyte
@@ -71,7 +70,6 @@ everbridge
 floqast
 flowspace
 gametime
-getwith
 goodrx
 hackerone
 healthsherpa
@@ -815,7 +813,6 @@ embark
 innovafeed
 levelai
 connectassistance
-contextis
 cherrytechnologies
 nfq
 swile
