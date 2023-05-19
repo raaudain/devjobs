@@ -116,7 +116,6 @@ klaviyo
 lacework
 legalist
 litify
-liveramp
 logicmonitor
 lookout
 marqeta
