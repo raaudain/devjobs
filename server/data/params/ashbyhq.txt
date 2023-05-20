@@ -747,3 +747,7 @@ integration.app
 lightspark
 create
 design-bundles
+Giddy
+Anthos%20Capital
+messagebird
+LevelUpVentures
