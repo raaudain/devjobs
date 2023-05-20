@@ -1531,7 +1531,6 @@ productiv
 hopskipdrive
 arkoselabs
 purposefreelance
-vsapartners
 tradeledger
 confiant
 elevatek12
@@ -1805,16 +1804,10 @@ parallellearning
 supernal
 petfolk
 Censia
-dcp
-unstoppabledomains
 vitalfarms
 snappy
-cidersecurity
-ebot7
 ogilvyuk
 citizen
 seed
 vyro
 drweng
-sundae
-cometeer

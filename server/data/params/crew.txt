@@ -86,7 +86,3 @@ loona
 learn
 usual
 latamtechnicalservices
-www
-community
-api-docs
-blog

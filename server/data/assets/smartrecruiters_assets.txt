@@ -953,3 +953,4 @@ PortmanDentalCare`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/637
 AccorHotel`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62835a5f45e8965453f444d3/huge?r=s3-eu-central-1
 BurwoodGroupInc`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/627bd243cd759650d43c7b0c/ec9bb7ac-8ca7-410e-bc20-1b55a2e1bc39?r=s3-eu-central-1
 LinuxFoundation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/601aeb12e1922e28cc5ec109/huge?r=s3-eu-central-1
+BoringBrandsPrivateLimited`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c645fc6d1608535eb38a481/9a0ee000-dfb7-402c-a3a8-57f281bbaeca?r=s3-eu-central-1

@@ -1632,3 +1632,5 @@ firstround`First Round Capital`https://lever-client-logos.s3.us-west-2.amazonaws
 transfrvr`Transfr`https://lever-client-logos.s3.us-west-2.amazonaws.com/cba2b9b4-7642-4de7-836f-f8117e460b67-1646416004247.png
 thebouqs.com`The Bouqs Company`https://lever-client-logos.s3.us-west-2.amazonaws.com/4152f944-d082-403c-98f9-5493d4e6a3ec-1634583111677.png
 GoToGroup`GoTo Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-4989-8596-ac871e4a9e82-1682066441676.png
+rumin8`Rumin8`https://lever-client-logos.s3.us-west-2.amazonaws.com/d4f43142-a68b-4d68-9754-62fdb2c9e8ed-1660676076267.png
+stradaeducation`Strada Education Foundation `https://lever-client-logos.s3.us-west-2.amazonaws.com/438d1baf-267e-461c-9909-7ed842f2d4a7-1679928413697.png

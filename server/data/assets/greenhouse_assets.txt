@@ -1989,3 +1989,11 @@ vegaamericas`VEGA Americas`None
 zepzgroup`Zepz`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/401/200/resized/Zepz_rezise_1024x512px.png
 divvyhomes`Divvy Homes`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/102/800/resized/Divvy_Homes_logo-full-b.png
 petfolk`Petfolk`None
+Censia`Censia`None
+snappy`Snappy`None
+citizen`Citizen`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/163/800/resized/Citizen_Logo_-_White.png
+vyro`Vyro`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/131/500/resized/Artboard_14.png
+vitalfarms`Vital Farms`None
+ogilvyuk`Ogilvy UK`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/490/400/resized/Ogilvy.jpg
+seed`Seed`None
+drweng`DRW`None
