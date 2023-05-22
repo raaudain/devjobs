@@ -622,7 +622,6 @@ hadrian
 robinpowered
 backstage
 gotit
-daedalus
 digitalmediamanagement
 runningtide
 supermove
@@ -685,7 +684,6 @@ lumafield
 BlocPower
 baton-market
 jupiterone
-Auros
 gravie
 insider-intelligence
 sentilink

@@ -771,7 +771,6 @@ kincartaeurope
 scandit
 collectivehealth
 mixtiles
-muv
 bluerivertech
 schubergphilis
 karunatherapeutics
@@ -896,7 +895,6 @@ decodable
 tubitv
 oddball
 fingerprint
-veranoholdings
 cyware
 aura798
 rev
