@@ -254,3 +254,6 @@ hoodpay
 superform
 mutual-group
 inspirehq
+kanopi
+nas
+phazero

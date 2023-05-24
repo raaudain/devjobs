@@ -1070,3 +1070,6 @@ AccorHotel
 BurwoodGroupInc
 LinuxFoundation
 BoringBrandsPrivateLimited
+CaliforniaClosets
+CatholicHealthcareLimited2
+KashiwaLogistikIndonesiaPT
