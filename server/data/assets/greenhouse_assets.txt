@@ -1997,3 +1997,7 @@ vitalfarms`Vital Farms`None
 ogilvyuk`Ogilvy UK`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/490/400/resized/Ogilvy.jpg
 seed`Seed`None
 drweng`DRW`None
+flamboyanfoundation`Flamboyan Foundation`None
+runwayml`Runway`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/214/300/resized/RW_squared.png
+guayaki`Guayaki Yerba Mate`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/129/100/resized/guayaki_full_lockup_white_background.jpg
+betterhealth`Better Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/452/600/resized/b-icon.png

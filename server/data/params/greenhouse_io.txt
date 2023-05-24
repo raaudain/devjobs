@@ -291,7 +291,6 @@ charthop
 picsart
 boltv2
 morganfranklinconsultingllc
-effectual
 rbicareers
 gosite
 nerdwallet
@@ -535,7 +534,6 @@ planetlabs
 drift
 schonfeld
 pendo
-catchco
 kinandcarta
 mark43
 acommerce
@@ -842,7 +840,6 @@ harvestofroanoke
 alexispointe
 paireyewear
 freshrealm
-novetta
 brunswickgroup
 eastfork
 heritagecrystalcleanllc
@@ -1811,9 +1808,6 @@ vyro
 drweng
 huntclub
 flamboyanfoundation
-unstoppabledomains
-muv
 guayaki
-ebot7
 betterhealth
 runwayml

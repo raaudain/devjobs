@@ -200,3 +200,4 @@ hoodpay`n/a`https://inflow-public.s3.amazonaws.com/company-logos/dwao99arelrkpcp
 superform`n/a`https://inflow-public.s3.amazonaws.com/company-logos/kpsulbv3ks7wb68gkxiuc3ab56kw.png
 mutual-group`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hzfvj9d5oxcvy5f2x6jtmu8ebnwl.png
 inspirehq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/yfb0j0np5slo2uxeti3snejcpw5w.jpeg
+kanopi`n/a`https://inflow-public.s3.amazonaws.com/company-logos/p18xt4zd3gu7m97ms1gm8okm834g.jpeg

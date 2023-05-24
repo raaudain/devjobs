@@ -1634,3 +1634,15 @@ thebouqs.com`The Bouqs Company`https://lever-client-logos.s3.us-west-2.amazonaws
 GoToGroup`GoTo Group`https://lever-client-logos.s3.us-west-2.amazonaws.com/ea3dc26a-36d6-4989-8596-ac871e4a9e82-1682066441676.png
 rumin8`Rumin8`https://lever-client-logos.s3.us-west-2.amazonaws.com/d4f43142-a68b-4d68-9754-62fdb2c9e8ed-1660676076267.png
 stradaeducation`Strada Education Foundation `https://lever-client-logos.s3.us-west-2.amazonaws.com/438d1baf-267e-461c-9909-7ed842f2d4a7-1679928413697.png
+trustedhealth`Trusted`https://lever-client-logos.s3.us-west-2.amazonaws.com/f879fe2a-b6a9-4d51-af4e-8b381d0463b8-1642782294857.png
+talentkompass-deutschland`TalentKompass Deutschland`https://lever-client-logos.s3.us-west-2.amazonaws.com/4b763d35-6104-46eb-abff-28fbe7532b49-1684155004840.png
+plenti`Plenti`https://lever-client-logos.s3.us-west-2.amazonaws.com/9c5f9e74-4ed3-4c61-bdfc-e22627155c1a-1620091954364.png
+sccfcu`SCCFCU`https://lever-client-logos.s3.amazonaws.com/283432f9-9294-432f-9d94-bab1e0c068ac-1515016471313.png
+einride`Einride`https://lever-client-logos.s3.us-west-2.amazonaws.com/4d6e7816-5bbb-405a-884d-28711e5825d5-1652190302573.png
+truenorth`TrueNorth`https://lever-client-logos.s3.us-west-2.amazonaws.com/9c7ebe9b-0196-4d84-aab3-72c4e70ec161-1666736211465.png
+HDVI`HDVI`https://lever-client-logos.s3.us-west-2.amazonaws.com/3736b466-cb04-40c5-ac6b-edf83e6313a2-1675441525841.png
+uei`Universal Electronics Inc.`https://lever-client-logos.s3.us-west-2.amazonaws.com/bfe02f3c-ae62-4c04-89e9-d57be693c43c-1612281175857.png
+edisonenergy`Edison Energy | Alfa Energy | Altenex Energy `https://lever-client-logos.s3.us-west-2.amazonaws.com/41f5489c-d693-44a4-ad9b-7719da9c895f-1673538004622.png
+Ketch`Ketch`https://lever-client-logos.s3.us-west-2.amazonaws.com/68345f77-8354-49b8-b73b-5476fb345ec6-1652473821498.png
+skywarditsolutions`Skyward IT Solutions, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/8a6b503b-f89b-440a-a11f-e84a911fe7b7-1675953837087.png
+vergesense`VergeSense`https://lever-client-logos.s3.us-west-2.amazonaws.com/db4f1cea-1973-4cb0-8568-451ec7063359-1647621693719.png
