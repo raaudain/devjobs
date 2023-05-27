@@ -1646,3 +1646,8 @@ edisonenergy`Edison Energy | Alfa Energy | Altenex Energy `https://lever-client-
 Ketch`Ketch`https://lever-client-logos.s3.us-west-2.amazonaws.com/68345f77-8354-49b8-b73b-5476fb345ec6-1652473821498.png
 skywarditsolutions`Skyward IT Solutions, LLC`https://lever-client-logos.s3.us-west-2.amazonaws.com/8a6b503b-f89b-440a-a11f-e84a911fe7b7-1675953837087.png
 vergesense`VergeSense`https://lever-client-logos.s3.us-west-2.amazonaws.com/db4f1cea-1973-4cb0-8568-451ec7063359-1647621693719.png
+theex`The Canadian National Exhibition`https://lever-client-logos.s3.us-west-2.amazonaws.com/1f79d01b-732d-440a-b5ed-dc9624b72cd5-1599244002435.png
+machinefilab`MachineFi Lab`https://lever-client-logos.s3.us-west-2.amazonaws.com/5563e386-c90c-42c0-a903-62d0118cf17e-1658787069984.png
+raydiant`Raydiant`https://lever-client-logos.s3.us-west-2.amazonaws.com/bf31cc96-d1d6-4acd-a844-5b2a0b178339-1661536656007.png
+kolibrigames`Kolibri Games`https://lever-client-logos.s3-us-west-2.amazonaws.com/8e9bbc0e-3d99-4d11-af56-fdce7b84ffb2-1586436732207.png
+cashplus`Cashplus Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/1abcc7d5-a9dd-4640-a39b-9ee4120b8e15-1617029824539.png

@@ -956,3 +956,8 @@ LinuxFoundation`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/601ae
 BoringBrandsPrivateLimited`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5c645fc6d1608535eb38a481/9a0ee000-dfb7-402c-a3a8-57f281bbaeca?r=s3-eu-central-1
 KashiwaLogistikIndonesiaPT`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/645341211c252233b31176d3/150px?r=s3-eu-central-1
 CatholicHealthcareLimited2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5f2b6d18269f5175302f1ff1/150px?r=s3-eu-central-1
+KOSTALGroup`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6273ce24fbd5287e3b619917/150px?r=s3-eu-central-1
+Intelerad`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/59bbf78ae4b0a636cefdc39a/150px?r=s3
+AireSpring1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55e629c2e4b05b2b9adfb9a9/150px
+FinanceUnlocked1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f072ceb5781d719241cdc42/7b459a44-fb5d-4524-ac5b-b7dc4d402702?r=s3-eu-central-1
+Epicentre`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b08624de4b0dc5414fda97c/huge?r=s3-eu-central-1
