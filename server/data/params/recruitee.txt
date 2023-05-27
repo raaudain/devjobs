@@ -1144,3 +1144,14 @@ institutartline
 dsquares
 intralot
 kieszon
+uplink
+getprotocol
+status
+boslogistics
+inkef
+predictame
+skillfishergmbh
+alliedglobal
+astrolabs
+primatec
+enterprise
