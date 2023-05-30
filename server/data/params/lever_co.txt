@@ -1078,7 +1078,6 @@ Tixr
 pinkoi
 missioncloud
 empower.me
-thetrainline
 marcusmillichap
 knix
 creadits
@@ -1473,7 +1472,6 @@ opencare
 coforma
 ritual
 Icon-iq
-ignite
 electrum
 tri
 z1tech
