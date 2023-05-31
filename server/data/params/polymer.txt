@@ -257,3 +257,5 @@ inspirehq
 kanopi
 nas
 phazero
+reg-life
+8020-inc

@@ -907,3 +907,4 @@ hanonsystems
 amplifon-fr
 nani
 all5s
+schnabel

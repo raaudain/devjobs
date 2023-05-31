@@ -1531,3 +1531,6 @@ kolibrigames
 cashplus
 machinefilab
 raydiant
+resiliencelab
+oaknorth.ai
+lunchboxtechnologies
