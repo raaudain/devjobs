@@ -294,7 +294,6 @@ morganfranklinconsultingllc
 rbicareers
 gosite
 nerdwallet
-ginger
 tucows
 bench
 unity3d
@@ -363,7 +362,6 @@ zenefits
 ebanx
 sondermind
 catawiki
-mrsool
 customerio
 pathstream
 gatesventures
@@ -1353,7 +1351,6 @@ affinity
 diginnother
 ocrolusinc
 bancopan
-avantstay
 truebill
 energyandenvironmentlab
 mightybuildings
@@ -1817,10 +1814,7 @@ neuraflash
 waymark
 1848ventures
 flocksafety
-unstoppabledomains
 osmo
-impala
-ebot7
 tacombi
 supportingstrategies
 herschelsupplyco

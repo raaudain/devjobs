@@ -961,3 +961,4 @@ Intelerad`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/59bbf78ae4b0a63
 AireSpring1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/55e629c2e4b05b2b9adfb9a9/150px
 FinanceUnlocked1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5f072ceb5781d719241cdc42/7b459a44-fb5d-4524-ac5b-b7dc4d402702?r=s3-eu-central-1
 Epicentre`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5b08624de4b0dc5414fda97c/huge?r=s3-eu-central-1
+10MinuteSchool`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/61c0379d937b9d472b560ea7/c2eb3b56-fd32-4ad4-bc70-804c0539fe93?r=s3-eu-central-1

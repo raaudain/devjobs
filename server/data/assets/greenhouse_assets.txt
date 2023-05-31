@@ -2009,3 +2009,10 @@ neuraflash`NeuraFlash`https://s4-recruiting.cdn.greenhouse.io/external_greenhous
 airudder`AI Rudder`None
 waymark`Waymark`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/257/300/resized/Waymark_Clr_M.png
 flocksafety`Flock Safety`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/590/500/resized/1248301_Isotype3_120221.jpg
+osmo`Osmo`None
+supportingstrategies`Supporting Strategies`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/151/300/resized/SPS_MKTG_Logo.png
+kmgmedicalgroup`KMG Medical Group`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/401/000/500/resized/Screen_Shot_2022-03-23_at_8.53.56_AM.png
+tacombi`Tacombi`None
+herschelsupplyco`Herschel Supply Co.`None
+hs`Headspace`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/013/260/resized/headspace-logo-RGB-primary.png
+cmtinternships`CMT Internships`None

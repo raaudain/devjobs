@@ -177,7 +177,6 @@ fluentbe
 spotlightsportsgroup
 tugende
 helpflow
-getir
 chathamhouse
 koothjobs
 nu-quantum

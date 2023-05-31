@@ -123,7 +123,6 @@ gremco
 transcomserbia
 planatol
 hensoldtcyber
-ihorizon
 saschastarck
 macellan
 parkwind
@@ -1153,10 +1152,6 @@ primatec
 enterprise
 acorel
 labelnone
-status
-nammos
-konstantinrifflerghostwriting
-skillfishergmbh
 smartech
 delkeskampverpackungswerke
 michaelassociates
