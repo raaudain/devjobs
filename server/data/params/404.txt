@@ -1396,3 +1396,4 @@ unstoppabledomains
 impala
 exabeam
 getir
+rivian
