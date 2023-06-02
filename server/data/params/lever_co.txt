@@ -445,7 +445,6 @@ atom
 fathomradiant
 indigov
 viabill
-invenia
 Rarible
 NimbleAI
 intelligentsiacoffee

@@ -1397,3 +1397,6 @@ impala
 exabeam
 getir
 rivian
+bud
+invenia
+oxbotica
