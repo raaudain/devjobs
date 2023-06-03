@@ -1654,3 +1654,10 @@ cashplus`Cashplus Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/1ab
 oaknorth.ai`OakNorth`https://lever-client-logos.s3.us-west-2.amazonaws.com/57548262-08cb-4e69-8919-ea868764cf94-1611939454346.png
 resiliencelab`Resilience Lab`https://lever-client-logos.s3.us-west-2.amazonaws.com/bdc58d78-be3b-4592-8e4f-1be02ef2685e-1680820161852.png
 lunchboxtechnologies`Lunchbox`https://lever-client-logos.s3.us-west-2.amazonaws.com/1dde5fd3-b1e4-4d79-901a-e6d48fec5f16-1680721328586.png
+docsumo`Docsumo`https://lever-client-logos.s3.us-west-2.amazonaws.com/2ef97ea7-437f-4911-af3e-205dd1cf72f2-1659088453139.png
+partoo`Partoo`https://lever-client-logos.s3.us-west-2.amazonaws.com/ec91d51f-90e6-473a-b520-ce28d2829336-1675346463126.png
+illumin`illumin`https://lever-client-logos.s3.us-west-2.amazonaws.com/36670c88-6cb7-4c1e-95a4-c2e8ff19a482-1669221201021.png
+Instrumentl`Instrumentl`https://lever-client-logos.s3.us-west-2.amazonaws.com/551c78d7-3f95-40e1-a193-87a4d0a25f04-1680908408553.png
+500`500 Global`https://lever-client-logos.s3.us-west-2.amazonaws.com/07bf7f4c-cff3-41e1-af6d-6582b24fa551-1668705284278.png
+pier`Pier`https://lever-client-logos.s3.us-west-2.amazonaws.com/3697e290-1df9-47ff-92ce-e86c88bd93a1-1610389493315.png
+askfavor`Favor`https://lever-client-logos.s3.amazonaws.com/d6b31a42-e2da-4a6a-958d-377e78b6fc3c-1499439940675.png
