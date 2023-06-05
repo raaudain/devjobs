@@ -1140,7 +1140,6 @@ doola
 prochoiceamerica
 idmworks
 roserocket
-go-yubi
 pmdsoft
 lodgify
 thiga

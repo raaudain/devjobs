@@ -470,7 +470,6 @@ simulate
 clickatell
 jointacademy
 adomik
-findmypast
 transfermate
 czbiohub
 nowpow
