@@ -1498,7 +1498,6 @@ GoToGroup
 workingfamilies
 temporal
 patch
-quitgenius
 firstround
 generallyintelligent
 TalentNeuron

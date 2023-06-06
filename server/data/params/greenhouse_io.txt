@@ -680,7 +680,6 @@ vendia
 emulate
 pangaea
 tandemlaunch
-techstartup
 uniformteeth
 themarketingarm
 centriaautism
@@ -813,7 +812,6 @@ nucleus
 vonage
 sonyinteractiveentertainmentglobal
 multiplylabs
-heyjobs
 comerceialseguros
 singularity6
 fortune

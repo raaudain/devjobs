@@ -1405,3 +1405,8 @@ findmypast
 joinone
 ahint
 go-yubi
+headforwards
+comsof
+techstartup
+heyjobs
+quitgenius
