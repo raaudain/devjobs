@@ -84,7 +84,6 @@ knotch
 labelbox
 loadsmart
 logicmanager
-logikcull
 maple-finance
 mashgin
 matterport
@@ -843,7 +842,6 @@ alictus
 atob
 insomniacookies
 windownation
-actionnetwork
 getaround
 netlight
 jobandtalent
@@ -909,7 +907,6 @@ tiket
 plusgrade
 frontify
 intive
-equals
 telushealthmycare
 papercut
 peoplegrove
@@ -1297,7 +1294,6 @@ honeybeerobotics
 p3vetpartners
 ppsp
 usasurveyjob
-abelsontaylor
 inlaze
 diamondage3d
 intropic

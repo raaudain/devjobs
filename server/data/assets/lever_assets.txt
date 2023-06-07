@@ -1661,3 +1661,12 @@ Instrumentl`Instrumentl`https://lever-client-logos.s3.us-west-2.amazonaws.com/55
 500`500 Global`https://lever-client-logos.s3.us-west-2.amazonaws.com/07bf7f4c-cff3-41e1-af6d-6582b24fa551-1668705284278.png
 pier`Pier`https://lever-client-logos.s3.us-west-2.amazonaws.com/3697e290-1df9-47ff-92ce-e86c88bd93a1-1610389493315.png
 askfavor`Favor`https://lever-client-logos.s3.amazonaws.com/d6b31a42-e2da-4a6a-958d-377e78b6fc3c-1499439940675.png
+anysignal`AnySignal`https://lever-client-logos.s3.us-west-2.amazonaws.com/09db24f8-91ed-4884-9efb-ce2e5b2c1156-1675220881107.png
+myollie`Ollie Pets`https://lever-client-logos.s3.us-west-2.amazonaws.com/20cdf9fe-9d31-4e44-a5c1-c65a5fb55c30-1643902970070.png
+disher`DISHER`https://lever-client-logos.s3.us-west-2.amazonaws.com/cfa15559-709f-441a-9531-984732d952a5-1656530009906.png
+bentoboxent`Bento Box Entertainment`https://lever-client-logos.s3.us-west-2.amazonaws.com/3021086c-2a9e-4fd9-9e4c-00bb513ed43f-1629919162477.png
+Saleor`Saleor`https://lever-client-logos.s3.us-west-2.amazonaws.com/8ba4392b-c3e0-4cfb-9b6b-bb4bded97f5e-1642595398125.png
+brevo`Brevo`https://lever-client-logos.s3.us-west-2.amazonaws.com/a26491ef-b6d2-4496-bf1c-69c0577df66c-1683708994575.png
+rocketair`RocketAir`https://lever-client-logos.s3.us-west-2.amazonaws.com/567929af-2c6f-4c3c-9fb7-7dd70c707acb-1645032706047.png
+redcanyonsoftware`Red Canyon Engineering & Software`https://lever-client-logos.s3.us-west-2.amazonaws.com/bd923728-57a2-4950-8419-1144a74586c8-1605569117476.png
+patsnap`Patsnap`https://lever-client-logos.s3.us-west-2.amazonaws.com/01334f69-dd4e-4334-b8f8-7039660e9ca2-1630593709243.png
