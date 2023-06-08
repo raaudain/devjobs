@@ -1064,7 +1064,6 @@ parsleyhealth
 jobber
 omadahealth
 generalassembly
-paper
 compassindia
 knowbe4
 c6bank

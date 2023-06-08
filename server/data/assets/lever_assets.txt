@@ -1670,3 +1670,5 @@ brevo`Brevo`https://lever-client-logos.s3.us-west-2.amazonaws.com/a26491ef-b6d2-
 rocketair`RocketAir`https://lever-client-logos.s3.us-west-2.amazonaws.com/567929af-2c6f-4c3c-9fb7-7dd70c707acb-1645032706047.png
 redcanyonsoftware`Red Canyon Engineering & Software`https://lever-client-logos.s3.us-west-2.amazonaws.com/bd923728-57a2-4950-8419-1144a74586c8-1605569117476.png
 patsnap`Patsnap`https://lever-client-logos.s3.us-west-2.amazonaws.com/01334f69-dd4e-4334-b8f8-7039660e9ca2-1630593709243.png
+treecard`Treecard`https://lever-client-logos.s3.us-west-2.amazonaws.com/faf1ce82-da05-42f4-a8c5-9eb1b7fd864d-1686234558834.png
+paytmbank`Paytm Payments Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/f8fcafef-bf8c-4138-a569-8cd5296085f7-1686232635515.png

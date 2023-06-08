@@ -343,7 +343,6 @@ ppaz
 riverdale
 kickstarter
 theathletic
-projectyx
 himama
 fitanalytics
 sandboxvr
@@ -462,7 +461,6 @@ hirezstudios
 qonto
 couchbase
 alan
-muni
 dnb
 revolut
 bluebottlecoffee
