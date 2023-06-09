@@ -22,7 +22,6 @@ adhocteam
 updater
 reddit
 jwplayer
-virtahealth
 modeanalytics
 mavenclinic
 firehydrant

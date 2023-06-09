@@ -325,7 +325,6 @@ theinnercircle
 sopro
 centuria2
 loadingsystems
-letsgetdigital
 hued
 squeezestudio
 thecloseapp
