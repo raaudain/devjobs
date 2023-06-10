@@ -908,3 +908,6 @@ amplifon-fr
 nani
 all5s
 schnabel
+vocera-communications-inc
+groupm-latam
+dura-automotive
