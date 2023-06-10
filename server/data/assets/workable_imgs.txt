@@ -1711,3 +1711,17 @@ duro`n/a`None
 govx`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5534/logo
 apivita`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/13524/logo
 blockovate`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/593877/logo
+aryng`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/586761/logo
+adarepharmasolutions`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/588128/logo
+qwake-technologies`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/595628/logo
+recovery-partners`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/143128/logo
+xp-educacao`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/468873/logo
+jacuzzi-group`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/581819/logo
+mintago`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/398671/logo
+valatam`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/606873/logo
+transwest`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/481023/logo
+nuadaco2`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/580752/logo
+thenaturaladventure`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/581330/logo
+frontrow-inc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/606480/logo
+oasisapp`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/595450/logo
+greendoor`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/576489/logo

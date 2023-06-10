@@ -89,7 +89,3 @@ latamtechnicalservices
 coreplan
 crealo
 bump
-www
-community
-api-docs
-blog

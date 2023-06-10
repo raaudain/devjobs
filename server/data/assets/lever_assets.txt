@@ -1672,3 +1672,6 @@ redcanyonsoftware`Red Canyon Engineering & Software`https://lever-client-logos.s
 patsnap`Patsnap`https://lever-client-logos.s3.us-west-2.amazonaws.com/01334f69-dd4e-4334-b8f8-7039660e9ca2-1630593709243.png
 treecard`Treecard`https://lever-client-logos.s3.us-west-2.amazonaws.com/faf1ce82-da05-42f4-a8c5-9eb1b7fd864d-1686234558834.png
 paytmbank`Paytm Payments Bank`https://lever-client-logos.s3.us-west-2.amazonaws.com/f8fcafef-bf8c-4138-a569-8cd5296085f7-1686232635515.png
+onaroll`Onaroll`https://lever-client-logos.s3.us-west-2.amazonaws.com/a027259c-5eb7-4e85-a772-5aab24e30082-1634597784672.png
+twelvelabs`Twelve Labs`https://lever-client-logos.s3.us-west-2.amazonaws.com/b4df1c34-e124-4123-a861-6cc4725d1ee6-1668047544017.png
+swaniti`Swaniti Initiative`https://lever-client-logos.s3.us-west-2.amazonaws.com/1b367ed9-ad63-45d4-a713-01d12b47892a-1666327279470.png
