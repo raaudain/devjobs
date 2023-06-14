@@ -303,3 +303,5 @@ rainforgrowth
 spoc-ortho
 catholiccharities
 divinedininggroup
+freddyusa
+fieldmuseum

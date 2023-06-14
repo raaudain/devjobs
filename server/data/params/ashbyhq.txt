@@ -777,3 +777,7 @@ Weave
 ideogram
 safe.global
 Kustomer
+virtahealth
+binti
+homemade
+Coral

@@ -722,7 +722,6 @@ gowanco
 zopa
 sonarsource
 8x8
-butterflymx
 nisum
 plum
 stuart
@@ -1542,3 +1541,9 @@ redcanyonsoftware
 swaniti
 twelvelabs
 onaroll
+greenshieldholdings
+BestEgg
+42dot
+prelim
+inflexion
+coffeemeetsbagel
