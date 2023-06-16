@@ -202,3 +202,5 @@ mutual-group`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hzfvj9d5ox
 inspirehq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/yfb0j0np5slo2uxeti3snejcpw5w.jpeg
 kanopi`n/a`https://inflow-public.s3.amazonaws.com/company-logos/p18xt4zd3gu7m97ms1gm8okm834g.jpeg
 8020-inc`n/a`https://inflow-public.s3.amazonaws.com/company-logos/opirkzqae56uax1nspnyrtp2epk7.png
+ikaros`n/a`https://inflow-public.s3.amazonaws.com/company-logos/edzmw9ar0jee4chx6k2fuhct07nu.png
+loopsupport`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xtx5kubhj9c97zl70byed0sl5rad.png

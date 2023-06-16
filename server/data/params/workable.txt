@@ -851,7 +851,6 @@ ometria
 theconcordgroup
 kuali
 nodeslinks
-olxlebanonegyptempg
 venntro
 monax
 janus
@@ -1542,7 +1541,6 @@ kepro
 brainlabsdigital01
 threatx
 ics-4
-w-health-ventures
 hugo-and-cat-limited
 dawnaerospace
 droneup

@@ -2025,3 +2025,10 @@ brandnewschool`Brand New School`None
 healthnote`Health Note`None
 quartethealth`Quartet Health`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/360/700/resized/Quartet-Wordmark_BrandColor-4000x4000.png
 deepmind`DeepMind`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/827/resized/DeepMind.jpg
+machinezone`Machine Zone`None
+philzcoffeecareers`Philz Coffee`https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/700/200/resized/Philz_Coffee_Logo.png
+feastables`Feastables`None
+spotonproduct`SpotOn: Product`None
+papa`Papa`None
+chime`Chime`None
+hopscotchhealth`Hopscotch Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/748/200/resized/Hopscotch_logo.png

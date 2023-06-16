@@ -72,7 +72,6 @@ flowspace
 gametime
 goodrx
 hackerone
-healthsherpa
 hopper
 hyperscience
 icertis
@@ -87,7 +86,6 @@ logicmanager
 maple-finance
 mashgin
 matterport
-mejuri
 molekule
 moo
 netflix
@@ -108,7 +106,6 @@ skydance
 socotra
 sonatype
 spotify
-takescoop
 talend
 tamr
 tapcart
@@ -368,7 +365,6 @@ ntropy-network
 springboard
 morningbrew
 connectly
-ibble
 loyalfordogs
 BoomandBucket
 narmi
@@ -425,7 +421,6 @@ aero
 diamondfoundry
 coredigitalmedia
 mirror
-readdle
 blinkux
 shef
 aofl
@@ -1446,7 +1441,6 @@ cashrewards
 baller
 actian
 character
-ironfish
 Walnut
 deep6
 glassnode
@@ -1547,3 +1541,8 @@ BestEgg
 prelim
 inflexion
 coffeemeetsbagel
+ppgnnj
+pelago
+canimmunize
+90seconds
+goodleap

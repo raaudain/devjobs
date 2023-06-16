@@ -1725,3 +1725,13 @@ thenaturaladventure`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo
 frontrow-inc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/606480/logo
 oasisapp`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/595450/logo
 greendoor`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/576489/logo
+actionstep`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/434980/logo
+breathecareers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/551373/logo
+immortals`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/308790/logo
+wearenoble`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/134167/logo
+quickteam`n/a`None
+cloudsmith`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/467314/logo
+enable-loans`n/a`None
+loopearplugs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/434453/logo
+inmusic-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/413455/logo
+hint`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/578581/logo

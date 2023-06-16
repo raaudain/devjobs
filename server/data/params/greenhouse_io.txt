@@ -875,7 +875,6 @@ yotpo
 datacamp
 plex9
 onemedical
-future
 arcana
 thymecare
 annexushealth
@@ -1053,7 +1052,6 @@ louisvillenissan
 welbehealth
 leagueinc
 gomedia
-emotiveio
 truelogic
 mediacurrent
 oyster
@@ -1229,7 +1227,6 @@ atlasxhm
 awardco
 bedrocksystems
 truelayer
-helloalfred58
 psiquantum
 numeradecareers
 cashmoney
@@ -1391,7 +1388,6 @@ cloverhealth
 workshopdigital
 pagoda
 swiftnavigation
-getprospa
 vorihealth
 jasper23
 samsungresearchamericainternship
@@ -1458,7 +1454,6 @@ nutrisense
 stxgroup
 neo4j
 lastpass
-amedigital
 triplebarbio
 saltbox
 coterie
@@ -1827,12 +1822,19 @@ deepmind
 atticus
 recroom
 machinezone
-impala
 philzcoffeecareers
-ebot7
 feastables
 chime
 spotonproduct
 hopscotchhealth
 papa
+adasiaholdings
+onefederalsolutioncorp
+helloalfred58
+impala
+hibu
+ebot7
+kao
+stitchfix
+veesearch
 sundae

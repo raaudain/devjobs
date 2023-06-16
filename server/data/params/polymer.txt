@@ -261,3 +261,4 @@ reg-life
 8020-inc
 ikaros
 loopsupport
+lifestylerx
