@@ -2032,3 +2032,12 @@ spotonproduct`SpotOn: Product`None
 papa`Papa`None
 chime`Chime`None
 hopscotchhealth`Hopscotch Health`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/748/200/resized/Hopscotch_logo.png
+applovin`AppLovin`None
+adasiaholdings`AnyMind Group`None
+hibu`Hibu`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/435/200/resized/Hibu_logo_100px.png
+kao`Kao Corporation`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/228/600/resized/Kao_Kirei.png
+veesearch`Vee`None
+mixpanel`Mixpanel`None
+adjust`Adjust`None
+onefederalsolutioncorp`One Federal Solution Corp`None
+stitchfix`Stitch Fix`None

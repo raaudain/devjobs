@@ -1681,3 +1681,8 @@ prelim`Prelim`https://lever-client-logos.s3.us-west-2.amazonaws.com/b5721314-b3d
 greenshieldholdings`Greenshield Holdings`https://lever-client-logos.s3.us-west-2.amazonaws.com/9afa48f1-ba56-411d-bb9b-fca0a108b848-1682535992557.png
 BestEgg`Best Egg`https://lever-client-logos.s3.us-west-2.amazonaws.com/80fe68e0-5127-4c38-aa39-75c9d66af100-1667312445915.png
 42dot`42dot`https://lever-client-logos.s3-us-west-2.amazonaws.com/a20adccc-ae1d-4c52-a0eb-b4c132d73b79-1596347127272.png
+pelago`Pelago`https://lever-client-logos.s3.us-west-2.amazonaws.com/a8e24ede-b4e7-45c5-9b11-1dc38f85d5fa-1686050045370.png
+ppgnnj`Planned Parenthood of Northern, Central and Southern New Jersey, Inc.`https://lever-client-logos.s3.amazonaws.com/dcf110a4-1c6d-494e-9fcc-162233293309-1507305054611.png
+canimmunize`CANImmunize`https://lever-client-logos.s3.us-west-2.amazonaws.com/053eb0d0-814f-4f45-ac37-04616f044ded-1633623937685.png
+goodleap`GoodLeap`https://lever-client-logos.s3.us-west-2.amazonaws.com/bbd022e2-ead3-484c-a9d4-ea37530cf3bd-1682439634140.png
+90seconds`90 Seconds`https://lever-client-logos.s3.amazonaws.com/9c7bb1d9-df5d-4588-b836-166e4c7a460b-1570071762887.png

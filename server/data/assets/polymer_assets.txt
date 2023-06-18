@@ -204,3 +204,4 @@ kanopi`n/a`https://inflow-public.s3.amazonaws.com/company-logos/p18xt4zd3gu7m97m
 8020-inc`n/a`https://inflow-public.s3.amazonaws.com/company-logos/opirkzqae56uax1nspnyrtp2epk7.png
 ikaros`n/a`https://inflow-public.s3.amazonaws.com/company-logos/edzmw9ar0jee4chx6k2fuhct07nu.png
 loopsupport`n/a`https://inflow-public.s3.amazonaws.com/company-logos/xtx5kubhj9c97zl70byed0sl5rad.png
+lifestylerx`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zckdny28hj7o9w5ecj7dpr6aiq93.png
