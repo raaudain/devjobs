@@ -967,3 +967,4 @@ bppulse`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/5e1318fcf
 cinarra`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/60d133ed1c8b43271b5effb4/150px?r=s3-eu-central-1
 YepHome`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63ed9bb9301cb2524a553b42/fb9b20ec-1dd9-4056-ade4-d0a9e1a354d8?r=s3-eu-central-1
 SilfabSolar`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/6429b704f2b6002167c3e661/150px?r=s3-eu-central-1
+REWEInternationalDienstleistungsgesellschaftmbH`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/618ba27bdced2e71041e31e5/huge?r=s3-eu-central-1
