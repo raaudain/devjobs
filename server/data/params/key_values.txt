@@ -1,7 +1,7 @@
+/allspice
 /paper
 /sibi
 /ribbon-health
-/allspice
 /mudflap
 /cocoon
 /caremessage
@@ -12,4 +12,3 @@
 /reduct
 /indent
 /orbit
-/coast

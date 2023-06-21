@@ -256,7 +256,6 @@ signifyhealth
 ndb
 coherehealth
 hollywoodparksofistadium
-better
 khanacademy
 valorainc
 deliveroo
@@ -464,7 +463,6 @@ trellisrx
 latentai
 id5
 eviationaircraft
-dataminr
 studio
 scalesec
 paralleljobs
@@ -1034,7 +1032,6 @@ immoscout24
 berkadia
 nayya
 homesalive
-aeroflexx
 appsflyer
 primarybid
 retailnext

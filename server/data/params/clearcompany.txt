@@ -7,7 +7,6 @@ aspeninstitute
 alleninstitute
 amelexinc
 coastalfarm
-onxmaps
 uvto
 profootballhof
 peoplesrx
@@ -234,7 +233,6 @@ dswa
 novelapplications
 ndgcharleston
 adaptcommunitynetwork
-catilizehealth
 baxterwoodman
 hssginc
 12stonehealth
