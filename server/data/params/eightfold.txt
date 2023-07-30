@@ -81,3 +81,5 @@ siemens
 insight
 mlp
 starbucks
+booking
+slb
