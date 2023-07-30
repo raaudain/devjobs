@@ -83,16 +83,12 @@ def main():
     remote_co.main()
     remoteok.main()
     craigslist.get_url_network(locations)
-    # workaline.main()
     workable.get_url(work[4::5])
     dailyremote.main()
     bootup.main()
     builtin.main()
     create_json.create_temp_file()
     create_json.create_file()
-    # try:
-    #     CreateJson.create_file()
-    # except Exception as e:
-    #     logging.debug("Exception occured: ", e, exc_info=True)
+
     print("=> Done")
     print("=> Total time: " + str(datetime.now() - start))

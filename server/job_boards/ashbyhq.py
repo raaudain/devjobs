@@ -7,16 +7,15 @@ from datetime import datetime
 sys.path.insert(0, ".")
 from server.job_boards.helpers import headers as h
 from server.job_boards.helpers.classes import ProcessCompanyJobData
-# import modules.create_temp_json as create_temp_json
-# import modules.headers as h
-# import modules.classes as c
 
-process_data = ProcessCompanyJobData()
+
 FILE_PATH = "server/data/params/ashbyhq.txt"
 
 
 def get_results(item: str, param: str, name: str, logo: str):
     jobs = item["data"]["jobBoard"]["jobPostings"]
+    process_data = ProcessCompanyJobData()
+
     for data in jobs:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         post_date = datetime.timestamp(

@@ -14,15 +14,16 @@ process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     for i in item["data"]:
-        date = i["published_at"].strip()
-        post_date = datetime.timestamp(
-            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
-        apply_url = i["url"].strip()
-        company_name = i["company"].strip()
-        logo = "https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/27671/vuejobs.jpg"
-        position = i["title"].strip()
+        date = i["published_at"].rsplit("+")[0]
+        post_date = int(datetime.timestamp(
+            datetime.strptime(date, "%Y-%m-%dT%H:%M:%S")))
+        apply_url = i["link"]
+        company_name = i["organization"]["name"]
+        logo = i["organization"]["avatar"]
+        position = i["title"]
         description = i["description"]
-        location = i["location"].strip()
+        location = [location for location in i["locations"] if len(location) > 0 else None]
+        print(location)
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         if age <= post_date:
             process_data.filter_jobs({
@@ -40,8 +41,9 @@ def get_results(item: str):
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
-    url = f"https://vuejobs.com/api/positions/search?search=&location=&jobs_per_page=1000"
+    url = f"https://app.vuejobs.com/posts/items"
     response = requests.get(url, headers=headers)
+
     if response.ok:
         data = json.loads(response.text)
         get_results(data)
@@ -53,5 +55,6 @@ def main():
     get_url()
 
 
-# main()
-# sys.exit(0)
+if __name__ == "__main__":
+    main()
+    sys.exit(0)

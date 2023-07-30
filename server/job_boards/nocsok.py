@@ -8,11 +8,12 @@ from server.job_boards.helpers import headers as h
 from server.job_boards.helpers.classes import ProcessCompanyJobData
 
 
-process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", class_="w-100 jobboard-card-child")
+    process_data = ProcessCompanyJobData()
+
     for job in results:
         date = datetime.strptime(job.find_all(
             "small")[1].text+" 2022", "%b %d %Y")
@@ -24,6 +25,7 @@ def get_results(item: str):
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         post_date = datetime.timestamp(
             datetime.strptime(str(date)[:-9], "%Y-%m-%d "))
+    
         if age <= post_date:
             process_data.filter_jobs({
                 "timestamp": post_date,
@@ -40,8 +42,9 @@ def get_results(item: str):
 
 def get_url():
     headers = {"User-Agent": random.choice(h.headers)}
-    url = "https://nocsok.com/"
+    url = "https://www.nocsdegree.com/jobs/"
     response = requests.get(url, headers=headers)
+
     if response.ok:
         get_results(response.text)
     else:
@@ -50,3 +53,8 @@ def get_url():
 
 def main():
     get_url()
+
+
+if __name__ == "__main__":
+    main()
+    sys.exit(0)

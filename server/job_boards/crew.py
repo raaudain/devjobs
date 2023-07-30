@@ -60,7 +60,7 @@ def get_url(companies: list):
 
         except Exception as e:
             print(
-                f"=> crew.work: Failed for {company}. Status code: {response.status_code}. Error: {e}.")
+                f"=> crew.work: Failed for {company}. Error: {e}.")
 
 
 def main():
