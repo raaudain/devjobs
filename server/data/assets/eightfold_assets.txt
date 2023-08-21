@@ -1,5 +1,0 @@
-micron`n/a`https://static.vscdn.net/images/careers/demo/micron/Micron_logo_PCS.png
-paypal`n/a`https://static.vscdn.net/images/careers/demo/paypal-sandbox/1645212573::Transparent+Logo
-zebra`n/a`https://static.vscdn.net/images/careers/demo/zebra/1652831607::pcs-logo-navbar
-dsm`n/a`https://static.vscdn.net/images/careers/demo/dsm-sandbox/dsm_masterlogo.png
-eaton`n/a`https://static.vscdn.net/images/careers/demo/eaton/1676277484::EatonLogo
