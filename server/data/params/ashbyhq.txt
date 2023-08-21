@@ -805,3 +805,6 @@ elevenlabs
 Rasa
 Charlie
 novemberfive.co
+earnedwealth
+vanta
+pathmentalhealth

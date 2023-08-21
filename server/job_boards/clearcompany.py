@@ -2,14 +2,10 @@ import requests
 import sys
 import time
 import random
-import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-from server.job_boards.helpers import headers as h
-# import modules.headers as h
-# import modules.classes as c
+from helpers import user_agents, ProcessCompanyJobData
 
 process_data = ProcessCompanyJobData()
 FILE_PATH = "server/data/params/clearcompany.txt"
@@ -54,7 +50,7 @@ def get_url(companies: list):
     page = 1
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(h.headers)}
+            headers = {"User-Agent": random.choice(user_agents)}
             url = f"https://{company}.hrmdirect.com/employment/job-openings.php?search=true&dept=-1"
             response = requests.get(url, headers=headers)
             if response.ok:

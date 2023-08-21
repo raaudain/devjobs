@@ -6,7 +6,7 @@ import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers import ProcessCompanyJobData, headers as h
+from helpers import ProcessCompanyJobData, user_agents
 
 
 process_data = ProcessCompanyJobData()
@@ -53,7 +53,7 @@ def get_url(companies: list):
     page = 1
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(h.headers)}
+            headers = {"User-Agent": random.choice(user_agents)}
             url = f"https://www.comeet.com/jobs/{company}"
             response = requests.get(url, headers=headers)
             if response.ok:

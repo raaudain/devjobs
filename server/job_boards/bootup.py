@@ -5,11 +5,7 @@ import time
 import random
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers import headers as h
-# from server.job_boards.helpers.classes import CreateJson
-from server.job_boards.helpers.classes import *
-# import modules.classes as c
-# import modules.headers as h
+from helpers import ProcessCompanyJobData, user_agents, CreateJson
 
 
 process_data = ProcessCompanyJobData()
@@ -21,7 +17,7 @@ def get_results(item: str):
         datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S"))
     position = item["title"]
     company_name = item["employer"]["name"]
-    description = item["description"]
+    # description = item["description"]
     apply_url = item["url"]
     location = item["locations"][0]["location"]["city_state"] if len(
         item["locations"]) > 0 else "See Description"
@@ -53,7 +49,7 @@ def get_url(ids: list):
 
 
 def main():
-    headers = {"User-Agent": random.choice(h.headers)}
+    headers = {"User-Agent": random.choice(user_agents)}
     url = "https://api.joinbootup.com/api/student/jobs?page=1&limit=200"
     response = requests.get(url, headers=headers)
     data = json.loads(response.text)["data"]["list"]
@@ -63,4 +59,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# sys.exit(0)

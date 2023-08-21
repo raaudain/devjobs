@@ -1101,3 +1101,5 @@ UTAC
 TechlandSA
 Xprolabs
 MonvilleLP
+EvelynPartners
+SocieteGenerale4

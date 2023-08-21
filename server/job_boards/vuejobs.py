@@ -10,9 +10,10 @@ from server.job_boards.helpers.classes import ProcessCompanyJobData
 # import modules.headers as h
 
 
-process_data = ProcessCompanyJobData()
 
 def get_results(item: str):
+    process_data = ProcessCompanyJobData()
+
     for i in item["data"]:
         date = i["published_at"].rsplit("+")[0]
         post_date = int(datetime.timestamp(
@@ -23,7 +24,6 @@ def get_results(item: str):
         position = i["title"]
         description = i["description"]
         location = [location for location in i["locations"] if len(location) > 0 else None]
-        print(location)
         age = datetime.timestamp(datetime.now() - timedelta(days=30))
         if age <= post_date:
             process_data.filter_jobs({

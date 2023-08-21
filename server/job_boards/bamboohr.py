@@ -6,10 +6,7 @@ import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-from server.job_boards.helpers import headers as h
-# import modules.headers as h
-# import modules.classes as c
+from helpers import user_agents, ProcessCompanyJobData
 
 
 process_data = ProcessCompanyJobData()
@@ -47,8 +44,8 @@ def get_url(companies: list):
     page = 1
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(h.headers)}
-            url = f"https://{company}.bamboohr.com/jobs/"
+            headers = {"User-Agent": random.choice(user_agents)}
+            url = f"https://{company}.bamboohr.com/careers/"
             response = requests.get(url, headers=headers)
             if response.ok:
                 get_results(response.text, company)
@@ -74,5 +71,6 @@ def main():
     get_url(companies)
 
 
-# main()
-# sys.exit(0)
+if __name__ == "__main__":
+    main()
+

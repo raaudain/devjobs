@@ -5,9 +5,7 @@ import time
 import random
 from datetime import datetime, timedelta
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-from server.job_boards.helpers import headers as h
-# import modules.headers as h
+from helpers import ProcessCompanyJobData, user_agents
 
 
 process_data = ProcessCompanyJobData()
@@ -104,8 +102,11 @@ def get_url():
         while IS_TRUE:
             if IS_TRUE == False:
                 break
-            headers = {"User-Agent": random.choice(
-                h.headers), "Origin": "https://builtin.com", "Referer": "https://builtin.com/"}
+            headers = {
+                "User-Agent": random.choice(user_agents), 
+                "Origin": "https://builtin.com", 
+                "Referer": "https://builtin.com/"
+            }
             url = f"https://api.builtin.com/services/job-retrieval/legacy-jobs/?categories=149&subcategories=&experiences=&industry=&regions=&locations=&remote=2&per_page=1000&page={page}&search=&sortStrategy=recency&jobs_board=true&national=false"
             response = requests.get(url, headers=headers)
             if response.ok:

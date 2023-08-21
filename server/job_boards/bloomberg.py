@@ -1,11 +1,8 @@
 import requests, json, sys, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
-# from .modules import create_temp_json
-# from .modules import headers as h
-import modules.create_temp_json as create_temp_json
-import modules.headers as h
-server.job_boards.helpers.classes import filter_jobs
+sys.path.insert(0, ".")
+from helpers import user_agents, ProcessCompanyJobData
 
 
 def get_results(item):

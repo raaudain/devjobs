@@ -5,8 +5,7 @@ import time
 import random
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-from server.job_boards.helpers import headers as h
+from helpers import ProcessCompanyJobData, user_agents
 
 process_data = ProcessCompanyJobData()
 
@@ -38,7 +37,7 @@ def get_url():
     page = 0
     try:
         while page <= 10:
-            headers = {"User-Agent": random.choice(h.headers)}
+            headers = {"User-Agent": random.choice(user_agents)}
             url = f"https://amazon.jobs/en/search.json?category[]=software-development&category[]=solutions-architect&category[]=operations-it-support-engineering&category[]=project-program-product-management-technical&category[]=systems-quality-security-engineering&category[]=machine-learning-science&result_limit=100&sort=relevant&offset={page}0"
             response = requests.get(url, headers=headers)
             if response.ok:

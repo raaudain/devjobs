@@ -53,6 +53,7 @@ def get_url():
 
             data = json.loads(response)
             get_results(data)
+            browser.close()
     except Exception as e:
         print("Error for Target:", e)
 

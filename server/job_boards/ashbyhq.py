@@ -5,16 +5,15 @@ import time
 import random
 from datetime import datetime
 sys.path.insert(0, ".")
-from server.job_boards.helpers import headers as h
-from server.job_boards.helpers.classes import ProcessCompanyJobData
+from helpers import ProcessCompanyJobData, user_agents
 
 
+process_data = ProcessCompanyJobData()
 FILE_PATH = "server/data/params/ashbyhq.txt"
 
 
 def get_results(item: str, param: str, name: str, logo: str):
     jobs = item["data"]["jobBoard"]["jobPostings"]
-    process_data = ProcessCompanyJobData()
 
     for data in jobs:
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
@@ -42,7 +41,7 @@ def get_url(companies: list):
     page = 1
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(h.headers)}
+            headers = {"User-Agent": random.choice(user_agents)}
             url = "https://jobs.ashbyhq.com/api/non-user-graphql"
             payload = {
                 "operationName":"ApiJobBoardWithTeams",

@@ -6,10 +6,7 @@ from lxml import html
 from datetime import datetime
 from bs4 import BeautifulSoup
 sys.path.insert(0, ".")
-from server.job_boards.helpers import headers as h
-from server.job_boards.helpers.classes import ProcessCompanyJobData
-# import modules.headers as h
-# import modules.classes as c
+from helpers import ProcessCompanyJobData, user_agents
 
 process_data = ProcessCompanyJobData()
 FILE_PATH = "server/data/params/breezyhr.txt"
@@ -60,7 +57,7 @@ def get_url(companies: list):
     page = 1
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(h.headers)}
+            headers = {"User-Agent": random.choice(user_agents)}
             url = f"https://{company}.breezy.hr"
             response = requests.get(url, headers=headers)
             if response.ok:

@@ -8,7 +8,6 @@ from server.job_boards.helpers import headers as h
 from server.job_boards.helpers.classes import ProcessCompanyJobData
 
 
-
 def get_results(item: str):
     soup = BeautifulSoup(item, "lxml")
     results = soup.find_all("div", class_="w-100 jobboard-card-child")
