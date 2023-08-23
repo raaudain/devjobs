@@ -49,7 +49,7 @@ def main():
     greenhouse_io.get_url(green[::2])
     craigslist.get_url(locations)
     jobvite.main()
-    # bamboohr.main()
+    bamboohr.main()
     eightfold.main()
     jazzhr.main()
     clearcompany.main()
