@@ -573,7 +573,6 @@ gammaphibeta
 vetpartners
 amplifon-de
 harmonic
-levolor
 vitaliawestlake
 sunsetstudios
 instudio
@@ -643,7 +642,6 @@ kaleidoscope
 apollomed
 andoveranimalshospital
 everyday-health-consumer
-hunterdouglas
 clearpath
 on24
 mahealthcare
