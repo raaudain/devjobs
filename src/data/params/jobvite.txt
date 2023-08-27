@@ -472,7 +472,6 @@ bluebuffalo
 amerisave
 gooddata
 makingwavesacademyschools
-comfortex-corporation
 aarete
 pactiv
 medspeed
@@ -574,7 +573,6 @@ gammaphibeta
 vetpartners
 amplifon-de
 harmonic
-levolor
 vitaliawestlake
 sunsetstudios
 instudio
@@ -644,7 +642,6 @@ kaleidoscope
 apollomed
 andoveranimalshospital
 everyday-health-consumer
-hunterdouglas
 clearpath
 on24
 mahealthcare
