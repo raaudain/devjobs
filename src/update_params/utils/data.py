@@ -91,7 +91,7 @@ ats = [
     },
     {
         "file": "./temp/crew_temp.txt",
-        "host": ".crew.work/",
+        "host": ".crew.work/jobs",
         "params": "../src/data/params/crew.txt",
         "uri": r"https://(.*?).crew.work/"
     },
