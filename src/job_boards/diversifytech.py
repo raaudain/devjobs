@@ -3,7 +3,7 @@ import json
 import sys
 import time
 import random
-from datetime import datetime, date
+from datetime import datetime
 sys.path.insert(0, ".")
 from src.job_boards.helpers import ProcessCompanyJobData, user_agents
 
