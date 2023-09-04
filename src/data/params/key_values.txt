@@ -6,7 +6,6 @@
 /sibi
 /caremessage
 /ladder
-/course-hero
 /plus
 /upduo
 /reduct

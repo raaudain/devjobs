@@ -35,7 +35,6 @@ sense
 peopledatalabs
 securityriskadvisors
 elium
-reserve
 qwinix
 futureplc
 waldo-photos
@@ -774,7 +773,6 @@ prepo
 superfluid
 foodrevolutionnetwork
 pulsepoint
-dymax
 lumin8
 acelr8
 skylight
@@ -996,7 +994,6 @@ wonde
 sensynehealth
 busuu
 middleburycollege
-practicebetter
 limewire
 ancienthealingteas
 cghero
