@@ -300,3 +300,5 @@ fieldmuseum
 blittandgaines
 scbma
 amerifence
+watsonclinic
+thellf

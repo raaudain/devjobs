@@ -83,3 +83,4 @@ mlp
 starbucks
 booking
 slb
+ericsson
