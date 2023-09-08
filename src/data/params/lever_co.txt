@@ -1541,3 +1541,5 @@ onemodel
 truora
 nogle
 crossing-minds
+mistral
+planettechnologies
