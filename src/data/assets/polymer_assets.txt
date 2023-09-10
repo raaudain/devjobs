@@ -214,3 +214,5 @@ transcera`n/a`https://inflow-public.s3.amazonaws.com/company-logos/q0xrowmec84hs
 bidxtrade`n/a`https://inflow-public.s3.amazonaws.com/company-logos/dg85v8v3kw8psbiysco7o0rqz2rs.png
 caravan`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qqks4ox0uolwe7hwxwplmh2t73f6.png
 pascal`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fjo29l6811pko5rkc0x6uqx32rui.png
+pelicargo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/tsrggq2v84q42ax21i11qytwq4k5.png
+silicate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ki6d82o4e5tpwetzb6frgj5j98y2.png

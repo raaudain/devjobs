@@ -954,7 +954,6 @@ ascendant
 incog
 kaip
 elasticpath
-hunterdouglas
 sagecor
 ripcity
 viking-cloud

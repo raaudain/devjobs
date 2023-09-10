@@ -1194,7 +1194,6 @@ exner
 yourrighthandfinanceteam
 brollikarriere
 fathkarriere
-status
 vrtlinzbachloecherbachundpartner
 sfimarkets
 elements
@@ -1204,7 +1203,6 @@ omybag
 luminus
 placeup
 circuit
-auth
 modernsynthesis
 kolpingkita
 sidehamburg

@@ -131,7 +131,6 @@ niantic
 okta
 ordergroove
 pantheon
-patreon
 peloton
 policygenius
 poshmark
@@ -548,7 +547,6 @@ duolingo
 nubank
 plenty
 fender
-buspatrol
 recharge
 zupinnovation
 ledgestone
@@ -613,7 +611,6 @@ acadiapharmaceuticals
 enfusion
 tierarztpluspartner
 bigosmanagement
-lpinsurance
 baublebar
 creatoriq
 fischerhomes
@@ -644,7 +641,6 @@ universalhydrogen
 reprise
 otterbein
 vouchinsurance
-ns1
 fareharbor
 e
 credera
@@ -1045,7 +1041,6 @@ laika
 flyzipline
 alphalabcapital
 spins
-fernish
 linx
 pebblepost
 majorleaguebaseball
@@ -1110,7 +1105,6 @@ purewatercraft
 kkr
 opentable
 abinbev
-dandy
 obamafoundation
 umojabiopharma
 stackexchange
@@ -1508,7 +1502,6 @@ mindbody
 brainpop
 lucidsoftware
 lula
-cvjc
 nascompany
 n26
 winrock
@@ -1557,7 +1550,6 @@ thenewyorktimes
 mynd
 lookoutinc
 valimailinc
-lighthouseautismcenter
 viamrobotics
 educators2324schoolyear
 wizinc
@@ -1809,13 +1801,8 @@ thebaltimorebanner
 centerforreproductiverights
 chalexandria
 chashburn
-impala
-stride
 gwkinvestmentmanagementllc
 ericbuckleygetupsidegreenhouseio
-flaschenpostag
 vividseatsllc
-onfleet
 konradgroup
-vanta
 chbristow
