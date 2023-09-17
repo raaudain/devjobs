@@ -1539,3 +1539,9 @@ liatrio
 our-place
 onemodel
 truora
+hungryharvest
+matterworks
+wolve
+deepgenomics
+valkyrietrading
+newton-school
