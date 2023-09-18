@@ -83,3 +83,5 @@ mlp
 starbucks
 booking
 slb
+ericsson
+vizientinc
