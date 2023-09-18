@@ -693,7 +693,6 @@ brighthealthgroup
 flatironhealth
 forethought
 nintex
-ramp
 stryber
 lambda
 nerdery
@@ -726,7 +725,6 @@ cdbabyjobs
 OKX
 modernanimal
 squire
-neatorobotics
 salsify
 shipium
 voltaiq
@@ -852,7 +850,6 @@ cyware
 aura798
 rev
 survata
-hengrui
 recruitics
 illuvium
 freeassociation
@@ -970,7 +967,6 @@ freshprints
 lilium
 golinks
 nirrin
-HarnessWealth
 sonder
 dspconcepts
 girleffect
@@ -1200,7 +1196,6 @@ adgear
 lifelabslearning
 form3
 udemy
-bloomscape
 astspacemobile
 smartcatplatforminc
 greynoiseintelligence
@@ -1277,7 +1272,6 @@ seamlessai
 getshogun
 wework
 processstreet
-allstripes
 bamboohr17
 apolloio
 kiratalent
@@ -1801,10 +1795,8 @@ thebaltimorebanner
 centerforreproductiverights
 chalexandria
 chashburn
-impala
 gwkinvestmentmanagementllc
 ericbuckleygetupsidegreenhouseio
-cohley
 konradgroup
 vividseatsllc
 konradgroup

@@ -1823,3 +1823,11 @@ navionsl`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/571545/log
 swytchbike`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/455361/logo
 iclasspro`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/608643/logo
 acensblue`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/488270/logo
+zaintech`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/591144/logo
+unimacts`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/599057/logo
+orfium`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/290851/logo
+ecomap`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/564011/logo
+cloudzero`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/445695/logo
+workmotion`n/a`None
+odore`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/460208/logo
+passagehq`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/610855/logo

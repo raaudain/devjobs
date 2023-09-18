@@ -1716,3 +1716,9 @@ mistral`Mistral AI`https://lever-client-logos.s3.us-west-2.amazonaws.com/bd25b6f
 nogle`Nogle`https://lever-client-logos.s3.us-west-2.amazonaws.com/e4adefbf-4820-4f5d-908b-2a7e815a398c-1660812537258.png
 crossing-minds`Crossing Minds Recruiting `https://lever-client-logos.s3.us-west-2.amazonaws.com/9f3b6090-3cee-4571-8551-dcbf1a7734bf-1643409085344.png
 planettechnologies`Planet Technologies`https://lever-client-logos.s3.amazonaws.com/5c48660e-18bf-4641-95b9-0967209909d4-1526007785433.png
+deepgenomics`Deep Genomics`https://lever-client-logos.s3.amazonaws.com/294ab747-e3a2-49f1-a06b-cadf5a0f8a36-1485189267253.png
+wolve`Wolverine Trading`https://lever-client-logos.s3.us-west-2.amazonaws.com/7dbd064c-ad73-4e6d-b8cf-8372323c83fb-1648590683915.png
+matterworks`Matterworks`https://lever-client-logos.s3.us-west-2.amazonaws.com/0902341b-7e56-4d93-9dfa-2742f8383982-1660239735217.png
+hungryharvest`Hungry Harvest`https://lever-client-logos.s3.us-west-2.amazonaws.com/bf7c7302-87e7-4d56-bda1-18ed62559332-1624895259520.png
+valkyrietrading`Valkyrie Trading`https://lever-client-logos.s3.amazonaws.com/57b6c35f-a8c1-4adc-bdbd-43e157480813-1533833330747.png
+newton-school`Newton School`https://lever-client-logos.s3.us-west-2.amazonaws.com/a6523e9b-64a4-4e66-adef-752e0912cd12-1614106209127.png
