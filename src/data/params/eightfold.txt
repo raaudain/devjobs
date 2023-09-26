@@ -85,3 +85,4 @@ booking
 slb
 ericsson
 vizientinc
+qualcomm

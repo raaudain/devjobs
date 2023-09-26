@@ -1568,3 +1568,10 @@ simflo
 bloom-academy
 airtel-ug
 revolution-prep
+velco
+buildhop
+pixel
+nusun-power
+framer
+usdn
+sakari
