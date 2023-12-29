@@ -54,21 +54,21 @@ ats = [
         "params": "src/data/params/bamboohr.txt",
         "uri": r"https://(.*?).bamboohr.com/jobs"
     },
-    {
-        "host": "https://www.comeet.com/jobs/",
-        "params": "src/data/params/comeet.txt",
-        "uri": r"https://www.comeet.com/jobs/((.*?)\/(.*?))/"
-    },
+    # {
+    #     "host": "https://www.comeet.com/jobs/",
+    #     "params": "src/data/params/comeet.txt",
+    #     "uri": r"https://www.comeet.com/jobs/((.*?)\/(.*?))/"
+    # },
     {
         "host": ".eightfold.ai/careers/",
         "params": "src/data/params/eightfold.txt",
         "uri": r"https://(.*?).eightfold.ai/careers/"
     },
-    {
-        "host": ".hrmdirect.com/",
-        "params": "src/data/params/clearcompany.txt",
-        "uri": r"http://(.*?).hrmdirect.com/"
-    },
+    # {
+    #     "host": ".hrmdirect.com/",
+    #     "params": "src/data/params/clearcompany.txt",
+    #     "uri": r"http://(.*?).hrmdirect.com/"
+    # },
     {
         "host": ".recruitee.com/",
         "params": "src/data/params/recruitee.txt",

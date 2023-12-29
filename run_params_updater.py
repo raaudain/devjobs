@@ -9,7 +9,7 @@ from src.update_params.tools import query_google, process_urls
 def main():
     for a in ats:
         query = f"site:{a['host']}"
-        print("current query:", query)
+        print("\ncurrent query:", query)
         params = a["params"]
         uri = a["uri"]
         urls = query_google(query)

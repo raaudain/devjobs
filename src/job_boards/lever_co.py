@@ -57,10 +57,11 @@ def get_results(item: str, param: str):
 def get_url(companies: list):
     count = 0
     for company in companies:
+        headers = {"User-Agent": random.choice(user_agents)}
+        url = f"https://api.lever.co/v0/postings/{company}/"
+        response = requests.get(url, headers=headers)
+        
         try:
-            headers = {"User-Agent": random.choice(user_agents)}
-            url = f"https://api.lever.co/v0/postings/{company}/"
-            response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)
                 get_results(data, company)

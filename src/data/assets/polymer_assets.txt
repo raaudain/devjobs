@@ -216,3 +216,7 @@ caravan`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qqks4ox0uolwe7h
 pascal`n/a`https://inflow-public.s3.amazonaws.com/company-logos/fjo29l6811pko5rkc0x6uqx32rui.png
 pelicargo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/tsrggq2v84q42ax21i11qytwq4k5.png
 silicate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ki6d82o4e5tpwetzb6frgj5j98y2.png
+pudgy-penguins`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4jqi34q4j7kya40jzk4wntfi8ioo.png
+ultron`n/a`https://inflow-public.s3.amazonaws.com/company-logos/uuh7d5nvdrf1m80yywnfxpx1mo7x.jpeg
+interlace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gnauasnrs6oyh568gxooes1gdeiu.png
+frontkom`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hfgnkz959p4odyilkw2ycw79f35w.png

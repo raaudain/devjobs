@@ -991,3 +991,4 @@ EPSOG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/634fa1dae94
 T-SystemsICTIndiaPvtLtd1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/64254ef9c1c8e4572069b174/150px?r=s3-eu-central-1
 NBCUniversal3`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62913a6c84a0d2068a683c44/150px?r=s3-eu-central-1
 GhobashGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/623d82100c7a9c69c8ac3e1d/aa45c003-4215-40cb-8702-ca37e9173d1c?r=s3-eu-central-1
+DeloitteNordic`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/63e274c1fce4e3117912f313/huge?r=s3-eu-central-1

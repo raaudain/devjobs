@@ -16,20 +16,13 @@ import time
 
 
 def query_google(query):
-    count = 0
-    results = 0
-    urls = []
+    count = 1
+    urls = set()
 
-    while count < 500:
-        if results < count:
-            break
-
-        for url in search(query, tld="com", num=100, start=count, stop=None, pause=90, country="US"):
-            if not url in urls:
-                urls.append(url)
-            results += 1
-
-        count += 100
-        time.sleep(0.05)
+    for url in search(query, tld="com", num=100, start=0, stop=500, pause=90, country="US"):
+        if not url in urls:
+            print(count, url)
+            urls.add(url)
+            count+=1
 
     return urls

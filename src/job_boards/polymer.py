@@ -29,7 +29,7 @@ def get_results(item: str, param: str):
             with open(wrk, "a") as a:
                 a.write(f"{param}`n/a`{logo}\n")
         except Exception as e:
-            print(f"=> wrk: Error getting logo for {param}. {e}.")
+            print(f"=> polymer: Error getting logo for {param}. {e}.")
     jobs = item["items"]
 
     for j in jobs:

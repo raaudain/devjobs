@@ -54,7 +54,7 @@ class ProcessCompanyJobData:
         company = posting["company"]
         url = posting["url"]
 
-        wanted = ["Engineer", "Data", "IT ",  "Tech ", "QA", "Programmer", "Developer", "ML", "SDET", "DevOps", "AWS", "Cloud", "Software", "Help", "Web ", "Front End", "Agile", "Cyber"]
+        wanted = ["Engineer", "Data", "IT ",  "Tech ", "QA", "Programmer", "Developer", "ML", "SDET", "DevOps", "AWS", "Cloud", "Software", "Help", "Web ", "Front End", "Agile", "Cyber", "OSINT"]
         wanted = "(%s)" % "|".join(wanted)
         
         unwanted = ["Elect", "HVAC", "Mechanical", "Manufactur", "Data Entry", "Nurse", "Maintenance", "Civil", "Environmental", "Hardware", "Front Desk", "Helper", "Peer Support", "Bridge", "Water", "Dispatch", "Saw", "Facilities", "AML", "Sheet Metal", "Metallurgical", "Materials", "Expeditor", "Job Developer"]

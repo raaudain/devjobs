@@ -10,7 +10,6 @@ gitlab
 changeorg58
 qualia
 fullstory
-98point6
 pachyderm
 launchdarkly
 metropolis
@@ -41,7 +40,6 @@ cobaltio
 alma
 mapbox
 classpass
-github
 2u
 acquia
 actblue
@@ -61,7 +59,6 @@ bugcrowd
 callrail
 cargurus
 casper
-chainalysis
 chargepoint
 circleci
 classy
@@ -85,7 +82,6 @@ fanduel
 fastly
 fivetran
 flexport
-fliptrx
 forgerock
 formlabs
 fubotv
@@ -155,13 +151,11 @@ stripe
 sysdig
 tanium
 teacherspayteachers
-teampay
 tempus
 thumbtack
 timescale
 tractable
 transferwise
-trialspark
 triplelift
 twitch
 unqork
@@ -223,7 +217,6 @@ greenhouse
 nextdoor
 ethyca
 sponsorsforeducationalopportunity
-bird
 sharebite
 naughtydog
 dialexa
@@ -274,12 +267,10 @@ gohealthsales
 agcbiologics
 upwork
 wildlifestudios
-charthop
 picsart
 boltv2
 morganfranklinconsultingllc
 rbicareers
-gosite
 nerdwallet
 tucows
 bench
@@ -299,7 +290,6 @@ foursquare26
 bungie
 livescore9
 wundercapital
-avenuestheworldschool
 clarksoneyecare
 lob
 elationhealth
@@ -352,7 +342,6 @@ pathstream
 gatesventures
 remotecom
 misfitsmarket
-generation
 circle
 hackerrank
 affinitiv
@@ -441,11 +430,9 @@ smileidentity
 dalbergdesign
 nichecom
 zylo
-arthurai
 latentai
 id5
 eviationaircraft
-studio
 scalesec
 paralleljobs
 acorns
@@ -528,7 +515,6 @@ berlinbrands
 rsinternboard
 digrestaurants
 crocscorporate
-goclio
 gcmgrosvenor
 tridge
 snowflakecomputing
@@ -555,7 +541,6 @@ sada
 nuro
 seldon
 bandwidth
-interfolio
 digitalocean98
 hypercube
 rhombuspower
@@ -592,7 +577,6 @@ ruggable
 fashionnova
 versussystems
 jellyvision
-ocient39
 caribou
 ready2order
 tangocard
@@ -609,7 +593,6 @@ headway
 phdata
 acadiapharmaceuticals
 enfusion
-tierarztpluspartner
 bigosmanagement
 baublebar
 creatoriq
@@ -626,7 +609,6 @@ nationalresearchgroup
 pager
 arootahllc
 westmonroe2
-1010data
 intrinsicrobotics
 bhs
 toyotaconnected
@@ -636,7 +618,6 @@ flockfreight
 englertinc
 ribbonhealth
 bitmovin
-createme
 universalhydrogen
 reprise
 otterbein
@@ -646,13 +627,11 @@ e
 credera
 array
 propellerindustries
-zenwise
 braineffectjobs
 vendia
 emulate
 pangaea
 tandemlaunch
-uniformteeth
 themarketingarm
 centriaautism
 surveymonkey
@@ -726,7 +705,6 @@ OKX
 modernanimal
 squire
 salsify
-shipium
 voltaiq
 employeenavigator
 kincartaeurope
@@ -754,7 +732,6 @@ fourkites
 aclu
 dailypayinc
 seveneightcapital
-mindgeek
 spinskinnylabsincfleetoperations
 indexexchange
 mikebloomberg2020
@@ -767,7 +744,6 @@ current81
 solidpower
 autoscout24
 zeplin
-akouos
 anaconda
 mindfoundry
 similarweb
@@ -777,7 +753,6 @@ nucleus
 vonage
 sonyinteractiveentertainmentglobal
 multiplylabs
-comerceialseguros
 singularity6
 fortune
 dxacirca
@@ -801,8 +776,6 @@ paireyewear
 freshrealm
 brunswickgroup
 cdr
-thriva
-translationunitedmastersstashed
 niantic8thwall
 branchmetrics
 maestroqa
@@ -851,7 +824,6 @@ aura798
 rev
 survata
 recruitics
-illuvium
 freeassociation
 singulargenomics
 aalphabio
@@ -923,7 +895,6 @@ groundtruth
 wistia
 cyluscybersecurity
 bucknerinternational
-deepsource
 highmetric
 chanzuckerberginitiative
 ccah
@@ -967,7 +938,6 @@ freshprints
 lilium
 golinks
 nirrin
-sonder
 dspconcepts
 girleffect
 waymo
@@ -994,7 +964,6 @@ grafanalabs
 grenevisiongroup
 mirakl
 varsitytutors
-ziforndsolutions
 cohesity
 givedirectly
 clarksville
@@ -1014,7 +983,6 @@ generalassembly
 compassindia
 knowbe4
 c6bank
-aces
 synctera
 MaterialBank
 rubrik
@@ -1029,7 +997,6 @@ fundraiseup
 vim
 cutover
 houserx
-plumguide
 wizardcommerce
 pathrobotics
 sonic
@@ -1055,7 +1022,6 @@ chowbus
 optimaldynamics
 fossainc
 messari
-flexcar
 openzeppelin
 cmrsurgical
 elementum
@@ -1089,7 +1055,6 @@ proyectosenmexycentroamerica
 transmitsecurity
 tailorbirdinc
 veriff
-enjoy
 midtowne
 sendbird
 cybrary
@@ -1132,7 +1097,6 @@ eyeo
 semafor
 trace3
 cordial81
-themarkup
 stokespacetechnologies
 vynyl
 codility
@@ -1170,7 +1134,6 @@ sendcloud
 guidepoint
 atlasxhm
 awardco
-bedrocksystems
 truelayer
 psiquantum
 numeradecareers
@@ -1184,7 +1147,6 @@ equipmentsharecom
 growtherapy
 civisanalytics
 aspireio
-protocollabs
 filescom
 snagajob
 whatnot
@@ -1193,7 +1155,6 @@ orium
 dashlane
 fieldwire
 adgear
-lifelabslearning
 form3
 udemy
 astspacemobile
@@ -1212,13 +1173,10 @@ rubyreceptionists
 shift5
 uchicagoepic
 brightinsight
-hypermint
-formidable
 insomniac
 snackpass
 domo
 snackpasspt
-uniamerica
 cobblestoneenergy
 clipboardhealth
 secondharvest
@@ -1230,7 +1188,6 @@ avepoint
 graymatterrobotics
 alabamavisioncenter
 aztecgroup
-Atrium
 sollishealth
 razorpaysoftwareprivatelimited
 andela
@@ -1274,7 +1231,6 @@ wework
 processstreet
 bamboohr17
 apolloio
-kiratalent
 staffbase
 venncity
 preciselyusjobs
@@ -1296,7 +1252,6 @@ syros
 rightwayhealthcare
 appliedintuition
 valleyview
-autonomic
 taxdoo
 wheely
 drata
@@ -1315,14 +1270,12 @@ daangn
 slingshotaerospace
 ultragenyxpharmaceutical
 tulip
-dynamicyield
 pelacase
 dataai
 lightforgegames
 edxbootcamps
 housinganywhere
 redsixaerospace
-volvocarmobility
 clicktherapeutics
 zabertechnologies
 ouihelp
@@ -1335,10 +1288,8 @@ jasper23
 samsungresearchamericainternship
 thearenagroup
 jusbrasil
-abovelending
 securly13
 vacasa
-sparkcares
 ustwo
 keyme
 firstlookmedia
@@ -1355,7 +1306,6 @@ goguardian
 mlbdataops
 nasstudios
 oscar
-descomplica
 inspire
 virgo
 eon
@@ -1369,7 +1319,6 @@ firaxis
 titelmedia
 fullbeaker
 10pearls
-marpipe
 shopltk
 rdccareers
 helionenergy
@@ -1406,13 +1355,11 @@ marketaxesscorporation
 goldenhippo
 earli
 beyond
-zen
 gympass
 arenanet
 stepstone
 sypartners
 credible
-robinhealthcare
 Mill
 arcadiacareers
 debutbiotech
@@ -1443,7 +1390,6 @@ accruenthq
 tropic
 barstoolsports
 trumid
-productiv
 hopskipdrive
 arkoselabs
 purposefreelance
@@ -1478,7 +1424,6 @@ modernmeadow
 covetool
 cortexbuildingintelligence
 beekeeper
-vicai
 keydataassociates
 elevatek12teachwithus
 lumafinancialtechnologies
@@ -1521,7 +1466,6 @@ solsten
 rcgglobalservices
 inter
 teads
-truv
 incode
 squarepointcapital
 tide
@@ -1565,7 +1509,6 @@ sunsetanytime
 hederahashgraph77
 wrike
 diligentrobotics
-aescape
 curaleaf
 smalldoor
 adept
@@ -1574,13 +1517,11 @@ definitivehcindia
 googlefiber
 tarsusrx
 bloomerang
-somatus
 nexuscareers
 assetliving
 coalition
 earnin
 lifesciencedynamics
-thriveworks
 flipp
 frequenceinc
 duda
@@ -1595,18 +1536,15 @@ disco36
 mountanvil
 isn
 headoutcareers
-calloquypbc
 knak
 usertesting48
 gatikaiinc
-moonpay
 altium
 venturewell
 abclegalservices
 elastic
 cpm
 mercury
-rubilaboratories33
 catchpoint
 nice
 woebot
@@ -1659,21 +1597,18 @@ toast
 recordedfuture
 theroom
 athenaeducation
-merama
 truehold
 raintherapeutics
 arascorporation
 webershandwick
 republicschools
 celtx
-thecollegeboard
 katmaitech
 generatebiomedicines
 edgedelta
 gooddog
 fountain
 genies
-moovfinancial
 hungryroot
 inflectionai
 hotelengine
@@ -1690,7 +1625,6 @@ sbenergy
 capvision
 fluxfederation
 quantumvisioncenters
-quimbee
 couchbaseinc
 rothys
 vultr
@@ -1718,7 +1652,6 @@ citizen
 seed
 vyro
 drweng
-huntclub
 flamboyanfoundation
 guayaki
 betterhealth
@@ -1726,7 +1659,6 @@ runwayml
 lionsntigers
 linushealth
 karrotca
-airudder
 neuraflash
 waymark
 1848ventures
@@ -1785,7 +1717,6 @@ mediabrands
 leaflink
 perpay
 apartmentlist
-peerstreet
 spotme
 gocardless
 knoetic
@@ -1801,8 +1732,25 @@ konradgroup
 vividseatsllc
 konradgroup
 chbristow
-impala
-stride
-triplebarbio
-flaschenpostag
-vanta
+wellthy
+vestwell
+metrostarsystems
+hostanalytics
+refurbed
+keyfactorinc
+oportun
+rbicampus
+acadianassetmanagementllc
+theskimm
+boostercareers
+smallhold
+tracelinkinc
+affinipay1
+teachforall
+ursamajor
+axonius
+villagemd
+zscaler
+auviknetworks
+arcoeducacao
+iconcareers
