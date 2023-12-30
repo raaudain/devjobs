@@ -1217,7 +1217,6 @@ manifoldai
 jamf
 chainsafesystems
 cockroachlabs
-choco
 productred
 gotion
 shipbobinc

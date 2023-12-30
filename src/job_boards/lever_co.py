@@ -1,10 +1,8 @@
-import requests
 import sys
-import json
-import time
 import random
 from datetime import datetime
-from lxml import html
+from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup
 sys.path.insert(0, ".")
 from src.job_boards.helpers import ProcessCompanyJobData, user_agents
 
@@ -12,80 +10,45 @@ from src.job_boards.helpers import ProcessCompanyJobData, user_agents
 process_data = ProcessCompanyJobData()
 FILE_PATH = "src/data/params/lever_co.txt"
 
-
-def get_results(item: str, param: str):
+def get_results(page, param):
+    soup = BeautifulSoup(page, "lxml")
+    main_header = soup.find(class_="main-header-logo")
+    logo = main_header.find("img").get("src") if main_header else None
+    company_name = soup.find("title").text if "error" not in soup.find("title") else param.capitalize()
     source_url = f"https://jobs.lever.co/{param}"
-    company_name = param.capitalize()
-    logo = None
-    lever = "src/data/assets/lever_assets.txt"
-    table = process_data.get_stored_data(lever)
-    if param in table:
-        company_name = table[param]["name"] 
-        logo = table[param]["logo"]
-    else:
-        try:
-            r = requests.get(source_url)
-            tree = html.fromstring(r.content)
-            logo = tree.xpath("//a[@class='main-header-logo']/img/@src")[0]
-            company_name = tree.xpath("//head/title/text()")[0]
-            with open(lever, "a") as a:
-                a.write(f"{param}`{company_name}`{logo}\n")
-        except Exception as e:
-            print(f"=> lever.co: Failed to get logo for {param}. Error: {e}.")
-    for i in item:
-        # use true division by 1e3 (float 1000)
-        date = datetime.fromtimestamp(i["createdAt"] / 1e3)
-        post_date = datetime.timestamp(
-            datetime.strptime(str(date).rsplit(".")[0], "%Y-%m-%d %H:%M:%S"))
-        apply_url = i["hostedUrl"].strip()
-        description = i["descriptionPlain"]
-        position = i["text"].strip()
-        location = i["categories"]["location"].strip() if "location" in i["categories"] else "See description"
+    date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+    post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
+
+    for posting in soup.find_all(class_="posting"):
+        workplace_type = f"{posting.find(class_='workplaceTypes').text} - " if posting.find(class_="workplaceTypes") else ""
+        physical_location = posting.find(class_='sort-by-location').text if posting.find(class_="sort-by-location") else ""
+        location = workplace_type.replace('\xa0—\xa0', '') + physical_location
+
         process_data.filter_jobs({
-            "timestamp": post_date,
-            "title": position,
+            "timestamp":post_date,
+            "title": posting.find(attrs={"data-qa": "posting-name"}).text,
             "company": company_name,
             "company_logo": logo,
             #"description": description,
-            "url": apply_url,
+            "url": posting.find(class_="posting-title").get("href"),
             "location": location,
             "source": company_name,
             "source_url": source_url
         })
 
-
-def get_url(companies: list):
-    count = 0
+def get_url(companies):
     for company in companies:
-        headers = {"User-Agent": random.choice(user_agents)}
-        url = f"https://api.lever.co/v0/postings/{company}/"
-        response = requests.get(url, headers=headers)
-        
-        try:
-            if response.ok:
-                data = json.loads(response.text)
-                get_results(data, company)
-                if count % 20 == 0:
-                    time.sleep(10)
-                else:
-                    time.sleep(0.2)
-            elif response.status_code == 404:
-                process_data.remove_not_found(FILE_PATH, company)
-            count += 1
-        except Exception as e:
-            if response.status_code == 429:
-                print(
-                    f"=> lever.co: Failed to scrape {company}. Status code: {response.status_code}.")
-                break
-            else:
-                print(
-                    f"=> lever.co: Failed for {company}. Status code: {response.status_code}. Error: {e}.")
-
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(user_agent=f"{random.choice(user_agents)}")
+            page.goto(f"https://jobs.lever.co/{company}")
+            content = page.content()
+            get_results(content, company)
+            browser.close()
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)
     get_url(companies)
-
 
 if __name__ == "__main__":
     main()
