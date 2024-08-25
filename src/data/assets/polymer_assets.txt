@@ -220,3 +220,16 @@ pudgy-penguins`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4jqi34q4
 ultron`n/a`https://inflow-public.s3.amazonaws.com/company-logos/uuh7d5nvdrf1m80yywnfxpx1mo7x.jpeg
 interlace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gnauasnrs6oyh568gxooes1gdeiu.png
 frontkom`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hfgnkz959p4odyilkw2ycw79f35w.png
+eli`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zcvpfvu4nt0mag0kj7wnfzdrzytw.svg
+wpai`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s98tk2cr7fuw9fbx2iux02qdmvoe.png
+remark`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ty5nyckq3yvq6iiso8pylbndzrez.png
+teamheyo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/brjpsr2hwh04ckn0n8m87ncr1l0q.png
+farfill`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6r41b6ws1qssvgvq13siuugnmcw9.png
+bagospherecareers`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ws9fks1xqrhmzu8f7agshpsspfzl.png
+resleeve`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rlvvo1pwah8i876egtot257pfj9e.svg
+springtail`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4kqx4itbj8di3pkyscxj766p9a54.svg
+renjoy`n/a`https://inflow-public.s3.amazonaws.com/company-logos/kw5q4zabuy4dt37xsjis0p1jf8pa.png
+pantomath`n/a`https://inflow-public.s3.amazonaws.com/company-logos/e2yem1b73jtwkhpbjo8un6orv5aj.png
+naroiq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9rey8uel0kunurzhte8s44ok58k8.png
+alphafund`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ujiwq3zbjgkdpb568mhbrlmjoaze.png
+infrared`n/a`https://inflow-public.s3.amazonaws.com/company-logos/n7e2gpxgbok2kdl7k0z8vzu2ucbc.png

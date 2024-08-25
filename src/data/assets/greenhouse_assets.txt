@@ -2107,3 +2107,29 @@ ursamajor`Ursa Major`None
 villagemd`VillageMD`None
 auviknetworks`Auvik Networks`None
 iconcareers`ICON`None
+simpsongumpertzheger`Simpson Gumpertz & Heger`None
+clever`Clever`None
+pandion`Pandion`None
+watchmakergenomics`Watchmaker Genomics`None
+novisto78`Novisto`None
+toriihq`Torii`None
+lokalise`Lokalise`None
+abacusgroup`Abacus Group LLC`None
+sphereentertainment`Sphere Entertainment Group, LLC`None
+kalshi`Kalshi`None
+sambanovasystems`SambaNova Systems`None
+pyxisoncology`Pyxis Oncology`None
+billie`Billie`None
+energyhub`EnergyHub`None
+intrinsicrobotics`Intrinsic`None
+cured`Cured`None
+magnetmediafilms`Magnet Media, Inc.`None
+flix`Flix`None
+pinterest`Pinterest`None
+liquibase`Liquibase`None
+captiveaire`CaptiveAire`None
+seismicsoftware`Seismic`None
+connecteam`Connecteam`None
+esri`Esri`None
+ayahealthcare`Aya Healthcare`None
+owllabs`Owl Labs`None

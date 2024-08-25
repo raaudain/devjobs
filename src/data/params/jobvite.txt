@@ -87,7 +87,6 @@ nbbj
 livevision
 gpc
 texashealthrockwall
-panasonic
 mediacom
 tivo
 rightpoint
@@ -980,3 +979,17 @@ shiftdigital
 nashvillegeneralhospital
 maplesgroup
 allroads
+chartis
+triagepartners
+camsyscareers
+coastdental
+conexiom
+pinnaclelive
+blindsquirrelentertainment
+ccrm
+voices
+reliantathome
+inogen
+sdipresence
+greenopsfl
+laborie

@@ -1106,3 +1106,6 @@ SocieteGenerale4
 T-SystemsICTIndiaPvtLtd1
 NBCUniversal3
 DeloitteNordic
+wildbrain
+ReBuyReCommerceServicesGmbHCoKG
+AbbVie

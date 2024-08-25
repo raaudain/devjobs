@@ -993,3 +993,7 @@ NBCUniversal3`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/62913a6
 GhobashGroup`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/623d82100c7a9c69c8ac3e1d/aa45c003-4215-40cb-8702-ca37e9173d1c?r=s3-eu-central-1
 DeloitteNordic`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/63e274c1fce4e3117912f313/huge?r=s3-eu-central-1
 CaliforniaClosets`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/633afd544caa4302d4172373/150px?r=s3-eu-central-1
+TheSRGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61fa82f935020f63331e8082/huge?r=s3-eu-central-1
+AbbVie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/656747cf2911de6f78b5aa2b/150px?r=s3-us-east-2
+wildbrain`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc11/65779783c2b1325773c381f6/47458af3-1b5f-4d13-ab40-beeb75ea4d9d?r=s3-us-east-2
+ReBuyReCommerceServicesGmbHCoKG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c3c780752faff0007064a09/150px?r=s3-eu-central-1

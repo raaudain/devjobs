@@ -1,9 +1,7 @@
-granular
 aexp
 akamai
 micron
 bnymellon
-nationwide
 app
 netapp
 nutanix
@@ -87,3 +85,10 @@ ericsson
 vizientinc
 qualcomm
 grupobimbo
+stmicroelectronics
+fortive
+arcadis
+dolby
+symetra
+vialto
+oxxo
